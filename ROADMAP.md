@@ -388,7 +388,13 @@ Setup (`READINESS`: low-energy / sore / short-time / no-gear / strong) determini
   coach-y amber note summarizes what changed (`readinessSummary`). All verified in-browser.
 This is the last core Tier 1 phase.
 
-**Phase G — Card clarity pass (content quality). — PLANNED (added 2026-07-23).**
+**Phase G — Card clarity pass (content quality). — ✅ COMPLETE (2026-07-24).** All 506 `cue` +
+`description` fields rewritten (by Claude, not GPT this time) to the format below: a one-line cue and
+a 2–3 sentence how-to a total beginner can follow (setup → step-by-step → the common mistake), with
+jargon spelled out. Applied group-by-group via `scratchpad/clarify-<group>.js` scripts (a small lib
+patches only those two fields by exact-string match, so ids/metadata are untouched); `validate.js`
+green, sw cache v27. No `steps:[]` schema field was needed — the prose format read cleanly. The plan/
+brief below is kept for reference in case of future content passes.
 Matt hit an exercise he couldn't perform from the card text alone. Goal: every card's `cue` +
 `description` should let a **beginner do the move from reading only** — no assumed jargon, no
 ambiguity. This is a **ChatGPT bulk-content job** (per §3/§6 division of labor): GPT regenerates
