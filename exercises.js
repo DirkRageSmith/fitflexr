@@ -1642,8 +1642,8 @@ const EXERCISES = [
       "pull-up-bar"
     ],
     "difficulty": "Intermediate",
-    "cue": "Pull your elbows toward your ribs while keeping your chest lifted.",
-    "description": "Start from a dead hang and pull until your chin clears the bar before lowering under control. Avoid kicking or swinging for momentum.",
+    "cue": "Hang with palms facing away and pull your chest toward the bar.",
+    "description": "Hang from a bar with an overhand grip a bit wider than your shoulders, arms straight. Pull your elbows down and back to bring your chest toward the bar, then lower under control to a full hang. Drive your elbows down rather than just yanking with your arms — that's how the back does the work.",
     "avoidIf": [
       "shoulder"
     ],
@@ -1675,8 +1675,8 @@ const EXERCISES = [
       "pull-up-bar"
     ],
     "difficulty": "Intermediate",
-    "cue": "Keep your elbows close and drive your chest toward the bar.",
-    "description": "Pull until your chin passes the bar before lowering with control. Avoid craning your neck to finish the repetition.",
+    "cue": "Palms facing you, pull your chest to the bar.",
+    "description": "Hang from a bar with an underhand (palms-facing-you) grip about shoulder-width. Pull your chest up to the bar, then lower under control to straight arms. The underhand grip brings the biceps in more, making it usually a little easier than a pull-up.",
     "avoidIf": [
       "shoulder"
     ],
@@ -1707,8 +1707,8 @@ const EXERCISES = [
       "pull-up-bar"
     ],
     "difficulty": "Intermediate",
-    "cue": "Keep your palms facing each other and pull your elbows straight down.",
-    "description": "Lift until your chin clears the handles before lowering smoothly. Avoid excessive swinging.",
+    "cue": "Palms facing each other, pull your chest up to the bar.",
+    "description": "Grip the parallel handles so your palms face each other and hang with straight arms. Pull your chest toward the handles, then lower under control. The neutral grip is the most shoulder-friendly pull-up and hits the back and biceps evenly.",
     "avoidIf": [],
     "icon": "🤲",
     "mechanic": "Compound",
@@ -1737,8 +1737,8 @@ const EXERCISES = [
       "pull-up-bar"
     ],
     "difficulty": "Advanced",
-    "cue": "Use a wide grip and pull your elbows toward your sides.",
-    "description": "Raise your chest toward the bar with full-body control. Avoid shortening the range of motion.",
+    "cue": "Grip well outside your shoulders and pull your chest up.",
+    "description": "Hang from a bar with an overhand grip noticeably wider than your shoulders. Pull your chest toward the bar, driving your elbows down and out, then lower under control. The wide grip shifts more work onto the outer lats for that V-taper — and makes it harder.",
     "avoidIf": [
       "shoulder"
     ],
@@ -1769,8 +1769,8 @@ const EXERCISES = [
       "pull-up-bar"
     ],
     "difficulty": "Advanced",
-    "cue": "Pull your head beside the bar while alternating sides each set.",
-    "description": "Maintain control and keep your torso stable throughout. Avoid twisting aggressively.",
+    "cue": "Grip the bar in line with your body and pull up to one side, then the other.",
+    "description": "Stand under the bar and grip it with your hands together, one in front of the other, so your body is side-on to the bar. Pull up so your head passes one side of the bar, lower, then pull up to the other side. It hammers the lats and forces your core to resist twisting.",
     "avoidIf": [
       "shoulder",
       "neck"
@@ -1802,8 +1802,8 @@ const EXERCISES = [
       "pull-up-bar"
     ],
     "difficulty": "Advanced",
-    "cue": "Pull toward one arm while keeping the opposite arm extended.",
-    "description": "Alternate sides while maintaining strict control. Avoid rotating your torso excessively.",
+    "cue": "Pull up toward one hand while the other arm stays straight along the bar.",
+    "description": "Take a wide overhand grip. Pull yourself up and over toward one hand while the other arm stays straight, sliding along the bar, then lower and alternate sides. Most of your weight goes through the bending arm — a stepping stone to the one-arm pull-up.",
     "avoidIf": [
       "shoulder",
       "balance"
@@ -1833,8 +1833,8 @@ const EXERCISES = [
       "pull-up-bar"
     ],
     "difficulty": "Beginner",
-    "cue": "Keep your elbows straight and pull only with your shoulder blades.",
-    "description": "Lift your body slightly by depressing and retracting the scapulae. Avoid bending your elbows.",
+    "cue": "Hang, then pull your shoulders down without bending your elbows.",
+    "description": "Hang from the bar with straight arms. Without bending your elbows, pull your shoulder blades down and together to lift your body an inch or two, then relax back to a hang. It teaches the shoulder-blade movement that starts every good pull-up.",
     "avoidIf": [],
     "icon": "🎯",
     "mechanic": "Isolation",
@@ -1862,8 +1862,8 @@ const EXERCISES = [
       "pull-up-bar"
     ],
     "difficulty": "Beginner",
-    "cue": "Lower yourself as slowly as possible from the top position.",
-    "description": "Step or jump to the top before controlling the descent. Avoid dropping quickly at the bottom.",
+    "cue": "Start at the top and lower yourself as slowly as you can.",
+    "description": "Jump or step up so your chin is over the bar, then lower yourself as slowly as possible — aim for three to five seconds — until your arms are straight. Reset and repeat. Slow lowering builds the strength you need for full pull-ups.",
     "avoidIf": [
       "shoulder"
     ],
@@ -1893,8 +1893,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Beginner",
-    "cue": "Keep your body rigid and pull your chest toward the bar.",
-    "description": "Lower yourself under control after each repetition. Avoid letting your hips sag.",
+    "cue": "Hang under a bar and pull your chest up to it, body straight.",
+    "description": "Set a bar at about hip height, lie under it, and grip it a bit wider than your shoulders with your body straight and heels on the floor. Pull your chest up to the bar, squeezing your shoulder blades, then lower under control. The more horizontal your body, the harder it is.",
     "avoidIf": [],
     "icon": "↕️",
     "mechanic": "Compound",
@@ -1925,8 +1925,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Elevate your feet and keep your body perfectly straight.",
-    "description": "Pull your chest to the bar before lowering slowly. Avoid losing body tension.",
+    "cue": "Feet raised on a bench, pull your chest to the bar.",
+    "description": "Set up an inverted row but rest your feet on a bench so your body is level. Pull your chest to the bar, squeezing your shoulder blades, then lower slowly. Raising your feet loads more of your bodyweight onto your back.",
     "avoidIf": [],
     "icon": "📈",
     "mechanic": "Compound",
@@ -1954,8 +1954,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Lean back and pull evenly through both arms.",
-    "description": "Use a securely anchored towel and row your body toward it. Avoid using an unstable anchor point.",
+    "cue": "Loop a towel around a post and row your body toward it.",
+    "description": "Loop a sturdy towel around a solid post or door handle, hold both ends, and lean back with straight arms and feet planted. Pull your body toward the anchor by driving your elbows back, then lower slowly. A no-equipment back builder — the more you lean back, the harder it gets.",
     "avoidIf": [
       "balance"
     ],
@@ -1986,8 +1986,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Lift your arms and legs together while keeping your neck neutral.",
-    "description": "Pause briefly at the top before lowering with control. Avoid looking upward excessively.",
+    "cue": "Lie face-down and lift your arms, chest, and legs off the floor.",
+    "description": "Lie face-down with your arms stretched out in front. Squeeze your lower back and glutes to lift your arms, chest, and legs off the floor at the same time, hold for a second, then lower. Keep your neck neutral — look at the floor, not forward.",
     "avoidIf": [
       "lower-back",
       "pregnancy"
@@ -2018,8 +2018,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Move slowly through the Y, T, and W positions without shrugging.",
-    "description": "Raise your arms deliberately while keeping your forehead supported. Avoid rushing between positions.",
+    "cue": "Lie face-down and lift your arms into Y, T, then W shapes.",
+    "description": "Lie face-down and raise your arms off the floor in three positions — overhead into a Y, straight out into a T, then bent back into a W. Squeeze your shoulder blades in each. It strengthens the mid-back and rear shoulders and improves posture. Keep the movements small and controlled.",
     "avoidIf": [
       "shoulder"
     ],
@@ -2050,8 +2050,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Lift your chest only until your spine reaches neutral alignment.",
-    "description": "Raise and lower under complete control. Avoid hyperextending your lower back.",
+    "cue": "Lie face-down and lift your chest up using your lower back.",
+    "description": "Lie face-down with your hands by your head or crossed on your chest. Lift your chest off the floor by squeezing your lower back and glutes, then lower slowly. Don't crank into a big backbend — a small, controlled lift is plenty.",
     "avoidIf": [
       "lower-back",
       "pregnancy"
@@ -2081,8 +2081,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Sweep your arms from overhead to your hips while keeping them off the floor.",
-    "description": "Move slowly through the full arc without lifting your head. Avoid shrugging your shoulders.",
+    "cue": "Face-down, sweep your arms from your sides to overhead, hovering off the floor.",
+    "description": "Lie face-down with arms at your sides, palms down, and lift them slightly off the floor. Sweep them overhead in a wide arc like a snow angel, keeping them hovering the whole time, then sweep back. Great for the mid-back and shoulder health.",
     "avoidIf": [
       "shoulder"
     ],
@@ -2114,8 +2114,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Drive your hips upward while squeezing your shoulder blades together.",
-    "description": "Hold a straight line from shoulders to heels. Avoid letting your hips sag.",
+    "cue": "Sit with legs out, then lift your hips into a straight line.",
+    "description": "Sit with your legs straight in front and hands on the floor behind you, fingers pointing forward. Press through your hands and heels to lift your hips until your body forms a straight line, and hold. Squeeze your glutes and don't let your hips sag.",
     "avoidIf": [
       "wrist",
       "shoulder"
@@ -2147,8 +2147,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Reach long through your arm and opposite leg while keeping your spine neutral.",
-    "description": "Pause briefly before switching sides. Avoid rotating your hips during the hold.",
+    "cue": "On all fours, extend the opposite arm and leg and hold steady.",
+    "description": "Start on all fours. Reach one arm straight forward and the opposite leg straight back until they're level with your body, then hold while keeping your hips square and core braced. Builds mid-back and core stability. Switch sides each set.",
     "avoidIf": [
       "balance",
       "pregnancy"
@@ -2181,8 +2181,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Beginner",
-    "cue": "Pull your elbow toward your hip while keeping your torso stable.",
-    "description": "Support yourself on a bench and row the dumbbell through a full range of motion. Avoid twisting your torso to lift heavier weight.",
+    "cue": "Brace on a bench and row the dumbbell to your hip.",
+    "description": "Put one knee and hand on a bench with a flat back, holding a dumbbell in the other hand hanging down. Row it up to your hip by driving your elbow back, squeezing your back, then lower slowly. Keep your torso still — don't twist to lift the weight.",
     "avoidIf": [
       "lower-back"
     ],
@@ -2215,8 +2215,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Beginner",
-    "cue": "Keep your chest glued to the bench and drive your elbows back.",
-    "description": "Row both dumbbells until your elbows pass your torso before lowering under control. Avoid lifting your chest off the bench.",
+    "cue": "Lie chest-down on an incline and row both dumbbells to your hips.",
+    "description": "Lie chest-down on an incline bench holding a dumbbell in each hand hanging toward the floor. Row them up to your hips, squeezing your shoulder blades, then lower slowly. The chest support removes your lower back and momentum so the back does all the work.",
     "avoidIf": [],
     "icon": "📈",
     "mechanic": "Compound",
@@ -2246,8 +2246,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Maintain a flat back while pulling both elbows toward your hips.",
-    "description": "Hinge at the hips and row both dumbbells with control. Avoid rounding your lower back.",
+    "cue": "Hinge forward and row both dumbbells to your hips.",
+    "description": "Hinge forward at the hips with a flat back, holding a dumbbell in each hand hanging down. Row them up to your hips by driving your elbows back, then lower slowly. Keep your back flat and core tight throughout — don't round or stand up as you pull.",
     "avoidIf": [
       "lower-back"
     ],
@@ -2278,8 +2278,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Alternate rows while holding a strong hip hinge.",
-    "description": "Keep one dumbbell planted while rowing the other. Avoid rotating your torso as you switch sides.",
+    "cue": "Dumbbells on the floor between your feet, row them up one at a time.",
+    "description": "Stand over two dumbbells set on the floor between your feet, hinge down with a flat back, and grab both. Row one up to your hip while the other rests, then alternate. The floor reset each rep keeps your form honest and builds explosive pulling power.",
     "avoidIf": [
       "lower-back"
     ],
@@ -2309,8 +2309,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Pause each dumbbell on the floor before every repetition.",
-    "description": "Reset your position after every rep for maximum power. Avoid bouncing the weights off the floor.",
+    "cue": "Row the dumbbell up, then set it fully down each rep.",
+    "description": "Set up a bent-over row but let the dumbbell come to a complete stop on the floor between each rep. Pull it up to your hip, then lower it all the way down and pause before the next. Killing the momentum makes your back start each rep from scratch.",
     "avoidIf": [
       "lower-back"
     ],
@@ -2371,8 +2371,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Beginner",
-    "cue": "Lift your shoulders straight upward without rolling them.",
-    "description": "Pause briefly at the top before lowering slowly. Avoid rotating your shoulders in circles.",
+    "cue": "Hold dumbbells at your sides and shrug your shoulders straight up.",
+    "description": "Stand tall holding a dumbbell in each hand at your sides. Shrug your shoulders straight up toward your ears, squeeze at the top, then lower slowly. Don't roll your shoulders — just lift straight up and down to build the traps.",
     "avoidIf": [
       "neck"
     ],
@@ -2403,8 +2403,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Advanced",
-    "cue": "Use controlled body English only after strict pulling breaks down.",
-    "description": "Perform high-rep heavy rows while maintaining spinal stability. Avoid jerking the weight from the floor.",
+    "cue": "Row one heavy dumbbell with a little body english for max reps.",
+    "description": "Brace one hand on a bench and row a heavy dumbbell in the other hand, using a slight controlled swing of your hips to move big weight for high reps. Pull to your hip, then lower under control. A brutal back and grip builder — keep your spine safe, not sloppy.",
     "avoidIf": [
       "lower-back"
     ],
@@ -2436,8 +2436,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Beginner",
-    "cue": "Pull your elbows slightly outward while keeping your chest on the bench.",
-    "description": "Focus on squeezing your shoulder blades together. Avoid lifting your chest during the row.",
+    "cue": "Chest on the incline, row the dumbbells up and back.",
+    "description": "Lie chest-down on an incline bench with a dumbbell in each hand hanging down. Row them up and slightly back toward your hips, squeezing your shoulder blades, then lower slowly. The supported position isolates the mid-back cleanly.",
     "avoidIf": [],
     "icon": "🛏️",
     "mechanic": "Compound",
@@ -2465,8 +2465,8 @@ const EXERCISES = [
       "barbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Hold a solid hip hinge and pull the bar toward your lower ribs.",
-    "description": "Row under control while maintaining a neutral spine. Avoid using excessive torso momentum.",
+    "cue": "Hinge forward with a flat back and row the bar to your belly.",
+    "description": "Stand holding a barbell with an overhand grip, hinge forward until your torso is around 45 degrees with a flat back. Row the bar up to your lower ribs or belly by driving your elbows back, then lower under control. Keep your back flat and don't jerk upright to lift.",
     "avoidIf": [
       "lower-back"
     ],
@@ -2497,8 +2497,8 @@ const EXERCISES = [
       "barbell"
     ],
     "difficulty": "Advanced",
-    "cue": "Reset the bar on the floor before every explosive repetition.",
-    "description": "Pull from a dead stop with a rigid torso. Avoid bouncing the bar between repetitions.",
+    "cue": "From a flat-back position, row the bar off the floor to your chest each rep.",
+    "description": "Hinge over a barbell on the floor with your torso nearly parallel to the ground and back flat. Explosively row the bar to your lower chest, then set it back down fully between reps. Starting from a dead stop each rep builds serious pulling power.",
     "avoidIf": [
       "lower-back"
     ],
@@ -2529,8 +2529,8 @@ const EXERCISES = [
       "barbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Drive your elbows back while keeping your chest proud.",
-    "description": "Pull through a full range of motion before lowering with control. Avoid rounding your spine.",
+    "cue": "Straddle the bar, hinge over, and row the handle to your chest.",
+    "description": "Straddle a landmine-anchored barbell with a V-handle around the loaded end, hinge forward with a flat back. Row the handle up to your chest by driving your elbows back, then lower slowly. The angle lets you load heavy while keeping the mid-back working.",
     "avoidIf": [
       "lower-back"
     ],
@@ -2560,8 +2560,8 @@ const EXERCISES = [
       "barbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Use an underhand grip and a slightly more upright torso.",
-    "description": "Row toward your lower abdomen with control. Avoid excessive body swing.",
+    "cue": "Row an underhand-grip bar to your belly with a more upright torso.",
+    "description": "Hold a barbell with an underhand grip and hinge to about 45 degrees — more upright than a standard row. Row it to your lower belly, squeezing your back, then lower slowly. The underhand grip and upright angle bring in the lower lats.",
     "avoidIf": [
       "lower-back"
     ],
@@ -2590,8 +2590,8 @@ const EXERCISES = [
       "barbell"
     ],
     "difficulty": "Beginner",
-    "cue": "Lift your shoulders straight toward your ears and pause.",
-    "description": "Lower the bar slowly after each repetition. Avoid rolling your shoulders.",
+    "cue": "Hold the bar in front and shrug your shoulders straight up.",
+    "description": "Stand holding a barbell in front of your thighs with an overhand grip. Shrug your shoulders straight up toward your ears, squeeze the traps at the top, then lower slowly. Keep your arms straight and avoid rolling your shoulders.",
     "avoidIf": [
       "neck"
     ],
@@ -2621,8 +2621,8 @@ const EXERCISES = [
       "barbell"
     ],
     "difficulty": "Advanced",
-    "cue": "Keep the bar close and lock out by driving your hips forward.",
-    "description": "Lift from knee height while maintaining a neutral spine. Avoid hyperextending at lockout.",
+    "cue": "From knee height in a rack, drive your hips forward to lock out the bar.",
+    "description": "Set a barbell on rack pins at about knee height. Grip it, brace, and drive your hips forward to stand tall and lock out, then lower it back to the pins. The short range lets you overload the upper back and lockout of the deadlift. Keep your back flat throughout.",
     "avoidIf": [
       "lower-back"
     ],
@@ -2652,8 +2652,8 @@ const EXERCISES = [
       "barbell"
     ],
     "difficulty": "Advanced",
-    "cue": "Brace hard, keep the bar against your legs, and push the floor away.",
-    "description": "Stand tall by extending your hips and knees together before lowering under control. Avoid rounding your lower back throughout the lift.",
+    "cue": "Flat back, drive through the floor, and stand up with the bar close to your body.",
+    "description": "Stand with the barbell over your midfoot, hinge down and grip it just outside your legs with a flat back and chest up. Drive through the floor and stand tall, keeping the bar dragging close to your body, then hinge it back down under control. Never round your lower back — brace hard and keep the bar close.",
     "avoidIf": [
       "lower-back"
     ],
@@ -2686,8 +2686,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Beginner",
-    "cue": "Pull the kettlebell toward your hip while keeping your torso square.",
-    "description": "Move through a controlled range of motion with each repetition. Avoid twisting your shoulders.",
+    "cue": "Brace on a bench and row the kettlebell to your hip.",
+    "description": "Put one knee and hand on a bench with a flat back, holding a kettlebell in the other hand. Row it up to your hip by driving your elbow back, squeezing your back, then lower slowly. Keep your torso still and square to the floor.",
     "avoidIf": [
       "lower-back"
     ],
@@ -2718,8 +2718,8 @@ const EXERCISES = [
       "kettlebell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Alternate rows while maintaining a strong hip hinge.",
-    "description": "Keep one kettlebell grounded while rowing the other. Avoid rotating your torso between repetitions.",
+    "cue": "Kettlebells between your feet, row them up one at a time.",
+    "description": "Stand over two kettlebells, hinge with a flat back, and grab both handles. Row one up to your hip while the other stays down, then alternate. The alternating pull keeps constant tension on your back and challenges your core.",
     "avoidIf": [
       "lower-back"
     ],
@@ -2750,8 +2750,8 @@ const EXERCISES = [
       "cable"
     ],
     "difficulty": "Beginner",
-    "cue": "Pull the bar toward your upper chest while driving your elbows down.",
-    "description": "Control the weight as it returns overhead before repeating. Avoid leaning back excessively to create momentum.",
+    "cue": "Pull the bar down to your upper chest, driving your elbows down.",
+    "description": "Sit at the pulldown station and grip the bar wider than your shoulders, arms straight overhead. Pull it down to your upper chest by driving your elbows down and back, then let it rise under control. Lead with your elbows and keep your chest tall — don't lean way back.",
     "avoidIf": [
       "shoulder"
     ],
@@ -2783,8 +2783,8 @@ const EXERCISES = [
       "cable"
     ],
     "difficulty": "Beginner",
-    "cue": "Use a close handle and pull your elbows toward your sides.",
-    "description": "Focus on squeezing your lats at the bottom position. Avoid turning the movement into a row by leaning too far back.",
+    "cue": "Pull the close handle to your chest, elbows driving straight down.",
+    "description": "Sit at the pulldown with a close or V-grip handle, arms straight overhead. Pull it down to your chest, driving your elbows down toward your sides, then let it rise slowly. The close grip brings in the lower lats and lets you feel a strong squeeze.",
     "avoidIf": [],
     "icon": "🔗",
     "mechanic": "Compound",
@@ -2813,8 +2813,8 @@ const EXERCISES = [
       "cable"
     ],
     "difficulty": "Intermediate",
-    "cue": "Use a wider grip and pull your elbows down toward your ribs.",
-    "description": "Maintain an upright torso while pulling through the back. Avoid pulling the bar behind your neck.",
+    "cue": "Wide grip, pull the bar to your chest driving your elbows down.",
+    "description": "Grip the pulldown bar well wider than your shoulders, arms straight overhead. Pull it down to your upper chest, driving your elbows down and out, then let it rise under control. The wide grip emphasizes the outer lats and back width.",
     "avoidIf": [
       "shoulder",
       "neck"
@@ -2844,8 +2844,8 @@ const EXERCISES = [
       "cable"
     ],
     "difficulty": "Beginner",
-    "cue": "Keep your arms straight and pull the bar toward your thighs.",
-    "description": "Move only through the shoulder joint while keeping your torso stable. Avoid bending your elbows to turn it into a pressdown.",
+    "cue": "Keep your arms straight and push the bar down to your thighs.",
+    "description": "Stand facing a high cable with a bar, arms straight out in front. Keeping your arms straight, pull the bar down in an arc to your thighs using your lats, then return slowly. Only your shoulders move — it isolates the lats without the biceps.",
     "avoidIf": [
       "shoulder"
     ],
@@ -2876,8 +2876,8 @@ const EXERCISES = [
       "cable"
     ],
     "difficulty": "Beginner",
-    "cue": "Pull the handle toward your torso while keeping your chest tall.",
-    "description": "Squeeze your shoulder blades together before returning forward. Avoid rounding your back at the stretch.",
+    "cue": "Sit tall and pull the handle to your belly, squeezing your back.",
+    "description": "Sit at the cable row with your feet braced and a slight bend in your knees, holding the handle with arms straight. Pull it to your belly by driving your elbows back and squeezing your shoulder blades, then return slowly. Keep your torso upright — don't heave with your lower back.",
     "avoidIf": [
       "lower-back"
     ],
@@ -2908,8 +2908,8 @@ const EXERCISES = [
       "cable"
     ],
     "difficulty": "Intermediate",
-    "cue": "Pull one handle toward your hip while resisting rotation.",
-    "description": "Keep your torso stable throughout the movement. Avoid twisting toward the cable stack.",
+    "cue": "Row the low cable handle to your hip, letting your shoulder stretch forward.",
+    "description": "Sit or stand facing a low cable holding a single handle, arm straight and shoulder reaching forward. Pull it to your hip by driving your elbow back and squeezing your back, then return to the stretch. One arm at a time gives a big range and evens out sides.",
     "avoidIf": [
       "lower-back"
     ],
@@ -2939,8 +2939,8 @@ const EXERCISES = [
       "cable"
     ],
     "difficulty": "Beginner",
-    "cue": "Pull the rope toward your face while rotating your hands outward.",
-    "description": "Control the movement and squeeze your upper back. Avoid shrugging your shoulders upward.",
+    "cue": "Pull the rope to your face, hands splitting apart by your ears.",
+    "description": "Set a rope on a high pulley and hold both ends with palms in. Pull it toward your face, splitting your hands apart so they finish beside your ears with elbows high, then return slowly. Fantastic for the rear delts, upper back, and shoulder health.",
     "avoidIf": [
       "shoulder",
       "neck"
@@ -2971,8 +2971,8 @@ const EXERCISES = [
       "cable"
     ],
     "difficulty": "Intermediate",
-    "cue": "Pull the rope or bar down in an arc while keeping your arms mostly straight.",
-    "description": "Focus on lat contraction through the full movement. Avoid bending your elbows excessively.",
+    "cue": "Arms nearly straight, pull the bar down to your thighs with your lats.",
+    "description": "Stand facing a high cable with a bar, arms overhead and slightly bent. Pull the bar down in an arc to your thighs using your lats, then return under control. Keeps constant tension on the lats through a big stretch — think of pushing, not pulling, with straight-ish arms.",
     "avoidIf": [
       "shoulder"
     ],
@@ -3002,8 +3002,8 @@ const EXERCISES = [
       "machine"
     ],
     "difficulty": "Beginner",
-    "cue": "Pull the handles down while keeping your chest lifted.",
-    "description": "Control the return until your arms are extended. Avoid using body momentum to pull the weight.",
+    "cue": "Pull the bar to your upper chest, elbows driving down.",
+    "description": "Sit at the lat pulldown machine, secure your thighs under the pad, and grip the bar wider than your shoulders. Pull it to your upper chest by driving your elbows down, then let it rise under control. A great way to build pull-up strength if you can't do them yet.",
     "avoidIf": [
       "shoulder"
     ],
@@ -3034,8 +3034,8 @@ const EXERCISES = [
       "machine"
     ],
     "difficulty": "Beginner",
-    "cue": "Drive your elbows backward while keeping your chest against the pad.",
-    "description": "Pause briefly when your shoulder blades squeeze together. Avoid rounding forward during the return.",
+    "cue": "Pull the handles to your torso, squeezing your shoulder blades.",
+    "description": "Sit at the row machine with your chest against the pad and grip the handles. Pull them toward your torso by driving your elbows back and squeezing your shoulder blades together, then return slowly. The chest pad keeps your lower back safe and out of it.",
     "avoidIf": [
       "lower-back"
     ],
@@ -3066,8 +3066,8 @@ const EXERCISES = [
       "machine"
     ],
     "difficulty": "Beginner",
-    "cue": "Keep your chest against the pad and pull smoothly.",
-    "description": "Use the support to isolate your back muscles. Avoid lifting your chest away from the pad.",
+    "cue": "Chest on the pad, row the handles back and squeeze.",
+    "description": "Sit at the chest-supported row with your chest firmly on the pad, holding the handles with arms straight. Row them back by driving your elbows behind you and squeezing your shoulder blades, then return slowly. Pure mid-back work with zero cheating.",
     "avoidIf": [],
     "icon": "🏋️",
     "mechanic": "Compound",
@@ -3095,8 +3095,8 @@ const EXERCISES = [
       "machine"
     ],
     "difficulty": "Intermediate",
-    "cue": "Drive the handles back while keeping your shoulders down.",
-    "description": "Control each repetition and squeeze your upper back. Avoid jerking the handles toward you.",
+    "cue": "Chest on the pad, drive the independent handles back.",
+    "description": "Sit at the plate-loaded row with your chest on the pad and grip the handles. Row them back by driving your elbows behind you, squeezing your back, then return slowly. Each arm works on its own, so a weaker side can't hide.",
     "avoidIf": [
       "shoulder"
     ],
@@ -3127,8 +3127,8 @@ const EXERCISES = [
       "machine"
     ],
     "difficulty": "Beginner",
-    "cue": "Pull your chest toward the handles while controlling the assistance.",
-    "description": "Use the machine to practice a full pull-up pattern. Avoid relying entirely on the assistance platform.",
+    "cue": "Kneel on the pad and pull yourself up to the bar.",
+    "description": "Set the assist weight, kneel or stand on the platform, and grip the handles overhead. Pull yourself up until your chin nears the handles, then lower under control. The machine offsets some of your bodyweight so you can groove real pull-up mechanics.",
     "avoidIf": [
       "shoulder"
     ],
@@ -3158,8 +3158,8 @@ const EXERCISES = [
       "machine"
     ],
     "difficulty": "Beginner",
-    "cue": "Extend your torso until your spine reaches neutral alignment.",
-    "description": "Move through a controlled hip hinge pattern. Avoid hyperextending your lower back at the top.",
+    "cue": "Push back against the pad using your lower back and glutes.",
+    "description": "Sit in the back extension machine with the pad against your upper back. Push back by squeezing your lower back and glutes until your torso is in line with your hips, then return under control. Move smoothly — no jerking into a big backbend.",
     "avoidIf": [
       "lower-back"
     ],
@@ -3190,8 +3190,8 @@ const EXERCISES = [
       "resistance-band"
     ],
     "difficulty": "Beginner",
-    "cue": "Pull the band down while driving your elbows toward your ribs.",
-    "description": "Anchor the band overhead and control the return to the starting position. Avoid shrugging your shoulders during the pull.",
+    "cue": "Anchor the band high and pull the ends down to your chest.",
+    "description": "Anchor a band overhead and hold an end in each hand, arms up. Pull them down to your chest by driving your elbows down and back, then let them rise under control. Mimics a lat pulldown anywhere — kneel further back for more tension.",
     "avoidIf": [
       "shoulder"
     ],
@@ -3222,8 +3222,8 @@ const EXERCISES = [
       "resistance-band"
     ],
     "difficulty": "Beginner",
-    "cue": "Pull the band toward your torso while squeezing your shoulder blades.",
-    "description": "Maintain a tall posture and controlled tempo throughout the movement. Avoid leaning backward to create momentum.",
+    "cue": "Anchor the band ahead and row the ends to your belly.",
+    "description": "Anchor a band in front at chest height and hold both ends with straight arms. Row them to your belly by driving your elbows back and squeezing your shoulder blades, then return slowly. Step back for more resistance.",
     "avoidIf": [],
     "icon": "🟢",
     "mechanic": "Compound",
@@ -3252,8 +3252,8 @@ const EXERCISES = [
       "resistance-band"
     ],
     "difficulty": "Beginner",
-    "cue": "Pull the band apart while keeping your arms straight.",
-    "description": "Squeeze your upper back as the band reaches your chest line. Avoid shrugging or arching your lower back.",
+    "cue": "Hold the band out front and pull it apart across your chest.",
+    "description": "Hold a band in front of you at shoulder height with both hands, arms straight. Pull it apart out to your sides until it touches your chest, squeezing your shoulder blades, then return slowly. A simple, powerful fix for rounded posture.",
     "avoidIf": [
       "shoulder"
     ],
@@ -3283,8 +3283,8 @@ const EXERCISES = [
       "resistance-band"
     ],
     "difficulty": "Beginner",
-    "cue": "Pull the band down with straight arms toward your thighs.",
-    "description": "Keep tension on the band throughout the movement. Avoid bending your elbows to compensate.",
+    "cue": "Arms straight, pull the band down to your thighs with your lats.",
+    "description": "Anchor a band overhead and hold the ends with straight arms out in front. Keeping your arms straight, pull them down to your thighs using your lats, then return slowly. Isolates the lats with no biceps involved.",
     "avoidIf": [
       "shoulder"
     ],
@@ -3313,8 +3313,8 @@ const EXERCISES = [
       "resistance-band"
     ],
     "difficulty": "Beginner",
-    "cue": "Pull the band toward your face while rotating your hands outward.",
-    "description": "Keep your elbows high and squeeze your upper back. Avoid pulling only with your arms.",
+    "cue": "Pull the band to your face, hands splitting apart by your ears.",
+    "description": "Anchor a band at head height and hold both ends. Pull it toward your face, splitting your hands apart so they finish by your ears with elbows high, then return slowly. Builds the rear delts and upper back and undoes hunching.",
     "avoidIf": [
       "shoulder",
       "neck"
@@ -3346,8 +3346,8 @@ const EXERCISES = [
       "resistance-band"
     ],
     "difficulty": "Beginner",
-    "cue": "Row one arm at a time while resisting torso rotation.",
-    "description": "Keep your shoulders square throughout each repetition. Avoid turning your body toward the anchor point.",
+    "cue": "Anchor the band ahead and row one end to your hip.",
+    "description": "Anchor a band in front at waist height and hold one end with a straight arm. Row it to your hip by driving your elbow back and squeezing your back, then return to the stretch. Working one arm evens out left-right differences.",
     "avoidIf": [],
     "icon": "🟢",
     "mechanic": "Compound",
@@ -3376,8 +3376,8 @@ const EXERCISES = [
       "trx"
     ],
     "difficulty": "Beginner",
-    "cue": "Keep your body straight and pull your chest toward the handles.",
-    "description": "Adjust your body angle to change difficulty. Avoid letting your hips drop during the row.",
+    "cue": "Lean back on the straps and pull your chest up to your hands.",
+    "description": "Hold the TRX handles and lean back with straight arms and a straight body, heels on the floor. Pull your chest up to your hands by driving your elbows back and squeezing your shoulder blades, then lower under control. Walk your feet forward to make it harder.",
     "avoidIf": [],
     "icon": "〰️",
     "mechanic": "Compound",
@@ -3406,8 +3406,8 @@ const EXERCISES = [
       "trx"
     ],
     "difficulty": "Intermediate",
-    "cue": "Row with one arm while resisting rotation through your torso.",
-    "description": "Maintain a rigid plank position as you pull. Avoid twisting your hips open.",
+    "cue": "Lean back on one strap and row your body up while resisting the twist.",
+    "description": "Hold a single TRX handle in one hand and lean back with a straight arm and body. Pull your chest up to your hand while keeping your shoulders square, then lower under control. One arm forces your core to fight rotation as your back works.",
     "avoidIf": [
       "balance"
     ],
@@ -6952,8 +6952,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Sit your hips down and back while keeping your chest tall.",
-    "description": "Descend until comfortable depth before standing tall. Avoid letting your knees collapse inward.",
+    "cue": "Sit your hips back and down, then stand up through your heels.",
+    "description": "Stand with feet shoulder-width, toes slightly out. Push your hips back and bend your knees to lower until your thighs are about parallel to the floor, keeping your chest up and heels down, then stand back up. Don't let your knees cave inward — push them out over your toes.",
     "avoidIf": [
       "knee"
     ],
@@ -6983,8 +6983,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Pause for two seconds at the bottom before standing.",
-    "description": "Maintain tension during the pause. Avoid relaxing into the bottom position.",
+    "cue": "Squat down, pause two seconds at the bottom, then stand.",
+    "description": "Do a bodyweight squat but hold the bottom position for a full two seconds before standing up. Stay tight and upright through the pause. Removing the bounce builds control and strength out of the hardest part of the squat.",
     "avoidIf": [
       "knee"
     ],
@@ -7013,8 +7013,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Intermediate",
-    "cue": "Lower for three seconds before standing smoothly.",
-    "description": "Control every inch of the descent. Avoid dropping quickly into the bottom.",
+    "cue": "Lower for three seconds, then stand smoothly.",
+    "description": "Squat down slowly over three seconds, then stand back up at a normal pace. The slow descent keeps your legs under tension longer and sharpens your control. Keep your chest tall and heels planted the whole way down.",
     "avoidIf": [
       "knee"
     ],
@@ -7044,8 +7044,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Intermediate",
-    "cue": "Stay near the bottom and perform short controlled pulses.",
-    "description": "Keep tension throughout the set. Avoid standing fully between repetitions.",
+    "cue": "Sink to the bottom and pulse up and down in a small range.",
+    "description": "Lower into a squat, then bounce up and down through the bottom few inches without standing all the way up, keeping constant tension on your quads. After your pulses, stand up. A brutal burnout that torches the thighs.",
     "avoidIf": [
       "knee"
     ],
@@ -7075,8 +7075,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Lower straight down while keeping your front foot planted.",
-    "description": "Push through your front foot to stand. Avoid letting your front knee cave inward.",
+    "cue": "Feet staggered, drop your back knee straight down.",
+    "description": "Stand with one foot forward and one back in a long stance. Bend both knees to lower your back knee straight down toward the floor, keeping your front heel planted, then push back up. Keep your torso upright and most of the weight on your front leg.",
     "avoidIf": [
       "knee",
       "balance"
@@ -7106,8 +7106,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Step forward into each lunge with controlled balance.",
-    "description": "Alternate legs as you move forward. Avoid pushing off the rear foot excessively.",
+    "cue": "Step forward into a lunge, then step through into the next one.",
+    "description": "Step forward with one leg and lower until both knees are bent about 90 degrees, front knee over your ankle. Push through your front heel to stand and step straight into the next lunge with the other leg. Keep your chest tall and take controlled, balanced steps.",
     "avoidIf": [
       "knee",
       "balance"
@@ -7138,8 +7138,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Step forward and lower under control.",
-    "description": "Drive back to the starting position through the front leg. Avoid collapsing the knee inward.",
+    "cue": "Step forward, drop into a lunge, then push back to standing.",
+    "description": "Step one foot forward and lower until both knees are bent about 90 degrees, keeping your chest up. Push through your front heel to step back to standing, then repeat. Don't let your front knee cave in or shoot way past your toes.",
     "avoidIf": [
       "knee",
       "balance"
@@ -7169,8 +7169,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Step backward into the lunge while keeping your torso upright.",
-    "description": "Return by driving through the front heel. Avoid wobbling during the step.",
+    "cue": "Step backward and drop into a lunge, then return.",
+    "description": "Step one foot straight back and lower until both knees are bent about 90 degrees, front heel planted. Push through your front heel to step back to standing. Stepping back is easier on the knees than forward lunges and keeps you more balanced.",
     "avoidIf": [
       "knee",
       "balance"
@@ -7200,8 +7200,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Intermediate",
-    "cue": "Step diagonally behind your body before lowering.",
-    "description": "Keep your hips facing forward throughout. Avoid twisting your knees.",
+    "cue": "Step one foot back and across behind the other, then lunge down.",
+    "description": "From standing, step one foot back and diagonally behind the other, then bend both knees to lower into a curtsy. Push through your front heel to return. Keep your hips square and chest tall — it hits the quads plus the side glutes.",
     "avoidIf": [
       "knee",
       "balance",
@@ -7232,8 +7232,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Advanced",
-    "cue": "Shift your weight fully to one side while keeping the other leg straight.",
-    "description": "Descend only as deep as your mobility allows. Avoid collapsing through the planted knee.",
+    "cue": "Shift your weight down over one bent leg, the other straight out to the side.",
+    "description": "Stand with a very wide stance. Shift your weight over to one side, bending that knee deeply while the other leg stays straight with the toes up, then push back to center and switch sides. Great for leg strength and hip mobility — go only as low as you can control.",
     "avoidIf": [
       "knee",
       "balance",
@@ -7263,8 +7263,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Advanced",
-    "cue": "Lean backward while driving your knees forward under control.",
-    "description": "Maintain a straight body line throughout. Avoid dropping quickly into the stretch.",
+    "cue": "Rise onto your toes and lean back, bending your knees forward and down.",
+    "description": "Hold something for balance, rise onto the balls of your feet, and lean your torso back as you bend your knees forward and down toward the floor. Push back up to standing. It stretches and blasts the quads hard — go slow and only as far as your knees allow.",
     "avoidIf": [
       "knee",
       "balance"
@@ -7292,8 +7292,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Press your back into the wall and hold a seated position.",
-    "description": "Maintain even pressure through both feet. Avoid letting your hips rise.",
+    "cue": "Slide down a wall until your thighs are level and hold.",
+    "description": "Lean your back against a wall and slide down until your thighs are parallel to the floor, knees bent 90 degrees. Hold that position, keeping your back flat against the wall and weight in your heels. Your quads will be burning — build up your hold time.",
     "avoidIf": [
       "knee"
     ],
@@ -7322,8 +7322,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Intermediate",
-    "cue": "Alternate lifting one foot while maintaining the wall sit.",
-    "description": "Keep your hips level throughout the movement. Avoid rocking side to side.",
+    "cue": "Hold a wall sit and lift one foot at a time.",
+    "description": "Get into a wall sit with thighs level. Keeping your hips down, slowly lift one foot off the floor, lower it, then the other, like marching. The lifting adds a balance and single-leg challenge on top of the quad burn.",
     "avoidIf": [
       "knee",
       "balance"
@@ -7353,8 +7353,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Advanced",
-    "cue": "Keep one leg extended while lowering under full control.",
-    "description": "Use your full foot for balance throughout the movement. Avoid collapsing into the knee.",
+    "cue": "Squat all the way down on one leg with the other extended forward.",
+    "description": "Stand on one leg with the other held straight out in front. Sit back and down on the standing leg until you're at the bottom, keeping the free leg off the floor, then drive back up. It demands serious strength, balance, and mobility — hold support to progress toward it.",
     "avoidIf": [
       "knee",
       "balance"
@@ -7385,8 +7385,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Advanced",
-    "cue": "Hold your rear foot while lowering on one leg.",
-    "description": "Move slowly through the full range of motion. Avoid twisting your hips.",
+    "cue": "Hold one foot behind you and squat down on the other leg.",
+    "description": "Stand on one leg and grab the other foot behind you. Squat down on the standing leg until your back knee nears the floor, then drive back up. An advanced single-leg squat that hammers the quad and tests balance — use support while you learn it.",
     "avoidIf": [
       "knee",
       "balance"
@@ -7416,8 +7416,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Advanced",
-    "cue": "Lower onto one leg while keeping the rear leg behind you.",
-    "description": "Maintain balance throughout the movement. Avoid dropping your rear knee abruptly.",
+    "cue": "Balance on one leg and lower your back knee toward the floor.",
+    "description": "Stand on one leg with the other bent behind you. Hinge and squat down to lightly tap your back knee to the floor, keeping your standing shin fairly vertical, then drive back up. A great pistol-squat alternative that's a bit friendlier on the knee.",
     "avoidIf": [
       "knee",
       "balance"
@@ -7448,8 +7448,8 @@ const EXERCISES = [
       "box"
     ],
     "difficulty": "Intermediate",
-    "cue": "Jump softly onto the box and land with bent knees.",
-    "description": "Step down between repetitions when possible. Avoid landing with locked knees.",
+    "cue": "Dip, swing your arms, and jump onto the box landing soft.",
+    "description": "Stand facing a sturdy box. Dip down slightly, swing your arms, and jump up to land softly on top with both feet and bent knees. Stand tall, then step down one foot at a time. Land quietly and always step down — don't jump off the box.",
     "avoidIf": [
       "knee",
       "high-impact"
@@ -7479,8 +7479,8 @@ const EXERCISES = [
       "box"
     ],
     "difficulty": "Beginner",
-    "cue": "Drive through the elevated foot without pushing off the trailing leg.",
-    "description": "Stand fully before stepping back down. Avoid using momentum.",
+    "cue": "Step onto the box and drive up through that heel.",
+    "description": "Stand facing a box. Place one whole foot on it and drive up through that heel to stand tall on the box, then step back down under control. Keep your torso upright and push mostly with the top leg — don't bounce off the bottom foot.",
     "avoidIf": [
       "knee",
       "balance"
@@ -7510,8 +7510,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Beginner",
-    "cue": "Hold one dumbbell at chest height and squat between your knees.",
-    "description": "Keep your torso tall and elbows close to your body. Avoid letting your heels lift off the floor.",
+    "cue": "Hold a dumbbell at your chest and squat down between your knees.",
+    "description": "Hold one dumbbell vertically against your chest with both hands. Squat down, pushing your knees out and keeping your chest tall, until your elbows tuck between your knees, then stand up. Holding the weight in front helps you stay upright and squat deeper.",
     "avoidIf": [
       "knee"
     ],
@@ -7541,8 +7541,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Beginner",
-    "cue": "Hold dumbbells at your sides and squat with control.",
-    "description": "Drive through your whole foot to stand tall. Avoid collapsing your knees inward.",
+    "cue": "Hold dumbbells at your sides and squat down and up.",
+    "description": "Stand holding a dumbbell in each hand at your sides, feet shoulder-width. Push your hips back and squat until your thighs are about parallel, keeping your chest up and heels down, then stand. Let the weights hang naturally at your sides.",
     "avoidIf": [
       "knee"
     ],
@@ -7573,8 +7573,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Rack the dumbbells on your shoulders and keep your elbows high.",
-    "description": "Maintain an upright torso throughout the lift. Avoid rounding your upper back.",
+    "cue": "Rest the dumbbells on your shoulders and squat tall.",
+    "description": "Hold a dumbbell on each shoulder, elbows up. Squat straight down keeping your chest and elbows high, then stand up. The front-loaded weight keeps you upright and shifts the emphasis onto the quads.",
     "avoidIf": [
       "knee"
     ],
@@ -7603,8 +7603,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Raise your heels slightly and keep your knees tracking forward.",
-    "description": "Stay upright while emphasizing knee flexion. Avoid bouncing from the bottom.",
+    "cue": "Heels on a small raise, squat deep with a dumbbell at your chest.",
+    "description": "Put your heels on a small plate or wedge and hold a dumbbell at your chest. Squat straight down as deep as you comfortably can, then stand. Raising your heels lets you stay more upright and reach a deeper squat that really targets the quads.",
     "avoidIf": [
       "knee"
     ],
@@ -7634,8 +7634,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Rest your rear foot on a bench and lower straight down.",
-    "description": "Drive through your front foot to stand. Avoid leaning excessively forward.",
+    "cue": "Back foot on a bench, drop straight down on your front leg.",
+    "description": "Stand a stride in front of a bench and rest the top of your back foot on it, holding dumbbells at your sides. Lower straight down by bending your front knee until your back knee nears the floor, then drive up through your front heel. Keep your torso tall and weight on the front leg.",
     "avoidIf": [
       "knee",
       "balance"
@@ -7666,8 +7666,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Beginner",
-    "cue": "Hold dumbbells at your sides while lowering vertically.",
-    "description": "Keep your front heel planted throughout the movement. Avoid wobbling side to side.",
+    "cue": "Feet staggered, dumbbells at your sides, drop your back knee down.",
+    "description": "Stand with one foot forward and one back, holding dumbbells at your sides. Bend both knees to lower your back knee toward the floor, keeping your front heel down, then push back up. Both feet stay planted the whole set — only your knees move.",
     "avoidIf": [
       "knee",
       "balance"
@@ -7697,8 +7697,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Carry dumbbells while taking controlled forward steps.",
-    "description": "Push through the front heel each repetition. Avoid rushing your stride.",
+    "cue": "Hold dumbbells and step forward into lunges across the floor.",
+    "description": "Hold a dumbbell in each hand at your sides. Step forward into a lunge until both knees are bent about 90 degrees, then push through your front heel and step straight into the next lunge. Keep your chest tall and steps controlled.",
     "avoidIf": [
       "knee",
       "balance"
@@ -7729,8 +7729,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Beginner",
-    "cue": "Step backward while keeping dumbbells stable at your sides.",
-    "description": "Drive upward through the front leg. Avoid shifting your weight onto the rear foot.",
+    "cue": "Dumbbells at your sides, step back into a lunge, then return.",
+    "description": "Hold dumbbells at your sides and step one foot straight back, lowering until both knees are bent about 90 degrees. Push through your front heel to return to standing. Stepping back keeps you stable and is easier on the knees.",
     "avoidIf": [
       "knee",
       "balance"
@@ -7760,8 +7760,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Beginner",
-    "cue": "Step forward under control while carrying dumbbells.",
-    "description": "Lower until both knees are comfortably bent. Avoid pushing off your rear foot.",
+    "cue": "Dumbbells at your sides, step forward and drop into a lunge.",
+    "description": "Hold dumbbells at your sides and step one foot forward, lowering until both knees bend about 90 degrees, chest tall. Push through your front heel to step back to standing. Control the step so your front knee stays over your ankle.",
     "avoidIf": [
       "knee",
       "balance"
@@ -7792,8 +7792,8 @@ const EXERCISES = [
       "box"
     ],
     "difficulty": "Intermediate",
-    "cue": "Drive through the elevated foot without jumping.",
-    "description": "Stand completely before stepping back down. Avoid pushing off the trailing leg.",
+    "cue": "Dumbbells at your sides, step onto the box and drive up.",
+    "description": "Hold dumbbells at your sides and face a box. Place one whole foot on it and drive up through that heel to stand on top, then step back down under control. Push mostly with the top leg rather than bouncing off the floor.",
     "avoidIf": [
       "knee",
       "balance"
@@ -7823,8 +7823,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Cross one leg behind while holding dumbbells at your sides.",
-    "description": "Keep your torso upright throughout the movement. Avoid twisting through the knees.",
+    "cue": "Dumbbells at your sides, step one foot back and across, then lunge.",
+    "description": "Hold dumbbells at your sides. Step one foot back and diagonally behind the other, bending both knees into a curtsy, then push through your front heel to return. Keep your hips square. Works the quads and side glutes.",
     "avoidIf": [
       "knee",
       "balance",
@@ -7855,8 +7855,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Advanced",
-    "cue": "Hold a dumbbell at your chest while shifting side to side.",
-    "description": "Descend only as far as mobility allows. Avoid collapsing into the planted knee.",
+    "cue": "Wide stance, shift down over one bent leg holding a dumbbell.",
+    "description": "Stand very wide holding a dumbbell at your chest. Shift your weight over one side, bending that knee deeply while the other leg stays straight, then push back to center and switch. Go as low as you can control — it builds legs and hip mobility.",
     "avoidIf": [
       "knee",
       "balance",
@@ -7888,8 +7888,8 @@ const EXERCISES = [
       "kettlebell"
     ],
     "difficulty": "Beginner",
-    "cue": "Hold the kettlebell at chest height throughout the squat.",
-    "description": "Keep your elbows tucked close to your body. Avoid letting your chest collapse.",
+    "cue": "Hold a kettlebell at your chest and squat between your knees.",
+    "description": "Hold a kettlebell by the horns against your chest. Squat straight down, pushing your knees out and keeping your chest tall, then stand up. The front-held bell keeps you upright and lets you squat deep — a great squat to learn the pattern with.",
     "avoidIf": [
       "knee"
     ],
@@ -7919,8 +7919,8 @@ const EXERCISES = [
       "kettlebell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Rack the kettlebells and maintain high elbows.",
-    "description": "Keep your torso upright through the entire lift. Avoid rounding forward.",
+    "cue": "Kettlebell in the rack position, squat tall.",
+    "description": "Hold a kettlebell in the rack position against your chest and shoulder, elbow tucked. Squat straight down keeping your chest up, then stand. The front-rack load keeps you upright and hammers the quads and core.",
     "avoidIf": [
       "knee"
     ],
@@ -7949,8 +7949,8 @@ const EXERCISES = [
       "kettlebell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Carry kettlebells while lowering under control.",
-    "description": "Maintain a stable torso throughout the movement. Avoid collapsing the front knee.",
+    "cue": "Hold a kettlebell and lunge forward or back.",
+    "description": "Hold a kettlebell at your chest or one at your side. Step into a lunge until both knees are bent about 90 degrees, then push through your front heel to return. Keep your torso tall and control the descent.",
     "avoidIf": [
       "knee",
       "balance"
@@ -7981,8 +7981,8 @@ const EXERCISES = [
       "box"
     ],
     "difficulty": "Intermediate",
-    "cue": "Step onto the box under control while carrying kettlebells.",
-    "description": "Drive through the lead leg to stand fully. Avoid pushing off the trailing foot.",
+    "cue": "Hold a kettlebell, step onto the box, and drive up.",
+    "description": "Hold a kettlebell at your chest or side and face a box. Place one whole foot on it and drive up through that heel to stand tall, then step back down under control. Lead with the top leg rather than pushing off the floor.",
     "avoidIf": [
       "knee",
       "balance"
@@ -8012,8 +8012,8 @@ const EXERCISES = [
       "kettlebell"
     ],
     "difficulty": "Advanced",
-    "cue": "Rack both kettlebells securely before squatting.",
-    "description": "Brace your core throughout the lift. Avoid allowing the bells to pull you forward.",
+    "cue": "Two kettlebells in the rack, squat deep and stand.",
+    "description": "Hold a kettlebell in the rack position on each shoulder, elbows tucked. Squat straight down keeping your chest and elbows up, then drive back to standing. The double front-rack load is a serious quad and core challenge — keep your torso tall.",
     "avoidIf": [
       "knee"
     ],
@@ -8042,8 +8042,8 @@ const EXERCISES = [
       "kettlebell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Step backward while maintaining a tall torso.",
-    "description": "Drive upward through the front leg. Avoid shifting weight onto the rear foot.",
+    "cue": "Hold a kettlebell and step back into a lunge.",
+    "description": "Hold a kettlebell at your chest or side and step one foot straight back, lowering until both knees bend about 90 degrees. Push through your front heel to return. The back step keeps you balanced and knee-friendly.",
     "avoidIf": [
       "knee",
       "balance"
@@ -8074,8 +8074,8 @@ const EXERCISES = [
       "barbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Brace your core and squat with the bar across your upper back.",
-    "description": "Drive through your feet while maintaining a stable torso. Avoid letting your knees collapse inward.",
+    "cue": "Bar on your upper back, sit down between your heels, then stand.",
+    "description": "Rest a barbell across your upper back, brace, and stand with feet shoulder-width. Push your hips back and bend your knees to squat until your thighs are at least parallel, keeping your chest up and heels down, then drive up. Keep your knees tracking over your toes and your back flat.",
     "avoidIf": [
       "knee"
     ],
@@ -8106,8 +8106,8 @@ const EXERCISES = [
       "barbell"
     ],
     "difficulty": "Advanced",
-    "cue": "Keep the bar racked on your shoulders while maintaining an upright torso.",
-    "description": "Control the descent and drive upward through your feet. Avoid dropping your elbows.",
+    "cue": "Bar on your front shoulders, elbows high, squat tall.",
+    "description": "Rest the barbell across your front shoulders with your elbows up and hands lightly supporting it. Squat straight down keeping your elbows and chest high, then stand. The front-loaded position forces an upright torso and targets the quads. Keep those elbows up — if they drop, the bar rolls forward.",
     "avoidIf": [
       "knee"
     ],
@@ -8138,8 +8138,8 @@ const EXERCISES = [
       "box"
     ],
     "difficulty": "Intermediate",
-    "cue": "Squat back to the box before driving upward.",
-    "description": "Use the box as a depth target without relaxing fully. Avoid bouncing off the surface.",
+    "cue": "Squat back to lightly touch a box, then stand.",
+    "description": "Set up a back squat over a box or bench set at about parallel height. Squat back and down until you lightly touch the box, stay tight, then drive up without fully relaxing. The box teaches consistent depth and builds power out of the bottom.",
     "avoidIf": [
       "knee"
     ],
@@ -8169,8 +8169,8 @@ const EXERCISES = [
       "barbell"
     ],
     "difficulty": "Advanced",
-    "cue": "Pause at the bottom before driving back upward.",
-    "description": "Maintain tension during the pause. Avoid losing your brace before the ascent.",
+    "cue": "Squat to the bottom, pause two seconds, then drive up.",
+    "description": "Do a barbell back squat but hold the bottom for a full two seconds before standing. Stay braced and tight through the pause so you don't sink or shift. It builds strength and control right out of the hardest position.",
     "avoidIf": [
       "knee"
     ],
@@ -8200,8 +8200,8 @@ const EXERCISES = [
       "barbell"
     ],
     "difficulty": "Advanced",
-    "cue": "Hold the bar in your elbow crease and squat upright.",
-    "description": "Brace your torso and control the descent. Avoid letting the bar pull you forward.",
+    "cue": "Hold the bar in the crooks of your elbows and squat tall.",
+    "description": "Hold a barbell cradled in the crooks of your elbows against your body. Squat straight down keeping your chest up and elbows in, then stand. The front-cradle position hammers the quads, upper back, and core. Pad the bar — it digs into your arms.",
     "avoidIf": [
       "knee"
     ],
@@ -8231,8 +8231,8 @@ const EXERCISES = [
       "barbell"
     ],
     "difficulty": "Advanced",
-    "cue": "Hold the bar overhead while squatting with control.",
-    "description": "Maintain shoulder stability and a strong brace. Avoid losing the overhead position.",
+    "cue": "Hold the bar locked out overhead and squat under control.",
+    "description": "Hold a barbell locked out overhead with a wide grip, arms straight. Squat straight down while keeping the bar stacked over your midfoot, then stand. It demands full-body mobility and control — start with just the bar or a dowel to learn it.",
     "avoidIf": [
       "knee",
       "shoulder",
@@ -8264,8 +8264,8 @@ const EXERCISES = [
       "barbell"
     ],
     "difficulty": "Advanced",
-    "cue": "Lower vertically while supporting the bar across your shoulders.",
-    "description": "Keep your front foot planted throughout. Avoid shifting your hips sideways.",
+    "cue": "Bar on your back, feet staggered, drop your back knee down.",
+    "description": "Rest a barbell on your upper back and stand with one foot forward, one back. Bend both knees to lower your back knee toward the floor, keeping your front heel planted, then drive back up. The bar adds load to a strict single-leg movement — stay tall and balanced.",
     "avoidIf": [
       "knee",
       "balance"
@@ -8295,8 +8295,8 @@ const EXERCISES = [
       "machine"
     ],
     "difficulty": "Beginner",
-    "cue": "Press the platform away while keeping your feet stable.",
-    "description": "Lower under control before pressing back up. Avoid locking your knees forcefully.",
+    "cue": "Push the platform away through your heels, don't lock your knees hard.",
+    "description": "Sit in the leg press with your feet shoulder-width on the platform. Lower it by bending your knees toward your chest until they're about 90 degrees, then press it back up through your heels without slamming your knees straight. Keep your lower back flat against the pad.",
     "avoidIf": [
       "knee"
     ],
@@ -8326,8 +8326,8 @@ const EXERCISES = [
       "machine"
     ],
     "difficulty": "Intermediate",
-    "cue": "Lower the sled while keeping your back supported.",
-    "description": "Drive through your feet to extend the knees. Avoid lifting your heels.",
+    "cue": "Shoulders under the pads, squat down and drive up.",
+    "description": "Load into the hack squat machine with your shoulders under the pads and feet on the platform. Bend your knees to lower until your thighs are at least parallel, then drive back up through your heels. The back support lets you load the quads heavily and safely.",
     "avoidIf": [
       "knee"
     ],
@@ -8354,8 +8354,8 @@ const EXERCISES = [
       "machine"
     ],
     "difficulty": "Beginner",
-    "cue": "Extend your knees until your legs are straight.",
-    "description": "Use controlled repetitions and avoid swinging the weight. Avoid snapping the knees at lockout.",
+    "cue": "Straighten your legs against the pad, then lower slowly.",
+    "description": "Sit in the leg extension machine with the pad on your shins, ankles behind it. Straighten your legs to lift the pad, squeezing your quads at the top, then lower slowly. Don't swing or slam it — a controlled squeeze isolates the quads.",
     "avoidIf": [
       "knee"
     ],
@@ -8384,8 +8384,8 @@ const EXERCISES = [
       "machine"
     ],
     "difficulty": "Intermediate",
-    "cue": "Squat through a guided machine path while keeping your torso stable.",
-    "description": "Control the bottom position before driving upward. Avoid rushing the movement.",
+    "cue": "Belt on your hips, squat down and drive up hands-free.",
+    "description": "Strap the belt around your hips in the belt-squat machine and stand on the platform. Squat down until your thighs are parallel, then drive up through your heels. Loading the hips instead of your back is gentle on the spine while smashing the quads.",
     "avoidIf": [
       "knee"
     ],
@@ -8414,8 +8414,8 @@ const EXERCISES = [
       "machine"
     ],
     "difficulty": "Beginner",
-    "cue": "Squat along the guided bar path with your feet positioned comfortably.",
-    "description": "Maintain control throughout the movement. Avoid relying entirely on the machine path.",
+    "cue": "Bar on your back in the Smith, squat straight down and up.",
+    "description": "Set a Smith machine bar across your upper back and stand with feet slightly forward. Squat straight down until your thighs are parallel, then drive up. The fixed bar path removes the balance element, making it a beginner-friendly way to load squats.",
     "avoidIf": [
       "knee"
     ],
@@ -8445,8 +8445,8 @@ const EXERCISES = [
       "resistance-band"
     ],
     "difficulty": "Beginner",
-    "cue": "Squat while maintaining tension from the resistance band.",
-    "description": "Keep constant tension through the movement. Avoid letting the knees cave inward.",
+    "cue": "Stand on the band, hold the ends up, and squat against it.",
+    "description": "Stand on the middle of a band and hold the ends at your shoulders. Squat down until your thighs are about parallel, then stand up against the band's pull. The band resists most as you stand, making the top of the squat the hardest part.",
     "avoidIf": [
       "knee"
     ],
@@ -8476,8 +8476,8 @@ const EXERCISES = [
       "resistance-band"
     ],
     "difficulty": "Intermediate",
-    "cue": "Perform a lunge while resisting the band's pull.",
-    "description": "Keep your front foot stable throughout. Avoid losing alignment through the knee.",
+    "cue": "Stand on the band and lunge against its resistance.",
+    "description": "Stand on a band with your front foot and hold the ends at your shoulders. Lunge down until both knees bend about 90 degrees, then push back up against the band. Adds resistance to the lunge with no weights.",
     "avoidIf": [
       "knee",
       "balance"
@@ -8508,8 +8508,8 @@ const EXERCISES = [
       "trx"
     ],
     "difficulty": "Beginner",
-    "cue": "Use the straps for balance while squatting under control.",
-    "description": "Keep your feet planted and chest tall. Avoid pulling yourself upward with the straps.",
+    "cue": "Hold the straps for balance and squat down and up.",
+    "description": "Hold the TRX handles with light tension, feet shoulder-width. Squat down as deep as you comfortably can, using the straps only for balance (not to pull yourself up), then stand. Great for learning squat depth and form with a little support.",
     "avoidIf": [
       "knee"
     ],
@@ -8539,8 +8539,8 @@ const EXERCISES = [
       "trx"
     ],
     "difficulty": "Advanced",
-    "cue": "Use the straps for assistance while lowering on one leg.",
-    "description": "Control the descent and maintain balance. Avoid relying entirely on the straps.",
+    "cue": "Hold the straps and squat down on one leg, using them for balance.",
+    "description": "Hold the TRX handles and stand on one leg with the other out in front. Lower into a single-leg squat, using the straps for just enough support to control the descent, then drive back up. A smart way to build toward a full pistol squat.",
     "avoidIf": [
       "knee",
       "balance"
@@ -9672,8 +9672,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Drive through your feet and squeeze your glutes to lift your hips.",
-    "description": "Keep your ribs down and hips level at the top. Avoid arching through your lower back.",
+    "cue": "Lie on your back and drive your hips up by squeezing your glutes.",
+    "description": "Lie on your back with knees bent and feet flat, hip-width apart. Drive through your heels to lift your hips until your body forms a straight line from knees to shoulders, squeezing your glutes hard at the top, then lower slowly. Push with your glutes, not your lower back.",
     "avoidIf": [],
     "icon": "🍑",
     "mechanic": "Isolation",
@@ -9701,8 +9701,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Intermediate",
-    "cue": "Lift your hips while driving through one planted foot.",
-    "description": "Keep your pelvis level throughout the movement. Avoid rotating your hips.",
+    "cue": "Bridge up driving through one heel, other leg extended.",
+    "description": "Lie on your back with one knee bent, foot flat, and the other leg straight out. Drive through the planted heel to lift your hips, squeezing that glute, then lower slowly. Keep your hips level — don't let the raised-leg side dip.",
     "avoidIf": [
       "balance"
     ],
@@ -9733,8 +9733,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Intermediate",
-    "cue": "Hold a bridge position while alternating knee lifts.",
-    "description": "Keep your hips steady while marching. Avoid dropping your pelvis side to side.",
+    "cue": "Hold a bridge up top and lift one knee at a time without dropping your hips.",
+    "description": "Lift into a glute bridge and hold it. Keeping your hips high and level, slowly lift one knee toward your chest, lower it, then the other — like marching. The challenge is keeping your hips from sagging or twisting as each leg lifts.",
     "avoidIf": [
       "balance"
     ],
@@ -9764,8 +9764,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Beginner",
-    "cue": "Rest your shoulders on a bench and drive your hips upward.",
-    "description": "Squeeze your glutes fully at the top. Avoid hyperextending your lower back.",
+    "cue": "Shoulders on the bench, drive your hips up and squeeze.",
+    "description": "Sit on the floor with your upper back against a bench, knees bent and feet flat. Drive through your heels to lift your hips until your thighs are level, squeezing your glutes hard, then lower slowly. Tuck your chin and keep your ribs down so your back doesn't arch.",
     "avoidIf": [],
     "icon": "🍑",
     "mechanic": "Isolation",
@@ -9793,8 +9793,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Drive through one foot while lifting your hips.",
-    "description": "Keep your working knee aligned throughout. Avoid twisting your pelvis.",
+    "cue": "Back on the bench, thrust up on one leg with the other extended.",
+    "description": "Rest your upper back on a bench with one foot planted and the other leg extended. Drive through the planted heel to lift your hips level, squeezing that glute, then lower slowly. Keep your hips square — don't let the free-leg side drop.",
     "avoidIf": [
       "balance"
     ],
@@ -9822,8 +9822,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Place your feet together and drive your hips upward.",
-    "description": "Focus on glute contraction at the top. Avoid using momentum from your lower back.",
+    "cue": "Soles of your feet together, knees out, and pump your hips up.",
+    "description": "Lie on your back, put the soles of your feet together and let your knees fall out wide. Drive your hips up by squeezing your glutes, then lower. The frog position turns your feet out so the glutes do the work with almost no quad or hamstring help.",
     "avoidIf": [],
     "icon": "🐸",
     "mechanic": "Isolation",
@@ -9851,8 +9851,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Use a frog-leg position while lifting your hips.",
-    "description": "Keep your core engaged during the lift. Avoid arching your lower back.",
+    "cue": "Feet together, knees wide, lift and hold the bridge.",
+    "description": "Lie on your back with the soles of your feet together and knees dropped out wide. Lift your hips by squeezing your glutes and hold briefly at the top, then lower slowly. A great glute activator that isolates them through the frog stance.",
     "avoidIf": [],
     "icon": "🐸",
     "mechanic": "Isolation",
@@ -9879,8 +9879,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Drive one heel upward while keeping your knee bent.",
-    "description": "Keep your hips square during the movement. Avoid rotating your torso.",
+    "cue": "On all fours, kick one heel toward the ceiling, knee bent.",
+    "description": "Start on all fours. Keeping your knee bent 90 degrees, kick one foot up toward the ceiling by squeezing that glute until your thigh is level with your body, then lower under control. Keep your back flat and hips square — don't twist to lift higher.",
     "avoidIf": [],
     "icon": "🦵",
     "mechanic": "Isolation",
@@ -9908,8 +9908,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Extend one leg behind you from a hands-and-knees position.",
-    "description": "Move slowly and keep your spine neutral. Avoid swinging the leg.",
+    "cue": "On all fours, press one straight leg back and up.",
+    "description": "Start on all fours. Extend one leg straight back and lift it to hip height by squeezing your glute, then lower under control. Keep your core braced and your lower back flat so the glute does the work, not your spine.",
     "avoidIf": [],
     "icon": "🦵",
     "mechanic": "Isolation",
@@ -9936,8 +9936,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Lift your bent knee out to the side.",
-    "description": "Keep your hips stable during the movement. Avoid shifting your weight.",
+    "cue": "On all fours, lift one bent knee out to the side.",
+    "description": "Start on all fours with knees bent. Lift one knee out to the side, keeping the bend, until your thigh is about level, then lower under control. Keep your torso still — don't rock onto the other side to swing it up. Hits the side glutes.",
     "avoidIf": [],
     "icon": "🐕",
     "mechanic": "Isolation",
@@ -9963,8 +9963,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Rotate your top knee upward while keeping your feet together.",
-    "description": "Control the rotation with your hip muscles. Avoid rolling your pelvis backward.",
+    "cue": "Lie on your side, knees bent, and open your top knee like a clam.",
+    "description": "Lie on your side with your knees bent and stacked, feet together. Keeping your feet touching and hips still, lift your top knee up and open, then lower slowly. Don't let your hips roll back — the movement comes purely from the side glute.",
     "avoidIf": [],
     "icon": "🦪",
     "mechanic": "Isolation",
@@ -9990,8 +9990,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Lift your top leg upward while lying on your side.",
-    "description": "Keep your toes facing forward during the lift. Avoid rotating your hip open.",
+    "cue": "Lie on your side and raise your top straight leg up.",
+    "description": "Lie on your side with your legs straight and stacked. Raise the top leg up toward the ceiling, leading with your heel, then lower slowly. Keep your toes pointing forward, not up, so the side glute does the lifting rather than the hip flexor.",
     "avoidIf": [],
     "icon": "🦵",
     "mechanic": "Isolation",
@@ -10018,8 +10018,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Lift one leg out to the side while standing tall.",
-    "description": "Maintain upright posture during the movement. Avoid leaning away from the working leg.",
+    "cue": "Stand tall and lift one straight leg out to the side.",
+    "description": "Stand tall holding something for balance. Lift one straight leg out to the side as far as you comfortably can, keeping your torso upright, then lower under control. Don't lean away to swing it higher — small and strict works the side glute best.",
     "avoidIf": [
       "balance"
     ],
@@ -10048,8 +10048,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Intermediate",
-    "cue": "Hold a curtsy position and squeeze the glute of the standing leg.",
-    "description": "Stay controlled in the hold position. Avoid collapsing the knee inward.",
+    "cue": "Step into a curtsy lunge and hold, squeezing the front glute.",
+    "description": "Step one foot back and across behind the other into a curtsy lunge, then hold near the bottom and squeeze the front glute. Keep your chest tall and hips square. The isometric hold builds control and lights up the side and rear glute.",
     "avoidIf": [
       "knee",
       "balance"
@@ -10079,8 +10079,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Lie supported and lift your legs behind you using your hips.",
-    "description": "Squeeze your glutes at the top of the movement. Avoid swinging your legs.",
+    "cue": "Lie face-down over a bench and lift your straight legs up.",
+    "description": "Lie face-down on a bench with your hips at the edge and legs hanging down, holding the bench for support. Lift your straight legs up behind you by squeezing your glutes until level with your body, then lower slowly. Great for the glutes and lower back — keep the movement controlled.",
     "avoidIf": [
       "lower-back"
     ],
@@ -10109,8 +10109,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Intermediate",
-    "cue": "Lift one leg while holding a plank position.",
-    "description": "Keep your hips level and core engaged. Avoid rotating your body.",
+    "cue": "In a plank, lift one straight leg up without arching your back.",
+    "description": "Hold a forearm plank with a tight core. Lift one straight leg a few inches by squeezing that glute, hold briefly, then lower and switch. Keep your hips level and back flat — the lift is small; the glute and core work is the point.",
     "avoidIf": [],
     "icon": "🔥",
     "mechanic": "Compound",
@@ -10138,8 +10138,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Beginner",
-    "cue": "Place a dumbbell across your hips and drive upward through your feet.",
-    "description": "Squeeze your glutes fully at the top while keeping your spine neutral. Avoid arching your lower back.",
+    "cue": "Dumbbell on your hips, back on the bench, thrust up and squeeze.",
+    "description": "Rest your upper back on a bench with a dumbbell held across your hips, feet flat. Drive through your heels to lift your hips until your thighs are level, squeezing your glutes, then lower slowly. Keep your chin tucked and ribs down to protect your back.",
     "avoidIf": [],
     "icon": "🍑",
     "mechanic": "Compound",
@@ -10167,8 +10167,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Beginner",
-    "cue": "Hold a dumbbell on your hips while lifting into a bridge.",
-    "description": "Maintain tension through your glutes throughout the movement. Avoid pushing through your lower back.",
+    "cue": "Dumbbell on your hips, bridge up by squeezing your glutes.",
+    "description": "Lie on your back with knees bent and a dumbbell held across your hips. Drive through your heels to lift your hips into a straight line, squeezing your glutes, then lower slowly. The weight adds resistance right where the glutes work hardest.",
     "avoidIf": [],
     "icon": "🍑",
     "mechanic": "Isolation",
@@ -10193,8 +10193,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Beginner",
-    "cue": "Hold a dumbbell on your hips and pump from a frog-leg position.",
-    "description": "Focus on repeated glute contractions. Avoid using momentum from your torso.",
+    "cue": "Feet together, knees wide, pump your hips up with a dumbbell on them.",
+    "description": "Lie on your back with the soles of your feet together and knees wide, a dumbbell held on your hips. Pump your hips up by squeezing your glutes, then lower. The frog stance plus added weight makes it a glute-only burner.",
     "avoidIf": [],
     "icon": "🐸",
     "mechanic": "Isolation",
@@ -10223,8 +10223,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Balance a dumbbell on your hip while driving upward with one leg.",
-    "description": "Keep your hips square and controlled. Avoid twisting during the lift.",
+    "cue": "One foot planted, dumbbell on your hip, thrust up.",
+    "description": "Rest your upper back on a bench with a dumbbell on your hips, one foot planted and the other leg extended. Drive through the planted heel to lift your hips level, squeezing that glute, then lower slowly. Keep your hips square throughout.",
     "avoidIf": [
       "balance"
     ],
@@ -10255,8 +10255,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Use a staggered stance while driving the hips upward.",
-    "description": "Keep most tension on the lead leg. Avoid shifting into the rear foot.",
+    "cue": "Stagger your feet, load 90% on the front, and thrust up.",
+    "description": "Set up a hip thrust with a dumbbell on your hips, but stagger your feet so one is slightly ahead and takes most of the weight while the other lightly assists for balance. Drive through the front heel to lift your hips. It targets one glute at a time while keeping you stable.",
     "avoidIf": [
       "balance"
     ],
@@ -10286,8 +10286,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Hold a dumbbell low and squat with a wide stance.",
-    "description": "Drive through your heels and squeeze your glutes. Avoid excessive depth if mobility is limited.",
+    "cue": "Wide stance, toes out, squat down and drive up through your heels.",
+    "description": "Stand with a wide stance and toes turned out, holding a dumbbell between your legs. Squat straight down keeping your chest tall, then drive up through your heels, squeezing your glutes at the top. The wide, turned-out stance emphasizes the glutes and inner thighs.",
     "avoidIf": [
       "knee",
       "hip"
@@ -10318,8 +10318,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Place a dumbbell on your hip and bridge with one leg.",
-    "description": "Control the pelvis throughout the movement. Avoid rotating your hips.",
+    "cue": "One heel planted, dumbbell on your hip, bridge up.",
+    "description": "Lie on your back with a dumbbell on your hips, one knee bent and foot planted, the other leg straight. Drive through the planted heel to lift your hips, squeezing that glute, then lower slowly. Keep your hips level as you lift.",
     "avoidIf": [
       "balance"
     ],
@@ -10349,8 +10349,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Rest the kettlebell across your hips and thrust upward.",
-    "description": "Lock out by squeezing your glutes. Avoid overextending your spine.",
+    "cue": "Kettlebell on your hips, back on the bench, thrust up and squeeze.",
+    "description": "Rest your upper back on a bench with a kettlebell held on your hips. Drive through your heels to lift your hips level, squeezing your glutes, then lower slowly. Keep your chin tucked and core braced.",
     "avoidIf": [
       "pregnancy"
     ],
@@ -10380,8 +10380,8 @@ const EXERCISES = [
       "kettlebell"
     ],
     "difficulty": "Beginner",
-    "cue": "Hold a kettlebell on your hips while bridging upward.",
-    "description": "Keep constant glute tension throughout the movement. Avoid arching your back.",
+    "cue": "Kettlebell on your hips, bridge up squeezing your glutes.",
+    "description": "Lie on your back with knees bent and a kettlebell on your hips. Drive through your heels to lift your hips into a straight line, squeezing your glutes, then lower. The bell adds resistance right at the top of the bridge.",
     "avoidIf": [],
     "icon": "🔔",
     "mechanic": "Isolation",
@@ -10408,8 +10408,8 @@ const EXERCISES = [
       "kettlebell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Hold the kettlebell and squat with a wide stance.",
-    "description": "Push your knees outward and squeeze your glutes. Avoid losing your posture.",
+    "cue": "Wide stance, toes out, squat and drive up holding a kettlebell.",
+    "description": "Stand wide with toes turned out, holding a kettlebell between your legs. Squat straight down with a tall chest, then drive up through your heels and squeeze your glutes at the top. The stance loads the glutes and inner thighs.",
     "avoidIf": [
       "knee",
       "hip"
@@ -10437,8 +10437,8 @@ const EXERCISES = [
       "kettlebell"
     ],
     "difficulty": "Beginner",
-    "cue": "Hold the kettlebell over your hips and perform frog pumps.",
-    "description": "Maintain controlled contractions. Avoid using momentum.",
+    "cue": "Feet together, knees wide, pump your hips up with a kettlebell on them.",
+    "description": "Lie on your back with the soles of your feet together and knees dropped wide, a kettlebell on your hips. Pump your hips up by squeezing your glutes, then lower. Isolates the glutes with the frog stance plus added load.",
     "avoidIf": [],
     "icon": "🔔",
     "mechanic": "Isolation",
@@ -10466,8 +10466,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Drive a loaded barbell upward by extending your hips.",
-    "description": "Pause and squeeze at lockout. Avoid hyperextending your lower back.",
+    "cue": "Bar across your hips, back on the bench, drive your hips up level.",
+    "description": "Sit with your upper back against a bench and a padded barbell across your hips, feet flat. Drive through your heels to lift your hips until your thighs are level, squeezing your glutes hard, then lower slowly. Keep your chin tucked and ribs down so you thrust with glutes, not lower back.",
     "avoidIf": [
       "pregnancy"
     ],
@@ -10497,8 +10497,8 @@ const EXERCISES = [
       "barbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Place a barbell across your hips and bridge upward.",
-    "description": "Brace your core while squeezing your glutes. Avoid excessive spinal extension.",
+    "cue": "Bar on your hips, bridge up squeezing your glutes.",
+    "description": "Lie on your back with knees bent and a padded barbell across your hips. Drive through your heels to lift your hips into a straight line, squeezing your glutes, then lower slowly. The floor range is shorter than a hip thrust but lets you load heavy.",
     "avoidIf": [
       "pregnancy"
     ],
@@ -10525,8 +10525,8 @@ const EXERCISES = [
       "barbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Perform frog pumps with a barbell across your hips.",
-    "description": "Use controlled repetitions and squeeze the glutes. Avoid bouncing the weight.",
+    "cue": "Feet together, knees wide, pump your hips up with the bar.",
+    "description": "Lie on your back with the soles of your feet together and knees wide, a padded barbell across your hips. Pump your hips up by squeezing your glutes, then lower. The frog stance keeps it glute-focused while the bar adds serious load.",
     "avoidIf": [
       "pregnancy"
     ],
@@ -10556,8 +10556,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Advanced",
-    "cue": "Drive the bar upward using one leg at a time.",
-    "description": "Keep the bar level throughout the movement. Avoid rotating your hips.",
+    "cue": "Bar on your hips, thrust up on one leg.",
+    "description": "Set up a barbell hip thrust but plant one foot and extend the other leg. Drive through the planted heel to lift your hips level, squeezing that glute, then lower slowly. Balancing the bar on one leg is advanced — keep your hips square and start light.",
     "avoidIf": [
       "balance",
       "pregnancy"
@@ -10588,8 +10588,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Advanced",
-    "cue": "Use a staggered stance and drive through the lead foot.",
-    "description": "Maintain control and load the working glute. Avoid shifting weight to the back foot.",
+    "cue": "Stagger your feet, most weight on the front, thrust the bar up.",
+    "description": "Set up a barbell hip thrust with a staggered stance — one foot forward taking most of the load, the other lightly assisting. Drive through the front heel to lift your hips, squeezing that glute. It overloads one glute while the back foot keeps you steady.",
     "avoidIf": [
       "balance",
       "pregnancy"
@@ -10620,8 +10620,8 @@ const EXERCISES = [
       "machine"
     ],
     "difficulty": "Intermediate",
-    "cue": "Brace your core and drive the machine platform upward with your hips.",
-    "description": "Squeeze your glutes at full extension. Avoid overextending your lower back.",
+    "cue": "Pad on your hips, drive your hips forward and squeeze.",
+    "description": "Sit in the hip thrust machine with the pad across your hips and feet on the platform. Drive your hips forward and up until your body is level, squeezing your glutes, then return under control. The fixed setup makes it easy to load heavy and safe.",
     "avoidIf": [
       "pregnancy"
     ],
@@ -10651,8 +10651,8 @@ const EXERCISES = [
       "machine"
     ],
     "difficulty": "Beginner",
-    "cue": "Press the machine pad backward using your glute.",
-    "description": "Move with control and avoid rotating your hips. Do not swing the leg.",
+    "cue": "Press one foot back against the pad, squeezing your glute.",
+    "description": "Set up in the glute kickback machine with one foot on the pedal and torso supported. Press that foot back and up by squeezing your glute until your leg extends, then return under control. Keep your back flat and let the glute drive the motion.",
     "avoidIf": [],
     "icon": "🍑",
     "mechanic": "Isolation",
@@ -10677,8 +10677,8 @@ const EXERCISES = [
       "machine"
     ],
     "difficulty": "Beginner",
-    "cue": "Push your knees outward against the machine pads.",
-    "description": "Keep the movement controlled and focused on the outer glutes. Avoid bouncing the weight.",
+    "cue": "Push your knees out against the pads.",
+    "description": "Sit in the abduction machine with the pads against the outsides of your knees. Push your knees apart against the resistance, squeezing your side glutes, then return slowly. Pause at the widest point for an extra squeeze — don't slam it back.",
     "avoidIf": [],
     "icon": "🍑",
     "mechanic": "Isolation",
@@ -10706,8 +10706,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Position your shoulders on a bench and drive the guided bar upward.",
-    "description": "Pause at the top while squeezing your glutes. Avoid arching your spine.",
+    "cue": "Bar on your hips in the Smith machine, thrust up level.",
+    "description": "Set up a hip thrust under a Smith machine bar resting on your hips, upper back on a bench. Drive through your heels to lift your hips until level, squeezing your glutes, then lower slowly. The fixed bar path lets you push hard without balancing.",
     "avoidIf": [
       "pregnancy"
     ],
@@ -10737,8 +10737,8 @@ const EXERCISES = [
       "cable"
     ],
     "difficulty": "Beginner",
-    "cue": "Drive your leg backward against cable resistance.",
-    "description": "Keep your hips square and squeeze at the end range. Avoid swinging your leg.",
+    "cue": "Ankle strap on, kick one leg straight back squeezing your glute.",
+    "description": "Attach an ankle strap to a low cable, face the machine, and hold on for balance. Kick that leg straight back by squeezing your glute, then return under control. Keep your torso still and don't arch your back to swing it higher.",
     "avoidIf": [],
     "icon": "🔗",
     "mechanic": "Isolation",
@@ -10765,8 +10765,8 @@ const EXERCISES = [
       "cable"
     ],
     "difficulty": "Beginner",
-    "cue": "Move your leg outward against cable resistance.",
-    "description": "Stay tall and controlled throughout the movement. Avoid leaning away.",
+    "cue": "Ankle strap on, lift one straight leg out to the side.",
+    "description": "Attach an ankle strap to a low cable, stand side-on, and hold the machine for balance. Lift the strapped leg out to the side against the cable, then return slowly. Keep your torso upright so the side glute does the work.",
     "avoidIf": [
       "balance"
     ],
@@ -10797,8 +10797,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Drive your hips upward while holding cable resistance.",
-    "description": "Focus on hip extension and glute contraction. Avoid pulling with your arms.",
+    "cue": "Rope on your hips, thrust up against the cable.",
+    "description": "Sit on the floor facing away from a low cable with a rope looped over your hips, upper back on a bench. Drive your hips up against the cable's pull until level, squeezing your glutes, then lower slowly. The cable keeps tension even at the top.",
     "avoidIf": [],
     "icon": "🔗",
     "mechanic": "Compound",
@@ -10825,8 +10825,8 @@ const EXERCISES = [
       "cable"
     ],
     "difficulty": "Beginner",
-    "cue": "Extend your leg backward from a kneeling cable position.",
-    "description": "Keep your torso stable while squeezing your glute. Avoid rotating your hips.",
+    "cue": "On all fours, kick one leg back against the cable.",
+    "description": "Attach an ankle strap to a low cable and get on all fours facing away. Kick that leg straight back and up by squeezing your glute, then return under control. Keep your back flat and hips square — the cable adds constant tension.",
     "avoidIf": [],
     "icon": "🔗",
     "mechanic": "Isolation",
@@ -10854,8 +10854,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Beginner",
-    "cue": "Drive your hips upward while pressing outward against the band.",
-    "description": "Maintain tension on the band throughout the movement. Avoid letting your knees collapse inward.",
+    "cue": "Band over your hips, thrust up against it and squeeze.",
+    "description": "Loop a band over your hips and anchor it low, upper back on a bench, feet flat. Drive through your heels to lift your hips level against the band, squeezing your glutes, then lower slowly. The band resists hardest at the top squeeze.",
     "avoidIf": [],
     "icon": "🟢",
     "mechanic": "Compound",
@@ -10883,8 +10883,8 @@ const EXERCISES = [
       "resistance-band"
     ],
     "difficulty": "Beginner",
-    "cue": "Press your knees outward while bridging against band tension.",
-    "description": "Keep constant glute engagement. Avoid arching your lower back.",
+    "cue": "Band around your knees, bridge up while pushing your knees out.",
+    "description": "Lie on your back with a band around your knees, feet flat. Drive your hips up while pushing your knees out against the band, squeezing your glutes, then lower. Pushing out adds side-glute work to the bridge.",
     "avoidIf": [],
     "icon": "🟢",
     "mechanic": "Isolation",
@@ -10912,8 +10912,8 @@ const EXERCISES = [
       "resistance-band"
     ],
     "difficulty": "Beginner",
-    "cue": "Step sideways while maintaining band tension around your legs.",
-    "description": "Keep your knees tracking outward during steps. Avoid standing upright between steps.",
+    "cue": "Band around your legs, step sideways staying low.",
+    "description": "Loop a band around your legs (knees or ankles), sink into a half-squat, and step sideways one foot at a time, keeping tension on the band. Take several steps each way. Stay low and don't let your knees cave in — it's a burner for the side glutes.",
     "avoidIf": [],
     "icon": "🟢",
     "mechanic": "Isolation",
@@ -10941,8 +10941,8 @@ const EXERCISES = [
       "resistance-band"
     ],
     "difficulty": "Beginner",
-    "cue": "Walk forward with knees pushed outward against band resistance.",
-    "description": "Maintain a controlled athletic stance. Avoid letting the band lose tension.",
+    "cue": "Band around your legs, step forward and out at angles.",
+    "description": "Loop a band around your legs and sink into a half-squat. Walk forward taking wide, angled steps — out and forward — keeping constant tension on the band, then walk back. Great for the glutes and hip stability. Stay low the whole time.",
     "avoidIf": [],
     "icon": "🟢",
     "mechanic": "Isolation",
@@ -10967,8 +10967,8 @@ const EXERCISES = [
       "resistance-band"
     ],
     "difficulty": "Beginner",
-    "cue": "Open your knees against band tension while lying on your side.",
-    "description": "Keep your feet together and pelvis stable. Avoid rolling backward.",
+    "cue": "Band around your knees, open your top knee against it.",
+    "description": "Lie on your side with a band around your knees, knees bent and stacked, feet together. Open your top knee against the band, then lower slowly. The band ramps up the side-glute burn compared to the bodyweight version.",
     "avoidIf": [],
     "icon": "🦪",
     "mechanic": "Isolation",
@@ -10995,8 +10995,8 @@ const EXERCISES = [
       "resistance-band"
     ],
     "difficulty": "Beginner",
-    "cue": "Extend one leg backward while keeping band tension.",
-    "description": "Keep your torso still and squeeze your glute. Avoid swinging your leg.",
+    "cue": "Band around your ankles, kick one leg straight back.",
+    "description": "Loop a band around your ankles and stand tall holding something for balance. Kick one leg straight back against the band by squeezing your glute, then return under control. Keep your torso upright — don't lean forward to swing it.",
     "avoidIf": [
       "balance"
     ],
@@ -11023,8 +11023,8 @@ const EXERCISES = [
       "resistance-band"
     ],
     "difficulty": "Beginner",
-    "cue": "Move your legs outward against band resistance.",
-    "description": "Keep the movement controlled and deliberate. Avoid using momentum.",
+    "cue": "Band around your legs, push one leg out to the side.",
+    "description": "Loop a band around your legs and stand tall, holding support. Push one straight leg out to the side against the band, then return slowly. Keep your torso still so the side glute does the lifting.",
     "avoidIf": [],
     "icon": "🟢",
     "mechanic": "Isolation",
@@ -11052,8 +11052,8 @@ const EXERCISES = [
       "trx"
     ],
     "difficulty": "Intermediate",
-    "cue": "Use suspension straps for support while driving hips upward.",
-    "description": "Maintain a controlled hip extension pattern. Avoid arching your back.",
+    "cue": "Heels in the straps, drive your hips up and squeeze.",
+    "description": "Lie on your back with your heels in the TRX foot cradles, knees bent. Drive through your heels to lift your hips into a straight line, squeezing your glutes, then lower slowly. The unstable straps make your glutes and hamstrings work to stay balanced.",
     "avoidIf": [],
     "icon": "〰️",
     "mechanic": "Compound",
@@ -11081,8 +11081,8 @@ const EXERCISES = [
       "box"
     ],
     "difficulty": "Intermediate",
-    "cue": "Rest your shoulders on a box and drive your hips upward.",
-    "description": "Control the full movement and squeeze your glutes at lockout. Avoid excessive lower-back extension.",
+    "cue": "Shoulders on a box, drive your hips up to a full squeeze.",
+    "description": "Rest your upper back on a box or sturdy step with feet flat and hips hanging. Drive through your heels to lift your hips until your thighs are level, squeezing your glutes hard, then lower slowly. The elevated shoulders give a bigger range than a floor bridge.",
     "avoidIf": [],
     "icon": "📦",
     "mechanic": "Compound",
