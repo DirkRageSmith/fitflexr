@@ -170,8 +170,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Plant your feet, keep your shoulder blades pinned, and press in a slight arc over your shoulders.",
-    "description": "Lower the bar under control to the mid-chest before pressing to full extension. Avoid bouncing the bar off your chest or flaring your elbows excessively.",
+    "cue": "Lower the bar to your mid-chest, then press it straight up.",
+    "description": "Lie on a flat bench, grip the bar a bit wider than shoulders, and unrack it over your chest. Lower it under control to your mid-chest with elbows about 45 degrees from your body, then press it back up. Keep your feet planted and shoulder blades pinched down — don't bounce the bar off your chest.",
     "avoidIf": [
       "shoulder"
     ],
@@ -204,8 +204,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Advanced",
-    "cue": "Pause for one full second on your chest before driving the bar upward.",
-    "description": "Control the descent, pause without relaxing, then press explosively. Avoid sinking the bar into your chest during the pause.",
+    "cue": "Lower to your chest, pause a full second, then press up.",
+    "description": "Set up like a normal barbell bench press but hold the bar still on your chest for a full second before pressing. The pause kills momentum and builds power off the bottom. Stay tight through the pause so the bar doesn't sink or drift.",
     "avoidIf": [
       "shoulder"
     ],
@@ -237,8 +237,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Grip just inside shoulder width and keep your elbows close throughout the press.",
-    "description": "Lower the bar with control before pressing straight back up. Avoid gripping so narrowly that your wrists collapse inward.",
+    "cue": "Grip shoulder-width, keep elbows tucked, and press.",
+    "description": "Lie on a bench and grip the bar about shoulder-width apart. Lower it to your lower chest with your elbows tucked close to your body, then press up. The narrow grip and tucked elbows shift much of the work onto your triceps.",
     "avoidIf": [
       "shoulder",
       "wrist"
@@ -272,8 +272,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Use a low incline and press toward your upper chest while keeping your shoulders packed.",
-    "description": "Lower the bar to your upper chest before pressing smoothly. Avoid using an excessively steep bench angle that shifts the work to your shoulders.",
+    "cue": "On a 30-degree incline, press the bar up over your upper chest.",
+    "description": "Set the bench to about 30 degrees, grip the bar slightly wider than shoulders, and unrack over your upper chest. Lower to your upper chest, then press up. The incline targets the often-lagging upper chest — don't set the angle too steep or it becomes a shoulder press.",
     "avoidIf": [
       "shoulder",
       "neck"
@@ -306,8 +306,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Secure your legs and lower the bar to the lower chest before pressing upward.",
-    "description": "Maintain control through the full range of motion. Avoid lifting your hips off the bench during the press.",
+    "cue": "On a decline bench, press the bar up over your lower chest.",
+    "description": "Lie on a decline bench with your legs anchored, gripping the bar over your lower chest. Lower it to your lower chest, then press up. The decline angle emphasizes the lower chest and is often easier on the shoulders than flat pressing.",
     "avoidIf": [
       "shoulder"
     ],
@@ -339,8 +339,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Beginner",
-    "cue": "Keep your wrists stacked over your elbows and press the dumbbells together at the top.",
-    "description": "Lower each dumbbell evenly before pressing back to full extension. Avoid letting your elbows drop too far below the bench.",
+    "cue": "Press two dumbbells up over your chest, then lower to a deep stretch.",
+    "description": "Lie on a flat bench with a dumbbell in each hand at chest level, palms facing your feet. Press them up until your arms are straight, then lower slowly until you feel a stretch across your chest. Dumbbells let each arm move freely and reach a deeper stretch than a barbell.",
     "avoidIf": [
       "shoulder"
     ],
@@ -373,8 +373,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Set the bench around 30° and press slightly back toward your shoulders.",
-    "description": "Lower the dumbbells until your upper arms are just below parallel before pressing up. Avoid shrugging your shoulders during the lift.",
+    "cue": "On a 30-degree incline, press the dumbbells up over your upper chest.",
+    "description": "Set the bench to about 30 degrees and hold a dumbbell in each hand at your upper chest. Press them up until your arms are straight, then lower slowly. Targets the upper chest — keep your shoulder blades pinned back so the chest does the work, not the front of your shoulders.",
     "avoidIf": [
       "shoulder",
       "neck"
@@ -408,8 +408,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Keep the dumbbells balanced directly over your lower chest throughout the press.",
-    "description": "Press both dumbbells evenly while maintaining shoulder stability. Avoid letting the weights drift too far apart.",
+    "cue": "On a decline, press the dumbbells over your lower chest.",
+    "description": "Lie on a decline bench with legs anchored, holding a dumbbell in each hand at your lower chest. Press them up until your arms are straight, then lower slowly. The decline hits the lower chest and tends to be gentle on the shoulders.",
     "avoidIf": [
       "shoulder"
     ],
@@ -441,8 +441,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Beginner",
-    "cue": "Keep your palms facing each other and press while keeping your elbows tucked.",
-    "description": "Move the dumbbells under control from chest level to full extension. Avoid rotating your wrists during the lift.",
+    "cue": "Press the dumbbells up with palms facing each other.",
+    "description": "Lie on a flat bench holding dumbbells over your chest with palms facing each other. Press up until your arms are straight, then lower slowly keeping that neutral grip. The palms-in grip is easier on cranky shoulders while still building the chest.",
     "avoidIf": [],
     "icon": "🤲",
     "mechanic": "Compound",
@@ -471,8 +471,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Beginner",
-    "cue": "Keep the dumbbells pressed together throughout every repetition.",
-    "description": "Maintain inward pressure as you press and lower the weights. Avoid allowing the dumbbells to separate at the top.",
+    "cue": "Press the dumbbells while pushing them together the whole time.",
+    "description": "Lie on a bench holding two dumbbells pressed together over your chest, palms facing each other. Press up and lower down while actively squeezing the dumbbells into each other the entire set. The constant inward squeeze lights up the inner chest.",
     "avoidIf": [],
     "icon": "💪",
     "mechanic": "Compound",
@@ -500,8 +500,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Keep a slight bend in your elbows and hug a wide barrel as you raise the weights.",
-    "description": "Lower until you feel a comfortable chest stretch before returning to the top. Avoid turning the movement into a press.",
+    "cue": "Open your arms wide in an arc, then hug the dumbbells back together.",
+    "description": "Lie on a flat bench with dumbbells pressed together above your chest, elbows slightly bent. Open your arms out wide in a big arc until you feel a stretch across your chest, then bring them back together like hugging a barrel. Keep the slight elbow bend fixed — this is a sweep, not a press.",
     "avoidIf": [
       "shoulder"
     ],
@@ -532,8 +532,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Use a shallow incline and maintain soft elbows throughout the movement.",
-    "description": "Stretch under control before squeezing your chest to bring the weights together. Avoid lowering beyond your shoulder mobility.",
+    "cue": "On an incline, open wide then hug the dumbbells back together.",
+    "description": "Set the bench to about 30 degrees, press dumbbells together over your upper chest with elbows slightly bent. Open your arms wide in an arc until you feel a stretch, then bring them back together. The incline shifts the stretch and squeeze onto the upper chest.",
     "avoidIf": [
       "shoulder"
     ],
@@ -564,8 +564,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Maintain a straight line from head to heels and press the floor away.",
-    "description": "Lower your chest under control before pushing back to full extension. Avoid letting your hips sag or flare your elbows excessively.",
+    "cue": "Lower your chest to the floor keeping your body in one straight line.",
+    "description": "Start in a plank with hands a bit wider than your shoulders and body straight from head to heels. Bend your elbows to lower your chest toward the floor, then push back up. Keep your core tight so your hips don't sag or pike — one solid line the whole way.",
     "avoidIf": [
       "wrist"
     ],
@@ -597,8 +597,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Beginner",
-    "cue": "Keep your body rigid while pressing away from the bench.",
-    "description": "Lower your chest to the bench before pressing back up. Avoid allowing your lower back to arch.",
+    "cue": "Hands on a raised surface, lower your chest to it, then press up.",
+    "description": "Place your hands on a bench, table, or wall so your body is angled up. Keeping a straight line from head to heels, lower your chest to the surface, then press back up. The higher your hands, the easier it is — a great way to build up to floor push-ups.",
     "avoidIf": [
       "wrist"
     ],
@@ -629,8 +629,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Elevate your feet and keep your hips level throughout each repetition.",
-    "description": "Lower your chest until just above the floor before pressing upward. Avoid shrugging your shoulders toward your ears.",
+    "cue": "Feet raised on a bench, lower your chest to the floor.",
+    "description": "Put your feet up on a bench with your hands on the floor, body straight. Lower your chest toward the floor, then press up. Raising your feet shifts more weight onto your arms and targets the upper chest — harder than a standard push-up.",
     "avoidIf": [
       "wrist",
       "shoulder"
@@ -663,8 +663,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Keep a straight line from your knees through your shoulders as you press.",
-    "description": "Lower your chest under control before pressing back up. Avoid bending at the hips instead of moving as one unit.",
+    "cue": "From your knees, lower your chest and press back up in a straight line.",
+    "description": "Start on your hands and knees with your body straight from head to knees, hands a bit wider than your shoulders. Lower your chest toward the floor, then press up. Dropping to your knees reduces the load, making it the ideal starting point for push-ups.",
     "avoidIf": [
       "wrist"
     ],
@@ -695,8 +695,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Place your hands wider than shoulder width and lower under control.",
-    "description": "Press through your palms while keeping your body rigid. Avoid letting your elbows flare aggressively.",
+    "cue": "Set your hands well wider than your shoulders and lower your chest.",
+    "description": "Get into a push-up position but with your hands placed noticeably wider than your shoulders. Lower your chest toward the floor, then press up. The wide hand position puts more of the stretch and work on the chest and less on the triceps.",
     "avoidIf": [
       "wrist",
       "shoulder"
@@ -728,8 +728,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Intermediate",
-    "cue": "Keep your hands close together beneath your chest and elbows tucked.",
-    "description": "Lower until your chest nearly touches your hands before pressing up. Avoid collapsing your wrists inward.",
+    "cue": "Make a diamond with your hands under your chest and lower to it.",
+    "description": "Get into a push-up position and place your hands together under your chest so your thumbs and index fingers form a diamond. Lower your chest to your hands with elbows tucked, then press up. The close hands make your triceps and inner chest do the heavy lifting.",
     "avoidIf": [
       "wrist",
       "shoulder"
@@ -763,8 +763,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Advanced",
-    "cue": "Shift your weight over one arm while keeping the opposite arm nearly straight.",
-    "description": "Alternate sides while maintaining full-body tension. Avoid twisting your hips during the movement.",
+    "cue": "Shift your weight over one arm while the other stays straight out to the side.",
+    "description": "Set up with hands wide. Lower toward one hand by bending that elbow while keeping the other arm straight out to the side, then press up and alternate. Most of your weight goes through the bending arm, making it a stepping stone to a one-arm push-up.",
     "avoidIf": [
       "wrist",
       "shoulder",
@@ -797,8 +797,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Advanced",
-    "cue": "Lean your shoulders past your hands before lowering under control.",
-    "description": "Maintain the forward lean throughout the repetition. Avoid allowing your hips to sag.",
+    "cue": "Turn your hands to point back and lean your shoulders past your hands.",
+    "description": "Get into a push-up position but rotate your hands so the fingers point toward your feet, then lean your shoulders forward past your hands. Lower and press while keeping that forward lean. The lean loads the shoulders and upper chest hard — an advanced move that builds toward the planche.",
     "avoidIf": [
       "wrist",
       "shoulder"
@@ -830,8 +830,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Intermediate",
-    "cue": "Take three to five seconds to lower before pressing up smoothly.",
-    "description": "Maintain full-body tension through the slow eccentric. Avoid rushing the lowering phase.",
+    "cue": "Take three to four seconds to lower, then press up smoothly.",
+    "description": "Do a standard push-up but lower yourself slowly over three to four seconds, pausing briefly just above the floor before pressing up. The slow lowering keeps your chest under tension far longer than normal reps. Quality over speed here.",
     "avoidIf": [
       "wrist"
     ],
@@ -862,8 +862,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Lower deeper between the supports while maintaining shoulder control.",
-    "description": "Increase range of motion without losing stability. Avoid dropping into painful shoulder positions.",
+    "cue": "Hands raised on blocks so your chest can drop below them.",
+    "description": "Place each hand on a low block, book, or push-up handle so your chest can sink below the level of your hands at the bottom. Lower into that deep stretch, then press up. The extra range gives the chest a bigger stretch than floor push-ups.",
     "avoidIf": [
       "wrist",
       "shoulder"
@@ -894,8 +894,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Stand tall and lower yourself toward the wall in one straight line.",
-    "description": "Push away from the wall without shrugging your shoulders. Avoid bending only at the hips.",
+    "cue": "Stand facing a wall, lower your chest toward it, then push back.",
+    "description": "Stand arm's length from a wall with your hands on it at shoulder height and body straight. Bend your elbows to bring your chest toward the wall, then push back to straight arms. The most beginner-friendly push-up — the more upright you stand, the easier it is.",
     "avoidIf": [],
     "icon": "🧱",
     "mechanic": "Compound",
@@ -923,8 +923,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Lean slightly forward as you lower and press back to the top.",
-    "description": "Keep your elbows tracking naturally through the movement. Avoid dropping deeper than your shoulder mobility allows.",
+    "cue": "Lean your torso forward and dip until you feel a chest stretch.",
+    "description": "Support yourself on parallel bars or between two sturdy surfaces with arms straight. Lean your torso forward, bend your elbows to lower until you feel a stretch across your chest, then press back up. The forward lean is what shifts the work from triceps to chest.",
     "avoidIf": [
       "shoulder",
       "wrist"
@@ -956,8 +956,8 @@ const EXERCISES = [
       "resistance-band"
     ],
     "difficulty": "Beginner",
-    "cue": "Press straight forward while keeping tension in the band throughout.",
-    "description": "Control both the press and the return phase. Avoid allowing the band to snap you backward.",
+    "cue": "Anchor the band behind you and press the handles forward.",
+    "description": "Anchor a band behind you at chest height and hold a handle in each hand, elbows bent. Press both hands forward until your arms are straight, squeezing your chest, then return under control. Step further from the anchor for more resistance.",
     "avoidIf": [],
     "icon": "🟢",
     "mechanic": "Compound",
@@ -985,8 +985,8 @@ const EXERCISES = [
       "resistance-band"
     ],
     "difficulty": "Beginner",
-    "cue": "Sweep your arms together in a hugging motion while keeping soft elbows.",
-    "description": "Maintain constant band tension throughout each repetition. Avoid turning the movement into a press.",
+    "cue": "Arms wide, sweep the handles together in front of your chest.",
+    "description": "Anchor a band behind you at chest height and hold the handles with arms out wide and elbows slightly bent. Sweep your hands together in front of your chest in an arc, squeeze, then return slowly. Keep the slight elbow bend — it's a hug, not a press.",
     "avoidIf": [
       "shoulder"
     ],
@@ -1015,8 +1015,8 @@ const EXERCISES = [
       "resistance-band"
     ],
     "difficulty": "Intermediate",
-    "cue": "Pull downward and inward while squeezing your lower chest.",
-    "description": "Control the return without losing posture. Avoid shrugging during the crossover.",
+    "cue": "From high anchors, pull the handles down and together at your waist.",
+    "description": "Anchor bands up high on each side and hold a handle in each hand, arms up and out. Pull both hands down and together in front of your waist, crossing slightly, then return slowly. The downward angle targets the lower chest.",
     "avoidIf": [
       "shoulder"
     ],
@@ -1045,8 +1045,8 @@ const EXERCISES = [
       "resistance-band"
     ],
     "difficulty": "Intermediate",
-    "cue": "Drive your hands upward in a smooth arc toward eye level.",
-    "description": "Squeeze your upper chest at the top of each repetition. Avoid arching your lower back.",
+    "cue": "From low anchors, sweep the handles up and together at chest height.",
+    "description": "Anchor bands low on each side and hold a handle in each hand, arms down and out. Sweep both hands up and together in front of your upper chest, then return slowly. The upward angle emphasizes the upper chest.",
     "avoidIf": [
       "shoulder"
     ],
@@ -1076,8 +1076,8 @@ const EXERCISES = [
       "resistance-band"
     ],
     "difficulty": "Intermediate",
-    "cue": "Press upward at roughly a 30-degree angle while maintaining tension.",
-    "description": "Control both directions of the movement. Avoid shrugging your shoulders as you press.",
+    "cue": "Anchor the band low and press the handles up and forward.",
+    "description": "Anchor a band low behind you and hold a handle in each hand at chest level, elbows bent. Press up and forward at an incline angle until your arms are straight, then return slowly. Mimics an incline press to hit the upper chest with no bench.",
     "avoidIf": [
       "shoulder"
     ],
@@ -1107,8 +1107,8 @@ const EXERCISES = [
       "cable"
     ],
     "difficulty": "Intermediate",
-    "cue": "Bring the handles together in a wide hugging motion.",
-    "description": "Maintain a slight bend in your elbows throughout. Avoid allowing the weights to slam together.",
+    "cue": "Arms wide, sweep the handles together in front of your chest.",
+    "description": "Stand between two cable pulleys set around chest height, holding a handle in each hand with arms out wide and elbows slightly bent. Sweep your hands together in front of your chest, squeeze, then return slowly. Cables keep steady tension the entire arc.",
     "avoidIf": [
       "shoulder"
     ],
@@ -1137,8 +1137,8 @@ const EXERCISES = [
       "cable"
     ],
     "difficulty": "Intermediate",
-    "cue": "Pull the handles downward toward your waist in a controlled arc.",
-    "description": "Squeeze your chest at the bottom before returning slowly. Avoid using momentum.",
+    "cue": "From high pulleys, pull the handles down and together at your waist.",
+    "description": "Set both pulleys high and hold a handle in each hand, arms up and out. Pull both hands down and together in front of your waist, crossing your wrists slightly, then return slowly. The downward path hits the lower chest.",
     "avoidIf": [
       "shoulder"
     ],
@@ -1167,8 +1167,8 @@ const EXERCISES = [
       "cable"
     ],
     "difficulty": "Intermediate",
-    "cue": "Sweep the handles upward until they meet in front of your upper chest.",
-    "description": "Move smoothly through the entire range of motion. Avoid leaning backward excessively.",
+    "cue": "From low pulleys, sweep the handles up and together at chest height.",
+    "description": "Set both pulleys low and hold a handle in each hand, arms down and out. Sweep both hands up and together in front of your upper chest, squeeze, then return slowly. The upward path emphasizes the upper chest.",
     "avoidIf": [
       "shoulder"
     ],
@@ -1198,8 +1198,8 @@ const EXERCISES = [
       "cable"
     ],
     "difficulty": "Intermediate",
-    "cue": "Press forward while maintaining even cable tension on both sides.",
-    "description": "Keep your torso stable throughout the movement. Avoid stepping too far forward.",
+    "cue": "Press both handles forward until your arms meet in front.",
+    "description": "Stand between chest-height pulleys with a handle in each hand, elbows bent. Press both hands forward until your arms are nearly straight and meet in front of your chest, then return slowly. The cables load your chest evenly through the whole press.",
     "avoidIf": [],
     "icon": "🔗",
     "mechanic": "Compound",
@@ -1228,8 +1228,8 @@ const EXERCISES = [
       "cable"
     ],
     "difficulty": "Intermediate",
-    "cue": "Press upward from a low cable position while keeping your core braced.",
-    "description": "Drive the handles toward your upper chest line. Avoid shrugging your shoulders during the press.",
+    "cue": "From low pulleys, press the handles up and forward.",
+    "description": "Set the pulleys low and hold a handle in each hand at chest level, elbows bent. Press up and forward until your arms are nearly straight, then return slowly. The upward angle targets the upper chest with constant cable tension.",
     "avoidIf": [
       "shoulder"
     ],
@@ -1260,8 +1260,8 @@ const EXERCISES = [
       "machine"
     ],
     "difficulty": "Beginner",
-    "cue": "Adjust the seat so the handles start at mid-chest height.",
-    "description": "Press smoothly without locking your elbows forcefully. Avoid lifting your shoulders toward your ears.",
+    "cue": "Grip the handles and press them straight forward.",
+    "description": "Sit in the chest press machine with the handles at chest height and your back flat against the pad. Press the handles forward until your arms are nearly straight, then return under control. A safe, stable way to train the chest without balancing free weights.",
     "avoidIf": [],
     "icon": "🏋️",
     "mechanic": "Compound",
@@ -1289,8 +1289,8 @@ const EXERCISES = [
       "machine"
     ],
     "difficulty": "Beginner",
-    "cue": "Bring the pads together while keeping a gentle bend in your elbows.",
-    "description": "Pause briefly at peak contraction before returning slowly. Avoid bouncing the weight stack.",
+    "cue": "Bring the pads together in front of your chest in a hugging arc.",
+    "description": "Sit at the pec deck with your forearms or hands on the pads, arms out wide. Squeeze the pads together in front of your chest, hold for a beat, then return slowly to a stretch. The fixed path makes it easy to feel your chest doing the work.",
     "avoidIf": [
       "shoulder"
     ],
@@ -1320,8 +1320,8 @@ const EXERCISES = [
       "machine"
     ],
     "difficulty": "Beginner",
-    "cue": "Press upward naturally while keeping your shoulder blades against the pad.",
-    "description": "Maintain full control throughout each repetition. Avoid forcing your shoulders forward.",
+    "cue": "Press the handles up and forward on the incline machine.",
+    "description": "Sit in the incline chest press machine with your back on the pad and grip the handles at upper-chest height. Press up and forward until your arms are nearly straight, then return under control. Targets the upper chest with a fixed, beginner-friendly path.",
     "avoidIf": [
       "shoulder"
     ],
@@ -1352,8 +1352,8 @@ const EXERCISES = [
       "machine"
     ],
     "difficulty": "Intermediate",
-    "cue": "Drive each handle evenly while keeping your chest lifted.",
-    "description": "Control the eccentric until the handles return naturally. Avoid locking out aggressively.",
+    "cue": "Press the independent handles forward, squeezing your chest.",
+    "description": "Sit in the plate-loaded chest press with your back flat and grip the handles at chest height. Press forward until your arms are nearly straight, squeezing your chest, then return slowly. Each arm moves independently, so a weaker side can't coast.",
     "avoidIf": [],
     "icon": "🔨",
     "mechanic": "Compound",
@@ -1383,8 +1383,8 @@ const EXERCISES = [
       "trx"
     ],
     "difficulty": "Intermediate",
-    "cue": "Lean farther forward to increase the challenge while maintaining a rigid body.",
-    "description": "Press the handles away while keeping your core engaged. Avoid letting your hips sag.",
+    "cue": "Lean into the straps and press yourself back up.",
+    "description": "Hold the TRX handles and lean forward with straight arms so your bodyweight loads them, body in a straight line. Lower your chest between the handles by bending your elbows, then press back up. Walk your feet forward to make it harder, back to make it easier.",
     "avoidIf": [
       "shoulder",
       "balance"
@@ -1416,8 +1416,8 @@ const EXERCISES = [
       "trx"
     ],
     "difficulty": "Advanced",
-    "cue": "Keep your elbows softly bent as you open and close your arms.",
-    "description": "Maintain tension throughout the movement. Avoid dropping too deep into the stretch.",
+    "cue": "Open your arms wide, then hug them back together.",
+    "description": "Hold the TRX handles and lean forward with arms out wide and elbows slightly bent. Open your arms wider to lower your chest, then squeeze them back together to press up. Keep your body rigid and the elbow bend fixed — a tough stability challenge.",
     "avoidIf": [
       "shoulder",
       "balance"
@@ -1448,8 +1448,8 @@ const EXERCISES = [
       "kettlebell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Lower until your upper arm touches the floor before pressing smoothly upward.",
-    "description": "Maintain a neutral wrist throughout the movement. Avoid letting the kettlebell drift behind your shoulder.",
+    "cue": "Press the kettlebells up from the floor, elbows lightly touching down.",
+    "description": "Lie on the floor with a kettlebell in each hand at chest level, elbows resting on the ground. Press the bells up until your arms are straight, then lower until your elbows lightly touch the floor. The floor limits your range, protecting your shoulders.",
     "avoidIf": [
       "shoulder"
     ],
@@ -1481,8 +1481,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Brace your core to prevent rotation as you press with one arm.",
-    "description": "Complete all repetitions on one side before switching. Avoid twisting your torso during the lift.",
+    "cue": "Press one kettlebell up while bracing your core against the tilt.",
+    "description": "Lie on a bench with a kettlebell in one hand at chest level. Press it straight up until your arm is locked, then lower under control while bracing your core to stop your torso twisting. Pressing one side forces your core and shoulder to stabilize hard.",
     "avoidIf": [
       "shoulder"
     ],
@@ -1513,8 +1513,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Beginner",
-    "cue": "Pause briefly with your upper arms on the floor before pressing.",
-    "description": "Use the floor to limit shoulder range safely. Avoid bouncing your elbows off the ground.",
+    "cue": "Press the dumbbells up, letting your elbows lightly touch the floor.",
+    "description": "Lie on the floor with a dumbbell in each hand at chest level, knees bent. Press them up until your arms are straight, then lower until your elbows lightly touch down and press again. The floor caps the range, making it shoulder-friendly and great for lockout power.",
     "avoidIf": [],
     "icon": "🏠",
     "mechanic": "Compound",
@@ -1543,8 +1543,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Lower the dumbbell only as far as your shoulder mobility comfortably allows.",
-    "description": "Pull the weight back over your chest using a controlled arc. Avoid overextending your shoulders.",
+    "cue": "Lower one dumbbell back over your head in an arc, then pull it back over your chest.",
+    "description": "Lie across or along a bench holding one dumbbell over your chest with both hands, arms nearly straight. Lower it back behind your head in an arc until you feel a stretch across your chest and ribs, then pull it back over your chest. Keep your arms only slightly bent and let the stretch, not your elbows, drive it.",
     "avoidIf": [
       "shoulder"
     ],
@@ -1576,8 +1576,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Keep your torso stable while pressing with one arm at a time.",
-    "description": "Brace your core to resist rotation through every repetition. Avoid letting the working shoulder roll forward.",
+    "cue": "Press one dumbbell while keeping your torso from rotating.",
+    "description": "Lie on a bench with a dumbbell in one hand at chest level, the other arm out for balance. Press it up until your arm is straight, then lower slowly while keeping your shoulders square. Working one arm forces your core to fight the twist.",
     "avoidIf": [
       "shoulder"
     ],
@@ -1610,8 +1610,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Keep one dumbbell extended while pressing with the opposite arm.",
-    "description": "Alternate sides while maintaining a stable torso. Avoid dropping the stationary arm prematurely.",
+    "cue": "Press one dumbbell up while the other stays at your chest, then switch.",
+    "description": "Lie on a bench with a dumbbell in each hand at chest level. Press one up while holding the other at your chest, lower it, then press the other. Holding one side loaded the whole time keeps constant tension on the chest and tests your core.",
     "avoidIf": [
       "shoulder"
     ],
@@ -3438,8 +3438,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Drive your head toward the floor while keeping your hips high.",
-    "description": "Press your body upward with your shoulders doing most of the work. Avoid collapsing your neck or losing your pike position.",
+    "cue": "Hips high in an upside-down V, lower the top of your head toward the floor.",
+    "description": "Start in a push-up position, then walk your feet in and lift your hips high so your body makes an upside-down V. Bend your elbows to lower the top of your head toward the floor, then press back up. The steep angle turns a push-up into a shoulder press.",
     "avoidIf": [
       "shoulder",
       "neck"
@@ -3471,8 +3471,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Elevate your feet and lower your head between your hands.",
-    "description": "Increase the shoulder loading angle while maintaining control. Avoid letting your lower back collapse.",
+    "cue": "Feet on a bench, hips high, lower your head toward the floor.",
+    "description": "Put your feet up on a bench and walk your hands back so your hips stack high over your shoulders in a steep pike. Lower the top of your head toward the floor between your hands, then press up. Raising your feet puts more weight overhead — a big step toward handstand push-ups.",
     "avoidIf": [
       "shoulder",
       "neck"
@@ -3503,8 +3503,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Advanced",
-    "cue": "Press tall through your hands while maintaining a straight body line.",
-    "description": "Hold a stable inverted position against the wall. Avoid dumping weight into your neck or shoulders.",
+    "cue": "Kick up to the wall and hold a straight, tight handstand.",
+    "description": "Face the wall, place your hands a hand's width from it, and kick up so your heels rest against the wall. Hold with straight arms, squeezing your core, glutes, and shoulders to stay rigid. Build your hold time gradually — come down the moment your form sags.",
     "avoidIf": [
       "shoulder",
       "neck",
@@ -3537,8 +3537,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Advanced",
-    "cue": "Walk your hands forward while climbing your feet up the wall.",
-    "description": "Move slowly into an inverted position and return with control. Avoid collapsing through the shoulders.",
+    "cue": "Start in a plank facing away, then walk your feet up the wall toward a handstand.",
+    "description": "Begin in a plank with your feet against the base of a wall. Walk your feet up the wall while walking your hands closer, until you're close to a handstand, then reverse back down. It builds serious overhead shoulder strength and control.",
     "avoidIf": [
       "shoulder",
       "wrist",
@@ -3568,8 +3568,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Beginner",
-    "cue": "Raise the dumbbells out to your sides with controlled motion.",
-    "description": "Lift until your arms are near shoulder height before lowering slowly. Avoid swinging the weights upward.",
+    "cue": "Raise the dumbbells out to your sides up to shoulder height.",
+    "description": "Stand holding a dumbbell in each hand at your sides, elbows slightly bent. Raise them out to the sides until they reach shoulder height, leading with your elbows, then lower slowly. Keep it strict — no swinging — and imagine pouring water from the dumbbells at the top.",
     "avoidIf": [
       "shoulder"
     ],
@@ -3598,8 +3598,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Beginner",
-    "cue": "Raise the dumbbells straight in front of you with control.",
-    "description": "Keep your torso still while lifting and lowering the weights. Avoid leaning backward for momentum.",
+    "cue": "Raise the dumbbells straight in front of you to shoulder height.",
+    "description": "Stand holding dumbbells in front of your thighs, palms facing you. Raise one or both straight out in front to shoulder height, then lower slowly. Keep your torso still — don't lean back or swing to lift the weight.",
     "avoidIf": [
       "shoulder"
     ],
@@ -3628,8 +3628,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Beginner",
-    "cue": "Sweep the dumbbells outward while squeezing your rear shoulders.",
-    "description": "Maintain a stable bent-over position throughout the movement. Avoid shrugging the weights upward.",
+    "cue": "Hinge forward and raise the dumbbells out to your sides.",
+    "description": "Hinge forward at the hips with a flat back, holding dumbbells hanging below you. Raise them out to the sides, squeezing your shoulder blades, until your arms are level, then lower slowly. Targets the rear shoulders — use light weight and keep a small elbow bend.",
     "avoidIf": [],
     "icon": "🪽",
     "mechanic": "Isolation",
@@ -3656,8 +3656,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Beginner",
-    "cue": "Raise the dumbbells in the scapular plane with thumbs slightly upward.",
-    "description": "Move smoothly through the shoulder-friendly angle. Avoid forcing painful ranges of motion.",
+    "cue": "Raise the dumbbells up and slightly forward in a Y shape.",
+    "description": "Stand with dumbbells at your sides, palms facing in. Raise them up and slightly forward — about 30 degrees in front of straight-to-the-side — to shoulder height, making a Y, then lower slowly. This shoulder-friendly angle trains the side delts while sparing the joint.",
     "avoidIf": [
       "shoulder"
     ],
@@ -3687,8 +3687,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Rotate the dumbbells upward before pressing overhead.",
-    "description": "Use light weight and controlled rotation through the shoulders. Avoid forcing the range of motion.",
+    "cue": "Upright-row the dumbbells, rotate them up, then press overhead.",
+    "description": "Hold dumbbells in front of your thighs. Pull them up into a high row, rotate your forearms up so the weights point at the ceiling, then press overhead. Reverse the whole sequence back down. A rotator-cuff and shoulder combo — go light and smooth.",
     "avoidIf": [
       "shoulder"
     ],
@@ -3718,8 +3718,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Move through six controlled raise positions without swinging.",
-    "description": "Keep the weights light and maintain shoulder control. Avoid rushing through the sequence.",
+    "cue": "Front raise, out to the sides, then overhead — and reverse.",
+    "description": "Raise the dumbbells straight in front to shoulder height, sweep them out to the sides, then press overhead, and reverse the path back down — that's one rep. It hits the front, side, and rear shoulders in a single flowing set. Use very light weights.",
     "avoidIf": [
       "shoulder"
     ],
@@ -3749,8 +3749,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Circle the dumbbells around your body with smooth control.",
-    "description": "Maintain tension through the entire arc of motion. Avoid using momentum to complete the circle.",
+    "cue": "Sweep the dumbbells from your thighs out and around to overhead.",
+    "description": "Start with dumbbells at your thighs, palms forward. Sweep them out to the sides and up in a big circle until they meet overhead, then reverse back down. The continuous arc keeps constant tension across the whole shoulder — keep it slow and controlled.",
     "avoidIf": [
       "shoulder"
     ],
@@ -3778,8 +3778,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Lean away from support and raise the dumbbell through your side.",
-    "description": "Use controlled tension through the lateral deltoid. Avoid shrugging at the top.",
+    "cue": "Hold a post and lean away, then raise the dumbbell out to the side.",
+    "description": "Hold a rack or post with one hand and lean your body away so your working arm hangs across your body. Raise the dumbbell out to the side to shoulder height, then lower slowly. Leaning away increases the stretch and tension at the bottom of the raise.",
     "avoidIf": [
       "shoulder"
     ],
@@ -3809,8 +3809,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Beginner",
-    "cue": "Raise your arms into a Y position while lying on an incline bench.",
-    "description": "Focus on controlled shoulder blade movement. Avoid shrugging toward your ears.",
+    "cue": "Chest on the incline, raise the dumbbells up into a Y.",
+    "description": "Lie chest-down on an incline bench holding dumbbells hanging toward the floor. Raise them up and out into a Y shape overhead, squeezing your shoulder blades, then lower slowly. The face-down angle nails the rear and lower-trap area with no cheating.",
     "avoidIf": [
       "shoulder"
     ],
@@ -3840,8 +3840,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Raise your arms into an L shape using slow controlled motion.",
-    "description": "Rotate and lift with shoulder control throughout the movement. Avoid using heavy weights.",
+    "cue": "Lateral raise to the side, then rotate up to overhead in an L.",
+    "description": "Raise a dumbbell out to the side to shoulder height, then rotate your forearm up so it points at the ceiling in an L shape. Reverse back down. It combines a side raise with an external rotation for healthy, strong shoulders.",
     "avoidIf": [
       "shoulder"
     ],
@@ -3872,8 +3872,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Perform a rear-delt raise while lying chest-supported on an incline bench.",
-    "description": "Keep the movement isolated to the rear shoulders. Avoid rotating your torso.",
+    "cue": "Lie side-on over a bench and raise the dumbbell across and up.",
+    "description": "Lie on your side over an incline bench holding a dumbbell in the top hand across your body. Raise it up and across in an arc to shoulder height, then lower slowly. An unusual angle that isolates the rear and side shoulder — keep it light.",
     "avoidIf": [],
     "icon": "🪽",
     "mechanic": "Isolation",
@@ -3900,8 +3900,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Beginner",
-    "cue": "Lean forward and open your arms wide using your rear shoulders.",
-    "description": "Squeeze the rear delts at the top before lowering slowly. Avoid turning it into a row.",
+    "cue": "Sit and hinge forward, then raise the dumbbells out to the sides.",
+    "description": "Sit on the edge of a bench and hinge forward so your chest is near your thighs, dumbbells hanging below. Raise them out to the sides, squeezing your shoulder blades, then lower slowly. Sitting braced keeps your lower back out of it and isolates the rear delts.",
     "avoidIf": [],
     "icon": "🪽",
     "mechanic": "Isolation",
@@ -3929,8 +3929,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Beginner",
-    "cue": "Press the dumbbells overhead while keeping your ribs stacked over your hips.",
-    "description": "Lower the weights under control to shoulder height before pressing again. Avoid arching your lower back to create momentum.",
+    "cue": "Press the dumbbells overhead from shoulder height.",
+    "description": "Sit on a bench with back support, holding a dumbbell in each hand at shoulder height, palms forward. Press them straight overhead until your arms are nearly locked, then lower to your shoulders. The back support keeps you stable so you can press heavy safely.",
     "avoidIf": [
       "shoulder",
       "neck"
@@ -3963,8 +3963,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Press overhead while maintaining a stable standing position.",
-    "description": "Brace your core and move the dumbbells through a controlled path. Avoid leaning backward during the press.",
+    "cue": "Press the dumbbells overhead while keeping your core tight.",
+    "description": "Stand holding dumbbells at shoulder height, palms forward, feet hip-width. Brace your core and press them overhead until your arms are nearly straight, then lower to your shoulders. Standing forces your whole body to stabilize — don't lean back to cheat.",
     "avoidIf": [
       "shoulder",
       "neck"
@@ -3995,8 +3995,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Rotate your palms outward as you press the dumbbells overhead.",
-    "description": "Use a controlled rotation through the shoulder joint. Avoid forcing the bottom position if mobility is limited.",
+    "cue": "Start palms facing you, rotate as you press overhead.",
+    "description": "Hold dumbbells at shoulder height with palms facing you. As you press up, rotate your wrists so your palms face forward at the top, then reverse on the way down. The rotation works the front and side shoulders through a bigger range than a normal press.",
     "avoidIf": [
       "shoulder",
       "neck"
@@ -4028,8 +4028,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Use a small leg drive before pressing overhead.",
-    "description": "Generate power from the lower body while keeping the press controlled. Avoid turning the movement into a jump.",
+    "cue": "Dip your knees slightly, then drive the dumbbells overhead.",
+    "description": "Hold dumbbells at your shoulders. Dip a few inches by bending your knees, then explosively straighten your legs to help drive the weights overhead, and lower under control. The leg drive lets you press heavier than a strict shoulder press.",
     "avoidIf": [
       "shoulder",
       "neck"
@@ -4061,8 +4061,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Press one dumbbell overhead while resisting sideways movement.",
-    "description": "Maintain a strong brace throughout the press. Avoid leaning away from the working side.",
+    "cue": "Press one dumbbell overhead while bracing against the twist.",
+    "description": "Stand holding one dumbbell at shoulder height. Brace your core and press it overhead until your arm is straight, then lower to your shoulder. Pressing one side forces your core to fight rotation — a great anti-twist core and shoulder builder.",
     "avoidIf": [
       "shoulder",
       "neck"
@@ -4093,8 +4093,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Press overhead from a half-kneeling position while keeping your torso tall.",
-    "description": "Use your core to prevent arching or rotating. Avoid leaning into the pressing side.",
+    "cue": "Kneel on one knee and press the dumbbell overhead.",
+    "description": "Kneel with one knee down and the other foot planted in front, holding a dumbbell at the shoulder of the down-knee side. Press it overhead, then lower under control, keeping your torso tall. The half-kneeling stance kills momentum and exposes any side-to-side weakness.",
     "avoidIf": [
       "shoulder",
       "neck"
@@ -4126,8 +4126,8 @@ const EXERCISES = [
       "barbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Press the bar overhead while keeping your body rigid.",
-    "description": "Move your head slightly back then forward as the bar passes. Avoid excessive lower-back arching.",
+    "cue": "Press the bar from your shoulders to overhead, then move your head through.",
+    "description": "Stand holding a barbell across the front of your shoulders, hands just outside shoulder width. Brace hard and press it straight up, nudging your head back then forward so the bar finishes over your midfoot. Squeeze your glutes so you don't lean back and strain your lower back.",
     "avoidIf": [
       "shoulder",
       "neck"
@@ -4159,8 +4159,8 @@ const EXERCISES = [
       "barbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Dip slightly with your legs and drive the bar overhead.",
-    "description": "Transfer force from your legs into the press. Avoid excessive back extension at lockout.",
+    "cue": "Dip your knees, then drive the bar overhead with your legs.",
+    "description": "Hold a barbell on your front shoulders. Dip a few inches at the knees, then explosively stand and use that drive to press the bar overhead, locking out over your midfoot. The leg drive lets you handle more weight than a strict press.",
     "avoidIf": [
       "shoulder",
       "neck"
@@ -4192,8 +4192,8 @@ const EXERCISES = [
       "barbell"
     ],
     "difficulty": "Advanced",
-    "cue": "Press overhead while seated on the floor with legs extended.",
-    "description": "Maintain a tall seated posture throughout the movement. Avoid leaning backward to complete repetitions.",
+    "cue": "Sit on the floor with legs straight and press the bar overhead.",
+    "description": "Sit on the floor with your legs straight out and a barbell at your front shoulders. With no back support, press it overhead, then lower to your shoulders. Removing your legs and back forces your core and shoulders to do everything — start very light.",
     "avoidIf": [
       "shoulder",
       "neck"
@@ -4225,8 +4225,8 @@ const EXERCISES = [
       "barbell"
     ],
     "difficulty": "Beginner",
-    "cue": "Press the angled bar path upward and forward.",
-    "description": "Keep your shoulder packed as you press. Avoid letting the shoulder roll forward at the top.",
+    "cue": "Press the angled bar up and slightly forward from your shoulder.",
+    "description": "Wedge one end of a barbell into a corner or landmine and hold the other end at your shoulder. Press it up and slightly forward until your arm is straight, then lower. The angled path is easy on the shoulder joint, making it a great starting overhead press.",
     "avoidIf": [
       "shoulder"
     ],
@@ -4256,8 +4256,8 @@ const EXERCISES = [
       "barbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Pull the bar upward while keeping your elbows slightly above your hands.",
-    "description": "Use a comfortable range of motion and controlled tempo. Avoid forcing a narrow grip or excessive height.",
+    "cue": "Pull the bar straight up your body, leading with your elbows.",
+    "description": "Hold a barbell in front of your thighs with a shoulder-width grip. Pull it straight up close to your body to about chest height, leading with your elbows, then lower slowly. Don't pull it higher than your chest or force your elbows way above your hands — that can pinch the shoulder.",
     "avoidIf": [
       "shoulder",
       "wrist",
@@ -4289,8 +4289,8 @@ const EXERCISES = [
       "kettlebell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Press the kettlebell overhead while keeping your wrist stacked.",
-    "description": "Maintain a strong shoulder position throughout the press. Avoid leaning away from the weight.",
+    "cue": "Press the kettlebell overhead; the bell rests on the back of your wrist.",
+    "description": "Hold a kettlebell at your shoulder with the bell resting on the back of your forearm. Press it straight overhead until your arm is locked, then lower under control. The offset weight sitting behind your hand makes your shoulder and grip stabilize harder than a dumbbell.",
     "avoidIf": [
       "shoulder",
       "neck"
@@ -4321,8 +4321,8 @@ const EXERCISES = [
       "kettlebell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Use leg drive to help launch the kettlebell overhead.",
-    "description": "Keep the movement powerful and controlled. Avoid losing wrist alignment.",
+    "cue": "Dip your knees, then drive the kettlebell overhead.",
+    "description": "Hold a kettlebell at your shoulder. Dip a few inches at the knees, then explosively stand to help drive the bell overhead, and lower under control. Leg drive helps you press a heavier bell than strict.",
     "avoidIf": [
       "shoulder",
       "neck"
@@ -4354,8 +4354,8 @@ const EXERCISES = [
       "kettlebell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Press one kettlebell overhead while maintaining a stacked posture.",
-    "description": "Brace your core and control the descent. Avoid side bending during the press.",
+    "cue": "Press one kettlebell overhead while keeping your torso square.",
+    "description": "Hold a kettlebell at one shoulder, bell resting on your forearm. Brace your core and press it overhead, then lower to your shoulder while keeping your body from leaning. One-arm pressing builds shoulder strength and a rock-solid core.",
     "avoidIf": [
       "shoulder",
       "neck"
@@ -4385,8 +4385,8 @@ const EXERCISES = [
       "kettlebell"
     ],
     "difficulty": "Advanced",
-    "cue": "Balance the inverted kettlebell while pressing slowly overhead.",
-    "description": "Use light weight and maintain wrist control. Avoid attempting heavy loads before mastering stability.",
+    "cue": "Balance the kettlebell upside-down and press it overhead.",
+    "description": "Grip a kettlebell so the bell sits upside-down above your fist, balanced there. Keeping it from tipping, press it overhead, then lower slowly. Balancing the bell forces a crushing grip and fires up every stabilizer — use a light bell.",
     "avoidIf": [
       "shoulder",
       "wrist",
@@ -4418,8 +4418,8 @@ const EXERCISES = [
       "kettlebell"
     ],
     "difficulty": "Beginner",
-    "cue": "Circle the kettlebell around your head with controlled movement.",
-    "description": "Move smoothly while keeping your ribs down. Avoid forcing uncomfortable shoulder positions.",
+    "cue": "Circle the kettlebell around your head, close and controlled.",
+    "description": "Hold a kettlebell by the horns upside-down at chest height. Circle it around your head, keeping it close, then reverse direction. It's a mobility and warm-up move that loosens the shoulders and works the stabilizers — keep the circles smooth.",
     "avoidIf": [
       "shoulder",
       "neck"
@@ -4450,8 +4450,8 @@ const EXERCISES = [
       "kettlebell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Drive the kettlebell upward while leading with your elbow.",
-    "description": "Generate power from the hips before pulling. Avoid yanking through the shoulder joint.",
+    "cue": "Hike the kettlebell back, snap your hips, and pull it to shoulder height.",
+    "description": "Stand over a kettlebell, hinge and hike it back between your legs, then snap your hips forward and pull it up to shoulder height with your elbow high. Let it drop back into the next hinge. The power comes from your hips, not your arm.",
     "avoidIf": [
       "shoulder",
       "wrist",
@@ -4483,8 +4483,8 @@ const EXERCISES = [
       "kettlebell"
     ],
     "difficulty": "Advanced",
-    "cue": "Press kettlebells overhead while seated with legs extended.",
-    "description": "Maintain a tall posture and strict pressing mechanics. Avoid leaning backward.",
+    "cue": "Sit on the floor with legs straight and press the kettlebell overhead.",
+    "description": "Sit on the floor with your legs straight out and a kettlebell at your shoulder. With no back support, press it overhead, then lower to your shoulder. The seated position exposes any weakness and demands a strong, upright core — start light.",
     "avoidIf": [
       "shoulder",
       "neck"
@@ -4513,8 +4513,8 @@ const EXERCISES = [
       "cable"
     ],
     "difficulty": "Beginner",
-    "cue": "Raise the cable handle out to your side with controlled tension.",
-    "description": "Keep constant tension on the lateral deltoid throughout the movement. Avoid swinging the handle upward.",
+    "cue": "Raise the low cable handle out to the side to shoulder height.",
+    "description": "Stand side-on to a low cable and hold the handle in the far hand across your body. Raise your arm out to the side to shoulder height, then lower slowly. The cable keeps tension on the side delt even at the bottom, where dumbbells go slack.",
     "avoidIf": [
       "shoulder"
     ],
@@ -4543,8 +4543,8 @@ const EXERCISES = [
       "cable"
     ],
     "difficulty": "Beginner",
-    "cue": "Raise the cable handle forward until your arm reaches shoulder height.",
-    "description": "Maintain a stable torso throughout each repetition. Avoid leaning back to move heavier weight.",
+    "cue": "Raise the cable handle straight in front to shoulder height.",
+    "description": "Stand facing away from a low cable, holding the handle in front of your thigh. Raise your arm straight out in front to shoulder height, then lower slowly. Constant cable tension makes the front delt work through the whole range.",
     "avoidIf": [
       "shoulder"
     ],
@@ -4573,8 +4573,8 @@ const EXERCISES = [
       "cable"
     ],
     "difficulty": "Beginner",
-    "cue": "Open your arms outward using your rear shoulders.",
-    "description": "Control the cable path and squeeze your rear delts. Avoid rotating your torso to move the weight.",
+    "cue": "Pull the high cables across and apart, squeezing your rear delts.",
+    "description": "Stand between two high pulleys holding the opposite handle in each hand, arms crossed in front. Pull your hands out and apart in a reverse fly, squeezing your shoulder blades, then return slowly. Great constant-tension work for the often-neglected rear delts.",
     "avoidIf": [],
     "icon": "🪽",
     "mechanic": "Isolation",
@@ -4601,8 +4601,8 @@ const EXERCISES = [
       "cable"
     ],
     "difficulty": "Intermediate",
-    "cue": "Pull the cable upward while keeping your elbows higher than your hands.",
-    "description": "Use a comfortable range and controlled tempo. Avoid forcing the shoulders into painful positions.",
+    "cue": "Pull the low cable bar up your body, elbows leading.",
+    "description": "Stand facing a low cable with a bar attached, hands shoulder-width. Pull it straight up close to your body to chest height, leading with your elbows, then lower slowly. Stop at chest height to keep the shoulder happy.",
     "avoidIf": [
       "shoulder",
       "wrist",
@@ -4633,8 +4633,8 @@ const EXERCISES = [
       "cable"
     ],
     "difficulty": "Intermediate",
-    "cue": "Raise your arms into a Y pattern while maintaining shoulder control.",
-    "description": "Move smoothly through the shoulder blades and upper back. Avoid shrugging toward your ears.",
+    "cue": "Raise the cables up and out into a Y overhead.",
+    "description": "Stand facing two low pulleys holding the opposite handle in each hand, arms down and crossed. Raise both up and out into a Y shape overhead, then lower slowly. Targets the side and lower-trap area with steady cable tension.",
     "avoidIf": [
       "shoulder"
     ],
@@ -4664,8 +4664,8 @@ const EXERCISES = [
       "machine"
     ],
     "difficulty": "Beginner",
-    "cue": "Press the machine handles overhead with controlled movement.",
-    "description": "Keep your back supported and press through the shoulders. Avoid locking out aggressively.",
+    "cue": "Press the handles overhead until your arms are nearly straight.",
+    "description": "Sit in the shoulder press machine with your back on the pad and grip the handles at shoulder height. Press up until your arms are nearly straight, then lower under control. A safe, stable way to overhead press without balancing free weights.",
     "avoidIf": [
       "shoulder",
       "neck"
@@ -4694,8 +4694,8 @@ const EXERCISES = [
       "machine"
     ],
     "difficulty": "Beginner",
-    "cue": "Raise the machine pads outward using your side delts.",
-    "description": "Maintain slow controlled repetitions. Avoid bouncing the weight stack.",
+    "cue": "Drive your elbows up and out against the pads.",
+    "description": "Sit in the lateral raise machine with the pads against the outsides of your upper arms. Raise your arms out to the sides against the pads to shoulder height, then lower slowly. The fixed path makes it easy to feel the side delts and hard to cheat.",
     "avoidIf": [
       "shoulder"
     ],
@@ -4724,8 +4724,8 @@ const EXERCISES = [
       "machine"
     ],
     "difficulty": "Beginner",
-    "cue": "Pull the machine arms backward using your rear delts.",
-    "description": "Keep your chest against the pad and control the return. Avoid shrugging through the movement.",
+    "cue": "Push the handles out and back, squeezing your shoulder blades.",
+    "description": "Sit facing into the pec deck and grip the handles with arms out in front. Push them out and back in a reverse fly until your arms are level, squeezing your rear delts and shoulder blades, then return slowly. Ideal for building the rear shoulders.",
     "avoidIf": [],
     "icon": "🪽",
     "mechanic": "Isolation",
@@ -4752,8 +4752,8 @@ const EXERCISES = [
       "resistance-band"
     ],
     "difficulty": "Beginner",
-    "cue": "Press the band overhead while keeping your core braced.",
-    "description": "Maintain steady tension through the press. Avoid leaning backward to compensate for resistance.",
+    "cue": "Stand on the band and press the handles overhead.",
+    "description": "Stand on the middle of a resistance band and hold the ends at your shoulders. Press up overhead against the band until your arms are straight, then lower to your shoulders. The band's tension grows as you press, peaking at lockout.",
     "avoidIf": [
       "shoulder",
       "neck"
@@ -4782,8 +4782,8 @@ const EXERCISES = [
       "resistance-band"
     ],
     "difficulty": "Beginner",
-    "cue": "Raise the band handles outward using your side delts.",
-    "description": "Keep constant tension throughout the movement. Avoid using momentum from your torso.",
+    "cue": "Stand on the band and raise the handles out to your sides.",
+    "description": "Stand on the middle of a band and hold an end in each hand at your sides. Raise your arms out to the sides to shoulder height against the band, then lower slowly. The band makes the top of the raise — where side delts work hardest — the toughest part.",
     "avoidIf": [
       "shoulder"
     ],
@@ -4813,8 +4813,8 @@ const EXERCISES = [
       "resistance-band"
     ],
     "difficulty": "Beginner",
-    "cue": "Raise the band handles forward under control.",
-    "description": "Keep your body still while lifting. Avoid swinging the band upward.",
+    "cue": "Stand on the band and raise the handles straight in front.",
+    "description": "Stand on a band holding the ends in front of your thighs. Raise your arms straight out in front to shoulder height against the band, then lower slowly. Keep your torso still so the front delts do the work.",
     "avoidIf": [
       "shoulder"
     ],
@@ -4843,8 +4843,8 @@ const EXERCISES = [
       "resistance-band"
     ],
     "difficulty": "Beginner",
-    "cue": "Pull the band apart while squeezing your rear shoulders.",
-    "description": "Control the return and maintain posture. Avoid shrugging the shoulders upward.",
+    "cue": "Hold the band in front and pull your hands apart.",
+    "description": "Hold a band in front of you at shoulder height with both hands, arms nearly straight. Pull your hands apart out to the sides, squeezing your shoulder blades, then return slowly. A simple, joint-friendly way to hit the rear delts anywhere.",
     "avoidIf": [],
     "icon": "🪽",
     "mechanic": "Isolation",
@@ -4872,8 +4872,8 @@ const EXERCISES = [
       "resistance-band"
     ],
     "difficulty": "Intermediate",
-    "cue": "Pull the band upward while keeping your elbows elevated.",
-    "description": "Use controlled resistance and avoid excessive shoulder rotation. Avoid pulling into painful ranges.",
+    "cue": "Stand on the band and pull the handles up your body, elbows high.",
+    "description": "Stand on the middle of a band holding the ends in front of your thighs. Pull them straight up close to your body to chest height, leading with your elbows, then lower slowly. Stop at chest height to protect the shoulder.",
     "avoidIf": [
       "shoulder",
       "wrist",
@@ -4904,8 +4904,8 @@ const EXERCISES = [
       "trx"
     ],
     "difficulty": "Intermediate",
-    "cue": "Raise your arms into a Y shape while leaning into the straps.",
-    "description": "Control your body angle and shoulder position. Avoid shrugging as you raise.",
+    "cue": "Lean back on the straps and raise your arms up into a Y.",
+    "description": "Hold the TRX handles and lean back with straight arms so your bodyweight loads them. Keeping your arms straight, raise them up and out overhead into a Y, then return under control. Walk your feet forward to make it harder. Builds the rear delts and mid-back.",
     "avoidIf": [
       "shoulder"
     ],
@@ -4935,8 +4935,8 @@ const EXERCISES = [
       "trx"
     ],
     "difficulty": "Intermediate",
-    "cue": "Open your arms outward while controlling your body angle.",
-    "description": "Use slow repetitions to isolate the rear delts. Avoid letting your hips drop.",
+    "cue": "Lean back and pull your arms out to the sides in a T.",
+    "description": "Hold the TRX handles and lean back with straight arms. Keeping them straight, pull your hands out to the sides into a T, squeezing your shoulder blades, then return slowly. A bodyweight reverse fly for the rear shoulders — adjust the lean for difficulty.",
     "avoidIf": [
       "shoulder"
     ],
@@ -4967,8 +4967,8 @@ const EXERCISES = [
       "medicine-ball"
     ],
     "difficulty": "Beginner",
-    "cue": "Press the medicine ball overhead while maintaining posture.",
-    "description": "Keep your core engaged and control the descent. Avoid arching your lower back.",
+    "cue": "Press the med ball straight overhead from your chest.",
+    "description": "Hold a medicine ball at your chest with both hands. Press it straight overhead until your arms are nearly straight, then lower to your chest. A simple way to train the overhead press pattern with an easy-to-hold weight.",
     "avoidIf": [
       "shoulder",
       "neck"
@@ -5000,8 +5000,8 @@ const EXERCISES = [
       "medicine-ball"
     ],
     "difficulty": "Intermediate",
-    "cue": "Use leg drive to launch the medicine ball overhead.",
-    "description": "Generate power while maintaining control. Avoid losing alignment during the press.",
+    "cue": "Dip your knees, then drive the med ball overhead.",
+    "description": "Hold a medicine ball at your chest. Dip a few inches at the knees, then explosively stand and drive the ball overhead, lowering it back to your chest. The leg drive adds power and lets you move the ball faster for an athletic, explosive feel.",
     "avoidIf": [
       "shoulder",
       "neck"
