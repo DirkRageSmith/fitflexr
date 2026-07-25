@@ -5030,8 +5030,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Grip a towel and curl against your own opposing hand resistance.",
-    "description": "Create tension through the biceps without external weight. Avoid using body momentum instead of controlled resistance.",
+    "cue": "Curl the towel up while pulling down on it with your other hand.",
+    "description": "Loop a towel under one hand (palm up) and hold the other end with your free hand. Curl the working arm up while your top hand pulls down to create resistance, then lower slowly while still resisting. You control how hard it is by how much you pull.",
     "avoidIf": [],
     "icon": "🧺",
     "mechanic": "Isolation",
@@ -5057,8 +5057,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Use one arm to resist the curling motion of the other arm.",
-    "description": "Match resistance between your arms throughout the movement. Avoid relaxing tension at the bottom.",
+    "cue": "Push down with your free hand as you curl the other arm up.",
+    "description": "Place your free hand on top of your working forearm. Curl that arm up while your free hand presses down to resist, then lower slowly while still pushing. No equipment needed — the harder you press, the harder the curl.",
     "avoidIf": [],
     "icon": "💪",
     "mechanic": "Isolation",
@@ -5084,8 +5084,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Beginner",
-    "cue": "Curl the dumbbells upward while keeping your elbows near your sides.",
-    "description": "Lower the weights slowly after each repetition. Avoid swinging your torso to lift the dumbbells.",
+    "cue": "Curl the dumbbells up by bending your elbows, keeping them at your sides.",
+    "description": "Stand tall holding a dumbbell in each hand, palms facing forward. Bend your elbows to curl the weights up toward your shoulders, squeeze, then lower slowly. Keep your elbows pinned at your sides and don't swing your body to lift.",
     "avoidIf": [],
     "icon": "💪",
     "mechanic": "Isolation",
@@ -5112,8 +5112,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Beginner",
-    "cue": "Curl the dumbbells with palms facing each other.",
-    "description": "Maintain a neutral wrist position throughout the curl. Avoid letting your elbows drift forward.",
+    "cue": "Curl with palms facing each other, like holding two hammers.",
+    "description": "Stand holding dumbbells with your palms facing your body (thumbs up). Curl the weights up keeping that grip the whole way, then lower slowly. The neutral grip builds the forearm and the outer part of the biceps for thicker-looking arms.",
     "avoidIf": [],
     "icon": "🔨",
     "mechanic": "Isolation",
@@ -5139,8 +5139,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Beginner",
-    "cue": "Brace your arm against your inner thigh and curl slowly.",
-    "description": "Focus on squeezing the biceps through the full movement. Avoid rotating your shoulder to assist.",
+    "cue": "Elbow braced on your inner thigh, curl one dumbbell up.",
+    "description": "Sit down, lean forward, and rest the back of your working upper arm against your inner thigh, dumbbell hanging down. Curl it up toward your shoulder, squeeze hard at the top, then lower slowly. Bracing the elbow removes all momentum so the biceps does everything.",
     "avoidIf": [],
     "icon": "💪",
     "mechanic": "Isolation",
@@ -5166,8 +5166,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Curl from a stretched position while seated on an incline bench.",
-    "description": "Control the bottom stretch before curling upward. Avoid letting your shoulders roll forward.",
+    "cue": "Lie back on the incline and let your arms hang, then curl.",
+    "description": "Sit back on an incline bench with a dumbbell in each hand, arms hanging straight down behind your body. Curl the weights up, then lower slowly back to the stretch. Starting with your arms behind you gives the biceps a bigger stretch and range.",
     "avoidIf": [],
     "icon": "🏋️",
     "mechanic": "Isolation",
@@ -5193,8 +5193,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Curl dumbbells while lying chest-down on an incline bench.",
-    "description": "Keep the upper arms fixed while squeezing the biceps. Avoid allowing your shoulders to move.",
+    "cue": "Lie face-down on an incline bench and curl with arms hanging straight down.",
+    "description": "Lie chest-down on an incline bench so your arms hang straight toward the floor holding dumbbells. Curl them up to the top, squeeze, then lower slowly. The face-down angle keeps constant tension and stops you swinging.",
     "avoidIf": [],
     "icon": "🕷️",
     "mechanic": "Isolation",
@@ -5219,8 +5219,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Curl with palms up and lower with palms facing down.",
-    "description": "Control the lowering phase to train both biceps and forearms. Avoid rushing the rotation.",
+    "cue": "Curl up palms-up, rotate at the top, lower palms-down.",
+    "description": "Curl the dumbbells up with your palms facing up. At the top, rotate your wrists so your palms face down, then lower slowly in that reversed grip. You get a biceps curl on the way up and a forearm-builder on the way down.",
     "avoidIf": [],
     "icon": "🔄",
     "mechanic": "Isolation",
@@ -5246,8 +5246,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Beginner",
-    "cue": "Curl the dumbbell diagonally toward the opposite shoulder.",
-    "description": "Keep your elbow controlled as you cross the body. Avoid twisting your torso.",
+    "cue": "Curl the dumbbell across your body toward the opposite shoulder.",
+    "description": "Hold dumbbells with palms facing your body. Curl one across your torso toward the opposite shoulder, then lower and repeat with the other arm. The angled path targets the outer biceps and the brachialis underneath.",
     "avoidIf": [],
     "icon": "💪",
     "mechanic": "Isolation",
@@ -5274,8 +5274,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Drag the dumbbells upward while keeping elbows behind your torso.",
-    "description": "Focus on squeezing the biceps in the shortened position. Avoid turning it into a standard curl.",
+    "cue": "Drag the dumbbells straight up your body, elbows going back.",
+    "description": "Hold dumbbells at your sides and curl them up while dragging them close to your torso, letting your elbows travel backward instead of staying pinned. Lower the same way. Keeping the weights against your body shifts the work onto the biceps peak.",
     "avoidIf": [],
     "icon": "⬆️",
     "mechanic": "Isolation",
@@ -5300,8 +5300,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Curl dumbbells with palms facing downward.",
-    "description": "Keep your wrists neutral throughout the movement. Avoid bending your wrists backward.",
+    "cue": "Curl with palms facing down the whole time.",
+    "description": "Stand holding dumbbells with your palms facing down (knuckles up). Curl them up keeping that grip, then lower slowly. The overhand grip shifts most of the work to your forearms and the muscle beneath the biceps — expect to use lighter weight.",
     "avoidIf": [
       "wrist"
     ],
@@ -5328,8 +5328,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Hold the dumbbell like a waiter carrying a tray and curl upward.",
-    "description": "Maintain shoulder position while emphasizing the biceps squeeze. Avoid pressing the weight upward.",
+    "cue": "Cup one dumbbell in both hands like a tray and curl it up.",
+    "description": "Hold one dumbbell vertically, cupping the top end in both palms like carrying a tray. Curl it up toward your chin, squeeze, then lower slowly. The grip forces your biceps to work without help from the forearms.",
     "avoidIf": [],
     "icon": "🍽️",
     "mechanic": "Isolation",
@@ -5354,8 +5354,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Perform partial curls in three seven-repetition ranges.",
-    "description": "Maintain strict control through each section. Avoid using momentum as fatigue increases.",
+    "cue": "Seven bottom-half reps, seven top-half, seven full reps.",
+    "description": "Do seven curls through only the bottom half of the range, then seven through only the top half, then seven full reps — 21 in total without resting. It floods the biceps with tension. Use a lighter weight than usual; the burn is the point.",
     "avoidIf": [],
     "icon": "2️⃣1️⃣",
     "mechanic": "Isolation",
@@ -5382,8 +5382,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Beginner",
-    "cue": "Curl one dumbbell at a time while seated upright.",
-    "description": "Keep your back supported and focus on each arm individually. Avoid lifting your shoulder with the curl.",
+    "cue": "Sitting tall, curl one arm at a time.",
+    "description": "Sit on the end of a bench with a dumbbell in each hand, arms hanging down. Curl one arm up, lower it, then curl the other. Sitting stops you swinging your body, so each rep is strict and controlled.",
     "avoidIf": [],
     "icon": "💪",
     "mechanic": "Isolation",
@@ -5410,8 +5410,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Curl dumbbells with neutral grips while seated on an incline bench.",
-    "description": "Control the stretch at the bottom of each repetition. Avoid letting your shoulders roll forward.",
+    "cue": "Lie back on the incline and hammer-curl with palms facing in.",
+    "description": "Sit back on an incline bench with dumbbells hanging down, palms facing each other. Curl them up keeping that neutral grip, then lower slowly to the stretch. Combines the incline stretch with the forearm emphasis of a hammer curl.",
     "avoidIf": [],
     "icon": "🔨",
     "mechanic": "Isolation",
@@ -5437,8 +5437,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Curl dumbbells while lying face down on an incline bench.",
-    "description": "Keep the upper arms fixed against gravity. Avoid lifting your shoulders away from the bench.",
+    "cue": "Lie face-down on a flat bench and curl the dumbbells up.",
+    "description": "Lie face-down on a flat bench raised enough for your arms to hang, holding dumbbells straight down. Curl them up, squeeze, then lower slowly. Lying face-down completely blocks any cheating with your legs or back.",
     "avoidIf": [],
     "icon": "🏋️",
     "mechanic": "Isolation",
@@ -5463,8 +5463,8 @@ const EXERCISES = [
       "ez-bar"
     ],
     "difficulty": "Beginner",
-    "cue": "Curl the EZ-bar upward while keeping your elbows close to your sides.",
-    "description": "Lower the bar slowly after each repetition. Avoid swinging your torso to generate momentum.",
+    "cue": "Curl the EZ-bar up, elbows at your sides.",
+    "description": "Hold an EZ-bar with palms up on the angled sections, arms straight. Curl it up toward your shoulders keeping your elbows pinned, squeeze, then lower slowly. The angled bar is much kinder to your wrists than a straight bar.",
     "avoidIf": [],
     "icon": "💪",
     "mechanic": "Isolation",
@@ -5491,8 +5491,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Curl the EZ-bar from the preacher pad while keeping your upper arms fixed.",
-    "description": "Control the bottom stretch before curling upward. Avoid locking your elbows aggressively.",
+    "cue": "Rest your arms on the preacher pad and curl the bar up.",
+    "description": "Sit at a preacher bench with the backs of your upper arms flat on the angled pad, holding an EZ-bar. Curl it up, then lower slowly until your arms are almost straight. The pad locks your elbows in place so the biceps can't hide behind momentum.",
     "avoidIf": [],
     "icon": "🏋️",
     "mechanic": "Isolation",
@@ -5517,8 +5517,8 @@ const EXERCISES = [
       "ez-bar"
     ],
     "difficulty": "Intermediate",
-    "cue": "Curl the EZ-bar with your palms facing downward.",
-    "description": "Keep your wrists neutral throughout the movement. Avoid bending your wrists under load.",
+    "cue": "Grip the EZ-bar palms-down and curl.",
+    "description": "Hold an EZ-bar with an overhand (palms-down) grip, arms straight. Curl it up keeping that grip, then lower slowly. Targets the forearms and the brachialis — go lighter than your normal curl weight.",
     "avoidIf": [
       "wrist"
     ],
@@ -5547,8 +5547,8 @@ const EXERCISES = [
       "ez-bar"
     ],
     "difficulty": "Intermediate",
-    "cue": "Drag the bar upward while pulling your elbows behind your torso.",
-    "description": "Focus on squeezing the biceps in the shortened position. Avoid turning the movement into a row.",
+    "cue": "Drag the EZ-bar up your torso, elbows drifting back.",
+    "description": "Hold an EZ-bar at your thighs and curl it up while keeping it dragging against your body, letting your elbows travel backward. Lower the same way. The dragging path bunches up the biceps peak at the top.",
     "avoidIf": [],
     "icon": "⬆️",
     "mechanic": "Isolation",
@@ -5573,8 +5573,8 @@ const EXERCISES = [
       "barbell"
     ],
     "difficulty": "Beginner",
-    "cue": "Curl the barbell upward without moving your elbows.",
-    "description": "Maintain strict form and control the lowering phase. Avoid leaning back to lift heavier weight.",
+    "cue": "Curl the barbell up in one line, elbows at your sides.",
+    "description": "Stand holding a barbell with a shoulder-width underhand grip, arms straight. Curl it up toward your shoulders, squeeze, then lower slowly. Keep your elbows pinned and resist the urge to swing your hips to heave it up.",
     "avoidIf": [],
     "icon": "🏋️",
     "mechanic": "Isolation",
@@ -5600,8 +5600,8 @@ const EXERCISES = [
       "barbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Use a wider grip and curl the bar with controlled motion.",
-    "description": "Keep your elbows stable throughout the movement. Avoid shifting your shoulders forward.",
+    "cue": "Grip the bar wider than shoulders and curl.",
+    "description": "Hold a barbell with a grip wider than shoulder width, palms up. Curl it up keeping your elbows at your sides, then lower slowly. The wide grip emphasizes the inner (short) head of the biceps.",
     "avoidIf": [],
     "icon": "💪",
     "mechanic": "Isolation",
@@ -5626,8 +5626,8 @@ const EXERCISES = [
       "barbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Curl with a narrow grip while keeping your elbows fixed.",
-    "description": "Maintain tension through the biceps throughout the set. Avoid excessive wrist bending.",
+    "cue": "Grip the bar narrow, hands close together, and curl.",
+    "description": "Hold a barbell with your hands close together, palms up. Curl it up with elbows tucked, then lower slowly. The narrow grip shifts the emphasis to the outer (long) head of the biceps for a taller peak.",
     "avoidIf": [
       "wrist"
     ],
@@ -5654,8 +5654,8 @@ const EXERCISES = [
       "barbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Complete seven lower, seven upper, and seven full curls.",
-    "description": "Keep constant tension through all three ranges. Avoid using momentum during the final repetitions.",
+    "cue": "Seven bottom-half, seven top-half, seven full reps with the bar.",
+    "description": "Do seven curls through the bottom half of the range, seven through the top half, then seven full reps — 21 straight with no rest. It's a brutal pump finisher. Load the bar lighter than usual.",
     "avoidIf": [],
     "icon": "2️⃣1️⃣",
     "mechanic": "Isolation",
@@ -5681,8 +5681,8 @@ const EXERCISES = [
       "cable"
     ],
     "difficulty": "Beginner",
-    "cue": "Curl the cable handle upward while keeping tension constant.",
-    "description": "Control the return as the cable pulls your arms down. Avoid leaning backward.",
+    "cue": "Curl the low cable handle up, elbows fixed at your sides.",
+    "description": "Stand facing a cable machine with a bar or handle on the low pulley, arms straight. Curl it up toward your shoulders, then lower slowly. The cable keeps steady tension on the biceps through the entire rep, even at the bottom.",
     "avoidIf": [],
     "icon": "🔗",
     "mechanic": "Isolation",
@@ -5707,8 +5707,8 @@ const EXERCISES = [
       "cable"
     ],
     "difficulty": "Beginner",
-    "cue": "Curl the rope attachment with your palms facing each other.",
-    "description": "Keep your elbows close to your body. Avoid swinging the rope upward.",
+    "cue": "Curl the rope up with palms facing each other.",
+    "description": "Attach a rope to a low cable and hold both ends with palms facing in. Curl up keeping that neutral grip, then lower slowly. Combines constant cable tension with the forearm-building hammer grip.",
     "avoidIf": [],
     "icon": "🔗",
     "mechanic": "Isolation",
@@ -5736,8 +5736,8 @@ const EXERCISES = [
       "cable"
     ],
     "difficulty": "Intermediate",
-    "cue": "Curl both cable handles toward your head like a front double-biceps pose.",
-    "description": "Maintain shoulder position while squeezing the biceps. Avoid letting your elbows drop.",
+    "cue": "Two high cables, curl both handles toward your ears — a front-double-biceps pose.",
+    "description": "Stand between two high pulleys and hold a handle in each hand, arms out wide. Curl both hands in toward your ears like a front-double-biceps pose, squeeze hard, then return slowly. The peak-contraction squeeze is what makes this one great.",
     "avoidIf": [],
     "icon": "💪",
     "mechanic": "Isolation",
@@ -5762,8 +5762,8 @@ const EXERCISES = [
       "cable"
     ],
     "difficulty": "Beginner",
-    "cue": "Curl one cable handle upward while keeping your upper arm still.",
-    "description": "Focus on full contraction of the working arm. Avoid rotating your torso.",
+    "cue": "One low handle, curl with your elbow pinned.",
+    "description": "Stand facing a cable machine holding a single handle in one hand on the low pulley. Curl it up keeping your elbow at your side, squeeze, then lower slowly. Working one arm lets you focus fully and fix a weaker side.",
     "avoidIf": [],
     "icon": "💪",
     "mechanic": "Isolation",
@@ -5789,8 +5789,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Curl the cable handle from a preacher curl setup.",
-    "description": "Keep your upper arm supported and control the stretch. Avoid lifting your shoulder off the pad.",
+    "cue": "Arms on the pad, curl the low cable up.",
+    "description": "Set a preacher bench in front of a low cable, rest the backs of your arms on the pad, and hold the handle. Curl up, then lower slowly to nearly straight. The cable plus the pad means constant tension and zero cheating.",
     "avoidIf": [],
     "icon": "🏋️",
     "mechanic": "Isolation",
@@ -5815,8 +5815,8 @@ const EXERCISES = [
       "machine"
     ],
     "difficulty": "Beginner",
-    "cue": "Curl the machine handles while keeping your upper arms against the pad.",
-    "description": "Use the machine resistance for controlled repetitions. Avoid lifting your elbows from the pad.",
+    "cue": "Arms on the pad, curl the handles up.",
+    "description": "Sit at the preacher curl machine with your upper arms flat on the pad and grip the handles. Curl up, squeeze, then lower slowly until your arms are nearly straight. The fixed path makes it easy to focus purely on squeezing the biceps.",
     "avoidIf": [],
     "icon": "🏋️",
     "mechanic": "Isolation",
@@ -5841,8 +5841,8 @@ const EXERCISES = [
       "machine"
     ],
     "difficulty": "Beginner",
-    "cue": "Curl the machine handles through the full range of motion.",
-    "description": "Maintain steady tension throughout the movement. Avoid bouncing the weight stack.",
+    "cue": "Grip the handles and curl up in a smooth arc.",
+    "description": "Sit in the biceps curl machine, adjust the seat so your elbows line up with the pivot, and grip the handles. Curl up, squeeze, then lower slowly. A beginner-friendly way to train the biceps with no balancing required.",
     "avoidIf": [],
     "icon": "🏋️",
     "mechanic": "Isolation",
@@ -5867,8 +5867,8 @@ const EXERCISES = [
       "resistance-band"
     ],
     "difficulty": "Beginner",
-    "cue": "Curl the band upward while keeping your elbows stationary.",
-    "description": "Maintain tension throughout the entire movement. Avoid leaning backward for assistance.",
+    "cue": "Stand on the band and curl the handles up.",
+    "description": "Stand on the middle of a resistance band and hold an end in each hand, palms up. Curl up against the band's pull, squeeze, then lower slowly. The band gets harder as you curl, peaking right at the top squeeze.",
     "avoidIf": [],
     "icon": "🟢",
     "mechanic": "Isolation",
@@ -5894,8 +5894,8 @@ const EXERCISES = [
       "resistance-band"
     ],
     "difficulty": "Beginner",
-    "cue": "Curl the band with palms facing inward.",
-    "description": "Keep wrists neutral and control the band resistance. Avoid shrugging your shoulders.",
+    "cue": "Stand on the band and curl with palms facing in.",
+    "description": "Stand on a band holding the ends with palms facing each other. Curl up keeping that neutral grip, then lower slowly. Hits the forearms and outer biceps, with the band's tension strongest at the top.",
     "avoidIf": [],
     "icon": "🟢",
     "mechanic": "Isolation",
@@ -5921,8 +5921,8 @@ const EXERCISES = [
       "kettlebell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Curl the kettlebell upward while keeping your elbow fixed.",
-    "description": "Control the uneven load throughout the curl. Avoid rotating your wrist under tension.",
+    "cue": "Curl the kettlebell up; the weight hangs behind your hand.",
+    "description": "Hold a kettlebell by the handle, palm up, so the bell hangs on the back of your wrist. Curl it up, squeeze, then lower slowly. The offset weight makes your biceps and grip work a little harder than a dumbbell.",
     "avoidIf": [],
     "icon": "🔔",
     "mechanic": "Isolation",
@@ -5950,8 +5950,8 @@ const EXERCISES = [
       "trx"
     ],
     "difficulty": "Intermediate",
-    "cue": "Lean back and curl your body upward using the suspension handles.",
-    "description": "Maintain a rigid body position throughout the movement. Avoid letting your hips sag.",
+    "cue": "Lean back on the straps and curl your body up to your hands.",
+    "description": "Hold the TRX handles palms up and lean back with straight arms so your bodyweight loads them. Curl your body up by bending only your elbows, keeping them high and still, then lower slowly. Walk your feet forward to make it harder.",
     "avoidIf": [],
     "icon": "〰️",
     "mechanic": "Isolation",
@@ -5980,8 +5980,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Beginner",
-    "cue": "Lower until your elbows reach about 90°, then press back up.",
-    "description": "Keep your hips close to the bench throughout the movement. Avoid letting your shoulders roll excessively forward.",
+    "cue": "Hands on the bench behind you, bend your elbows to dip down, then press back up.",
+    "description": "Sit on the edge of a bench, hands gripping the edge beside your hips, and slide your butt off so you're held up by your arms. Bend your elbows straight back to lower your body, then press through your palms to straighten your arms. Keep your elbows pointing back, not flaring out to the sides.",
     "avoidIf": [
       "shoulder",
       "wrist"
@@ -6013,8 +6013,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Elevate your feet and lower under control before pressing upward.",
-    "description": "Maintain a tall chest throughout the movement. Avoid dropping too deep into shoulder extension.",
+    "cue": "Feet up on a second bench, dip down and press back up.",
+    "description": "Set up like a bench dip but rest your heels on a second bench or chair so your legs are straight and level. Bend your elbows to lower your body, then press back up. Raising your feet puts more of your bodyweight on your triceps, making it harder.",
     "avoidIf": [
       "shoulder",
       "wrist"
@@ -6046,8 +6046,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Bend only your elbows as you lower toward the bench.",
-    "description": "Keep your body rigid while extending through the elbows. Avoid allowing your hips to sag.",
+    "cue": "Lean into the bar and straighten your arms to push yourself back.",
+    "description": "Set your hands on a waist-height bar or bench edge and walk your feet back so your body is angled forward like a falling plank. Bend only at the elbows to lower your forehead toward the bar, then straighten your arms to push back up. Keep your body in one straight line the whole time.",
     "avoidIf": [
       "shoulder",
       "wrist"
@@ -6075,8 +6075,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Lower your forehead toward the bench by bending only the elbows.",
-    "description": "Extend smoothly back to the start. Avoid letting the shoulders drift excessively.",
+    "cue": "Lower the weight toward your forehead by bending only your elbows.",
+    "description": "Lie back on a bench holding a weight over your chest with straight arms. Keeping your upper arms still and pointing at the ceiling, bend your elbows to lower the weight toward your forehead, then straighten back up. Only your forearms should move — the elbows stay put.",
     "avoidIf": [
       "shoulder",
       "wrist"
@@ -6104,8 +6104,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Beginner",
-    "cue": "Lower the dumbbell behind your head before extending your elbows.",
-    "description": "Keep your upper arms mostly vertical. Avoid flaring the elbows excessively.",
+    "cue": "Hold one dumbbell overhead and lower it behind your head.",
+    "description": "Stand or sit tall and hold one dumbbell with both hands straight above your head. Keeping your elbows close to your ears, bend them to lower the dumbbell behind your head, then straighten your arms to press it back up. Don't let your elbows flare wide.",
     "avoidIf": [
       "shoulder"
     ],
@@ -6135,8 +6135,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Extend the dumbbell overhead while keeping your elbow pointed upward.",
-    "description": "Move only through the elbow joint. Avoid leaning sideways.",
+    "cue": "One dumbbell overhead, lower it behind your head, then press up.",
+    "description": "Hold a dumbbell straight overhead in one hand, elbow pointing forward and close to your head. Bend the elbow to lower the weight behind your head, then straighten your arm to press it up. Brace your core so you don't arch your back.",
     "avoidIf": [
       "shoulder"
     ],
@@ -6164,8 +6164,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Lower the dumbbells beside your head before extending.",
-    "description": "Maintain fixed upper arms throughout the movement. Avoid dropping the elbows outward.",
+    "cue": "Lower two dumbbells toward your forehead, then press back up.",
+    "description": "Lie on a bench holding a dumbbell in each hand, arms straight up over your chest with palms facing each other. Bend your elbows to lower the dumbbells beside your head, then straighten to press them back up. Keep your upper arms vertical and still.",
     "avoidIf": [
       "shoulder",
       "wrist"
@@ -6194,8 +6194,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Beginner",
-    "cue": "Extend your arm fully behind you without moving the upper arm.",
-    "description": "Pause briefly at full extension. Avoid swinging the weight.",
+    "cue": "Hinge forward and straighten your arm back until it's parallel to the floor.",
+    "description": "Hinge forward at the hips with a flat back, upper arm tucked against your side and elbow bent 90 degrees. Straighten your arm behind you until it's fully extended, squeezing the triceps, then return under control. Keep your upper arm still — only the forearm swings.",
     "avoidIf": [],
     "icon": "↩️",
     "mechanic": "Isolation",
@@ -6223,8 +6223,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Lower the dumbbells toward your chest with elbows flared slightly.",
-    "description": "Extend smoothly to emphasize the triceps. Avoid bouncing off the chest.",
+    "cue": "Lower the dumbbells to your chest with elbows flared out, then press up.",
+    "description": "Lie on a bench with a dumbbell in each hand pressed together above your chest, palms facing your feet. Bend your elbows out to the sides to lower the dumbbells toward your chest, then press them back up. It's an unusual angle that hammers the inner triceps.",
     "avoidIf": [
       "shoulder"
     ],
@@ -6254,8 +6254,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Advanced",
-    "cue": "Lower the dumbbells between a press and extension path.",
-    "description": "Keep the elbows tucked throughout the lift. Avoid turning it into a standard bench press.",
+    "cue": "Lower the dumbbells toward your upper chest, then press up — half press, half skull crusher.",
+    "description": "Lie on a bench holding dumbbells over your chest. Lower them toward your upper chest and chin by bending your elbows forward, keeping them tucked, then press back up. It blends a close-grip press with a skull crusher — go light while you learn the groove.",
     "avoidIf": [
       "shoulder",
       "wrist"
@@ -6286,8 +6286,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Beginner",
-    "cue": "Press with palms facing each other while keeping elbows close.",
-    "description": "Emphasize elbow extension at the top. Avoid flaring the elbows.",
+    "cue": "Press two dumbbells straight up with palms facing each other, elbows tucked.",
+    "description": "Lie on a bench holding a dumbbell in each hand over your chest, palms facing each other. Lower them to your chest keeping your elbows tucked close to your sides, then press straight back up. The tucked elbows shift the work from chest to triceps.",
     "avoidIf": [],
     "icon": "🏋️",
     "mechanic": "Compound",
@@ -6313,8 +6313,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Beginner",
-    "cue": "Lower the dumbbells toward the floor before extending.",
-    "description": "Use the floor to limit shoulder range of motion. Avoid letting your elbows flare.",
+    "cue": "On the floor, lower the dumbbells beside your head, then press up.",
+    "description": "Lie on the floor with a dumbbell in each hand, arms straight over your chest. Bend your elbows to lower the dumbbells toward the floor beside your head, then straighten up. The floor stops you going too deep, protecting your elbows and shoulders.",
     "avoidIf": [
       "wrist"
     ],
@@ -6344,8 +6344,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Beginner",
-    "cue": "Keep your torso upright while lowering the dumbbell behind your head.",
-    "description": "Maintain a stable seated posture throughout. Avoid arching your lower back.",
+    "cue": "Sit tall, lower one dumbbell behind your head, then press up.",
+    "description": "Sit on a bench with back support, holding one dumbbell overhead with both hands. Bend your elbows to lower it behind your head, then straighten your arms to press it up. Sitting with support keeps your torso stable so you can't cheat with momentum.",
     "avoidIf": [
       "shoulder"
     ],
@@ -6373,8 +6373,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Advanced",
-    "cue": "Lower the dumbbells behind your head from an incline bench.",
-    "description": "Control the stretched position carefully. Avoid excessive shoulder movement.",
+    "cue": "On an incline bench, lower the dumbbells past your head, then press up.",
+    "description": "Lie back on an incline bench holding dumbbells with straight arms over your face. Bend your elbows to lower the weights down past the top of your head, then straighten back up. The incline stretches the triceps harder at the bottom — control the weight.",
     "avoidIf": [
       "shoulder",
       "wrist"
@@ -6402,8 +6402,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Extend the dumbbell diagonally across your body.",
-    "description": "Keep the upper arm stable throughout the repetition. Avoid rotating your torso.",
+    "cue": "Lower the dumbbell across your body toward the opposite shoulder.",
+    "description": "Lie on a bench holding a dumbbell over your chest in one hand. Bend your elbow to lower the dumbbell across your body toward the opposite shoulder, then straighten back up. The angled path targets the long head of the triceps.",
     "avoidIf": [],
     "icon": "↘️",
     "mechanic": "Isolation",
@@ -6429,8 +6429,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Lower the EZ-bar toward your forehead while keeping your elbows fixed.",
-    "description": "Extend through the elbows until your arms are straight. Avoid letting your elbows flare outward.",
+    "cue": "Lower the EZ-bar to your forehead, then straighten your arms.",
+    "description": "Lie on a bench holding an EZ-bar over your chest with a narrow grip on the angled parts. Bend your elbows to lower the bar to your forehead or just behind it, then straighten back up. The angled bar is easier on the wrists than a straight one.",
     "avoidIf": [
       "shoulder",
       "wrist"
@@ -6460,8 +6460,8 @@ const EXERCISES = [
       "ez-bar"
     ],
     "difficulty": "Intermediate",
-    "cue": "Lower the bar behind your head while keeping your upper arms vertical.",
-    "description": "Control the stretch before extending back overhead. Avoid excessive shoulder movement.",
+    "cue": "Press the EZ-bar overhead, lower it behind your head, then extend.",
+    "description": "Hold an EZ-bar overhead with a narrow grip, arms straight. Keeping your elbows close to your head, bend them to lower the bar behind your head, then straighten your arms to press it up. Brace your core so your ribs don't flare.",
     "avoidIf": [
       "shoulder",
       "wrist"
@@ -6492,8 +6492,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Advanced",
-    "cue": "Lower the bar between your upper chest and chin before pressing upward.",
-    "description": "Blend a press and extension while keeping elbows tucked. Avoid turning it into a bench press.",
+    "cue": "Lower the bar toward your upper chest with elbows tucked, then press.",
+    "description": "Lie on a bench holding an EZ-bar over your chest with a close grip. Lower it toward your upper chest and chin while keeping your elbows tucked forward, then press back up. A hybrid of close-grip press and skull crusher — start light.",
     "avoidIf": [
       "shoulder",
       "wrist"
@@ -6522,8 +6522,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Intermediate",
-    "cue": "Lower the barbell toward your forehead under control.",
-    "description": "Keep your upper arms fixed throughout the lift. Avoid bouncing the bar or flaring the elbows.",
+    "cue": "Lower the barbell to your forehead by bending only your elbows.",
+    "description": "Lie on a bench holding a barbell over your chest with a shoulder-width grip, arms straight. Bend your elbows to lower the bar to your forehead, keeping your upper arms vertical, then straighten back up. Lower slowly and under control — it's called a skull crusher for a reason.",
     "avoidIf": [
       "shoulder",
       "wrist"
@@ -6555,8 +6555,8 @@ const EXERCISES = [
       "bench"
     ],
     "difficulty": "Advanced",
-    "cue": "Press with a reverse grip while keeping your wrists stacked.",
-    "description": "Move slowly and maintain full control throughout the lift. Avoid allowing your wrists to collapse.",
+    "cue": "Grip the bar underhand and press it from your lower chest, elbows tucked.",
+    "description": "Lie on a bench and hold a barbell with an underhand (palms-up) grip at shoulder width. Lower it to your lower chest with elbows tucked close to your body, then press straight up. The reverse grip emphasizes the triceps — use lighter weight and a spotter.",
     "avoidIf": [
       "wrist"
     ],
@@ -6583,8 +6583,8 @@ const EXERCISES = [
       "cable"
     ],
     "difficulty": "Beginner",
-    "cue": "Push the rope downward and separate the ends at full extension.",
-    "description": "Keep your elbows pinned to your sides. Avoid leaning your body over the cable.",
+    "cue": "Push the rope down and spread the ends apart at the bottom.",
+    "description": "Stand facing a cable machine with a rope attached high, elbows tucked at your sides. Push the rope down by straightening your arms, spreading the ends apart at the bottom for an extra squeeze, then return under control. Keep your elbows pinned to your sides.",
     "avoidIf": [],
     "icon": "🪢",
     "mechanic": "Isolation",
@@ -6609,8 +6609,8 @@ const EXERCISES = [
       "cable"
     ],
     "difficulty": "Beginner",
-    "cue": "Press the straight bar down while keeping your elbows fixed.",
-    "description": "Pause briefly at full extension before returning. Avoid bending your wrists.",
+    "cue": "Push the bar down until your arms are straight, elbows glued to your sides.",
+    "description": "Stand facing a cable machine with a straight bar attached high. Keeping your elbows tucked at your sides, push the bar down until your arms are fully straight, then let it rise back under control. Only your forearms move — don't lean over the bar to force it down.",
     "avoidIf": [
       "wrist"
     ],
@@ -6638,8 +6638,8 @@ const EXERCISES = [
       "cable"
     ],
     "difficulty": "Intermediate",
-    "cue": "Extend the rope overhead while keeping your elbows close together.",
-    "description": "Move only through the elbow joint. Avoid arching your lower back.",
+    "cue": "Face away from the machine and press the handle forward and up.",
+    "description": "Set the cable low or high, face away from the machine, and hold the rope or handle behind your head with elbows bent and pointing forward. Straighten your arms to press the handle forward and up, then return slowly. The overhead angle stretches and works the long head of the triceps.",
     "avoidIf": [
       "shoulder"
     ],
@@ -6666,8 +6666,8 @@ const EXERCISES = [
       "cable"
     ],
     "difficulty": "Beginner",
-    "cue": "Push the handle downward while keeping your elbow against your side.",
-    "description": "Control both the extension and return. Avoid rotating your torso.",
+    "cue": "One hand, push the handle down until your arm is straight.",
+    "description": "Stand facing a cable machine holding a single handle in one hand, elbow tucked at your side. Push down until your arm is fully straight, squeeze, then return under control. Working one arm at a time helps fix a weaker side.",
     "avoidIf": [],
     "icon": "💪",
     "mechanic": "Isolation",
@@ -6692,8 +6692,8 @@ const EXERCISES = [
       "cable"
     ],
     "difficulty": "Intermediate",
-    "cue": "Press the cable diagonally across your body to full extension.",
-    "description": "Maintain a stable shoulder throughout the movement. Avoid twisting through your torso.",
+    "cue": "Pull the handle down and across your body until your arm is straight.",
+    "description": "Stand side-on to a cable machine holding a handle with the far hand. Straighten your arm down and across your body, then return under control. The cross-body angle keeps constant tension on the triceps through the whole range.",
     "avoidIf": [],
     "icon": "↘️",
     "mechanic": "Isolation",
@@ -6718,8 +6718,8 @@ const EXERCISES = [
       "machine"
     ],
     "difficulty": "Beginner",
-    "cue": "Extend the machine handles until your elbows are straight.",
-    "description": "Maintain steady tension throughout the repetition. Avoid slamming the weight stack.",
+    "cue": "Set the seat, grip the handles, and push until your arms are straight.",
+    "description": "Sit in the triceps machine and adjust the seat so your elbows line up with the pivot. Grip the handles and push down or forward until your arms are straight, then return under control. Machines keep the path fixed, so just focus on a full squeeze and slow return.",
     "avoidIf": [],
     "icon": "🏋️",
     "mechanic": "Isolation",
@@ -6748,8 +6748,8 @@ const EXERCISES = [
       "machine"
     ],
     "difficulty": "Beginner",
-    "cue": "Use the assistance platform to perform controlled dips.",
-    "description": "Keep your elbows tracking naturally throughout the movement. Avoid dropping too deeply into the shoulders.",
+    "cue": "Kneel on the pad and dip with your torso upright to hit the triceps.",
+    "description": "Set the assist weight, kneel on the pad, and grip the handles with your body upright. Bend your elbows to lower yourself, then press back up. Staying upright (rather than leaning forward) keeps the focus on your triceps instead of your chest.",
     "avoidIf": [
       "shoulder"
     ],
@@ -6778,8 +6778,8 @@ const EXERCISES = [
       "machine"
     ],
     "difficulty": "Beginner",
-    "cue": "Drive the machine handles downward using your triceps.",
-    "description": "Maintain smooth repetitions without locking out forcefully. Avoid shrugging your shoulders.",
+    "cue": "Sit tall, press the handles down until your arms are straight.",
+    "description": "Sit in the dip machine and grip the handles at your sides. Press down until your arms are fully straight, then return under control. The seated setup lets you overload the triceps safely without balancing your bodyweight.",
     "avoidIf": [
       "shoulder"
     ],
@@ -6807,8 +6807,8 @@ const EXERCISES = [
       "resistance-band"
     ],
     "difficulty": "Beginner",
-    "cue": "Press the band downward while keeping your elbows at your sides.",
-    "description": "Maintain constant band tension throughout the movement. Avoid using your shoulders to finish the rep.",
+    "cue": "Anchor the band high and push down until your arms are straight.",
+    "description": "Loop a resistance band over a high anchor like a door top and hold the ends with elbows tucked at your sides. Push down until your arms are straight against the band's pull, then return slowly. The band gives the most resistance right where you lock out.",
     "avoidIf": [],
     "icon": "🟢",
     "mechanic": "Isolation",
@@ -6834,8 +6834,8 @@ const EXERCISES = [
       "resistance-band"
     ],
     "difficulty": "Beginner",
-    "cue": "Extend the band overhead while keeping your upper arms still.",
-    "description": "Control the lowering phase throughout the exercise. Avoid arching your back.",
+    "cue": "Step on the band, press the ends overhead and behind your head.",
+    "description": "Stand on one end of a band and hold the other overhead with elbows bent behind your head. Straighten your arms to press upward against the band, then lower slowly. Keep your elbows pointing forward and close to your head.",
     "avoidIf": [
       "shoulder"
     ],
@@ -6863,8 +6863,8 @@ const EXERCISES = [
       "resistance-band"
     ],
     "difficulty": "Beginner",
-    "cue": "Extend your arm behind you against the band's resistance.",
-    "description": "Keep your upper arm fixed throughout the movement. Avoid swinging through the shoulder.",
+    "cue": "Hinge forward and extend your arms back against the band.",
+    "description": "Stand on a band, hinge forward with a flat back, and hold the ends with elbows bent at your sides. Straighten your arms behind you against the band's pull, squeeze, then return. Keep your upper arms still — only the forearms move.",
     "avoidIf": [],
     "icon": "🟢",
     "mechanic": "Isolation",
@@ -6890,8 +6890,8 @@ const EXERCISES = [
       "kettlebell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Lower the kettlebell behind your head before extending upward.",
-    "description": "Keep your elbows close together throughout the lift. Avoid excessive shoulder movement.",
+    "cue": "Hold the kettlebell overhead and lower it behind your head.",
+    "description": "Hold a kettlebell by the horns with both hands straight overhead. Bend your elbows to lower it behind your head, keeping your elbows close, then straighten to press it back up. The bell hangs behind your hands, giving a slightly different feel than a dumbbell.",
     "avoidIf": [
       "shoulder"
     ],
@@ -6921,8 +6921,8 @@ const EXERCISES = [
       "trx"
     ],
     "difficulty": "Intermediate",
-    "cue": "Lean into the straps and extend your elbows to return upright.",
-    "description": "Keep your body rigid throughout the movement. Avoid letting your elbows flare outward.",
+    "cue": "Lean into the straps and press yourself back by straightening your arms.",
+    "description": "Hold the TRX handles at head height and walk your feet forward so you're leaning in, arms bent beside your head. Straighten your arms to press your body back up to standing, then bend to lower under control. Walk your feet back to make it easier, forward to make it harder.",
     "avoidIf": [
       "shoulder"
     ],
@@ -11108,8 +11108,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Rise onto the balls of your feet and squeeze your calves at the top.",
-    "description": "Perform controlled repetitions through a full range of motion. Avoid bouncing through the movement.",
+    "cue": "Push through the balls of your feet and lift your heels as high as you can.",
+    "description": "Stand tall with feet hip-width apart. Rise up onto the balls of your feet, squeezing your calves at the top, then lower your heels slowly back to the floor. Don't bounce — control the way down for the full stretch.",
     "avoidIf": [],
     "icon": "🦵",
     "mechanic": "Isolation",
@@ -11135,8 +11135,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Intermediate",
-    "cue": "Balance on one foot and raise your heel as high as possible.",
-    "description": "Control the lowering phase to build strength. Avoid shifting your weight side to side.",
+    "cue": "Balance on one foot and raise that heel as high as possible.",
+    "description": "Stand on one foot, holding a wall for balance, with the other foot lifted. Push through the ball of your standing foot to lift your heel high, then lower slowly. Keep your knee straight so the calf does the work, not your leg.",
     "avoidIf": [
       "balance"
     ],
@@ -11164,8 +11164,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Sit down and lift your heels by pressing through your toes.",
-    "description": "Keep your knees stable while contracting your calves. Avoid using your feet to bounce.",
+    "cue": "Sit tall and drive your heels up using just the balls of your feet.",
+    "description": "Sit on a chair with feet flat and knees bent 90 degrees. Press through the balls of your feet to lift your heels as high as you can, then lower slowly. This version targets the deeper soleus muscle beneath the calf.",
     "avoidIf": [],
     "icon": "🦵",
     "mechanic": "Isolation",
@@ -11190,8 +11190,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Intermediate",
-    "cue": "Hinge forward and raise your heels while supported.",
-    "description": "Maintain a strong calf contraction at the top. Avoid bouncing the heels.",
+    "cue": "Hinge forward at the hips, then raise your heels high.",
+    "description": "Bend forward at the hips and rest your hands on a bench or wall so your back is nearly flat. With the balls of your feet on the floor, lift your heels as high as possible, then lower slowly. The forward bend gives your calves a bigger stretch and range.",
     "avoidIf": [],
     "icon": "🫏",
     "mechanic": "Isolation",
@@ -11216,8 +11216,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Lean into a wall and perform controlled calf raises.",
-    "description": "Keep your body aligned while lifting your heels. Avoid using your arms for assistance.",
+    "cue": "Lean into the wall and press your heels up.",
+    "description": "Stand a step back from a wall and lean your forearms against it, body straight. Push through the balls of your feet to raise your heels, then lower slowly. Leaning removes balance from the equation so you can focus on the calf squeeze.",
     "avoidIf": [],
     "icon": "🧱",
     "mechanic": "Isolation",
@@ -11242,8 +11242,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Stay elevated on your toes and perform short controlled pulses.",
-    "description": "Keep constant tension in the calves. Avoid letting your heels drop fully.",
+    "cue": "Raise up, then do quick small pulses at the top.",
+    "description": "Rise onto the balls of your feet, then stay high and pulse up and down through a small range without dropping your heels. Keep the tension on your calves the whole time. Great burnout finisher once full raises get easy.",
     "avoidIf": [],
     "icon": "🦵",
     "mechanic": "Isolation",
@@ -11268,8 +11268,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Intermediate",
-    "cue": "Raise and lower your heels using a slow controlled tempo.",
-    "description": "Emphasize the lowering phase for more tension. Avoid rushing repetitions.",
+    "cue": "Take three seconds up and three seconds down.",
+    "description": "Do a standing calf raise but slow it right down: three seconds to lift, a pause at the top, three seconds to lower. The slow tempo keeps your calves under tension longer. Don't rush the lowering phase — that's where the growth is.",
     "avoidIf": [],
     "icon": "⏱️",
     "mechanic": "Isolation",
@@ -11297,8 +11297,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Walk forward while staying elevated on your toes.",
-    "description": "Maintain posture and controlled steps. Avoid collapsing onto your heels.",
+    "cue": "Walk forward on the balls of your feet with heels high.",
+    "description": "Rise onto the balls of both feet and walk forward in small steps, keeping your heels off the ground the whole time. Stay tall and controlled. It builds calf endurance and ankle stability at the same time.",
     "avoidIf": [],
     "icon": "🚶",
     "mechanic": "Isolation",
@@ -11323,8 +11323,8 @@ const EXERCISES = [
       "box"
     ],
     "difficulty": "Intermediate",
-    "cue": "Stand on an elevated surface and lower your heels below the platform.",
-    "description": "Use a controlled stretch and contraction. Avoid dropping quickly into the bottom position.",
+    "cue": "Let your heels drop below the box, then press all the way up.",
+    "description": "Stand with the balls of your feet on the edge of a box or step, heels hanging off. Let your heels sink below the edge for a deep stretch, then press up as high as you can. The extra drop trains the calf through its fullest range.",
     "avoidIf": [],
     "icon": "📦",
     "mechanic": "Isolation",
@@ -11349,8 +11349,8 @@ const EXERCISES = [
       "box"
     ],
     "difficulty": "Advanced",
-    "cue": "Perform a single-leg calf raise from an elevated surface.",
-    "description": "Control the descent and maintain balance. Avoid rotating your ankle.",
+    "cue": "On one foot, drop the heel below the box then drive up high.",
+    "description": "Balance on the ball of one foot on the edge of a box, holding a wall for support. Let your heel sink below the edge, then press up as high as possible before lowering slowly. One leg at a time doubles the load and fixes side-to-side imbalances.",
     "avoidIf": [
       "balance"
     ],
@@ -11378,8 +11378,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Beginner",
-    "cue": "Hold dumbbells and rise onto the balls of your feet.",
-    "description": "Pause at the top of each repetition. Avoid bouncing with the weights.",
+    "cue": "Hold dumbbells at your sides and raise your heels high.",
+    "description": "Stand tall holding a dumbbell in each hand at your sides. Push through the balls of your feet to lift your heels, squeeze at the top, then lower slowly. The added weight makes each rep count — keep your body upright, don't lean.",
     "avoidIf": [],
     "icon": "🏋️",
     "mechanic": "Isolation",
@@ -11405,8 +11405,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Hold one dumbbell and perform a single-leg calf raise.",
-    "description": "Keep the ankle stable and controlled. Avoid losing balance.",
+    "cue": "One dumbbell, one foot — press that heel up high.",
+    "description": "Hold a dumbbell in one hand and balance on the same-side foot, using a wall for support. Raise your heel as high as you can, then lower under control. Loading one leg builds serious calf strength and evens out weak sides.",
     "avoidIf": [
       "balance"
     ],
@@ -11433,8 +11433,8 @@ const EXERCISES = [
       "dumbbell"
     ],
     "difficulty": "Beginner",
-    "cue": "Place a dumbbell on your knee and lift your heel upward.",
-    "description": "Focus on the contraction of the calves. Avoid moving the entire leg.",
+    "cue": "Rest dumbbells on your knees and drive your heels up.",
+    "description": "Sit with knees bent 90 degrees and a dumbbell resting on each thigh near the knee. Press through the balls of your feet to lift your heels, then lower slowly. The seated angle hits the soleus, the calf muscle that shapes the lower leg.",
     "avoidIf": [],
     "icon": "🏋️",
     "mechanic": "Isolation",
@@ -11459,8 +11459,8 @@ const EXERCISES = [
       "barbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Hold a barbell and rise onto the balls of your feet.",
-    "description": "Control the lowering phase and fully contract your calves. Avoid bouncing the weight.",
+    "cue": "Rest the bar across your upper back and raise your heels.",
+    "description": "Set a barbell across your upper back like a squat, standing tall with feet hip-width. Push through the balls of your feet to lift your heels high, then lower slowly. Keep your knees straight and core braced so you stay balanced under the bar.",
     "avoidIf": [],
     "icon": "🏋️",
     "mechanic": "Isolation",
@@ -11486,8 +11486,8 @@ const EXERCISES = [
       "barbell"
     ],
     "difficulty": "Intermediate",
-    "cue": "Rest a barbell across your knees and lift your heels.",
-    "description": "Keep your feet stable while squeezing your calves. Avoid lifting the knees.",
+    "cue": "Rest the bar on your thighs and press your heels up.",
+    "description": "Sit with knees bent and a barbell laid across your thighs, held in place with your hands. Drive through the balls of your feet to raise your heels, then lower slowly. Pad the bar if it digs in — comfort lets you push harder.",
     "avoidIf": [],
     "icon": "🏋️",
     "mechanic": "Isolation",
@@ -11512,8 +11512,8 @@ const EXERCISES = [
       "machine"
     ],
     "difficulty": "Intermediate",
-    "cue": "Drive through your toes against the machine pads.",
-    "description": "Use a full controlled range of motion. Avoid bouncing at the bottom.",
+    "cue": "Shoulders under the pads, then press your heels as high as they go.",
+    "description": "Stand on the platform with the balls of your feet on the edge and shoulders under the pads. Lower your heels for a stretch, then press up as high as possible. Move through the full range slowly rather than bouncing the weight.",
     "avoidIf": [],
     "icon": "🏋️",
     "mechanic": "Isolation",
@@ -11539,8 +11539,8 @@ const EXERCISES = [
       "machine"
     ],
     "difficulty": "Beginner",
-    "cue": "Place your knees under the pad and raise your heels.",
-    "description": "Pause at peak contraction and control the stretch. Avoid moving too quickly.",
+    "cue": "Knees under the pad, then drive your heels up.",
+    "description": "Sit with the balls of your feet on the platform and the pad snug over your knees. Lower your heels for a stretch, then press up and squeeze. The bent-knee position targets the deeper soleus muscle.",
     "avoidIf": [],
     "icon": "🏋️",
     "mechanic": "Isolation",
@@ -11567,8 +11567,8 @@ const EXERCISES = [
       "machine"
     ],
     "difficulty": "Intermediate",
-    "cue": "Press through the balls of your feet on the leg press platform.",
-    "description": "Keep your knees mostly fixed while moving through the ankles. Avoid locking out aggressively.",
+    "cue": "Push the sled with just the balls of your feet.",
+    "description": "Sit in the leg press with only the balls of your feet on the bottom edge of the platform, legs nearly straight. Press the sled away by pushing through your toes, then let it come back for a calf stretch. Keep the safeties on — don't let your feet slip.",
     "avoidIf": [],
     "icon": "🦵",
     "mechanic": "Isolation",
@@ -11593,8 +11593,8 @@ const EXERCISES = [
       "machine"
     ],
     "difficulty": "Intermediate",
-    "cue": "Place the bar across your shoulders and raise your heels.",
-    "description": "Stay balanced and controlled throughout the movement. Avoid relying on momentum.",
+    "cue": "Bar on your upper back, heels driving high.",
+    "description": "Set the Smith machine bar across your upper back and stand with the balls of your feet on a small plate or block. Raise your heels as high as you can, then lower slowly. The fixed bar path lets you push hard without worrying about balance.",
     "avoidIf": [],
     "icon": "🏋️",
     "mechanic": "Isolation",
@@ -11621,8 +11621,8 @@ const EXERCISES = [
       "machine"
     ],
     "difficulty": "Intermediate",
-    "cue": "Use the hack squat platform to perform controlled calf raises.",
-    "description": "Focus on ankle movement rather than pushing with your legs. Avoid knee extension.",
+    "cue": "Shoulders under the pads, press through your toes.",
+    "description": "Load into the hack squat machine with the balls of your feet on the platform edge. Press through your toes to raise your heels, then lower for a stretch. The back support keeps you stable so you can focus purely on the calves.",
     "avoidIf": [],
     "icon": "🏋️",
     "mechanic": "Isolation",
@@ -11647,8 +11647,8 @@ const EXERCISES = [
       "kettlebell"
     ],
     "difficulty": "Beginner",
-    "cue": "Hold a kettlebell and rise onto your toes.",
-    "description": "Maintain steady balance and control. Avoid bouncing at the top.",
+    "cue": "Hold a kettlebell and lift your heels high.",
+    "description": "Stand tall holding a kettlebell in front of you or by your side. Push through the balls of your feet to raise your heels, squeeze, then lower slowly. Keep your torso upright so the weight stays over your midfoot.",
     "avoidIf": [],
     "icon": "🔔",
     "mechanic": "Isolation",
@@ -11674,8 +11674,8 @@ const EXERCISES = [
       "kettlebell"
     ],
     "difficulty": "Beginner",
-    "cue": "Rest a kettlebell on your knee and raise your heel.",
-    "description": "Keep the ankle movement isolated. Avoid lifting the entire leg.",
+    "cue": "Rest a kettlebell on your knee and press your heel up.",
+    "description": "Sit with knees bent 90 degrees and a kettlebell resting on one or both thighs near the knees. Drive through the balls of your feet to lift your heels, then lower slowly. Bent knees shift the work to the deeper soleus.",
     "avoidIf": [],
     "icon": "🔔",
     "mechanic": "Isolation",
@@ -11700,8 +11700,8 @@ const EXERCISES = [
       "resistance-band"
     ],
     "difficulty": "Beginner",
-    "cue": "Press through your toes while resisting the band tension.",
-    "description": "Maintain a smooth tempo and strong contraction. Avoid snapping through the band.",
+    "cue": "Loop the band under your feet and press up against it.",
+    "description": "Stand on the middle of a resistance band and hold the ends at your shoulders or sides. Push through the balls of your feet to raise your heels against the band's pull, then lower slowly. The band adds the most tension right at the top where the squeeze happens.",
     "avoidIf": [],
     "icon": "🟢",
     "mechanic": "Isolation",
@@ -11726,8 +11726,8 @@ const EXERCISES = [
       "resistance-band"
     ],
     "difficulty": "Beginner",
-    "cue": "Anchor the band and press your toes forward while seated.",
-    "description": "Keep tension consistent throughout each repetition. Avoid jerking the band.",
+    "cue": "Band over your knees, drive your heels up.",
+    "description": "Sit with knees bent and loop a band under the balls of your feet, holding the ends over your knees for resistance. Press your heels up against the band, then lower slowly. A simple way to load the soleus with no weights.",
     "avoidIf": [],
     "icon": "🟢",
     "mechanic": "Isolation",
@@ -11752,8 +11752,8 @@ const EXERCISES = [
       "resistance-band"
     ],
     "difficulty": "Intermediate",
-    "cue": "Perform a single-leg calf raise while resisting a band.",
-    "description": "Keep your ankle aligned and controlled. Avoid losing balance.",
+    "cue": "One foot on the band, press that heel high.",
+    "description": "Stand on the band with one foot and hold the ends at that side, balancing with a wall if needed. Raise your heel against the band's pull, then lower slowly. Single-leg plus band tension is a strong combo for stubborn calves.",
     "avoidIf": [
       "balance"
     ],
@@ -11780,8 +11780,8 @@ const EXERCISES = [
       "bodyweight"
     ],
     "difficulty": "Beginner",
-    "cue": "Rise up and slowly lower your heels below the starting position.",
-    "description": "Emphasize the slow lowering phase. Avoid dropping quickly.",
+    "cue": "Rise on two feet, then lower slowly on one.",
+    "description": "Stand on the balls of your feet on a step. Push up with both feet, shift your weight to one leg, then lower that heel slowly below the step over three to four seconds. The slow lowering is great for calf strength and Achilles tendon health.",
     "avoidIf": [],
     "icon": "🦶",
     "mechanic": "Isolation",

@@ -1546,6 +1546,31 @@
     setTimeout(() => URL.revokeObjectURL(url), 1000);
   }
 
+  // Tester feedback: download the data file + open a prefilled email (no recipient
+  // baked in — the tester adds it — so a personal address never sits in public source).
+  function shareFeedback() {
+    downloadExport();
+    const o = state.onboarding;
+    const goal = o.goal && GOAL_BY_ID[o.goal] ? GOAL_BY_ID[o.goal].label : "not set";
+    const body = [
+      "My FitFlexr feedback:",
+      "",
+      "What I liked:",
+      "What was confusing / didn't work:",
+      "What I'd change:",
+      "",
+      "— quick stats —",
+      "Goal: " + goal + (o.timeAvailable ? " · " + o.timeAvailable + " min" : ""),
+      "Saved exercises: " + state.routine.length,
+      "Workouts logged: " + state.history.length,
+      "",
+      "(My full data file just downloaded — attaching it: tap the paperclip and pick the",
+      "fitflexr-backup file.)",
+    ].join("\n");
+    window.location.href =
+      "mailto:?subject=" + encodeURIComponent("FitFlexr feedback") + "&body=" + encodeURIComponent(body);
+  }
+
   // ── Wiring ───────────────────────────────────────────────
   function wireEvents() {
     $$(".tab-btn").forEach((b) => b.addEventListener("click", () => showScreen(b.dataset.screen)));
@@ -1638,6 +1663,7 @@
 
     $("#btn-open-filters").addEventListener("click", () => showScreen("filters"));
     $("#btn-export").addEventListener("click", downloadExport);
+    $("#btn-feedback").addEventListener("click", shareFeedback);
 
     // Keyboard support: arrows to swipe, U to undo, F/space to flip.
     document.addEventListener("keydown", (e) => {
