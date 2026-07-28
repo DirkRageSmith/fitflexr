@@ -55,24 +55,37 @@
   GOALS.forEach((g) => { GOAL_BY_ID[g.id] = g; });
   const TIME_OPTIONS = [15, 30, 45, 60, 90]; // minutes
 
-  // Phase C generation: how each goal biases exercise selection + a default set/rep
-  // scheme, and how many exercises fit a session length. All heuristics, all local.
+  // Phase C generation: how each goal biases exercise selection, its rep range, and
+  // its rest interval. All heuristics, all local.
+  //
+  // Rest follows current evidence, not the old 60–90s folklore: 2–3 minutes between
+  // hard sets builds more strength and size than short rest. Only genuinely
+  // metabolic/endurance work stays short.
   const GOAL_CONFIG = {
-    "lose-fat":     { focus: ["endurance", "power"], setsReps: "3 × 15" },
-    "build-muscle": { focus: ["hypertrophy"], setsReps: "4 × 10" },
-    "strength":     { focus: ["strength"], setsReps: "5 × 5", preferMechanic: "Compound" },
-    "athletic":     { focus: ["power"], setsReps: "5 × 3" },
-    "general":      { focus: ["strength", "hypertrophy"], setsReps: "3 × 12" },
-    "mobility":     { focus: ["mobility"], setsReps: "2 × 10" },
-    "rehab":        { focus: ["mobility", "endurance"], setsReps: "2 × 12", maxDifficulty: "Beginner" },
-    "beginner":     { focus: ["strength"], setsReps: "3 × 10", maxDifficulty: "Beginner" },
+    "lose-fat":     { focus: ["endurance", "power"], reps: 15, rest: 75 },
+    "build-muscle": { focus: ["hypertrophy"], reps: 10, rest: 150 },
+    "strength":     { focus: ["strength"], reps: 5, rest: 180, preferMechanic: "Compound" },
+    "athletic":     { focus: ["power"], reps: 3, rest: 180 },
+    "general":      { focus: ["strength", "hypertrophy"], reps: 12, rest: 120 },
+    "mobility":     { focus: ["mobility"], reps: 10, rest: 60 },
+    "rehab":        { focus: ["mobility", "endurance"], reps: 12, rest: 90, maxDifficulty: "Beginner" },
+    "beginner":     { focus: ["strength"], reps: 10, rest: 120, maxDifficulty: "Beginner" },
   };
-  const TIME_COUNT = { 15: 3, 30: 5, 45: 7, 60: 9, 90: 12 };
+
+  // How many exercises actually fit, assuming real rest (~2.5 min) plus the work
+  // itself — roughly 10 minutes per 3-set exercise. These are deliberately lower
+  // than the old table, which assumed 60–90s rest and badly overpromised.
+  const TIME_COUNT = { 15: 2, 30: 3, 45: 4, 60: 5, 90: 8 };
+
+  // Sets per exercise also scale with the clock: a 15-minute session can't afford
+  // 4 sets of anything, a 90-minute one can.
+  const TIME_SETS = { 15: 2, 30: 3, 45: 3, 60: 4, 90: 4 };
+  const DEFAULT_SETS = 3;
 
   // A workout is a workout, not a shopping list: once the Stack holds this many
   // exercises the deck stops offering more, so a beginner can't swipe their way
   // into a 30-move session. The cap wins over TIME_COUNT.
-  const WORKOUT_CAP = 8;
+  const WORKOUT_CAP = 10;
 
   // Phase F — "how you're feeling today" modifiers. Deterministic if/then rules over
   // the metadata bias the generated session — no LLM, no network. Ephemeral per session.
@@ -218,7 +231,7 @@
   let workout = null;      // { items: [{id, sets, notes, doneSets}], index }
   let restTimer = null;
   let restRemaining = 0;
-  const REST_DEFAULT = 90; // seconds
+  const REST_DEFAULT = 120; // seconds — fallback when a goal has no rest of its own
 
   // ── Dataset sanity check (dev aid; validate.js is the scripted gate) ──
   function validateDataset() {
@@ -364,15 +377,16 @@
     if (readiness.has("low-energy")) c -= 2;
     if (readiness.has("sore")) c -= 1;
     if (readiness.has("strong")) c += 1;
-    return Math.max(3, Math.min(14, c));
+    // Floor of 1: a 15-minute session really is only a couple of moves at real rest.
+    return Math.max(1, Math.min(WORKOUT_CAP, c));
   }
 
-  // Trim/raise the set count in a "S × R" scheme by how you're feeling.
-  function adjustScheme(scheme) {
-    const m = String(scheme).match(/^(\d+)\s*[×x]\s*(\d+)$/);
-    if (!m) return scheme;
-    let sets = parseInt(m[1], 10);
-    const reps = m[2];
+  // Today's set/rep scheme: reps come from the goal, sets from the clock, then
+  // how you're feeling nudges the set count.
+  function currentScheme() {
+    const cfg = GOAL_CONFIG[state.onboarding.goal] || {};
+    const reps = cfg.reps || 10;
+    let sets = TIME_SETS[state.onboarding.timeAvailable] || DEFAULT_SETS;
     if (readiness.has("low-energy")) sets -= 1;
     if (readiness.has("sore")) sets -= 1;
     if (readiness.has("strong")) sets += 1;
@@ -380,8 +394,11 @@
     return sets + " × " + reps;
   }
 
+  // Rest is goal-driven (2–3 min for strength/size, short only for metabolic work),
+  // then adjusted for how you're feeling.
   function currentRestDefault() {
-    let rest = REST_DEFAULT;
+    const cfg = GOAL_CONFIG[state.onboarding.goal] || {};
+    let rest = cfg.rest || REST_DEFAULT;
     if (readiness.has("low-energy")) rest += 30; // more recovery when drained
     if (readiness.has("strong")) rest -= 15;
     return Math.max(30, rest);
@@ -452,13 +469,12 @@
       updateGenerateUI("No matching moves — add gear or clear an injury filter.");
       return;
     }
-    const cfg = GOAL_CONFIG[state.onboarding.goal] || {};
     deck = session;
     deckIndex = 0;
     swipeHistory = [];
     deckBuilt = true;
     deckMode = "generated";
-    sessionSetsDefault = adjustScheme(cfg.setsReps || "");
+    sessionSetsDefault = currentScheme();
     renderDeck();
     showScreen("deck");
   }
@@ -690,13 +706,17 @@
 
   // The "Generate my session" button subtitle + the swipe-to-learn status line.
   function updateGenerateUI(message) {
+    // Show the actual plan — exercises, scheme, rest — so it's clear before you commit.
     const sub = $("#generate-sub");
     if (sub) {
-      const parts = [];
-      if (state.onboarding.timeAvailable) parts.push(state.onboarding.timeAvailable + " min");
-      const g = state.onboarding.goal ? GOAL_BY_ID[state.onboarding.goal] : null;
-      if (g) parts.push(g.label);
-      sub.textContent = parts.join(" · ") || "balanced";
+      const t = state.onboarding.timeAvailable;
+      if (t) {
+        const n = readinessCount(TIME_COUNT[t] || DEFAULT_SETS);
+        const rest = currentRestDefault();
+        sub.textContent = n + " moves · " + currentScheme() + " · " + fmtTime(rest) + " rest";
+      } else {
+        sub.textContent = "pick a time";
+      }
     }
     const note = $("#readiness-note");
     if (note) {
@@ -713,6 +733,31 @@
     hint.textContent = n >= TASTE_MIN_SWIPES
       ? "🧠 Decks are now tuned to your taste · " + n + " swipes"
       : "🧠 Learning your taste · " + n + "/" + TASTE_MIN_SWIPES + " swipes";
+  }
+
+  // Gear + injuries live at the bottom of Setup but filter BOTH paths, so a summary
+  // sits up top where it can't be missed. Tapping it jumps to the real controls.
+  function renderSetupSummary() {
+    const gearEl = $("#setup-summary-gear");
+    const protEl = $("#setup-summary-protect");
+    if (!gearEl || !protEl) return;
+
+    const owned = state.filters.equipment;
+    const preset = GEAR_PRESETS.find(
+      (p) => p.gear.length === owned.length && p.gear.every((g) => owned.includes(g))
+    );
+    const gearLabel = preset
+      ? preset.label
+      : owned.length + (owned.length === 1 ? " item" : " items");
+    gearEl.textContent = "🧰 Gear: " + gearLabel;
+
+    const n = state.filters.conditions.length;
+    protEl.textContent = n
+      ? "🛡️ Protecting: " + state.filters.conditions
+          .map((c) => (CONDITION_BY_ID[c] ? CONDITION_BY_ID[c].label : c))
+          .join(", ")
+      : "🛡️ No injury filters set";
+    protEl.classList.toggle("setup-summary-active", n > 0);
   }
 
   // Goal + time are editable right on Setup (not just inside onboarding), so the
@@ -856,6 +901,7 @@
   }
 
   function updateMatchCount() {
+    renderSetupSummary(); // every gear/condition change routes through here
     const n = eligiblePool().length;
     // With a full Stack there's nothing to swipe — say so instead of dealing a dead deck.
     if (workoutFull()) {
@@ -1685,6 +1731,14 @@
     $("#btn-redo-onboarding").addEventListener("click", startOnboarding);
 
     $("#btn-generate").addEventListener("click", startGeneratedSession);
+
+    // Jump from the top summary down to the real gear/injury controls.
+    $("#setup-summary").addEventListener("click", () => {
+      const card = $(".shared-card");
+      card.scrollIntoView({ behavior: "smooth", block: "start" });
+      card.classList.add("shared-card-flash");
+      setTimeout(() => card.classList.remove("shared-card-flash"), 1200);
+    });
 
     $("#btn-groups-all").addEventListener("click", () => setAllGroups(true));
     $("#btn-groups-none").addEventListener("click", () => setAllGroups(false));

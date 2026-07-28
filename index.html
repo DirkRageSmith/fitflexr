@@ -48,6 +48,16 @@
         <h1 class="screen-title">Today's workout</h1>
         <p class="screen-sub">Two ways to start: let FitFlexr build it, or pick your own.</p>
 
+        <!-- Always-visible summary of the filters that shape BOTH paths, so nobody
+             starts a workout without knowing what gear/injury settings are applied. -->
+        <button id="setup-summary" class="setup-summary" type="button">
+          <span class="setup-summary-main">
+            <span id="setup-summary-gear" class="setup-summary-line"></span>
+            <span id="setup-summary-protect" class="setup-summary-line"></span>
+          </span>
+          <span class="setup-summary-edit">Change</span>
+        </button>
+
         <!-- ── Path 1: let the app pick ── -->
         <section class="path-card path-generate">
           <div class="path-head">
