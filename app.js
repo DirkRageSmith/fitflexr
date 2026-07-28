@@ -64,22 +64,24 @@
   const GOAL_CONFIG = {
     "lose-fat":     { focus: ["endurance", "power"], reps: 15, rest: 75 },
     "build-muscle": { focus: ["hypertrophy"], reps: 10, rest: 150 },
-    "strength":     { focus: ["strength"], reps: 5, rest: 180, preferMechanic: "Compound" },
-    "athletic":     { focus: ["power"], reps: 3, rest: 180 },
+    "strength":     { focus: ["strength"], reps: 5, rest: 165, preferMechanic: "Compound" },
+    "athletic":     { focus: ["power"], reps: 3, rest: 165 },
     "general":      { focus: ["strength", "hypertrophy"], reps: 12, rest: 120 },
     "mobility":     { focus: ["mobility"], reps: 10, rest: 60 },
     "rehab":        { focus: ["mobility", "endurance"], reps: 12, rest: 90, maxDifficulty: "Beginner" },
     "beginner":     { focus: ["strength"], reps: 10, rest: 120, maxDifficulty: "Beginner" },
   };
 
-  // How many exercises actually fit, assuming real rest (~2.5 min) plus the work
-  // itself — roughly 10 minutes per 3-set exercise. These are deliberately lower
-  // than the old table, which assumed 60–90s rest and badly overpromised.
-  const TIME_COUNT = { 15: 2, 30: 3, 45: 4, 60: 5, 90: 8 };
+  // Short sessions trade rest for density: you can't afford 3-minute breaks in a
+  // 15-minute workout, so we cap rest and get more work done instead.
+  const SHORT_SESSION_REST = { 15: 60, 30: 90 };
 
-  // Sets per exercise also scale with the clock: a 15-minute session can't afford
-  // 4 sets of anything, a 90-minute one can.
-  const TIME_SETS = { 15: 2, 30: 3, 45: 3, 60: 4, 90: 4 };
+  // Exercise count and sets-per-exercise are both derived from a simple budget:
+  //   usable time = minutes × 60 × 0.85   (15% for warm-up + transitions)
+  //   one set     = ~45s work + that session's rest
+  // e.g. 60 min at 2:30 rest → ~15 sets → 5 exercises × 3 sets.
+  const TIME_COUNT = { 15: 3, 30: 4, 45: 4, 60: 5, 90: 6 };
+  const TIME_SETS = { 15: 2, 30: 3, 45: 3, 60: 3, 90: 4 };
   const DEFAULT_SETS = 3;
 
   // A workout is a workout, not a shopping list: once the Stack holds this many
@@ -395,10 +397,12 @@
   }
 
   // Rest is goal-driven (2–3 min for strength/size, short only for metabolic work),
-  // then adjusted for how you're feeling.
+  // capped shorter on short sessions, then adjusted for how you're feeling.
   function currentRestDefault() {
     const cfg = GOAL_CONFIG[state.onboarding.goal] || {};
     let rest = cfg.rest || REST_DEFAULT;
+    const shortCap = SHORT_SESSION_REST[state.onboarding.timeAvailable];
+    if (shortCap) rest = Math.min(rest, shortCap);
     if (readiness.has("low-energy")) rest += 30; // more recovery when drained
     if (readiness.has("strong")) rest -= 15;
     return Math.max(30, rest);
