@@ -995,6 +995,29 @@ input::placeholder { color: var(--muted); opacity: 0.7; }
   font-weight: 800;
 }
 
+/* Share block */
+.cta-share { background: linear-gradient(135deg, #0ea5e9, var(--blue)); }
+
+.share-status {
+  text-align: center;
+  font-weight: 700;
+  color: var(--blue);
+  margin-top: 10px;
+}
+
+.install-help {
+  margin-top: 12px;
+  padding: 14px;
+  border-radius: 14px;
+  background: var(--surface-2);
+}
+
+.install-help[hidden] { display: none; }
+
+.install-help .hint { margin: 0 0 10px; }
+
+.install-help .hint:last-child { margin-bottom: 0; }
+
 /* Generate-my-session CTA + swipe-to-learn status (Phase C) */
 .generate-block { margin-bottom: 2px; }
 
@@ -1008,6 +1031,42 @@ input::placeholder { color: var(--muted); opacity: 0.7; }
   font-weight: 600;
 }
 
+/* ── Setup: two clear paths + one shared settings card ─────── */
+
+.path-card,
+.shared-card {
+  border: 1.5px solid var(--border);
+  border-radius: 18px;
+  background: var(--surface);
+  padding: 18px 16px;
+  margin-bottom: 4px;
+}
+
+/* The generate path is the recommended one — give it a tinted edge. */
+.path-generate { border-color: color-mix(in srgb, var(--blue) 45%, var(--border)); }
+
+.shared-card { margin-top: 22px; background: transparent; }
+
+.path-head { margin-bottom: 14px; }
+
+.path-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.path-sub { color: var(--muted); font-size: 0.85rem; margin-top: 3px; }
+
+.path-card .eyebrow,
+.shared-card .eyebrow { display: block; margin: 14px 0 8px; }
+
+.path-card .chip-row:first-of-type,
+.path-card .eyebrow:first-of-type { margin-top: 0; }
+
+.path-card .cta { margin-top: 16px; }
+
+.path-card .hint { margin-bottom: 0; }
+
 /* Phase F — "Today I'm feeling" readiness chips + adjustment note */
 .readiness { margin-bottom: 8px; }
 
@@ -1020,6 +1079,16 @@ input::placeholder { color: var(--muted); opacity: 0.7; }
   border-color: #f59e0b;
   color: var(--text);
 }
+
+/* Goal + time chips (the generate path's own options) */
+.chip-goal[aria-pressed="true"],
+.chip-time[aria-pressed="true"] {
+  background: color-mix(in srgb, var(--blue) 16%, var(--surface));
+  border-color: var(--blue);
+  color: var(--text);
+}
+
+.chip-time { font-variant-numeric: tabular-nums; }
 
 .readiness-note {
   text-align: center;

@@ -511,6 +511,8 @@
     saveState();
     updateProfileSummaries();
     renderFilterChips();
+    renderGoalChips();
+    renderTimeChips();
     showScreen("filters");
   }
 
@@ -711,6 +713,46 @@
     hint.textContent = n >= TASTE_MIN_SWIPES
       ? "🧠 Decks are now tuned to your taste · " + n + " swipes"
       : "🧠 Learning your taste · " + n + "/" + TASTE_MIN_SWIPES + " swipes";
+  }
+
+  // Goal + time are editable right on Setup (not just inside onboarding), so the
+  // generate path exposes every option it actually uses.
+  function renderGoalChips() {
+    const wrap = $("#goal-chips");
+    if (!wrap) return;
+    wrap.innerHTML = "";
+    GOALS.forEach((g) => {
+      const btn = el("button", "chip chip-goal");
+      btn.type = "button";
+      btn.setAttribute("aria-pressed", String(state.onboarding.goal === g.id));
+      btn.appendChild(el("span", "chip-ico", g.icon));
+      btn.appendChild(document.createTextNode(g.label));
+      btn.addEventListener("click", () => {
+        state.onboarding.goal = state.onboarding.goal === g.id ? null : g.id;
+        saveState();
+        renderGoalChips();
+        updateProfileSummaries();
+      });
+      wrap.appendChild(btn);
+    });
+  }
+
+  function renderTimeChips() {
+    const wrap = $("#time-chips");
+    if (!wrap) return;
+    wrap.innerHTML = "";
+    TIME_OPTIONS.forEach((t) => {
+      const btn = el("button", "chip chip-time", t + " min");
+      btn.type = "button";
+      btn.setAttribute("aria-pressed", String(state.onboarding.timeAvailable === t));
+      btn.addEventListener("click", () => {
+        state.onboarding.timeAvailable = state.onboarding.timeAvailable === t ? null : t;
+        saveState();
+        renderTimeChips();
+        updateProfileSummaries();
+      });
+      wrap.appendChild(btn);
+    });
   }
 
   // Phase F: the "Today I'm feeling" toggle chips on Setup.
@@ -1566,6 +1608,42 @@
     setTimeout(() => URL.revokeObjectURL(url), 1000);
   }
 
+  // ── Sharing (Phase: hand-it-to-a-friend) ────────────────
+  // The app IS the link — no install file, no account. Uses the native share
+  // sheet where available (phones), falls back to clipboard, then to prompt().
+  const SHARE_URL = "https://dirkragesmith.github.io/fitflexr/";
+  const SHARE_TEXT =
+    "Try FitFlexr — a free workout app. No download, no signup: just open this link on your " +
+    "phone and tap 'Add to Home Screen' to keep it.\n\n" + SHARE_URL;
+
+  function shareStatus(msg) {
+    const el2 = $("#share-status");
+    if (!el2) return;
+    el2.hidden = !msg;
+    el2.textContent = msg || "";
+  }
+
+  async function shareApp() {
+    // 1) Native share sheet — the one-tap path to Messages/Mail/WhatsApp.
+    if (navigator.share) {
+      try {
+        await navigator.share({ title: "FitFlexr", text: SHARE_TEXT, url: SHARE_URL });
+        shareStatus("Thanks for spreading the word!");
+        return;
+      } catch (err) {
+        if (err && err.name === "AbortError") return; // user closed the sheet
+      }
+    }
+    // 2) Clipboard — desktop browsers.
+    try {
+      await navigator.clipboard.writeText(SHARE_TEXT);
+      shareStatus("Link copied! Paste it into a text or email.");
+      return;
+    } catch (_) { /* fall through */ }
+    // 3) Last resort so the link is always obtainable.
+    window.prompt("Copy this link and send it to a friend:", SHARE_URL);
+  }
+
   // Tester feedback: download the data file + open a prefilled email (no recipient
   // baked in — the tester adds it — so a personal address never sits in public source).
   function shareFeedback() {
@@ -1605,7 +1683,6 @@
     });
     $("#ob-skip").addEventListener("click", finishOnboarding);
     $("#btn-redo-onboarding").addEventListener("click", startOnboarding);
-    $("#profile-summary").addEventListener("click", startOnboarding);
 
     $("#btn-generate").addEventListener("click", startGeneratedSession);
 
@@ -1686,6 +1763,14 @@
     $("#btn-open-filters").addEventListener("click", () => showScreen("filters"));
     $("#btn-export").addEventListener("click", downloadExport);
     $("#btn-feedback").addEventListener("click", shareFeedback);
+    $("#btn-share").addEventListener("click", shareApp);
+    $("#btn-install-help").addEventListener("click", () => {
+      const help = $("#install-help");
+      help.hidden = !help.hidden;
+      $("#btn-install-help").textContent = help.hidden
+        ? "How do I install it? (show steps)"
+        : "Hide the steps";
+    });
 
     // Keyboard support: arrows to swipe, U to undo.
     document.addEventListener("keydown", (e) => {
@@ -1739,6 +1824,8 @@
   validateDataset();
   applyTheme();
   renderFilterChips();
+  renderGoalChips();
+  renderTimeChips();
   renderReadinessChips();
   renderAboutStats();
   renderRoutine();

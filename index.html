@@ -45,55 +45,75 @@
 
       <!-- ───────────── Setup / Filters ───────────── -->
       <section id="screen-filters" class="screen">
-        <h1 class="screen-title">Build today's deck</h1>
-        <p class="screen-sub">Pick what to train and what to protect. Only exercises your body can handle make it into the deck.</p>
+        <h1 class="screen-title">Today's workout</h1>
+        <p class="screen-sub">Two ways to start: let FitFlexr build it, or pick your own.</p>
 
-        <button id="profile-summary" class="profile-summary" type="button" hidden></button>
+        <!-- ── Path 1: let the app pick ── -->
+        <section class="path-card path-generate">
+          <div class="path-head">
+            <h2 class="path-title">⚡ Make me a workout</h2>
+            <p class="path-sub">We pick a balanced session for you.</p>
+          </div>
 
-        <div class="readiness">
+          <span class="eyebrow">My goal</span>
+          <div id="goal-chips" class="chip-row" role="group" aria-label="Training goal"></div>
+
+          <span class="eyebrow">Time today</span>
+          <div id="time-chips" class="chip-row" role="group" aria-label="Time available"></div>
+
           <span class="eyebrow">Today I'm feeling</span>
           <div id="readiness-chips" class="chip-row" role="group" aria-label="How you feel today"></div>
-        </div>
 
-        <div class="generate-block">
           <button id="btn-generate" class="cta cta-generate" type="button">
-            <span>⚡ Generate my session</span>
+            <span>Generate my session</span>
             <span id="generate-sub" class="cta-count"></span>
           </button>
           <p id="readiness-note" class="hint readiness-note" hidden></p>
           <p id="taste-hint" class="hint taste-hint" hidden></p>
-        </div>
+        </section>
 
-        <div class="or-divider"><span>or build it yourself</span></div>
+        <div class="or-divider"><span>or</span></div>
 
-        <div class="filter-head">
-          <span class="eyebrow">Today's muscles</span>
-          <span class="chip-tools">
-            <button id="btn-groups-all" class="text-btn" type="button">All</button>
-            <span aria-hidden="true">·</span>
-            <button id="btn-groups-none" class="text-btn" type="button">None</button>
-          </span>
-        </div>
-        <div id="group-chips" class="chip-row" role="group" aria-label="Muscle groups"></div>
-        <p class="hint">Nothing selected means every group is in.</p>
+        <!-- ── Path 2: pick it yourself ── -->
+        <section class="path-card path-browse">
+          <div class="path-head">
+            <h2 class="path-title">🎛️ Pick my own</h2>
+            <p class="path-sub">Swipe through exercises and build your own stack.</p>
+          </div>
 
-        <div class="filter-head">
+          <div class="filter-head">
+            <span class="eyebrow">Today's muscles</span>
+            <span class="chip-tools">
+              <button id="btn-groups-all" class="text-btn" type="button">All</button>
+              <span aria-hidden="true">·</span>
+              <button id="btn-groups-none" class="text-btn" type="button">None</button>
+            </span>
+          </div>
+          <div id="group-chips" class="chip-row" role="group" aria-label="Muscle groups"></div>
+          <p class="hint">Nothing selected means every group is in. (This also steers the generated session above.)</p>
+
+          <button id="btn-start" class="cta" type="button">
+            <span>Start swiping</span>
+            <span id="match-count" class="cta-count"></span>
+          </button>
+        </section>
+
+        <!-- ── Shared: applies to whichever path you use ── -->
+        <section class="shared-card">
+          <div class="path-head">
+            <h2 class="path-title">🧰 My gear &amp; limits</h2>
+            <p class="path-sub">Applies to both — nothing you can't do will ever show up.</p>
+          </div>
+
           <span class="eyebrow">Your gear</span>
-        </div>
-        <div id="equipment-presets" class="preset-row" role="group" aria-label="Gear presets"></div>
-        <div id="equipment-chips" class="chip-row" role="group" aria-label="Available equipment"></div>
-        <p class="hint">Pick what you can train with — an exercise shows only if you have everything it needs. Tap a preset, or fine-tune below.</p>
+          <div id="equipment-presets" class="preset-row" role="group" aria-label="Gear presets"></div>
+          <div id="equipment-chips" class="chip-row" role="group" aria-label="Available equipment"></div>
+          <p class="hint">An exercise shows only if you have everything it needs. Tap a preset, or fine-tune below.</p>
 
-        <div class="filter-head protect-head">
-          <span class="eyebrow">Protect</span>
-        </div>
-        <p class="hint">Toggle a condition and every exercise flagged for it is removed from the deck before you ever see it.</p>
-        <div id="condition-chips" class="chip-row" role="group" aria-label="Conditions to avoid"></div>
-
-        <button id="btn-start" class="cta" type="button">
-          <span>Start swiping</span>
-          <span id="match-count" class="cta-count"></span>
-        </button>
+          <span class="eyebrow protect-head">Protect</span>
+          <div id="condition-chips" class="chip-row" role="group" aria-label="Conditions to avoid"></div>
+          <p class="hint">Toggle a condition and every exercise flagged for it is removed before you ever see it.</p>
+        </section>
       </section>
 
       <!-- ───────────── Swipe deck ───────────── -->
@@ -189,6 +209,19 @@
       <!-- ───────────── Settings / About ───────────── -->
       <section id="screen-settings" class="screen" hidden>
         <h1 class="screen-title">Settings</h1>
+
+        <div class="setting-block">
+          <span class="eyebrow">Share FitFlexr</span>
+          <button id="btn-share" class="cta cta-share" type="button">📲 Send FitFlexr to a friend</button>
+          <p id="share-status" class="hint share-status" hidden></p>
+          <button id="btn-install-help" class="secondary-btn" type="button">How do I install it? (show steps)</button>
+          <div id="install-help" class="install-help" hidden>
+            <p class="hint"><strong>It's just a web link — nothing to download, no account, no app store.</strong></p>
+            <p class="hint"><strong>iPhone:</strong> open the link in Safari → tap the Share button (the square with an arrow) → scroll down → <em>Add to Home Screen</em> → Add.</p>
+            <p class="hint"><strong>Android:</strong> open the link in Chrome → tap the ⋮ menu (top right) → <em>Install app</em> (or <em>Add to Home screen</em>).</p>
+            <p class="hint">After that it opens like a normal app and works without internet.</p>
+          </div>
+        </div>
 
         <div class="setting-block">
           <span class="eyebrow">Appearance</span>
