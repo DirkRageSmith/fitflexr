@@ -69,6 +69,11 @@
   };
   const TIME_COUNT = { 15: 3, 30: 5, 45: 7, 60: 9, 90: 12 };
 
+  // A workout is a workout, not a shopping list: once the Stack holds this many
+  // exercises the deck stops offering more, so a beginner can't swipe their way
+  // into a 30-move session. The cap wins over TIME_COUNT.
+  const WORKOUT_CAP = 8;
+
   // Phase F — "how you're feeling today" modifiers. Deterministic if/then rules over
   // the metadata bias the generated session — no LLM, no network. Ephemeral per session.
   const READINESS = [
@@ -396,7 +401,10 @@
 
   function generateSession() {
     const cfg = GOAL_CONFIG[state.onboarding.goal] || {};
-    const count = readinessCount(TIME_COUNT[state.onboarding.timeAvailable] || 6);
+    // Never generate more than the Stack has room for — the cap wins over time.
+    const room = Math.max(0, WORKOUT_CAP - state.routine.filter((r) => EX_BY_ID[r.id]).length);
+    const count = Math.min(readinessCount(TIME_COUNT[state.onboarding.timeAvailable] || 6), room);
+    if (count <= 0) return [];
     const inRoutine = new Set(state.routine.map((r) => r.id));
     let pool = EXERCISES.filter(
       (ex) => ownsGear(ex) && passesConditions(ex) && !inRoutine.has(ex.id)
@@ -435,6 +443,10 @@
   }
 
   function startGeneratedSession() {
+    if (workoutFull()) {
+      updateGenerateUI("Your Stack is already a full workout — clear some to generate a new one.");
+      return;
+    }
     const session = generateSession();
     if (!session.length) {
       updateGenerateUI("No matching moves — add gear or clear an injury filter.");
@@ -803,6 +815,12 @@
 
   function updateMatchCount() {
     const n = eligiblePool().length;
+    // With a full Stack there's nothing to swipe — say so instead of dealing a dead deck.
+    if (workoutFull()) {
+      $("#match-count").textContent = "Stack full";
+      $("#btn-start").disabled = true;
+      return;
+    }
     $("#match-count").textContent = n === 1 ? "1 move" : n + " moves";
     $("#btn-start").disabled = n === 0;
   }
@@ -841,15 +859,23 @@
     stage.querySelectorAll(".swipe-card:not(.flying)").forEach((c) => c.remove());
 
     const remaining = deck.length - deckIndex;
+    // Once the Stack is full the deck stops dealing, whatever's left in it.
+    const full = workoutFull();
     $("#deck-nodeck").hidden = deckBuilt;
-    $("#deck-empty").hidden = !(deckBuilt && remaining <= 0);
+    $("#deck-full").hidden = !(deckBuilt && full);
+    $("#deck-empty").hidden = !(deckBuilt && !full && remaining <= 0);
+    if (full) {
+      $("#deck-full-text").textContent =
+        "You've saved " + state.routine.length + " exercises — that's a full session. Go train it, " +
+        "or drop a move from your Stack to swap in something else.";
+    }
     $("#deck-counter").textContent =
-      deckBuilt && remaining > 0 ? `${deckIndex + 1} / ${deck.length}` : "";
+      deckBuilt && !full && remaining > 0 ? `${deckIndex + 1} / ${deck.length}` : "";
     const eyebrow = $(".deck-top .eyebrow");
     if (eyebrow) eyebrow.textContent = deckMode === "generated" ? "Your session" : "Flexr Deck";
     updateActionButtons();
 
-    if (!deckBuilt || remaining <= 0) return;
+    if (!deckBuilt || full || remaining <= 0) return;
 
     const visible = deck.slice(deckIndex, deckIndex + 3);
     // Theme the whole deck by the top card's muscle-group color, so the
@@ -866,8 +892,13 @@
     }
   }
 
+  // The Stack is full once it holds WORKOUT_CAP exercises the library still knows.
+  function workoutFull() {
+    return state.routine.filter((r) => EX_BY_ID[r.id]).length >= WORKOUT_CAP;
+  }
+
   function updateActionButtons() {
-    const hasCard = deckBuilt && deckIndex < deck.length;
+    const hasCard = deckBuilt && !workoutFull() && deckIndex < deck.length;
     $("#btn-save").disabled = !hasCard;
     $("#btn-skip").disabled = !hasCard;
     $("#btn-undo").disabled = swipeHistory.length === 0;
@@ -896,9 +927,8 @@
       card.dataset.hasSecondary = "true";
     }
 
-    const inner = el("div", "card-inner");
-
-    // Front — type-forward: colored frame + top-half shading carry it, no emoji.
+    // Single face — everything lives on the front, no flip. (A back/expanded view
+    // may return later when exercise videos exist; until then one face is clearer.)
     const front = el("div", "card-face card-front");
     front.appendChild(el("div", "stamp stamp-save", "SAVE"));
     front.appendChild(el("div", "stamp stamp-skip", "SKIP"));
@@ -906,30 +936,24 @@
     body.appendChild(groupPill(ex.muscleGroup));
     body.appendChild(el("h2", "card-name", ex.name));
     body.appendChild(el("p", "card-cue", ex.cue));
-    const tags = el("div", "tag-row");
-    equipOf(ex).forEach((e) => tags.appendChild(el("span", "tag", EQUIP_LABEL[e] || e)));
-    tags.appendChild(el("span", "tag diff-" + ex.difficulty.toLowerCase(), ex.difficulty));
-    body.appendChild(tags);
-    front.appendChild(body);
-    front.appendChild(el("span", "flip-hint", "Tap for details"));
-
-    // Back
-    const back = el("div", "card-face card-back");
-    back.appendChild(groupPill(ex.muscleGroup));
-    back.appendChild(el("h2", "card-name card-name-sm", ex.name));
-    back.appendChild(el("p", "card-desc", ex.description));
+    body.appendChild(el("p", "card-desc", ex.description));
     if (ex.secondaryMuscles && ex.secondaryMuscles.length) {
-      back.appendChild(el("p", "card-meta", "Also works: " + ex.secondaryMuscles.join(", ")));
+      body.appendChild(el("p", "card-meta", "Also works: " + ex.secondaryMuscles.join(", ")));
     }
     if (ex.avoidIf && ex.avoidIf.length) {
       const labels = ex.avoidIf.map((t) => (CONDITION_BY_ID[t] ? CONDITION_BY_ID[t].label : t));
-      back.appendChild(el("p", "card-flags", "⚠ Flagged for: " + labels.join(" · ")));
+      body.appendChild(el("p", "card-flags", "⚠ Flagged for: " + labels.join(" · ")));
     }
-    back.appendChild(el("span", "flip-hint", "Tap to flip back"));
+    front.appendChild(body);
 
-    inner.appendChild(front);
-    inner.appendChild(back);
-    card.appendChild(inner);
+    // Tags live outside the scrolling body so gear + difficulty stay visible even
+    // on the longest cards (only the text scrolls).
+    const tags = el("div", "tag-row");
+    equipOf(ex).forEach((e) => tags.appendChild(el("span", "tag", EQUIP_LABEL[e] || e)));
+    tags.appendChild(el("span", "tag diff-" + ex.difficulty.toLowerCase(), ex.difficulty));
+    front.appendChild(tags);
+
+    card.appendChild(front);
     return card;
   }
 
@@ -946,7 +970,6 @@
     let startY = 0;
     let dx = 0;
     let dy = 0;
-    let t0 = 0;
     const saveStamp = card.querySelector(".stamp-save");
     const skipStamp = card.querySelector(".stamp-skip");
 
@@ -964,7 +987,6 @@
       dy = 0;
       startX = e.clientX;
       startY = e.clientY;
-      t0 = performance.now();
       card.classList.add("dragging");
       try { card.setPointerCapture(e.pointerId); } catch (_) { /* older browsers */ }
     });
@@ -985,10 +1007,8 @@
       if (!active) return;
       active = false;
       card.classList.remove("dragging");
-      const dt = performance.now() - t0;
-      if (!moved) {
+      if (!moved) { // a tap does nothing now — all the info is already on the front
         reset();
-        if (dt < 600) card.classList.toggle("flipped");
         return;
       }
       const threshold = Math.min(130, card.offsetWidth * 0.35);
@@ -1139,7 +1159,7 @@
     wrap.innerHTML = "";
     const items = state.routine;
     const n = items.length;
-    $("#routine-count").textContent = n ? n + (n === 1 ? " exercise" : " exercises") : "";
+    $("#routine-count").textContent = n ? n + " / " + WORKOUT_CAP : "";
     $("#routine-empty").hidden = n > 0;
     $("#btn-clear-routine").hidden = n === 0;
     // Only offer "Start workout" when there are exercises the library still knows.
@@ -1609,6 +1629,8 @@
     $("#btn-nodeck-filters").addEventListener("click", () => showScreen("filters"));
     $("#btn-empty-filters").addEventListener("click", () => showScreen("filters"));
     $("#btn-empty-routine").addEventListener("click", () => showScreen("routine"));
+    $("#btn-full-routine").addEventListener("click", () => showScreen("routine"));
+    $("#btn-full-undo").addEventListener("click", undoSwipe);
     $("#btn-routine-swipe").addEventListener("click", () => showScreen("deck"));
     $("#btn-progress-stack").addEventListener("click", () => showScreen("routine"));
 
@@ -1665,7 +1687,7 @@
     $("#btn-export").addEventListener("click", downloadExport);
     $("#btn-feedback").addEventListener("click", shareFeedback);
 
-    // Keyboard support: arrows to swipe, U to undo, F/space to flip.
+    // Keyboard support: arrows to swipe, U to undo.
     document.addEventListener("keydown", (e) => {
       if (!$("#modal").hidden) {
         if (e.key === "Escape") hideModal();
@@ -1680,9 +1702,6 @@
       } else if (e.key === "ArrowLeft" && card) {
         e.preventDefault();
         commitSwipe(card, "skip");
-      } else if ((e.key === "f" || e.key === "F" || e.key === " ") && card) {
-        e.preventDefault();
-        card.classList.toggle("flipped");
       } else if (e.key === "u" || e.key === "U") {
         undoSwipe();
       }

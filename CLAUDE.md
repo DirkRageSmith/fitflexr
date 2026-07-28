@@ -46,6 +46,7 @@ renamed 2026-07-23 — the localStorage key is now `fitflexr`.)
 
 1. Filters exclude correctly: toggle "Knee Issues," confirm no `knee`-tagged exercise appears in the deck.
 2. Right swipe adds to My Routine; left swipe skips; skipped items don't reappear this session.
+2b. Workout cap: save until the Stack hits `WORKOUT_CAP` (8) — the deck must stop dealing and show the "full workout" state; undo must reopen it. Cards are single-faced (no flip): name, cue, full description, meta, and pinned gear/difficulty tags all on the front.
 3. Routine, notes, sets/reps, and filters survive a page reload.
 4. `avoidIf` tags all match the conditions array (`node validate.js`, not eyeball).
 5. Export button downloads valid JSON.

@@ -397,7 +397,6 @@ input::placeholder { color: var(--muted); opacity: 0.7; }
   user-select: none;
   -webkit-user-select: none;
   cursor: grab;
-  perspective: 1200px;
 }
 
 .swipe-card.dragging { transition: none; cursor: grabbing; }
@@ -410,16 +409,6 @@ input::placeholder { color: var(--muted); opacity: 0.7; }
   from { transform: translateY(-14px) scale(0.96); opacity: 0; }
 }
 
-.card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 0.45s cubic-bezier(0.3, 0.7, 0.35, 1);
-}
-
-.swipe-card.flipped .card-inner { transform: rotateY(180deg); }
-
 .card-face {
   position: absolute;
   inset: 0;
@@ -430,15 +419,11 @@ input::placeholder { color: var(--muted); opacity: 0.7; }
   /* The whole card is framed in the group color; the shading is top-half only. */
   border: 9px solid var(--group-color, #888);
   box-shadow: var(--shadow-card);
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
   overflow: hidden;
 }
 
-.card-back { transform: rotateY(180deg); }
-
-/* Type-forward front: the colored frame + a top-half shading carry the card,
-   with the exercise name as the hero. No emoji. */
+/* Type-forward single face: the colored frame + a top shading carry the card,
+   with the exercise name as the hero. Everything lives here — no flip. */
 .card-front {
   background:
     linear-gradient(180deg,
@@ -451,12 +436,22 @@ input::placeholder { color: var(--muted); opacity: 0.7; }
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding: 26px 22px 18px;
+  gap: 9px;
+  padding: 22px 20px 8px;
   min-height: 0;
+  /* The face is dense now (cue + full description + meta). Only this text region
+     scrolls; the tag row below stays pinned so gear/difficulty are always visible. */
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
-.card-body .tag-row { margin-top: auto; }
+/* Pinned footer: sits outside .card-body, always in view. */
+.card-front > .tag-row {
+  flex: 0 0 auto;
+  margin-top: 0;
+  padding: 8px 20px 16px;
+  background: var(--surface);
+}
 
 .group-pill {
   display: inline-flex;
@@ -482,7 +477,7 @@ input::placeholder { color: var(--muted); opacity: 0.7; }
 }
 
 .card-name {
-  font-size: clamp(1.6rem, 7vw, 2.05rem);
+  font-size: clamp(1.4rem, 6vw, 1.75rem);
   font-weight: 800;
   letter-spacing: -0.02em;
   line-height: 1.12;
@@ -494,7 +489,13 @@ input::placeholder { color: var(--muted); opacity: 0.7; }
   color: color-mix(in srgb, var(--secondary-color) 62%, var(--text));
 }
 
-.card-cue { color: var(--muted); font-size: 0.92rem; }
+/* The cue is the headline instruction above the full how-to. */
+.card-cue {
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
 
 .tag-row {
   display: flex;
@@ -517,39 +518,20 @@ input::placeholder { color: var(--muted); opacity: 0.7; }
 .tag.diff-intermediate { background: var(--surface-2); color: var(--muted); }
 .tag.diff-advanced { background: color-mix(in srgb, var(--nope) 16%, var(--surface)); color: var(--nope); }
 
-.flip-hint {
-  color: var(--muted);
-  font-size: 0.72rem;
-  text-align: center;
-  padding: 6px 0 12px;
-  opacity: 0.8;
-}
-
-/* Card back */
-
-.card-back { padding: 20px 20px 8px; gap: 8px; }
-
-.card-back .group-pill { margin-bottom: 2px; }
-
-.card-name-sm { font-size: 1.25rem; }
-
+/* The full how-to, now on the front of every card. */
 .card-desc {
-  font-size: 0.92rem;
-  color: var(--text);
-  overflow-y: auto;
-  min-height: 0;
-  flex: 1;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: var(--muted);
 }
 
-.card-meta { font-size: 0.82rem; color: var(--muted); }
+.card-meta { font-size: 0.8rem; color: var(--muted); }
 
 .card-flags {
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   color: var(--nope);
   font-weight: 600;
 }
-
-.card-back .flip-hint { margin-top: auto; }
 
 /* Verdict stamps */
 
