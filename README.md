@@ -8,6 +8,21 @@ ever see it.
 Personal use, one person, one device. No accounts, no backend, no tracking — everything
 runs in your browser and stays on your device.
 
+## What you actually do with it
+
+1. **Set up** — pick the muscle groups you want, the gear you own, and the conditions
+   your body needs respected. Anything risky for those conditions never enters the deck.
+2. **Swipe** — right to save, left to skip. Your saved moves become the **FitFlex Stack**.
+3. **Start the workout** — it steps you through the Stack one exercise at a time, with
+   the full how-to on screen while you are doing the movement, set pills to tap off, and
+   a **rest timer that starts after every set** and tells you what is coming next.
+4. **Warm-up and cool-down stretches** bookend the run. They have their own budget
+   separate from the training moves, so filling your Stack never crowds them out, and
+   you can filter them by discipline.
+5. **Back it up** — Settings → Export my data.
+
+Everything above works offline once installed.
+
 ## Install on your phone
 
 **The app is live at <https://dirkragesmith.github.io/fitflexr/>** (GitHub Pages,
