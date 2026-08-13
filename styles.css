@@ -343,6 +343,20 @@ input::placeholder { color: var(--muted); opacity: 0.7; }
   font-size: 0.8em;
 }
 
+/* Stretch disciplines — green, to read as "added to", not "filtered out". */
+.chip-sport[aria-pressed="true"] {
+  background: color-mix(in srgb, var(--save) 16%, var(--surface));
+  border-color: var(--save);
+  color: var(--text);
+}
+
+.chip-sport[aria-pressed="true"]::before {
+  content: "✓";
+  font-size: 0.85em;
+  font-weight: 900;
+  color: var(--save);
+}
+
 /* ── Deck ────────────────────────────────────────────────── */
 
 .screen-deck {
@@ -440,9 +454,14 @@ input::placeholder { color: var(--muted); opacity: 0.7; }
   padding: 22px 20px 8px;
   min-height: 0;
   /* The face is dense now (cue + full description + meta). Only this text region
-     scrolls; the tag row below stays pinned so gear/difficulty are always visible. */
+     scrolls; the tag row below stays pinned so gear/difficulty are always visible.
+     touch-action MUST stay none: this is a scroll container, and the touch-action
+     walk stops at the nearest scrolling ancestor — so an `auto` here shadows the
+     `touch-action: none` on .swipe-card and the browser steals the drag for a
+     native scroll, firing pointercancel and killing every swipe. attachSwipeHandlers
+     scrolls this element itself on a vertical drag instead. */
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+  touch-action: none;
 }
 
 /* Pinned footer: sits outside .card-body, always in view. */
@@ -1187,10 +1206,12 @@ input::placeholder { color: var(--muted); opacity: 0.7; }
   font-variant-numeric: tabular-nums;
 }
 
+/* Three bands: a fixed header, a flexible middle that gets ALL the leftover height
+   (the how-to needs room to be followable, not smaller type), and the set pills
+   pinned at the bottom where your thumb already is. */
 .wo-card {
   flex: 1;
   min-height: 0;
-  overflow-y: auto;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -1201,9 +1222,31 @@ input::placeholder { color: var(--muted); opacity: 0.7; }
   box-shadow: var(--shadow-card);
 }
 
+.wo-head, .wo-foot { flex: 0 0 auto; display: flex; flex-direction: column; gap: 8px; }
+
+.wo-stage { position: relative; flex: 1; min-height: 0; }
+
+.wo-explain {
+  position: absolute;
+  inset: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding-right: 2px;
+}
+
 .wo-name { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
 
-.wo-cue { color: var(--muted); font-size: 0.95rem; }
+/* The cue is the headline instruction; the full how-to sits under it, same as the
+   swipe card. In-workout used to show the cue alone, which wasn't enough to follow. */
+.wo-cue { color: var(--text); font-size: 0.98rem; font-weight: 700; line-height: 1.35; }
+
+.wo-desc { font-size: 0.94rem; line-height: 1.5; color: var(--muted); }
+
+.wo-meta { font-size: 0.82rem; color: var(--muted); }
+
+.wo-flags { font-size: 0.82rem; color: var(--nope); font-weight: 600; }
 
 .wo-target { font-weight: 700; font-size: 0.9rem; }
 
@@ -1229,19 +1272,56 @@ input::placeholder { color: var(--muted); opacity: 0.7; }
 
 .wo-alldone { color: color-mix(in srgb, var(--group-color, var(--muted)) 62%, var(--text)); font-weight: 700; margin-top: 4px; }
 
+/* The break takes over the how-to's space instead of sitting next to it. The
+   background is opaque so it genuinely covers, and it fades rather than cuts so it
+   never reads as "the instructions vanished". */
 .wo-rest {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  margin: 14px 0 4px;
-  padding: 14px;
+  padding: 16px;
   border-radius: 16px;
   background: color-mix(in srgb, var(--group-color, #888) 12%, var(--surface));
   border: 1.5px solid color-mix(in srgb, var(--group-color, #888) 40%, transparent);
+  opacity: 0;
+  transform: translateY(10px);
+  visibility: hidden;
+  /* pointer-events is the load-bearing one: this box covers the whole how-to at
+     z-index 2, so without it the invisible panel would still swallow taps and
+     scrolls on the explanation underneath. */
+  pointer-events: none;
+  transition: opacity 0.28s ease, transform 0.28s ease, visibility 0s linear 0.28s;
 }
 
-.wo-rest[hidden] { display: none; }
+/* Kept in the layout while hidden so it can animate — [hidden]'s display:none
+   would cut the transition dead. visibility keeps it out of the a11y tree. */
+.wo-rest[hidden] { display: flex; }
+
+.wo-rest:not([hidden]) {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+  pointer-events: auto;
+  transition: opacity 0.28s ease, transform 0.28s ease, visibility 0s;
+}
+
+.wo-rest-next {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+  color: color-mix(in srgb, var(--group-color, var(--muted)) 62%, var(--text));
+}
+
+.wo-rest-note { font-size: 0.76rem; color: var(--muted); text-align: center; }
+
+@media (prefers-reduced-motion: reduce) {
+  .wo-rest, .wo-rest:not([hidden]) { transition: visibility 0s; transform: none; }
+}
 
 .wo-rest-label {
   font-size: 0.72rem;

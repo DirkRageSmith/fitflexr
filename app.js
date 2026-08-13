@@ -26,6 +26,19 @@
   const EQUIP_LABEL = {};
   EQUIPMENT.forEach((e) => { EQUIP_LABEL[e.id] = e.label; });
   const ALL_EQUIP_IDS = EQUIPMENT.map((e) => e.id);
+  const ALL_SPORT_IDS = (typeof SPORTS !== "undefined" ? SPORTS : []).map((s) => s.id);
+  const SPORT_IDS = new Set(ALL_SPORT_IDS);
+  const SPORT_LABEL = {};
+  (typeof SPORTS !== "undefined" ? SPORTS : []).forEach((s) => { SPORT_LABEL[s.id] = s.label; });
+
+  // What makes an exercise a stretch rather than training volume. Kept in sync with
+  // STRETCH_CATEGORIES in validate.js. "mobility" is deliberately NOT here — a few
+  // pre-existing strength moves carry it and they are not warm-up material.
+  const STRETCH_CATEGORIES = new Set(["warmup", "cooldown"]);
+  const isStretch = (ex) => !!ex && STRETCH_CATEGORIES.has(ex.category);
+  const isWarmup = (ex) => !!ex && ex.category === "warmup";
+  const isCooldown = (ex) => !!ex && ex.category === "cooldown";
+  const sportsOf = (ex) => (Array.isArray(ex.sports) ? ex.sports : []);
 
   // Equipment array of an exercise, defensively coerced to a lowercased array.
   const equipOf = (ex) =>
@@ -87,7 +100,16 @@
   // A workout is a workout, not a shopping list: once the Stack holds this many
   // exercises the deck stops offering more, so a beginner can't swipe their way
   // into a 30-move session. The cap wins over TIME_COUNT.
-  const WORKOUT_CAP = 10;
+  //
+  // Two separate budgets. Stretches shouldn't have to fight training moves for a
+  // slot — a full yoga cool-down is not "ten exercises' worth of workout" — so they
+  // fill their own cap and the deck stops each kind independently.
+  const WORKOUT_CAP = 10; // training moves
+  const STRETCH_CAP = 10; // warm-up + cool-down stretches
+
+  // Stretches get a short transition, not a working rest — standing around for 2:30
+  // between yoga poses would be nonsense.
+  const STRETCH_REST = 20;
 
   // Phase F — "how you're feeling today" modifiers. Deterministic if/then rules over
   // the metadata bias the generated session — no LLM, no network. Ephemeral per session.
@@ -101,7 +123,7 @@
 
   // ── Persistent state (localStorage, schema-versioned) ────
   const STORAGE_KEY = "fitflexr";
-  const SCHEMA_VERSION = 6;
+  const SCHEMA_VERSION = 7;
   const EQUIPMENT_SET = new Set(ALL_EQUIP_IDS);
   // Sensible starting gear (Matt's home setup); also the fallback when none is stored.
   const DEFAULT_GEAR = ["bodyweight", "dumbbell", "bench"];
@@ -110,7 +132,9 @@
     schemaVersion: SCHEMA_VERSION,
     // equipment = the gear you own. An exercise shows only if you own ALL it needs
     // (superset test). Unlike groups, empty here means "nothing shows" — presets fix that.
-    filters: { groups: [], equipment: DEFAULT_GEAR.slice(), conditions: [] },
+    // sports = which disciplines' stretches you want offered. Empty means all of
+    // them, the same convention as `groups` — nothing selected is not a filter.
+    filters: { groups: [], equipment: DEFAULT_GEAR.slice(), conditions: [], sports: [] },
     routine: [], // [{ id, sets, notes }] — references exercises by permanent id only
     theme: "dark",
     // Phase B onboarding profile. completed gates the first-run flow; goal/time are
@@ -145,6 +169,10 @@
     out.filters.equipment = eq.length ? eq : DEFAULT_GEAR.slice();
     out.filters.conditions = Array.isArray(filters.conditions)
       ? filters.conditions.filter((c) => CONDITION_IDS.has(c)) : [];
+    // v6→v7: sport-tagged stretches added. Pre-v7 users land with none selected,
+    // which means "offer me all of them" — nothing disappears on upgrade.
+    out.filters.sports = Array.isArray(filters.sports)
+      ? filters.sports.filter((s) => SPORT_IDS.has(s)) : [];
     out.routine = Array.isArray(data.routine)
       ? data.routine
           .filter((r) => r && typeof r.id === "string")
@@ -266,17 +294,48 @@
     return equipOf(ex).every((e) => owned.has(e));
   }
 
-  function eligiblePool() {
+  // Which disciplines' stretches you want offered. A stretch with no sports tag is
+  // general and always shows; an empty selection means "all of them", the same
+  // convention muscle groups already use.
+  function passesSports(ex) {
+    const tags = sportsOf(ex);
+    if (!tags.length) return true;
+    const want = state.filters.sports;
+    if (!want.length) return true;
+    return tags.some((s) => want.includes(s));
+  }
+
+  // Today's muscle picks scope the TRAINING moves. A warm-up or cool-down prepares
+  // the whole session rather than one muscle, so picking "Chest" shouldn't leave you
+  // with no stretches — they're scoped by discipline instead.
+  function inScope(ex) {
+    if (!ownsGear(ex) || !passesConditions(ex)) return false;
+    if (isStretch(ex)) return passesSports(ex);
     const groups = state.filters.groups;
+    return groups.length === 0 || groups.includes(ex.muscleGroup);
+  }
+
+  function eligiblePool() {
     const inRoutine = new Set(state.routine.map((r) => r.id));
     return EXERCISES.filter(
-      (ex) =>
-        (groups.length === 0 || groups.includes(ex.muscleGroup)) &&
-        ownsGear(ex) &&
-        passesConditions(ex) &&
-        !inRoutine.has(ex.id) &&
-        !sessionSkipped.has(ex.id)
+      (ex) => inScope(ex) && !inRoutine.has(ex.id) && !sessionSkipped.has(ex.id)
     );
+  }
+
+  // ── The two Stack budgets ────────────────────────────────
+  const routineExercises = () => state.routine.map((r) => EX_BY_ID[r.id]).filter(Boolean);
+  const stretchesSaved = () => routineExercises().filter(isStretch).length;
+  const trainingSaved = () => routineExercises().filter((ex) => !isStretch(ex)).length;
+
+  // Whether THIS card's budget is spent. The deck stops dealing training moves and
+  // stretches independently, so a full stack of exercises doesn't block a cool-down.
+  function kindFull(ex) {
+    return isStretch(ex) ? stretchesSaved() >= STRETCH_CAP : trainingSaved() >= WORKOUT_CAP;
+  }
+
+  // Both budgets spent — there is nothing left to deal at all.
+  function workoutFull() {
+    return trainingSaved() >= WORKOUT_CAP && stretchesSaved() >= STRETCH_CAP;
   }
 
   function shuffle(arr) {
@@ -325,7 +384,10 @@
 
   function buildDeck() {
     const pool = eligiblePool();
-    deck = state.taste.swipes >= TASTE_MIN_SWIPES ? tasteBiasedOrder(pool) : shuffle(pool);
+    const ordered = state.taste.swipes >= TASTE_MIN_SWIPES ? tasteBiasedOrder(pool) : shuffle(pool);
+    // Training moves first, stretches behind them. The hook is swiping exercises —
+    // a deck that opens on Child's Pose doesn't feel like a workout.
+    deck = ordered.filter((ex) => !isStretch(ex)).concat(ordered.filter(isStretch));
     deckIndex = 0;
     swipeHistory = [];
     deckBuilt = true;
@@ -423,12 +485,16 @@
   function generateSession() {
     const cfg = GOAL_CONFIG[state.onboarding.goal] || {};
     // Never generate more than the Stack has room for — the cap wins over time.
-    const room = Math.max(0, WORKOUT_CAP - state.routine.filter((r) => EX_BY_ID[r.id]).length);
+    // Room among the TRAINING moves only — a Stack full of stretches must not
+    // block generating a workout.
+    const room = Math.max(0, WORKOUT_CAP - trainingSaved());
     const count = Math.min(readinessCount(TIME_COUNT[state.onboarding.timeAvailable] || 6), room);
     if (count <= 0) return [];
     const inRoutine = new Set(state.routine.map((r) => r.id));
+    // Training moves only — stretches are added around the session, not counted as
+    // part of it (see generateStretches).
     let pool = EXERCISES.filter(
-      (ex) => ownsGear(ex) && passesConditions(ex) && !inRoutine.has(ex.id)
+      (ex) => !isStretch(ex) && ownsGear(ex) && passesConditions(ex) && !inRoutine.has(ex.id)
     );
     // "No gear today" overrides your owned gear → bodyweight-only moves.
     if (readiness.has("no-gear")) {
@@ -463,8 +529,34 @@
     return picked.slice(0, count);
   }
 
+  // Bookend a generated session with stretches matched to the muscles it actually
+  // trains: warm-ups lead, cool-downs close. Sport tags scope which ones are offered.
+  function generateStretches(session, kind, count, exclude) {
+    if (count <= 0) return [];
+    const skip = new Set(state.routine.map((r) => r.id));
+    (exclude || []).forEach((ex) => skip.add(ex.id));
+    const worked = new Set();
+    session.forEach((ex) => {
+      worked.add(ex.muscleGroup);
+      (ex.secondaryMuscles || []).forEach((m) => worked.add(m));
+    });
+    const wanted = kind === "warmup" ? isWarmup : isCooldown;
+    return EXERCISES
+      .filter((ex) => wanted(ex) && ownsGear(ex) && passesConditions(ex) &&
+        passesSports(ex) && !skip.has(ex.id))
+      .map((ex) => ({
+        ex,
+        score: (worked.has(ex.muscleGroup) ? 3 : 0) +
+          (ex.secondaryMuscles || []).filter((m) => worked.has(m)).length +
+          tasteScore(ex) * 0.3 + Math.random() * 2,
+      }))
+      .sort((a, b) => b.score - a.score)
+      .slice(0, count)
+      .map((o) => o.ex);
+  }
+
   function startGeneratedSession() {
-    if (workoutFull()) {
+    if (trainingSaved() >= WORKOUT_CAP) {
       updateGenerateUI("Your Stack is already a full workout — clear some to generate a new one.");
       return;
     }
@@ -473,7 +565,11 @@
       updateGenerateUI("No matching moves — add gear or clear an injury filter.");
       return;
     }
-    deck = session;
+    // Two in front, two behind, budget permitting — the shape of an actual session.
+    const stretchRoom = Math.max(0, STRETCH_CAP - stretchesSaved());
+    const warm = generateStretches(session, "warmup", Math.min(2, stretchRoom));
+    const cool = generateStretches(session, "cooldown", Math.min(2, stretchRoom - warm.length), warm);
+    deck = warm.concat(session, cool);
     deckIndex = 0;
     swipeHistory = [];
     deckBuilt = true;
@@ -483,14 +579,7 @@
     showScreen("deck");
   }
 
-  function matchesFilters(ex) {
-    const groups = state.filters.groups;
-    return (
-      (groups.length === 0 || groups.includes(ex.muscleGroup)) &&
-      ownsGear(ex) &&
-      passesConditions(ex)
-    );
-  }
+  const matchesFilters = inScope;
 
   // Safety: if a condition (or gear/group) is toggled mid-session, purge the now-
   // ineligible cards from the live deck immediately — never rely on the next
@@ -883,6 +972,26 @@
       });
     }
 
+    const sWrap = $("#sport-chips");
+    if (sWrap) {
+      sWrap.innerHTML = "";
+      (typeof SPORTS !== "undefined" ? SPORTS : []).forEach((sp) => {
+        const btn = el("button", "chip chip-sport", sp.label);
+        btn.type = "button";
+        btn.setAttribute("aria-pressed", String(state.filters.sports.includes(sp.id)));
+        btn.addEventListener("click", () => {
+          const i = state.filters.sports.indexOf(sp.id);
+          if (i === -1) state.filters.sports.push(sp.id);
+          else state.filters.sports.splice(i, 1);
+          saveState();
+          btn.setAttribute("aria-pressed", String(i === -1));
+          purgeActiveDeck();
+          updateMatchCount();
+        });
+        sWrap.appendChild(btn);
+      });
+    }
+
     const cWrap = $("#condition-chips");
     cWrap.innerHTML = "";
     CONDITIONS.forEach((c) => {
@@ -946,30 +1055,35 @@
   }
 
   // ── Deck screen ──────────────────────────────────────────
+  // What's still dealable: everything ahead of the read head whose budget isn't
+  // spent. Cards of a full kind are held back rather than burned, so dropping a
+  // move from the Stack puts them straight back in play.
+  function pendingCards() {
+    return deck.slice(deckIndex).filter((ex) => !kindFull(ex));
+  }
+
   function renderDeck(returning) {
     const stage = $("#deck-stage");
     stage.querySelectorAll(".swipe-card:not(.flying)").forEach((c) => c.remove());
 
-    const remaining = deck.length - deckIndex;
-    // Once the Stack is full the deck stops dealing, whatever's left in it.
-    const full = workoutFull();
+    const pending = pendingCards();
+    // "Full" means both budgets are spent — a full stack of exercises still leaves
+    // room to swipe a cool-down.
+    const full = workoutFull() || (pending.length === 0 && deckIndex < deck.length);
+    const exhausted = deckIndex >= deck.length;
     $("#deck-nodeck").hidden = deckBuilt;
-    $("#deck-full").hidden = !(deckBuilt && full);
-    $("#deck-empty").hidden = !(deckBuilt && !full && remaining <= 0);
-    if (full) {
-      $("#deck-full-text").textContent =
-        "You've saved " + state.routine.length + " exercises — that's a full session. Go train it, " +
-        "or drop a move from your Stack to swap in something else.";
-    }
+    $("#deck-full").hidden = !(deckBuilt && !exhausted && full);
+    $("#deck-empty").hidden = !(deckBuilt && exhausted);
+    if (full) $("#deck-full-text").textContent = stackFullMessage();
     $("#deck-counter").textContent =
-      deckBuilt && !full && remaining > 0 ? `${deckIndex + 1} / ${deck.length}` : "";
+      deckBuilt && pending.length > 0 ? `${pending.length} left` : "";
     const eyebrow = $(".deck-top .eyebrow");
     if (eyebrow) eyebrow.textContent = deckMode === "generated" ? "Your session" : "Flexr Deck";
     updateActionButtons();
 
-    if (!deckBuilt || full || remaining <= 0) return;
+    if (!deckBuilt || !pending.length) return;
 
-    const visible = deck.slice(deckIndex, deckIndex + 3);
+    const visible = pending.slice(0, 3);
     // Theme the whole deck by the top card's muscle-group color, so the
     // deck header reads "red = chest day" at a glance as you swipe.
     const topGroup = GROUP_BY_NAME[visible[0].muscleGroup];
@@ -984,13 +1098,8 @@
     }
   }
 
-  // The Stack is full once it holds WORKOUT_CAP exercises the library still knows.
-  function workoutFull() {
-    return state.routine.filter((r) => EX_BY_ID[r.id]).length >= WORKOUT_CAP;
-  }
-
   function updateActionButtons() {
-    const hasCard = deckBuilt && !workoutFull() && deckIndex < deck.length;
+    const hasCard = deckBuilt && pendingCards().length > 0;
     $("#btn-save").disabled = !hasCard;
     $("#btn-skip").disabled = !hasCard;
     $("#btn-undo").disabled = swipeHistory.length === 0;
@@ -1055,13 +1164,19 @@
   }
 
   // ── Swiping (pointer events — works for touch and mouse) ──
+  // The card owns every gesture on it (touch-action: none all the way down), so a
+  // vertical drag has to be scrolled by hand — see .card-body in styles.css for why
+  // letting the browser do it breaks swiping outright.
   function attachSwipeHandlers(card) {
     let active = false;
     let moved = false;
+    let axis = null; // locked once per drag: "x" = swipe, "y" = scroll the text
     let startX = 0;
     let startY = 0;
+    let startScroll = 0;
     let dx = 0;
     let dy = 0;
+    const body = card.querySelector(".card-body");
     const saveStamp = card.querySelector(".stamp-save");
     const skipStamp = card.querySelector(".stamp-skip");
 
@@ -1075,10 +1190,12 @@
       if (card.classList.contains("flying")) return;
       active = true;
       moved = false;
+      axis = null;
       dx = 0;
       dy = 0;
       startX = e.clientX;
       startY = e.clientY;
+      startScroll = body ? body.scrollTop : 0;
       card.classList.add("dragging");
       try { card.setPointerCapture(e.pointerId); } catch (_) { /* older browsers */ }
     });
@@ -1087,8 +1204,19 @@
       if (!active) return;
       dx = e.clientX - startX;
       dy = e.clientY - startY;
-      if (!moved && Math.hypot(dx, dy) > 10) moved = true;
-      if (!moved) return;
+      if (!moved) {
+        if (Math.hypot(dx, dy) <= 10) return;
+        moved = true;
+        // Decide once, on the first real movement, so the gesture can't flip
+        // mid-drag. Only a card whose text actually overflows can claim a drag,
+        // and only a clearly vertical one — everything else is a swipe.
+        const scrollable = body && body.scrollHeight > body.clientHeight + 1;
+        axis = scrollable && Math.abs(dy) > Math.abs(dx) ? "y" : "x";
+      }
+      if (axis === "y") {
+        body.scrollTop = startScroll - dy;
+        return;
+      }
       card.style.transform = `translate(${dx}px, ${dy * 0.3}px) rotate(${dx * 0.055}deg)`;
       const k = Math.min(Math.abs(dx) / 90, 1);
       saveStamp.style.opacity = dx > 0 ? k : 0;
@@ -1099,7 +1227,9 @@
       if (!active) return;
       active = false;
       card.classList.remove("dragging");
-      if (!moved) { // a tap does nothing now — all the info is already on the front
+      // A tap does nothing (all the info is already on the front), and a drag that
+      // was scrolling the text must never also count as a swipe.
+      if (!moved || axis === "y") {
         reset();
         return;
       }
@@ -1117,17 +1247,51 @@
     });
   }
 
+  // Say which budget ran out, so "no more cards" never reads as a bug.
+  function stackFullMessage() {
+    const t = trainingSaved();
+    const s = stretchesSaved();
+    if (t >= WORKOUT_CAP && s >= STRETCH_CAP) {
+      return "You've saved " + t + " exercises and " + s + " stretches — a full session, warm-up " +
+        "to cool-down. Go train it, or drop something from your Stack to swap it out.";
+    }
+    if (t >= WORKOUT_CAP) {
+      return "That's " + t + " exercises — a full workout. Your stretch slots are still open if " +
+        "you want a warm-up or cool-down.";
+    }
+    return "That's " + s + " stretches — plenty to bookend a session. There's still room for " +
+      "training moves.";
+  }
+
+  // Stretches carry their own prescription; training moves take the generated
+  // session's scheme (empty string when you're just browsing).
+  const defaultSetsFor = (ex) => (isStretch(ex) ? (ex.hold || "2 × 30s") : sessionSetsDefault);
+
+  // Move the swiped card to the read head, then step past it. Swapping rather than
+  // plain-incrementing keeps any card we dealt around (because its budget was full)
+  // in the pending pool, and leaves undo as a simple deckIndex--.
+  function consumeCard(ex) {
+    const i = deck.findIndex((e) => e.id === ex.id);
+    if (i < 0) return;
+    if (i !== deckIndex) {
+      const held = deck[deckIndex];
+      deck[deckIndex] = deck[i];
+      deck[i] = held;
+    }
+    deckIndex++;
+  }
+
   function commitSwipe(card, action, lastDy = 0) {
     if (card.classList.contains("flying")) return;
     const ex = EX_BY_ID[card.dataset.id];
     if (!ex) return;
 
-    if (action === "save") addToRoutine(ex.id, sessionSetsDefault);
+    if (action === "save") addToRoutine(ex.id, defaultSetsFor(ex));
     else sessionSkipped.add(ex.id);
     recordTaste(ex, action);
     saveState();
     swipeHistory.push({ id: ex.id, action });
-    deckIndex++;
+    consumeCard(ex);
 
     card.classList.add("flying");
     const dir = action === "save" ? 1 : -1;
@@ -1251,7 +1415,11 @@
     wrap.innerHTML = "";
     const items = state.routine;
     const n = items.length;
-    $("#routine-count").textContent = n ? n + " / " + WORKOUT_CAP : "";
+    // Two budgets, shown separately — "12 / 10" would look broken otherwise.
+    const s = stretchesSaved();
+    $("#routine-count").textContent = n
+      ? trainingSaved() + " / " + WORKOUT_CAP + (s ? " · " + s + " / " + STRETCH_CAP + " stretch" : "")
+      : "";
     $("#routine-empty").hidden = n > 0;
     $("#btn-clear-routine").hidden = n === 0;
     // Only offer "Start workout" when there are exercises the library still knows.
@@ -1295,10 +1463,21 @@
     return n > 0 && n <= 12 ? n : 3; // default 3 sets when unspecified
   }
 
+  // Warm-ups lead, cool-downs close, training in between — so a stretch saved
+  // halfway down your Stack still lands where it belongs in the actual run.
+  function workoutOrder(entry) {
+    const ex = EX_BY_ID[entry.id];
+    if (isWarmup(ex)) return 0;
+    if (isCooldown(ex)) return 2;
+    return 1;
+  }
+
   function startWorkout() {
     const items = state.routine
       .filter((r) => EX_BY_ID[r.id])
-      .map((r) => ({ id: r.id, sets: r.sets, notes: r.notes, doneSets: 0 }));
+      .map((r, i) => ({ r, i }))
+      .sort((a, b) => workoutOrder(a.r) - workoutOrder(b.r) || a.i - b.i)
+      .map(({ r }) => ({ id: r.id, sets: r.sets, notes: r.notes, doneSets: 0 }));
     if (!items.length) return;
     workout = { items, index: 0 };
     stopRest();
@@ -1330,6 +1509,21 @@
     return true;
   }
 
+  // A stretch gets a short transition, not a working rest — standing around for
+  // 2:30 between yoga poses would be nonsense.
+  function restForCurrent() {
+    const item = workout && workout.items[workout.index];
+    const ex = item && EX_BY_ID[item.id];
+    return isStretch(ex) ? STRETCH_REST : currentRestDefault();
+  }
+
+  // True only for the final set of the final exercise — the one moment in a run
+  // where there's nothing left to rest for. Generalises to any number of sets and
+  // any number of exercises; nothing here is per-set-count special-cased.
+  function isLastSetOfWorkout(index, doneSets, total) {
+    return !!workout && index >= workout.items.length - 1 && doneSets >= total;
+  }
+
   function stopRest() {
     if (restTimer) { clearInterval(restTimer); restTimer = null; }
     restRemaining = 0;
@@ -1348,10 +1542,27 @@
     if (t) t.textContent = fmtTime(Math.max(0, restRemaining));
   }
 
+  // The break covers the how-to, so it has to say what it's a break FOR — otherwise
+  // the instructions just look like they went missing.
+  function updateRestNext() {
+    const node = $("#wo-rest-next");
+    if (!node || !workout) return;
+    const item = workout.items[workout.index];
+    const n = parseSetCount(item.sets);
+    if (item.doneSets < n) {
+      node.textContent = "Up next: set " + (item.doneSets + 1) + " of " + n;
+      return;
+    }
+    const next = workout.items[workout.index + 1];
+    const nextEx = next ? EX_BY_ID[next.id] : null;
+    node.textContent = nextEx ? "Up next: " + nextEx.name : "Last one done — tap Finish.";
+  }
+
   function startRest(seconds) {
     stopRest();
     restRemaining = seconds;
     $("#wo-rest").hidden = false;
+    updateRestNext();
     updateRestDisplay();
     restTimer = setInterval(() => {
       restRemaining -= 1;
@@ -1368,8 +1579,12 @@
     const ex = EX_BY_ID[item.id];
     if (!ex) return;
     const used = new Set(workout.items.map((i) => i.id));
+    // Like for like by band (warm-up / training / cool-down) rather than by exact
+    // category, so a cool-down never swaps to a barbell row but training moves keep
+    // the wide pool they had before.
     const candidates = EXERCISES.filter(
       (c) => c.id !== ex.id && !used.has(c.id) &&
+        isWarmup(c) === isWarmup(ex) && isCooldown(c) === isCooldown(ex) &&
         c.muscleGroup === ex.muscleGroup && ownsGear(c) && passesConditions(c)
     );
     const samePattern = candidates.filter((c) => c.pattern && c.pattern === ex.pattern);
@@ -1390,11 +1605,12 @@
     setTimeout(() => { el2.textContent = original; el2.disabled = false; }, 1400);
   }
 
+  // The last set of an exercise starts a rest like any other, so moving on to the
+  // next movement must NOT cancel it — that break is exactly the one you're taking.
   function goToExercise(idx) {
     if (!workout) return;
     if (idx >= workout.items.length) { finishWorkout(); return; }
     workout.index = Math.max(0, Math.min(idx, workout.items.length - 1));
-    stopRest();
     renderWorkout();
   }
 
@@ -1408,17 +1624,37 @@
 
     const group = GROUP_BY_NAME[ex.muscleGroup] || { color: "#888" };
     const card = $("#wo-card");
-    card.innerHTML = "";
     card.style.setProperty("--group-color", group.color);
     const secGroup = (ex.secondaryMuscles || []).map((m) => GROUP_BY_NAME[m])
       .find((g) => g && g.name !== ex.muscleGroup);
     if (secGroup) { card.style.setProperty("--secondary-color", secGroup.color); card.dataset.hasSecondary = "true"; }
     else { card.removeAttribute("data-has-secondary"); }
 
-    card.appendChild(groupPill(ex.muscleGroup));
-    card.appendChild(el("h2", "wo-name card-name", ex.name));
-    card.appendChild(el("p", "wo-cue", ex.cue));
-    if (item.sets) card.appendChild(el("p", "wo-target", "Target: " + item.sets));
+    // Only the three bands are re-rendered — #wo-rest lives in .wo-stage and must
+    // survive, or an in-flight break would be wiped by any re-render.
+    const head = $("#wo-head");
+    head.innerHTML = "";
+    head.appendChild(groupPill(ex.muscleGroup));
+    head.appendChild(el("h2", "wo-name card-name", ex.name));
+
+    // The full how-to, not just the one-line cue — this screen is where you're
+    // actually doing the movement, so it needs at least what the swipe card showed.
+    const explain = $("#wo-explain");
+    explain.innerHTML = "";
+    explain.appendChild(el("p", "wo-cue", ex.cue));
+    if (ex.description) explain.appendChild(el("p", "wo-desc", ex.description));
+    if (ex.secondaryMuscles && ex.secondaryMuscles.length) {
+      explain.appendChild(el("p", "wo-meta", "Also works: " + ex.secondaryMuscles.join(", ")));
+    }
+    if (ex.avoidIf && ex.avoidIf.length) {
+      const labels = ex.avoidIf.map((t) => (CONDITION_BY_ID[t] ? CONDITION_BY_ID[t].label : t));
+      explain.appendChild(el("p", "wo-flags", "⚠ Flagged for: " + labels.join(" · ")));
+    }
+    explain.scrollTop = 0;
+
+    const foot = $("#wo-foot");
+    foot.innerHTML = "";
+    if (item.sets) foot.appendChild(el("p", "wo-target", "Target: " + item.sets));
 
     const n = parseSetCount(item.sets);
     const setsWrap = el("div", "wo-sets");
@@ -1430,19 +1666,25 @@
       pill.addEventListener("click", () => {
         if (i >= item.doneSets) {
           item.doneSets = i + 1;
-          if (item.doneSets < n) startRest(currentRestDefault());
-          else stopRest();
+          // Every completed set earns a rest, including the last set of an exercise —
+          // you still need that break before the next movement. (This is what was
+          // broken: the old `doneSets < n` test skipped rest on an exercise's final
+          // set, so a 3-set exercise only ever timed sets 1 and 2.) The one set that
+          // ends the session instead of starting a rest is the last of the last.
+          if (isLastSetOfWorkout(workout.index, item.doneSets, n)) stopRest();
+          else startRest(restForCurrent());
         } else {
           item.doneSets = i; // tap a completed set to un-check from there
+          stopRest();        // redoing a set means that rest no longer applies
         }
         renderWorkout();
       });
       setsWrap.appendChild(pill);
     }
-    card.appendChild(setsWrap);
+    foot.appendChild(setsWrap);
 
     const allDone = item.doneSets >= n;
-    if (allDone) card.appendChild(el("p", "wo-alldone", "All sets done — nice. On to the next."));
+    if (allDone) foot.appendChild(el("p", "wo-alldone", "All sets done — nice. On to the next."));
 
     $("#wo-prev").disabled = workout.index === 0;
     $("#wo-next").textContent = workout.index === total - 1 ? "Finish ✓" : "Next →";

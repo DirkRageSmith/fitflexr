@@ -46,7 +46,7 @@
       <!-- ───────────── Setup / Filters ───────────── -->
       <section id="screen-filters" class="screen">
         <h1 class="screen-title">Today's workout</h1>
-        <p class="screen-sub">Two ways to start: let FitFlexr build it, or pick your own.</p>
+        <p class="screen-sub">Swipe through exercises to build your own — or let FitFlexr pick for you.</p>
 
         <!-- Always-visible summary of the filters that shape BOTH paths, so nobody
              starts a workout without knowing what gear/injury settings are applied. -->
@@ -58,11 +58,37 @@
           <span class="setup-summary-edit">Change</span>
         </button>
 
-        <!-- ── Path 1: let the app pick ── -->
+        <!-- ── Path 1: swiping is the hook, so it leads. ── -->
+        <section class="path-card path-browse">
+          <div class="path-head">
+            <h2 class="path-title">🎛️ Pick my own</h2>
+            <p class="path-sub">Swipe through exercises and build your own stack.</p>
+          </div>
+
+          <div class="filter-head">
+            <span class="eyebrow">Today's muscles</span>
+            <span class="chip-tools">
+              <button id="btn-groups-all" class="text-btn" type="button">All</button>
+              <span aria-hidden="true">·</span>
+              <button id="btn-groups-none" class="text-btn" type="button">None</button>
+            </span>
+          </div>
+          <div id="group-chips" class="chip-row" role="group" aria-label="Muscle groups"></div>
+          <p class="hint">Nothing selected means every group is in. (This also steers the generated session below.)</p>
+
+          <button id="btn-start" class="cta" type="button">
+            <span>Start swiping</span>
+            <span id="match-count" class="cta-count"></span>
+          </button>
+        </section>
+
+        <div class="or-divider"><span>or</span></div>
+
+        <!-- ── Path 2: let the app pick ── -->
         <section class="path-card path-generate">
           <div class="path-head">
             <h2 class="path-title">⚡ Make me a workout</h2>
-            <p class="path-sub">We pick a balanced session for you.</p>
+            <p class="path-sub">We pick a balanced session for you, warm-up to cool-down.</p>
           </div>
 
           <span class="eyebrow">My goal</span>
@@ -82,32 +108,6 @@
           <p id="taste-hint" class="hint taste-hint" hidden></p>
         </section>
 
-        <div class="or-divider"><span>or</span></div>
-
-        <!-- ── Path 2: pick it yourself ── -->
-        <section class="path-card path-browse">
-          <div class="path-head">
-            <h2 class="path-title">🎛️ Pick my own</h2>
-            <p class="path-sub">Swipe through exercises and build your own stack.</p>
-          </div>
-
-          <div class="filter-head">
-            <span class="eyebrow">Today's muscles</span>
-            <span class="chip-tools">
-              <button id="btn-groups-all" class="text-btn" type="button">All</button>
-              <span aria-hidden="true">·</span>
-              <button id="btn-groups-none" class="text-btn" type="button">None</button>
-            </span>
-          </div>
-          <div id="group-chips" class="chip-row" role="group" aria-label="Muscle groups"></div>
-          <p class="hint">Nothing selected means every group is in. (This also steers the generated session above.)</p>
-
-          <button id="btn-start" class="cta" type="button">
-            <span>Start swiping</span>
-            <span id="match-count" class="cta-count"></span>
-          </button>
-        </section>
-
         <!-- ── Shared: applies to whichever path you use ── -->
         <section class="shared-card">
           <div class="path-head">
@@ -119,6 +119,10 @@
           <div id="equipment-presets" class="preset-row" role="group" aria-label="Gear presets"></div>
           <div id="equipment-chips" class="chip-row" role="group" aria-label="Available equipment"></div>
           <p class="hint">An exercise shows only if you have everything it needs. Tap a preset, or fine-tune below.</p>
+
+          <span class="eyebrow">Stretches &amp; yoga</span>
+          <div id="sport-chips" class="chip-row" role="group" aria-label="Stretch disciplines"></div>
+          <p class="hint">Warm-ups and cool-downs get their own 10 slots, so they never eat into your exercises. Nothing selected means every discipline is offered.</p>
 
           <span class="eyebrow protect-head">Protect</span>
           <div id="condition-chips" class="chip-row" role="group" aria-label="Conditions to avoid"></div>
@@ -187,15 +191,25 @@
           <button id="wo-exit" class="text-btn" type="button">✕ Exit</button>
           <span id="wo-progress" class="wo-progress"></span>
         </div>
-        <div id="wo-card" class="wo-card"></div>
-        <div id="wo-rest" class="wo-rest" hidden>
-          <span class="wo-rest-label">Rest</span>
-          <span id="wo-rest-time" class="wo-rest-time">1:30</span>
-          <div class="wo-rest-actions">
-            <button id="wo-rest-minus" class="secondary-btn" type="button">−15s</button>
-            <button id="wo-rest-skip" class="secondary-btn" type="button">Skip rest</button>
-            <button id="wo-rest-plus" class="secondary-btn" type="button">+15s</button>
+        <div id="wo-card" class="wo-card">
+          <div id="wo-head" class="wo-head"></div>
+          <!-- One region, two states. The how-to is the default; during a break the
+               rest timer covers this same space rather than sitting beside it. -->
+          <div class="wo-stage">
+            <div id="wo-explain" class="wo-explain"></div>
+            <div id="wo-rest" class="wo-rest" hidden>
+              <span class="wo-rest-label">Rest</span>
+              <span id="wo-rest-time" class="wo-rest-time">1:30</span>
+              <p id="wo-rest-next" class="wo-rest-next"></p>
+              <div class="wo-rest-actions">
+                <button id="wo-rest-minus" class="secondary-btn" type="button">−15s</button>
+                <button id="wo-rest-skip" class="secondary-btn" type="button">Skip rest</button>
+                <button id="wo-rest-plus" class="secondary-btn" type="button">+15s</button>
+              </div>
+              <p class="wo-rest-note">The how-to comes back when the timer ends.</p>
+            </div>
           </div>
+          <div id="wo-foot" class="wo-foot"></div>
         </div>
         <div class="wo-nav">
           <button id="wo-prev" class="secondary-btn" type="button">← Prev</button>
