@@ -9,8 +9,29 @@ product brainstorming and bulk content. If you are an AI reading this: this file
 contract. Follow the schema in §5 exactly; don't invent fields or relax the safety
 rules in §9.
 
-**Status as of 2026-07-17:** live PWA at <https://dirkragesmith.github.io/fitflexr/>,
-170 exercises (Bodyweight + Dumbbell), muscle/gear/condition filters, My Routine, dark
+**Status as of 2026-09-02:** live PWA at <https://dirkragesmith.github.io/fitflexr/>.
+**615 exercises — 524 training moves + 91 stretches.** Two changes since the Phase A–G
+work described below:
+
+- **v34 (2026-09-02) — stretches are opt-in, typed and labelled.** Reported as *"all the
+  leg exercises spilled into the other categories"*; they were not exercises. Every stretch
+  was dealt at the end of every session regardless of what you picked, and many carry a leg
+  muscle group (13 Hamstrings, 12 Glutes, 8 Quads), so a chest session ended in a tail of
+  hamstring and glute cards. Now: `stretchType` (`yoga` / `dynamic` / `static`),
+  `filters.stretchTypes` defaulting to **none**, and a pill on every stretch card reading
+  e.g. `YOGA · WARM-UP`. Also **18 new Beginner bodyweight-only moves**, chosen from a
+  measured gap — a beginner with no equipment could not train Triceps *at all* — and 30 new
+  stretches.
+- **ADR-022 (2026-09-02) — FitFlexr writes to the shared Ragesmith ledger.** A completed
+  workout grants `core:xp` + `core:embers` + `skill:body` + `fitflexr:reps` in one event,
+  and the Embers are spent on the room in Hearthsmith. See this repo's `CLAUDE.md` before
+  touching `ledger.js` or `currencies.json` — they are **byte-identical vendored copies**
+  and Ragesmith's doctor fails if they drift.
+
+*The 2026-07-17 line this replaced said "170 exercises (Bodyweight + Dumbbell)", which had
+been wrong since Phase A shipped 506.*
+
+Historical, from 2026-07-17: muscle/gear/condition filters, My Routine, dark
 theme, offline service worker. Vanilla HTML/CSS/JS, no build step, no backend,
 `localStorage` only. See `CLAUDE.md` for ground rules and the smoke-test checklist.
 
