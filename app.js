@@ -39,6 +39,11 @@
   const isWarmup = (ex) => !!ex && ex.category === "warmup";
   const isCooldown = (ex) => !!ex && ex.category === "cooldown";
   const sportsOf = (ex) => (Array.isArray(ex.sports) ? ex.sports : []);
+  const STRETCH_TYPE_LIST = (typeof STRETCH_TYPES !== "undefined") ? STRETCH_TYPES : [];
+  const STRETCH_TYPE_IDS = new Set(STRETCH_TYPE_LIST.map((t) => t.id));
+  const STRETCH_TYPE_LABEL = {};
+  STRETCH_TYPE_LIST.forEach((t) => { STRETCH_TYPE_LABEL[t.id] = t.label; });
+  const stretchTypeOf = (ex) => (ex && ex.stretchType) || "static";
 
   // Equipment array of an exercise, defensively coerced to a lowercased array.
   const equipOf = (ex) =>
@@ -134,7 +139,11 @@
     // (superset test). Unlike groups, empty here means "nothing shows" — presets fix that.
     // sports = which disciplines' stretches you want offered. Empty means all of
     // them, the same convention as `groups` — nothing selected is not a filter.
-    filters: { groups: [], equipment: DEFAULT_GEAR.slice(), conditions: [], sports: [] },
+    // stretchTypes = which KINDS of stretch you want offered (yoga / dynamic /
+    // static). Empty means NONE — stretches are opt-in as of v34. They used to
+    // be opt-out, which is why a chest session ended in hamstring and glute
+    // cards nobody asked for.
+    filters: { groups: [], equipment: DEFAULT_GEAR.slice(), conditions: [], sports: [], stretchTypes: [] },
     routine: [], // [{ id, sets, notes }] — references exercises by permanent id only
     theme: "dark",
     // Phase B onboarding profile. completed gates the first-run flow; goal/time are
@@ -173,6 +182,11 @@
     // which means "offer me all of them" — nothing disappears on upgrade.
     out.filters.sports = Array.isArray(filters.sports)
       ? filters.sports.filter((s) => SPORT_IDS.has(s)) : [];
+    /* Absent for anyone who used the app before v34. Defaulting to [] makes them
+       opt-in rather than silently keeping the old always-on behaviour — which is
+       the behaviour being fixed, so inheriting it would be the wrong kindness. */
+    out.filters.stretchTypes = Array.isArray(filters.stretchTypes)
+      ? filters.stretchTypes.filter((t) => STRETCH_TYPE_IDS.has(t)) : [];
     out.routine = Array.isArray(data.routine)
       ? data.routine
           .filter((r) => r && typeof r.id === "string")
@@ -310,7 +324,25 @@
   // with no stretches — they're scoped by discipline instead.
   function inScope(ex) {
     if (!ownsGear(ex) || !passesConditions(ex)) return false;
-    if (isStretch(ex)) return passesSports(ex);
+    if (isStretch(ex)) {
+      /* OPT-IN as of v34. Pick no stretch type and you get none.
+       *
+       * They used to be opt-out and unscoped, so every session ended with all
+       * 61 of them appended — and since many carry a leg muscle group (13
+       * Hamstrings, 12 Glutes, 8 Quads), finishing a chest session dealt a tail
+       * of hamstring and glute cards. That reads exactly like the leg exercises
+       * leaking into the other categories, which is how it was reported, and it
+       * was the right read of what was on screen.
+       *
+       * They are still NOT scoped by muscle group, deliberately: a cool-down is
+       * a whole-body thing, and a hamstring stretch after a chest session is
+       * fine once you have asked for a cool-down and the card says so. What was
+       * wrong was that nobody asked and nothing said. */
+      const want = state.filters.stretchTypes;
+      if (!want.length) return false;
+      if (!want.includes(stretchTypeOf(ex))) return false;
+      return passesSports(ex);
+    }
     const groups = state.filters.groups;
     return groups.length === 0 || groups.includes(ex.muscleGroup);
   }
@@ -972,6 +1004,29 @@
       });
     }
 
+    const tWrap = $("#stretchtype-chips");
+    if (tWrap) {
+      tWrap.innerHTML = "";
+      STRETCH_TYPE_LIST.forEach((t) => {
+        const btn = el("button", "chip chip-sport", t.label);
+        btn.type = "button";
+        btn.title = t.blurb || "";
+        btn.setAttribute("aria-pressed", String(state.filters.stretchTypes.includes(t.id)));
+        btn.addEventListener("click", () => {
+          const i = state.filters.stretchTypes.indexOf(t.id);
+          if (i === -1) state.filters.stretchTypes.push(t.id);
+          else state.filters.stretchTypes.splice(i, 1);
+          saveState();
+          btn.setAttribute("aria-pressed", String(i === -1));
+          syncStretchScope();
+          purgeActiveDeck();
+          updateMatchCount();
+        });
+        tWrap.appendChild(btn);
+      });
+      syncStretchScope();
+    }
+
     const sWrap = $("#sport-chips");
     if (sWrap) {
       sWrap.innerHTML = "";
@@ -1041,6 +1096,20 @@
   }
 
   // Refresh only the preset buttons' active state (after a single-chip toggle).
+  /* Sport scoping only means something once stretches are switched on, so it
+     stays hidden until then rather than sitting there as a dead control. */
+  function syncStretchScope() {
+    const box = $("#sport-scope");
+    const on = state.filters.stretchTypes.length > 0;
+    if (box) box.hidden = !on;
+    const hint = $("#stretchtype-hint");
+    if (hint) {
+      hint.textContent = on
+        ? "Added to the end of the deck in their own labelled block, with their own 10 slots — they never eat into your exercises."
+        : "Pick what you want and it's added to the end of the deck in its own labelled block. Pick nothing and you get exercises only.";
+    }
+  }
+
   function renderPresetStates() {
     const pWrap = $("#equipment-presets");
     if (!pWrap) return;
@@ -1134,6 +1203,18 @@
     front.appendChild(el("div", "stamp stamp-save", "SAVE"));
     front.appendChild(el("div", "stamp stamp-skip", "SKIP"));
     const body = el("div", "card-body");
+    /* A stretch says so FIRST, before the muscle group.
+     *
+     * This is the other half of the leg-spill fix. A hamstring stretch and a
+     * hamstring exercise looked identical on the card — same muscle pill, same
+     * layout — so a cool-down in a chest session read as a stray leg exercise.
+     * Leading with "Yoga · cool-down" makes the card self-explanatory, and the
+     * muscle group becomes what it should be: where you'll feel it. */
+    if (isStretch(ex)) {
+      const label = STRETCH_TYPE_LABEL[stretchTypeOf(ex)] || "Stretch";
+      const when = ex.category === "warmup" ? "warm-up" : "cool-down";
+      body.appendChild(el("span", "stretch-pill", label + " · " + when));
+    }
     body.appendChild(groupPill(ex.muscleGroup));
     body.appendChild(el("h2", "card-name", ex.name));
     body.appendChild(el("p", "card-cue", ex.cue));

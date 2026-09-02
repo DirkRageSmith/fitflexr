@@ -1454,3 +1454,20 @@ input::placeholder { color: var(--muted); opacity: 0.7; }
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Stretch cards announce themselves. Before this a hamstring stretch and a
+   hamstring exercise were visually identical, so a cool-down dealt into a chest
+   session read as a leg exercise that had leaked in. */
+.stretch-pill {
+  display: inline-block;
+  align-self: flex-start;
+  margin-bottom: 6px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #0b0b0c;
+  background: #7fd1c1;
+}

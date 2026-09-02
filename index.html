@@ -121,8 +121,14 @@
           <p class="hint">An exercise shows only if you have everything it needs. Tap a preset, or fine-tune below.</p>
 
           <span class="eyebrow">Stretches &amp; yoga</span>
-          <div id="sport-chips" class="chip-row" role="group" aria-label="Stretch disciplines"></div>
-          <p class="hint">Warm-ups and cool-downs get their own 10 slots, so they never eat into your exercises. Nothing selected means every discipline is offered.</p>
+          <div id="stretchtype-chips" class="chip-row" role="group" aria-label="Stretch types"></div>
+          <p class="hint" id="stretchtype-hint">Pick what you want and it's added to the end of the deck in its own labelled block. Pick nothing and you get exercises only.</p>
+
+          <div id="sport-scope" hidden>
+            <span class="eyebrow">Tune them for a sport</span>
+            <div id="sport-chips" class="chip-row" role="group" aria-label="Stretch disciplines"></div>
+            <p class="hint">Optional. Narrows the stretches above to one discipline's prep. Nothing selected means all of them.</p>
+          </div>
 
           <span class="eyebrow protect-head">Protect</span>
           <div id="condition-chips" class="chip-row" role="group" aria-label="Conditions to avoid"></div>

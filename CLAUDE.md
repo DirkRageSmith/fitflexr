@@ -64,6 +64,36 @@ result. FitFlexr's own history is what the user came for and lands first.
 workout, whatever the session size — ECONOMY §3 puts "a workout" in sustained effort by
 name. Only `fitflexr:reps` scales (one per completed set). Never mint `core:favor`.
 
+## Stretches: opt-in, typed, and labelled (v34, 2026-09-02)
+
+**Reported bug:** *"all the leg exercises spilled into the other categories"*. They were
+not exercises. Every one of the 61 stretches was dealt at the end of EVERY session
+regardless of what you picked, and many carry a leg muscle group (13 Hamstrings, 12
+Glutes, 8 Quads) — so a chest session ended in a tail of hamstring and glute cards that
+looked exactly like leaking leg work. Two lines caused it: `inScope()` let stretches skip
+the muscle-group filter, and `buildDeck()` appended them all.
+
+**Three changes, and all three are needed:**
+
+1. **`stretchType` on every stretch** — `yoga` | `dynamic` | `static`, from
+   `STRETCH_TYPES` in `exercises.js`. The classification lives in ONE table
+   (`STRETCH_TYPE_BY_ID`) rather than as a field on 91 objects, so it stays reviewable
+   and internally consistent.
+2. **Stretches are OPT-IN.** `state.filters.stretchTypes` defaults to `[]`, which means
+   none. Pick a type on the setup screen and you get that type. Anyone who used the app
+   before v34 also starts empty — inheriting the old always-on behaviour would be
+   inheriting the bug.
+3. **Stretch cards say what they are** — a teal pill reading e.g. `YOGA · WARM-UP` above
+   the muscle pill. This is the half that actually answers the report: a hamstring stretch
+   and a hamstring exercise used to look identical.
+
+**Stretches are still NOT scoped by muscle group, deliberately.** A cool-down is a
+whole-body thing. A hamstring stretch after a chest day is fine *once you have asked for a
+cool-down and the card says so* — what was wrong was that nobody asked and nothing said.
+
+Sport scoping (`SPORTS`) still exists and now nests under the stretch types, hidden until
+at least one type is on, since it is meaningless before that.
+
 ## Dev commands
 
 - Validate dataset: `node validate.js`
