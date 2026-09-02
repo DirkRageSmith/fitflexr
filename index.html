@@ -305,6 +305,12 @@
   <noscript><p style="padding:2rem;text-align:center">FitFlexr needs JavaScript — everything runs on your device, nothing is sent anywhere.</p></noscript>
 
   <script src="./exercises.js"></script>
+  <!-- The shared Ragesmith ledger (ADR-022). ledger.js is a VERBATIM copy of
+       Hearthsmith's; Ragesmith's doctor fails if the two ever diverge. Order
+       matters: ledger, then the adapter, then the app that calls it. -->
+  <script src="./ledger.js"></script>
+  <script src="./ragesmith.js"></script>
+  <script>if (window.Ragesmith) window.Ragesmith.boot();</script>
   <script src="./app.js"></script>
 </body>
 </html>

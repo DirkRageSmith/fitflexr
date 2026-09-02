@@ -32,8 +32,37 @@ renamed 2026-07-23 — the localStorage key is now `fitflexr`.)
 | `sw.js` | Service worker — bump `CACHE_VERSION` on any change |
 | `manifest.json` | PWA manifest |
 | `validate.js` | Dataset integrity check — run `node validate.js` |
+| `ledger.js` | **VERBATIM COPY** of Hearthsmith's shared ledger — do not edit here (see below) |
+| `ragesmith.js` | Adapter: writes one shared-ledger event per completed workout (ADR-022) |
+| `currencies.json` | **VERBATIM COPY** of the Ragesmith currency registry |
 | `ROADMAP.md` | Product roadmap + shared spec (Claude ↔ ChatGPT). Tier 1/2 plan, the schema contract, and the delegated 500-exercise deck brief. |
 | `icon-192.png` / `icon-512.png` | App icons (volt/ink dumbbell) |
+
+## The shared Ragesmith ledger (ADR-022) — read before touching ledger.js
+
+FitFlexr is the **second writer** to the Ragesmith shared ledger, as of 2026-09-02. A
+completed workout writes one event to `localStorage["ragesmith.ledger.v1"]`, which
+Hearthsmith reads. **Embers earned here are spent on the room in Hearthsmith**, and its
+character sheet lists `fitflexr` under "where this came from".
+
+**This works because both apps ship to `dirkragesmith.github.io`** — same origin, therefore
+one `localStorage`, already, with no server and no account. Nothing connects them; they
+were always in the same room and only one was speaking. Note this means **the integration
+cannot be tested across two local ports** — different ports are different origins. Serve
+both under one root to see it work.
+
+**`ledger.js` and `currencies.json` are byte-identical copies of Hearthsmith's.**
+Never edit them here. Ragesmith's `node tools/doctor.mjs` has a `vendored ledger` check
+that FAILS if they drift, because two versions of the schema means two characters. To
+update: copy from `C:\Projects\ragesmith\hearthsmith\` and run that doctor.
+
+**The adapter must never break a workout.** `Ragesmith.logWorkout()` swallows every error
+and returns null; `logWorkout()` in `app.js` calls it *after* `saveState()` and ignores the
+result. FitFlexr's own history is what the user came for and lands first.
+
+**What it grants is fixed and not negotiable here.** 25 XP / 25 Embers / 2 Body per
+workout, whatever the session size — ECONOMY §3 puts "a workout" in sustained effort by
+name. Only `fitflexr:reps` scales (one per completed set). Never mint `core:favor`.
 
 ## Dev commands
 

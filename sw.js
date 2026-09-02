@@ -5,7 +5,7 @@
  * (index.html, styles.css, app.js, exercises.js, manifest.json, icons, or
  * this file). Installed users only receive updates when the version changes.
  */
-const CACHE_VERSION = "fitflexr-v32";
+const CACHE_VERSION = "fitflexr-v33";
 
 const ASSETS = [
   "./",
@@ -13,6 +13,9 @@ const ASSETS = [
   "./styles.css",
   "./app.js",
   "./exercises.js",
+  "./ledger.js",
+  "./ragesmith.js",
+  "./currencies.json",
   "./manifest.json",
   "./icon-192.png",
   "./icon-512.png",

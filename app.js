@@ -1506,6 +1506,19 @@
     });
     state.history.push({ date: dateKey(new Date()), exercises: done.length, sets: totalSets, groups });
     saveState();
+
+    /* The shared ledger (ADR-022). FitFlexr and Hearthsmith are the same
+       origin, so this writes to the same localStorage Hearthsmith reads:
+       Embers earned here are spent on the room over there, and the character
+       sheet starts listing this app as one of the games that made you.
+
+       Deliberately AFTER saveState() and deliberately ignoring the result.
+       FitFlexr's own history is the thing the user came for and must land
+       first; the shared event is a bonus, and if it fails for any reason the
+       workout is still logged. Ragesmith.logWorkout() never throws. */
+    if (window.Ragesmith) {
+      window.Ragesmith.logWorkout({ exercises: done.length, sets: totalSets, groups: groups });
+    }
     return true;
   }
 
