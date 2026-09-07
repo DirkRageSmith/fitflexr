@@ -18,7 +18,7 @@
  *      by rules nobody agreed to, unattended, twice a day.
  */
 
-import { normalize, isCovered, applyPolicy, loadPolicy, loadLibrary, analyse } from "./coverage.mjs";
+import { normalize, isCovered, applyPolicy, loadPolicy, loadLibrary, analyse, snapshot, previousDay, describeDelta } from "./coverage.mjs";
 
 let pass = 0;
 const failures = [];
@@ -180,8 +180,67 @@ function run(items, policy = POLICY) {
     shipped.rules.every((x) => ["include", "exclude", "remap", "review"].includes(x.action)));
   ok("every remap rule actually supplies equipment",
     shipped.rules.filter((x) => x.action === "remap").every((x) => Array.isArray(x.remapEquipment) && x.remapEquipment.length));
-  ok("the shipped policy is NOT yet adopted — it must not run unattended",
-    shipped.status !== "adopted");
+  /* This assertion used to be "the shipped policy is NOT adopted". That was the
+   * right guard while the rulings were an unreviewed draft, and it became wrong
+   * the moment Matt said to adopt them — a test that pins a decision rather than
+   * an invariant fails the day the decision legitimately changes.
+   *
+   * The durable invariant is that adoption is never SILENT: anything running
+   * unattended must name who authorised it, so a policy cannot drift into force
+   * because someone flipped a string. */
+  ok("status is one of the two known values", ["draft", "adopted"].includes(shipped.status));
+  ok("an adopted policy must record who adopted it",
+    shipped.status !== "adopted" || (typeof shipped.adoptedBy === "string" && shipped.adoptedBy.length > 20),
+    `adoptedBy: ${JSON.stringify(shipped.adoptedBy)}`);
+  ok("a draft policy must NOT claim an adopter",
+    shipped.status !== "draft" || !shipped.adoptedBy);
+
+  /* The two judgement-heavy buckets stay OUT of the unattended queue. If a later
+   * edit flips either to include, hundreds of half-specified entries reach the
+   * generator, so the intent is pinned here rather than left to a comment. */
+  for (const id of ["neck-and-plate-work", "other-equipment-remainder"]) {
+    const rule = shipped.rules.find((x) => x.id === id);
+    ok(`${id} is still held for review, not auto-included`, rule && rule.action === "review");
+  }
+}
+
+/* ── the daily ratchet ───────────────────────────────────────────────────── */
+
+{
+  const snap = (date, over = {}) => ({ date, libraryTotal: 615, covered: 300, absent: 500, ready: 400, ...over });
+
+  // THE SAME-DAY TRAP. Bellows runs twice a day, so both passes write the same
+  // date. Comparing against "the last entry" would compare this morning to this
+  // evening and report zero every time — a ratchet that always reads zero is
+  // worse than none, because it looks like a working measurement.
+  const hist = [snap("2026-09-05"), snap("2026-09-06", { covered: 310 }), snap("2026-09-07", { covered: 320 })];
+  const today = snap("2026-09-07", { covered: 325 });
+  const prev = previousDay(hist, today);
+  eq("previousDay skips entries from the same date", prev.date, "2026-09-06");
+  ok("...and the delta is measured against yesterday",
+    /covered \+15/.test(describeDelta(today, prev)),
+    describeDelta(today, prev));
+
+  eq("no history at all yields no baseline", previousDay([], today), null);
+  ok("a missing baseline says so rather than printing a fake zero",
+    /baseline/.test(describeDelta(today, null)));
+
+  // An idle day must read ZERO, visibly, not be absorbed into prose.
+  const flat = describeDelta(snap("2026-09-07"), snap("2026-09-06"));
+  ok("an idle day reports 0, not silence", /covered 0/.test(flat) && /ready 0/.test(flat), flat);
+
+  // Going backwards must be reported as negative, not clamped.
+  const worse = describeDelta(snap("2026-09-07", { ready: 380 }), snap("2026-09-06"));
+  ok("a regression is reported as negative", /ready -20/.test(worse), worse);
+
+  // snapshot() must agree with what the human report calls "ready", or the
+  // ratchet measures a different thing from the one on screen.
+  const r = analyse(loadLibrary());
+  const s = snapshot(r, "2026-01-01");
+  const readyOnScreen = r.missing.filter((m) => m.equipmentResolved && m.name && m.decision !== "review").length;
+  eq("snapshot.ready matches the report's own ready count", s.ready, readyOnScreen);
+  eq("snapshot carries the date it was given", s.date, "2026-01-01");
+  ok("snapshot records each reference separately", Object.keys(s.refs).length === r.refs.length);
 }
 
 /* ── report ──────────────────────────────────────────────────────────────── */

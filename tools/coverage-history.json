@@ -1,0 +1,23 @@
+{
+  "$comment": "Written by tools/coverage.mjs --record. One entry per day, last write wins. This is the daily ratchet: an unchanged number is the honest report of an idle day.",
+  "entries": [
+    {
+      "date": "2026-09-07",
+      "libraryTotal": 615,
+      "libraryMoves": 524,
+      "covered": 303,
+      "absent": 591,
+      "ready": 447,
+      "refs": {
+        "free-exercise-db": {
+          "covered": 297,
+          "absent": 579
+        },
+        "asanas": {
+          "covered": 6,
+          "absent": 12
+        }
+      }
+    }
+  ]
+}

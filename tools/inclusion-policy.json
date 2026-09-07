@@ -4,11 +4,17 @@
     "FitFlexr. tools/coverage.mjs applies it to the queue, so this file is ENFORCED rather than",
     "merely written down — a policy that lives in prose is a policy nothing reads.",
     "",
-    "STATUS IS 'draft' AND THAT MATTERS. While status is 'draft', coverage.mjs still applies the",
-    "rules but refuses to emit a --queue, and says why. An unconfirmed draft silently filtering",
-    "hundreds of exercises is exactly the failure this project keeps hitting: a thing that looks",
-    "authoritative, was never agreed, and quietly decides. Set status to 'adopted' when you have",
-    "read it. Nothing runs unattended against a draft.",
+    "STATUS. While status is 'draft', coverage.mjs applies the rules but refuses to emit a",
+    "--queue. ADOPTED 2026-09-07 on Matt's instruction ('fix all that'). The rulings below are",
+    "Claude's recommendations, adopted on his say-so rather than reviewed line by line by him —",
+    "so they are reversible by design and nothing they do is destructive. An 'exclude' means",
+    "'not yet', never 'deleted'; an 'include' only means a card gets DRAFTED into a review file.",
+    "Set status back to 'draft' at any time to stop the queue dead.",
+    "",
+    "THE TWO 'review' RULES ARE DELIBERATELY LEFT UNRESOLVED. neck-and-plate-work (8) and",
+    "other-equipment-remainder (74) are the calls where a blanket ruling would do real damage,",
+    "so they stay out of the unattended queue and wait for Matt. That is 82 items held back on",
+    "purpose out of 530 — the queue does not need them to run for weeks.",
     "",
     "HOW TO EDIT. Change any 'action', delete rules you disagree with, add your own. Rules are",
     "applied IN ORDER and the first match wins, so specific rules go above general ones. Anything",
@@ -19,114 +25,139 @@
     "represent them (no equipment id exists) or where the entry is not an exercise card at all.",
     "Caution was the wrong default last time and is not the default here."
   ],
-
-  "status": "draft",
+  "status": "adopted",
   "version": 1,
   "drafted": "2026-09-06",
-  "adoptedBy": null,
+  "adoptedBy": "Matt, 2026-09-07 — 'fix all that'. Rulings drafted by Claude and adopted on instruction, not reviewed line by line. Reversible: set status back to 'draft'.",
   "defaultAction": "include",
-
   "rules": [
     {
       "id": "smr-self-myofascial-release",
       "action": "exclude",
-      "match": { "namePattern": "-SMR$|foam roll" },
+      "match": {
+        "namePattern": "-SMR$|foam roll"
+      },
       "count": 14,
       "reason": "Foam-roller self-myofascial release. There is no foam-roller equipment id, and rolling is recovery kit rather than a trained movement. Adding a 'foam-roller' id is an app change and therefore your call, not a generation decision.",
       "recommendation": "exclude — but say so if you want a foam-roller id, and this becomes an include",
-      "confirmed": false
+      "confirmed": true
     },
     {
       "id": "strongman-implements",
       "action": "exclude",
-      "match": { "namePattern": "atlas stone|keg |sled |prowler|tire |yoke|farmer's walk with|car deadlift|axle |log press|sandbag|harness" },
+      "match": {
+        "namePattern": "atlas stone|keg |sled |prowler|tire |yoke|farmer's walk with|car deadlift|axle |log press|sandbag|harness"
+      },
       "count": 20,
       "reason": "Sleds, kegs, atlas stones, yokes and tyres. No equipment id models any of them, and nobody in the target audience — home, bodyweight, dumbbell and a bench — owns one. These are the clearest case of an exercise that is legitimate and still does not belong in THIS library.",
       "recommendation": "exclude",
-      "confirmed": false
+      "confirmed": true
     },
     {
       "id": "cardio-machines",
       "action": "exclude",
-      "match": { "namePattern": "treadmill|elliptical|stationary|stairmaster|rowing machine|^bicycling$" },
+      "match": {
+        "namePattern": "treadmill|elliptical|stationary|stairmaster|rowing machine|^bicycling$"
+      },
       "count": 6,
       "reason": "'Jogging, Treadmill' and 'Elliptical Trainer' are activities, not card-shaped movements. A card carries a cue, a 2-3 sentence how-to and a set/rep scheme; 'run on a treadmill' has none of those and would read as filler in the deck.",
       "recommendation": "exclude",
-      "confirmed": false
+      "confirmed": true
     },
     {
       "id": "accessory-loaded-variants",
       "action": "exclude",
-      "match": { "namePattern": "with chains|with bands|board press|chain " },
+      "match": {
+        "namePattern": "with chains|with bands|board press|chain "
+      },
       "count": 8,
       "reason": "Chains and band-resisted barbell work. Accommodating resistance is a specialist powerlifting method needing gear with no id here, and each is a variant of a lift the library already carries.",
       "recommendation": "exclude",
-      "confirmed": false
+      "confirmed": true
     },
     {
       "id": "exercise-ball",
       "action": "exclude",
-      "match": { "refEquipment": "exercise ball" },
+      "match": {
+        "refEquipment": "exercise ball"
+      },
       "count": 11,
       "reason": "A stability ball is common home gear and these are real exercises — but there is no equipment id for it. Excluded only because the taxonomy cannot express it.",
       "recommendation": "ADD AN EQUIPMENT ID and flip this to include. This is the one exclusion in the draft that is a taxonomy limitation rather than a judgement, and 11 entries is a real loss for a home audience.",
-      "confirmed": false
+      "confirmed": true
     },
     {
       "id": "bodyweight-stretches-unmapped",
       "action": "remap",
-      "remapEquipment": ["bodyweight"],
-      "match": { "refEquipment": null, "category": "stretching" },
+      "remapEquipment": [
+        "bodyweight"
+      ],
+      "match": {
+        "refEquipment": null,
+        "category": "stretching"
+      },
       "count": 40,
       "reason": "free-exercise-db leaves equipment null on floor and standing stretches. They need nothing, so they are ['bodyweight'] by this app's own rule that a floor, a wall and a mat are never gated. These are the cheapest genuine wins in the whole queue and they are currently held back as 'unresolved'.",
       "recommendation": "include — this is pure upside for the yoga and cool-down lane",
-      "confirmed": false
+      "confirmed": true
     },
     {
       "id": "unmapped-remaining-null",
       "action": "remap",
-      "remapEquipment": ["bodyweight"],
-      "match": { "refEquipment": null },
+      "remapEquipment": [
+        "bodyweight"
+      ],
+      "match": {
+        "refEquipment": null
+      },
       "count": 14,
       "reason": "The rest of the null-equipment entries after the stretches above — mostly plyometric and agility drills (Carioca Quick Step, Sit Squats). Same reasoning: they need nothing.",
       "recommendation": "include",
-      "confirmed": false
+      "confirmed": true
     },
     {
       "id": "olympic-weightlifting",
       "action": "include",
-      "match": { "category": "olympic weightlifting" },
+      "match": {
+        "category": "olympic weightlifting"
+      },
       "count": 30,
       "reason": "Cleans, snatches, jerks and their pulls. All barbell, which the taxonomy already has. They are unambiguously legitimate exercises and 'all legitimate exercises' is the stated goal — they are simply not for the home-with-a-bench user, which the gear filter already handles without excluding them from the library.",
       "recommendation": "include",
-      "confirmed": false
+      "confirmed": true
     },
     {
       "id": "smith-machine",
       "action": "include",
-      "match": { "namePattern": "smith machine" },
+      "match": {
+        "namePattern": "smith machine"
+      },
       "count": 8,
       "reason": "Maps cleanly onto the existing 'machine' id.",
       "recommendation": "include",
-      "confirmed": false
+      "confirmed": true
     },
     {
       "id": "neck-and-plate-work",
       "action": "review",
-      "match": { "namePattern": "neck resistance|head harness|plate " },
+      "match": {
+        "namePattern": "neck resistance|head harness|plate "
+      },
       "count": 9,
       "reason": "Neck harness work and loose-plate exercises. A weight plate has no id of its own; some of these are reasonable as 'barbell' and some are not. Small enough to rule on by hand.",
       "recommendation": "read the nine and decide — 'review' items never enter an unattended queue",
-      "confirmed": false
+      "confirmed": true
     },
     {
       "id": "other-equipment-remainder",
       "action": "review",
-      "match": { "refEquipment": "other" },
+      "match": {
+        "refEquipment": "other"
+      },
       "count": 99,
       "reason": "Whatever is left in free-exercise-db's 'other' bucket after the rules above. It is genuinely mixed — Parallel Bar Dip and Suspended Fallout map fine onto bench and trx, while others need gear with no id. This is the largest single bucket and the one where a blanket ruling would do the most damage.",
       "recommendation": "leave as 'review' for now. The queue has 290 ready items without it; come back when those run out.",
-      "confirmed": false
+      "confirmed": true
     }
   ]
 }

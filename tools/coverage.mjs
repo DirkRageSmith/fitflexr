@@ -48,7 +48,7 @@
 import { createRequire } from "node:module";
 import { dirname, resolve, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { readFileSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync } from "node:fs";
 
 const require = createRequire(import.meta.url);
 const HERE = dirname(fileURLToPath(import.meta.url));
@@ -259,7 +259,11 @@ export function analyse(lib) {
     });
     for (const a of absent)
       report.missing.push({
-        ref: "asanas", name: a.english, sanskrit: a.sanskrit,
+        /* cardName, not english. The raw English cell yields names like
+         * "Accomplished" and "Bound angle", which would ship as card titles.
+         * cardName is house style — "Corpse Pose (Savasana)" — matching the 56
+         * yoga poses already in the library. */
+        ref: "asanas", name: a.cardName || a.english, sanskrit: a.sanskritClean || a.sanskrit,
         equipment: ["bodyweight"], equipmentResolved: true,
         category: "cooldown", poseType: a.type || null,
       });
@@ -370,6 +374,60 @@ export function loadPolicy() {
   return raw;
 }
 
+/* ── history: making "better every day" a number, not a claim ────────────────
+ *
+ * A pass that says "I did work" and a pass that says "nothing to do" look the
+ * same in a log a week later. This repo's whole documented failure mode is a
+ * confident sentence nobody checked, so progress on the library is recorded as
+ * a measurement with a date on it, and the delta between runs is printed.
+ *
+ * It ratchets in one direction on purpose: if a day's passes add nothing, the
+ * delta is 0 and that zero is visible in HANDOFF.md rather than absorbed into
+ * prose. An unchanged number is the honest report of an idle day.
+ */
+
+const HISTORY = join(HERE, "coverage-history.json");
+
+export function snapshot(report, today = new Date().toISOString().slice(0, 10)) {
+  return {
+    date: today,
+    libraryTotal: report.library.total,
+    libraryMoves: report.library.moves,
+    covered: report.refs.reduce((n, r) => n + r.covered, 0),
+    absent: report.refs.reduce((n, r) => n + r.absent, 0),
+    ready: report.missing.filter((m) => m.equipmentResolved && m.name && m.decision !== "review").length,
+    refs: Object.fromEntries(report.refs.map((r) => [r.id, { covered: r.covered, absent: r.absent }])),
+  };
+}
+
+export function readHistory() {
+  if (!existsSync(HISTORY)) return [];
+  try {
+    const j = JSON.parse(readFileSync(HISTORY, "utf8"));
+    return Array.isArray(j.entries) ? j.entries : [];
+  } catch { return []; }
+}
+
+/** Latest entry for a DIFFERENT day than `snap` — the right baseline for a
+ *  daily delta, since two passes land on the same date and comparing against
+ *  this morning's own entry would always read zero. */
+export function previousDay(entries, snap) {
+  for (let i = entries.length - 1; i >= 0; i--) if (entries[i].date !== snap.date) return entries[i];
+  return null;
+}
+
+export function describeDelta(snap, prev) {
+  if (!prev) return "no earlier measurement — this is the baseline";
+  const d = (a, b) => { const n = a - b; return n === 0 ? "0" : (n > 0 ? `+${n}` : `${n}`); };
+  return [
+    `since ${prev.date}:`,
+    `library ${d(snap.libraryTotal, prev.libraryTotal)}`,
+    `covered ${d(snap.covered, prev.covered)}`,
+    `absent ${d(snap.absent, prev.absent)}`,
+    `ready ${d(snap.ready, prev.ready)}`,
+  ].join("  ");
+}
+
 /* ── CLI ─────────────────────────────────────────────────────────────────── */
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === resolve(process.argv[1])) {
@@ -377,6 +435,26 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === resolve(process.argv[1
   const r = analyse(loadLibrary());
 
   const qi = argv.indexOf("--queue");
+
+  if (argv.includes("--record") || argv.includes("--delta")) {
+    const snap = snapshot(r);
+    const entries = readHistory();
+    const prev = previousDay(entries, snap);
+    if (argv.includes("--record")) {
+      // One entry per DAY, last write wins. Two passes a day would otherwise
+      // make the file grow faster than the thing it measures.
+      const kept = entries.filter((e) => e.date !== snap.date);
+      kept.push(snap);
+      writeFileSync(HISTORY, JSON.stringify({
+        $comment: "Written by tools/coverage.mjs --record. One entry per day, last write wins. This is the daily ratchet: an unchanged number is the honest report of an idle day.",
+        entries: kept,
+      }, null, 2) + "\n", "utf8");
+    }
+    console.log(`coverage ${snap.date}: library ${snap.libraryTotal} · covered ${snap.covered} · absent ${snap.absent} · ready ${snap.ready}`);
+    console.log(describeDelta(snap, prev));
+    process.exit(0);
+  }
+
   if (argv.includes("--json")) {
     console.log(JSON.stringify(r, null, 2));
   } else if (qi !== -1) {
