@@ -9,9 +9,26 @@ product brainstorming and bulk content. If you are an AI reading this: this file
 contract. Follow the schema in §5 exactly; don't invent fields or relax the safety
 rules in §9.
 
-**Status as of 2026-09-02:** live PWA at <https://dirkragesmith.github.io/fitflexr/>.
-**615 exercises — 524 training moves + 91 stretches.** Two changes since the Phase A–G
-work described below:
+**Status as of 2026-09-08:** live PWA at <https://dirkragesmith.github.io/fitflexr/>,
+sw cache **v35**. **626 exercises — 535 training moves + 91 stretches.**
+
+- **2026-09-08 — eleven new training moves, written by Claude.** Drafted from
+  `tools/coverage.mjs`'s queue, not generated: a local model given exercise NAMES passed
+  every schema and contract check while describing the WRONG MOVEMENT two times in three
+  (a Janda sit-up written as a hip bridge, a V-bar pull-up as a close-grip pull-up), and a
+  self-consistency check failed to detect it because the model repeats a stable wrong
+  belief rather than guessing randomly. Twelve were drafted and one dropped as a
+  near-duplicate of an existing record. Bodyweight Shoulders went 8 → 9, adding a rung
+  above Pike Push-Up which previously had nothing below Wall Handstand Hold.
+- **2026-09-06/08 — `tools/` gained real measurement.** `gaps.mjs` (internal balance:
+  progression ceilings, blocked tiers), `coverage.mjs` (what the WORLD has that this
+  library does not, measured against vendored external references), `pending.mjs` (review
+  sheet for unmerged `bellows/*` branches), plus an enforced `inclusion-policy.json`.
+  34 + 57 tests. `gaps.mjs` measures the library against ITSELF and structurally cannot
+  see outward; `coverage.mjs` exists because that blind spot silently blocked a standing
+  instruction to expand the library.
+
+Two changes since the Phase A–G work described below:
 
 - **v34 (2026-09-02) — stretches are opt-in, typed and labelled.** Reported as *"all the
   leg exercises spilled into the other categories"*; they were not exercises. Every stretch
