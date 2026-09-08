@@ -175,61 +175,6 @@ const EQUIP_MAP = {
   other: null,
 };
 
-/* wger's own vocabularies, mapped onto this app's ids. Anything with no
- * honest equivalent maps to null and is held out of the queue rather than
- * guessed — a Swiss ball is not a bench. */
-const WGER_EQUIP = {
-  "none (bodyweight exercise)": "bodyweight",
-  "none": "bodyweight",
-  "Gym mat": "bodyweight",       // a mat is never gated, per ROADMAP §5a
-  "Dumbbell": "dumbbell",
-  "Barbell": "barbell",
-  "Bench": "bench",
-  "Incline bench": "bench",      // a bench is any sturdy elevated surface
-  "Kettlebell": "kettlebell",
-  "Cable machine": "cable",
-  "Pull-up bar": "pull-up-bar",
-  "Resistance band": "resistance-band",
-  "SZ-Bar": "ez-bar",
-  "Swiss Ball": null,            // no id exists; the inclusion policy owns this
-};
-
-/* An empty equipment list on wger means "not recorded", NOT "bodyweight" —
- * treating the two the same would tag 117 unknown-gear exercises as doable with
- * nothing, which is exactly the mislabelling already found in the shipped data
- * ("Sit on a chair" tagged bodyweight-only). */
-export function mapWgerEquipment(list) {
-  if (!list || !list.length) return null;
-  const out = [];
-  for (const w of list) {
-    if (!(w in WGER_EQUIP)) return null;   // unknown vocabulary — do not guess
-    const id = WGER_EQUIP[w];
-    if (id === null) return null;          // deliberately unmappable
-    if (!out.includes(id)) out.push(id);
-  }
-  return out.length ? out : null;
-}
-
-/* Anatomical names to this app's eleven groups. A HINT only — the batch's own
- * muscleGroup comes from the specification, and this is here so a reviewer can
- * see when the two disagree. */
-const WGER_MUSCLE = {
-  Glutes: "Glutes", Shoulders: "Shoulders", Lats: "Back", Quads: "Quads",
-  Chest: "Chest", Abs: "Core/Abs", Biceps: "Biceps", Trapezius: "Back",
-  Triceps: "Triceps", Hamstrings: "Hamstrings", Calves: "Calves",
-  "Obliquus externus abdominis": "Core/Abs", Brachialis: "Biceps",
-  "Serratus anterior": "Chest", Soleus: "Calves",
-};
-
-export function mapWgerMuscles(list) {
-  const out = [];
-  for (const m of list || []) {
-    const g = WGER_MUSCLE[m];
-    if (g && !out.includes(g)) out.push(g);
-  }
-  return out;
-}
-
 /* ── analysis ────────────────────────────────────────────────────────────── */
 
 export function analyse(lib) {
@@ -279,64 +224,20 @@ export function analyse(lib) {
      * after the decisions are final. */
   }
 
-  /* ---- reference 2: wger — THE ONLY ONE THAT CARRIES SOURCE TEXT --------
+  /* ---- reference 2: wger — REMOVED 2026-09-08, by Matt: "no straight up no"
    *
-   * Why this reference is different in kind, not just in size.
+   * wger was vendored for one day because its per-record descriptions turn card
+   * generation from RECALL into REWRITE, which measurably stopped the model
+   * fabricating exercise mechanics. It is gone because every record is CC-BY-SA
+   * with a named author, a rewrite of one is a derivative, and Matt does not
+   * want that obligation on this library. That is a licensing decision, not a
+   * technical one, and it is his to make.
    *
-   * A queue entry from free-exercise-db is a NAME. Handing a model a name and
-   * asking for a how-to is a RECALL task, and models fabricate when recalling.
-   * Measured on 2026-09-08: given the names "Janda Sit-Up" and "V-Bar Pull-Up",
-   * qwen3.5-9b passed every schema and contract check and described the wrong
-   * movement both times — a Janda sit-up is defined by active hamstring
-   * contraction inhibiting the hip flexors, and the card described a hip bridge
-   * into a crunch. A confidently wrong how-to is worse than a missing card,
-   * because nothing downstream can see it is wrong.
-   *
-   * wger carries a real description per record, so the job becomes a REWRITE:
-   * transform this text into house style. That is what models are reliable at,
-   * and it is the same split srt-cleanup settled on — hand over the prose,
-   * never the structure.
-   *
-   * LICENSING IS NOT OPTIONAL HERE. Every record is CC-BY-SA 4.0, CC-BY-SA 3.0
-   * or CC0, with a named author, and the reference keeps both per record. A
-   * rewrite of a CC-BY-SA description is a DERIVATIVE: it must stay CC-BY-SA and
-   * credit the author. Any batch grounded in this reference carries its
-   * attribution through to the review file, and shipping those cards means
-   * shipping an attribution page. That is a real obligation, not a footnote. */
-  const wger = loadRef("wger.json");
-  if (!wger) {
-    report.notes.push("wger.json not vendored — the grounded lane is unavailable");
-  } else {
-    const absent = wger.entries.filter((e) => !isCovered(e.n, librarySets));
-    report.refs.push({
-      id: "wger",
-      license: wger.license.slice(0, 90) + "…",
-      total: wger.entries.length,
-      covered: wger.entries.length - absent.length,
-      absent: absent.length,
-    });
-    for (const e of absent) {
-      const gear = mapWgerEquipment(e.eq);
-      report.missing.push({
-        ref: "wger",
-        name: e.n,
-        equipment: gear,
-        equipmentResolved: gear !== null,
-        refEquipment: e.eq.join(", ") || null,
-        category: "strength",
-        muscleHint: mapWgerMuscles(e.mus),
-        /* The whole point of this reference. */
-        sourceText: e.d,
-        attribution: { license: e.lic, author: e.by },
-      });
-    }
-    const grounded = absent.filter((e) => e.d.length >= 200).length;
-    report.notes.push(
-      `wger supplies ${absent.length} absent exercises WITH a licensed description to rewrite ` +
-      `(${grounded} of them 200+ characters). Prefer these over name-only entries: a name alone ` +
-      `makes the model recall, and it fabricates when it recalls.`
-    );
-  }
+   * DO NOT RE-ADD IT without asking. The accuracy argument for it is real and
+   * will look compelling again to whoever reads the measurement next; the answer
+   * was still no. The grounding problem it solved is now solved by writing the
+   * descriptions here instead — original text, no obligation.
+   */
 
   /* ---- reference 3: asanas (Wikipedia) --------------------------------- */
   const asanas = loadRef("asanas.json");
