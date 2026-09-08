@@ -26,7 +26,7 @@
     "Caution was the wrong default last time and is not the default here."
   ],
   "status": "adopted",
-  "version": 1,
+  "version": 2,
   "drafted": "2026-09-06",
   "adoptedBy": "Matt, 2026-09-07 — 'fix all that'. Rulings drafted by Claude and adopted on instruction, not reviewed line by line. Reversible: set status back to 'draft'.",
   "defaultAction": "include",
@@ -79,10 +79,11 @@
       "id": "exercise-ball",
       "action": "exclude",
       "match": {
-        "refEquipment": "exercise ball"
+        "refEquipment": "exercise ball",
+        "ref": "free-exercise-db"
       },
       "count": 11,
-      "reason": "A stability ball is common home gear and these are real exercises — but there is no equipment id for it. Excluded only because the taxonomy cannot express it.",
+      "reason": "A stability ball is common home gear and these are real exercises — but there is no equipment id for it. Excluded only because the taxonomy cannot express it. SCOPED to free-exercise-db 2026-09-08: refEquipment null means \"a floor stretch needing nothing\" there, but on wger it means \"gear not recorded\" — unscoped, this rule tagged 91 unknown-gear wger entries as bodyweight-only.",
       "recommendation": "ADD AN EQUIPMENT ID and flip this to include. This is the one exclusion in the draft that is a taxonomy limitation rather than a judgement, and 11 entries is a real loss for a home audience.",
       "confirmed": true
     },
@@ -94,10 +95,11 @@
       ],
       "match": {
         "refEquipment": null,
-        "category": "stretching"
+        "category": "stretching",
+        "ref": "free-exercise-db"
       },
       "count": 40,
-      "reason": "free-exercise-db leaves equipment null on floor and standing stretches. They need nothing, so they are ['bodyweight'] by this app's own rule that a floor, a wall and a mat are never gated. These are the cheapest genuine wins in the whole queue and they are currently held back as 'unresolved'.",
+      "reason": "free-exercise-db leaves equipment null on floor and standing stretches. They need nothing, so they are ['bodyweight'] by this app's own rule that a floor, a wall and a mat are never gated. These are the cheapest genuine wins in the whole queue and they are currently held back as 'unresolved'. SCOPED to free-exercise-db 2026-09-08: refEquipment null means \"a floor stretch needing nothing\" there, but on wger it means \"gear not recorded\" — unscoped, this rule tagged 91 unknown-gear wger entries as bodyweight-only.",
       "recommendation": "include — this is pure upside for the yoga and cool-down lane",
       "confirmed": true
     },
@@ -108,10 +110,11 @@
         "bodyweight"
       ],
       "match": {
-        "refEquipment": null
+        "refEquipment": null,
+        "ref": "free-exercise-db"
       },
       "count": 14,
-      "reason": "The rest of the null-equipment entries after the stretches above — mostly plyometric and agility drills (Carioca Quick Step, Sit Squats). Same reasoning: they need nothing.",
+      "reason": "The rest of the null-equipment entries after the stretches above — mostly plyometric and agility drills (Carioca Quick Step, Sit Squats). Same reasoning: they need nothing. SCOPED to free-exercise-db 2026-09-08: refEquipment null means \"a floor stretch needing nothing\" there, but on wger it means \"gear not recorded\" — unscoped, this rule tagged 91 unknown-gear wger entries as bodyweight-only.",
       "recommendation": "include",
       "confirmed": true
     },
@@ -152,10 +155,11 @@
       "id": "other-equipment-remainder",
       "action": "review",
       "match": {
-        "refEquipment": "other"
+        "refEquipment": "other",
+        "ref": "free-exercise-db"
       },
       "count": 99,
-      "reason": "Whatever is left in free-exercise-db's 'other' bucket after the rules above. It is genuinely mixed — Parallel Bar Dip and Suspended Fallout map fine onto bench and trx, while others need gear with no id. This is the largest single bucket and the one where a blanket ruling would do the most damage.",
+      "reason": "Whatever is left in free-exercise-db's 'other' bucket after the rules above. It is genuinely mixed — Parallel Bar Dip and Suspended Fallout map fine onto bench and trx, while others need gear with no id. This is the largest single bucket and the one where a blanket ruling would do the most damage. SCOPED to free-exercise-db 2026-09-08: refEquipment null means \"a floor stretch needing nothing\" there, but on wger it means \"gear not recorded\" — unscoped, this rule tagged 91 unknown-gear wger entries as bodyweight-only.",
       "recommendation": "leave as 'review' for now. The queue has 290 ready items without it; come back when those run out.",
       "confirmed": true
     }

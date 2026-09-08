@@ -175,6 +175,61 @@ const EQUIP_MAP = {
   other: null,
 };
 
+/* wger's own vocabularies, mapped onto this app's ids. Anything with no
+ * honest equivalent maps to null and is held out of the queue rather than
+ * guessed — a Swiss ball is not a bench. */
+const WGER_EQUIP = {
+  "none (bodyweight exercise)": "bodyweight",
+  "none": "bodyweight",
+  "Gym mat": "bodyweight",       // a mat is never gated, per ROADMAP §5a
+  "Dumbbell": "dumbbell",
+  "Barbell": "barbell",
+  "Bench": "bench",
+  "Incline bench": "bench",      // a bench is any sturdy elevated surface
+  "Kettlebell": "kettlebell",
+  "Cable machine": "cable",
+  "Pull-up bar": "pull-up-bar",
+  "Resistance band": "resistance-band",
+  "SZ-Bar": "ez-bar",
+  "Swiss Ball": null,            // no id exists; the inclusion policy owns this
+};
+
+/* An empty equipment list on wger means "not recorded", NOT "bodyweight" —
+ * treating the two the same would tag 117 unknown-gear exercises as doable with
+ * nothing, which is exactly the mislabelling already found in the shipped data
+ * ("Sit on a chair" tagged bodyweight-only). */
+export function mapWgerEquipment(list) {
+  if (!list || !list.length) return null;
+  const out = [];
+  for (const w of list) {
+    if (!(w in WGER_EQUIP)) return null;   // unknown vocabulary — do not guess
+    const id = WGER_EQUIP[w];
+    if (id === null) return null;          // deliberately unmappable
+    if (!out.includes(id)) out.push(id);
+  }
+  return out.length ? out : null;
+}
+
+/* Anatomical names to this app's eleven groups. A HINT only — the batch's own
+ * muscleGroup comes from the specification, and this is here so a reviewer can
+ * see when the two disagree. */
+const WGER_MUSCLE = {
+  Glutes: "Glutes", Shoulders: "Shoulders", Lats: "Back", Quads: "Quads",
+  Chest: "Chest", Abs: "Core/Abs", Biceps: "Biceps", Trapezius: "Back",
+  Triceps: "Triceps", Hamstrings: "Hamstrings", Calves: "Calves",
+  "Obliquus externus abdominis": "Core/Abs", Brachialis: "Biceps",
+  "Serratus anterior": "Chest", Soleus: "Calves",
+};
+
+export function mapWgerMuscles(list) {
+  const out = [];
+  for (const m of list || []) {
+    const g = WGER_MUSCLE[m];
+    if (g && !out.includes(g)) out.push(g);
+  }
+  return out;
+}
+
 /* ── analysis ────────────────────────────────────────────────────────────── */
 
 export function analyse(lib) {
@@ -224,7 +279,66 @@ export function analyse(lib) {
      * after the decisions are final. */
   }
 
-  /* ---- reference 2: asanas (Wikipedia) --------------------------------- */
+  /* ---- reference 2: wger — THE ONLY ONE THAT CARRIES SOURCE TEXT --------
+   *
+   * Why this reference is different in kind, not just in size.
+   *
+   * A queue entry from free-exercise-db is a NAME. Handing a model a name and
+   * asking for a how-to is a RECALL task, and models fabricate when recalling.
+   * Measured on 2026-09-08: given the names "Janda Sit-Up" and "V-Bar Pull-Up",
+   * qwen3.5-9b passed every schema and contract check and described the wrong
+   * movement both times — a Janda sit-up is defined by active hamstring
+   * contraction inhibiting the hip flexors, and the card described a hip bridge
+   * into a crunch. A confidently wrong how-to is worse than a missing card,
+   * because nothing downstream can see it is wrong.
+   *
+   * wger carries a real description per record, so the job becomes a REWRITE:
+   * transform this text into house style. That is what models are reliable at,
+   * and it is the same split srt-cleanup settled on — hand over the prose,
+   * never the structure.
+   *
+   * LICENSING IS NOT OPTIONAL HERE. Every record is CC-BY-SA 4.0, CC-BY-SA 3.0
+   * or CC0, with a named author, and the reference keeps both per record. A
+   * rewrite of a CC-BY-SA description is a DERIVATIVE: it must stay CC-BY-SA and
+   * credit the author. Any batch grounded in this reference carries its
+   * attribution through to the review file, and shipping those cards means
+   * shipping an attribution page. That is a real obligation, not a footnote. */
+  const wger = loadRef("wger.json");
+  if (!wger) {
+    report.notes.push("wger.json not vendored — the grounded lane is unavailable");
+  } else {
+    const absent = wger.entries.filter((e) => !isCovered(e.n, librarySets));
+    report.refs.push({
+      id: "wger",
+      license: wger.license.slice(0, 90) + "…",
+      total: wger.entries.length,
+      covered: wger.entries.length - absent.length,
+      absent: absent.length,
+    });
+    for (const e of absent) {
+      const gear = mapWgerEquipment(e.eq);
+      report.missing.push({
+        ref: "wger",
+        name: e.n,
+        equipment: gear,
+        equipmentResolved: gear !== null,
+        refEquipment: e.eq.join(", ") || null,
+        category: "strength",
+        muscleHint: mapWgerMuscles(e.mus),
+        /* The whole point of this reference. */
+        sourceText: e.d,
+        attribution: { license: e.lic, author: e.by },
+      });
+    }
+    const grounded = absent.filter((e) => e.d.length >= 200).length;
+    report.notes.push(
+      `wger supplies ${absent.length} absent exercises WITH a licensed description to rewrite ` +
+      `(${grounded} of them 200+ characters). Prefer these over name-only entries: a name alone ` +
+      `makes the model recall, and it fabricates when it recalls.`
+    );
+  }
+
+  /* ---- reference 3: asanas (Wikipedia) --------------------------------- */
   const asanas = loadRef("asanas.json");
   if (!asanas) {
     report.notes.push("asanas.json not vendored — run tools/refresh-refs.mjs");
@@ -356,6 +470,13 @@ export function applyPolicy(report, policy = loadPolicy()) {
 
 function matchesRule(item, match) {
   if (!match) return false;
+  /* Rules may be scoped to one reference, and for the equipment rules they MUST
+   * be. `refEquipment: null` means different things in different references: on
+   * free-exercise-db it is a floor stretch needing nothing, on wger it means the
+   * gear was simply never recorded. Left unscoped, the remap rule tagged 91
+   * wger entries of unknown gear as bodyweight-only — the same mislabelling
+   * already found in the shipped data. */
+  if (match.ref && item.ref !== match.ref) return false;
   if (Object.prototype.hasOwnProperty.call(match, "refEquipment")) {
     // `null` in the policy means the reference genuinely had no equipment, which
     // is different from the key being absent — so compare explicitly.
@@ -471,7 +592,17 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === resolve(process.argv[1
     const n = Number(argv[qi + 1]) || 12;
     // A queue is only useful if every item is actionable, so gear-unresolved and
     // review-flagged entries are held back rather than handed over half-specified.
-    const q = r.missing.filter((m) => m.equipmentResolved && m.name && m.decision !== "review").slice(0, n);
+    //
+    // GROUNDED ENTRIES GO FIRST. An entry carrying sourceText turns the job into
+    // a rewrite; a name-only entry asks the model to recall, and it fabricates
+    // when it recalls (measured: two of three name-only targets came back
+    // describing the wrong movement while passing every check). Handing out the
+    // safe work first is not a preference, it is the difference between a batch
+    // a reviewer can trust and one they have to fact-check line by line.
+    const q = r.missing
+      .filter((m) => m.equipmentResolved && m.name && m.decision !== "review")
+      .sort((a, b) => (b.sourceText ? 1 : 0) - (a.sourceText ? 1 : 0))
+      .slice(0, n);
     console.log(JSON.stringify(q, null, 2));
   } else {
     console.log("\nFitFlexr coverage against external references\n");
