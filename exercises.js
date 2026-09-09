@@ -18166,6 +18166,130 @@ const BATCH = [
 ];
 EXERCISES.push.apply(EXERCISES, BATCH);
 
+// Five yoga asanas from tools/coverage.mjs --queue 10 (2026-09-08 evening Bellows pass),
+// written by Claude per OPERATING.md rung 5 — not Qwen. Five of the ten queued poses are
+// deliberately absent: Astavakrasana, Kaundinyasana and Durvasasana are advanced arm
+// balances/binds with real fall or joint-load risk if the hand or leg placement is
+// described even slightly wrong; Gorakshasana has two materially different techniques in
+// circulation (soles-together-sitting-on-heels vs. the classical ankle-lock) and no way to
+// tell which the source dataset means; full Matsyendrasana requires forcing one foot into
+// half-lotus against the opposite hip, a well-documented way to injure a knee, and the
+// deck already carries the safer Ardha Matsyendrasana as yoga-seated-spinal-twist. A
+// missing card is recoverable; a confidently wrong one is not.
+const ASANAS_BATCH_2026_09_08 = [
+  {
+    "id": "yoga-siddhasana",
+    "name": "Accomplished Pose",
+    "muscleGroup": "Glutes",
+    "secondaryMuscles": [],
+    "equipment": ["bodyweight"],
+    "difficulty": "Beginner",
+    "cue": "Stack one heel in front of the other, close to the body, rather than crossing your shins.",
+    "description": "Sit tall and draw one heel in against the inner thigh close to the groin, then stack the other heel directly in front of it, ankle over ankle rather than shin over shin. Rest the backs of your hands on your knees and let your weight settle evenly on both sitting bones. It is built for staying still a long time rather than for depth — swap which foot sits in front every so often so one hip doesn't do all the work.",
+    "avoidIf": ["knee", "hip"],
+    "icon": "🧘",
+    "pattern": "Stretch",
+    "force": "Static",
+    "unilateral": false,
+    "focus": ["mobility"],
+    "homeFriendly": true,
+    "aliases": ["Siddhasana"],
+    "category": "cooldown",
+    "sports": ["yoga"],
+    "hold": "1 × 2 min",
+    "stretchType": "yoga"
+  },
+  {
+    "id": "yoga-anantasana",
+    "name": "Ananta's Pose",
+    "muscleGroup": "Hamstrings",
+    "secondaryMuscles": ["Glutes"],
+    "equipment": ["bodyweight"],
+    "difficulty": "Intermediate",
+    "cue": "Prop your head on your hand, then reach the top leg straight up.",
+    "description": "Lie on one side with your legs stacked and your lower arm bent to prop your head on your hand. Reach the top arm down to hook two fingers around the big toe of the top leg, then straighten that leg up toward the ceiling while keeping the bottom leg long on the floor. Keep the raised leg roughly over your hip rather than letting it drift forward — that is what keeps the stretch in the hamstring instead of twisting the low back.",
+    "avoidIf": ["hip", "lower-back"],
+    "icon": "🛋️",
+    "pattern": "Stretch",
+    "force": "Static",
+    "unilateral": true,
+    "focus": ["mobility"],
+    "homeFriendly": true,
+    "aliases": ["Anantasana", "Vishnu's Couch Pose"],
+    "category": "cooldown",
+    "sports": ["yoga"],
+    "hold": "2 × 30s each side",
+    "stretchType": "yoga"
+  },
+  {
+    "id": "yoga-bhujapidasana",
+    "name": "Arm-Pressing Pose",
+    "muscleGroup": "Core/Abs",
+    "secondaryMuscles": ["Shoulders", "Triceps"],
+    "equipment": ["bodyweight"],
+    "difficulty": "Advanced",
+    "cue": "Thread your thighs high onto your upper arms before you lean your weight forward.",
+    "description": "Squat with your feet a little wider than your hips and plant your hands flat on the floor between them. Bend your elbows and walk your thighs up high onto the backs of your upper arms, close to the armpits, then lean your weight forward off your feet and cross your ankles in front of you. Keep your elbows bent rather than locking them straight — a slight bend is what lets your upper arms carry your thighs instead of your wrists taking the load.",
+    "avoidIf": ["wrist", "shoulder"],
+    "icon": "💪",
+    "pattern": "Stretch",
+    "force": "Static",
+    "unilateral": false,
+    "focus": ["mobility"],
+    "homeFriendly": true,
+    "aliases": ["Bhujapidasana"],
+    "category": "cooldown",
+    "sports": ["yoga"],
+    "hold": "2 × 15s",
+    "stretchType": "yoga"
+  },
+  {
+    "id": "yoga-hanumanasana",
+    "name": "Monkey Pose",
+    "muscleGroup": "Hamstrings",
+    "secondaryMuscles": ["Quads", "Glutes"],
+    "equipment": ["bodyweight"],
+    "difficulty": "Advanced",
+    "cue": "Square your hips forward before you slide any deeper.",
+    "description": "From a low lunge, walk the front heel forward and slide the back knee back until both legs straighten toward a full split, front leg reaching out and back leg reaching behind you. Keep your hips squared to the front rather than letting the back hip roll open, and support your weight on blocks or your fingertips on either side until you can rest your hands on the floor. Come out the moment you feel a pinch rather than a stretch — this is one to build toward over weeks, not force in a single session.",
+    "avoidIf": ["hip", "knee"],
+    "icon": "🐒",
+    "pattern": "Stretch",
+    "force": "Static",
+    "unilateral": true,
+    "focus": ["mobility"],
+    "homeFriendly": true,
+    "aliases": ["Hanumanasana", "Full Splits"],
+    "category": "cooldown",
+    "sports": ["yoga"],
+    "hold": "1 × 45s each side",
+    "stretchType": "yoga"
+  },
+  {
+    "id": "yoga-natarajasana",
+    "name": "King Dancer Pose",
+    "muscleGroup": "Quads",
+    "secondaryMuscles": ["Shoulders", "Chest"],
+    "equipment": ["bodyweight"],
+    "difficulty": "Advanced",
+    "cue": "Kick your back foot into your hand before you tip forward.",
+    "description": "Stand on one leg and bend the other knee, reaching back to hold the inside of that foot with the same-side hand. Press the foot back into your hand to lift the thigh and open the chest, tipping your torso forward as a counterbalance and reaching the free arm out in front. Fix your gaze on one still point the whole time — balance poses fall apart the moment the eyes start wandering, not when the legs get tired.",
+    "avoidIf": ["balance", "lower-back", "shoulder", "knee"],
+    "icon": "💃",
+    "pattern": "Stretch",
+    "force": "Static",
+    "unilateral": true,
+    "focus": ["mobility"],
+    "homeFriendly": true,
+    "aliases": ["Natarajasana", "Lord of the Dance Pose"],
+    "category": "cooldown",
+    "sports": ["yoga"],
+    "hold": "2 × 20s each side",
+    "stretchType": "yoga"
+  }
+];
+EXERCISES.push.apply(EXERCISES, ASANAS_BATCH_2026_09_08);
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { MUSCLE_GROUPS, EQUIPMENT, CONDITIONS, SPORTS, STRETCH_TYPES, EXERCISES };
 }
