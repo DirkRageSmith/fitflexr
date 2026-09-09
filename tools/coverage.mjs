@@ -258,7 +258,7 @@ export function analyse(lib) {
     for (const a of asanas.entries) {
       const candidates = [a.english, a.sanskrit].filter(Boolean);
       const known = a.english ? isCovered(a.english, librarySets) : null;
-      const sanskritKnown = isCovered(a.sanskrit, librarySets);
+      const sanskritKnown = isCovered(a.sanskritClean || a.sanskrit, librarySets);
       if (known === true || sanskritKnown) { resolved.push({ ...a, covered: true }); continue; }
       if (a.english) resolved.push({ ...a, covered: false });
       else unresolved.push(a);

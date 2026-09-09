@@ -18290,6 +18290,93 @@ const ASANAS_BATCH_2026_09_08 = [
 ];
 EXERCISES.push.apply(EXERCISES, ASANAS_BATCH_2026_09_08);
 
+// tools/coverage.mjs --queue 10 re-run 2026-09-09 morning (Bellows pass), after fixing a real
+// bug it found: isCovered() was checking the RAW `sanskrit` field ("Siddhasana (men), Siddha
+// Yoni Asana (women)") instead of `sanskritClean`, so Siddhasana kept re-appearing in the queue
+// after it was already written 2026-09-08 — a fresh instance of "checking the label instead of
+// the property is not a test" (OPERATOR.md section 5). Fixed in tools/coverage.mjs; 57 coverage tests
+// still pass.
+//
+// Of the ten re-queued items, three written, two skipped for the reasons written per-card below.
+// Astavakrasana, Gorakshasana, Durvasasana, Kaundinyasana and full Matsyendrasana are still
+// absent on purpose, unchanged from 2026-09-08's reasoning (see block above) -- they were still
+// in this queue and still carry the same fall/joint-load/ambiguous-technique risk.
+//
+// Marichyasana (Marichi's Pose) is ALSO skipped, newly, for the same class of reason as
+// Gorakshasana: it names a family (Marichyasana A/B/C/D) with materially different forms --
+// some a plain seated forward fold with one knee bent, others adding a bind with the arm
+// wrapped around the shin and behind the back -- and the source entry does not say which. A
+// wrong bind description is a real strain risk, and there is no way to tell which variant
+// "Marichyasana" unqualified is supposed to mean here.
+const ASANAS_STRETCHES_BATCH_2026_09_09 = [
+  {
+    "id": "yoga-vasishtasana",
+    "name": "Straight-Arm Side Plank",
+    "muscleGroup": "Core/Abs",
+    "secondaryMuscles": ["Shoulders", "Glutes"],
+    "equipment": ["bodyweight"],
+    "difficulty": "Intermediate",
+    "cue": "Stack your top foot on the bottom one and reach that arm straight up before you lift your hips.",
+    "description": "From Plank, roll onto the outer edge of your right foot and stack your left foot directly on top of it. Plant your right hand under your right shoulder and press the floor away as you lift your hips until your body forms one straight line from heels to head. Reach your left arm straight up in line with the right — press through the outer edge of the bottom foot, which is what keeps the hips from sinking, not the top arm. Drop the bottom knee to the floor for an easier version; the rest of the shape stays the same.",
+    "avoidIf": ["wrist", "shoulder"],
+    "icon": "🤸",
+    "pattern": "Stretch",
+    "force": "Static",
+    "unilateral": true,
+    "focus": ["mobility"],
+    "homeFriendly": true,
+    "aliases": ["Vasishtasana", "Side Plank Pose"],
+    "category": "cooldown",
+    "sports": ["yoga"],
+    "hold": "2 × 20s each side",
+    "stretchType": "yoga"
+  },
+  {
+    "id": "three-quarter-sit-up",
+    "name": "3/4 Sit-Up",
+    "muscleGroup": "Core/Abs",
+    "secondaryMuscles": [],
+    "equipment": ["bodyweight"],
+    "difficulty": "Beginner",
+    "cue": "Curl up about three-quarters of the way to sitting, then stop — don't go all the way upright.",
+    "description": "Lie on your back with your knees bent, feet flat, and arms crossed over your chest. Curl your torso up until you're roughly three-quarters of the way to sitting — further than a crunch, short of a full sit-up — then lower back down with control. Lead with your chest rather than pulling with your neck, and keep the movement slow enough that you could stop anywhere in the range.",
+    "avoidIf": ["lower-back", "neck"],
+    "icon": "💪",
+    "mechanic": "Isolation",
+    "pattern": "Core",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["strength", "endurance"],
+    "homeFriendly": true,
+    "aliases": [],
+    "category": "strength"
+  },
+  {
+    "id": "ninety-ninety-hamstring",
+    "name": "90/90 Hamstring Stretch",
+    "muscleGroup": "Hamstrings",
+    "secondaryMuscles": [],
+    "equipment": ["bodyweight"],
+    "difficulty": "Beginner",
+    "cue": "Hold the thigh still at 90/90, then straighten the knee — don't change the hip angle.",
+    "description": "Lie on your back with one leg flat on the floor. Raise the other leg so your hip and knee are both bent to about 90 degrees — thigh pointing straight up, shin pointing forward — and hold the back of that thigh with both hands to keep it fixed there. Slowly straighten the knee, letting the foot rise toward the ceiling, until you feel the stretch in the hamstring, then bend the knee back to 90/90 and repeat. The hip doesn't move at any point — only the knee opens and closes.",
+    "avoidIf": ["lower-back", "hip"],
+    "icon": "🦵",
+    "mechanic": "Isolation",
+    "pattern": "Stretch",
+    "force": "Static",
+    "unilateral": true,
+    "focus": ["mobility"],
+    "homeFriendly": true,
+    "aliases": ["90/90 Hamstring"],
+    "category": "cooldown",
+    "sports": ["football", "track-field"],
+    "hold": "2 × 5 reps each side",
+    "stretchType": "static"
+  }
+];
+EXERCISES.push.apply(EXERCISES, ASANAS_STRETCHES_BATCH_2026_09_09);
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { MUSCLE_GROUPS, EQUIPMENT, CONDITIONS, SPORTS, STRETCH_TYPES, EXERCISES };
 }
