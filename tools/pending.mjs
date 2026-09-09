@@ -167,7 +167,11 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === resolve(process.argv[1
   for (const b of branches) {
     const recs = addedRecords(b.branch);
     if (recs === null) { out.branches.push({ ...b, error: "could not read exercises.js on this branch" }); continue; }
-    const baseline = (loadAt("main") || []).flatMap((e) => [normalize(e.name), ...(e.aliases || []).map(normalize)]);
+    // parseAt, not loadAt — the latter executed the file and was replaced. This call
+    // site survived the rename because nothing exercised it: there were no pending
+    // branches on the day it was written, so the CLI path never ran. A review tool that
+    // crashes the first time it has something to review is worth one regression test.
+    const baseline = (parseAt("main") || []).flatMap((e) => [normalize(e.name), ...(e.aliases || []).map(normalize)]);
     out.branches.push({
       ...b,
       records: recs.map((r) => ({
