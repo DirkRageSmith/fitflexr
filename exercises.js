@@ -18377,6 +18377,90 @@ const ASANAS_STRETCHES_BATCH_2026_09_09 = [
 ];
 EXERCISES.push.apply(EXERCISES, ASANAS_STRETCHES_BATCH_2026_09_09);
 
+// tools/coverage.mjs --queue 10/20 re-run 2026-09-09 evening (Bellows pass). The six
+// previously-skipped asanas (Astavakrasana, Gorakshasana, Durvasasana, Kaundinyasana,
+// Matsyendrasana, Marichyasana) are still in the queue, unchanged, for the same reasons
+// already on record in the block above -- not re-litigated. The rest of the top ten was
+// free-exercise-db entries, not more yoga: Adductor/Groin (name alone doesn't say which
+// groin stretch -- butterfly, side-lunge and standing-groin are all materially different
+// and the source gives no way to tell) and Alternate Leg Diagonal Bound (a plyometric
+// bounding drill with real landing-mechanics variation between sources -- same class of
+// risk as an ambiguous yoga bind) are skipped for the same reason: not knowing the one
+// intended technique. Alternating Deltoid Raise is skipped too -- "deltoid raise" alone
+// doesn't say front, lateral or rear, and the deck already ships a bilateral
+// Dumbbell Lateral Raise, so guessing wrong would either misdescribe the move or quietly
+// duplicate it.
+//
+// Three written, all single well-documented movements: All Fours Quad Stretch (distinct
+// support position from the two quad stretches already shipped -- standing and prone),
+// Alternating Cable Shoulder Press, and Alternating Renegade Row.
+const BATCH_2026_09_09_EVENING = [
+  {
+    "id": "static-all-fours-quad",
+    "name": "All Fours Quad Stretch",
+    "muscleGroup": "Quads",
+    "secondaryMuscles": [],
+    "equipment": ["bodyweight"],
+    "difficulty": "Intermediate",
+    "cue": "Keep your support knee stacked under your hip as you draw your heel toward your glute.",
+    "description": "Start on your hands and knees. Shift your weight onto one hand and the opposite-side knee, then reach back with your free hand to grasp the same-side foot or ankle. Draw the heel gently toward your glute, keeping the thigh pointed straight down rather than winging out to the side. Keep your hips level and your support knee stacked under your hip the whole time -- that's what keeps the stretch in the front of the thigh instead of the low back. Hold, release, then switch sides.",
+    "avoidIf": ["knee", "wrist"],
+    "icon": "🦵",
+    "mechanic": "Isolation",
+    "pattern": "Stretch",
+    "force": "Static",
+    "unilateral": true,
+    "focus": ["mobility"],
+    "homeFriendly": true,
+    "aliases": ["Quadruped Quad Stretch", "Kneeling Quad Stretch"],
+    "category": "cooldown",
+    "sports": ["football", "track-field"],
+    "hold": "2 × 30s each side",
+    "stretchType": "static"
+  },
+  {
+    "id": "alternating-cable-shoulder-press",
+    "name": "Alternating Cable Shoulder Press",
+    "muscleGroup": "Shoulders",
+    "secondaryMuscles": ["Triceps"],
+    "equipment": ["cable"],
+    "difficulty": "Beginner",
+    "cue": "Press one handle straight overhead while the other stays parked at shoulder height.",
+    "description": "Stand between two low cable pulleys, holding a handle in each hand at shoulder height with palms facing in. Press one arm straight overhead while the other holds steady at your shoulder, then lower with control and press the other side. Keep your ribs down and your core braced throughout -- the cable pulls down and slightly forward, so the real work is resisting that pull without arching your low back.",
+    "avoidIf": ["shoulder", "lower-back"],
+    "icon": "🏋️",
+    "mechanic": "Compound",
+    "pattern": "Vertical Push",
+    "force": "Push",
+    "unilateral": true,
+    "focus": ["strength", "hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Standing Alternating Cable Press"],
+    "category": "strength"
+  },
+  {
+    "id": "alternating-renegade-row",
+    "name": "Alternating Renegade Row",
+    "muscleGroup": "Back",
+    "secondaryMuscles": ["Core/Abs", "Shoulders"],
+    "equipment": ["kettlebell"],
+    "difficulty": "Advanced",
+    "cue": "Keep your hips square to the floor as you row -- don't let them twist toward the lifting arm.",
+    "description": "Start in a push-up position with a hand gripping each kettlebell handle, feet set wide for a stable base. Row one kettlebell straight up to your ribs, keeping your elbow close to your body, then lower it back to the floor with control and row the other side. Brace your core hard and keep your hips square to the ground the whole time -- the row wants to twist your torso open, and resisting that is most of what this exercise trains.",
+    "avoidIf": ["wrist", "shoulder", "lower-back"],
+    "icon": "🚣",
+    "mechanic": "Compound",
+    "pattern": "Horizontal Pull",
+    "force": "Pull",
+    "unilateral": true,
+    "focus": ["strength", "endurance"],
+    "homeFriendly": true,
+    "aliases": ["Renegade Row"],
+    "category": "strength"
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_09_09_EVENING);
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { MUSCLE_GROUPS, EQUIPMENT, CONDITIONS, SPORTS, STRETCH_TYPES, EXERCISES };
 }
