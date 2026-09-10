@@ -18461,6 +18461,91 @@ const BATCH_2026_09_09_EVENING = [
 ];
 EXERCISES.push.apply(EXERCISES, BATCH_2026_09_09_EVENING);
 
+// Bellows pass 2026-09-10 morning. Rung 5 (FitFlexr cards), gap-driven per
+// coverage.mjs --queue 15 run from this branch (main is still one commit behind
+// it, so the sanskritClean fix and both prior batches stay in view for dedup).
+// The six previously-skipped asanas and Adductor/Groin and Alternate Leg Diagonal
+// Bound reappeared unchanged -- not re-litigated. Alternating Deltoid Raise also
+// reappeared and was skipped again for the same reason as last time: "deltoid
+// raise" alone doesn't say front/lateral/rear and the deck already ships a
+// bilateral Dumbbell Lateral Raise. Anti-Gravity Press (barbell) was skipped new
+// this pass -- the name is not a standard lift and I could not confirm the exact
+// setup with confidence, so it goes here rather than being guessed. Band Hip
+// Adductions was also skipped: it is a real, simple movement, but the schema has
+// no "Hip Adduction" pattern (only "Hip Abduction," which is the opposite
+// movement) and no adductors muscle group, so tagging it correctly would mean
+// inventing a schema value rather than authoring content -- a decision, not a
+// card, so it is left for a session that can also touch validate.js.
+//
+// Three written, all single well-documented movements: Alternating Hang Clean
+// (a standard kettlebell drill, distinct from the bilateral Kettlebell Clean
+// already shipped), Backward Medicine Ball Throw (distinct from the forward Wall
+// Ball and downward Slam already shipped), and Barbell Ab Rollout (same
+// mechanic as the shipped Ab-Wheel Rollouts, loaded bar instead of a wheel).
+const BATCH_2026_09_10_MORNING = [
+  {
+    "id": "alternating-hang-clean",
+    "name": "Alternating Hang Clean",
+    "muscleGroup": "Full Body/Cardio",
+    "secondaryMuscles": ["Glutes", "Shoulders"],
+    "equipment": ["kettlebell"],
+    "difficulty": "Intermediate",
+    "cue": "Snap your hips to send the bell up, then punch your hand through to meet it in the rack.",
+    "description": "Hold one kettlebell hanging in front of your thighs. Hinge slightly, then explosively snap your hips forward to drive the bell upward, letting it float weightless for a moment before you pull your elbow up and punch your hand through so it rolls into the rack position at your shoulder. Lower it back to the hang with control, then hike it into your other hand and clean it on that side. The power comes from the hip snap, not an arm curl -- a clean that's mostly bicep means the hips didn't do their job.",
+    "avoidIf": ["lower-back", "wrist", "shoulder"],
+    "icon": "🔔",
+    "mechanic": "Compound",
+    "pattern": "Hinge",
+    "force": "Explosive",
+    "unilateral": true,
+    "focus": ["power"],
+    "homeFriendly": true,
+    "aliases": ["Alternating Kettlebell Clean", "Hand-to-Hand Kettlebell Clean"],
+    "category": "power"
+  },
+  {
+    "id": "backward-medicine-ball-throw",
+    "name": "Backward Medicine Ball Throw",
+    "muscleGroup": "Full Body/Cardio",
+    "secondaryMuscles": ["Glutes", "Hamstrings", "Shoulders"],
+    "equipment": ["medicine-ball"],
+    "difficulty": "Intermediate",
+    "cue": "Squat down holding the ball low, then explosively extend your hips and throw it backward over your head.",
+    "description": "Stand holding a medicine ball with both hands, feet shoulder-width apart. Squat down and let the ball swing between your knees, then explosively drive your hips forward and extend your whole body, releasing the ball backward and overhead as you stand up. Let your momentum carry you slightly onto your toes -- the throw comes from the hip extension, not an arm swing. Turn and check where it lands before you go get it, and use a slam-proof or turf ball with clear space behind you.",
+    "avoidIf": ["lower-back", "shoulder"],
+    "icon": "🚀",
+    "mechanic": "Compound",
+    "pattern": "Conditioning",
+    "force": "Explosive",
+    "unilateral": false,
+    "focus": ["power"],
+    "homeFriendly": false,
+    "aliases": ["Overhead Backward Throw", "Scoop Toss"],
+    "category": "power"
+  },
+  {
+    "id": "barbell-ab-rollout",
+    "name": "Barbell Ab Rollout",
+    "muscleGroup": "Core/Abs",
+    "secondaryMuscles": ["Shoulders"],
+    "equipment": ["barbell"],
+    "difficulty": "Advanced",
+    "cue": "Roll the bar out as far as you can control without your lower back sagging, then pull it back with your abs.",
+    "description": "Load a barbell lightly, or leave it empty, and kneel behind it gripping it shoulder-width. Roll it forward, extending your body as far as you can while keeping your back flat and your abs braced, then pull it back in to return to kneeling. Only go as far as you can control -- the moment your lower back arches and sags toward the floor is the moment the rollout stops working your abs and starts loading your spine instead.",
+    "avoidIf": ["lower-back", "shoulder", "wrist"],
+    "icon": "⭕",
+    "mechanic": "Compound",
+    "pattern": "Core",
+    "force": "Static",
+    "unilateral": false,
+    "focus": ["strength"],
+    "homeFriendly": false,
+    "aliases": ["Barbell Rollout"],
+    "category": "strength"
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_09_10_MORNING);
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { MUSCLE_GROUPS, EQUIPMENT, CONDITIONS, SPORTS, STRETCH_TYPES, EXERCISES };
 }
