@@ -410,7 +410,13 @@ export function loadPolicy() {
 
 const HISTORY = join(HERE, "coverage-history.json");
 
-export function snapshot(report, today = new Date().toISOString().slice(0, 10)) {
+/** Local calendar date (not UTC): a 19:00 Pacific pass is still "today" here,
+ *  where `toISOString().slice(0, 10)` would already read as tomorrow. */
+function localDate(d = new Date()) {
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+}
+
+export function snapshot(report, today = localDate()) {
   return {
     date: today,
     libraryTotal: report.library.total,
