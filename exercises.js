@@ -18546,6 +18546,70 @@ const BATCH_2026_09_10_MORNING = [
 ];
 EXERCISES.push.apply(EXERCISES, BATCH_2026_09_10_MORNING);
 
+const BATCH_2026_09_10_EVENING = [
+  {
+    "id": "barbell-hack-squat",
+    "name": "Barbell Hack Squat",
+    "muscleGroup": "Quads",
+    "secondaryMuscles": ["Glutes"],
+    "equipment": ["barbell"],
+    "difficulty": "Intermediate",
+    "cue": "Grip the bar behind your legs and squat straight down, keeping it sliding down the back of your calves.",
+    "description": "Stand holding a barbell behind you with a shoulder-width grip, letting it rest against the back of your thighs. Bend your knees and squat straight down with your torso upright, tracking the bar down the back of your legs until your thighs are at least parallel, then drive back up through your heels. Keeping the bar close against your legs the whole way is what keeps the load on your quads instead of your lower back.",
+    "avoidIf": ["knee", "lower-back"],
+    "icon": "🏋️",
+    "mechanic": "Compound",
+    "pattern": "Squat",
+    "force": "Push",
+    "unilateral": false,
+    "focus": ["strength", "hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Behind-the-Back Barbell Squat"],
+    "category": "strength"
+  },
+  {
+    "id": "barbell-shrug-behind-the-back",
+    "name": "Barbell Shrug Behind The Back",
+    "muscleGroup": "Back",
+    "secondaryMuscles": ["Shoulders"],
+    "equipment": ["barbell"],
+    "difficulty": "Beginner",
+    "cue": "Hold the bar behind you and shrug straight up without rolling your shoulders.",
+    "description": "Stand holding a barbell behind your body with an overhand grip, arms straight down against your glutes. Shrug your shoulders straight up toward your ears, squeeze your traps at the top, then lower under control. Reaching back for the bar forces your shoulders into a position a front shrug doesn't -- stop if you feel it pulling at the front of the shoulder rather than the traps.",
+    "avoidIf": ["shoulder", "neck", "wrist"],
+    "icon": "⬆️",
+    "mechanic": "Isolation",
+    "pattern": "Carry",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Behind-the-Back Shrug"],
+    "category": "strength"
+  },
+  {
+    "id": "bent-over-dumbbell-rear-delt-raise-with-head-on-bench",
+    "name": "Bent Over Dumbbell Rear Delt Raise With Head On Bench",
+    "muscleGroup": "Shoulders",
+    "secondaryMuscles": ["Back"],
+    "equipment": ["dumbbell", "bench"],
+    "difficulty": "Beginner",
+    "cue": "Rest your forehead on the bench and raise both dumbbells out to the sides.",
+    "description": "Set an incline bench to a steep angle and lie face-down against it, chest and forehead supported, holding a dumbbell in each hand hanging straight down. Raise both arms out to the sides until they're roughly in line with your torso, squeezing your shoulder blades together, then lower with control. The bench takes your lower back out of the movement entirely, so any swing you feel is momentum rather than rear-delt effort.",
+    "avoidIf": ["shoulder", "neck"],
+    "icon": "🪽",
+    "mechanic": "Isolation",
+    "pattern": "Horizontal Pull",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["hypertrophy"],
+    "homeFriendly": true,
+    "aliases": ["Chest-Supported Rear Delt Raise", "Incline Rear Delt Raise"],
+    "category": "strength"
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_09_10_EVENING);
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { MUSCLE_GROUPS, EQUIPMENT, CONDITIONS, SPORTS, STRETCH_TYPES, EXERCISES };
 }

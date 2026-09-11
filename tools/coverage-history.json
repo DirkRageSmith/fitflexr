@@ -72,6 +72,24 @@
           "absent": 6
         }
       }
+    },
+    {
+      "date": "2026-09-11",
+      "libraryTotal": 643,
+      "libraryMoves": 544,
+      "covered": 338,
+      "absent": 556,
+      "ready": 412,
+      "refs": {
+        "free-exercise-db": {
+          "covered": 326,
+          "absent": 550
+        },
+        "asanas": {
+          "covered": 12,
+          "absent": 6
+        }
+      }
     }
   ]
 }
