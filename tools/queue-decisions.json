@@ -1,0 +1,124 @@
+{
+  "$comment": "Decisions about single named items in the coverage queue, read by tools/coverage.mjs. A skip leaves `--queue` for good and says why. A note stays in the queue and hands its text to whoever writes the card, as `reviewNote`. Matching is exact and case-insensitive on the queue name, or on the sanskrit name for asanas, never fuzzy. Started 2026-09-12, when 19 of the top 25 queue items were names earlier passes had already decided against and were re-reading every twelve hours. Every reason is written here in our own words: the free-exercise-db reference is vendored as names only, on purpose (see the licensing note at the top of coverage.mjs), and nothing in this file copies its text.",
+  "entries": [
+    {
+      "name": "Astavakrasana",
+      "action": "skip",
+      "reason": "Eight-angle pose is an advanced arm balance with the whole body held off bent arms. Described even slightly wrong, the hand or leg placement is a real fall or joint-load risk.",
+      "decided": "2026-09-08",
+      "by": "2026-09-08 yoga batch; confirmed in review 2026-09-12"
+    },
+    {
+      "name": "Kaundinyasana",
+      "action": "skip",
+      "reason": "An advanced arm balance with the legs extended off the arms, carrying the same fall and wrist-load risk as Astavakrasana if the placement is described even slightly wrong.",
+      "decided": "2026-09-08",
+      "by": "2026-09-08 yoga batch; confirmed in review 2026-09-12"
+    },
+    {
+      "name": "Durvasasana",
+      "action": "skip",
+      "reason": "A standing pose with one leg taken behind the head: an advanced bind with real hip, knee and lower-back strain risk for anyone learning it from a card.",
+      "decided": "2026-09-08",
+      "by": "2026-09-08 yoga batch; confirmed in review 2026-09-12"
+    },
+    {
+      "name": "Gorakshasana",
+      "action": "skip",
+      "reason": "Two materially different techniques circulate under this name (soles together sitting on the heels, versus the classical ankle lock) and the reference does not say which one it means.",
+      "decided": "2026-09-08",
+      "by": "2026-09-08 yoga batch; confirmed in review 2026-09-12"
+    },
+    {
+      "name": "Matsyendrasana",
+      "action": "skip",
+      "reason": "Full lord of the fishes forces one foot into half-lotus against the opposite hip, a well-documented way to injure a knee. The deck already carries the safer half version as yoga-seated-spinal-twist.",
+      "decided": "2026-09-08",
+      "by": "2026-09-08 yoga batch; confirmed in review 2026-09-12"
+    },
+    {
+      "name": "Marichyasana",
+      "action": "skip",
+      "reason": "Names a family of four poses (A to D) that differ materially, some adding a bind with an arm wrapped behind the back, and the reference does not say which. A wrong bind description is a real strain risk.",
+      "decided": "2026-09-09",
+      "by": "2026-09-09 morning Bellows pass; confirmed in review 2026-09-12"
+    },
+    {
+      "name": "Adductor/Groin",
+      "action": "skip",
+      "reason": "The movement under this name is a partner-resisted groin stretch: someone else holds your legs and pushes them apart. FitFlexr is used alone. Earlier passes skipped it as an unclear name; needing a second person is the real reason.",
+      "decided": "2026-09-12",
+      "by": "review 2026-09-12"
+    },
+    {
+      "name": "Band Hip Adductions",
+      "action": "skip",
+      "reason": "The reference contradicts itself: the name says adduction (leg drawn in toward the body) while the movement lifts the leg out to the side, which is abduction. The schema also has no hip-adduction pattern, so this needs a schema decision before it can be a card.",
+      "decided": "2026-09-12",
+      "by": "review 2026-09-12"
+    },
+    {
+      "name": "Alternate Leg Diagonal Bound",
+      "action": "skip",
+      "reason": "The same skater-style bound as the shipped Lateral Bound, travelling diagonally forward instead of straight sideways. Not different enough to earn its own card.",
+      "decided": "2026-09-12",
+      "by": "review 2026-09-12"
+    },
+    {
+      "name": "Bench Jump",
+      "action": "skip",
+      "reason": "Clearing a full-height bench in one jump means landing from above it, the landing the shipped Box Jump Over card deliberately avoids by stepping down to protect knees and Achilles. A 2026-09-11 card under this name described fast sideways hops over a bench instead, and was dropped in review.",
+      "decided": "2026-09-12",
+      "by": "review 2026-09-12"
+    },
+    {
+      "name": "Barbell Curls Lying Against An Incline",
+      "action": "skip",
+      "reason": "A curl lying face-down on an incline bench with a straight bar, which is a barbell spider curl. Same target and audience as the shipped Spider Dumbbell Curl and awkward with a straight bar; a pass reached the same conclusion about a barbell spider curl on 2026-09-12.",
+      "decided": "2026-09-12",
+      "by": "review 2026-09-12"
+    },
+    {
+      "name": "Alternating Deltoid Raise",
+      "action": "note",
+      "reason": "Not ambiguous. With a dumbbell in each hand the reps alternate: one front raise to shoulder height, then one side raise to shoulder height, and repeat. Earlier passes skipped it believing the name did not say which raise; it is both, in turn.",
+      "decided": "2026-09-12",
+      "by": "review 2026-09-12"
+    },
+    {
+      "name": "Anti-Gravity Press",
+      "action": "note",
+      "reason": "A light shoulder drill, not an overhead press. Lying face-down on an incline bench, the bar starts close to your chest and is pressed straight out in front of your head, arms travelling parallel to the floor, then brought back in.",
+      "decided": "2026-09-12",
+      "by": "review 2026-09-12"
+    },
+    {
+      "name": "Barbell Incline Shoulder Raise",
+      "action": "note",
+      "reason": "Lying back on an incline bench with the bar held straight up at arm's length, raise it a few inches using only your shoulder blades, arms staying straight, then lower. A serratus drill; it must not be written as a press.",
+      "decided": "2026-09-12",
+      "by": "review 2026-09-12"
+    },
+    {
+      "name": "Bent Over One-Arm Long Bar Row",
+      "action": "note",
+      "reason": "A one-arm landmine row: one end of a barbell anchored in a corner or landmine, plates on the other end, rowed one-handed while the other hand rests on your knee. The two-handed version is the shipped T-Bar Row. If the card gets a different title, give it this name as an alias or coverage keeps queueing it.",
+      "decided": "2026-09-12",
+      "by": "review 2026-09-12"
+    },
+    {
+      "name": "Barbell Step Ups",
+      "action": "note",
+      "reason": "Not a duplicate. Step-ups already ship as separate box, dumbbell and kettlebell cards; this is the version with a barbell across the upper back, equipment barbell and box. A 2026-09-12 pass judged it too close to Box Step-Up.",
+      "decided": "2026-09-12",
+      "by": "review 2026-09-12"
+    },
+    {
+      "name": "Barbell Shoulder Press",
+      "action": "note",
+      "reason": "Not a duplicate of the shipped Barbell Overhead Press, which is standing. The movement under this name is seated on a bench with back support, equipment barbell and bench, the way dumbbell presses already ship as separate seated and standing cards. Title it Seated Barbell Shoulder Press and keep this name as an alias.",
+      "decided": "2026-09-12",
+      "by": "review 2026-09-12"
+    }
+  ]
+}

@@ -18,7 +18,7 @@
  *      by rules nobody agreed to, unattended, twice a day.
  */
 
-import { normalize, isCovered, applyPolicy, loadPolicy, loadLibrary, analyse, snapshot, previousDay, describeDelta } from "./coverage.mjs";
+import { normalize, isCovered, applyPolicy, loadPolicy, loadLibrary, analyse, snapshot, previousDay, describeDelta, applyQueueDecisions, loadQueueDecisions } from "./coverage.mjs";
 
 let pass = 0;
 const failures = [];
@@ -241,6 +241,69 @@ function run(items, policy = POLICY) {
   eq("snapshot.ready matches the report's own ready count", s.ready, readyOnScreen);
   eq("snapshot carries the date it was given", s.date, "2026-01-01");
   ok("snapshot records each reference separately", Object.keys(s.refs).length === r.refs.length);
+}
+
+/* ── queue decisions: skips and reviewer notes ───────────────────────────── */
+
+/* The break these catch: a decision about a single named item that does not
+ * stick. On 2026-09-12, 19 of the top 25 --queue items were names earlier passes
+ * had already judged, re-read and re-rejected every twelve hours. */
+{
+  const DECISIONS = { entries: [
+    { name: "Bench Jump", action: "skip", reason: "lands from above a bench", decided: "2026-09-12" },
+    { name: "Astavakrasana", action: "skip", reason: "an arm balance with a fall risk", decided: "2026-09-08" },
+    { name: "Alternating Deltoid Raise", action: "note", reason: "a front raise, then a side raise, alternating", decided: "2026-09-12" },
+    { name: "Nothing Matches This", action: "skip", reason: "renamed upstream", decided: "2026-09-12" },
+  ] };
+  const r = { missing: [
+    item({ name: "Bench Jump" }),
+    item({ ref: "asanas", name: "Eight-Angle Pose (Astavakrasana)", sanskrit: "Astavakrasana" }),
+    item({ name: "alternating deltoid raise" }),
+    item({ name: "Bench Jump Squat" }),
+  ], notes: [] };
+  applyQueueDecisions(r, DECISIONS);
+
+  eq("a skip leaves the queue", r.missing.some((m) => m.name === "Bench Jump"), false);
+  ok("...and is kept in skipped, with its reason",
+    r.skipped.some((m) => m.name === "Bench Jump" && m.skipReason === "lands from above a bench"));
+  eq("an asana is matched by its sanskrit name", r.missing.some((m) => m.sanskrit === "Astavakrasana"), false);
+  const noted = r.missing.find((m) => m.name === "alternating deltoid raise");
+  ok("a note keeps its item in the queue, matched case-insensitively", !!noted);
+  eq("...and hands the note to whoever writes the card", noted && noted.reviewNote, "a front raise, then a side raise, alternating");
+  const near = r.missing.find((m) => m.name === "Bench Jump Squat");
+  ok("matching is exact: a longer name containing a skipped one stays in the queue", !!near && !near.reviewNote);
+  eq("exactly the two named skips were skipped", r.skipped.length, 2);
+  ok("a decision that matches nothing is reported, never silent",
+    r.notes.some((n) => /Nothing Matches This/.test(n)), JSON.stringify(r.notes));
+}
+
+{
+  const r = { missing: [item({ name: "Goblet Squat" })], notes: [] };
+  applyQueueDecisions(r, null);
+  eq("with no decisions file, nothing is skipped", r.skipped.length, 0);
+  eq("...and nothing leaves the queue", r.missing.length, 1);
+}
+
+{
+  // The daily ratchet must never count a skipped item as ready to write.
+  const r = { library: { total: 2, moves: 2 }, refs: [], notes: [],
+    missing: [item({ name: "Keep Me", decision: "include" }), item({ name: "Skip Me", decision: "include" })] };
+  applyQueueDecisions(r, { entries: [{ name: "Skip Me", action: "skip", reason: "decided against", decided: "2026-09-12" }] });
+  eq("a skipped item is not counted ready", snapshot(r, "2026-01-01").ready, 1);
+}
+
+{
+  const shipped = loadQueueDecisions();
+  ok("a queue-decisions file is shipped", !!shipped && Array.isArray(shipped.entries) && shipped.entries.length > 0);
+  ok("every decision is a skip or a note", !!shipped && shipped.entries.every((e) => ["skip", "note"].includes(e.action)));
+  ok("every decision says why, in a sentence",
+    !!shipped && shipped.entries.every((e) => typeof e.reason === "string" && e.reason.length > 40));
+  ok("every decision is dated", !!shipped && shipped.entries.every((e) => /^\d{4}-\d{2}-\d{2}$/.test(e.decided)));
+  const names = shipped ? shipped.entries.map((e) => e.name.trim().toLowerCase()) : [];
+  eq("no name is decided twice", new Set(names).size, names.length);
+
+  const r = analyse(loadLibrary());
+  ok("no skipped item leaks into the kept list", !r.missing.some((m) => m.decision === "skip"));
 }
 
 /* ── report ──────────────────────────────────────────────────────────────── */
