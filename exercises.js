@@ -18610,6 +18610,70 @@ const BATCH_2026_09_10_EVENING = [
 ];
 EXERCISES.push.apply(EXERCISES, BATCH_2026_09_10_EVENING);
 
+const BATCH_2026_09_11_EVENING = [
+  {
+    "id": "barbell-rear-delt-row",
+    "name": "Barbell Rear Delt Row",
+    "muscleGroup": "Shoulders",
+    "secondaryMuscles": ["Back"],
+    "equipment": ["barbell"],
+    "difficulty": "Intermediate",
+    "cue": "Take a wide overhand grip, bend at the hips, and row the bar to your lower ribs with your elbows flared out wide.",
+    "description": "Hold a barbell with a grip noticeably wider than shoulder-width, hinge forward at the hips until your torso is near-horizontal, and let the bar hang at arm's length. Row it up toward your lower ribs by driving your elbows out and back, squeezing your rear delts and upper back at the top, then lower under control. The wide grip and flared elbows are what shift the work from your lats to your rear delts -- pulling with a narrow grip and tucked elbows just turns this into a regular bent-over row.",
+    "avoidIf": ["lower-back", "shoulder"],
+    "icon": "🏋️",
+    "mechanic": "Compound",
+    "pattern": "Horizontal Pull",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Wide-Grip Barbell Rear Delt Row"],
+    "category": "strength"
+  },
+  {
+    "id": "bench-jump",
+    "name": "Bench Jump",
+    "muscleGroup": "Quads",
+    "secondaryMuscles": ["Glutes", "Calves"],
+    "equipment": ["bench"],
+    "difficulty": "Intermediate",
+    "cue": "Stand alongside a flat bench and hop side to side over it, landing softly on both feet each time.",
+    "description": "Stand next to a flat bench with your feet together, knees slightly bent. Hop sideways over the bench, land on both feet on the far side, and immediately hop back the other way, using your arms for momentum and staying light on landing. Keep the reps quick and continuous rather than pausing to reset between jumps -- a long pause between each hop turns this into two separate broad jumps instead of the fast lateral conditioning drill it's meant to be.",
+    "avoidIf": ["knee", "high-impact", "balance"],
+    "icon": "🤸",
+    "mechanic": "Compound",
+    "pattern": "Conditioning",
+    "force": "Explosive",
+    "unilateral": false,
+    "focus": ["power", "endurance"],
+    "homeFriendly": true,
+    "aliases": ["Lateral Bench Hop", "Side-to-Side Bench Jump"],
+    "category": "conditioning"
+  },
+  {
+    "id": "bent-over-low-pulley-side-lateral",
+    "name": "Bent-Over Low-Pulley Side Lateral",
+    "muscleGroup": "Shoulders",
+    "secondaryMuscles": ["Back"],
+    "equipment": ["cable"],
+    "difficulty": "Intermediate",
+    "cue": "Stand side-on to a low pulley, bend forward slightly, and raise the handle out to your side leading with your elbow.",
+    "description": "Set a cable to the lowest pulley position and stand side-on to it, gripping the handle in the hand farthest from the machine with your torso bent forward slightly. Raise your arm out to the side, leading with your elbow, until it's roughly level with your shoulder, then lower under control before switching sides. The forward bend and low starting angle are what put the cable's resistance across your rear delt through the whole range -- standing upright turns it into a side lateral raise for your side delt instead.",
+    "avoidIf": ["shoulder", "lower-back", "neck"],
+    "icon": "🪽",
+    "mechanic": "Isolation",
+    "pattern": "Horizontal Pull",
+    "force": "Pull",
+    "unilateral": true,
+    "focus": ["hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Low-Pulley Bent-Over Lateral Raise", "Cable Rear Delt Lateral"],
+    "category": "strength"
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_09_11_EVENING);
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { MUSCLE_GROUPS, EQUIPMENT, CONDITIONS, SPORTS, STRETCH_TYPES, EXERCISES };
 }
