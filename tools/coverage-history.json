@@ -93,15 +93,16 @@
     },
     {
       "date": "2026-09-12",
-      "libraryTotal": 649,
-      "libraryMoves": 550,
-      "covered": 343,
-      "absent": 551,
-      "ready": 407,
+      "libraryTotal": 647,
+      "libraryMoves": 549,
+      "covered": 349,
+      "absent": 545,
+      "ready": 390,
+      "skipped": 11,
       "refs": {
         "free-exercise-db": {
-          "covered": 331,
-          "absent": 545
+          "covered": 337,
+          "absent": 539
         },
         "asanas": {
           "covered": 12,
