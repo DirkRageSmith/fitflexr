@@ -39,19 +39,74 @@
     },
     {
       "date": "2026-09-09",
-      "libraryTotal": 631,
-      "libraryMoves": 535,
-      "covered": 319,
-      "absent": 575,
-      "ready": 431,
+      "libraryTotal": 634,
+      "libraryMoves": 536,
+      "covered": 323,
+      "absent": 571,
+      "ready": 427,
       "refs": {
         "free-exercise-db": {
-          "covered": 309,
-          "absent": 567
+          "covered": 311,
+          "absent": 565
         },
         "asanas": {
-          "covered": 10,
-          "absent": 8
+          "covered": 12,
+          "absent": 6
+        }
+      }
+    },
+    {
+      "date": "2026-09-10",
+      "libraryTotal": 640,
+      "libraryMoves": 541,
+      "covered": 335,
+      "absent": 559,
+      "ready": 415,
+      "refs": {
+        "free-exercise-db": {
+          "covered": 323,
+          "absent": 553
+        },
+        "asanas": {
+          "covered": 12,
+          "absent": 6
+        }
+      }
+    },
+    {
+      "date": "2026-09-11",
+      "libraryTotal": 646,
+      "libraryMoves": 547,
+      "covered": 341,
+      "absent": 553,
+      "ready": 409,
+      "refs": {
+        "free-exercise-db": {
+          "covered": 329,
+          "absent": 547
+        },
+        "asanas": {
+          "covered": 12,
+          "absent": 6
+        }
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "libraryTotal": 647,
+      "libraryMoves": 549,
+      "covered": 349,
+      "absent": 545,
+      "ready": 390,
+      "skipped": 11,
+      "refs": {
+        "free-exercise-db": {
+          "covered": 337,
+          "absent": 539
+        },
+        "asanas": {
+          "covered": 12,
+          "absent": 6
         }
       }
     }

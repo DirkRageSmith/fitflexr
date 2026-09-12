@@ -258,7 +258,7 @@ export function analyse(lib) {
     for (const a of asanas.entries) {
       const candidates = [a.english, a.sanskrit].filter(Boolean);
       const known = a.english ? isCovered(a.english, librarySets) : null;
-      const sanskritKnown = isCovered(a.sanskrit, librarySets);
+      const sanskritKnown = isCovered(a.sanskritClean || a.sanskrit, librarySets);
       if (known === true || sanskritKnown) { resolved.push({ ...a, covered: true }); continue; }
       if (a.english) resolved.push({ ...a, covered: false });
       else unresolved.push(a);
@@ -295,6 +295,7 @@ export function analyse(lib) {
   report.missing.sort((a, b) => (a.ref === b.ref ? String(a.name).localeCompare(String(b.name)) : a.ref.localeCompare(b.ref)));
 
   applyPolicy(report);
+  applyQueueDecisions(report);
   return report;
 }
 
@@ -396,6 +397,57 @@ export function loadPolicy() {
   return raw;
 }
 
+/* ── queue decisions: what a reviewer or a pass already decided ──────────────
+ *
+ * Added 2026-09-12. The inclusion policy above is Matt's consent: which KINDS of
+ * thing this library may take from the world. This is narrower and lower —
+ * decisions about single NAMED items, made while reviewing or writing cards —
+ * and before it existed every one of them evaporated. On 2026-09-12, 19 of the
+ * top 25 --queue items were names earlier passes had already judged and were
+ * re-reading and re-rejecting every twelve hours, which is why passes wrote 3
+ * cards where 10 was the intended size.
+ *
+ *   skip  leaves the queue for good; kept in report.skipped with its reason
+ *   note  stays in the queue and carries `reviewNote` to whoever writes the card
+ *
+ * Matching is EXACT and case-insensitive on the queue name, or on the sanskrit
+ * name for asanas. Never fuzzy: a skip that swallowed a near-miss would bury real
+ * work silently, whereas a decision that matches nothing is reported in the
+ * notes, so a renamed reference entry fails visibly instead.
+ */
+const DECISIONS = join(HERE, "queue-decisions.json");
+
+export function loadQueueDecisions() {
+  if (!existsSync(DECISIONS)) return null;
+  const raw = JSON.parse(readFileSync(DECISIONS, "utf8"));
+  if (!Array.isArray(raw.entries)) throw new Error("queue-decisions.json has no entries array");
+  return raw;
+}
+
+export function applyQueueDecisions(report, decisions = loadQueueDecisions()) {
+  report.skipped = [];
+  if (!decisions) return report;
+  const key = (s) => String(s || "").trim().toLowerCase();
+  const byName = new Map(decisions.entries.map((e) => [key(e.name), e]));
+  const used = new Set();
+  const kept = [];
+  for (const m of report.missing) {
+    const hit = byName.get(key(m.name)) || (m.sanskrit ? byName.get(key(m.sanskrit)) : undefined);
+    if (!hit) { kept.push(m); continue; }
+    used.add(key(hit.name));
+    if (hit.action === "skip") report.skipped.push({ ...m, decision: "skip", skipReason: hit.reason });
+    else kept.push({ ...m, reviewNote: hit.reason });
+  }
+  report.missing = kept;
+  const unmatched = decisions.entries.filter((e) => !used.has(key(e.name)));
+  if (unmatched.length)
+    report.notes.push(
+      `${unmatched.length} queue decision(s) match nothing in the queue — the card was written, or a ` +
+      `reference refresh renamed the entry: ${unmatched.map((e) => e.name).join(", ")}`
+    );
+  return report;
+}
+
 /* ── history: making "better every day" a number, not a claim ────────────────
  *
  * A pass that says "I did work" and a pass that says "nothing to do" look the
@@ -410,7 +462,13 @@ export function loadPolicy() {
 
 const HISTORY = join(HERE, "coverage-history.json");
 
-export function snapshot(report, today = new Date().toISOString().slice(0, 10)) {
+/** Local calendar date (not UTC): a 19:00 Pacific pass is still "today" here,
+ *  where `toISOString().slice(0, 10)` would already read as tomorrow. */
+function localDate(d = new Date()) {
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+}
+
+export function snapshot(report, today = localDate()) {
   return {
     date: today,
     libraryTotal: report.library.total,
@@ -418,6 +476,7 @@ export function snapshot(report, today = new Date().toISOString().slice(0, 10)) 
     covered: report.refs.reduce((n, r) => n + r.covered, 0),
     absent: report.refs.reduce((n, r) => n + r.absent, 0),
     ready: report.missing.filter((m) => m.equipmentResolved && m.name && m.decision !== "review").length,
+    skipped: (report.skipped || []).length,
     refs: Object.fromEntries(report.refs.map((r) => [r.id, { covered: r.covered, absent: r.absent }])),
   };
 }
@@ -521,6 +580,8 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === resolve(process.argv[1
         console.log(`  ${id.padEnd(34)} ${n}`);
       console.log(`  ${"→ excluded".padEnd(34)} ${r.excluded.length}`);
     }
+    if (r.skipped && r.skipped.length)
+      console.log(`\nQUEUE DECISIONS  ${r.skipped.length} skipped by review decision · tools/queue-decisions.json`);
 
     const review = r.missing.filter((m) => m.decision === "review");
     const actionable = r.missing.filter((m) => m.equipmentResolved && m.name && m.decision !== "review");
@@ -532,7 +593,7 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === resolve(process.argv[1
       console.log(`  ${String(c).padEnd(24)} ${n}`);
     console.log("\n  first 8 of the queue:");
     for (const m of actionable.slice(0, 8))
-      console.log(`    ${String(m.name).padEnd(40)} [${(m.equipment || []).join(", ") || "?"}]`);
+      console.log(`    ${String(m.name).padEnd(40)} [${(m.equipment || []).join(", ") || "?"}]${m.reviewNote ? "  · has a review note" : ""}`);
     if (r.notes.length) {
       console.log("\nNOTES");
       for (const n of r.notes) console.log("  · " + n);

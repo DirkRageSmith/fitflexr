@@ -209,7 +209,8 @@ const EXERCISES = [
     "homeFriendly": false,
     "aliases": [
       "Flat Bench",
-      "BB Bench Press"
+      "BB Bench Press",
+      "Powerlifting Bench Press"
     ],
     "category": "strength"
   },
@@ -2284,7 +2285,8 @@ const EXERCISES = [
     ],
     "homeFriendly": true,
     "aliases": [
-      "DB Bent Row"
+      "DB Bent Row",
+      "Bent-Over Two-Dumbbell Row"
     ],
     "category": "strength"
   },
@@ -2567,7 +2569,8 @@ const EXERCISES = [
     ],
     "homeFriendly": false,
     "aliases": [
-      "Landmine Row"
+      "Landmine Row",
+      "Bent-Over Two-Arm Long Bar Row"
     ],
     "category": "strength"
   },
@@ -8112,7 +8115,8 @@ const EXERCISES = [
     ],
     "homeFriendly": false,
     "aliases": [
-      "Back Squat"
+      "Back Squat",
+      "Barbell Full Squat"
     ],
     "category": "strength"
   },
@@ -8175,7 +8179,8 @@ const EXERCISES = [
     ],
     "homeFriendly": false,
     "aliases": [
-      "Box Squat"
+      "Box Squat",
+      "Barbell Squat to a Bench"
     ],
     "category": "strength"
   },
@@ -17517,7 +17522,7 @@ const STRETCHES_MORE = [
     "unilateral": false,
     "focus": ["mobility"],
     "homeFriendly": true,
-    "aliases": ["Vasisthasana"],
+    "aliases": ["Vasisthasana", "Vasishtasana"],
     "category": "warmup",
     "sports": ["yoga"],
     "hold": "2 × 30s each side",
@@ -18289,6 +18294,429 @@ const ASANAS_BATCH_2026_09_08 = [
   }
 ];
 EXERCISES.push.apply(EXERCISES, ASANAS_BATCH_2026_09_08);
+
+// tools/coverage.mjs --queue 10 re-run 2026-09-09 morning (Bellows pass), after fixing a real
+// bug it found: isCovered() was checking the RAW `sanskrit` field ("Siddhasana (men), Siddha
+// Yoni Asana (women)") instead of `sanskritClean`, so Siddhasana kept re-appearing in the queue
+// after it was already written 2026-09-08 — a fresh instance of "checking the label instead of
+// the property is not a test" (OPERATOR.md section 5). Fixed in tools/coverage.mjs; 57 coverage tests
+// still pass.
+//
+// Of the ten re-queued items, three written, two skipped for the reasons written per-card below.
+// [Review 2026-09-12: the first of the three, Straight-Arm Side Plank (yoga-vasishtasana), was
+// dropped before shipping. It is the pose already shipped as yoga-side-plank-pose, "Side Plank
+// Pose": the reference spells it Vasishtasana and the shipped alias said Vasisthasana, so coverage
+// could not see the match. That card now carries both spellings.]
+// Astavakrasana, Gorakshasana, Durvasasana, Kaundinyasana and full Matsyendrasana are still
+// absent on purpose, unchanged from 2026-09-08's reasoning (see block above) -- they were still
+// in this queue and still carry the same fall/joint-load/ambiguous-technique risk.
+//
+// Marichyasana (Marichi's Pose) is ALSO skipped, newly, for the same class of reason as
+// Gorakshasana: it names a family (Marichyasana A/B/C/D) with materially different forms --
+// some a plain seated forward fold with one knee bent, others adding a bind with the arm
+// wrapped around the shin and behind the back -- and the source entry does not say which. A
+// wrong bind description is a real strain risk, and there is no way to tell which variant
+// "Marichyasana" unqualified is supposed to mean here.
+const ASANAS_STRETCHES_BATCH_2026_09_09 = [
+  {
+    "id": "three-quarter-sit-up",
+    "name": "3/4 Sit-Up",
+    "muscleGroup": "Core/Abs",
+    "secondaryMuscles": [],
+    "equipment": ["bodyweight"],
+    "difficulty": "Beginner",
+    "cue": "Curl up about three-quarters of the way to sitting, then stop — don't go all the way upright.",
+    "description": "Lie on your back with your knees bent, feet flat, and arms crossed over your chest. Curl your torso up until you're roughly three-quarters of the way to sitting — further than a crunch, short of a full sit-up — then lower back down with control. Lead with your chest rather than pulling with your neck, and keep the movement slow enough that you could stop anywhere in the range.",
+    "avoidIf": ["lower-back", "neck"],
+    "icon": "💪",
+    "mechanic": "Isolation",
+    "pattern": "Core",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["strength", "endurance"],
+    "homeFriendly": true,
+    "aliases": [],
+    "category": "strength"
+  },
+  {
+    "id": "ninety-ninety-hamstring",
+    "name": "90/90 Hamstring Stretch",
+    "muscleGroup": "Hamstrings",
+    "secondaryMuscles": [],
+    "equipment": ["bodyweight"],
+    "difficulty": "Beginner",
+    "cue": "Hold the thigh still at 90/90, then straighten the knee — don't change the hip angle.",
+    "description": "Lie on your back with one leg flat on the floor. Raise the other leg so your hip and knee are both bent to about 90 degrees — thigh pointing straight up, shin pointing forward — and hold the back of that thigh with both hands to keep it fixed there. Slowly straighten the knee, letting the foot rise toward the ceiling, until you feel the stretch in the hamstring, then bend the knee back to 90/90 and repeat. The hip doesn't move at any point — only the knee opens and closes.",
+    "avoidIf": ["lower-back", "hip"],
+    "icon": "🦵",
+    "mechanic": "Isolation",
+    "pattern": "Stretch",
+    "force": "Static",
+    "unilateral": true,
+    "focus": ["mobility"],
+    "homeFriendly": true,
+    "aliases": ["90/90 Hamstring"],
+    "category": "cooldown",
+    "sports": ["football", "track-field"],
+    "hold": "2 × 5 reps each side",
+    "stretchType": "static"
+  }
+];
+EXERCISES.push.apply(EXERCISES, ASANAS_STRETCHES_BATCH_2026_09_09);
+
+// tools/coverage.mjs --queue 10/20 re-run 2026-09-09 evening (Bellows pass). The six
+// previously-skipped asanas (Astavakrasana, Gorakshasana, Durvasasana, Kaundinyasana,
+// Matsyendrasana, Marichyasana) are still in the queue, unchanged, for the same reasons
+// already on record in the block above -- not re-litigated. The rest of the top ten was
+// free-exercise-db entries, not more yoga: Adductor/Groin (name alone doesn't say which
+// groin stretch -- butterfly, side-lunge and standing-groin are all materially different
+// and the source gives no way to tell) and Alternate Leg Diagonal Bound (a plyometric
+// bounding drill with real landing-mechanics variation between sources -- same class of
+// risk as an ambiguous yoga bind) are skipped for the same reason: not knowing the one
+// intended technique. Alternating Deltoid Raise is skipped too -- "deltoid raise" alone
+// doesn't say front, lateral or rear, and the deck already ships a bilateral
+// Dumbbell Lateral Raise, so guessing wrong would either misdescribe the move or quietly
+// duplicate it.
+//
+// Three written, all single well-documented movements: All Fours Quad Stretch (distinct
+// support position from the two quad stretches already shipped -- standing and prone),
+// Alternating Cable Shoulder Press, and Alternating Renegade Row.
+const BATCH_2026_09_09_EVENING = [
+  {
+    "id": "static-all-fours-quad",
+    "name": "All Fours Quad Stretch",
+    "muscleGroup": "Quads",
+    "secondaryMuscles": [],
+    "equipment": ["bodyweight"],
+    "difficulty": "Intermediate",
+    "cue": "Keep your support knee stacked under your hip as you draw your heel toward your glute.",
+    "description": "Start on your hands and knees. Shift your weight onto one hand and the opposite-side knee, then reach back with your free hand to grasp the same-side foot or ankle. Draw the heel gently toward your glute, keeping the thigh pointed straight down rather than winging out to the side. Keep your hips level and your support knee stacked under your hip the whole time -- that's what keeps the stretch in the front of the thigh instead of the low back. Hold, release, then switch sides.",
+    "avoidIf": ["knee", "wrist"],
+    "icon": "🦵",
+    "mechanic": "Isolation",
+    "pattern": "Stretch",
+    "force": "Static",
+    "unilateral": true,
+    "focus": ["mobility"],
+    "homeFriendly": true,
+    "aliases": ["Quadruped Quad Stretch", "Kneeling Quad Stretch"],
+    "category": "cooldown",
+    "sports": ["football", "track-field"],
+    "hold": "2 × 30s each side",
+    "stretchType": "static"
+  },
+  {
+    "id": "alternating-cable-shoulder-press",
+    "name": "Alternating Cable Shoulder Press",
+    "muscleGroup": "Shoulders",
+    "secondaryMuscles": ["Triceps"],
+    "equipment": ["cable"],
+    "difficulty": "Beginner",
+    "cue": "Press one handle straight overhead while the other stays parked at shoulder height.",
+    "description": "Stand between two low cable pulleys, holding a handle in each hand at shoulder height with palms facing in. Press one arm straight overhead while the other holds steady at your shoulder, then lower with control and press the other side. Keep your ribs down and your core braced throughout -- the cable pulls down and slightly forward, so the real work is resisting that pull without arching your low back.",
+    "avoidIf": ["shoulder", "lower-back"],
+    "icon": "🏋️",
+    "mechanic": "Compound",
+    "pattern": "Vertical Push",
+    "force": "Push",
+    "unilateral": true,
+    "focus": ["strength", "hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Standing Alternating Cable Press"],
+    "category": "strength"
+  },
+  {
+    "id": "alternating-renegade-row",
+    "name": "Alternating Renegade Row",
+    "muscleGroup": "Back",
+    "secondaryMuscles": ["Core/Abs", "Shoulders"],
+    "equipment": ["kettlebell"],
+    "difficulty": "Advanced",
+    "cue": "Keep your hips square to the floor as you row -- don't let them twist toward the lifting arm.",
+    "description": "Start in a push-up position with a hand gripping each kettlebell handle, feet set wide for a stable base. Row one kettlebell straight up to your ribs, keeping your elbow close to your body, then lower it back to the floor with control and row the other side. Brace your core hard and keep your hips square to the ground the whole time -- the row wants to twist your torso open, and resisting that is most of what this exercise trains.",
+    "avoidIf": ["wrist", "shoulder", "lower-back"],
+    "icon": "🚣",
+    "mechanic": "Compound",
+    "pattern": "Horizontal Pull",
+    "force": "Pull",
+    "unilateral": true,
+    "focus": ["strength", "endurance"],
+    "homeFriendly": true,
+    "aliases": ["Renegade Row"],
+    "category": "strength"
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_09_09_EVENING);
+
+// Bellows pass 2026-09-10 morning. Rung 5 (FitFlexr cards), gap-driven per
+// coverage.mjs --queue 15 run from this branch (main is still one commit behind
+// it, so the sanskritClean fix and both prior batches stay in view for dedup).
+// The six previously-skipped asanas and Adductor/Groin and Alternate Leg Diagonal
+// Bound reappeared unchanged -- not re-litigated. Alternating Deltoid Raise also
+// reappeared and was skipped again for the same reason as last time: "deltoid
+// raise" alone doesn't say front/lateral/rear and the deck already ships a
+// bilateral Dumbbell Lateral Raise. Anti-Gravity Press (barbell) was skipped new
+// this pass -- the name is not a standard lift and I could not confirm the exact
+// setup with confidence, so it goes here rather than being guessed. Band Hip
+// Adductions was also skipped: it is a real, simple movement, but the schema has
+// no "Hip Adduction" pattern (only "Hip Abduction," which is the opposite
+// movement) and no adductors muscle group, so tagging it correctly would mean
+// inventing a schema value rather than authoring content -- a decision, not a
+// card, so it is left for a session that can also touch validate.js.
+//
+// Three written, all single well-documented movements: Alternating Hang Clean
+// (a standard kettlebell drill, distinct from the bilateral Kettlebell Clean
+// already shipped), Backward Medicine Ball Throw (distinct from the forward Wall
+// Ball and downward Slam already shipped), and Barbell Ab Rollout (same
+// mechanic as the shipped Ab-Wheel Rollouts, loaded bar instead of a wheel).
+// [Review 2026-09-12: the rollout said an empty bar would do. The plates are what it rolls on,
+// so it now says to put light round ones on.]
+const BATCH_2026_09_10_MORNING = [
+  {
+    "id": "alternating-hang-clean",
+    "name": "Alternating Hang Clean",
+    "muscleGroup": "Full Body/Cardio",
+    "secondaryMuscles": ["Glutes", "Shoulders"],
+    "equipment": ["kettlebell"],
+    "difficulty": "Intermediate",
+    "cue": "Snap your hips to send the bell up, then punch your hand through to meet it in the rack.",
+    "description": "Hold one kettlebell hanging in front of your thighs. Hinge slightly, then explosively snap your hips forward to drive the bell upward, letting it float weightless for a moment before you pull your elbow up and punch your hand through so it rolls into the rack position at your shoulder. Lower it back to the hang with control, then hike it into your other hand and clean it on that side. The power comes from the hip snap, not an arm curl -- a clean that's mostly bicep means the hips didn't do their job.",
+    "avoidIf": ["lower-back", "wrist", "shoulder"],
+    "icon": "🔔",
+    "mechanic": "Compound",
+    "pattern": "Hinge",
+    "force": "Explosive",
+    "unilateral": true,
+    "focus": ["power"],
+    "homeFriendly": true,
+    "aliases": ["Alternating Kettlebell Clean", "Hand-to-Hand Kettlebell Clean"],
+    "category": "power"
+  },
+  {
+    "id": "backward-medicine-ball-throw",
+    "name": "Backward Medicine Ball Throw",
+    "muscleGroup": "Full Body/Cardio",
+    "secondaryMuscles": ["Glutes", "Hamstrings", "Shoulders"],
+    "equipment": ["medicine-ball"],
+    "difficulty": "Intermediate",
+    "cue": "Squat down holding the ball low, then explosively extend your hips and throw it backward over your head.",
+    "description": "Stand holding a medicine ball with both hands, feet shoulder-width apart. Squat down and let the ball swing between your knees, then explosively drive your hips forward and extend your whole body, releasing the ball backward and overhead as you stand up. Let your momentum carry you slightly onto your toes -- the throw comes from the hip extension, not an arm swing. Turn and check where it lands before you go get it, and use a slam-proof or turf ball with clear space behind you.",
+    "avoidIf": ["lower-back", "shoulder"],
+    "icon": "🚀",
+    "mechanic": "Compound",
+    "pattern": "Conditioning",
+    "force": "Explosive",
+    "unilateral": false,
+    "focus": ["power"],
+    "homeFriendly": false,
+    "aliases": ["Overhead Backward Throw", "Scoop Toss"],
+    "category": "power"
+  },
+  {
+    "id": "barbell-ab-rollout",
+    "name": "Barbell Ab Rollout",
+    "muscleGroup": "Core/Abs",
+    "secondaryMuscles": ["Shoulders"],
+    "equipment": ["barbell"],
+    "difficulty": "Advanced",
+    "cue": "Roll the bar out as far as you can control without your lower back sagging, then pull it back with your abs.",
+    "description": "Slide a light, round plate onto each end of a barbell so it can roll, then kneel behind it gripping it shoulder-width. Roll it forward, extending your body as far as you can while keeping your back flat and your abs braced, then pull it back in to return to kneeling. Only go as far as you can control -- the moment your lower back arches and sags toward the floor is the moment the rollout stops working your abs and starts loading your spine instead.",
+    "avoidIf": ["lower-back", "shoulder", "wrist"],
+    "icon": "⭕",
+    "mechanic": "Compound",
+    "pattern": "Core",
+    "force": "Static",
+    "unilateral": false,
+    "focus": ["strength"],
+    "homeFriendly": false,
+    "aliases": ["Barbell Rollout"],
+    "category": "strength"
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_09_10_MORNING);
+
+// [Review 2026-09-12: the hack squat and the behind-the-back shrug never said how the bar gets
+// behind you, and now do. The head-on-bench rear delt raise described lying chest-down on a
+// steep incline, a different setup that shifts the work toward the side of the shoulder; it now
+// describes the movement its name means, bent over with the forehead resting on the bench.]
+const BATCH_2026_09_10_EVENING = [
+  {
+    "id": "barbell-hack-squat",
+    "name": "Barbell Hack Squat",
+    "muscleGroup": "Quads",
+    "secondaryMuscles": ["Glutes"],
+    "equipment": ["barbell"],
+    "difficulty": "Intermediate",
+    "cue": "Grip the bar behind your legs and squat straight down, keeping it sliding down the back of your calves.",
+    "description": "Set a loaded barbell on the floor just behind your heels, squat down with your chest up to grip it shoulder-width with your palms facing back, and stand up so it rests against the backs of your thighs. Squat straight back down with your torso upright, tracking the bar down the backs of your legs until your thighs are parallel to the floor, then drive back up through your heels. Keeping the bar close against your legs the whole way is what keeps the load on your quads instead of your lower back.",
+    "avoidIf": ["knee", "lower-back"],
+    "icon": "🏋️",
+    "mechanic": "Compound",
+    "pattern": "Squat",
+    "force": "Push",
+    "unilateral": false,
+    "focus": ["strength", "hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Behind-the-Back Barbell Squat"],
+    "category": "strength"
+  },
+  {
+    "id": "barbell-shrug-behind-the-back",
+    "name": "Barbell Shrug Behind The Back",
+    "muscleGroup": "Back",
+    "secondaryMuscles": ["Shoulders"],
+    "equipment": ["barbell"],
+    "difficulty": "Beginner",
+    "cue": "Hold the bar behind you and shrug straight up without rolling your shoulders.",
+    "description": "Take a barbell off a rack set at about hip height by standing with your back to it, gripping it with your palms facing back and your hands just wider than your shoulders, then stepping forward so it hangs at arm's length behind your thighs. Shrug your shoulders straight up toward your ears, squeeze your traps at the top, then lower under control. Reaching back for the bar forces your shoulders into a position a front shrug doesn't -- stop if you feel it pulling at the front of the shoulder rather than the traps.",
+    "avoidIf": ["shoulder", "neck", "wrist"],
+    "icon": "⬆️",
+    "mechanic": "Isolation",
+    "pattern": "Carry",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Behind-the-Back Shrug"],
+    "category": "strength"
+  },
+  {
+    "id": "bent-over-dumbbell-rear-delt-raise-with-head-on-bench",
+    "name": "Bent Over Dumbbell Rear Delt Raise With Head On Bench",
+    "muscleGroup": "Shoulders",
+    "secondaryMuscles": ["Back"],
+    "equipment": ["dumbbell", "bench"],
+    "difficulty": "Beginner",
+    "cue": "Hinge over until your forehead rests on the bench, then raise both dumbbells straight out to your sides.",
+    "description": "Set an incline bench so the top of its pad is about as high as your hips, stand facing it with a dumbbell in each hand, and hinge forward with a flat back until your forehead rests on the pad and your torso is roughly parallel to the floor. Let the dumbbells hang straight down with your palms facing each other, then raise both arms out to your sides until they are level with the floor, and lower with control. Resting your head keeps your torso from rocking, so the lift has to come from your rear delts rather than momentum.",
+    "avoidIf": ["shoulder", "neck"],
+    "icon": "🪽",
+    "mechanic": "Isolation",
+    "pattern": "Horizontal Pull",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["hypertrophy"],
+    "homeFriendly": true,
+    "aliases": ["Head-Supported Rear Delt Raise"],
+    "category": "strength"
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_09_10_EVENING);
+
+// [Review 2026-09-12: this batch ships two of its three cards. Bench Jump was dropped: it
+// described fast two-footed sideways hops over a full-height bench, a trip-and-fall drill
+// labelled Intermediate and home-friendly, and not the movement the name refers to. It is
+// recorded as a skip in tools/queue-decisions.json so no pass writes it again. The rear delt
+// row now pulls to the upper chest (the lower ribs are the lat path the card itself warned
+// against), and the low-pulley lateral now says to bend far over, which its own last sentence
+// said was the point.]
+const BATCH_2026_09_11_EVENING = [
+  {
+    "id": "barbell-rear-delt-row",
+    "name": "Barbell Rear Delt Row",
+    "muscleGroup": "Shoulders",
+    "secondaryMuscles": ["Back"],
+    "equipment": ["barbell"],
+    "difficulty": "Intermediate",
+    "cue": "Take a wide overhand grip, bend at the hips, and row the bar to your upper chest with your elbows flared out wide.",
+    "description": "Hold a barbell with a grip noticeably wider than shoulder-width, hinge forward at the hips until your torso is near-horizontal, and let the bar hang at arm's length. Keeping your upper arms out wide at right angles to your torso, row the bar up toward your upper chest and squeeze your rear delts at the top, then lower under control. The wide grip and flared elbows are what shift the work from your lats to your rear delts -- pulling toward your stomach with tucked elbows just turns this into a regular bent-over row.",
+    "avoidIf": ["lower-back", "shoulder"],
+    "icon": "🏋️",
+    "mechanic": "Compound",
+    "pattern": "Horizontal Pull",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Wide-Grip Barbell Rear Delt Row"],
+    "category": "strength"
+  },
+  {
+    "id": "bent-over-low-pulley-side-lateral",
+    "name": "Bent-Over Low-Pulley Side Lateral",
+    "muscleGroup": "Shoulders",
+    "secondaryMuscles": ["Back"],
+    "equipment": ["cable"],
+    "difficulty": "Intermediate",
+    "cue": "Stand side-on to a low pulley, hinge over until your chest is nearly parallel to the floor, and raise the handle out to your side leading with your elbow.",
+    "description": "Set a cable to the lowest pulley position and stand side-on to it, gripping the handle in the hand farthest from the cable, then hinge at the hips until your torso is nearly parallel to the floor. Raise your arm out to the side, leading with your elbow, until it is roughly level with your shoulder, then lower under control before switching sides. Staying bent over is what puts the cable's resistance across your rear delt through the whole range -- standing up turns it into a side lateral raise for your side delt instead.",
+    "avoidIf": ["shoulder", "lower-back", "neck"],
+    "icon": "🪽",
+    "mechanic": "Isolation",
+    "pattern": "Horizontal Pull",
+    "force": "Pull",
+    "unilateral": true,
+    "focus": ["hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Low-Pulley Bent-Over Lateral Raise", "Cable Rear Delt Lateral"],
+    "category": "strength"
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_09_11_EVENING);
+
+const BATCH_2026_09_12_MORNING = [
+  {
+    "id": "barbell-side-bend",
+    "name": "Barbell Side Bend",
+    "muscleGroup": "Core/Abs",
+    "secondaryMuscles": ["Back"],
+    "equipment": ["barbell"],
+    "difficulty": "Intermediate",
+    "cue": "Rack the bar across your shoulders and bend straight to one side, then the other.",
+    "description": "Stand with a barbell resting across your upper back like a squat, feet shoulder-width apart, hands lightly holding the bar for balance. Bend directly sideways from the waist as far as you comfortably can, then squeeze your obliques to pull back to center and bend the other way. Move slowly in a single side-to-side plane -- rocking the bar forward or twisting turns this into spinal loading instead of an oblique stretch-and-squeeze.",
+    "avoidIf": ["lower-back", "shoulder"],
+    "icon": "🏋️",
+    "mechanic": "Isolation",
+    "pattern": "Core",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["strength"],
+    "homeFriendly": false,
+    "aliases": ["Barbell Obliques Bend"],
+    "category": "strength"
+  },
+  {
+    "id": "barbell-side-split-squat",
+    "name": "Barbell Side Split Squat",
+    "muscleGroup": "Quads",
+    "secondaryMuscles": ["Glutes", "Hamstrings"],
+    "equipment": ["barbell"],
+    "difficulty": "Advanced",
+    "cue": "Bar on your back, step wide to one side and sit into that hip while keeping the other leg straight.",
+    "description": "Rest a barbell across your upper back as in a normal squat, feet set wide apart. Shift your weight to one side, bending that knee and pushing your hips back and down while keeping the other leg straight with that foot flat, then drive back up through the bent leg to return to center. The straight leg's job is to stay long and anchored -- letting it bend turns this into a regular wide-stance squat instead of the lateral, one-side-at-a-time hip and groin stretch it's meant to be.",
+    "avoidIf": ["knee", "balance", "hip", "lower-back"],
+    "icon": "🏋️",
+    "mechanic": "Compound",
+    "pattern": "Lunge",
+    "force": "Push",
+    "unilateral": true,
+    "focus": ["strength", "mobility"],
+    "homeFriendly": false,
+    "aliases": ["Barbell Cossack Squat", "Loaded Lateral Squat"],
+    "category": "strength"
+  },
+  {
+    "id": "barbell-bradford-press",
+    "name": "Barbell Bradford Press",
+    "muscleGroup": "Shoulders",
+    "secondaryMuscles": ["Triceps"],
+    "equipment": ["barbell"],
+    "difficulty": "Advanced",
+    "cue": "Press the bar just above your head and rock it front-to-back without ever locking out overhead.",
+    "description": "Hold a barbell at shoulder height with an overhand grip. Press it up just above your head, then lower it behind your head to your upper traps, then press it back up and lower it to the front of your shoulders -- rocking it front-to-back in short, controlled arcs without ever fully locking your elbows out overhead. Keeping the bar low and moving continuously is what keeps constant tension on the shoulders through a wider range than a normal press -- go light, since the behind-the-head position asks a lot of shoulder mobility.",
+    "avoidIf": ["shoulder", "neck", "wrist"],
+    "icon": "🏋️",
+    "mechanic": "Compound",
+    "pattern": "Vertical Push",
+    "force": "Push",
+    "unilateral": false,
+    "focus": ["strength", "hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Rocky Press", "Bradford Press", "Bradford/Rocky Presses"],
+    "category": "strength"
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_09_12_MORNING);
 
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { MUSCLE_GROUPS, EQUIPMENT, CONDITIONS, SPORTS, STRETCH_TYPES, EXERCISES };
