@@ -9,9 +9,16 @@ product brainstorming and bulk content. If you are an AI reading this: this file
 contract. Follow the schema in §5 exactly; don't invent fields or relax the safety
 rules in §9.
 
-**Status as of 2026-09-08:** live PWA at <https://dirkragesmith.github.io/fitflexr/>,
-sw cache **v35**. **626 exercises — 535 training moves + 91 stretches.**
+**Status as of 2026-09-12:** live PWA at <https://dirkragesmith.github.io/fitflexr/>,
+sw cache **v43**. **647 exercises — 549 training moves + 98 stretches.**
 
+- **2026-09-12 — the first Bellows batches through review: 16 of 18 cards shipped.** Six
+  stacked `bellows/*` branches (09-09 → 09-12) were read card by card in an Opus session.
+  Two were dropped: a duplicate of Side Plank Pose under another spelling, and a "Bench
+  Jump" that described a different, riskier drill. Six how-tos were corrected that no
+  automated check had flagged. `tools/pending.mjs` now reviews a stacked branch against
+  its parent, and `tools/queue-decisions.json` records skips and reviewer notes so a judged
+  queue item stops coming back. 24 + 74 + 34 tests.
 - **2026-09-08 — eleven new training moves, written by Claude.** Drafted from
   `tools/coverage.mjs`'s queue, not generated: a local model given exercise NAMES passed
   every schema and contract check while describing the WRONG MOVEMENT two times in three
