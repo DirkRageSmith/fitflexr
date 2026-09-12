@@ -58,12 +58,11 @@ export function pendingBranches() {
 /* Records added by a branch, read from ITS version of exercises.js rather than
  * from the diff. A textual diff of a 17,000-line data file is unreadable and
  * would put the reviewer back in the mechanics. */
-export function addedRecords(branch) {
-  const before = parseAt("main");
+export function addedRecords(branch, base = "main") {
+  const before = parseAt(base);
   const after = parseAt(branch);
   if (!before || !after) return null;
-  const had = new Set(before.map((e) => e.id));
-  return after.filter((e) => !had.has(e.id));
+  return diffRecords(before, after).added;
 }
 
 /* PARSE, NEVER EXECUTE — and here that is not pedantry.
@@ -158,27 +157,140 @@ export function checkRecord(rec, libraryNames) {
   return flags;
 }
 
+/* ── stacked branches ────────────────────────────────────────────────────────
+ *
+ * Bellows builds each pass's branch on top of the previous pass's tip, so the
+ * unreviewed work is a STACK, not a set of siblings. The first version of this
+ * sheet diffed every branch against main, which counted each card once per
+ * branch above it: on 2026-09-12, six stacked branches holding 18 cards read
+ * "63 new record(s), 6 with blocking flags" — for one flagged card. So each
+ * branch is now reviewed against its nearest pending ancestor and shows only
+ * what IT added, changed or dropped.
+ */
+
+/** Field-order-insensitive identity, so a re-serialised record is not "changed". */
+const canon = (r) => JSON.stringify(Object.keys(r).sort().reduce((o, k) => { o[k] = r[k]; return o; }, {}));
+
+export function diffRecords(before, after) {
+  const was = new Map((before || []).map((r) => [r.id, r]));
+  const now = new Set((after || []).map((r) => r.id));
+  const added = [];
+  const changed = [];
+  for (const r of after || []) {
+    if (!was.has(r.id)) added.push(r);
+    else if (canon(was.get(r.id)) !== canon(r)) changed.push(r);
+  }
+  return { added, changed, removed: (before || []).filter((r) => !now.has(r.id)) };
+}
+
+/** The closest pending branch this one was built on, or null when it was cut from
+ *  main. `isAncestor(p, q)` is true when p is an ancestor of q. */
+export function nearestAncestor(branch, pending, isAncestor) {
+  const below = pending.filter((p) => p !== branch && isAncestor(p, branch));
+  return below.find((a) => below.every((o) => o === a || isAncestor(o, a))) || null;
+}
+
+/** Bottom of each stack first, so the sheet reads in the order the work was done. */
+export function stackOrder(pending, isAncestor) {
+  const depth = (b) => pending.filter((p) => p !== b && isAncestor(p, b)).length;
+  return [...pending].sort((a, b) => depth(a) - depth(b) || a.localeCompare(b));
+}
+
+const namesOf = (records) => records.flatMap((e) => [normalize(e.name), ...(e.aliases || []).map(normalize)]);
+
+/* A rewritten record keeps its id, so its own earlier version is in the base and
+ * would flag it as a duplicate of itself. Each record is checked against the
+ * base WITHOUT its own id.
+ *
+ * And a changed record reports only what the branch INTRODUCED. Adding one alias
+ * to the shipped "Side Plank Pose" (2026-09-12) raised a BLOCK, because that name
+ * has always contained-matched "Side Plank": true, old, and not the branch's
+ * doing. The self-exclusion above is what keeps this honest — without it every
+ * record's earlier version "duplicates" itself, so a rename INTO a real collision
+ * would be filtered out as pre-existing. */
+export function reviewRecords(before, after) {
+  const d = diffRecords(before, after);
+  const was = new Map((before || []).map((r) => [r.id, r]));
+  const flag = (r) => checkRecord(r, namesOf((before || []).filter((e) => e.id !== r.id)));
+  const introduced = (r) => {
+    const prior = new Set(flag(was.get(r.id)).map((f) => f.what));
+    return flag(r).filter((f) => !prior.has(f.what));
+  };
+  return {
+    records: [
+      ...d.added.map((r) => ({ ...r, flags: flag(r) })),
+      ...d.changed.map((r) => ({ ...r, changed: true, flags: introduced(r) })),
+    ],
+    removed: d.removed,
+  };
+}
+
+/* Queue decisions (tools/queue-decisions.json) a branch adds, rewords or deletes.
+ * A pass may record a skip on its branch, and a skip takes an item out of the
+ * queue for good, so the reviewer has to see every one. Names match
+ * case-insensitively, the same way coverage.mjs matches them. */
+export function diffDecisions(before, after) {
+  const key = (e) => String(e.name || "").trim().toLowerCase();
+  const list = (j) => (j && Array.isArray(j.entries) ? j.entries : []);
+  const was = new Map(list(before).map((e) => [key(e), e]));
+  const now = new Map(list(after).map((e) => [key(e), e]));
+  const added = [];
+  const changed = [];
+  for (const [k, e] of now) {
+    if (!was.has(k)) added.push(e);
+    else if (was.get(k).action !== e.action || was.get(k).reason !== e.reason) changed.push(e);
+  }
+  const removed = [...was].filter(([k]) => !now.has(k)).map(([, e]) => e);
+  return { added, changed, removed };
+}
+
 /* ── CLI ─────────────────────────────────────────────────────────────────── */
 
+const isAncestor = (a, b) => {
+  try {
+    execFileSync("git", ["merge-base", "--is-ancestor", a, b], { cwd: ROOT, stdio: "ignore", timeout: 30_000 });
+    return true;
+  } catch { return false; }
+};
+
+/* JSON.parse, never execute — the same rule as parseAt. A missing file is empty, and
+ * on a ref from before the file existed that is the normal case, so git's "exists on
+ * disk, but not in <ref>" complaint is not echoed into the review sheet. */
+function decisionsAt(ref) {
+  let src = "";
+  try {
+    src = execFileSync("git", ["show", `${ref}:tools/queue-decisions.json`],
+      { cwd: ROOT, encoding: "utf8", stdio: ["ignore", "pipe", "ignore"], timeout: 30_000 });
+  } catch { return null; }
+  try { return JSON.parse(src); } catch { return { entries: [], unparseable: true }; }
+}
+
 if (process.argv[1] && fileURLToPath(import.meta.url) === resolve(process.argv[1])) {
-  const branches = pendingBranches();
+  const found = pendingBranches();
+  const names = found.map((b) => b.branch);
   const out = { branches: [] };
 
-  for (const b of branches) {
-    const recs = addedRecords(b.branch);
-    if (recs === null) { out.branches.push({ ...b, error: "could not read exercises.js on this branch" }); continue; }
+  for (const name of stackOrder(names, isAncestor)) {
+    const b = found.find((x) => x.branch === name);
+    const base = nearestAncestor(name, names, isAncestor) || "main";
+    const own = Number(git("rev-list", "--count", `${base}..${name}`)) || 0;
     // parseAt, not loadAt — the latter executed the file and was replaced. This call
     // site survived the rename because nothing exercised it: there were no pending
     // branches on the day it was written, so the CLI path never ran. A review tool that
     // crashes the first time it has something to review is worth one regression test.
-    const baseline = (parseAt("main") || []).flatMap((e) => [normalize(e.name), ...(e.aliases || []).map(normalize)]);
+    const before = parseAt(base);
+    const after = parseAt(name);
+    if (!before || !after) { out.branches.push({ ...b, base, own, error: "could not read exercises.js on this branch" }); continue; }
+    const { records, removed } = reviewRecords(before, after);
     out.branches.push({
-      ...b,
-      records: recs.map((r) => ({
+      ...b, base, own,
+      records: records.map((r) => ({
         id: r.id, name: r.name, muscleGroup: r.muscleGroup, difficulty: r.difficulty,
         equipment: r.equipment, cue: r.cue, description: r.description,
-        avoidIf: r.avoidIf, flags: checkRecord(r, baseline),
+        avoidIf: r.avoidIf, changed: !!r.changed, flags: r.flags,
       })),
+      removed: removed.map((r) => ({ id: r.id, name: r.name })),
+      decisions: diffDecisions(decisionsAt(base), decisionsAt(name)),
     });
   }
 
@@ -187,28 +299,35 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === resolve(process.argv[1
     process.exit(0);
   }
 
-  if (!branches.length) {
+  if (!found.length) {
     console.log("\nNothing pending. No unmerged bellows/* branches.\n");
     process.exit(0);
   }
 
-  const total = out.branches.reduce((n, b) => n + (b.records ? b.records.length : 0), 0);
-  const blocked = out.branches.flatMap((b) => b.records || []).filter((r) => r.flags.some((f) => f.level === "block")).length;
-  console.log(`\nPending review — ${out.branches.length} branch(es), ${total} new record(s), ${blocked} with blocking flags\n`);
+  const all = out.branches.flatMap((b) => b.records || []);
+  const blocked = all.filter((r) => r.flags.some((f) => f.level === "block")).length;
+  const dropped = out.branches.reduce((n, b) => n + (b.removed ? b.removed.length : 0), 0);
+  const skips = out.branches.reduce((n, b) => n + (b.decisions ? b.decisions.added.filter((e) => e.action === "skip").length : 0), 0);
+  console.log(`\nPending review — ${out.branches.length} branch(es), ${all.length} new or changed record(s), ` +
+    `${blocked} with blocking flags${dropped ? `, ${dropped} dropped` : ""}${skips ? `, ${skips} new queue skip(s)` : ""}\n`);
 
   for (const b of out.branches) {
-    console.log(`── ${b.branch}  (${b.when}, ${b.ahead} commit${b.ahead === 1 ? "" : "s"})`);
+    console.log(`── ${b.branch}  (${b.when}, ${b.own} commit${b.own === 1 ? "" : "s"} on top of ${b.base})`);
     console.log(`   ${b.subject}`);
     if (b.error) { console.log(`   ERROR: ${b.error}\n`); continue; }
-    if (!b.records.length) { console.log("   no new exercise records\n"); continue; }
+    if (!b.records.length) console.log("   no new or changed exercise records");
     for (const r of b.records) {
       const worst = r.flags.some((f) => f.level === "block") ? "✗" : r.flags.some((f) => f.level === "warn") ? "!" : "·";
-      console.log(`\n   ${worst} ${r.name}   [${(r.equipment || []).join(", ")}] ${r.muscleGroup} / ${r.difficulty}`);
+      console.log(`\n   ${worst} ${r.name}${r.changed ? "  (CHANGED)" : ""}   [${(r.equipment || []).join(", ")}] ${r.muscleGroup} / ${r.difficulty}`);
       console.log(`     cue: ${r.cue}`);
       console.log(`     ${r.description}`);
       console.log(`     avoidIf: ${(r.avoidIf || []).join(", ") || "(none)"}`);
       for (const f of r.flags) console.log(`     ${f.level.toUpperCase()}: ${f.what}`);
     }
+    for (const r of b.removed) console.log(`\n   − dropped: ${r.name} (${r.id})`);
+    for (const e of b.decisions.added) console.log(`\n   + queue ${e.action}: ${e.name} — ${e.reason}`);
+    for (const e of b.decisions.changed) console.log(`\n   ~ queue ${e.action} reworded: ${e.name} — ${e.reason}`);
+    for (const e of b.decisions.removed) console.log(`\n   − queue decision deleted: ${e.name}`);
     console.log("");
   }
 
