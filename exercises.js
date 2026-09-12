@@ -18674,6 +18674,70 @@ const BATCH_2026_09_11_EVENING = [
 ];
 EXERCISES.push.apply(EXERCISES, BATCH_2026_09_11_EVENING);
 
+const BATCH_2026_09_12_MORNING = [
+  {
+    "id": "barbell-side-bend",
+    "name": "Barbell Side Bend",
+    "muscleGroup": "Core/Abs",
+    "secondaryMuscles": ["Back"],
+    "equipment": ["barbell"],
+    "difficulty": "Intermediate",
+    "cue": "Rack the bar across your shoulders and bend straight to one side, then the other.",
+    "description": "Stand with a barbell resting across your upper back like a squat, feet shoulder-width apart, hands lightly holding the bar for balance. Bend directly sideways from the waist as far as you comfortably can, then squeeze your obliques to pull back to center and bend the other way. Move slowly in a single side-to-side plane -- rocking the bar forward or twisting turns this into spinal loading instead of an oblique stretch-and-squeeze.",
+    "avoidIf": ["lower-back", "shoulder"],
+    "icon": "🏋️",
+    "mechanic": "Isolation",
+    "pattern": "Core",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["strength"],
+    "homeFriendly": false,
+    "aliases": ["Barbell Obliques Bend"],
+    "category": "strength"
+  },
+  {
+    "id": "barbell-side-split-squat",
+    "name": "Barbell Side Split Squat",
+    "muscleGroup": "Quads",
+    "secondaryMuscles": ["Glutes", "Hamstrings"],
+    "equipment": ["barbell"],
+    "difficulty": "Advanced",
+    "cue": "Bar on your back, step wide to one side and sit into that hip while keeping the other leg straight.",
+    "description": "Rest a barbell across your upper back as in a normal squat, feet set wide apart. Shift your weight to one side, bending that knee and pushing your hips back and down while keeping the other leg straight with that foot flat, then drive back up through the bent leg to return to center. The straight leg's job is to stay long and anchored -- letting it bend turns this into a regular wide-stance squat instead of the lateral, one-side-at-a-time hip and groin stretch it's meant to be.",
+    "avoidIf": ["knee", "balance", "hip", "lower-back"],
+    "icon": "🏋️",
+    "mechanic": "Compound",
+    "pattern": "Lunge",
+    "force": "Push",
+    "unilateral": true,
+    "focus": ["strength", "mobility"],
+    "homeFriendly": false,
+    "aliases": ["Barbell Cossack Squat", "Loaded Lateral Squat"],
+    "category": "strength"
+  },
+  {
+    "id": "barbell-spider-curl",
+    "name": "Barbell Spider Curl",
+    "muscleGroup": "Biceps",
+    "secondaryMuscles": [],
+    "equipment": ["barbell", "bench"],
+    "difficulty": "Intermediate",
+    "cue": "Lie face-down on an incline bench and curl the bar with arms hanging straight down.",
+    "description": "Set an incline bench to a steep angle and lie chest-down against it so your arms hang straight toward the floor, gripping a barbell with an underhand grip. Curl the bar up to your shoulders, squeeze, then lower slowly back to a full hang. The chest-supported, face-down angle keeps constant tension on the biceps and makes it impossible to swing the weight up with your body.",
+    "avoidIf": ["wrist", "shoulder"],
+    "icon": "🕷️",
+    "mechanic": "Isolation",
+    "pattern": "Vertical Pull",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Barbell Lying Preacher Curl", "Incline Barbell Spider Curl"],
+    "category": "strength"
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_09_12_MORNING);
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { MUSCLE_GROUPS, EQUIPMENT, CONDITIONS, SPORTS, STRETCH_TYPES, EXERCISES };
 }
