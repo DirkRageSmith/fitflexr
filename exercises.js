@@ -209,7 +209,8 @@ const EXERCISES = [
     "homeFriendly": false,
     "aliases": [
       "Flat Bench",
-      "BB Bench Press"
+      "BB Bench Press",
+      "Powerlifting Bench Press"
     ],
     "category": "strength"
   },
@@ -2284,7 +2285,8 @@ const EXERCISES = [
     ],
     "homeFriendly": true,
     "aliases": [
-      "DB Bent Row"
+      "DB Bent Row",
+      "Bent-Over Two-Dumbbell Row"
     ],
     "category": "strength"
   },
@@ -2567,7 +2569,8 @@ const EXERCISES = [
     ],
     "homeFriendly": false,
     "aliases": [
-      "Landmine Row"
+      "Landmine Row",
+      "Bent-Over Two-Arm Long Bar Row"
     ],
     "category": "strength"
   },
@@ -8112,7 +8115,8 @@ const EXERCISES = [
     ],
     "homeFriendly": false,
     "aliases": [
-      "Back Squat"
+      "Back Squat",
+      "Barbell Full Squat"
     ],
     "category": "strength"
   },
@@ -8175,7 +8179,8 @@ const EXERCISES = [
     ],
     "homeFriendly": false,
     "aliases": [
-      "Box Squat"
+      "Box Squat",
+      "Barbell Squat to a Bench"
     ],
     "category": "strength"
   },
@@ -17517,7 +17522,7 @@ const STRETCHES_MORE = [
     "unilateral": false,
     "focus": ["mobility"],
     "homeFriendly": true,
-    "aliases": ["Vasisthasana"],
+    "aliases": ["Vasisthasana", "Vasishtasana"],
     "category": "warmup",
     "sports": ["yoga"],
     "hold": "2 × 30s each side",
@@ -18298,6 +18303,10 @@ EXERCISES.push.apply(EXERCISES, ASANAS_BATCH_2026_09_08);
 // still pass.
 //
 // Of the ten re-queued items, three written, two skipped for the reasons written per-card below.
+// [Review 2026-09-12: the first of the three, Straight-Arm Side Plank (yoga-vasishtasana), was
+// dropped before shipping. It is the pose already shipped as yoga-side-plank-pose, "Side Plank
+// Pose": the reference spells it Vasishtasana and the shipped alias said Vasisthasana, so coverage
+// could not see the match. That card now carries both spellings.]
 // Astavakrasana, Gorakshasana, Durvasasana, Kaundinyasana and full Matsyendrasana are still
 // absent on purpose, unchanged from 2026-09-08's reasoning (see block above) -- they were still
 // in this queue and still carry the same fall/joint-load/ambiguous-technique risk.
@@ -18309,28 +18318,6 @@ EXERCISES.push.apply(EXERCISES, ASANAS_BATCH_2026_09_08);
 // wrong bind description is a real strain risk, and there is no way to tell which variant
 // "Marichyasana" unqualified is supposed to mean here.
 const ASANAS_STRETCHES_BATCH_2026_09_09 = [
-  {
-    "id": "yoga-vasishtasana",
-    "name": "Straight-Arm Side Plank",
-    "muscleGroup": "Core/Abs",
-    "secondaryMuscles": ["Shoulders", "Glutes"],
-    "equipment": ["bodyweight"],
-    "difficulty": "Intermediate",
-    "cue": "Stack your top foot on the bottom one and reach that arm straight up before you lift your hips.",
-    "description": "From Plank, roll onto the outer edge of your right foot and stack your left foot directly on top of it. Plant your right hand under your right shoulder and press the floor away as you lift your hips until your body forms one straight line from heels to head. Reach your left arm straight up in line with the right — press through the outer edge of the bottom foot, which is what keeps the hips from sinking, not the top arm. Drop the bottom knee to the floor for an easier version; the rest of the shape stays the same.",
-    "avoidIf": ["wrist", "shoulder"],
-    "icon": "🤸",
-    "pattern": "Stretch",
-    "force": "Static",
-    "unilateral": true,
-    "focus": ["mobility"],
-    "homeFriendly": true,
-    "aliases": ["Vasishtasana", "Side Plank Pose"],
-    "category": "cooldown",
-    "sports": ["yoga"],
-    "hold": "2 × 20s each side",
-    "stretchType": "yoga"
-  },
   {
     "id": "three-quarter-sit-up",
     "name": "3/4 Sit-Up",
@@ -18482,6 +18469,8 @@ EXERCISES.push.apply(EXERCISES, BATCH_2026_09_09_EVENING);
 // already shipped), Backward Medicine Ball Throw (distinct from the forward Wall
 // Ball and downward Slam already shipped), and Barbell Ab Rollout (same
 // mechanic as the shipped Ab-Wheel Rollouts, loaded bar instead of a wheel).
+// [Review 2026-09-12: the rollout said an empty bar would do. The plates are what it rolls on,
+// so it now says to put light round ones on.]
 const BATCH_2026_09_10_MORNING = [
   {
     "id": "alternating-hang-clean",
@@ -18531,7 +18520,7 @@ const BATCH_2026_09_10_MORNING = [
     "equipment": ["barbell"],
     "difficulty": "Advanced",
     "cue": "Roll the bar out as far as you can control without your lower back sagging, then pull it back with your abs.",
-    "description": "Load a barbell lightly, or leave it empty, and kneel behind it gripping it shoulder-width. Roll it forward, extending your body as far as you can while keeping your back flat and your abs braced, then pull it back in to return to kneeling. Only go as far as you can control -- the moment your lower back arches and sags toward the floor is the moment the rollout stops working your abs and starts loading your spine instead.",
+    "description": "Slide a light, round plate onto each end of a barbell so it can roll, then kneel behind it gripping it shoulder-width. Roll it forward, extending your body as far as you can while keeping your back flat and your abs braced, then pull it back in to return to kneeling. Only go as far as you can control -- the moment your lower back arches and sags toward the floor is the moment the rollout stops working your abs and starts loading your spine instead.",
     "avoidIf": ["lower-back", "shoulder", "wrist"],
     "icon": "⭕",
     "mechanic": "Compound",
@@ -18546,6 +18535,10 @@ const BATCH_2026_09_10_MORNING = [
 ];
 EXERCISES.push.apply(EXERCISES, BATCH_2026_09_10_MORNING);
 
+// [Review 2026-09-12: the hack squat and the behind-the-back shrug never said how the bar gets
+// behind you, and now do. The head-on-bench rear delt raise described lying chest-down on a
+// steep incline, a different setup that shifts the work toward the side of the shoulder; it now
+// describes the movement its name means, bent over with the forehead resting on the bench.]
 const BATCH_2026_09_10_EVENING = [
   {
     "id": "barbell-hack-squat",
@@ -18555,7 +18548,7 @@ const BATCH_2026_09_10_EVENING = [
     "equipment": ["barbell"],
     "difficulty": "Intermediate",
     "cue": "Grip the bar behind your legs and squat straight down, keeping it sliding down the back of your calves.",
-    "description": "Stand holding a barbell behind you with a shoulder-width grip, letting it rest against the back of your thighs. Bend your knees and squat straight down with your torso upright, tracking the bar down the back of your legs until your thighs are at least parallel, then drive back up through your heels. Keeping the bar close against your legs the whole way is what keeps the load on your quads instead of your lower back.",
+    "description": "Set a loaded barbell on the floor just behind your heels, squat down with your chest up to grip it shoulder-width with your palms facing back, and stand up so it rests against the backs of your thighs. Squat straight back down with your torso upright, tracking the bar down the backs of your legs until your thighs are parallel to the floor, then drive back up through your heels. Keeping the bar close against your legs the whole way is what keeps the load on your quads instead of your lower back.",
     "avoidIf": ["knee", "lower-back"],
     "icon": "🏋️",
     "mechanic": "Compound",
@@ -18575,7 +18568,7 @@ const BATCH_2026_09_10_EVENING = [
     "equipment": ["barbell"],
     "difficulty": "Beginner",
     "cue": "Hold the bar behind you and shrug straight up without rolling your shoulders.",
-    "description": "Stand holding a barbell behind your body with an overhand grip, arms straight down against your glutes. Shrug your shoulders straight up toward your ears, squeeze your traps at the top, then lower under control. Reaching back for the bar forces your shoulders into a position a front shrug doesn't -- stop if you feel it pulling at the front of the shoulder rather than the traps.",
+    "description": "Take a barbell off a rack set at about hip height by standing with your back to it, gripping it with your palms facing back and your hands just wider than your shoulders, then stepping forward so it hangs at arm's length behind your thighs. Shrug your shoulders straight up toward your ears, squeeze your traps at the top, then lower under control. Reaching back for the bar forces your shoulders into a position a front shrug doesn't -- stop if you feel it pulling at the front of the shoulder rather than the traps.",
     "avoidIf": ["shoulder", "neck", "wrist"],
     "icon": "⬆️",
     "mechanic": "Isolation",
@@ -18594,8 +18587,8 @@ const BATCH_2026_09_10_EVENING = [
     "secondaryMuscles": ["Back"],
     "equipment": ["dumbbell", "bench"],
     "difficulty": "Beginner",
-    "cue": "Rest your forehead on the bench and raise both dumbbells out to the sides.",
-    "description": "Set an incline bench to a steep angle and lie face-down against it, chest and forehead supported, holding a dumbbell in each hand hanging straight down. Raise both arms out to the sides until they're roughly in line with your torso, squeezing your shoulder blades together, then lower with control. The bench takes your lower back out of the movement entirely, so any swing you feel is momentum rather than rear-delt effort.",
+    "cue": "Hinge over until your forehead rests on the bench, then raise both dumbbells straight out to your sides.",
+    "description": "Set an incline bench so the top of its pad is about as high as your hips, stand facing it with a dumbbell in each hand, and hinge forward with a flat back until your forehead rests on the pad and your torso is roughly parallel to the floor. Let the dumbbells hang straight down with your palms facing each other, then raise both arms out to your sides until they are level with the floor, and lower with control. Resting your head keeps your torso from rocking, so the lift has to come from your rear delts rather than momentum.",
     "avoidIf": ["shoulder", "neck"],
     "icon": "🪽",
     "mechanic": "Isolation",
@@ -18604,12 +18597,19 @@ const BATCH_2026_09_10_EVENING = [
     "unilateral": false,
     "focus": ["hypertrophy"],
     "homeFriendly": true,
-    "aliases": ["Chest-Supported Rear Delt Raise", "Incline Rear Delt Raise"],
+    "aliases": ["Head-Supported Rear Delt Raise"],
     "category": "strength"
   }
 ];
 EXERCISES.push.apply(EXERCISES, BATCH_2026_09_10_EVENING);
 
+// [Review 2026-09-12: this batch ships two of its three cards. Bench Jump was dropped: it
+// described fast two-footed sideways hops over a full-height bench, a trip-and-fall drill
+// labelled Intermediate and home-friendly, and not the movement the name refers to. It is
+// recorded as a skip in tools/queue-decisions.json so no pass writes it again. The rear delt
+// row now pulls to the upper chest (the lower ribs are the lat path the card itself warned
+// against), and the low-pulley lateral now says to bend far over, which its own last sentence
+// said was the point.]
 const BATCH_2026_09_11_EVENING = [
   {
     "id": "barbell-rear-delt-row",
@@ -18618,8 +18618,8 @@ const BATCH_2026_09_11_EVENING = [
     "secondaryMuscles": ["Back"],
     "equipment": ["barbell"],
     "difficulty": "Intermediate",
-    "cue": "Take a wide overhand grip, bend at the hips, and row the bar to your lower ribs with your elbows flared out wide.",
-    "description": "Hold a barbell with a grip noticeably wider than shoulder-width, hinge forward at the hips until your torso is near-horizontal, and let the bar hang at arm's length. Row it up toward your lower ribs by driving your elbows out and back, squeezing your rear delts and upper back at the top, then lower under control. The wide grip and flared elbows are what shift the work from your lats to your rear delts -- pulling with a narrow grip and tucked elbows just turns this into a regular bent-over row.",
+    "cue": "Take a wide overhand grip, bend at the hips, and row the bar to your upper chest with your elbows flared out wide.",
+    "description": "Hold a barbell with a grip noticeably wider than shoulder-width, hinge forward at the hips until your torso is near-horizontal, and let the bar hang at arm's length. Keeping your upper arms out wide at right angles to your torso, row the bar up toward your upper chest and squeeze your rear delts at the top, then lower under control. The wide grip and flared elbows are what shift the work from your lats to your rear delts -- pulling toward your stomach with tucked elbows just turns this into a regular bent-over row.",
     "avoidIf": ["lower-back", "shoulder"],
     "icon": "🏋️",
     "mechanic": "Compound",
@@ -18632,34 +18632,14 @@ const BATCH_2026_09_11_EVENING = [
     "category": "strength"
   },
   {
-    "id": "bench-jump",
-    "name": "Bench Jump",
-    "muscleGroup": "Quads",
-    "secondaryMuscles": ["Glutes", "Calves"],
-    "equipment": ["bench"],
-    "difficulty": "Intermediate",
-    "cue": "Stand alongside a flat bench and hop side to side over it, landing softly on both feet each time.",
-    "description": "Stand next to a flat bench with your feet together, knees slightly bent. Hop sideways over the bench, land on both feet on the far side, and immediately hop back the other way, using your arms for momentum and staying light on landing. Keep the reps quick and continuous rather than pausing to reset between jumps -- a long pause between each hop turns this into two separate broad jumps instead of the fast lateral conditioning drill it's meant to be.",
-    "avoidIf": ["knee", "high-impact", "balance"],
-    "icon": "🤸",
-    "mechanic": "Compound",
-    "pattern": "Conditioning",
-    "force": "Explosive",
-    "unilateral": false,
-    "focus": ["power", "endurance"],
-    "homeFriendly": true,
-    "aliases": ["Lateral Bench Hop", "Side-to-Side Bench Jump"],
-    "category": "conditioning"
-  },
-  {
     "id": "bent-over-low-pulley-side-lateral",
     "name": "Bent-Over Low-Pulley Side Lateral",
     "muscleGroup": "Shoulders",
     "secondaryMuscles": ["Back"],
     "equipment": ["cable"],
     "difficulty": "Intermediate",
-    "cue": "Stand side-on to a low pulley, bend forward slightly, and raise the handle out to your side leading with your elbow.",
-    "description": "Set a cable to the lowest pulley position and stand side-on to it, gripping the handle in the hand farthest from the cable with your torso bent forward slightly. Raise your arm out to the side, leading with your elbow, until it's roughly level with your shoulder, then lower under control before switching sides. The forward bend and low starting angle are what put the cable's resistance across your rear delt through the whole range -- standing upright turns it into a side lateral raise for your side delt instead.",
+    "cue": "Stand side-on to a low pulley, hinge over until your chest is nearly parallel to the floor, and raise the handle out to your side leading with your elbow.",
+    "description": "Set a cable to the lowest pulley position and stand side-on to it, gripping the handle in the hand farthest from the cable, then hinge at the hips until your torso is nearly parallel to the floor. Raise your arm out to the side, leading with your elbow, until it is roughly level with your shoulder, then lower under control before switching sides. Staying bent over is what puts the cable's resistance across your rear delt through the whole range -- standing up turns it into a side lateral raise for your side delt instead.",
     "avoidIf": ["shoulder", "lower-back", "neck"],
     "icon": "🪽",
     "mechanic": "Isolation",
@@ -18732,7 +18712,7 @@ const BATCH_2026_09_12_MORNING = [
     "unilateral": false,
     "focus": ["strength", "hypertrophy"],
     "homeFriendly": false,
-    "aliases": ["Rocky Press", "Bradford Press"],
+    "aliases": ["Rocky Press", "Bradford Press", "Bradford/Rocky Presses"],
     "category": "strength"
   }
 ];
