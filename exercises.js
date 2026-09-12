@@ -18659,7 +18659,7 @@ const BATCH_2026_09_11_EVENING = [
     "equipment": ["cable"],
     "difficulty": "Intermediate",
     "cue": "Stand side-on to a low pulley, bend forward slightly, and raise the handle out to your side leading with your elbow.",
-    "description": "Set a cable to the lowest pulley position and stand side-on to it, gripping the handle in the hand farthest from the machine with your torso bent forward slightly. Raise your arm out to the side, leading with your elbow, until it's roughly level with your shoulder, then lower under control before switching sides. The forward bend and low starting angle are what put the cable's resistance across your rear delt through the whole range -- standing upright turns it into a side lateral raise for your side delt instead.",
+    "description": "Set a cable to the lowest pulley position and stand side-on to it, gripping the handle in the hand farthest from the cable with your torso bent forward slightly. Raise your arm out to the side, leading with your elbow, until it's roughly level with your shoulder, then lower under control before switching sides. The forward bend and low starting angle are what put the cable's resistance across your rear delt through the whole range -- standing upright turns it into a side lateral raise for your side delt instead.",
     "avoidIf": ["shoulder", "lower-back", "neck"],
     "icon": "🪽",
     "mechanic": "Isolation",
