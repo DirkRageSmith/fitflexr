@@ -18747,7 +18747,7 @@ const BATCH_2026_09_13_EVENING = [
     "equipment": ["cable"],
     "difficulty": "Beginner",
     "cue": "Pull your working leg across your body against the low pulley.",
-    "description": "Attach an ankle cuff to a low pulley and stand sideways to the machine with the cable leg farthest from it, so that leg starts out to the side. Keeping your leg straight, pull it across your body past your other leg, squeezing your inner thigh, then let it return under control against the cable. Keep your standing leg soft and your torso upright rather than leaning to help the pull.",
+    "description": "Attach an ankle cuff to a low pulley and stand sideways to it with the cable leg farthest from it, so that leg starts out to the side. Keeping your leg straight, pull it across your body past your other leg, squeezing your inner thigh, then let it return under control against the cable. Keep your standing leg soft and your torso upright rather than leaning to help the pull.",
     "avoidIf": ["hip"],
     "icon": "🦵",
     "mechanic": "Isolation",
