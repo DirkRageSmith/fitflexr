@@ -168,7 +168,9 @@ Keep them honest and taggable:
 - `mechanic`: `"Compound"` | `"Isolation"`
 - `pattern`: one of `"Horizontal Push"`, `"Vertical Push"`, `"Horizontal Pull"`,
   `"Vertical Pull"`, `"Squat"`, `"Hinge"`, `"Lunge"`, `"Carry"`, `"Rotation"`,
-  `"Core"`, `"Conditioning"`
+  `"Core"`, `"Conditioning"`, `"Hip Abduction"`, `"Hip Adduction"`, `"Stretch"`. The
+  enforced list is `PATTERNS` in `validate.js`. (`Hip Adduction` added 2026-09-13 for Cable
+  Hip Adduction, which a pass had filed under `Rotation`.)
 - `force`: `"Push"` | `"Pull"` | `"Static"` | `"Explosive"`
 - `unilateral`: `true` | `false` (one side at a time?)
 - `focus`: array, subset of `["strength","hypertrophy","endurance","power","mobility"]`

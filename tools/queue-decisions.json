@@ -139,42 +139,42 @@
       "action": "skip",
       "reason": "The bodyweight bridge under this name is the shipped Glute Bridge: lie on your back, knees bent, feet flat, drive the hips up. No distinguishing detail in the reference separates it from the shipped card.",
       "decided": "2026-09-13",
-      "by": "2026-09-13 evening Bellows pass"
+      "by": "2026-09-13 morning Bellows pass"
     },
     {
       "name": "Butterfly",
       "action": "skip",
       "reason": "The standard alternate name for the machine chest fly, already shipped as Pec Deck Fly (equipment: machine, same seated-arms-wide-squeeze-together movement).",
       "decided": "2026-09-13",
-      "by": "2026-09-13 evening Bellows pass"
+      "by": "2026-09-13 morning Bellows pass"
     },
     {
       "name": "Butt-Ups",
       "action": "skip",
       "reason": "Not confident of the exact setup from the name alone -- this could be a kneeling hip-thrust ab drill or something closer to the shipped Glute Bridge/Reverse Crunch family, and the reference gives no instructions to check against. A wrong ab card is worse than a missing one.",
       "decided": "2026-09-13",
-      "by": "2026-09-13 evening Bellows pass"
+      "by": "2026-09-13 morning Bellows pass"
     },
     {
       "name": "Cable Incline Pushdown",
       "action": "skip",
       "reason": "The reference tags this as a lats exercise, but 'pushdown' as a name is otherwise only used here for triceps cable work. Not confident enough of the incline-bench setup that turns a pushdown into a lat movement to write it without guessing.",
       "decided": "2026-09-13",
-      "by": "2026-09-13 evening Bellows pass"
+      "by": "2026-09-13 morning Bellows pass"
     },
     {
       "name": "Cable Iron Cross",
       "action": "skip",
       "reason": "A wide-arm cable chest movement pulled in toward center is already covered by the shipped Cable Chest Fly and High/Low Cable Crossover. Not confident the 'iron cross' starting position (arms straight out to the sides at shoulder height, rather than a slight bend) is different enough to earn its own card rather than guessing at a distinction that isn't real.",
       "decided": "2026-09-13",
-      "by": "2026-09-13 evening Bellows pass"
+      "by": "2026-09-13 morning Bellows pass"
     },
     {
       "name": "Cable Judo Flip",
       "action": "skip",
       "reason": "A diagonal rotational cable pull for the obliques reads as the same movement as the shipped Cable Woodchopper. Not confident there's a real distinguishing detail behind the name rather than a second title for the same chop.",
       "decided": "2026-09-13",
-      "by": "2026-09-13 evening Bellows pass"
+      "by": "2026-09-13 morning Bellows pass"
     }
   ]
 }

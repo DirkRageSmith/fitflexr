@@ -20,7 +20,7 @@ const EXPECTED_CONDITION_IDS = [
 const DIFFICULTY = ["Beginner", "Intermediate", "Advanced"];
 const CORE_FIELDS = ["id", "name", "muscleGroup", "secondaryMuscles", "equipment", "difficulty", "cue", "description", "avoidIf", "icon"];
 const MECHANIC = ["Compound", "Isolation"];
-const PATTERNS = ["Horizontal Push", "Vertical Push", "Horizontal Pull", "Vertical Pull", "Squat", "Hinge", "Lunge", "Carry", "Rotation", "Core", "Conditioning", "Hip Abduction", "Stretch"];
+const PATTERNS = ["Horizontal Push", "Vertical Push", "Horizontal Pull", "Vertical Pull", "Squat", "Hinge", "Lunge", "Carry", "Rotation", "Core", "Conditioning", "Hip Abduction", "Hip Adduction", "Stretch"];
 // Categories that make an exercise a stretch rather than training volume. Must stay in
 // sync with STRETCH_CATEGORIES in app.js — the app's two Stack caps depend on it.
 const STRETCH_CATEGORIES = ["warmup", "cooldown"];
