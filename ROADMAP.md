@@ -9,9 +9,16 @@ product brainstorming and bulk content. If you are an AI reading this: this file
 contract. Follow the schema in §5 exactly; don't invent fields or relax the safety
 rules in §9.
 
-**Status as of 2026-09-12:** live PWA at <https://dirkragesmith.github.io/fitflexr/>,
-sw cache **v43**. **647 exercises — 549 training moves + 98 stretches.**
+**Status as of 2026-09-13:** live PWA at <https://dirkragesmith.github.io/fitflexr/>,
+sw cache **v44**. **659 exercises — 560 training moves + 99 stretches.**
 
+- **2026-09-13 — two more Bellows batches through review: all 12 cards shipped, 7
+  corrected.** The worst was Cable Hip Adduction, which put the ankle cuff on the wrong leg,
+  so the cable would have done the work. Six older cards that need a chair, a sofa or a step
+  were tagged bodyweight-only; they are now `bench` or `box` under §5's canonical meanings,
+  which costs the Bodyweight preset two calf moves and one biceps move it never really had.
+  `tools/pending.mjs --base` names the branch a pass should build on, and the sheet now
+  reviews uncommitted work. New pattern: `Hip Adduction`. 39 + 74 + 34 tests.
 - **2026-09-12 — the first Bellows batches through review: 16 of 18 cards shipped.** Six
   stacked `bellows/*` branches (09-09 → 09-12) were read card by card in an Opus session.
   Two were dropped: a duplicate of Side Plank Pose under another spelling, and a "Bench
