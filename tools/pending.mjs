@@ -4,6 +4,7 @@
  *
  * Run:  node tools/pending.mjs            review sheet
  *       node tools/pending.mjs --json     machine-readable
+ *       node tools/pending.mjs --base     the branch the next Bellows batch builds on
  *
  * WHO THIS IS FOR. Claude, not Matt.
  *
@@ -30,6 +31,7 @@
  */
 
 import { execFileSync } from "node:child_process";
+import { readFileSync } from "node:fs";
 import { dirname, resolve, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { normalize, isCovered } from "./coverage.mjs";
@@ -85,13 +87,20 @@ export function addedRecords(branch, base = "main") {
  * is a useful signal in its own right: it means the batch was not written in the
  * expected shape and deserves a human's eyes before anything else happens. */
 function parseAt(ref) {
-  const src = git("show", `${ref}:exercises.js`);
+  return parseSource(git("show", `${ref}:exercises.js`));
+}
+
+/** The records in an exercises.js source text — git's copy or the file on disk, read the same way. */
+export function parseSource(src) {
   if (!src) return null;
+  // The checked-out file has CRLF line endings on this machine (core.autocrlf=true) and
+  // git's copy has LF. They must read identically.
+  const text = String(src).replace(/\r\n/g, "\n");
   const out = [];
   // `const NAME = [ ... ];` where NAME is a top-level array of records.
   const re = /^const\s+([A-Z][A-Z0-9_]*)\s*=\s*(\[[\s\S]*?\n\]);\s*$/gm;
   let m;
-  while ((m = re.exec(src)) !== null) {
+  while ((m = re.exec(text)) !== null) {
     try {
       const arr = JSON.parse(m[2]);
       /* `id` alone is not enough to identify an exercise: EQUIPMENT, CONDITIONS,
@@ -244,6 +253,49 @@ export function diffDecisions(before, after) {
   return { added, changed, removed };
 }
 
+/* ── where the next pass branches from ──────────────────────────────────────
+ *
+ * The TOP of the stack, so a batch is built on everything still waiting for review,
+ * and never on main while a batch waits. On 2026-09-12/13 two passes cut sibling
+ * branches from main — one HANDOFF's "branch from main", written for the single pass
+ * after a merge, was carried forward as a rule — and the siblings conflicted in
+ * exercises.js and queue-decisions.json, both claimed fitflexr-v44, and the second
+ * pass's queue re-offered the first pass's cards.
+ *
+ * If a fork already exists, build on the newest top and name the rest, so the pass
+ * can say so. Merging forks is the review session's job. */
+export function baseFor(pending, isAncestor, dateOf) {
+  const tops = pending.filter((b) => !pending.some((o) => o !== b && isAncestor(b, o)));
+  if (!tops.length) return { base: "main", others: [] };
+  const newestFirst = [...tops].sort((a, b) => (dateOf(b) - dateOf(a)) || a.localeCompare(b));
+  return { base: newestFirst[0], others: newestFirst.slice(1) };
+}
+
+/* ── the working tree: cards on the sheet before they are committed ──────────
+ *
+ * Every branch above is read from git, so uncommitted work is invisible to it. On
+ * 2026-09-12 a pass ran this sheet before committing, as OPERATING.md said to, and
+ * got "Nothing pending" over eight uncommitted cards, one of them blocked. So the
+ * file on disk is reviewed against HEAD too, and shown whenever it differs; null
+ * when it does not. A file on disk that will not parse is shown as a BLOCK, never
+ * taken for a clean one. */
+export function worktreeReview(headRecords, diskRecords, headDecisions, diskDecisions) {
+  const decisions = diffDecisions(headDecisions, diskDecisions);
+  if (!diskRecords) {
+    return {
+      records: [{
+        id: "__unreadable__worktree", name: "(exercises.js on disk could not be parsed)", cue: "", description: "",
+        flags: [{ level: "block", what: "the working copy of exercises.js did not parse, so nothing on it was checked" }],
+      }],
+      removed: [], decisions,
+    };
+  }
+  const { records, removed } = reviewRecords(headRecords || [], diskRecords);
+  const moved = records.length + removed.length +
+    decisions.added.length + decisions.changed.length + decisions.removed.length;
+  return moved ? { records, removed, decisions } : null;
+}
+
 /* ── CLI ─────────────────────────────────────────────────────────────────── */
 
 const isAncestor = (a, b) => {
@@ -268,7 +320,22 @@ function decisionsAt(ref) {
 if (process.argv[1] && fileURLToPath(import.meta.url) === resolve(process.argv[1])) {
   const found = pendingBranches();
   const names = found.map((b) => b.branch);
+
+  if (process.argv.includes("--base")) {
+    const dateOf = (b) => Number(git("log", "-1", "--format=%ct", b)) || 0;
+    const { base, others } = baseFor(names, isAncestor, dateOf);
+    console.log(base);
+    if (others.length)
+      console.log(`# also waiting and NOT under ${base}: ${others.join(", ")}. Say so in HANDOFF; merging them is the review session's job.`);
+    process.exit(0);
+  }
+
   const out = { branches: [] };
+  const sheetRecord = (r) => ({
+    id: r.id, name: r.name, muscleGroup: r.muscleGroup, difficulty: r.difficulty,
+    equipment: r.equipment, cue: r.cue, description: r.description,
+    avoidIf: r.avoidIf, changed: !!r.changed, flags: r.flags,
+  });
 
   for (const name of stackOrder(names, isAncestor)) {
     const b = found.find((x) => x.branch === name);
@@ -284,13 +351,27 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === resolve(process.argv[1
     const { records, removed } = reviewRecords(before, after);
     out.branches.push({
       ...b, base, own,
-      records: records.map((r) => ({
-        id: r.id, name: r.name, muscleGroup: r.muscleGroup, difficulty: r.difficulty,
-        equipment: r.equipment, cue: r.cue, description: r.description,
-        avoidIf: r.avoidIf, changed: !!r.changed, flags: r.flags,
-      })),
+      records: records.map(sheetRecord),
       removed: removed.map((r) => ({ id: r.id, name: r.name })),
       decisions: diffDecisions(decisionsAt(base), decisionsAt(name)),
+    });
+  }
+
+  /* The working tree, reviewed against HEAD — see worktreeReview. */
+  {
+    const head = git("rev-parse", "--abbrev-ref", "HEAD") || "HEAD";
+    let disk = null;
+    try { disk = parseSource(readFileSync(join(ROOT, "exercises.js"), "utf8")); } catch { disk = null; }
+    let diskDecisions = null;
+    try { diskDecisions = JSON.parse(readFileSync(join(ROOT, "tools", "queue-decisions.json"), "utf8")); }
+    catch (e) { diskDecisions = e && e.code === "ENOENT" ? null : { entries: [], unparseable: true }; }
+    const w = worktreeReview(parseAt("HEAD"), disk, decisionsAt("HEAD"), diskDecisions);
+    if (w) out.branches.push({
+      branch: "(uncommitted)", uncommitted: true, head, base: "HEAD", own: 0,
+      when: "not committed", subject: `changes in the working tree on ${head}`,
+      records: w.records.map(sheetRecord),
+      removed: w.removed.map((r) => ({ id: r.id, name: r.name })),
+      decisions: w.decisions,
     });
   }
 
@@ -299,8 +380,8 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === resolve(process.argv[1
     process.exit(0);
   }
 
-  if (!found.length) {
-    console.log("\nNothing pending. No unmerged bellows/* branches.\n");
+  if (!out.branches.length) {
+    console.log("\nNothing pending. No unmerged bellows/* branches, and nothing uncommitted.\n");
     process.exit(0);
   }
 
@@ -312,7 +393,9 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === resolve(process.argv[1
     `${blocked} with blocking flags${dropped ? `, ${dropped} dropped` : ""}${skips ? `, ${skips} new queue skip(s)` : ""}\n`);
 
   for (const b of out.branches) {
-    console.log(`── ${b.branch}  (${b.when}, ${b.own} commit${b.own === 1 ? "" : "s"} on top of ${b.base})`);
+    console.log(b.uncommitted
+      ? `── uncommitted changes on ${b.head}  (in no commit yet, reviewed against HEAD)`
+      : `── ${b.branch}  (${b.when}, ${b.own} commit${b.own === 1 ? "" : "s"} on top of ${b.base})`);
     console.log(`   ${b.subject}`);
     if (b.error) { console.log(`   ERROR: ${b.error}\n`); continue; }
     if (!b.records.length) console.log("   no new or changed exercise records");

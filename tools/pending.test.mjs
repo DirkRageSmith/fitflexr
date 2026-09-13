@@ -16,7 +16,10 @@
  * because what is under test is what the sheet DOES with ancestry, not git.
  */
 
-import { diffRecords, nearestAncestor, stackOrder, reviewRecords, diffDecisions } from "./pending.mjs";
+import {
+  diffRecords, nearestAncestor, stackOrder, reviewRecords, diffDecisions,
+  baseFor, parseSource, worktreeReview,
+} from "./pending.mjs";
 
 let pass = 0;
 const failures = [];
@@ -145,6 +148,75 @@ const rec = (id, over = {}) => ({
   eq("a base with no decisions file counts as empty", diffDecisions(null, after).added.length, 3);
   eq("a decision the branch deletes is shown",
     diffDecisions(after, before).removed.map((e) => e.name).join(","), "New Skip");
+}
+
+/* ── baseFor: where the next pass branches from ──────────────────────────────
+ *
+ * The break, 2026-09-12/13: after a review merged everything, HANDOFF said "branch
+ * from main" for one pass. The next pass carried it forward as a rule against
+ * stacking, so two passes cut sibling branches from main. Both appended a block at
+ * the same place in exercises.js and queue-decisions.json (a merge conflict in each),
+ * both claimed fitflexr-v44, and the second pass's queue did not know the first
+ * pass's cards existed. A pass should never have to reason this out. */
+
+{
+  const edges = new Set(["A>B", "A>C", "B>C"]);
+  const isAncestor = (p, q) => edges.has(`${p}>${q}`);
+  const when = { A: 1, B: 2, C: 3, X: 4 };
+  const dateOf = (b) => when[b];
+
+  eq("nothing waiting: branch from main", JSON.stringify(baseFor([], isAncestor, dateOf)), '{"base":"main","others":[]}');
+  eq("one branch waiting: build on it", baseFor(["A"], isAncestor, dateOf).base, "A");
+  eq("a stack: build on its top, never its bottom", baseFor(["A", "C", "B"], isAncestor, dateOf).base, "C");
+  eq("...and a stack leaves nothing out", baseFor(["A", "C", "B"], isAncestor, dateOf).others.length, 0);
+
+  const forked = baseFor(["C", "A", "B", "X"], isAncestor, dateOf);
+  eq("an existing fork: build on the newest top", forked.base, "X");
+  eq("...and name the top left out, so the pass can say so", forked.others.join(","), "C");
+}
+
+/* ── parseSource: the same parse for a ref and for the file on disk ─────────── */
+
+{
+  const src = 'const EQUIPMENT = [\n  { "id": "bench", "label": "Bench" }\n];\n' +
+    `const BATCH_X = ${JSON.stringify([rec("a"), rec("b")], null, 2)};\n` +
+    "EXERCISES.push.apply(EXERCISES, BATCH_X);\n";
+  eq("records are read from a named block, and taxonomy arrays are not records",
+    (parseSource(src) || []).map((r) => r.id).join(","), "a,b");
+  eq("the checked-out file's Windows line endings read the same as git's",
+    (parseSource(src.replace(/\n/g, "\r\n")) || []).map((r) => r.id).join(","), "a,b");
+  ok("a block that is not JSON is reported, never executed",
+    (parseSource(src + "const BATCH_BAD = [\n  { id: 'x' }\n];\n") || []).some((r) => r.__unparseable));
+  eq("a file with no blocks reads as nothing", parseSource("module.exports = {};\n"), null);
+}
+
+/* ── worktreeReview: cards on the sheet before they are committed ─────────────
+ *
+ * The break, 2026-09-12 evening: a pass ran the sheet before committing, as
+ * OPERATING.md said to. The sheet reads committed branches only, so it printed
+ * "Nothing pending" over eight uncommitted cards, one of them blocked — and the
+ * BLOCK went unreported until the next pass. A check that reports all-clear on work
+ * it cannot see is the failure this whole toolchain exists to stop. */
+
+{
+  const head = [rec("a")];
+  const decisions = { entries: [{ name: "Old Skip", action: "skip", reason: "decided earlier" }] };
+
+  eq("a working tree that matches HEAD adds nothing to the sheet",
+    worktreeReview(head, [rec("a")], decisions, decisions), null);
+
+  const chair = rec("b", { description: "Sit on a chair with your knees bent. Lift your heels, then lower them slowly." });
+  const w = worktreeReview(head, [rec("a"), chair], decisions, decisions);
+  eq("uncommitted cards are reviewed before they are committed", w && w.records.map((r) => r.id).join(","), "b");
+  ok("...with the same checks a branch gets",
+    !!w && w.records[0].flags.some((f) => /raised surface/.test(f.what)), w && JSON.stringify(w.records[0].flags));
+
+  const skipped = { entries: [...decisions.entries, { name: "New Skip", action: "skip", reason: "a pass decided this" }] };
+  const d = worktreeReview(head, head, decisions, skipped);
+  eq("an uncommitted queue skip on its own is enough to show the working tree",
+    d && d.decisions.added.map((e) => e.name).join(","), "New Skip");
+  eq("an unreadable file on disk is not mistaken for a clean one",
+    worktreeReview(head, null, decisions, decisions) && "shown", "shown");
 }
 
 /* ── report ──────────────────────────────────────────────────────────────── */

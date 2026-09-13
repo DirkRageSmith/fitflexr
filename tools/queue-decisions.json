@@ -119,6 +119,62 @@
       "reason": "Not a duplicate of the shipped Barbell Overhead Press, which is standing. The movement under this name is seated on a bench with back support, equipment barbell and bench, the way dumbbell presses already ship as separate seated and standing cards. Title it Seated Barbell Shoulder Press and keep this name as an alias.",
       "decided": "2026-09-12",
       "by": "review 2026-09-12"
+    },
+    {
+      "name": "Bent Press",
+      "action": "skip",
+      "reason": "An expert-level kettlebell lift whose whole point is that the arm barely moves and the body presses itself out from under the bell via a sideways hip/lat hinge -- the opposite of a normal press. A description that reads as 'press overhead while leaning to the side' would teach the wrong pattern under a loaded, twisted spine, and that residual uncertainty about the exact hip/lat sequencing is enough on its own to skip a spinal-loading lift.",
+      "decided": "2026-09-12",
+      "by": "evening Bellows pass 2026-09-12"
+    },
+    {
+      "name": "Bodyweight Flyes",
+      "action": "skip",
+      "reason": "The reference tags this with e-z curl bar equipment, but a flye is defined by each arm independently arcing outward -- both hands fixed to one bar cannot do that motion, so the name and the equipment contradict each other. Free-exercise-db elsewhere uses this name for a TRX/strap flye, which is a different, plausible movement; without knowing which one this record means, writing either is a guess.",
+      "decided": "2026-09-12",
+      "by": "evening Bellows pass 2026-09-12"
+    },
+    {
+      "name": "Butt Lift (Bridge)",
+      "action": "skip",
+      "reason": "The bodyweight bridge under this name is the shipped Glute Bridge: lie on your back, knees bent, feet flat, drive the hips up. No distinguishing detail in the reference separates it from the shipped card.",
+      "decided": "2026-09-13",
+      "by": "2026-09-13 morning Bellows pass"
+    },
+    {
+      "name": "Butterfly",
+      "action": "skip",
+      "reason": "The standard alternate name for the machine chest fly, already shipped as Pec Deck Fly (equipment: machine, same seated-arms-wide-squeeze-together movement).",
+      "decided": "2026-09-13",
+      "by": "2026-09-13 morning Bellows pass"
+    },
+    {
+      "name": "Butt-Ups",
+      "action": "skip",
+      "reason": "Not confident of the exact setup from the name alone -- this could be a kneeling hip-thrust ab drill or something closer to the shipped Glute Bridge/Reverse Crunch family, and the reference gives no instructions to check against. A wrong ab card is worse than a missing one.",
+      "decided": "2026-09-13",
+      "by": "2026-09-13 morning Bellows pass"
+    },
+    {
+      "name": "Cable Incline Pushdown",
+      "action": "skip",
+      "reason": "The reference tags this as a lats exercise, but 'pushdown' as a name is otherwise only used here for triceps cable work. Not confident enough of the incline-bench setup that turns a pushdown into a lat movement to write it without guessing.",
+      "decided": "2026-09-13",
+      "by": "2026-09-13 morning Bellows pass"
+    },
+    {
+      "name": "Cable Iron Cross",
+      "action": "skip",
+      "reason": "A wide-arm cable chest movement pulled in toward center is already covered by the shipped Cable Chest Fly and High/Low Cable Crossover. Not confident the 'iron cross' starting position (arms straight out to the sides at shoulder height, rather than a slight bend) is different enough to earn its own card rather than guessing at a distinction that isn't real.",
+      "decided": "2026-09-13",
+      "by": "2026-09-13 morning Bellows pass"
+    },
+    {
+      "name": "Cable Judo Flip",
+      "action": "skip",
+      "reason": "A diagonal rotational cable pull for the obliques reads as the same movement as the shipped Cable Woodchopper. Not confident there's a real distinguishing detail behind the name rather than a second title for the same chop.",
+      "decided": "2026-09-13",
+      "by": "2026-09-13 morning Bellows pass"
     }
   ]
 }
