@@ -18888,6 +18888,93 @@ const BATCH_2026_09_12_EVENING = [
 ];
 EXERCISES.push.apply(EXERCISES, BATCH_2026_09_12_EVENING);
 
+/* coverage.mjs --queue 10, 2026-09-13 morning. The pass named this block EVENING;
+ * renamed at the 2026-09-13 review, which also resolved its merge with the block
+ * above. Six skips from the same queue page are in tools/queue-decisions.json. */
+const BATCH_2026_09_13_MORNING = [
+  {
+    "id": "bodyweight-bottoms-up",
+    "name": "Bottoms Up",
+    "muscleGroup": "Core/Abs",
+    "secondaryMuscles": [],
+    "equipment": ["bodyweight"],
+    "difficulty": "Beginner",
+    "cue": "Point your legs at the ceiling and curl your hips off the floor toward them.",
+    "description": "Lie on your back with your legs extended straight up toward the ceiling and your hands flat on the floor at your sides for support. Curl your hips and tailbone up off the floor by contracting your lower abs, lifting your legs a few inches higher, then lower back down under control. Use your abs to lift, not momentum from swinging your legs.",
+    "avoidIf": ["lower-back", "pregnancy"],
+    "icon": "🙃",
+    "mechanic": "Isolation",
+    "pattern": "Core",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["strength", "hypertrophy"],
+    "homeFriendly": true,
+    "aliases": ["Reverse Crunch with Straight Legs"],
+    "category": "strength"
+  },
+  {
+    "id": "cable-hip-adduction",
+    "name": "Cable Hip Adduction",
+    "muscleGroup": "Quads",
+    "secondaryMuscles": [],
+    "equipment": ["cable"],
+    "difficulty": "Beginner",
+    "cue": "Pull your working leg across your body against the low pulley.",
+    "description": "Attach an ankle cuff to a low pulley and stand sideways to it with the cable leg farthest from it, so that leg starts out to the side. Keeping your leg straight, pull it across your body past your other leg, squeezing your inner thigh, then let it return under control against the cable. Keep your standing leg soft and your torso upright rather than leaning to help the pull.",
+    "avoidIf": ["hip"],
+    "icon": "🦵",
+    "mechanic": "Isolation",
+    "pattern": "Rotation",
+    "force": "Pull",
+    "unilateral": true,
+    "focus": ["strength"],
+    "homeFriendly": false,
+    "aliases": ["Cable Adduction"],
+    "category": "strength"
+  },
+  {
+    "id": "cable-incline-triceps-extension",
+    "name": "Cable Incline Triceps Extension",
+    "muscleGroup": "Triceps",
+    "secondaryMuscles": [],
+    "equipment": ["cable", "bench"],
+    "difficulty": "Intermediate",
+    "cue": "Lying back on the incline bench, extend your arms straight up over your face.",
+    "description": "Set an incline bench facing away from a low pulley and lie back on it, gripping a rope or straight-bar attachment behind your head with both hands. Keeping your upper arms fixed, extend your elbows to press the attachment up and forward until your arms are straight overhead, then lower back down under control. The incline keeps tension on the triceps through the stretch instead of letting your shoulders take over.",
+    "avoidIf": ["shoulder", "wrist"],
+    "icon": "💪",
+    "mechanic": "Isolation",
+    "pattern": "Vertical Push",
+    "force": "Push",
+    "unilateral": false,
+    "focus": ["strength", "hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Incline Cable Triceps Extension"],
+    "category": "strength"
+  },
+  {
+    "id": "cable-internal-rotation",
+    "name": "Cable Internal Rotation",
+    "muscleGroup": "Shoulders",
+    "secondaryMuscles": [],
+    "equipment": ["cable"],
+    "difficulty": "Beginner",
+    "cue": "Elbow pinned to your side, pull the handle across your stomach.",
+    "description": "Stand sideways to a low pulley with your working elbow bent 90 degrees and tucked against your ribs, forearm out in front of you gripping the handle. Keeping your elbow pinned to your side, rotate your forearm across your stomach toward your other hip, then let it return under control. Only your forearm should move -- if your elbow drifts away from your body, the shoulder joint is taking the load instead of the rotator cuff.",
+    "avoidIf": ["shoulder"],
+    "icon": "🔄",
+    "mechanic": "Isolation",
+    "pattern": "Rotation",
+    "force": "Pull",
+    "unilateral": true,
+    "focus": ["strength", "mobility"],
+    "homeFriendly": false,
+    "aliases": [],
+    "category": "strength"
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_09_13_MORNING);
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { MUSCLE_GROUPS, EQUIPMENT, CONDITIONS, SPORTS, STRETCH_TYPES, EXERCISES };
 }
