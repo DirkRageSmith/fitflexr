@@ -19102,6 +19102,74 @@ const BATCH_2026_09_13_EVENING = [
 ];
 EXERCISES.push.apply(EXERCISES, BATCH_2026_09_13_EVENING);
 
+const BATCH_2026_09_14_MORNING = [
+  {
+    "id": "chair-lower-back-stretch",
+    "name": "Chair Lower Back Stretch",
+    "muscleGroup": "Back",
+    "secondaryMuscles": [],
+    "equipment": ["bench"],
+    "difficulty": "Beginner",
+    "cue": "Sit forward in a chair and let your back round down toward the floor.",
+    "description": "Sit toward the front edge of a chair with your feet flat on the floor. Round your back forward, letting your head drop and your arms reach down between your knees toward the floor, until you feel the stretch through your lower back. Let gravity pull you down rather than forcing it further, then roll back up one vertebra at a time.",
+    "avoidIf": ["lower-back"],
+    "icon": "🪑",
+    "mechanic": "Isolation",
+    "pattern": "Stretch",
+    "force": "Static",
+    "unilateral": false,
+    "focus": ["mobility"],
+    "homeFriendly": true,
+    "aliases": [],
+    "category": "cooldown",
+    "hold": "2 × 30s",
+    "stretchType": "static"
+  },
+  {
+    "id": "chin-to-chest-stretch",
+    "name": "Chin To Chest Stretch",
+    "muscleGroup": "Shoulders",
+    "secondaryMuscles": [],
+    "equipment": ["bodyweight"],
+    "difficulty": "Beginner",
+    "cue": "Drop your chin toward your chest and let the back of your neck lengthen.",
+    "description": "Sit or stand tall, then gently lower your chin toward your chest until you feel a stretch along the back of your neck. Rest your hands lightly on the back of your head for a touch of extra weight, without pulling or bouncing. Ease into the stretch slowly and hold rather than nodding in and out of it.",
+    "avoidIf": ["neck"],
+    "icon": "🧘",
+    "mechanic": "Isolation",
+    "pattern": "Stretch",
+    "force": "Static",
+    "unilateral": false,
+    "focus": ["mobility"],
+    "homeFriendly": true,
+    "aliases": [],
+    "category": "cooldown",
+    "hold": "2 × 30s",
+    "stretchType": "static"
+  },
+  {
+    "id": "clean-and-jerk",
+    "name": "Clean and Jerk",
+    "muscleGroup": "Full Body/Cardio",
+    "secondaryMuscles": ["Shoulders", "Glutes", "Core/Abs"],
+    "equipment": ["barbell"],
+    "difficulty": "Advanced",
+    "cue": "Clean the bar to your shoulders, then drive it overhead with your legs.",
+    "description": "Explosively pull the bar from the floor to the front-rack position on your shoulders, the same clean used in the Barbell Clean. From there, dip your knees slightly and drive the bar up with your legs, dropping under it into a quarter-squat or short split stance to catch it locked out overhead, then stand tall and lower it back down. The leg drive on the way up is what makes it a jerk instead of a press — your legs move the weight, your arms just guide it into place.",
+    "avoidIf": ["shoulder", "lower-back", "knee"],
+    "icon": "🏋️",
+    "mechanic": "Compound",
+    "pattern": "Conditioning",
+    "force": "Explosive",
+    "unilateral": false,
+    "focus": ["power", "strength"],
+    "homeFriendly": false,
+    "aliases": ["Olympic Clean and Jerk"],
+    "category": "power"
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_09_14_MORNING);
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { MUSCLE_GROUPS, EQUIPMENT, CONDITIONS, SPORTS, STRETCH_TYPES, EXERCISES };
 }
