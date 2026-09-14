@@ -175,6 +175,34 @@
       "reason": "A diagonal rotational cable pull for the obliques reads as the same movement as the shipped Cable Woodchopper. Not confident there's a real distinguishing detail behind the name rather than a second title for the same chop.",
       "decided": "2026-09-13",
       "by": "2026-09-13 morning Bellows pass"
+    },
+    {
+      "name": "Cable Lying Triceps Extension",
+      "action": "skip",
+      "reason": "Lying on a bench facing away from a low pulley, gripping a rope or bar behind the head and extending overhead, reads as the same setup and movement as the just-shipped Cable Incline Triceps Extension — only the bench angle differs, which is not a distinct exercise.",
+      "decided": "2026-09-13",
+      "by": "2026-09-13 evening Bellows pass"
+    },
+    {
+      "name": "Cable Rope Rear-Delt Rows",
+      "action": "skip",
+      "reason": "A rope pulled toward the face/upper chest with elbows flared and high, targeting the rear delts and upper back, is the shipped Cable Face Pull. Not confident there's a real distinguishing pull path (to the chest with elbows back, rather than to the face with elbows up) behind the name rather than a second title for the same pull.",
+      "decided": "2026-09-13",
+      "by": "2026-09-13 evening Bellows pass"
+    },
+    {
+      "name": "Calf Stretch Hands Against Wall",
+      "action": "skip",
+      "reason": "Word-for-word the shipped Standing Calf Stretch (tf-standing-calf-stretch): 'both hands on it', one foot back, heel pressed into the floor, leg straight. No distinguishing detail in the reference separates it from the shipped card.",
+      "decided": "2026-09-13",
+      "by": "2026-09-13 evening Bellows pass"
+    },
+    {
+      "name": "Calf-Machine Shoulder Shrug",
+      "action": "skip",
+      "reason": "Uses a standing calf-raise machine's shoulder pads to shrug instead of raise the heels. Standing calf machines are not one standardized geometry (platform height, pad angle, knee-lock position vary by brand), and F10's lesson is exactly this: a confidently wrong setup description on unfamiliar equipment is worse than no card. Cable Shrug and the existing Dumbbell/Barbell Shrug already cover the movement pattern.",
+      "decided": "2026-09-13",
+      "by": "2026-09-13 evening Bellows pass"
     }
   ]
 }
