@@ -192,16 +192,27 @@ export function diffRecords(before, after) {
   return { added, changed, removed: (before || []).filter((r) => !now.has(r.id)) };
 }
 
+/* git's --is-ancestor is true BOTH ways for two branches on the same commit — a review branch
+ * cut at the top of the stack, or a pass's new branch before its first commit. Read as
+ * ancestry, that made each branch hide the other's cards and left no top at all, so --base
+ * printed main over a waiting stack (found 2026-09-14). The stack logic uses strict
+ * ancestry, and treats branches on one commit as equals. */
+const strictly = (isAncestor) => (p, q) => isAncestor(p, q) && !isAncestor(q, p);
+const sameCommit = (isAncestor) => (p, q) => isAncestor(p, q) && isAncestor(q, p);
+
 /** The closest pending branch this one was built on, or null when it was cut from
  *  main. `isAncestor(p, q)` is true when p is an ancestor of q. */
 export function nearestAncestor(branch, pending, isAncestor) {
-  const below = pending.filter((p) => p !== branch && isAncestor(p, branch));
-  return below.find((a) => below.every((o) => o === a || isAncestor(o, a))) || null;
+  const below = strictly(isAncestor);
+  const same = sameCommit(isAncestor);
+  const under = pending.filter((p) => p !== branch && below(p, branch));
+  return under.find((a) => under.every((o) => o === a || below(o, a) || same(o, a))) || null;
 }
 
 /** Bottom of each stack first, so the sheet reads in the order the work was done. */
 export function stackOrder(pending, isAncestor) {
-  const depth = (b) => pending.filter((p) => p !== b && isAncestor(p, b)).length;
+  const below = strictly(isAncestor);
+  const depth = (b) => pending.filter((p) => p !== b && below(p, b)).length;
   return [...pending].sort((a, b) => depth(a) - depth(b) || a.localeCompare(b));
 }
 
@@ -265,7 +276,8 @@ export function diffDecisions(before, after) {
  * If a fork already exists, build on the newest top and name the rest, so the pass
  * can say so. Merging forks is the review session's job. */
 export function baseFor(pending, isAncestor, dateOf) {
-  const tops = pending.filter((b) => !pending.some((o) => o !== b && isAncestor(b, o)));
+  const below = strictly(isAncestor);
+  const tops = pending.filter((b) => !pending.some((o) => o !== b && below(b, o)));
   if (!tops.length) return { base: "main", others: [] };
   const newestFirst = [...tops].sort((a, b) => (dateOf(b) - dateOf(a)) || a.localeCompare(b));
   return { base: newestFirst[0], others: newestFirst.slice(1) };

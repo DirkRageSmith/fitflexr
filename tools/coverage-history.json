@@ -112,16 +112,35 @@
     },
     {
       "date": "2026-09-13",
-      "libraryTotal": 659,
-      "libraryMoves": 560,
-      "covered": 361,
-      "absent": 533,
-      "ready": 370,
-      "skipped": 19,
+      "libraryTotal": 665,
+      "libraryMoves": 565,
+      "covered": 368,
+      "absent": 526,
+      "ready": 360,
+      "skipped": 22,
       "refs": {
         "free-exercise-db": {
-          "covered": 349,
-          "absent": 527
+          "covered": 356,
+          "absent": 520
+        },
+        "asanas": {
+          "covered": 12,
+          "absent": 6
+        }
+      }
+    },
+    {
+      "date": "2026-09-14",
+      "libraryTotal": 668,
+      "libraryMoves": 566,
+      "covered": 371,
+      "absent": 523,
+      "ready": 350,
+      "skipped": 29,
+      "refs": {
+        "free-exercise-db": {
+          "covered": 359,
+          "absent": 517
         },
         "asanas": {
           "covered": 12,

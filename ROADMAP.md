@@ -9,9 +9,15 @@ product brainstorming and bulk content. If you are an AI reading this: this file
 contract. Follow the schema in §5 exactly; don't invent fields or relax the safety
 rules in §9.
 
-**Status as of 2026-09-13:** live PWA at <https://dirkragesmith.github.io/fitflexr/>,
-sw cache **v44**. **659 exercises — 560 training moves + 99 stretches.**
+**Status as of 2026-09-14:** live PWA at <https://dirkragesmith.github.io/fitflexr/>,
+sw cache **v46**. **668 exercises — 566 training moves + 102 stretches.**
 
+- **2026-09-14 — the first STACKED review: 9 cards shipped, 5 corrected.** Two passes built
+  one branch on the other, as `pending.mjs --base` now tells them to, so the review merged the
+  top and got both batches with no conflicts. Car Drivers described a landmine barbell
+  rotation; it is a weight plate held out and turned like a steering wheel, and was rewritten.
+  `pending.mjs` now treats two branches on the same commit as equals, so a review branch cut at
+  the top can no longer make `--base` print `main`. 43 + 74 + 34 tests.
 - **2026-09-13 — two more Bellows batches through review: all 12 cards shipped, 7
   corrected.** The worst was Cable Hip Adduction, which put the ankle cuff on the wrong leg,
   so the cable would have done the work. Six older cards that need a chair, a sofa or a step

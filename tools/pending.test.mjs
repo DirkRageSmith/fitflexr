@@ -175,6 +175,23 @@ const rec = (id, over = {}) => ({
   eq("...and name the top left out, so the pass can say so", forked.others.join(","), "C");
 }
 
+{
+  /* The break, found 2026-09-14: two pending branches on the SAME commit — a review branch
+   * cut at the top of the stack, or a pass's new branch before its first commit — are each
+   * an "ancestor" of the other. So neither counted as a top and --base printed main over a
+   * waiting stack, which is the fork this whole function exists to prevent; and each
+   * branch hid the other's cards on the sheet. */
+  const edges = new Set(["A>T", "A>U", "T>U", "U>T"]);
+  const isAncestor = (p, q) => edges.has(`${p}>${q}`);
+  const dateOf = (b) => ({ A: 1, T: 2, U: 2 })[b];
+  const b = baseFor(["A", "T", "U"], isAncestor, dateOf);
+  ok("a branch sharing its commit with another is still a top, never main",
+    b.base === "T" || b.base === "U", JSON.stringify(b));
+  eq("the branch below both is the parent of one", nearestAncestor("T", ["A", "T", "U"], isAncestor), "A");
+  eq("...and of the other", nearestAncestor("U", ["A", "T", "U"], isAncestor), "A");
+  eq("the stack still lists its bottom first", stackOrder(["U", "T", "A"], isAncestor)[0], "A");
+}
+
 /* ── parseSource: the same parse for a ref and for the file on disk ─────────── */
 
 {
