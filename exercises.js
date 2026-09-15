@@ -19294,6 +19294,110 @@ const BATCH_2026_09_14_EVENING = [
 ];
 EXERCISES.push.apply(EXERCISES, BATCH_2026_09_14_EVENING);
 
+const BATCH_2026_09_15_MORNING = [
+  {
+    "id": "decline-dumbbell-fly",
+    "name": "Decline Dumbbell Fly",
+    "muscleGroup": "Chest",
+    "secondaryMuscles": ["Shoulders"],
+    "equipment": ["dumbbell", "bench"],
+    "difficulty": "Intermediate",
+    "cue": "On the decline, open wide then hug the dumbbells back together over your lower chest.",
+    "description": "Set the bench to a decline and hook your legs under the pads. Press dumbbells together above your lower chest with elbows slightly bent. Open your arms out wide in an arc until you feel a stretch, then bring them back together like hugging a barrel. The decline shifts the stretch and squeeze onto the lower chest.",
+    "avoidIf": ["shoulder"],
+    "icon": "🪽",
+    "mechanic": "Isolation",
+    "pattern": "Horizontal Push",
+    "force": "Push",
+    "unilateral": false,
+    "focus": ["hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Decline Dumbbell Flyes", "Decline DB Fly"],
+    "category": "strength"
+  },
+  {
+    "id": "decline-dumbbell-triceps-extension",
+    "name": "Decline Dumbbell Triceps Extension",
+    "muscleGroup": "Triceps",
+    "secondaryMuscles": [],
+    "equipment": ["dumbbell", "bench"],
+    "difficulty": "Intermediate",
+    "cue": "On the decline, lower the dumbbell behind your head, then extend.",
+    "description": "Lie back on a decline bench with your legs anchored, holding one dumbbell overhead with both hands cupped under the top plate. Keeping your upper arms still, bend your elbows to lower the dumbbell behind your head, then extend back to straight arms. The decline keeps constant tension on the triceps through the whole rep instead of unloading at the top.",
+    "avoidIf": ["shoulder", "wrist"],
+    "icon": "🏋️",
+    "mechanic": "Isolation",
+    "pattern": "Vertical Push",
+    "force": "Push",
+    "unilateral": false,
+    "focus": ["hypertrophy"],
+    "homeFriendly": false,
+    "aliases": [],
+    "category": "strength"
+  },
+  {
+    "id": "decline-ez-bar-triceps-extension",
+    "name": "Decline EZ-Bar Triceps Extension",
+    "muscleGroup": "Triceps",
+    "secondaryMuscles": [],
+    "equipment": ["ez-bar", "bench"],
+    "difficulty": "Intermediate",
+    "cue": "On the decline, lower the EZ-bar toward your forehead, then extend.",
+    "description": "Lie back on a decline bench with your legs anchored, holding an EZ-bar above your face with a narrow grip on the angled sections. Keeping your upper arms fixed, bend your elbows to lower the bar toward your forehead, then straighten your arms to press it back up. The decline angle keeps the resistance on the triceps for more of the range than the same move on a flat bench.",
+    "avoidIf": ["shoulder", "wrist"],
+    "icon": "🏋️",
+    "mechanic": "Isolation",
+    "pattern": "Vertical Push",
+    "force": "Push",
+    "unilateral": false,
+    "focus": ["hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Decline EZ Bar Triceps Extension", "Decline Skull Crusher"],
+    "category": "strength"
+  },
+  {
+    "id": "decline-reverse-crunch",
+    "name": "Decline Reverse Crunch",
+    "muscleGroup": "Core/Abs",
+    "secondaryMuscles": [],
+    "equipment": ["bench"],
+    "difficulty": "Intermediate",
+    "cue": "Hooked in on the decline, curl your hips up toward your chest.",
+    "description": "Lie back on a decline bench with your hands gripping the bench behind your head and your legs hanging straight off the end. Curl your hips up off the bench, drawing your knees toward your chest, then lower back down without letting your legs swing. The decline adds range and load compared to a floor reverse crunch — keep the motion coming from your lower abs, not momentum.",
+    "avoidIf": ["lower-back", "pregnancy"],
+    "icon": "🪑",
+    "mechanic": "Isolation",
+    "pattern": "Core",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["strength", "hypertrophy"],
+    "homeFriendly": false,
+    "aliases": [],
+    "category": "strength"
+  },
+  {
+    "id": "decline-smith-machine-press",
+    "name": "Decline Smith Machine Press",
+    "muscleGroup": "Chest",
+    "secondaryMuscles": ["Shoulders", "Triceps"],
+    "equipment": ["machine"],
+    "difficulty": "Beginner",
+    "cue": "On a decline bench under the Smith bar, press straight up over your lower chest.",
+    "description": "Set a decline bench under a Smith machine bar and lie back with your legs anchored, gripping the bar just outside shoulder width over your lower chest. Unrack it, lower it to your lower chest under control, then press it back up. The fixed bar path removes the balance and stabilizer demand of a free-weight decline press, so it's a beginner-friendly way to load the lower chest.",
+    "avoidIf": ["shoulder", "wrist"],
+    "icon": "🏋️",
+    "mechanic": "Compound",
+    "pattern": "Horizontal Push",
+    "force": "Push",
+    "unilateral": false,
+    "focus": ["strength", "hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Decline Smith Press"],
+    "category": "strength"
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_09_15_MORNING);
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { MUSCLE_GROUPS, EQUIPMENT, CONDITIONS, SPORTS, STRETCH_TYPES, EXERCISES };
 }

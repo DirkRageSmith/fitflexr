@@ -280,6 +280,41 @@
       "reason": "Same movement as the shipped Close-Grip Barbell Curl (close-grip-barbell-curl), which is already standing — 'standing' names nothing that card doesn't already do.",
       "decided": "2026-09-14",
       "by": "2026-09-14 evening Bellows pass"
+    },
+    {
+      "name": "Crunch - Legs On Exercise Ball",
+      "action": "skip",
+      "reason": "Needs a stability/exercise ball, which has no equipment id in EQUIPMENT — tagging it bodyweight would be the same furniture-mislabeling error the 2026-09-13 review fixed on bench/box cards. Adding a new equipment id is a structural decision beyond a card batch.",
+      "decided": "2026-09-15",
+      "by": "2026-09-15 morning Bellows pass"
+    },
+    {
+      "name": "Crunches",
+      "action": "skip",
+      "reason": "Plain floor crunch, hands by the head — the shipped Crunch (crunch) under a plural title. No distinguishing detail in the reference.",
+      "decided": "2026-09-15",
+      "by": "2026-09-15 morning Bellows pass"
+    },
+    {
+      "name": "Dancer's Stretch",
+      "action": "skip",
+      "reason": "The reference gives name and one muscle (lower back) only. Standing, grabbing the ankle behind you and hinging forward is the same starting shape as the shipped King Dancer Pose (Natarajasana) — not confident whether this names a simpler stretch without the backbend/overhead reach or is the same pose under its dance-studio name, and writing either is a guess.",
+      "decided": "2026-09-15",
+      "by": "2026-09-15 morning Bellows pass"
+    },
+    {
+      "name": "Decline Close-Grip Bench To Skull Crusher",
+      "action": "skip",
+      "reason": "The name implies a hybrid rep that transitions from a close-grip bench press into a skull crusher within one movement, on a decline bench. Not confident of the exact transition point or bar path from the name alone, and it overlaps the shipped Barbell Skull Crusher and EZ-Bar/Dumbbell JM Press family closely enough that a wrong guess at the hybrid detail is worse than skipping it.",
+      "decided": "2026-09-15",
+      "by": "2026-09-15 morning Bellows pass"
+    },
+    {
+      "name": "Double Kettlebell Jerk",
+      "action": "skip",
+      "reason": "No kettlebell jerk of any kind is shipped yet to pattern-match against, and the jerk's dip-drive-catch is exactly the technical-catch class of movement OPERATING.md and the Clean-from-Blocks skip both flag as the hardest part to describe correctly. Not confident enough to write the catch timing from the name alone.",
+      "decided": "2026-09-15",
+      "by": "2026-09-15 morning Bellows pass"
     }
   ]
 }
