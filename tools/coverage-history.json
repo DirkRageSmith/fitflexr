@@ -147,6 +147,25 @@
           "absent": 6
         }
       }
+    },
+    {
+      "date": "2026-09-15",
+      "libraryTotal": 679,
+      "libraryMoves": 577,
+      "covered": 384,
+      "absent": 510,
+      "ready": 329,
+      "skipped": 37,
+      "refs": {
+        "free-exercise-db": {
+          "covered": 372,
+          "absent": 504
+        },
+        "asanas": {
+          "covered": 12,
+          "absent": 6
+        }
+      }
     }
   ]
 }
