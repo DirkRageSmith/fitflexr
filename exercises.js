@@ -19303,7 +19303,7 @@ const BATCH_2026_09_15_MORNING = [
     "equipment": ["dumbbell", "bench"],
     "difficulty": "Intermediate",
     "cue": "On the decline, open wide then hug the dumbbells back together over your lower chest.",
-    "description": "Set the bench to a decline and hook your legs under the pads. Press dumbbells together above your lower chest with elbows slightly bent. Open your arms out wide in an arc until you feel a stretch, then bring them back together like hugging a barrel. The decline shifts the stretch and squeeze onto the lower chest.",
+    "description": "Set the bench to a decline, hook your legs under the pads, and press dumbbells together above your lower chest with elbows slightly bent. Open your arms out wide in an arc until you feel a stretch, then bring them back together like hugging a barrel. The decline shifts the stretch and squeeze onto the lower chest.",
     "avoidIf": ["shoulder"],
     "icon": "🪽",
     "mechanic": "Isolation",
