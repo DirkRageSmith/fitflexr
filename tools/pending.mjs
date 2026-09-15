@@ -119,8 +119,16 @@ export function parseSource(src) {
 
 /* ── the mechanical checks, so review time goes on judgement ─────────────── */
 
+/* `ez-bar` used to share the `barbell` pattern, on the idea that an EZ-bar is a
+ * barbell variant. It is its own equipment id in exercises.js's EQUIPMENT list
+ * (every shipped ez-bar-* card lists equipment: ["ez-bar"] alone, never
+ * "barbell" too), so the shared pattern falsely BLOCKed every EZ-bar card ever
+ * written for "prose names \"barbell\" but the record does not list it" —
+ * found 2026-09-14 on two real cards (Close-Grip EZ-Bar Curl, Close-Grip
+ * EZ-Bar Press) that were correct as written. */
 const GEAR_MENTIONS = {
-  barbell: /\bbarbell\b|\bez[- ]bar\b/,
+  barbell: /\bbarbell\b/,
+  "ez-bar": /\bez[- ]bar\b/,
   kettlebell: /\bkettlebell\b/,
   dumbbell: /\bdumbbell\b/,
   cable: /\bcable\b|\bpulley\b/,

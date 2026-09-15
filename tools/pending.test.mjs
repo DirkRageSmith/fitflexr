@@ -18,7 +18,7 @@
 
 import {
   diffRecords, nearestAncestor, stackOrder, reviewRecords, diffDecisions,
-  baseFor, parseSource, worktreeReview,
+  baseFor, parseSource, worktreeReview, checkRecord,
 } from "./pending.mjs";
 
 let pass = 0;
@@ -234,6 +234,41 @@ const rec = (id, over = {}) => ({
     d && d.decisions.added.map((e) => e.name).join(","), "New Skip");
   eq("an unreadable file on disk is not mistaken for a clean one",
     worktreeReview(head, null, decisions, decisions) && "shown", "shown");
+}
+
+/* ── gear mentions: ez-bar is its own equipment id, not a barbell alias ─────
+ *
+ * Found 2026-09-14: the shared barbell/ez-bar pattern BLOCKed two correct
+ * EZ-bar cards for "prose names barbell but the record does not list it",
+ * even though every shipped ez-bar-* card lists equipment: ["ez-bar"] alone.
+ */
+{
+  const ezOnly = rec("a", {
+    name: "Close-Grip EZ-Bar Curl", equipment: ["ez-bar"],
+    cue: "Grip the EZ-bar close and curl.",
+    description: "Hold an EZ-bar with hands close together, arms straight. Curl it up, then lower slowly.",
+  });
+  const flags = checkRecord(ezOnly, []);
+  ok("an ez-bar-only card mentioning \"EZ-bar\" is not blocked for a missing barbell",
+    !flags.some((f) => f.level === "block" && /"barbell"/.test(f.what)), JSON.stringify(flags));
+
+  const trueBarbell = rec("b", {
+    name: "Barbell Row", equipment: ["ez-bar"],
+    cue: "Row the barbell to your waist.",
+    description: "Hinge over and hold a barbell. Row it to your waist, then lower slowly.",
+  });
+  const flags2 = checkRecord(trueBarbell, []);
+  ok("a real \"barbell\" mention still blocks when equipment doesn't list barbell",
+    flags2.some((f) => f.level === "block" && /"barbell"/.test(f.what)), JSON.stringify(flags2));
+
+  const ezUnlisted = rec("c", {
+    name: "Close-Grip EZ-Bar Press", equipment: ["barbell", "bench"],
+    cue: "Press the EZ-bar up.",
+    description: "Lie back holding an EZ-bar. Press it up, then lower slowly.",
+  });
+  const flags3 = checkRecord(ezUnlisted, []);
+  ok("an \"EZ-bar\" mention still blocks when equipment doesn't list ez-bar",
+    flags3.some((f) => f.level === "block" && /"ez-bar"/.test(f.what)), JSON.stringify(flags3));
 }
 
 /* ── report ──────────────────────────────────────────────────────────────── */
