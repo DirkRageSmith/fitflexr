@@ -252,6 +252,34 @@
       "reason": "Barbell, floor-to-shoulders, the shipped Barbell Clean (barbell-clean-conditioning) already is this movement under a fuller name.",
       "decided": "2026-09-14",
       "by": "2026-09-14 morning Bellows pass"
+    },
+    {
+      "name": "Clean from Blocks",
+      "action": "skip",
+      "reason": "A full clean, catch and all, starting with the bar on elevated blocks instead of the floor. The catch is the hardest part of a clean to describe correctly (Clean and Jerk's own catch needed a correction in the 2026-09-14 review), and 'blocks' commonly means either below-knee or above-knee height with no way to tell which this name intends. Not confident enough to write either detail.",
+      "decided": "2026-09-14",
+      "by": "2026-09-14 evening Bellows pass"
+    },
+    {
+      "name": "Close-Grip EZ-Bar Curl with Band",
+      "action": "skip",
+      "reason": "A close-grip EZ-bar curl with a resistance band looped around the bar ends and anchored underfoot for accommodating resistance. Not confident describing the band anchor and stance precisely from the name alone — the base movement shipped this pass as Close-Grip EZ-Bar Curl.",
+      "decided": "2026-09-14",
+      "by": "2026-09-14 evening Bellows pass"
+    },
+    {
+      "name": "Close-Grip Front Lat Pulldown",
+      "action": "skip",
+      "reason": "Same movement as the shipped Close-Grip Cable Lat Pulldown (close-grip-cable-lat-pulldown) — 'front' just means pulled to the chest rather than behind the neck, which that card already describes.",
+      "decided": "2026-09-14",
+      "by": "2026-09-14 evening Bellows pass"
+    },
+    {
+      "name": "Close-Grip Standing Barbell Curl",
+      "action": "skip",
+      "reason": "Same movement as the shipped Close-Grip Barbell Curl (close-grip-barbell-curl), which is already standing — 'standing' names nothing that card doesn't already do.",
+      "decided": "2026-09-14",
+      "by": "2026-09-14 evening Bellows pass"
     }
   ]
 }
