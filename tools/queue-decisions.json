@@ -315,6 +315,27 @@
       "reason": "No kettlebell jerk of any kind is shipped yet to pattern-match against, and the jerk's dip-drive-catch is exactly the technical-catch class of movement OPERATING.md and the Clean-from-Blocks skip both flag as the hardest part to describe correctly. Not confident enough to write the catch timing from the name alone.",
       "decided": "2026-09-15",
       "by": "2026-09-15 morning Bellows pass"
+    },
+    {
+      "name": "Double Kettlebell Snatch",
+      "action": "skip",
+      "reason": "Same technical-catch class the Double Kettlebell Jerk skip already flags: the snatch's bell-rolls-to-lockout catch is the hardest part of the single-arm version to get right (the shipped Kettlebell Snatch card calls it 'powerful and technical'), and doing it with two bells simultaneously doubles the chance of a wrong wrist-rotation detail teaching someone to bang their forearms.",
+      "decided": "2026-09-21",
+      "by": "2026-09-21 morning Bellows pass"
+    },
+    {
+      "name": "Dumbbell Lying Pronation",
+      "action": "skip",
+      "reason": "A real forearm-rotation exercise, but not confident of the exact body position from the name alone -- lying on the back with the working forearm resting across the body, lying on the side, or seated with the forearm on a bench are all plausible readings and the reference gives no instructions to check against. A wrong setup on a small-ROM rotational movement is an easy way to teach the wrong joint action.",
+      "decided": "2026-09-21",
+      "by": "2026-09-21 morning Bellows pass"
+    },
+    {
+      "name": "Dumbbell Lying Supination",
+      "action": "skip",
+      "reason": "Same family and same uncertainty as Dumbbell Lying Pronation -- see that entry.",
+      "decided": "2026-09-21",
+      "by": "2026-09-21 morning Bellows pass"
     }
   ]
 }
