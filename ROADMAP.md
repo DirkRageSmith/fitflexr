@@ -9,9 +9,19 @@ product brainstorming and bulk content. If you are an AI reading this: this file
 contract. Follow the schema in §5 exactly; don't invent fields or relax the safety
 rules in §9.
 
-**Status as of 2026-09-14:** live PWA at <https://dirkragesmith.github.io/fitflexr/>,
-sw cache **v46**. **668 exercises — 566 training moves + 102 stretches.**
+**Status as of 2026-09-21:** live PWA at <https://dirkragesmith.github.io/fitflexr/>,
+sw cache **v51**. **692 exercises — 588 training moves + 104 stretches.**
 
+- **2026-09-21 — four batches at once, after a week of the machine asleep: 24 cards shipped,
+  4 corrected, and 2 already-shipped cards fixed.** The corrections were a clean deadlift that
+  finished "standing tall with your shoulders slightly ahead of the bar" (two positions at
+  once), an overhead crunch that described swinging the arms forward while claiming the
+  difficulty of the version that does not, and a double kettlebell windmill that turned the
+  feet the wrong way. The fourth was a decline Smith press set up on a bench it did not list —
+  which nothing caught, because `pending.mjs` knew about every bar, bell and machine but not
+  the bench. It does now, measured against all 692 cards first so the four "no bench needed"
+  phrasings do not cry wolf; it immediately found the same miss in two shipped cards.
+  74 + 34 + 55 tests.
 - **2026-09-14 — the first STACKED review: 9 cards shipped, 5 corrected.** Two passes built
   one branch on the other, as `pending.mjs --base` now tells them to, so the review merged the
   top and got both batches with no conflicts. Car Drivers described a landmine barbell
