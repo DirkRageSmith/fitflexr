@@ -336,6 +336,34 @@
       "reason": "Same family and same uncertainty as Dumbbell Lying Pronation -- see that entry.",
       "decided": "2026-09-21",
       "by": "2026-09-21 morning Bellows pass"
+    },
+    {
+      "name": "Dumbbell Prone Incline Curl",
+      "action": "skip",
+      "reason": "Duplicate of the already-shipped prone-dumbbell-curl: 'lie face-down on a flat bench raised enough for your arms to hang' is the same body position and the same anti-swing mechanism an incline bench gives this move. Writing a second card for it would ship two entries for one exercise.",
+      "decided": "2026-09-21",
+      "by": "2026-09-21 midday Bellows pass"
+    },
+    {
+      "name": "Dumbbell Seated Box Jump",
+      "action": "skip",
+      "reason": "The name alone doesn't say whether the seated start is on the ground, a low box or the target box, and holding dumbbells through a plyometric landing is a real grip-and-balance risk that a wrongly-guessed setup would only make worse.",
+      "decided": "2026-09-21",
+      "by": "2026-09-21 midday Bellows pass"
+    },
+    {
+      "name": "Dynamic Back Stretch",
+      "action": "skip",
+      "reason": "\"Back\" covers upper (thoracic rotation/extension) and lower back movement patterns that are not interchangeable, and the name alone does not say which one this is meant to be.",
+      "decided": "2026-09-21",
+      "by": "2026-09-21 midday Bellows pass"
+    },
+    {
+      "name": "Elbows Back",
+      "action": "skip",
+      "reason": "No stable, recognizable movement attaches to this name -- it reads like a cue fragment from a longer routine rather than a named exercise, and guessing a full setup around it risks inventing a stretch that isn't the one meant.",
+      "decided": "2026-09-21",
+      "by": "2026-09-21 midday Bellows pass"
     }
   ]
 }

@@ -19542,6 +19542,138 @@ const BATCH_2026_09_21_MORNING = [
 ];
 EXERCISES.push.apply(EXERCISES, BATCH_2026_09_21_MORNING);
 
+/* coverage.mjs --queue 10, 2026-09-21 midday, run on top of the morning batch.
+ * Dumbbell Prone Incline Curl skipped as a duplicate of the already-shipped
+ * prone-dumbbell-curl. Dumbbell Seated Box Jump, Dynamic Back Stretch and
+ * Elbows Back skipped -- see tools/queue-decisions.json for why. */
+const BATCH_2026_09_21_MIDDAY = [
+  {
+    "id": "dumbbell-seated-one-leg-calf-raise",
+    "name": "Dumbbell Seated One-Leg Calf Raise",
+    "muscleGroup": "Calves",
+    "secondaryMuscles": [],
+    "equipment": ["dumbbell", "bench"],
+    "difficulty": "Intermediate",
+    "cue": "Dumbbell balanced on one knee, drive that heel straight up.",
+    "description": "Sit on a bench with feet flat on the floor and a dumbbell balanced upright on top of one knee, holding it steady with both hands. Keeping your foot flat, push through the ball of that foot to lift your heel as high as you can, pause, then lower it all the way back down before the next rep. Bending the knee shifts the work onto the soleus, the calf muscle standing raises can't fully reach.",
+    "avoidIf": [],
+    "icon": "🦵",
+    "mechanic": "Isolation",
+    "pattern": "Squat",
+    "force": "Push",
+    "unilateral": true,
+    "focus": ["hypertrophy"],
+    "homeFriendly": true,
+    "aliases": ["Seated One-Leg Calf Raise", "Single-Leg Seated Dumbbell Calf Raise"],
+    "category": "strength"
+  },
+  {
+    "id": "barbell-elevated-back-lunge",
+    "name": "Elevated Back Lunge",
+    "muscleGroup": "Quads",
+    "secondaryMuscles": ["Glutes", "Hamstrings"],
+    "equipment": ["barbell", "box"],
+    "difficulty": "Intermediate",
+    "cue": "Standing on a box, step one leg back and down into a reverse lunge.",
+    "description": "Rest a barbell across your upper back as in a normal squat and stand with both feet on a box or sturdy step. Step one leg back and down off the box into a reverse lunge, letting your back knee drop below the level of your front foot, then drive through the front heel to return to standing on the box. Standing on the raised platform extends the range of motion well past what a reverse lunge on flat ground allows.",
+    "avoidIf": ["knee", "balance", "lower-back"],
+    "icon": "🏋️",
+    "mechanic": "Compound",
+    "pattern": "Lunge",
+    "force": "Push",
+    "unilateral": true,
+    "focus": ["strength", "hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Deficit Reverse Lunge", "Reverse Lunge Off a Box"],
+    "category": "strength"
+  },
+  {
+    "id": "dumbbell-external-rotation",
+    "name": "External Rotation",
+    "muscleGroup": "Shoulders",
+    "secondaryMuscles": [],
+    "equipment": ["dumbbell"],
+    "difficulty": "Beginner",
+    "cue": "Elbow pinned to your side, rotate the dumbbell up and out.",
+    "description": "Lie on your side holding a light dumbbell in your top hand, upper arm resting against your ribs and elbow bent 90 degrees so your forearm rests across your stomach. Keeping your elbow pinned to your side, rotate your forearm upward until it points at the ceiling, then lower it back down under control. It isolates the rotator cuff, so the weight should be light enough that only your forearm moves.",
+    "avoidIf": ["shoulder"],
+    "icon": "🔄",
+    "mechanic": "Isolation",
+    "pattern": "Rotation",
+    "force": "Pull",
+    "unilateral": true,
+    "focus": ["strength", "mobility"],
+    "homeFriendly": true,
+    "aliases": ["Side-Lying External Rotation", "Dumbbell Side-Lying External Rotation"],
+    "category": "strength"
+  },
+  {
+    "id": "band-external-rotation",
+    "name": "External Rotation with Band",
+    "muscleGroup": "Shoulders",
+    "secondaryMuscles": [],
+    "equipment": ["resistance-band"],
+    "difficulty": "Beginner",
+    "cue": "Elbow pinned to your side, rotate your forearm out against the band.",
+    "description": "Anchor a resistance band at elbow height and stand side-on to the anchor, band in your far hand, elbow bent 90 degrees and pinned against your ribs so the band pulls your forearm in toward your stomach. Keeping your elbow pinned, rotate your forearm outward against the band's pull, then let it return under control. Only your forearm should move -- letting your elbow swing away from your side hands the work to bigger muscles.",
+    "avoidIf": ["shoulder"],
+    "icon": "🔄",
+    "mechanic": "Isolation",
+    "pattern": "Rotation",
+    "force": "Pull",
+    "unilateral": true,
+    "focus": ["strength", "mobility"],
+    "homeFriendly": true,
+    "aliases": ["Band External Rotation", "Standing Band External Rotation"],
+    "category": "strength"
+  },
+  {
+    "id": "dyn-elbow-circles",
+    "name": "Elbow Circles",
+    "muscleGroup": "Shoulders",
+    "secondaryMuscles": [],
+    "equipment": ["bodyweight"],
+    "difficulty": "Beginner",
+    "cue": "Fingertips on your shoulders, draw big circles with your elbows.",
+    "description": "Rest your fingertips on your shoulders and lift your elbows out to the sides. Draw slow, full circles with your elbows, forward for a set then backward, keeping your fingertips on your shoulders throughout. It moves the shoulder joint through a full range before you load it with anything heavier.",
+    "avoidIf": ["shoulder"],
+    "icon": "🔄",
+    "mechanic": "Isolation",
+    "pattern": "Stretch",
+    "force": "Static",
+    "unilateral": false,
+    "focus": ["mobility"],
+    "homeFriendly": true,
+    "aliases": ["Shoulder Elbow Circles", "Arm Elbow Rotations"],
+    "category": "warmup",
+    "hold": "2 × 10 each direction",
+    "stretchType": "dynamic"
+  },
+  {
+    "id": "dyn-chest-stretch",
+    "name": "Dynamic Chest Stretch",
+    "muscleGroup": "Chest",
+    "secondaryMuscles": ["Shoulders"],
+    "equipment": ["bodyweight"],
+    "difficulty": "Beginner",
+    "cue": "Swing both arms out wide, then cross them in front of your chest.",
+    "description": "Stand tall with your arms out to your sides at shoulder height. Swing both arms forward until they cross in front of your chest, then swing them back out wide, keeping a steady rhythm rather than holding a stretch. Alternate which forearm crosses on top each rep to keep the motion even on both sides.",
+    "avoidIf": ["shoulder"],
+    "icon": "🙌",
+    "mechanic": "Isolation",
+    "pattern": "Stretch",
+    "force": "Static",
+    "unilateral": false,
+    "focus": ["mobility"],
+    "homeFriendly": true,
+    "aliases": ["Arm Swings", "Chest Opener Arm Swings", "Cross-Body Arm Swings"],
+    "category": "warmup",
+    "hold": "2 × 10",
+    "stretchType": "dynamic"
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_09_21_MIDDAY);
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { MUSCLE_GROUPS, EQUIPMENT, CONDITIONS, SPORTS, STRETCH_TYPES, EXERCISES };
 }
