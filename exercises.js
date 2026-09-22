@@ -19785,7 +19785,7 @@ const BATCH_2026_09_22_MORNING = [
     "equipment": ["barbell"],
     "difficulty": "Beginner",
     "cue": "Straight arms: raise the bar from your thighs to overhead, then arc it down behind your head.",
-    "description": "Stand holding a barbell with straight arms in front of your thighs, hands about shoulder-width apart. Keeping your arms straight the whole time, raise the bar up and overhead like a front raise, then continue the same arc down behind your head toward the nape of your neck like a pullover. Reverse the arc back to the start. Use an empty bar or a light weight — the straight-arm range is a serious stretch on the shoulders and lats, not a place to add load.",
+    "description": "Stand holding a barbell with straight arms in front of your thighs, hands about shoulder-width apart. Keeping your arms straight the whole time, raise the bar up and overhead like a front raise, continue the same arc down behind your head toward the nape of your neck like a pullover, then reverse back to the start. Use an empty bar or a light weight — the straight-arm range is a serious stretch on the shoulders and lats, not a place to add load.",
     "avoidIf": ["shoulder", "lower-back"],
     "icon": "🔄",
     "mechanic": "Isolation",
