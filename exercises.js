@@ -3922,7 +3922,8 @@ const EXERCISES = [
       "Back"
     ],
     "equipment": [
-      "dumbbell"
+      "dumbbell",
+      "bench"
     ],
     "difficulty": "Beginner",
     "cue": "Sit and hinge forward, then raise the dumbbells out to the sides.",
@@ -6424,7 +6425,8 @@ const EXERCISES = [
     "muscleGroup": "Triceps",
     "secondaryMuscles": [],
     "equipment": [
-      "dumbbell"
+      "dumbbell",
+      "bench"
     ],
     "difficulty": "Intermediate",
     "cue": "Lower the dumbbell across your body toward the opposite shoulder.",
@@ -19179,7 +19181,7 @@ const BATCH_2026_09_14_EVENING = [
     "equipment": ["barbell"],
     "difficulty": "Intermediate",
     "cue": "Narrower stance than a deadlift, shins close to the bar, pull to a tall stand.",
-    "description": "Set up like a deadlift but with the narrower stance and hook grip you'd use for a clean, hips lower and shins closer to the bar than a max-effort pull. Drive through the floor and stand tall with your shoulders slightly ahead of the bar, then lower it back to the floor and reset each rep. It grooves the clean's first-pull position at deadlift loads, without the explosive finish.",
+    "description": "Set up like a deadlift but with the narrower stance and hook grip you'd use for a clean, hips lower and shins closer to the bar than a max-effort pull, shoulders slightly ahead of it. Drive through the floor holding that torso angle until the bar clears your knees, then finish standing tall and lower it back to the floor to reset each rep. It grooves the clean's first-pull position at deadlift loads, without the explosive finish.",
     "avoidIf": ["lower-back"],
     "icon": "🏋️",
     "mechanic": "Compound",
@@ -19277,9 +19279,9 @@ const BATCH_2026_09_14_EVENING = [
     "muscleGroup": "Core/Abs",
     "secondaryMuscles": [],
     "equipment": ["bodyweight"],
-    "difficulty": "Beginner",
-    "cue": "Arms extended overhead on the floor, crunch up and reach forward.",
-    "description": "Lie on your back with knees bent, feet flat, and arms extended straight overhead resting on the floor. Crunch up, swinging your arms forward as your shoulder blades lift off the floor, then lower back down under control, letting your arms return overhead. The overhead arm swing adds a longer lever than a hands-by-your-head crunch, making the same move harder.",
+    "difficulty": "Intermediate",
+    "cue": "Arms stay stretched overhead, beside your ears, as you crunch up.",
+    "description": "Lie on your back with knees bent, feet flat, and arms extended straight overhead resting on the floor. Keeping your arms straight and beside your ears the whole time, crunch up until your shoulder blades leave the floor, then lower back down under control. Holding the arms out there lengthens the lever, so it is harder than a hands-by-your-head crunch — swinging them forward for momentum gives that back.",
     "avoidIf": ["lower-back", "neck", "pregnancy"],
     "icon": "💪",
     "mechanic": "Isolation",
@@ -19380,7 +19382,7 @@ const BATCH_2026_09_15_MORNING = [
     "name": "Decline Smith Machine Press",
     "muscleGroup": "Chest",
     "secondaryMuscles": ["Shoulders", "Triceps"],
-    "equipment": ["machine"],
+    "equipment": ["machine", "bench"],
     "difficulty": "Beginner",
     "cue": "On a decline bench under the Smith bar, press straight up over your lower chest.",
     "description": "Set a decline bench under a Smith machine bar and lie back with your legs anchored, gripping the bar just outside shoulder width over your lower chest. Unrack it, lower it to your lower chest under control, then press it back up. The fixed bar path removes the balance and stabilizer demand of a free-weight decline press, so it's a beginner-friendly way to load the lower chest.",
@@ -19427,7 +19429,7 @@ const BATCH_2026_09_21_MORNING = [
     "equipment": ["kettlebell"],
     "difficulty": "Advanced",
     "cue": "One bell locked overhead, hinge sideways to lower the other bell down your leg.",
-    "description": "Hold one kettlebell locked out overhead with your eyes on it, and a second kettlebell in your other hand. Turn your feet toward the overhead side, then hinge at the hips and push them back and to that side, lowering the second bell down the front of your leg while the overhead arm stays vertical. The extra bell adds load to the reach, so move slower than the single-kettlebell version and keep the overhead arm locked the whole time.",
+    "description": "Hold one kettlebell locked out overhead with your eyes on it, and a second kettlebell in your other hand. Push your hips toward the overhead side and hinge sideways, lowering the second bell down the front of your leg while the overhead arm stays vertical. The extra bell adds load to the reach, so move slower than the single-kettlebell version and keep the overhead arm locked the whole time.",
     "avoidIf": ["shoulder", "lower-back", "balance"],
     "icon": "🌬️",
     "mechanic": "Compound",
