@@ -18,7 +18,7 @@
 
 import {
   diffRecords, nearestAncestor, stackOrder, reviewRecords, diffDecisions,
-  baseFor, parseSource, worktreeReview,
+  baseFor, parseSource, worktreeReview, checkRecord,
 } from "./pending.mjs";
 
 let pass = 0;
@@ -234,6 +234,116 @@ const rec = (id, over = {}) => ({
     d && d.decisions.added.map((e) => e.name).join(","), "New Skip");
   eq("an unreadable file on disk is not mistaken for a clean one",
     worktreeReview(head, null, decisions, decisions) && "shown", "shown");
+}
+
+/* ── gear mentions: ez-bar is its own equipment id, not a barbell alias ─────
+ *
+ * Found 2026-09-14: the shared barbell/ez-bar pattern BLOCKed two correct
+ * EZ-bar cards for "prose names barbell but the record does not list it",
+ * even though every shipped ez-bar-* card lists equipment: ["ez-bar"] alone.
+ */
+{
+  const ezOnly = rec("a", {
+    name: "Close-Grip EZ-Bar Curl", equipment: ["ez-bar"],
+    cue: "Grip the EZ-bar close and curl.",
+    description: "Hold an EZ-bar with hands close together, arms straight. Curl it up, then lower slowly.",
+  });
+  const flags = checkRecord(ezOnly, []);
+  ok("an ez-bar-only card mentioning \"EZ-bar\" is not blocked for a missing barbell",
+    !flags.some((f) => f.level === "block" && /"barbell"/.test(f.what)), JSON.stringify(flags));
+
+  const trueBarbell = rec("b", {
+    name: "Barbell Row", equipment: ["ez-bar"],
+    cue: "Row the barbell to your waist.",
+    description: "Hinge over and hold a barbell. Row it to your waist, then lower slowly.",
+  });
+  const flags2 = checkRecord(trueBarbell, []);
+  ok("a real \"barbell\" mention still blocks when equipment doesn't list barbell",
+    flags2.some((f) => f.level === "block" && /"barbell"/.test(f.what)), JSON.stringify(flags2));
+
+  const ezUnlisted = rec("c", {
+    name: "Close-Grip EZ-Bar Press", equipment: ["barbell", "bench"],
+    cue: "Press the EZ-bar up.",
+    description: "Lie back holding an EZ-bar. Press it up, then lower slowly.",
+  });
+  const flags3 = checkRecord(ezUnlisted, []);
+  ok("an \"EZ-bar\" mention still blocks when equipment doesn't list ez-bar",
+    flags3.some((f) => f.level === "block" && /"ez-bar"/.test(f.what)), JSON.stringify(flags3));
+}
+
+/* ── gear mentions: a bench is gear too ────────────────────────────────────
+ *
+ * Found 2026-09-21 by an Opus review session. GEAR_MENTIONS listed every bar,
+ * bell and machine but not the bench, and ELEVATION only fires on cards tagged
+ * bodyweight-only — so "Set a decline bench under a Smith machine bar" shipped
+ * with equipment ["machine"] and nothing flagged it, while the shipped Smith
+ * Machine Hip Thrust lists ["machine", "bench"] for the same reason.
+ *
+ * Measured before adding: a bare /\bbench\b/ flags 7 of the 692 shipped cards,
+ * and 4 of those are correct as they stand — "with no bench", "a box or bench",
+ * "a bench or wall", and the glute-ham bench that is part of the machine. So the
+ * pattern excludes those four shapes, which leaves exactly the real misses.
+ */
+{
+  const usesBench = (r) => checkRecord(r, []).some((f) => f.level === "block" && /"bench"/.test(f.what));
+
+  ok("a card that lies back on a bench without listing one is blocked",
+    usesBench(rec("a", {
+      name: "Decline Smith Machine Press", equipment: ["machine"],
+      cue: "Press straight up over your lower chest.",
+      description: "Set a decline bench under a Smith machine bar and lie back. Press it up, then lower slowly.",
+    })));
+  ok("and sitting on the edge of one counts the same",
+    usesBench(rec("b", {
+      name: "Seated Dumbbell Rear-Delt Fly", equipment: ["dumbbell"],
+      cue: "Hinge forward and raise the bells out to the sides.",
+      description: "Sit on the edge of a bench and hinge forward. Raise the bells out to the sides, then lower.",
+    })));
+  ok("a card that lists the bench is not blocked for naming it",
+    !usesBench(rec("c", {
+      name: "Decline Dumbbell Fly", equipment: ["dumbbell", "bench"],
+      cue: "Open wide, then hug them back together.",
+      description: "Set the bench to a decline and press the dumbbells together. Open wide, then hug them back.",
+    })));
+
+  /* The four shapes the measurement found. Each says the bench is NOT needed. */
+  ok("\"with no bench\" is the opposite of needing one",
+    !usesBench(rec("d", {
+      name: "Incline Resistance Band Chest Press", equipment: ["resistance-band"],
+      cue: "Press up and in at an angle.",
+      description: "Anchor the band low behind you. Press up and in to hit the upper chest with no bench.",
+    })));
+  ok("a bench offered as an alternative to the gear that IS listed does not block",
+    !usesBench(rec("e", {
+      name: "Barbell Box Squat", equipment: ["barbell", "box"],
+      cue: "Sit back to the box, then stand.",
+      description: "Set up a back squat over a box or bench set at about parallel height. Squat back and stand.",
+    })));
+  ok("nor one offered as an alternative to a wall",
+    !usesBench(rec("f", {
+      name: "Donkey Calf Raise", equipment: ["bodyweight"],
+      cue: "Hinge forward and drive your heels up.",
+      description: "Hinge at the hips and rest your hands on a bench or wall. Drive your heels up, then lower.",
+    })));
+  ok("the glute-ham bench is part of the machine, not a second piece of gear",
+    !usesBench(rec("g", {
+      name: "Glute-Ham Raise", equipment: ["machine"],
+      cue: "Lower under control, then curl back up.",
+      description: "Set up in the glute-ham bench with your feet anchored. Lower under control, then curl up.",
+    })));
+
+  ok("a box named in the how-to must be listed too",
+    checkRecord(rec("h", {
+      name: "Step-Up", equipment: ["dumbbell"],
+      cue: "Step up, drive through the heel.",
+      description: "Stand facing a box with a dumbbell in each hand. Step up and drive through the heel, then down.",
+    }), []).some((f) => f.level === "block" && /"box"/.test(f.what)));
+  ok("and a card that lists the box is left alone",
+    !checkRecord(rec("i", {
+      name: "Elevated Back Lunge", equipment: ["barbell", "box"],
+      cue: "Step back and down off the box.",
+      description: "Rest a barbell on your back and stand on a box. Step one leg back and down, then drive up.",
+    }), []).some((f) => f.level === "block" && /"box"/.test(f.what)));
 }
 
 /* ── report ──────────────────────────────────────────────────────────────── */

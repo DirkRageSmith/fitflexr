@@ -252,6 +252,118 @@
       "reason": "Barbell, floor-to-shoulders, the shipped Barbell Clean (barbell-clean-conditioning) already is this movement under a fuller name.",
       "decided": "2026-09-14",
       "by": "2026-09-14 morning Bellows pass"
+    },
+    {
+      "name": "Clean from Blocks",
+      "action": "skip",
+      "reason": "A full clean, catch and all, starting with the bar on elevated blocks instead of the floor. The catch is the hardest part of a clean to describe correctly (Clean and Jerk's own catch needed a correction in the 2026-09-14 review), and 'blocks' commonly means either below-knee or above-knee height with no way to tell which this name intends. Not confident enough to write either detail.",
+      "decided": "2026-09-14",
+      "by": "2026-09-14 evening Bellows pass"
+    },
+    {
+      "name": "Close-Grip EZ-Bar Curl with Band",
+      "action": "skip",
+      "reason": "A close-grip EZ-bar curl with a resistance band looped around the bar ends and anchored underfoot for accommodating resistance. Not confident describing the band anchor and stance precisely from the name alone — the base movement shipped this pass as Close-Grip EZ-Bar Curl.",
+      "decided": "2026-09-14",
+      "by": "2026-09-14 evening Bellows pass"
+    },
+    {
+      "name": "Close-Grip Front Lat Pulldown",
+      "action": "skip",
+      "reason": "Same movement as the shipped Close-Grip Cable Lat Pulldown (close-grip-cable-lat-pulldown) — 'front' just means pulled to the chest rather than behind the neck, which that card already describes.",
+      "decided": "2026-09-14",
+      "by": "2026-09-14 evening Bellows pass"
+    },
+    {
+      "name": "Close-Grip Standing Barbell Curl",
+      "action": "skip",
+      "reason": "Same movement as the shipped Close-Grip Barbell Curl (close-grip-barbell-curl), which is already standing — 'standing' names nothing that card doesn't already do.",
+      "decided": "2026-09-14",
+      "by": "2026-09-14 evening Bellows pass"
+    },
+    {
+      "name": "Crunch - Legs On Exercise Ball",
+      "action": "skip",
+      "reason": "Needs a stability/exercise ball, which has no equipment id in EQUIPMENT — tagging it bodyweight would be the same furniture-mislabeling error the 2026-09-13 review fixed on bench/box cards. Adding a new equipment id is a structural decision beyond a card batch.",
+      "decided": "2026-09-15",
+      "by": "2026-09-15 morning Bellows pass"
+    },
+    {
+      "name": "Crunches",
+      "action": "skip",
+      "reason": "Plain floor crunch, hands by the head — the shipped Crunch (crunch) under a plural title. No distinguishing detail in the reference.",
+      "decided": "2026-09-15",
+      "by": "2026-09-15 morning Bellows pass"
+    },
+    {
+      "name": "Dancer's Stretch",
+      "action": "skip",
+      "reason": "The reference gives name and one muscle (lower back) only. Standing, grabbing the ankle behind you and hinging forward is the same starting shape as the shipped King Dancer Pose (Natarajasana) — not confident whether this names a simpler stretch without the backbend/overhead reach or is the same pose under its dance-studio name, and writing either is a guess.",
+      "decided": "2026-09-15",
+      "by": "2026-09-15 morning Bellows pass"
+    },
+    {
+      "name": "Decline Close-Grip Bench To Skull Crusher",
+      "action": "skip",
+      "reason": "The name implies a hybrid rep that transitions from a close-grip bench press into a skull crusher within one movement, on a decline bench. Not confident of the exact transition point or bar path from the name alone, and it overlaps the shipped Barbell Skull Crusher and EZ-Bar/Dumbbell JM Press family closely enough that a wrong guess at the hybrid detail is worse than skipping it.",
+      "decided": "2026-09-15",
+      "by": "2026-09-15 morning Bellows pass"
+    },
+    {
+      "name": "Double Kettlebell Jerk",
+      "action": "skip",
+      "reason": "No kettlebell jerk of any kind is shipped yet to pattern-match against, and the jerk's dip-drive-catch is exactly the technical-catch class of movement OPERATING.md and the Clean-from-Blocks skip both flag as the hardest part to describe correctly. Not confident enough to write the catch timing from the name alone.",
+      "decided": "2026-09-15",
+      "by": "2026-09-15 morning Bellows pass"
+    },
+    {
+      "name": "Double Kettlebell Snatch",
+      "action": "skip",
+      "reason": "Same technical-catch class the Double Kettlebell Jerk skip already flags: the snatch's bell-rolls-to-lockout catch is the hardest part of the single-arm version to get right (the shipped Kettlebell Snatch card calls it 'powerful and technical'), and doing it with two bells simultaneously doubles the chance of a wrong wrist-rotation detail teaching someone to bang their forearms.",
+      "decided": "2026-09-21",
+      "by": "2026-09-21 morning Bellows pass"
+    },
+    {
+      "name": "Dumbbell Lying Pronation",
+      "action": "skip",
+      "reason": "A real forearm-rotation exercise, but not confident of the exact body position from the name alone -- lying on the back with the working forearm resting across the body, lying on the side, or seated with the forearm on a bench are all plausible readings and the reference gives no instructions to check against. A wrong setup on a small-ROM rotational movement is an easy way to teach the wrong joint action.",
+      "decided": "2026-09-21",
+      "by": "2026-09-21 morning Bellows pass"
+    },
+    {
+      "name": "Dumbbell Lying Supination",
+      "action": "skip",
+      "reason": "Same family and same uncertainty as Dumbbell Lying Pronation -- see that entry.",
+      "decided": "2026-09-21",
+      "by": "2026-09-21 morning Bellows pass"
+    },
+    {
+      "name": "Dumbbell Prone Incline Curl",
+      "action": "skip",
+      "reason": "Duplicate of the already-shipped prone-dumbbell-curl: 'lie face-down on a flat bench raised enough for your arms to hang' is the same body position and the same anti-swing mechanism an incline bench gives this move. Writing a second card for it would ship two entries for one exercise.",
+      "decided": "2026-09-21",
+      "by": "2026-09-21 midday Bellows pass"
+    },
+    {
+      "name": "Dumbbell Seated Box Jump",
+      "action": "skip",
+      "reason": "The name alone doesn't say whether the seated start is on the ground, a low box or the target box, and holding dumbbells through a plyometric landing is a real grip-and-balance risk that a wrongly-guessed setup would only make worse.",
+      "decided": "2026-09-21",
+      "by": "2026-09-21 midday Bellows pass"
+    },
+    {
+      "name": "Dynamic Back Stretch",
+      "action": "skip",
+      "reason": "\"Back\" covers upper (thoracic rotation/extension) and lower back movement patterns that are not interchangeable, and the name alone does not say which one this is meant to be.",
+      "decided": "2026-09-21",
+      "by": "2026-09-21 midday Bellows pass"
+    },
+    {
+      "name": "Elbows Back",
+      "action": "skip",
+      "reason": "No stable, recognizable movement attaches to this name -- it reads like a cue fragment from a longer routine rather than a named exercise, and guessing a full setup around it risks inventing a stretch that isn't the one meant.",
+      "decided": "2026-09-21",
+      "by": "2026-09-21 midday Bellows pass"
     }
   ]
 }

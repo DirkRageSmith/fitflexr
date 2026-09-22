@@ -119,8 +119,16 @@ export function parseSource(src) {
 
 /* ── the mechanical checks, so review time goes on judgement ─────────────── */
 
+/* `ez-bar` used to share the `barbell` pattern, on the idea that an EZ-bar is a
+ * barbell variant. It is its own equipment id in exercises.js's EQUIPMENT list
+ * (every shipped ez-bar-* card lists equipment: ["ez-bar"] alone, never
+ * "barbell" too), so the shared pattern falsely BLOCKed every EZ-bar card ever
+ * written for "prose names \"barbell\" but the record does not list it" —
+ * found 2026-09-14 on two real cards (Close-Grip EZ-Bar Curl, Close-Grip
+ * EZ-Bar Press) that were correct as written. */
 const GEAR_MENTIONS = {
-  barbell: /\bbarbell\b|\bez[- ]bar\b/,
+  barbell: /\bbarbell\b/,
+  "ez-bar": /\bez[- ]bar\b/,
   kettlebell: /\bkettlebell\b/,
   dumbbell: /\bdumbbell\b/,
   cable: /\bcable\b|\bpulley\b/,
@@ -131,6 +139,15 @@ const GEAR_MENTIONS = {
   "medicine-ball": /\bmedicine ball\b|\bmed ball\b/,
   "ab-wheel": /\bab wheel\b/,
   "jump-rope": /\bjump rope\b|\bskipping rope\b/,
+  // A bench is gear, not scenery (2026-09-21). "Set a decline bench under a Smith machine
+  // bar" shipped as equipment ["machine"] because nothing here named the bench and
+  // ELEVATION below only fires on bodyweight-only cards. Measured over the 692 shipped
+  // cards first: a bare /\bbench\b/ flags 7, and 4 of those are right as they stand —
+  // they say the bench is NOT needed ("with no bench", "a box or bench", "a bench or
+  // wall") or name a machine's own part ("glute-ham bench"). Those four shapes are
+  // excluded, which leaves the real misses and nothing else.
+  bench: /(?<!\bno )(?<!\bor )(?<!\bwithout )(?<!glute-ham )\bbench\b(?! or\b)/,
+  box: /\bbox\b/,
 };
 
 const ELEVATION = /\b(?:bench|chair|box|table|couch|sofa|stair)\b|\bstep-ups?\b|\b(?:onto|on) an? step\b/;
