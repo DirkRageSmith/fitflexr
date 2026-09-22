@@ -364,6 +364,34 @@
       "reason": "No stable, recognizable movement attaches to this name -- it reads like a cue fragment from a longer routine rather than a named exercise, and guessing a full setup around it risks inventing a stretch that isn't the one meant.",
       "decided": "2026-09-21",
       "by": "2026-09-21 midday Bellows pass"
+    },
+    {
+      "name": "EZ-Bar Skullcrusher",
+      "action": "skip",
+      "reason": "Duplicate of the already-shipped ez-bar-skull-crusher: same movement, name differs only by a space and capitalization. Writing a second card would ship two entries for one exercise; the fix is an alias on the shipped card, which is a review-session edit to an existing entry, not a new card.",
+      "decided": "2026-09-22",
+      "by": "2026-09-22 morning Bellows pass"
+    },
+    {
+      "name": "Finger Curls",
+      "action": "skip",
+      "reason": "Its primary target is forearms/grip, and this dataset's MUSCLE_GROUPS enum in exercises.js has no Forearms group -- the nearest existing group is Biceps, which would be a taxonomy call (add a new group, or fold grip work under Biceps) rather than a card-writing one. Leaving it for a review session to decide rather than picking silently.",
+      "decided": "2026-09-22",
+      "by": "2026-09-22 morning Bellows pass"
+    },
+    {
+      "name": "Front Leg Raises",
+      "action": "skip",
+      "reason": "Tagged stretching/hamstrings/bodyweight with no instructions in the reference. The name doesn't say whether it's a standing active raise (using a wall or chair for balance) or a supine/lying raise -- the same body-position ambiguity the Dumbbell Lying Pronation/Supination skips flagged, and picking wrong changes what's actually being stretched.",
+      "decided": "2026-09-22",
+      "by": "2026-09-22 morning Bellows pass"
+    },
+    {
+      "name": "Front Two-Dumbbell Raise",
+      "action": "skip",
+      "reason": "Duplicate of the already-shipped dumbbell-front-raise, whose own description explicitly covers doing it with 'one or both' dumbbells at once. A second card for the two-dumbbell version would duplicate that.",
+      "decided": "2026-09-22",
+      "by": "2026-09-22 morning Bellows pass"
     }
   ]
 }
