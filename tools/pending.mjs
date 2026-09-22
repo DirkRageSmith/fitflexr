@@ -139,6 +139,15 @@ const GEAR_MENTIONS = {
   "medicine-ball": /\bmedicine ball\b|\bmed ball\b/,
   "ab-wheel": /\bab wheel\b/,
   "jump-rope": /\bjump rope\b|\bskipping rope\b/,
+  // A bench is gear, not scenery (2026-09-21). "Set a decline bench under a Smith machine
+  // bar" shipped as equipment ["machine"] because nothing here named the bench and
+  // ELEVATION below only fires on bodyweight-only cards. Measured over the 692 shipped
+  // cards first: a bare /\bbench\b/ flags 7, and 4 of those are right as they stand —
+  // they say the bench is NOT needed ("with no bench", "a box or bench", "a bench or
+  // wall") or name a machine's own part ("glute-ham bench"). Those four shapes are
+  // excluded, which leaves the real misses and nothing else.
+  bench: /(?<!\bno )(?<!\bor )(?<!\bwithout )(?<!glute-ham )\bbench\b(?! or\b)/,
+  box: /\bbox\b/,
 };
 
 const ELEVATION = /\b(?:bench|chair|box|table|couch|sofa|stair)\b|\bstep-ups?\b|\b(?:onto|on) an? step\b/;
