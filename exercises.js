@@ -19800,6 +19800,74 @@ const BATCH_2026_09_22_MORNING = [
 ];
 EXERCISES.push.apply(EXERCISES, BATCH_2026_09_22_MORNING);
 
+const BATCH_2026_09_22_EVENING = [
+  {
+    "id": "dyn-groiners",
+    "name": "Groiners",
+    "muscleGroup": "Glutes",
+    "secondaryMuscles": ["Core/Abs", "Shoulders"],
+    "equipment": ["bodyweight"],
+    "difficulty": "Intermediate",
+    "cue": "From a push-up plank, step one foot outside the same-side hand into a deep lunge, then return.",
+    "description": "Start in a push-up plank with your hands under your shoulders. Step one foot up to the outside of the same-side hand, sinking your hips low into a deep lunge while your other leg and both hands stay planted. Push that foot back to plank and repeat on the other side, keeping a steady rhythm rather than holding the stretch. It opens the hips and groin while your arms and core hold the plank.",
+    "avoidIf": ["shoulder", "wrist", "hip", "lower-back"],
+    "icon": "🤸",
+    "mechanic": "Isolation",
+    "pattern": "Stretch",
+    "force": "Static",
+    "unilateral": false,
+    "focus": ["mobility"],
+    "homeFriendly": true,
+    "aliases": ["Spiderman Lunge"],
+    "category": "warmup",
+    "sports": ["football", "track-field"],
+    "hold": "2 × 6 each side",
+    "stretchType": "dynamic"
+  },
+  {
+    "id": "dyn-prone-hip-circles",
+    "name": "Prone Hip Circles",
+    "muscleGroup": "Glutes",
+    "secondaryMuscles": ["Core/Abs"],
+    "equipment": ["bodyweight"],
+    "difficulty": "Beginner",
+    "cue": "Lie face-down and trace slow circles with one straight leg.",
+    "description": "Lie face-down with your legs straight and your forehead resting on your stacked hands. Lift one leg a few inches off the floor and trace a slow, wide circle with your foot, keeping your hips pressed into the floor so the movement stays in the hip joint. Do a set of circles one way, then reverse direction, before switching legs.",
+    "avoidIf": ["hip", "lower-back"],
+    "icon": "🔄",
+    "mechanic": "Isolation",
+    "pattern": "Stretch",
+    "force": "Static",
+    "unilateral": false,
+    "focus": ["mobility"],
+    "homeFriendly": true,
+    "aliases": ["Prone Leg Circles", "Hip Circles (prone)"],
+    "category": "warmup",
+    "hold": "2 × 8 each way, each leg",
+    "stretchType": "dynamic"
+  },
+  {
+    "id": "standing-band-hip-flexion",
+    "name": "Standing Band Hip Flexion",
+    "muscleGroup": "Quads",
+    "secondaryMuscles": ["Core/Abs"],
+    "equipment": ["resistance-band"],
+    "difficulty": "Beginner",
+    "cue": "Band looped around your ankle, anchored behind you — drive your knee up and forward.",
+    "description": "Anchor a resistance band low behind you and loop the other end around your ankle, facing away from the anchor. Standing on your other leg, drive your knee up and forward against the band's pull until your thigh is roughly parallel to the floor, then lower back with control. Hold something for balance if you need it — the band makes the top of the lift the hard part, not the bottom.",
+    "avoidIf": ["hip", "balance"],
+    "icon": "🦵",
+    "mechanic": "Isolation",
+    "force": "Pull",
+    "unilateral": true,
+    "focus": ["strength"],
+    "homeFriendly": true,
+    "aliases": ["Band Hip Flexion", "Hip Flexion with Band"],
+    "category": "strength"
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_09_22_EVENING);
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { MUSCLE_GROUPS, EQUIPMENT, CONDITIONS, SPORTS, STRETCH_TYPES, EXERCISES };
 }

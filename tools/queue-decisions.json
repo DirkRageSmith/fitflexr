@@ -392,6 +392,55 @@
       "reason": "Duplicate of the already-shipped dumbbell-front-raise, whose own description explicitly covers doing it with 'one or both' dumbbells at once. A second card for the two-dumbbell version would duplicate that.",
       "decided": "2026-09-22",
       "by": "2026-09-22 morning Bellows pass"
+    },
+    {
+      "name": "Gorilla Chin/Crunch",
+      "action": "skip",
+      "reason": "Not a name with a stable, recognizable technique I could recall confidently, and the reference gives no instructions to check against. Guessing an ab exercise from an unfamiliar name is exactly the recall-error class F10 warns about.",
+      "decided": "2026-09-22",
+      "by": "2026-09-22 evening Bellows pass"
+    },
+    {
+      "name": "Groin and Back Stretch",
+      "action": "skip",
+      "reason": "Too close to the shipped Seated Groin Stretch (fb-seated-groin-stretch) -- a wide-leg seated straddle hinged forward, which stretches both the adductors and the lower back the same way this name implies. Not confident there's a real distinguishing setup (e.g. soles-together butterfly instead of a wide straddle) behind the name rather than a second title for the same stretch.",
+      "decided": "2026-09-22",
+      "by": "2026-09-22 evening Bellows pass"
+    },
+    {
+      "name": "Hang Snatch",
+      "action": "skip",
+      "reason": "An expert-level Olympic barbell lift with a technical catch under the bar. Same class of risk the Double Kettlebell Snatch and Clean from Blocks skips already flag: a wrong catch-timing or bar-path detail teaches an injury, not just a worse rep.",
+      "decided": "2026-09-22",
+      "by": "2026-09-22 evening Bellows pass"
+    },
+    {
+      "name": "Hang Snatch - Below Knees",
+      "action": "skip",
+      "reason": "Same technical-catch Olympic lift as Hang Snatch, starting from a lower hang position -- see that entry.",
+      "decided": "2026-09-22",
+      "by": "2026-09-22 evening Bellows pass"
+    },
+    {
+      "name": "Hanging Bar Good Morning",
+      "action": "skip",
+      "reason": "Not confident what 'hanging' modifies here -- a good morning is normally loaded with the bar racked on the back in a standing hinge, and this name suggests a different, unfamiliar setup the reference gives no detail on. Guessing the rig risks describing a hip hinge that isn't actually how this variation is performed.",
+      "decided": "2026-09-22",
+      "by": "2026-09-22 evening Bellows pass"
+    },
+    {
+      "name": "Hanging Pike",
+      "action": "skip",
+      "reason": "Too close to the already-shipped Hanging Leg Raise (straight legs to horizontal) and Toes-to-Bar (straight legs all the way to the bar) -- both pull-up-bar, straight-leg, hip-flexion moves at Advanced difficulty. A pike differs mainly by a posterior pelvic tilt cue at the top, which reads as a form refinement on the same movement rather than a distinct exercise, and this record's own 'expert' tag (one step past the shipped Advanced card) supports that reading.",
+      "decided": "2026-09-22",
+      "by": "2026-09-22 evening Bellows pass"
+    },
+    {
+      "name": "Heaving Snatch Balance",
+      "action": "skip",
+      "reason": "An Olympic lifting drill built around dropping under the bar and catching it in an overhead squat -- the same technical-catch class of movement the Hang Snatch and Double Kettlebell Snatch skips flag. Not confident of the exact drop timing and receiving position from the name alone.",
+      "decided": "2026-09-22",
+      "by": "2026-09-22 evening Bellows pass"
     }
   ]
 }
