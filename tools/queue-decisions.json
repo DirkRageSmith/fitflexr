@@ -462,6 +462,20 @@
       "reason": "Not confident of the exact detail that separates it from a plain Incline Dumbbell Curl -- memory of this variant conflicts between 'arms hang out to the sides for a longer stretch' and 'curl in toward the center of the body,' and the reference gives no instructions to check against. Guessing which is wrong is the recall-error class F10 warns about.",
       "decided": "2026-09-23",
       "by": "2026-09-23 morning Bellows pass"
+    },
+    {
+      "name": "Incline Dumbbell Bench With Palms Facing In",
+      "action": "skip",
+      "reason": "Written as Neutral-Grip Incline Dumbbell Press, then dropped after pending.mjs BLOCKed it as a duplicate of the shipped Incline Dumbbell Bench Press (via its own alias 'Incline Dumbbell Press'). It is a real, distinct grip variant, not a duplicate -- the containment check has no discriminating word for 'neutral'/'grip', so any incline+dumbbell+press name collapses onto the plain press. See bellows/FINDINGS.md for the checker gap. Left out rather than shipped past a BLOCK.",
+      "decided": "2026-09-23",
+      "by": "2026-09-23 morning Bellows pass"
+    },
+    {
+      "name": "Incline Dumbbell Flyes - With A Twist",
+      "action": "skip",
+      "reason": "Written as Incline Dumbbell Fly with a Twist, then dropped after pending.mjs BLOCKed it as a duplicate of the shipped Incline Dumbbell Fly (via its own alias). Same containment-check gap as the neutral-grip press skip above: 'twist' is not a discriminating word, so the shorter existing name is fully contained and the check calls it covered. See bellows/FINDINGS.md.",
+      "decided": "2026-09-23",
+      "by": "2026-09-23 morning Bellows pass"
     }
   ]
 }
