@@ -441,6 +441,27 @@
       "reason": "An Olympic lifting drill built around dropping under the bar and catching it in an overhead squat -- the same technical-catch class of movement the Hang Snatch and Double Kettlebell Snatch skips flag. Not confident of the exact drop timing and receiving position from the name alone.",
       "decided": "2026-09-22",
       "by": "2026-09-22 evening Bellows pass"
+    },
+    {
+      "name": "Hyperextensions With No Hyperextension Bench",
+      "action": "skip",
+      "reason": "Duplicate of the already-shipped Bodyweight Back Extension (bodyweight-back-extension) -- lying face-down and lifting the chest with the lower back is exactly the floor variant this name describes, and that card already carries the alias 'Floor Back Extension'.",
+      "decided": "2026-09-23",
+      "by": "2026-09-23 morning Bellows pass"
+    },
+    {
+      "name": "Incline Dumbbell Flyes",
+      "action": "skip",
+      "reason": "Duplicate of the already-shipped Incline Dumbbell Fly (dumbbell-incline-fly), differing only by pluralization. The fix is an alias on the existing card, which is a review-session edit, not a new one.",
+      "decided": "2026-09-23",
+      "by": "2026-09-23 morning Bellows pass"
+    },
+    {
+      "name": "Incline Inner Biceps Curl",
+      "action": "skip",
+      "reason": "Not confident of the exact detail that separates it from a plain Incline Dumbbell Curl -- memory of this variant conflicts between 'arms hang out to the sides for a longer stretch' and 'curl in toward the center of the body,' and the reference gives no instructions to check against. Guessing which is wrong is the recall-error class F10 warns about.",
+      "decided": "2026-09-23",
+      "by": "2026-09-23 morning Bellows pass"
     }
   ]
 }
