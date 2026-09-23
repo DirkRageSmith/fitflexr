@@ -19809,7 +19809,7 @@ const BATCH_2026_09_22_EVENING = [
     "equipment": ["bodyweight"],
     "difficulty": "Intermediate",
     "cue": "From a push-up plank, step one foot outside the same-side hand into a deep lunge, then return.",
-    "description": "Start in a push-up plank with your hands under your shoulders. Step one foot up to the outside of the same-side hand, sinking your hips low into a deep lunge while your other leg and both hands stay planted. Push that foot back to plank and repeat on the other side, keeping a steady rhythm rather than holding the stretch. It opens the hips and groin while your arms and core hold the plank.",
+    "description": "Start in a push-up plank with your hands under your shoulders. Step one foot up to the outside of the same-side hand, sinking your hips low into a deep lunge while your other leg and both hands stay planted, then push it back to plank and repeat on the other side. Keep a steady rhythm rather than holding the stretch — it opens the hips and groin while your arms and core hold the plank.",
     "avoidIf": ["shoulder", "wrist", "hip", "lower-back"],
     "icon": "🤸",
     "mechanic": "Isolation",
