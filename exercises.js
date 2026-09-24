@@ -20060,7 +20060,7 @@ const BATCH_2026_09_23_EVENING = [
     "equipment": ["bodyweight"],
     "difficulty": "Intermediate",
     "cue": "Dig your heels in and drag them backward the whole way up.",
-    "description": "Lie on your back with your knees bent and your heels dug firmly into the floor, feet flat. Before you curl up, actively try to drag your heels backward along the floor without actually sliding them -- that isometric hamstring contraction is the whole point. Keeping that pull on the entire time, curl your torso up into a normal sit-up, then lower back down. Contracting the hamstrings this way is thought to inhibit the hip flexors, so more of the work lands on the abs instead of the hip flexors taking over partway up.",
+    "description": "Lie on your back with your knees bent and heels dug firmly into the floor, feet flat, then actively try to drag your heels backward without actually sliding them -- that isometric hamstring contraction is the whole point. Keeping that pull on the entire time, curl your torso up into a normal sit-up, then lower back down. Contracting the hamstrings this way is thought to inhibit the hip flexors, so more of the work lands on the abs instead of the hip flexors taking over partway up.",
     "avoidIf": ["lower-back", "neck", "pregnancy"],
     "icon": "🦵",
     "mechanic": "Isolation",
