@@ -476,6 +476,27 @@
       "reason": "Written as Incline Dumbbell Fly with a Twist, then dropped after pending.mjs BLOCKed it as a duplicate of the shipped Incline Dumbbell Fly (via its own alias). Same containment-check gap as the neutral-grip press skip above: 'twist' is not a discriminating word, so the shorter existing name is fully contained and the check calls it covered. See bellows/FINDINGS.md.",
       "decided": "2026-09-23",
       "by": "2026-09-23 morning Bellows pass"
+    },
+    {
+      "name": "Isometric Neck Exercise - Front And Back",
+      "action": "skip",
+      "reason": "isCovered() returns false (no lexical overlap with the existing name), but this is the same movement already shipped as Neck Isometric Holds (fb-neck-isometric): press the head into a palm on the forehead and again on the back of the head, holding without moving. Writing it under a new name would be a real duplicate the checker cannot see, not a gap.",
+      "decided": "2026-09-23",
+      "by": "2026-09-23 evening Bellows pass"
+    },
+    {
+      "name": "Isometric Neck Exercise - Sides",
+      "action": "skip",
+      "reason": "Same movement as fb-neck-isometric (Neck Isometric Holds), which already covers pressing the head into a palm on each side -- its own description says 'and on each side.' Same undetected-duplicate shape as the front-and-back entry above.",
+      "decided": "2026-09-23",
+      "by": "2026-09-23 evening Bellows pass"
+    },
+    {
+      "name": "Isometric Wipers",
+      "action": "skip",
+      "reason": "Not confident of the exact movement. The reference lists this as chest-targeted, which does not match any known 'windshield wiper' exercise (normally a hanging or floor ab/oblique movement); the isometric-hold variant's body position, arm placement and which direction is held are not something I can reconstruct correctly from the name alone. Recall-error class F10 warns about.",
+      "decided": "2026-09-23",
+      "by": "2026-09-23 evening Bellows pass"
     }
   ]
 }
