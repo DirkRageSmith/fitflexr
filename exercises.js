@@ -20190,7 +20190,7 @@ const BATCH_2026_09_24_MORNING = [
     "equipment": ["cable"],
     "difficulty": "Intermediate",
     "cue": "Kneel facing away from a low pulley and press the rope forward and up until your arms lock out.",
-    "description": "Kneel upright in front of a low cable pulley with your back to the machine, holding a rope attachment behind your head with both elbows bent and pointing forward. Straighten your arms to press the rope forward and up until they lock out, then return under control without letting your elbows drift wide. Kneeling takes your legs out of the movement, so the only thing driving the weight is your triceps -- if your hips rock forward to help, the load is too heavy.",
+    "description": "Kneel upright in front of a low cable pulley, facing away from it, holding a rope attachment behind your head with both elbows bent and pointing forward. Straighten your arms to press the rope forward and up until they lock out, then return under control without letting your elbows drift wide. Kneeling takes your legs out of the movement, so the only thing driving the weight is your triceps -- if your hips rock forward to help, the load is too heavy.",
     "avoidIf": ["shoulder", "wrist", "knee"],
     "icon": "🔗",
     "mechanic": "Isolation",
