@@ -497,6 +497,13 @@
       "reason": "Not confident of the exact movement. The reference lists this as chest-targeted, which does not match any known 'windshield wiper' exercise (normally a hanging or floor ab/oblique movement); the isometric-hold variant's body position, arm placement and which direction is held are not something I can reconstruct correctly from the name alone. Recall-error class F10 warns about.",
       "decided": "2026-09-23",
       "by": "2026-09-23 evening Bellows pass"
+    },
+    {
+      "name": "Kettlebell Pass Between The Legs",
+      "action": "skip",
+      "reason": "isCovered() returns false (no lexical overlap with the existing name), but this is the same movement already shipped as Kettlebell Figure Eight: its own description is 'pass the kettlebell between your legs from one hand to the other, weaving it around each leg in a figure-eight pattern.' Writing it under this name would be a real duplicate the checker cannot see, not a gap -- same F14-class vocabulary gap as the neck entries above.",
+      "decided": "2026-09-24",
+      "by": "2026-09-24 morning Bellows pass"
     }
   ]
 }

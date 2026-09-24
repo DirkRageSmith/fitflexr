@@ -20095,6 +20095,116 @@ const BATCH_2026_09_23_EVENING = [
 ];
 EXERCISES.push.apply(EXERCISES, BATCH_2026_09_23_EVENING);
 
+/* coverage.mjs --queue 10, 2026-09-24 morning. "Kettlebell Pass Between The Legs"
+ * from the same queue page is skipped -- see tools/queue-decisions.json: it is the
+ * same movement as the already-shipped Kettlebell Figure Eight, caught by hand with
+ * isCovered(), not by the tool (F14-class vocabulary gap). Jerk Balance and Jerk Dip
+ * Squat were checked against Catalyst Athletics' technique write-ups before writing,
+ * since neither is a plain lift a name alone reliably describes. */
+const BATCH_2026_09_24_MORNING = [
+  {
+    "id": "barbell-jerk-balance",
+    "name": "Jerk Balance",
+    "muscleGroup": "Shoulders",
+    "secondaryMuscles": ["Quads", "Core/Abs"],
+    "equipment": ["barbell"],
+    "difficulty": "Intermediate",
+    "cue": "Step back into a half-split, dip straight down, then punch the bar overhead as you snap your feet into the full split.",
+    "description": "Rack a barbell across the front of your shoulders as you would for a jerk, then step your front foot back about a foot-length to start in a half-split stance with your weight balanced evenly between both feet. Dip straight down, then drive up and punch the bar overhead as you step your front foot forward into the full split jerk position, catching the bar locked out above your hips. It drills the footwork and receiving position of the split jerk on their own -- the usual miss is diving your chest and head forward instead of stepping your front foot and hips into the split, which is exactly what this drill is built to catch.",
+    "avoidIf": ["shoulder", "wrist", "knee", "lower-back"],
+    "icon": "🏋️",
+    "mechanic": "Compound",
+    "pattern": "Vertical Push",
+    "force": "Explosive",
+    "unilateral": false,
+    "focus": ["power", "strength"],
+    "homeFriendly": false,
+    "aliases": ["Split Jerk Balance", "Jerk Balance Drill"],
+    "category": "power"
+  },
+  {
+    "id": "barbell-jerk-dip-squat",
+    "name": "Jerk Dip Squat",
+    "muscleGroup": "Quads",
+    "secondaryMuscles": ["Glutes", "Core/Abs"],
+    "equipment": ["barbell"],
+    "difficulty": "Intermediate",
+    "cue": "Bend only at the knees to dip straight down a short distance, then stand back up -- no hip hinge, no drive.",
+    "description": "Rack a barbell across the front of your shoulders in your jerk stance, feet under your hips. Bend only at the knees to dip straight down a short distance, keeping your torso tall, then reverse and stand back up under control -- think vertical knee bend, not a squat, so your hips should not sit back. It grooves the dip position of the jerk on its own, with no drive and no catch: sitting your hips back turns the dip into a squat and sends the bar forward instead of straight up.",
+    "avoidIf": ["knee", "lower-back", "shoulder"],
+    "icon": "🏋️",
+    "mechanic": "Compound",
+    "pattern": "Squat",
+    "force": "Push",
+    "unilateral": false,
+    "focus": ["strength"],
+    "homeFriendly": false,
+    "aliases": ["Jerk Dip", "Barbell Jerk Dip Squat"],
+    "category": "strength"
+  },
+  {
+    "id": "kettlebell-halo-overhead-extension",
+    "name": "Kettlebell Halo with Overhead Extension",
+    "muscleGroup": "Shoulders",
+    "secondaryMuscles": ["Triceps", "Core/Abs"],
+    "equipment": ["kettlebell"],
+    "difficulty": "Intermediate",
+    "cue": "Circle the kettlebell around your head, then press it straight overhead to lock out.",
+    "description": "Hold a kettlebell by the horns upside-down at chest height with both hands. Circle it around your head, keeping it close, reverse direction after a full circle, then press it straight overhead with both hands until your arms lock out, and lower it back to your chest. It turns the halo's shoulder-mobility circles into a loaded overhead press -- keep the circle slow and controlled, and don't press until the bell has settled back at your chest.",
+    "avoidIf": ["shoulder", "neck", "wrist"],
+    "icon": "⭕",
+    "mechanic": "Compound",
+    "pattern": "Vertical Push",
+    "force": "Push",
+    "unilateral": false,
+    "focus": ["strength", "mobility"],
+    "homeFriendly": true,
+    "aliases": ["Halo to Press", "Kettlebell Halo Press"],
+    "category": "strength"
+  },
+  {
+    "id": "kettlebell-pirate-ships",
+    "name": "Kettlebell Pirate Ships",
+    "muscleGroup": "Full Body/Cardio",
+    "secondaryMuscles": ["Core/Abs", "Shoulders"],
+    "equipment": ["kettlebell"],
+    "difficulty": "Intermediate",
+    "cue": "Swing the kettlebell up to head height as you rotate to one side, then the other.",
+    "description": "Stand in a wide stance holding a kettlebell with both hands at waist height, arms extended. Rotate your torso and swing the bell up to head height on one side, pause briefly, then let it drop back to waist height as you rotate and swing it up on the other side. Let your hips and core drive the rotation rather than just your arms -- the swing into each side should flow off the momentum of the last rep, not stop and restart every time.",
+    "avoidIf": ["lower-back", "shoulder", "balance"],
+    "icon": "🔔",
+    "mechanic": "Compound",
+    "pattern": "Conditioning",
+    "force": "Explosive",
+    "unilateral": true,
+    "focus": ["power", "endurance"],
+    "homeFriendly": true,
+    "aliases": ["KB Pirate Ships", "Lateral Kettlebell Swing Arc"],
+    "category": "conditioning"
+  },
+  {
+    "id": "cable-kneeling-triceps-extension",
+    "name": "Kneeling Cable Triceps Extension",
+    "muscleGroup": "Triceps",
+    "secondaryMuscles": [],
+    "equipment": ["cable"],
+    "difficulty": "Intermediate",
+    "cue": "Kneel facing away from a low pulley and press the rope forward and up until your arms lock out.",
+    "description": "Kneel upright in front of a low cable pulley with your back to the machine, holding a rope attachment behind your head with both elbows bent and pointing forward. Straighten your arms to press the rope forward and up until they lock out, then return under control without letting your elbows drift wide. Kneeling takes your legs out of the movement, so the only thing driving the weight is your triceps -- if your hips rock forward to help, the load is too heavy.",
+    "avoidIf": ["shoulder", "wrist", "knee"],
+    "icon": "🔗",
+    "mechanic": "Isolation",
+    "pattern": "Vertical Push",
+    "force": "Push",
+    "unilateral": false,
+    "focus": ["hypertrophy", "strength"],
+    "homeFriendly": false,
+    "aliases": ["Kneeling Overhead Cable Triceps Extension", "Kneeling Rope Triceps Extension"],
+    "category": "strength"
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_09_24_MORNING);
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { MUSCLE_GROUPS, EQUIPMENT, CONDITIONS, SPORTS, STRETCH_TYPES, EXERCISES };
 }
