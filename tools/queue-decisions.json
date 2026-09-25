@@ -504,6 +504,20 @@
       "reason": "isCovered() returns false (no lexical overlap with the existing name), but this is the same movement already shipped as Kettlebell Figure Eight: its own description is 'pass the kettlebell between your legs from one hand to the other, weaving it around each leg in a figure-eight pattern.' Writing it under this name would be a real duplicate the checker cannot see, not a gap -- same F14-class vocabulary gap as the neck entries above.",
       "decided": "2026-09-24",
       "by": "2026-09-24 morning Bellows pass"
+    },
+    {
+      "name": "Leverage Chest Press",
+      "action": "skip",
+      "reason": "ExRx describes this as the plain, wide-overhand-grip lever chest press where both handles move together -- the shipped 'Machine Chest Press' (id machine-chest-press) is that same generic synchronized chest press machine, just named by equipment category rather than the ExRx 'Lever' family name. isCovered() returns false because 'Leverage'/'Lever' and 'Machine' share no words, but the two names point at the same real machine. Not the same as the already-shipped 'Hammer Strength Chest Press', which is explicitly the independent-arm (isolateral) variant.",
+      "decided": "2026-09-25",
+      "by": "2026-09-25 morning Bellows pass"
+    },
+    {
+      "name": "Leverage Incline Chest Press",
+      "action": "skip",
+      "reason": "Same gap as 'Leverage Chest Press' one entry up: ExRx's plain 'Lever Incline Chest Press' (wide overhand grip, both handles move together) is the same machine as the shipped 'Incline Machine Chest Press' (id incline-machine-chest-press), just under the equipment-generic name instead of the ExRx 'Lever' name. No independent-arm incline press is shipped, so if this checker gap is ever fixed, an isolateral incline variant would still be a real, writable gap -- this specific plain version is not.",
+      "decided": "2026-09-25",
+      "by": "2026-09-25 morning Bellows pass"
     }
   ]
 }

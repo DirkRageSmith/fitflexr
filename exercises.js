@@ -20329,6 +20329,70 @@ const BATCH_2026_09_24_EVENING = [
 ];
 EXERCISES.push.apply(EXERCISES, BATCH_2026_09_24_EVENING);
 
+const BATCH_2026_09_25_MORNING = [
+  {
+    "id": "leverage-deadlift",
+    "name": "Leverage Deadlift",
+    "muscleGroup": "Quads",
+    "secondaryMuscles": ["Glutes", "Hamstrings"],
+    "equipment": ["machine"],
+    "difficulty": "Beginner",
+    "cue": "Feet flat on the platform, knees slightly bent -- push through your heels and stand up, keeping your chest up.",
+    "description": "Step onto the platform with your feet shoulder-width apart and grip the machine's handles with your knees slightly bent and hips lower than your shoulders. Push through your heels, extending your knees and hips together to stand fully upright, then reverse the same path back down under control. The fixed bar path keeps the weight close to your body for you, so the balancing act of a barbell pull is gone -- what's left is pure leg and hip drive.",
+    "avoidIf": ["knee", "lower-back"],
+    "icon": "🏋️",
+    "mechanic": "Compound",
+    "pattern": "Hinge",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["strength", "hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Lever Deadlift", "Machine Deadlift", "Plate-Loaded Deadlift Machine"],
+    "category": "strength"
+  },
+  {
+    "id": "leverage-decline-chest-press",
+    "name": "Leverage Decline Chest Press",
+    "muscleGroup": "Chest",
+    "secondaryMuscles": ["Shoulders", "Triceps"],
+    "equipment": ["machine"],
+    "difficulty": "Beginner",
+    "cue": "Grip the handles at lower-chest height on the decline machine and press forward until your arms are straight.",
+    "description": "Sit in the decline chest press machine with the handles at lower-chest height and your back flat against the pad, elbows out to the sides just below your shoulders. Press the handles forward until your arms are nearly straight, then return under control until your chest feels a light stretch. The decline angle shifts more of the work onto your lower chest than a flat or incline press does.",
+    "avoidIf": ["shoulder"],
+    "icon": "🏋️",
+    "mechanic": "Compound",
+    "pattern": "Horizontal Push",
+    "force": "Push",
+    "unilateral": false,
+    "focus": ["strength", "hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Lever Decline Chest Press", "Decline Chest Press Machine"],
+    "category": "strength"
+  },
+  {
+    "id": "leverage-high-row",
+    "name": "Leverage High Row",
+    "muscleGroup": "Back",
+    "secondaryMuscles": ["Shoulders", "Biceps"],
+    "equipment": ["machine"],
+    "difficulty": "Intermediate",
+    "cue": "Grip the high handles in front of you and pull them down and back toward your upper chest.",
+    "description": "Sit at the machine and grip the handles where they start out in front of you, above shoulder height. Pull them down and back toward your upper chest, tracking your elbows beside your torso and squeezing your shoulder blades together, then let them return under control to the stretch. Starting the pull from overhead rather than straight ahead puts more of the work on your lats and rear shoulders than a standard seated row.",
+    "avoidIf": ["shoulder"],
+    "icon": "🔗",
+    "mechanic": "Compound",
+    "pattern": "Vertical Pull",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["strength", "hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Lever High Row", "High Row Machine"],
+    "category": "strength"
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_09_25_MORNING);
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { MUSCLE_GROUPS, EQUIPMENT, CONDITIONS, SPORTS, STRETCH_TYPES, EXERCISES };
 }
