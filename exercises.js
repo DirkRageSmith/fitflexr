@@ -20338,7 +20338,7 @@ const BATCH_2026_09_25_MORNING = [
     "equipment": ["machine"],
     "difficulty": "Beginner",
     "cue": "Feet flat on the platform, knees slightly bent -- push through your heels and stand up, keeping your chest up.",
-    "description": "Step onto the platform with your feet shoulder-width apart and grip the machine's handles with your knees slightly bent and hips lower than your shoulders. Push through your heels, extending your knees and hips together to stand fully upright, then reverse the same path back down under control. The fixed bar path keeps the weight close to your body for you, so the balancing act of a barbell pull is gone -- what's left is pure leg and hip drive.",
+    "description": "Step onto the platform with your feet shoulder-width apart and grip the machine's handles with your knees slightly bent and hips lower than your shoulders. Push through your heels, extending your knees and hips together to stand fully upright, then reverse the same path back down under control. The fixed path keeps the weight close to your body for you, so there's no free-weight balancing act to manage -- what's left is pure leg and hip drive.",
     "avoidIf": ["knee", "lower-back"],
     "icon": "🏋️",
     "mechanic": "Compound",
