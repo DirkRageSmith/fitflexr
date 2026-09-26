@@ -518,6 +518,20 @@
       "reason": "Same gap as 'Leverage Chest Press' one entry up: ExRx's plain 'Lever Incline Chest Press' (wide overhand grip, both handles move together) is the same machine as the shipped 'Incline Machine Chest Press' (id incline-machine-chest-press), just under the equipment-generic name instead of the ExRx 'Lever' name. No independent-arm incline press is shipped, so if this checker gap is ever fixed, an isolateral incline variant would still be a real, writable gap -- this specific plain version is not.",
       "decided": "2026-09-25",
       "by": "2026-09-25 morning Bellows pass"
+    },
+    {
+      "name": "Leverage Shoulder Press",
+      "action": "skip",
+      "reason": "Same 'Lever'-vs-'Machine' naming gap, third instance today. ExRx's plain Lever Shoulder Press is 'press lever upward until arms are extended overhead' -- a seated, both-handles-together press, mechanically identical to the already-shipped 'Machine Shoulder Press' (id machine-shoulder-press: 'sit ... grip the handles at shoulder height. Press up until your arms are nearly straight'). isCovered() returns false because 'Leverage'/'Lever' and 'Machine' share no words. ExRx does list a separate isolateral ('Lever Isolateral Shoulder Press, plate loaded') variant, which is not shipped and would be a real gap if named explicitly.",
+      "decided": "2026-09-25",
+      "by": "2026-09-25 evening Bellows pass"
+    },
+    {
+      "name": "Leverage Iso Row",
+      "action": "skip",
+      "reason": "'Iso' here means isolateral (independent-arm) -- a chest-supported, plate-loaded row where each handle moves on its own, pulled to the chest. That is exactly the already-shipped 'Hammer Strength Row' (id hammer-strength-row: 'chest on the pad ... row them back ... each arm works on its own, so a weaker side can't hide'). Same equipment-name-vs-brand-name gap as the chest presses above, just for a row.",
+      "decided": "2026-09-25",
+      "by": "2026-09-25 evening Bellows pass"
     }
   ]
 }

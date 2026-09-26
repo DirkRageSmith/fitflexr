@@ -20393,6 +20393,30 @@ const BATCH_2026_09_25_MORNING = [
 ];
 EXERCISES.push.apply(EXERCISES, BATCH_2026_09_25_MORNING);
 
+const BATCH_2026_09_25_EVENING = [
+  {
+    "id": "leverage-shrug",
+    "name": "Leverage Shrug",
+    "muscleGroup": "Back",
+    "secondaryMuscles": ["Shoulders"],
+    "equipment": ["machine"],
+    "difficulty": "Beginner",
+    "cue": "Grip the machine's handles at your sides and shrug your shoulders straight up against the resistance.",
+    "description": "Stand inside the shrug machine and grip the handles at shoulder width with your arms hanging straight down. Shrug your shoulders straight up as high as you can, squeeze the traps at the top, then lower under control back to a full stretch. The fixed vertical path keeps the load from swinging or drifting forward the way a loaded bar can, so your grip fatigues less and the traps take the resistance longer.",
+    "avoidIf": ["neck"],
+    "icon": "🏋️",
+    "mechanic": "Isolation",
+    "pattern": "Carry",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Lever Shrug", "Machine Shrug", "Shrug Machine"],
+    "category": "strength"
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_09_25_EVENING);
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { MUSCLE_GROUPS, EQUIPMENT, CONDITIONS, SPORTS, STRETCH_TYPES, EXERCISES };
 }
