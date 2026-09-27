@@ -532,6 +532,13 @@
       "reason": "'Iso' here means isolateral (independent-arm) -- a chest-supported, plate-loaded row where each handle moves on its own, pulled to the chest. That is exactly the already-shipped 'Hammer Strength Row' (id hammer-strength-row: 'chest on the pad ... row them back ... each arm works on its own, so a weaker side can't hide'). Same equipment-name-vs-brand-name gap as the chest presses above, just for a row.",
       "decided": "2026-09-25",
       "by": "2026-09-25 evening Bellows pass"
+    },
+    {
+      "name": "Lower Back Curl",
+      "action": "skip",
+      "reason": "Two independent sources (Aspira Fitness and Ellim.app, checked by web search since the vendored reference carries no instructions) agree it is: lie face-down, arms extended overhead, lift arms/chest/legs off the floor together, hold, lower. That is the already-shipped 'Superman' (id superman: 'Lie face-down with your arms stretched out in front. Squeeze your lower back and glutes to lift your arms, chest, and legs off the floor at the same time'). Same movement under a different name; isCovered() misses it because the two names share no words.",
+      "decided": "2026-09-26",
+      "by": "2026-09-26 evening Bellows pass"
     }
   ]
 }

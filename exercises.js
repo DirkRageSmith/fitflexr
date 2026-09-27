@@ -20417,6 +20417,30 @@ const BATCH_2026_09_25_EVENING = [
 ];
 EXERCISES.push.apply(EXERCISES, BATCH_2026_09_25_EVENING);
 
+const BATCH_2026_09_26_EVENING = [
+  {
+    "id": "low-pulley-row-to-neck",
+    "name": "Low Pulley Row To Neck",
+    "muscleGroup": "Shoulders",
+    "secondaryMuscles": ["Back", "Biceps"],
+    "equipment": ["cable"],
+    "difficulty": "Beginner",
+    "cue": "Seated at a low pulley, pull the rope straight up to your neck with elbows out.",
+    "description": "Sit at a low pulley with a rope attachment, torso upright and knees slightly bent, arms extended in front with palms down. Keeping your torso still, pull the rope up toward your neck, elbows rising out to the sides until your hands finish near your ears, then lower slowly back to full extension. It's a seated row that finishes high rather than at your chest, so the traps and rear delts do more of the work than a standard row.",
+    "avoidIf": ["shoulder", "neck", "lower-back"],
+    "icon": "🎣",
+    "mechanic": "Compound",
+    "pattern": "Vertical Pull",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Seated Low Pulley Row to Neck", "Cable Row to Neck"],
+    "category": "strength"
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_09_26_EVENING);
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { MUSCLE_GROUPS, EQUIPMENT, CONDITIONS, SPORTS, STRETCH_TYPES, EXERCISES };
 }
