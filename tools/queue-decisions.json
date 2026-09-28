@@ -539,6 +539,13 @@
       "reason": "Two independent sources (Aspira Fitness and Ellim.app, checked by web search since the vendored reference carries no instructions) agree it is: lie face-down, arms extended overhead, lift arms/chest/legs off the floor together, hold, lower. That is the already-shipped 'Superman' (id superman: 'Lie face-down with your arms stretched out in front. Squeeze your lower back and glutes to lift your arms, chest, and legs off the floor at the same time'). Same movement under a different name; isCovered() misses it because the two names share no words.",
       "decided": "2026-09-26",
       "by": "2026-09-26 evening Bellows pass"
+    },
+    {
+      "name": "Lunge Sprint",
+      "action": "skip",
+      "reason": "free-exercise-db tags this equipment=machine, target=quadriceps, which sounded suspicious for a name like 'Lunge Sprint' -- checked by web search rather than trusted blind. The only match for that machine/quads combination (a Smith-machine bar-on-back alternating jump lunge) came from a site that mirrors the dataset's own field names, not an independent source, plus one weak Pinterest listing title. Two unrelated, much more common exercises share confusingly similar names: 'Sprinter Lunge' (bodyweight, sprinter's-arm-swing drill, unanimous across StrengthLog/PureGym/Trainwell) and 'Smith Sprint Lunge' (a rear-foot-elevated split squat, no jump). Not confident enough to write an accurate how-to; a wrong description here teaches the wrong movement.",
+      "decided": "2026-09-27",
+      "by": "2026-09-27 morning Bellows pass"
     }
   ]
 }

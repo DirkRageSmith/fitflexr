@@ -20441,6 +20441,36 @@ const BATCH_2026_09_26_EVENING = [
 ];
 EXERCISES.push.apply(EXERCISES, BATCH_2026_09_26_EVENING);
 
+/* coverage.mjs --queue 10, 2026-09-27 morning. "Lunge Sprint" from the same queue page
+ * is skipped -- see tools/queue-decisions.json: the only source found for the
+ * free-exercise-db "machine"/"quadriceps" version (a Smith-machine bar-on-back jump
+ * lunge) was a site that mirrors the dataset's own fields plus one weak Pinterest
+ * title, against two unrelated and far more common exercises sharing similar names
+ * (a bodyweight "Sprinter Lunge" and a rear-foot-elevated "Smith Sprint Lunge"). */
+const BATCH_2026_09_27_MORNING = [
+  {
+    "id": "kettlebell-lunge-pass-through",
+    "name": "Lunge Pass Through",
+    "muscleGroup": "Quads",
+    "secondaryMuscles": ["Glutes", "Calves"],
+    "equipment": ["kettlebell"],
+    "difficulty": "Intermediate",
+    "cue": "Lunge forward, and as you drop, pass the kettlebell under your front thigh to the other hand.",
+    "description": "Stand tall holding a kettlebell in one hand, and step forward into a lunge. As you descend, pass the kettlebell underneath your front thigh to the opposite hand, then drive through your front heel back to standing, alternating which leg leads each rep. The hand-off under the leg adds a coordination and anti-rotation core demand on top of an ordinary loaded lunge.",
+    "avoidIf": ["knee", "balance", "lower-back"],
+    "icon": "🔔",
+    "mechanic": "Compound",
+    "pattern": "Lunge",
+    "force": "Push",
+    "unilateral": true,
+    "focus": ["strength"],
+    "homeFriendly": true,
+    "aliases": ["Kettlebell Lunge Pass Through", "Lunge with Pass Through"],
+    "category": "strength"
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_09_27_MORNING);
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { MUSCLE_GROUPS, EQUIPMENT, CONDITIONS, SPORTS, STRETCH_TYPES, EXERCISES };
 }
