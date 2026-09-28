@@ -20497,10 +20497,10 @@ const BATCH_2026_09_28_MORNING = [
     "name": "Lying Cambered Barbell Row",
     "muscleGroup": "Back",
     "secondaryMuscles": ["Biceps"],
-    "equipment": ["ez-bar", "bench"],
+    "equipment": ["barbell", "bench"],
     "difficulty": "Intermediate",
-    "cue": "Chest pinned to a flat bench, row the cambered bar up to your chest.",
-    "description": "Rest a loaded cambered (EZ) bar on the floor beneath a flat bench, then lie face-down on the bench and grip the bar with an overhand grip wider than shoulder width. Row the bar up to your chest, keeping your elbows close and squeezing your shoulder blades together at the top, then lower it back to the floor under control. Keep your chest pinned to the pad throughout — the angled grips are what make this bar kinder on the wrists than a straight one, not a reason to let your torso lift and swing the weight up.",
+    "cue": "Chest pinned to a flat bench, row a cambered bar up to your chest.",
+    "description": "Rest a loaded cambered bar on the floor beneath a flat bench, then lie face-down on the bench and grip it with an overhand grip wider than shoulder width. Row it up to your chest, keeping your elbows close and squeezing your shoulder blades together at the top, then lower it back to the floor under control. A straight bar works the same way — the cambered bend just lets your wrists sit at a more neutral angle through the pull, not a reason to let your chest lift off the pad and swing the weight up.",
     "avoidIf": ["lower-back"],
     "icon": "🚣",
     "mechanic": "Compound",
@@ -20509,7 +20509,7 @@ const BATCH_2026_09_28_MORNING = [
     "unilateral": false,
     "focus": ["strength", "hypertrophy"],
     "homeFriendly": false,
-    "aliases": ["Cambered Bar Lying Row", "EZ-Bar Seal Row"],
+    "aliases": ["Cambered Bar Lying Row", "Cambered Barbell Lying Row"],
     "category": "strength"
   }
 ];
