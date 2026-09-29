@@ -20515,6 +20515,50 @@ const BATCH_2026_09_28_MORNING = [
 ];
 EXERCISES.push.apply(EXERCISES, BATCH_2026_09_28_MORNING);
 
+const BATCH_2026_09_28_EVENING = [
+  {
+    "id": "lying-close-grip-bar-curl-on-high-pulley",
+    "name": "Lying Close-Grip Bar Curl On High Pulley",
+    "muscleGroup": "Biceps",
+    "secondaryMuscles": ["Shoulders"],
+    "equipment": ["cable", "bench"],
+    "difficulty": "Intermediate",
+    "cue": "Lying on a bench, curl the high-pulley bar down to your chin, hands close together.",
+    "description": "Set a flat bench in front of a high pulley with a straight bar attached, then lie on your back with your head near the end of the bench and grip the bar underhand, hands close together, arms extended straight up. Keeping your upper arms still, curl the bar down in an arc until it reaches your chin, squeeze, then extend back up under control. Pulling from overhead instead of a low pulley loads the biceps hardest at full extension, the opposite feel from a standing cable curl.",
+    "avoidIf": [],
+    "icon": "🔗",
+    "mechanic": "Isolation",
+    "pattern": "Vertical Pull",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Lying High Pulley Close-Grip Cable Curl", "Lying High Pulley Curl"],
+    "category": "strength"
+  },
+  {
+    "id": "lying-close-grip-barbell-triceps-extension-behind-head",
+    "name": "Lying Close-Grip Barbell Triceps Extension Behind The Head",
+    "muscleGroup": "Triceps",
+    "secondaryMuscles": [],
+    "equipment": ["barbell", "bench"],
+    "difficulty": "Intermediate",
+    "cue": "Lying on a bench, lower a close-grip barbell behind your head instead of to your forehead.",
+    "description": "Lie on a flat bench holding a barbell with a close, roughly shoulder-width grip, arms straight above your chest. Keeping your upper arms fixed and vertical, bend your elbows to lower the bar behind your head in an arc until it's level with the bench, then extend back up the same path. The behind-the-head path stretches the triceps further at the bottom than a standard skull crusher, so go lighter than you would lowering to your forehead.",
+    "avoidIf": ["shoulder", "wrist"],
+    "icon": "💀",
+    "mechanic": "Isolation",
+    "pattern": "Vertical Push",
+    "force": "Push",
+    "unilateral": false,
+    "focus": ["strength", "hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Behind-The-Head Barbell Triceps Extension", "Close-Grip Barbell Extension Behind The Head"],
+    "category": "strength"
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_09_28_EVENING);
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { MUSCLE_GROUPS, EQUIPMENT, CONDITIONS, SPORTS, STRETCH_TYPES, EXERCISES };
 }
