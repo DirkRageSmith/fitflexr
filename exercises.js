@@ -20559,6 +20559,52 @@ const BATCH_2026_09_28_EVENING = [
 ];
 EXERCISES.push.apply(EXERCISES, BATCH_2026_09_28_EVENING);
 
+const BATCH_2026_09_29_MORNING = [
+  {
+    "id": "lying-close-grip-ez-bar-triceps-press-to-chin",
+    "name": "Lying Close-Grip EZ-Bar Triceps Press To Chin",
+    "muscleGroup": "Triceps",
+    "secondaryMuscles": [],
+    "equipment": ["ez-bar", "bench"],
+    "difficulty": "Intermediate",
+    "cue": "Lower a close-grip EZ-bar in an arc toward your chin, then reverse the same path back up.",
+    "description": "Lie on a flat bench holding an EZ-bar with a close grip, arms straight above your shoulders. Keeping your upper arms fixed, bend your elbows to lower the bar in an arc toward your chin until you feel a stretch in your triceps, then reverse the same arc back to the start. Landing at the chin rather than the forehead or behind the head changes the stretch angle without turning it into a press — the top is a straight reversal, not a lockout drive like a JM Press.",
+    "avoidIf": ["shoulder", "wrist"],
+    "icon": "💀",
+    "mechanic": "Isolation",
+    "pattern": "Vertical Push",
+    "force": "Push",
+    "unilateral": false,
+    "focus": ["strength", "hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Lying Close-Grip Barbell Triceps Press To Chin", "Barbell Triceps Press To Chin"],
+    "category": "strength"
+  },
+  {
+    "id": "lying-crossover-stretch",
+    "name": "Lying Crossover Stretch",
+    "muscleGroup": "Glutes",
+    "secondaryMuscles": ["Back"],
+    "equipment": ["bodyweight"],
+    "difficulty": "Beginner",
+    "cue": "Cross one knee over the other and let both knees drop toward the floor.",
+    "description": "Lie on your back with knees bent, feet flat, and arms out to the sides in a T. Cross one knee over the other, then let both knees fall together toward the floor on the crossed leg's side while keeping both shoulders flat on the ground. You should feel it through the outer hip of the top leg and into the lower back — stop the drop the moment a shoulder wants to lift.",
+    "avoidIf": ["hip", "lower-back"],
+    "icon": "🔀",
+    "mechanic": "Isolation",
+    "pattern": "Stretch",
+    "force": "Static",
+    "unilateral": true,
+    "focus": ["mobility"],
+    "homeFriendly": true,
+    "aliases": ["Lying Crossover", "PNF Lying Crossover Stretch"],
+    "category": "cooldown",
+    "hold": "2 × 30s each side",
+    "stretchType": "static"
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_09_29_MORNING);
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { MUSCLE_GROUPS, EQUIPMENT, CONDITIONS, SPORTS, STRETCH_TYPES, EXERCISES };
 }
