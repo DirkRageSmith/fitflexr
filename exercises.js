@@ -20605,6 +20605,32 @@ const BATCH_2026_09_29_MORNING = [
 ];
 EXERCISES.push.apply(EXERCISES, BATCH_2026_09_29_MORNING);
 
+/* coverage.mjs --queue 10, 2026-09-29 evening. "Lying Glute" skipped as a duplicate of the
+ * already-shipped Supine Figure-4 Glute Stretch -- see tools/queue-decisions.json. */
+const BATCH_2026_09_29_EVENING = [
+  {
+    "id": "prone-barbell-curl",
+    "name": "Prone Barbell Curl",
+    "muscleGroup": "Biceps",
+    "secondaryMuscles": [],
+    "equipment": ["barbell", "bench"],
+    "difficulty": "Intermediate",
+    "cue": "Lie face-down on a raised bench, head near one end, and curl the bar up in an arc toward your head.",
+    "description": "Lie face-down on a flat bench raised high enough that your head clears one end and your toes can rest on the floor for support. Hold a barbell with an underhand grip, arms hanging straight down, then curl it up in an arc toward your head, squeeze, and lower slowly back to the stretch. The single fixed bar forces both arms to move together on the same short arc, unlike the two independent dumbbells of a Prone Dumbbell Curl — that locked path makes it even harder to cheat with your hips or back.",
+    "avoidIf": ["wrist", "shoulder"],
+    "icon": "🏋️",
+    "mechanic": "Isolation",
+    "pattern": "Vertical Pull",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Lying High Bench Barbell Curl", "Lying High Bench Biceps Curl with Barbell"],
+    "category": "strength"
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_09_29_EVENING);
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { MUSCLE_GROUPS, EQUIPMENT, CONDITIONS, SPORTS, STRETCH_TYPES, EXERCISES };
 }

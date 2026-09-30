@@ -546,6 +546,13 @@
       "reason": "free-exercise-db tags this equipment=machine, target=quadriceps, which sounded suspicious for a name like 'Lunge Sprint' -- checked by web search rather than trusted blind. The only match for that machine/quads combination (a Smith-machine bar-on-back alternating jump lunge) came from a site that mirrors the dataset's own field names, not an independent source, plus one weak Pinterest listing title. Two unrelated, much more common exercises share confusingly similar names: 'Sprinter Lunge' (bodyweight, sprinter's-arm-swing drill, unanimous across StrengthLog/PureGym/Trainwell) and 'Smith Sprint Lunge' (a rear-foot-elevated split squat, no jump). Not confident enough to write an accurate how-to; a wrong description here teaches the wrong movement.",
       "decided": "2026-09-27",
       "by": "2026-09-27 morning Bellows pass"
+    },
+    {
+      "name": "Lying Glute",
+      "action": "skip",
+      "reason": "Checked by web search (ExRx, LoadMuscle, Kovo Fitness and others agree, since the vendored reference carries no instructions): lie on your back, knees bent, cross one ankle over the opposite knee into a figure-4, then pull the supporting thigh toward your chest. That is the already-shipped 'Supine Figure-4 Glute Stretch' (id fb-figure-four-glute: 'cross one ankle over the opposite thigh just above the knee, then reach through the gap and pull the supporting thigh toward your chest'). Same movement under a different name; isCovered() misses it because the two names share no words -- same shape as the 'Lower Back Curl'/'Superman' skip above.",
+      "decided": "2026-09-29",
+      "by": "2026-09-29 evening Bellows pass"
     }
   ]
 }
