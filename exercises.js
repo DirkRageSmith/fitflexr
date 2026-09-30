@@ -20616,7 +20616,7 @@ const BATCH_2026_09_29_EVENING = [
     "equipment": ["barbell", "bench"],
     "difficulty": "Intermediate",
     "cue": "Lie face-down on a raised bench, head near one end, and curl the bar up in an arc toward your head.",
-    "description": "Lie face-down on a flat bench raised high enough that your head clears one end and your toes can rest on the floor for support. Hold a barbell with an underhand grip, arms hanging straight down, then curl it up in an arc toward your head, squeeze, and lower slowly back to the stretch. The single fixed bar forces both arms to move together on the same short arc, unlike the two independent dumbbells of a Prone Dumbbell Curl — that locked path makes it even harder to cheat with your hips or back.",
+    "description": "Lie face-down on a flat bench raised high enough that your head clears one end and your toes can rest on the floor for support. Hold a barbell with an underhand grip, arms hanging straight down, then curl it up in an arc toward your head, squeeze, and lower slowly back to the stretch. The single fixed bar forces both arms to move together on the exact same short arc — an even harder lock against cheating with your hips or back than the same lift done one-handed at a time.",
     "avoidIf": ["wrist", "shoulder"],
     "icon": "🏋️",
     "mechanic": "Isolation",
