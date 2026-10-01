@@ -20631,6 +20631,33 @@ const BATCH_2026_09_29_EVENING = [
 ];
 EXERCISES.push.apply(EXERCISES, BATCH_2026_09_29_EVENING);
 
+/* coverage.mjs --queue 10, 2026-10-01 morning. "Lying One-Arm Lateral Raise" skipped as a
+ * duplicate of the already-shipped Dumbbell Lying One-Arm Rear Lateral Raise -- see
+ * tools/queue-decisions.json. */
+const BATCH_2026_10_01_MORNING = [
+  {
+    "id": "lying-machine-squat",
+    "name": "Lying Machine Squat",
+    "muscleGroup": "Quads",
+    "secondaryMuscles": ["Glutes"],
+    "equipment": ["machine"],
+    "difficulty": "Intermediate",
+    "cue": "Push through your heels and let the seat slide back on the rail — the platform doesn't move, you do.",
+    "description": "Lie back almost flat on a horizontal leg press machine, feet on the platform about hip-width apart. Push through your heels to extend your legs without locking your knees, which slides the whole seat backward along a rail, then let your knees bend back toward your chest to return. That's the reverse of the familiar seated Leg Press, where you stay still and an angled platform slides on rails above you — lying fully reclined here takes the lower back almost entirely out of the lift, at the cost of a shorter range of motion.",
+    "avoidIf": ["knee"],
+    "icon": "🦵",
+    "mechanic": "Compound",
+    "pattern": "Squat",
+    "force": "Push",
+    "unilateral": false,
+    "focus": ["strength", "hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Horizontal Leg Press", "Lying Leg Press"],
+    "category": "strength"
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_10_01_MORNING);
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { MUSCLE_GROUPS, EQUIPMENT, CONDITIONS, SPORTS, STRETCH_TYPES, EXERCISES };
 }

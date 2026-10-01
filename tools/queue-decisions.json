@@ -553,6 +553,13 @@
       "reason": "Checked by web search (ExRx, LoadMuscle, Kovo Fitness and others agree, since the vendored reference carries no instructions): lie on your back, knees bent, cross one ankle over the opposite knee into a figure-4, then pull the supporting thigh toward your chest. That is the already-shipped 'Supine Figure-4 Glute Stretch' (id fb-figure-four-glute: 'cross one ankle over the opposite thigh just above the knee, then reach through the gap and pull the supporting thigh toward your chest'). Same movement under a different name; isCovered() misses it because the two names share no words -- same shape as the 'Lower Back Curl'/'Superman' skip above.",
       "decided": "2026-09-29",
       "by": "2026-09-29 evening Bellows pass"
+    },
+    {
+      "name": "Lying One-Arm Lateral Raise",
+      "action": "skip",
+      "reason": "Checked by web search since the vendored reference carries no instructions: every independent source found (Jefit, fitloop.app, atletiq, liftmanual) that uses this exact name describes the posterior-deltoid movement -- chest down on a bench, one dumbbell raised out to the side with the shoulder blade squeezed back -- not a side-delt raise. That is the already-shipped 'Dumbbell Lying One-Arm Rear Lateral Raise' (id dumbbell-lying-one-arm-rear-lateral-raise: 'Lie chest-down on an incline bench holding a dumbbell in one hand ... raise the dumbbell out to your side ... squeezing that shoulder blade back'). Same movement; free-exercise-db's name drops the word 'Rear' and isCovered() misses it because the two names then share no discriminating word -- same shape as the 'Lying Glute' skip above.",
+      "decided": "2026-10-01",
+      "by": "2026-10-01 morning Bellows pass"
     }
   ]
 }
