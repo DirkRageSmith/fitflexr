@@ -20658,6 +20658,134 @@ const BATCH_2026_10_01_MORNING = [
 ];
 EXERCISES.push.apply(EXERCISES, BATCH_2026_10_01_MORNING);
 
+/* coverage.mjs --queue 10, 2026-10-01 evening. Four skipped as duplicates -- "Iron Crosses
+ * (stretch)" (Lying Crossover Stretch), "Looking At Ceiling" (Camel Pose / Ustrasana),
+ * "Lying Prone Quadriceps" (Prone Quad Stretch) and "Lying Rear Delt Raise" (Dumbbell Lying
+ * Rear Lateral Raise) -- see tools/queue-decisions.json. */
+const BATCH_2026_10_01_EVENING = [
+  {
+    "id": "static-knee-across-body",
+    "name": "Knee Across The Body",
+    "muscleGroup": "Glutes",
+    "secondaryMuscles": ["Back"],
+    "equipment": ["bodyweight"],
+    "difficulty": "Beginner",
+    "cue": "Pull one knee across your body toward the floor, the other leg anchored straight.",
+    "description": "Lie on your back with both legs extended, then bend one knee and use the opposite hand to draw it across your body toward the floor, keeping the other leg straight and both shoulders flat. Hold your far hip down with your other hand if it wants to lift. Working one leg at a time, with the other leg anchored straight, reaches deeper into that hip than crossing both knees together does.",
+    "avoidIf": ["hip", "lower-back"],
+    "icon": "🦵",
+    "mechanic": "Isolation",
+    "pattern": "Stretch",
+    "force": "Static",
+    "unilateral": true,
+    "focus": ["mobility"],
+    "homeFriendly": true,
+    "aliases": ["Leg Crossover Stretch"],
+    "category": "cooldown",
+    "hold": "2 × 30s each side",
+    "stretchType": "static"
+  },
+  {
+    "id": "static-kneeling-forearm-stretch",
+    "name": "Kneeling Forearm Stretch",
+    "muscleGroup": "Biceps",
+    "secondaryMuscles": [],
+    "equipment": ["bodyweight"],
+    "difficulty": "Beginner",
+    "cue": "Palms flat on the floor, fingers pointing back toward your knees, sit back.",
+    "description": "Kneel and place both palms flat on the floor in front of you with your fingers pointing back toward your knees. Keeping your palms pressed down, slowly shift your hips back toward your heels until you feel the stretch through your wrists and forearms. This loads the stretch with your own bodyweight instead of a pulling hand, so go gradually and stop the instant it turns into wrist pain rather than tightness.",
+    "avoidIf": ["wrist", "knee"],
+    "icon": "🧎",
+    "mechanic": "Isolation",
+    "pattern": "Stretch",
+    "force": "Static",
+    "unilateral": false,
+    "focus": ["mobility"],
+    "homeFriendly": true,
+    "aliases": ["Kneeling Wrist Stretch"],
+    "category": "cooldown",
+    "hold": "2 × 20s",
+    "stretchType": "static"
+  },
+  {
+    "id": "static-leg-up-hamstring-stretch",
+    "name": "Leg-Up Hamstring Stretch",
+    "muscleGroup": "Hamstrings",
+    "secondaryMuscles": ["Back"],
+    "equipment": ["bench"],
+    "difficulty": "Beginner",
+    "cue": "Heel up on a bench, leg nearly straight, hinge your chest toward it.",
+    "description": "Stand facing a bench and rest one heel on top of it with that leg nearly straight, toes pulled back toward your shin. Keep your standing leg soft and your back flat, then hinge forward from the hips until you feel the stretch down the back of the raised leg. The elevated foot reaches a deeper stretch than a seated or reclined hamstring stretch without needing to get on the floor.",
+    "avoidIf": ["hip", "lower-back", "balance"],
+    "icon": "🪑",
+    "mechanic": "Isolation",
+    "pattern": "Stretch",
+    "force": "Static",
+    "unilateral": true,
+    "focus": ["mobility"],
+    "homeFriendly": true,
+    "aliases": [],
+    "category": "cooldown",
+    "hold": "2 × 30s each side",
+    "stretchType": "static"
+  },
+  {
+    "id": "tf-kneeling-arm-drill",
+    "name": "Kneeling Arm Drill",
+    "muscleGroup": "Shoulders",
+    "secondaryMuscles": ["Core/Abs"],
+    "equipment": ["bodyweight"],
+    "difficulty": "Beginner",
+    "cue": "Half-kneeling, front heel down, pump your arms like you're sprinting.",
+    "description": "Kneel in a half-kneeling position with one foot planted flat in front of you, pressing through that heel to keep your glutes and hamstrings switched on. Pump your arms back and forth in a running rhythm, elbows bent around 90 degrees, driving them back past your hip and forward to shoulder height, then switch the front leg and repeat. Taking the legs out of it isolates the arm action, so a sloppy swing has nowhere to hide.",
+    "avoidIf": ["knee", "shoulder"],
+    "icon": "🏃",
+    "pattern": "Stretch",
+    "force": "Explosive",
+    "focus": ["mobility"],
+    "category": "warmup",
+    "sports": ["track-field", "football"],
+    "hold": "3 × 20s each side"
+  },
+  {
+    "id": "tf-linear-3-part-start",
+    "name": "Linear 3-Part Start Technique",
+    "muscleGroup": "Hamstrings",
+    "secondaryMuscles": ["Glutes", "Quads"],
+    "equipment": ["bodyweight"],
+    "difficulty": "Intermediate",
+    "cue": "Set a staggered 3-point stance, nose over your front knee, then drive out low.",
+    "description": "Stand at a line, step your left foot back so its toe sits beside your right ankle, then step the right foot back another 4-6 inches, plant your right hand on the line, and bring your nose close to your left knee so your hips sit higher than your head. From that low, loaded stance, swing your free arm up to parallel and explode forward low and fast. It teaches the body position of a sprint start without the complexity of a full blocks start.",
+    "avoidIf": ["knee", "balance", "high-impact"],
+    "icon": "🏁",
+    "pattern": "Stretch",
+    "force": "Explosive",
+    "focus": ["mobility"],
+    "category": "warmup",
+    "sports": ["track-field", "football"],
+    "hold": "4 × 10m"
+  },
+  {
+    "id": "tf-linear-acceleration-wall-drill",
+    "name": "Linear Acceleration Wall Drill",
+    "muscleGroup": "Hamstrings",
+    "secondaryMuscles": ["Quads", "Core/Abs"],
+    "equipment": ["bodyweight"],
+    "difficulty": "Intermediate",
+    "cue": "Lean into a wall and drive each knee straight down into the ground.",
+    "description": "Lean into a wall at about 45 degrees with your feet together and glutes squeezed, body forming one straight line from ankles to head. Drive one knee up quickly, pause, then punch it straight down into the ground like stomping out a sprint stride, then switch legs and repeat. Once both sides feel warmed up, let the feet alternate rapidly without the pause -- the wall takes away the travel, so all the force goes straight into the ground instead of pushing you forward.",
+    "avoidIf": ["knee", "balance", "high-impact"],
+    "icon": "🧱",
+    "pattern": "Stretch",
+    "force": "Explosive",
+    "focus": ["mobility"],
+    "category": "warmup",
+    "sports": ["track-field", "football"],
+    "hold": "3 × 10 each leg"
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_10_01_EVENING);
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { MUSCLE_GROUPS, EQUIPMENT, CONDITIONS, SPORTS, STRETCH_TYPES, EXERCISES };
 }

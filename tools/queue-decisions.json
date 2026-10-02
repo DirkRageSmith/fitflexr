@@ -560,6 +560,34 @@
       "reason": "Checked by web search since the vendored reference carries no instructions: every independent source found (Jefit, fitloop.app, atletiq, liftmanual) that uses this exact name describes the posterior-deltoid movement -- chest down on a bench, one dumbbell raised out to the side with the shoulder blade squeezed back -- not a side-delt raise. That is the already-shipped 'Dumbbell Lying One-Arm Rear Lateral Raise' (id dumbbell-lying-one-arm-rear-lateral-raise: 'Lie chest-down on an incline bench holding a dumbbell in one hand ... raise the dumbbell out to your side ... squeezing that shoulder blade back'). Same movement; free-exercise-db's name drops the word 'Rear' and isCovered() misses it because the two names then share no discriminating word -- same shape as the 'Lying Glute' skip above.",
       "decided": "2026-10-01",
       "by": "2026-10-01 morning Bellows pass"
+    },
+    {
+      "name": "Iron Crosses (stretch)",
+      "action": "skip",
+      "reason": "Checked by web search since the vendored reference carries no instructions (and equipment=null, remapped to bodyweight): sportsfitnesshut, strive-workout, grabgains, gymbrah and liftmanual all describe the same lying spinal-twist movement -- on your back, arms out in a T, cross one leg over the other and let both knees drop toward the floor on that side. That is the already-shipped 'Lying Crossover Stretch' (id lying-crossover-stretch: 'Lie on your back with knees bent, feet flat, and arms out to the sides in a T. Cross one knee over the other, then let both knees fall together toward the floor'). Same movement under the gymnast-shape nickname; isCovered() misses it because 'Crosses' stems to a form that doesn't match 'Crossover' and the two names share no other word.",
+      "decided": "2026-10-01",
+      "by": "2026-10-01 evening Bellows pass"
+    },
+    {
+      "name": "Looking At Ceiling",
+      "action": "skip",
+      "reason": "Checked by web search since the vendored reference carries no instructions: atletiq and fitwill agree it is kneel, hold both heels, lift the hips forward and arch back to look at the ceiling. That is the already-shipped yoga 'Camel Pose' / Ustrasana (id yoga-camel: 'Kneel with your knees hip-width and your hands on your lower back, fingers pointing down. Press your hips forward and lift your chest toward the ceiling, reaching for your heels'). Same posture under its plain-English name instead of its yoga one; isCovered() misses it because 'Looking At Ceiling' and 'Camel Pose'/'Ustrasana' share no word at all.",
+      "decided": "2026-10-01",
+      "by": "2026-10-01 evening Bellows pass"
+    },
+    {
+      "name": "Lying Prone Quadriceps",
+      "action": "skip",
+      "reason": "Checked by web search since the vendored reference carries no instructions: ExRx, nismat.org, stretching.wonderhowto.com and inspireusafoundation agree it is lie face down, bend one knee, reach back and pull the ankle toward your backside while both hip bones stay on the floor. That is the already-shipped 'Prone Quad Stretch' (id static-prone-quad: 'Lie face down, bend one knee and reach back for the ankle ... Draw the heel toward your backside while keeping both hip bones on the floor'), almost word for word. isCovered() misses it because 'Quadriceps' doesn't stem to match 'Quad' and the two names then share no word.",
+      "decided": "2026-10-01",
+      "by": "2026-10-01 evening Bellows pass"
+    },
+    {
+      "name": "Lying Rear Delt Raise",
+      "action": "skip",
+      "reason": "Checked by web search since the vendored reference carries no instructions: Fittr and FitnessVolt both describe lying chest-down on an incline bench, a dumbbell in each hand, raising both out to the sides until level with the torso. That is the already-shipped 'Dumbbell Lying Rear Lateral Raise' (id dumbbell-lying-rear-lateral-raise: 'Lie chest-down on an incline bench holding a dumbbell in each hand ... Raise both dumbbells out to your sides until your arms are level with your torso'). Same bilateral movement as the already-skipped one-arm version (2026-10-01 morning); free-exercise-db's name drops 'Lateral' and isCovered() misses it because the two names share no discriminating word.",
+      "decided": "2026-10-01",
+      "by": "2026-10-01 evening Bellows pass"
     }
   ]
 }
