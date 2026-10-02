@@ -20860,7 +20860,7 @@ const BATCH_2026_10_02_MORNING = [
     "equipment": ["medicine-ball"],
     "difficulty": "Intermediate",
     "cue": "Scoop the ball low between your legs, then drive your hips up to launch it forward and overhead.",
-    "description": "Stand with feet shoulder-width apart holding the ball with both hands. Hinge your hips and bend your knees to scoop the ball down low between your legs, then explosively extend your hips and knees, driving the ball up and forward in one continuous motion. The power comes from the hip drive, not the arms, much like a kettlebell swing that finishes by letting go.",
+    "description": "Stand with feet shoulder-width apart holding the ball with both hands. Hinge your hips and bend your knees to scoop the ball down low between your legs, then explosively extend your hips and knees, driving the ball up and forward in one continuous motion. The power comes from the hip drive, not the arms, the same hinge-and-snap you'd use to swing a weight and then just let it fly.",
     "avoidIf": ["shoulder", "lower-back"],
     "icon": "⚡",
     "mechanic": "Compound",
