@@ -588,6 +588,34 @@
       "reason": "Checked by web search since the vendored reference carries no instructions: Fittr and FitnessVolt both describe lying chest-down on an incline bench, a dumbbell in each hand, raising both out to the sides until level with the torso. That is the already-shipped 'Dumbbell Lying Rear Lateral Raise' (id dumbbell-lying-rear-lateral-raise: 'Lie chest-down on an incline bench holding a dumbbell in each hand ... Raise both dumbbells out to your sides until your arms are level with your torso'). Same bilateral movement as the already-skipped one-arm version (2026-10-01 morning); free-exercise-db's name drops 'Lateral' and isCovered() misses it because the two names share no discriminating word.",
       "decided": "2026-10-01",
       "by": "2026-10-01 evening Bellows pass"
+    },
+    {
+      "name": "Lying Triceps Press",
+      "action": "skip",
+      "reason": "Checked by web search since the vendored reference carries no instructions: muscleandstrength and bodybuilding-wizard both describe lying on a flat bench holding an EZ-bar on its INNER angle (close grip), lowering it beyond the forehead and pressing back up -- the classic skull-crusher. That is the already-shipped 'Lying Close-Grip EZ-Bar Triceps Press To Chin', same equipment, same inner-grip, same bar path. free-exercise-db's generic name drops 'close-grip' and 'to chin' and isCovered() misses it because those are the only discriminating words.",
+      "decided": "2026-10-02",
+      "by": "2026-10-02 morning Bellows pass"
+    },
+    {
+      "name": "Machine Bench Press",
+      "action": "skip",
+      "reason": "A direct name match this time, not a web-search one: the shipped 'Machine Chest Press' (id machine-chest-press) is 'Sit in the chest press machine with the handles at chest height and your back flat against the pad. Press the handles forward until your arms are nearly straight' -- the identical seated flat press this queue item's own sourcing (jefit, sweat.com) describes. isCovered() misses it because 'bench' and 'chest' share no word, the same shape as the F14 skips already on this list.",
+      "decided": "2026-10-02",
+      "by": "2026-10-02 morning Bellows pass"
+    },
+    {
+      "name": "Middle Back Stretch",
+      "action": "skip",
+      "reason": "Checked by web search since the vendored reference carries no instructions: the only independent description found (ellim.app) is seated, knee crossed or hand on the opposite thigh, rotating the torso -- the already-shipped 'Seated Spinal Twist' (id yoga-seated-spinal-twist, aliases Ardha Matsyendrasana / Half Lord of the Fishes): 'Sit with your legs out, bend the right knee and cross it over the left thigh ... turn a little further as you breathe out.' isCovered() misses it because the two names share no word at all.",
+      "decided": "2026-10-02",
+      "by": "2026-10-02 morning Bellows pass"
+    },
+    {
+      "name": "Moving Claw Series",
+      "action": "skip",
+      "reason": "No independent how-to found. The only two results (myworkouts.io, atletiq) restate the vendored free-exercise-db metadata (bodyweight, glutes/hamstrings, plyometric, intermediate) with no description of the actual movement -- the same 'name alone, no instructions' shape F10 already warns against. Dropping rather than guessing at what a 'claw' drill does with the hamstrings.",
+      "decided": "2026-10-02",
+      "by": "2026-10-02 morning Bellows pass"
     }
   ]
 }

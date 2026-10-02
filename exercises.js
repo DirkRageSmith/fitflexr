@@ -20786,6 +20786,135 @@ const BATCH_2026_10_01_EVENING = [
 ];
 EXERCISES.push.apply(EXERCISES, BATCH_2026_10_01_EVENING);
 
+/* coverage.mjs --queue 10, 2026-10-02 morning. Four skipped as duplicates -- "Lying Triceps
+ * Press" (Lying Close-Grip EZ-Bar Triceps Press To Chin, same inner-grip skull-crusher path),
+ * "Machine Bench Press" (Machine Chest Press, same seated flat press), "Middle Back Stretch"
+ * (Seated Spinal Twist) and "Moving Claw Series" (no independent how-to found, only aggregator
+ * restatements of the vendored metadata) -- see tools/queue-decisions.json. */
+const BATCH_2026_10_02_MORNING = [
+  {
+    "id": "lying-supine-dumbbell-curl",
+    "name": "Lying Supine Dumbbell Curl",
+    "muscleGroup": "Biceps",
+    "secondaryMuscles": [],
+    "equipment": ["dumbbell", "bench"],
+    "difficulty": "Intermediate",
+    "cue": "Lie flat on your back, let the dumbbells hang out to your sides, and curl them up.",
+    "description": "Lie face-up on a flat bench with a dumbbell in each hand, elbows hanging out over the sides at shoulder height, palms up. Curl the weights up toward your shoulders without letting your elbows drift, then lower all the way back down for a full stretch. Hanging out to the sides instead of behind your body, like an incline curl does, loads the stretch from a different angle.",
+    "avoidIf": ["shoulder"],
+    "icon": "💪",
+    "mechanic": "Isolation",
+    "pattern": "Vertical Pull",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["hypertrophy"],
+    "homeFriendly": true,
+    "aliases": ["Dumbbell Lying Supine Curl", "Lying Dumbbell Curl"],
+    "category": "strength"
+  },
+  {
+    "id": "lying-t-bar-row",
+    "name": "Lying T-Bar Row",
+    "muscleGroup": "Back",
+    "secondaryMuscles": ["Biceps", "Shoulders"],
+    "equipment": ["machine"],
+    "difficulty": "Intermediate",
+    "cue": "Lie face-down on the chest pad and row the handles back to your sides.",
+    "description": "Lie face-down on the machine's inclined chest pad and grip the handles at arm's length in front of you. Pull them back toward your ribs, squeezing your shoulder blades together, then extend back out under control. The pad locks your torso in place, so none of the pull comes from swinging your hips the way a standing T-Bar Row can.",
+    "avoidIf": ["shoulder"],
+    "icon": "🏋️",
+    "mechanic": "Compound",
+    "pattern": "Horizontal Pull",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["strength", "hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Lever Lying T-Bar Row", "Chest-Supported T-Bar Row"],
+    "category": "strength"
+  },
+  {
+    "id": "medicine-ball-full-twist",
+    "name": "Medicine Ball Full Twist",
+    "muscleGroup": "Core/Abs",
+    "secondaryMuscles": ["Shoulders"],
+    "equipment": ["medicine-ball"],
+    "difficulty": "Beginner",
+    "cue": "Hold the ball at your chest and rotate your hips and shoulders fully to each side.",
+    "description": "Stand with feet shoulder-width apart, holding a medicine ball at chest height with elbows bent. Rotate your shoulders and hips together as far as you can to one side, then reverse all the way to the other side, keeping your feet planted. Turning the hips along with the shoulders is what makes this a full twist rather than an arms-only rotation.",
+    "avoidIf": ["lower-back", "pregnancy"],
+    "icon": "🌀",
+    "mechanic": "Isolation",
+    "pattern": "Rotation",
+    "force": "Static",
+    "unilateral": false,
+    "focus": ["strength"],
+    "homeFriendly": true,
+    "aliases": [],
+    "category": "strength"
+  },
+  {
+    "id": "medicine-ball-scoop-throw",
+    "name": "Medicine Ball Scoop Throw",
+    "muscleGroup": "Full Body/Cardio",
+    "secondaryMuscles": ["Glutes", "Shoulders"],
+    "equipment": ["medicine-ball"],
+    "difficulty": "Intermediate",
+    "cue": "Scoop the ball low between your legs, then drive your hips up to launch it forward and overhead.",
+    "description": "Stand with feet shoulder-width apart holding the ball with both hands. Hinge your hips and bend your knees to scoop the ball down low between your legs, then explosively extend your hips and knees, driving the ball up and forward in one continuous motion. The power comes from the hip drive, not the arms, much like a kettlebell swing that finishes by letting go.",
+    "avoidIf": ["shoulder", "lower-back"],
+    "icon": "⚡",
+    "mechanic": "Compound",
+    "pattern": "Conditioning",
+    "force": "Explosive",
+    "unilateral": false,
+    "focus": ["power"],
+    "homeFriendly": false,
+    "aliases": [],
+    "category": "power"
+  },
+  {
+    "id": "middle-back-shrug",
+    "name": "Middle Back Shrug",
+    "muscleGroup": "Back",
+    "secondaryMuscles": ["Shoulders"],
+    "equipment": ["dumbbell", "bench"],
+    "difficulty": "Intermediate",
+    "cue": "Lie face-down on an incline bench with arms hanging straight down, then squeeze your shoulder blades together.",
+    "description": "Lie chest-down on an incline bench holding a dumbbell in each hand, arms hanging straight toward the floor with palms facing each other. Without bending your elbows, squeeze your shoulder blades together and hold for a second, then let them spread back apart under control. It's the opposite motion of a trap shrug: the shoulders stay down and only the shoulder blades move.",
+    "avoidIf": [],
+    "icon": "🫂",
+    "mechanic": "Isolation",
+    "pattern": "Horizontal Pull",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["hypertrophy"],
+    "homeFriendly": true,
+    "aliases": ["Reverse Shrug"],
+    "category": "strength"
+  },
+  {
+    "id": "muscle-snatch",
+    "name": "Muscle Snatch",
+    "muscleGroup": "Full Body/Cardio",
+    "secondaryMuscles": ["Shoulders", "Glutes", "Core/Abs"],
+    "equipment": ["barbell"],
+    "difficulty": "Advanced",
+    "cue": "Pull the bar from the floor straight overhead without dropping under it to catch.",
+    "description": "Set up on the bar with a wide snatch grip, hips higher than a deadlift but lower than standing. Drive through your heels to pull the bar up close to your body, then explosively extend your hips and knees and finish by punching the bar straight up to lock out overhead, standing tall the whole time. Removing the catch-dip that a full snatch uses trains the pull and the overhead lockout without the technical risk of dropping under a heavy bar.",
+    "avoidIf": ["shoulder", "lower-back", "wrist"],
+    "icon": "⚡",
+    "mechanic": "Compound",
+    "pattern": "Hinge",
+    "force": "Explosive",
+    "unilateral": false,
+    "focus": ["power"],
+    "homeFriendly": false,
+    "aliases": ["Barbell Muscle Snatch"],
+    "category": "power"
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_10_02_MORNING);
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { MUSCLE_GROUPS, EQUIPMENT, CONDITIONS, SPORTS, STRETCH_TYPES, EXERCISES };
 }
