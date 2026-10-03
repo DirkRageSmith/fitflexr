@@ -630,6 +630,13 @@
       "reason": "Independent sources (fitbod, liftmanual) describe it as 'a variation of the standard Back Squat' with a more upright torso and a slightly wider, angled-out stance -- a bar-position and torso-angle emphasis on the same movement already shipped as 'Barbell Back Squat' (id barbell-back-squat), which specifies no particular bar height or torso angle itself. Unlike this pass's Narrow Stance Squat (a clearly narrower stance with a named, sourced difference in muscle emphasis), the distinguishing detail here was too subtle to confidently describe as a separate card rather than restating the same squat.",
       "decided": "2026-10-02",
       "by": "2026-10-02 evening Bellows pass"
+    },
+    {
+      "name": "Narrow Stance Hack Squats",
+      "action": "skip",
+      "reason": "A real, sourced variant (muscleandstrength, jefit, gymwolf all describe the narrow foot placement and its shift toward the outer quads), written as 'Narrow Stance Hack Squat Machine' and then BLOCKed by pending.mjs as a duplicate of the already-shipped 'Hack Squat Machine' -- neither 'narrow' nor 'stance' is in coverage.mjs's DISCRIMINATING list, so the shorter shipped name (once 'machine' is counted) reads as fully contained. Same F14 shape as the Incline Dumbbell neutral-grip/twist skips from 2026-09-23: dropped rather than shipped past the gate. Real and writable if DISCRIMINATING ever learns 'narrow'/'stance'.",
+      "decided": "2026-10-02",
+      "by": "2026-10-02 evening Bellows pass"
     }
   ]
 }

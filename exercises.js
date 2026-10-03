@@ -20918,28 +20918,12 @@ EXERCISES.push.apply(EXERCISES, BATCH_2026_10_02_MORNING);
 /* coverage.mjs --queue 10, 2026-10-02 evening. Two skipped as duplicates -- "Oblique
  * Crunches" (Cross-Body Crunch, same elbow-to-opposite-knee twist, feet flat) and "Olympic
  * Squat" (a high-bar, upright-torso stance of the already-shipped Barbell Back Squat, not a
- * distinct movement) -- see tools/queue-decisions.json. */
+ * distinct movement). A third, "Narrow Stance Hack Squats", was written, BLOCKed by
+ * pending.mjs as a duplicate of the shipped Hack Squat Machine, and dropped rather than
+ * shipped past the gate -- "narrow"/"stance" aren't in coverage.mjs's DISCRIMINATING list,
+ * the same F14 containment trap as the Incline Dumbbell skips two passes ago. See
+ * tools/queue-decisions.json. */
 const BATCH_2026_10_02_EVENING = [
-  {
-    "id": "narrow-stance-hack-squat-machine",
-    "name": "Narrow Stance Hack Squat Machine",
-    "muscleGroup": "Quads",
-    "secondaryMuscles": ["Glutes"],
-    "equipment": ["machine"],
-    "difficulty": "Intermediate",
-    "cue": "Feet together near the center of the platform, squat down and drive up.",
-    "description": "Load into the hack squat machine with your shoulders under the pads, but set your feet together near the center of the platform instead of the usual shoulder-width spacing. Bend your knees to lower until your thighs are at least parallel, then drive back up through your heels. The narrow stance shifts more of the load onto the outer quads than the standard setup does.",
-    "avoidIf": ["knee"],
-    "icon": "🏋️",
-    "mechanic": "Compound",
-    "pattern": "Squat",
-    "force": "Push",
-    "unilateral": false,
-    "focus": ["hypertrophy"],
-    "homeFriendly": false,
-    "aliases": ["Narrow Stance Hack Squats"],
-    "category": "strength"
-  },
   {
     "id": "barbell-narrow-stance-squat",
     "name": "Narrow Stance Barbell Squat",
