@@ -637,6 +637,27 @@
       "reason": "A real, sourced variant (muscleandstrength, jefit, gymwolf all describe the narrow foot placement and its shift toward the outer quads), written as 'Narrow Stance Hack Squat Machine' and then BLOCKed by pending.mjs as a duplicate of the already-shipped 'Hack Squat Machine' -- neither 'narrow' nor 'stance' is in coverage.mjs's DISCRIMINATING list, so the shorter shipped name (once 'machine' is counted) reads as fully contained. Same F14 shape as the Incline Dumbbell neutral-grip/twist skips from 2026-09-23: dropped rather than shipped past the gate. Real and writable if DISCRIMINATING ever learns 'narrow'/'stance'.",
       "decided": "2026-10-02",
       "by": "2026-10-02 evening Bellows pass"
+    },
+    {
+      "name": "One-Arm Kettlebell Clean",
+      "action": "skip",
+      "reason": "The already-shipped 'Kettlebell Clean' (id kettlebell-clean-conditioning) is already a single-bell, one-arm lift -- unilateral: true, 'Hike the kettlebell back ... pull it up to the rack position on your shoulder' -- which is what a kettlebell clean means by default; the two-bell version is the already-shipped, separately-named 'Double Kettlebell Clean'. 'One-Arm' here just restates the shipped card. isCovered() reads it as uncovered because 'arm' is a DISCRIMINATING word the shipped name doesn't carry -- the F14 shape running in the other direction, a false 'new' reading on a true duplicate.",
+      "decided": "2026-10-03",
+      "by": "2026-10-03 morning Bellows pass"
+    },
+    {
+      "name": "One-Arm Kettlebell Snatch",
+      "action": "skip",
+      "reason": "Same shape as this pass's One-Arm Kettlebell Clean: the already-shipped 'Kettlebell Snatch' (id kettlebell-snatch-conditioning) is already unilateral: true and describes swinging and punching a single bell overhead in one motion -- a kettlebell snatch is a one-bell lift by definition, and no 'Double Kettlebell Snatch' is shipped to make 'One-Arm' a meaningful disambiguation. 'One-Arm' and 'Snatch' restate the shipped card rather than adding anything.",
+      "decided": "2026-10-03",
+      "by": "2026-10-03 morning Bellows pass"
+    },
+    {
+      "name": "One-Arm Kettlebell Military Press To The Side",
+      "action": "skip",
+      "reason": "Sourced (jefit, fitwill, lyfta): a standing strict press from the rack position, pressed in a slight arc to clear the face and lock out over the shoulder, torso held still throughout -- the same setup, path and finish as the already-shipped 'Single-Arm Kettlebell Press' (id single-arm-kettlebell-press): 'Hold a kettlebell at one shoulder ... press it overhead ... while keeping your body from leaning.' The arc 'to the side' to clear the face is ordinary technique for any one-arm kettlebell press, not a distinct movement -- 'military' and 'side' are DISCRIMINATING words with no match on the shipped name, not evidence of a real variant.",
+      "decided": "2026-10-03",
+      "by": "2026-10-03 morning Bellows pass"
     }
   ]
 }
