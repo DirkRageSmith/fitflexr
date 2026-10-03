@@ -616,6 +616,20 @@
       "reason": "No independent how-to found. The only two results (myworkouts.io, atletiq) restate the vendored free-exercise-db metadata (bodyweight, glutes/hamstrings, plyometric, intermediate) with no description of the actual movement -- the same 'name alone, no instructions' shape F10 already warns against. Dropping rather than guessing at what a 'claw' drill does with the hamstrings.",
       "decided": "2026-10-02",
       "by": "2026-10-02 morning Bellows pass"
+    },
+    {
+      "name": "Oblique Crunches",
+      "action": "skip",
+      "reason": "Two independent sources (hevyapp, thegymgroup) describe lying on the back with knees bent and feet flat, elbow brought to the opposite knee in an alternating twist -- the identical movement already shipped as 'Cross-Body Crunch' (id cross-body-crunch): 'Lie on your back with knees bent, feet flat ... that elbow travels toward the opposite knee as that knee draws in to meet it ... alternate sides.' Not the same as the already-shipped 'Side Crunch' (alias 'Oblique Crunch', singular), which drops both knees to one side instead of alternating.",
+      "decided": "2026-10-02",
+      "by": "2026-10-02 evening Bellows pass"
+    },
+    {
+      "name": "Olympic Squat",
+      "action": "skip",
+      "reason": "Independent sources (fitbod, liftmanual) describe it as 'a variation of the standard Back Squat' with a more upright torso and a slightly wider, angled-out stance -- a bar-position and torso-angle emphasis on the same movement already shipped as 'Barbell Back Squat' (id barbell-back-squat), which specifies no particular bar height or torso angle itself. Unlike this pass's Narrow Stance Squat (a clearly narrower stance with a named, sourced difference in muscle emphasis), the distinguishing detail here was too subtle to confidently describe as a separate card rather than restating the same squat.",
+      "decided": "2026-10-02",
+      "by": "2026-10-02 evening Bellows pass"
     }
   ]
 }
