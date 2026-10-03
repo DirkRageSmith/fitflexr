@@ -21073,7 +21073,12 @@ EXERCISES.push.apply(EXERCISES, BATCH_2026_10_02_EVENING);
 
 /* coverage.mjs --queue 10, 2026-10-03 morning. Three skipped as real duplicates under a
  * different name -- "One-Arm Kettlebell Clean", "One-Arm Kettlebell Snatch" and "One-Arm
- * Kettlebell Military Press To The Side" -- see tools/queue-decisions.json. */
+ * Kettlebell Military Press To The Side". Two more written and then dropped after
+ * pending.mjs BLOCKed them as duplicates of a shipped card despite being real, sourced
+ * variants -- "Half Locust Pose" (vs the shipped bilateral "Locust Pose") and "Kettlebell
+ * Clean and Jerk" (vs the shipped "Kettlebell Clean", which contains "Clean and Jerk" by
+ * word count once "jerk" is ignored) -- the F14 containment shape again. All five in
+ * tools/queue-decisions.json. */
 const BATCH_2026_10_03_MORNING = [
   {
     "id": "one-arm-cable-lat-pulldown",
@@ -21096,29 +21101,6 @@ const BATCH_2026_10_03_MORNING = [
     "category": "strength"
   },
   {
-    "id": "yoga-half-locust",
-    "name": "Half Locust Pose",
-    "muscleGroup": "Back",
-    "secondaryMuscles": ["Glutes"],
-    "equipment": ["bodyweight"],
-    "difficulty": "Beginner",
-    "cue": "Forearms tucked under your thighs, lift one straight leg at a time.",
-    "description": "Lie face down with your chin on the floor and rock your hips gently side to side to walk your forearms underneath your body, until your hands rest beneath your thighs. Keeping one leg straight, lift it a few inches off the floor and hold, then lower and switch sides. Raising one leg at a time — instead of both legs and both arms together — isolates the low back, glute and hamstring of that side rather than splitting the effort across the whole body, which makes it the gentler entry point before the full two-leg Locust Pose.",
-    "avoidIf": ["lower-back"],
-    "icon": "🦗",
-    "mechanic": "Isolation",
-    "pattern": "Stretch",
-    "force": "Static",
-    "unilateral": true,
-    "focus": ["mobility"],
-    "homeFriendly": true,
-    "aliases": ["One Half Locust", "Ardha Shalabhasana"],
-    "category": "warmup",
-    "sports": ["yoga"],
-    "hold": "3 × 20s each side",
-    "stretchType": "yoga"
-  },
-  {
     "id": "single-knee-to-chest-stretch",
     "name": "Single Knee-to-Chest Stretch",
     "muscleGroup": "Back",
@@ -21126,7 +21108,7 @@ const BATCH_2026_10_03_MORNING = [
     "equipment": ["bodyweight"],
     "difficulty": "Beginner",
     "cue": "Pull one knee to your chest while the other foot stays flat on the floor.",
-    "description": "Lie on your back with both knees bent and feet flat on the floor. Clasp your hands behind one knee and pull it in toward your chest, keeping your other foot planted and your lower back pressed into the floor. Hold, then lower and switch legs. Working one leg at a time — instead of hugging both knees together — keeps the opposite hip anchored flat, which reaches the low back and glute of the working side without loading the other hip at all.",
+    "description": "Lie on your back with both knees bent and feet flat on the floor. Clasp your hands behind one knee and pull it in toward your chest, keeping your other foot planted and your lower back pressed into the floor; hold, then lower and switch legs. Working one leg at a time — instead of hugging both together — keeps the opposite hip anchored flat, isolating the low back and glute on the working side.",
     "avoidIf": ["knee", "pregnancy"],
     "icon": "🧘",
     "pattern": "Stretch",
@@ -21146,7 +21128,7 @@ const BATCH_2026_10_03_MORNING = [
     "equipment": ["cable"],
     "difficulty": "Beginner",
     "cue": "Stand side-on to a high pulley and bend away from it, then pull back up straight.",
-    "description": "Attach a single handle to a high pulley and stand side-on to the machine, gripping the handle in the hand nearer the stack with your other hand resting on your waist. Keeping that arm tucked tight to your side and your torso facing forward, bend directly away from the pulley, then squeeze your obliques to pull back to upright. The overhead pulley keeps tension on the muscle through the whole range, unlike a dumbbell or kettlebell side bend where the pull slackens near the top.",
+    "description": "Attach a single handle to a high pulley and stand side-on to it, gripping the handle in the hand nearer the stack with your other hand resting on your waist. Keeping that arm tucked tight to your side and your torso facing forward, bend directly away from the pulley, then squeeze your obliques to pull back to upright. The overhead angle keeps tension on the obliques through the whole range, including near the top where a side bend held against gravity alone loses its pull.",
     "avoidIf": ["lower-back"],
     "icon": "🏋️",
     "mechanic": "Isolation",
@@ -21166,7 +21148,7 @@ const BATCH_2026_10_03_MORNING = [
     "equipment": ["dumbbell", "bench"],
     "difficulty": "Intermediate",
     "cue": "Lying on your side on an incline bench, raise the dumbbell straight out toward the ceiling.",
-    "description": "Set a bench to a 30-45 degree incline and lie on your side against it, bracing your lower body so you don't roll off. Hold a dumbbell in your top hand with a slight bend in the elbow, arm hanging down toward the floor. Raise it out to the side until it's roughly level with your shoulder, pause, then lower under control. Lying against the incline removes the torso lean and momentum a standing raise lets you cheat with, so the lateral deltoid does the lifting alone through the whole range.",
+    "description": "Set a bench to a 30-45 degree incline and lie on your side against it, bracing your lower body so you don't roll off, holding a dumbbell in your top hand with a slight bend in the elbow. Raise it out to the side until it's roughly level with your shoulder, pause, then lower under control. Lying against the incline removes the torso lean and momentum a standing raise lets you cheat with, so the lateral deltoid does the lifting alone.",
     "avoidIf": ["shoulder"],
     "icon": "🪽",
     "mechanic": "Isolation",
@@ -21196,26 +21178,6 @@ const BATCH_2026_10_03_MORNING = [
     "focus": ["power"],
     "homeFriendly": true,
     "aliases": ["One-Arm Kettlebell Jerk", "KB Jerk"],
-    "category": "power"
-  },
-  {
-    "id": "kettlebell-clean-and-jerk",
-    "name": "Kettlebell Clean and Jerk",
-    "muscleGroup": "Full Body/Cardio",
-    "secondaryMuscles": ["Shoulders", "Core/Abs", "Glutes"],
-    "equipment": ["kettlebell"],
-    "difficulty": "Advanced",
-    "cue": "Clean the bell to your shoulder, then dip and re-dip to catch it locked out overhead.",
-    "description": "Hike the kettlebell back, then pull it up to the rack position on your shoulder in one clean motion, letting it roll around your hand. From the rack, dip at the knees and drive the bell upward, re-bending into a shallow squat to catch it locked out overhead, then stand to finish before lowering back to the rack for the next rep. The re-dip catch is what makes this a jerk rather than a clean and press — your legs do the work a strict press asks your shoulder to do alone, so you can move more weight for more reps.",
-    "avoidIf": ["shoulder", "lower-back"],
-    "icon": "🔔",
-    "mechanic": "Compound",
-    "pattern": "Conditioning",
-    "force": "Explosive",
-    "unilateral": true,
-    "focus": ["power", "strength"],
-    "homeFriendly": true,
-    "aliases": ["One-Arm Kettlebell Clean and Jerk", "KB Clean and Jerk"],
     "category": "power"
   }
 ];

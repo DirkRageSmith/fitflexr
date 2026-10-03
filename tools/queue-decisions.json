@@ -658,6 +658,20 @@
       "reason": "Sourced (jefit, fitwill, lyfta): a standing strict press from the rack position, pressed in a slight arc to clear the face and lock out over the shoulder, torso held still throughout -- the same setup, path and finish as the already-shipped 'Single-Arm Kettlebell Press' (id single-arm-kettlebell-press): 'Hold a kettlebell at one shoulder ... press it overhead ... while keeping your body from leaning.' The arc 'to the side' to clear the face is ordinary technique for any one-arm kettlebell press, not a distinct movement -- 'military' and 'side' are DISCRIMINATING words with no match on the shipped name, not evidence of a real variant.",
       "decided": "2026-10-03",
       "by": "2026-10-03 morning Bellows pass"
+    },
+    {
+      "name": "One Half Locust",
+      "action": "skip",
+      "reason": "A real, sourced variant (yogabasics, yogapedia, tummee all describe Ardha Shalabhasana as lifting one straight leg at a time instead of both), written as 'Half Locust Pose' and then BLOCKed by pending.mjs as a duplicate of the already-shipped 'Locust Pose' -- 'half' is not in coverage.mjs's DISCRIMINATING list, so the shorter shipped name reads as fully contained once it is ignored. Same F14 shape as the Narrow Stance Hack Squat skip earlier this stack: dropped rather than shipped past the gate. Real and writable if DISCRIMINATING ever learns 'half'.",
+      "decided": "2026-10-03",
+      "by": "2026-10-03 morning Bellows pass"
+    },
+    {
+      "name": "One-Arm Kettlebell Clean and Jerk",
+      "action": "skip",
+      "reason": "A real, sourced, technically distinct lift (barbend, strongfirst, kettlebellkings: the jerk's re-dip catch under the bell vs the press's single continuous lockout), written as 'Kettlebell Clean and Jerk' and then BLOCKed by pending.mjs as a duplicate of the already-shipped 'Kettlebell Clean' -- 'jerk' is not in coverage.mjs's DISCRIMINATING list, so 'kettlebell' + 'clean' alone read as fully containing the shipped two-word name. The standalone 'Kettlebell Jerk' (no clean) shipped this same pass without tripping the check. Dropped rather than shipped past the gate; real and writable if DISCRIMINATING ever learns 'jerk'.",
+      "decided": "2026-10-03",
+      "by": "2026-10-03 morning Bellows pass"
     }
   ]
 }
