@@ -672,6 +672,27 @@
       "reason": "A real, sourced, technically distinct lift (barbend, strongfirst, kettlebellkings: the jerk's re-dip catch under the bell vs the press's single continuous lockout), written as 'Kettlebell Clean and Jerk' and then BLOCKed by pending.mjs as a duplicate of the already-shipped 'Kettlebell Clean' -- 'jerk' is not in coverage.mjs's DISCRIMINATING list, so 'kettlebell' + 'clean' alone read as fully containing the shipped two-word name. The standalone 'Kettlebell Jerk' (no clean) shipped this same pass without tripping the check. Dropped rather than shipped past the gate; real and writable if DISCRIMINATING ever learns 'jerk'.",
       "decided": "2026-10-03",
       "by": "2026-10-03 morning Bellows pass"
+    },
+    {
+      "name": "Open Palm Kettlebell Clean",
+      "action": "skip",
+      "reason": "Written, then checked by hand rather than trusted on a clean isCovered() read: it is a coaching drill for the already-shipped 'Kettlebell Clean' (id kettlebell-clean-conditioning), not a different exercise -- the open-palm cue teaches the same hip-drive clean without changing the movement's purpose, load, or muscles worked. isCovered() read it as uncovered because 'open' and 'palm' are not DISCRIMINATING words, which is the F14 shape running in the duplicate direction. Dropped rather than shipped past the gate.",
+      "decided": "2026-10-04",
+      "by": "2026-10-04 morning Bellows pass"
+    },
+    {
+      "name": "One-Arm Long Bar Row",
+      "action": "skip",
+      "reason": "Written, then found by hand to be the already-shipped 'One-Arm Landmine Row' (id barbell-landmine-one-arm-row) under a name almost identical to its own alias 'Bent Over One-Arm Long Bar Row' -- same setup (wedge one end of a barbell in a corner, straddle it, row the free end one-handed), same equipment, same pattern. isCovered() did not flag it because 'landmine' and 'long'/'bar' share no word, so the automated check never compared the new title against the shipped alias meaningfully despite them being four of five words identical. Dropped rather than shipped past the gate; the shipped card's alias list already covers this title closely enough that coverage.mjs should not re-queue it, but if it does, do not ship it again.",
+      "decided": "2026-10-04",
+      "by": "2026-10-04 morning Bellows pass"
+    },
+    {
+      "name": "Side Lateral Raise",
+      "action": "skip",
+      "reason": "Written as 'One-Arm Dumbbell Lateral Raise' (equipment resolved to dumbbell) and BLOCKed by pending.mjs as a duplicate of the already-shipped 'Dumbbell Lateral Raise'. Checked by hand: the shipped card is two-handed but the biomechanics of raising one dumbbell out to the side are identical whether or not the other arm moves at the same time -- unlike the kettlebell one-arm variants this stack has shipped (swing, overhead squat), nothing about grip, path, or stabilizer demand changes by doing one side at a time. Not a distinct exercise; dropped rather than shipped past the gate.",
+      "decided": "2026-10-04",
+      "by": "2026-10-04 morning Bellows pass"
     }
   ]
 }

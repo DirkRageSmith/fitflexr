@@ -21183,6 +21183,157 @@ const BATCH_2026_10_03_MORNING = [
 ];
 EXERCISES.push.apply(EXERCISES, BATCH_2026_10_03_MORNING);
 
+/* Written by Claude, 2026-10-04. Ten absences from coverage.mjs --queue 10, each
+ * researched against independent sources before writing. Three skipped after
+ * being written (see tools/queue-decisions.json): Open-Palm Kettlebell Clean and
+ * One-Arm Dumbbell Lateral Raise restate an already-shipped card; One-Arm Long Bar
+ * Row is the already-shipped One-Arm Landmine Row under a name close to its own
+ * alias, missed by isCovered() because it shares no DISCRIMINATING word with
+ * "landmine". */
+const BATCH_2026_10_04_MORNING = [
+  {
+    "id": "kettlebell-split-jerk",
+    "name": "Kettlebell Split Jerk",
+    "muscleGroup": "Shoulders",
+    "secondaryMuscles": ["Triceps", "Core/Abs", "Quads"],
+    "equipment": ["kettlebell"],
+    "difficulty": "Advanced",
+    "cue": "From the rack, drive the bell up and catch it in a front-back split stance.",
+    "description": "From the rack position at your shoulder, dip and drive explosively through your legs to launch the bell upward, then split one foot forward and the other back into a lunge as you punch your arm straight to catch it locked out overhead. Recover by stepping your feet back together with the bell still overhead, then lower it back to the rack. The split stance spreads the catch across a longer base than the squat jerk's shallow re-dip, which is why heavier lifters favor it for a heavier bell.",
+    "avoidIf": ["shoulder", "knee", "lower-back", "balance"],
+    "icon": "⚡",
+    "mechanic": "Compound",
+    "pattern": "Vertical Push",
+    "force": "Explosive",
+    "unilateral": true,
+    "focus": ["power"],
+    "homeFriendly": true,
+    "aliases": ["One-Arm Kettlebell Split Jerk"],
+    "category": "power"
+  },
+  {
+    "id": "kettlebell-split-snatch",
+    "name": "Kettlebell Split Snatch",
+    "muscleGroup": "Full Body/Cardio",
+    "secondaryMuscles": ["Shoulders", "Core/Abs"],
+    "equipment": ["kettlebell"],
+    "difficulty": "Advanced",
+    "cue": "Swing the bell up and punch it overhead as you split your stance to catch it.",
+    "description": "Hike the kettlebell back and explode through your hips to swing it upward, punching your hand up to lock it out overhead as you split your feet into a front-back lunge to absorb the catch, front knee bent and back heel lifted. Recover by stepping your feet together with the bell still locked out, then lower it back into the next hike. The split catch trades the squat snatch's symmetry for a lower, more stable base under a heavier bell.",
+    "avoidIf": ["shoulder", "lower-back", "knee", "balance"],
+    "icon": "⚡",
+    "mechanic": "Compound",
+    "pattern": "Hinge",
+    "force": "Explosive",
+    "unilateral": true,
+    "focus": ["power"],
+    "homeFriendly": true,
+    "aliases": ["One-Arm Kettlebell Split Snatch"],
+    "category": "power"
+  },
+  {
+    "id": "one-arm-kettlebell-swing",
+    "name": "One-Arm Kettlebell Swing",
+    "muscleGroup": "Full Body/Cardio",
+    "secondaryMuscles": ["Glutes", "Hamstrings", "Core/Abs"],
+    "equipment": ["kettlebell"],
+    "difficulty": "Intermediate",
+    "cue": "Hike the bell back with one hand, then snap your hips to float it to chest height.",
+    "description": "Stand over a kettlebell and hinge to hike it back between your legs with one hand, keeping the other arm free for balance, then snap your hips forward powerfully to swing it up to chest height, letting the single-handed grip float rather than muscling it with your arm. Let it fall back into the next hinge, and switch hands between sets rather than mid-swing. Holding on with one hand instead of two makes your core and shoulder fight the bell's pull to rotate you, on top of everything the two-hand swing already asks for.",
+    "avoidIf": ["lower-back", "shoulder"],
+    "icon": "🔔",
+    "mechanic": "Compound",
+    "pattern": "Hinge",
+    "force": "Explosive",
+    "unilateral": true,
+    "focus": ["power", "endurance"],
+    "homeFriendly": true,
+    "aliases": ["One-Arm Kettlebell Swings", "Single-Arm Kettlebell Swing"],
+    "category": "conditioning"
+  },
+  {
+    "id": "one-arm-medicine-ball-slam",
+    "name": "One-Arm Medicine Ball Slam",
+    "muscleGroup": "Full Body/Cardio",
+    "secondaryMuscles": ["Core/Abs", "Shoulders", "Back"],
+    "equipment": ["medicine-ball"],
+    "difficulty": "Intermediate",
+    "cue": "Raise the ball overhead with one arm, then slam it down on the opposite side.",
+    "description": "Hold a medicine ball in one hand and raise it overhead on that same side, bracing your core. Forcefully slam it down to the floor on the opposite side of your body, bending your knees as you follow through to protect your lower back, then catch it on the bounce or pick it back up. The crossing path makes your obliques and the muscles that resist rotation work much harder than the two-hand version's straight-down path — use a slam ball, not a bouncy one.",
+    "avoidIf": ["shoulder", "lower-back"],
+    "icon": "💥",
+    "mechanic": "Compound",
+    "pattern": "Conditioning",
+    "force": "Explosive",
+    "unilateral": true,
+    "focus": ["power", "endurance"],
+    "homeFriendly": false,
+    "aliases": [],
+    "category": "power"
+  },
+  {
+    "id": "one-arm-overhead-kettlebell-squat",
+    "name": "One-Arm Overhead Kettlebell Squat",
+    "muscleGroup": "Quads",
+    "secondaryMuscles": ["Shoulders", "Core/Abs", "Glutes"],
+    "equipment": ["kettlebell"],
+    "difficulty": "Advanced",
+    "cue": "Lock the kettlebell overhead in one hand and squat straight down under it.",
+    "description": "Press or clean a kettlebell overhead in one hand and lock your arm straight, bracing hard through your core. Squat straight down, keeping the bell stacked directly over your shoulder and your torso upright, then stand back up without losing the lockout. Holding the load on one side only makes your obliques and shoulder stabilizers fight the bell's pull to one side on top of everything a two-handed overhead squat already demands.",
+    "avoidIf": ["shoulder", "knee", "balance", "lower-back"],
+    "icon": "🏋️",
+    "mechanic": "Compound",
+    "pattern": "Squat",
+    "force": "Push",
+    "unilateral": true,
+    "focus": ["strength", "mobility"],
+    "homeFriendly": true,
+    "aliases": ["One-Arm Overhead Kettlebell Squats"],
+    "category": "strength"
+  },
+  {
+    "id": "one-arm-side-deadlift",
+    "name": "One-Arm Side Deadlift",
+    "muscleGroup": "Quads",
+    "secondaryMuscles": ["Back", "Core/Abs", "Hamstrings"],
+    "equipment": ["barbell"],
+    "difficulty": "Advanced",
+    "cue": "Stand sideways beside the bar and lift it straight up along your leg, like a suitcase lifted from the side.",
+    "description": "Stand beside a loaded barbell so it sits level with the middle of your foot, facing out to the side instead of down at the bar, then bend at your hips and knees to grip the bar with one hand, keeping your back flat and chest up. Drive through your heels to stand the bar up straight along the side of your leg, then lower it back down the same path under control before switching sides. The sideways stance loads your obliques and the muscles bracing your spine against that one-sided pull far harder than a conventional or suitcase deadlift facing the bar.",
+    "avoidIf": ["lower-back", "knee", "shoulder"],
+    "icon": "🏋️",
+    "mechanic": "Compound",
+    "pattern": "Hinge",
+    "force": "Pull",
+    "unilateral": true,
+    "focus": ["strength"],
+    "homeFriendly": false,
+    "aliases": [],
+    "category": "strength"
+  },
+  {
+    "id": "standing-cable-kickback",
+    "name": "Standing Cable Kickback",
+    "muscleGroup": "Glutes",
+    "secondaryMuscles": ["Hamstrings", "Core/Abs"],
+    "equipment": ["cable"],
+    "difficulty": "Beginner",
+    "cue": "Standing and holding the frame, kick one leg straight back against the cable.",
+    "description": "Attach an ankle cuff to a low cable, strap it to one ankle, and stand facing the cable stack holding the frame for balance. Keeping a slight bend in both knees, kick the working leg straight back in an arc, squeezing your glute hard at the top, then return under control against the cable's pull. Standing rather than kneeling on all fours keeps your hips extended under load the whole time, which asks more of the glute at lockout than the quadruped version does.",
+    "avoidIf": ["lower-back", "balance"],
+    "icon": "🔗",
+    "mechanic": "Isolation",
+    "pattern": "Hinge",
+    "force": "Push",
+    "unilateral": true,
+    "focus": ["hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["One-Legged Cable Kickback", "Standing Glute Kickback"],
+    "category": "strength"
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_10_04_MORNING);
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { MUSCLE_GROUPS, EQUIPMENT, CONDITIONS, SPORTS, STRETCH_TYPES, EXERCISES };
 }
