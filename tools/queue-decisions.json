@@ -2,6 +2,27 @@
   "$comment": "Decisions about single named items in the coverage queue, read by tools/coverage.mjs. A skip leaves `--queue` for good and says why. A note stays in the queue and hands its text to whoever writes the card, as `reviewNote`. Matching is exact and case-insensitive on the queue name, or on the sanskrit name for asanas, never fuzzy. Started 2026-09-12, when 19 of the top 25 queue items were names earlier passes had already decided against and were re-reading every twelve hours. Every reason is written here in our own words: the free-exercise-db reference is vendored as names only, on purpose (see the licensing note at the top of coverage.mjs), and nothing in this file copies its text.",
   "entries": [
     {
+      "name": "One-Arm Open Palm Kettlebell Clean",
+      "action": "skip",
+      "reason": "A second free-exercise-db entry for the same coaching drill as the already-skipped 'Open Palm Kettlebell Clean' (2026-10-04), just carrying a redundant 'One-Arm' prefix -- the shipped 'Kettlebell Clean' is already a single-bell, one-arm lift by definition, so neither 'One-Arm' nor the open-palm grip cue changes the movement, load, or muscles worked. Exact-name matching means the earlier skip did not suppress this queue entry; recorded under its own exact name so it does not re-queue.",
+      "decided": "2026-10-04",
+      "by": "2026-10-04 evening Bellows pass"
+    },
+    {
+      "name": "One-Arm Side Laterals",
+      "action": "skip",
+      "reason": "Same movement and same conclusion as the already-skipped 'Side Lateral Raise' (written 2026-10-04 as 'One-Arm Dumbbell Lateral Raise'): the shipped bilateral 'Dumbbell Lateral Raise' already covers it, since nothing about grip, path or stabilizer demand changes when a lateral raise is done one arm at a time. A different free-exercise-db name for the same already-decided case; recorded under its own exact name so it does not re-queue.",
+      "decided": "2026-10-04",
+      "by": "2026-10-04 evening Bellows pass"
+    },
+    {
+      "name": "Overhead Slam",
+      "action": "skip",
+      "reason": "Checked by hand before writing: this is the already-shipped 'Medicine Ball Slam' (id medicine-ball-slam-conditioning) under a shorter name. That card's own description is 'reach it overhead, then forcefully slam it straight down into the floor' -- the identical movement free-exercise-db lists as 'Overhead Slam'. isCovered() would likely read 'overhead' (a DISCRIMINATING word absent from the shipped name) as divergence, which is why it reached the queue uncaught rather than why it is actually a duplicate.",
+      "decided": "2026-10-04",
+      "by": "2026-10-04 evening Bellows pass"
+    },
+    {
       "name": "Astavakrasana",
       "action": "skip",
       "reason": "Eight-angle pose is an advanced arm balance with the whole body held off bent arms. Described even slightly wrong, the hand or leg placement is a real fall or joint-load risk.",
