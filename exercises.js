@@ -21478,6 +21478,139 @@ const BATCH_2026_10_04_EVENING = [
 ];
 EXERCISES.push.apply(EXERCISES, BATCH_2026_10_04_EVENING);
 
+/* Written by Claude, 2026-10-06. Ten absences from coverage.mjs --queue 10, each
+ * researched against independent sources before writing. Four skipped after being
+ * checked by hand (see tools/queue-decisions.json): Pullups and Pushups restate the
+ * already-shipped Pull-Up and Push-Up under free-exercise-db's unhyphenated naming,
+ * missed by isCovered() because "pullups"/"pull-up" and "pushups"/"push-up" tokenize
+ * differently; Pushups (Close and Wide Hand Positions) names no single movement, just
+ * a side-by-side of the already-shipped Diamond Push-Up and Wide Push-Up; and Prone
+ * Manual Hamstring is a clinician-applied manual-resistance drill that needs a second
+ * person, which the solo-use design here does not fit. */
+const BATCH_2026_10_06_EVENING = [
+  {
+    "id": "barbell-power-jerk",
+    "name": "Power Jerk",
+    "muscleGroup": "Shoulders",
+    "secondaryMuscles": ["Triceps", "Quads", "Core/Abs"],
+    "equipment": ["barbell"],
+    "difficulty": "Advanced",
+    "cue": "Dip and drive the bar overhead, catching it in a shallow squat with your feet staying parallel.",
+    "description": "From the front rack, dip a few inches at the knees and drive explosively through your legs to launch the bar upward. As it rises, drop into a shallow quarter-squat — feet staying parallel the whole time rather than splitting front-to-back — and punch your arms straight to catch the bar locked out overhead, then stand to finish. The shallow catch gives you less distance to drop under than a split or squat jerk, so it demands a faster, harder leg drive to get the bar moving.",
+    "avoidIf": ["shoulder", "knee", "lower-back"],
+    "icon": "⚡",
+    "mechanic": "Compound",
+    "pattern": "Vertical Push",
+    "force": "Explosive",
+    "unilateral": false,
+    "focus": ["power"],
+    "homeFriendly": false,
+    "aliases": ["Push Jerk"],
+    "category": "power"
+  },
+  {
+    "id": "barbell-power-snatch",
+    "name": "Power Snatch",
+    "muscleGroup": "Full Body/Cardio",
+    "secondaryMuscles": ["Shoulders", "Glutes", "Core/Abs"],
+    "equipment": ["barbell"],
+    "difficulty": "Advanced",
+    "cue": "Pull the bar from the floor to overhead in one motion, catching it in a shallow squat with your hips above your knees.",
+    "description": "Set up over the bar as you would for a deadlift, then explosively extend your hips and pull it straight up close to your body, shrugging and pulling yourself under it as it reaches chest height. Catch it locked out overhead in a shallow squat — your hip crease has to stay above your knees, which is what makes it a power snatch rather than a full squat snatch. Stand to finish, then lower it back to the floor under control before the next rep.",
+    "avoidIf": ["shoulder", "lower-back", "wrist"],
+    "icon": "⚡",
+    "mechanic": "Compound",
+    "pattern": "Hinge",
+    "force": "Explosive",
+    "unilateral": false,
+    "focus": ["power"],
+    "homeFriendly": false,
+    "aliases": [],
+    "category": "power"
+  },
+  {
+    "id": "barbell-power-snatch-from-blocks",
+    "name": "Power Snatch from Blocks",
+    "muscleGroup": "Full Body/Cardio",
+    "secondaryMuscles": ["Shoulders", "Glutes", "Core/Abs"],
+    "equipment": ["barbell", "box"],
+    "difficulty": "Advanced",
+    "cue": "Start with the bar resting on a box at knee height, then pull it straight overhead without the usual floor pull.",
+    "description": "Rest the bar on a box or blocks set at about knee height instead of the floor, and set up over it the same way you would for a power snatch. Skip straight to the explosive hip extension — there's no slow first pull to build into — and pull the bar up close to your body, punching yourself under it to catch it locked out overhead in a shallow squat with your hips above your knees. Starting from this height isolates the fast second pull, the part of the lift a floor-based start can mask with a sloppy beginning.",
+    "avoidIf": ["shoulder", "lower-back", "wrist"],
+    "icon": "⚡",
+    "mechanic": "Compound",
+    "pattern": "Hinge",
+    "force": "Explosive",
+    "unilateral": false,
+    "focus": ["power"],
+    "homeFriendly": false,
+    "aliases": ["Snatch from Blocks"],
+    "category": "power"
+  },
+  {
+    "id": "barbell-press-sit-up",
+    "name": "Press Sit-Up",
+    "muscleGroup": "Core/Abs",
+    "secondaryMuscles": ["Shoulders", "Chest", "Triceps"],
+    "equipment": ["barbell"],
+    "difficulty": "Advanced",
+    "cue": "Hold a barbell across your chest, sit all the way up, then press it overhead at the top.",
+    "description": "Lie on your back with your knees bent and feet flat, holding a barbell (or a loaded plate) across your upper chest with both hands. Curl your torso up into a full sit-up, and as you reach the top, press the bar straight overhead before bringing it back to your chest on the way down. Keep the bar tucked in close the whole time — letting it drift out away from your body turns the rep into a shoulder exercise instead of an ab one.",
+    "avoidIf": ["lower-back", "neck", "shoulder"],
+    "icon": "🏋️",
+    "mechanic": "Compound",
+    "pattern": "Core",
+    "force": "Push",
+    "unilateral": false,
+    "focus": ["strength"],
+    "homeFriendly": false,
+    "aliases": ["Barbell Press Sit-Up"],
+    "category": "strength"
+  },
+  {
+    "id": "barbell-push-press-behind-the-neck",
+    "name": "Push Press Behind the Neck",
+    "muscleGroup": "Shoulders",
+    "secondaryMuscles": ["Triceps", "Back", "Core/Abs"],
+    "equipment": ["barbell"],
+    "difficulty": "Advanced",
+    "cue": "Hold the bar across your upper back like a squat, dip your knees, then drive it straight overhead.",
+    "description": "Set the bar across your upper traps in a back-squat rack position instead of the front rack. Dip a few inches at the knees with your torso staying upright, then drive explosively through your legs to send the bar straight up, finishing the lockout overhead with your arms. Use lighter loads than the front-rack version and build up gradually — pressing from behind the neck puts more strain on the rotator cuff, so it rewards shoulders that are already warmed up and mobile.",
+    "avoidIf": ["shoulder", "neck", "lower-back"],
+    "icon": "⚡",
+    "mechanic": "Compound",
+    "pattern": "Vertical Push",
+    "force": "Explosive",
+    "unilateral": false,
+    "focus": ["power", "strength"],
+    "homeFriendly": false,
+    "aliases": ["Push Press - Behind the Neck", "Behind the Neck Push Press"],
+    "category": "strength"
+  },
+  {
+    "id": "dumbbell-power-partials",
+    "name": "Power Partials",
+    "muscleGroup": "Shoulders",
+    "secondaryMuscles": [],
+    "equipment": ["dumbbell"],
+    "difficulty": "Beginner",
+    "cue": "Raise the dumbbells only through the top portion of a lateral raise, where the side delts are already under tension.",
+    "description": "Stand holding a dumbbell in each hand at your sides, elbows slightly bent, and raise them out partway — stopping short of the usual shoulder-height finish of a full lateral raise. Lower only until tension stays on your side delts, well above hanging at your sides, then raise again without ever resting at the bottom. Training just this shortened top range lets you overload the delts without the lower, weaker part of the arc limiting your load.",
+    "avoidIf": ["shoulder"],
+    "icon": "🪽",
+    "mechanic": "Isolation",
+    "pattern": "Vertical Push",
+    "force": "Static",
+    "unilateral": false,
+    "focus": ["hypertrophy"],
+    "homeFriendly": true,
+    "aliases": ["Lateral Raise Partials", "Dumbbell Lateral Raise Partials"],
+    "category": "strength"
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_10_06_EVENING);
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { MUSCLE_GROUPS, EQUIPMENT, CONDITIONS, SPORTS, STRETCH_TYPES, EXERCISES };
 }

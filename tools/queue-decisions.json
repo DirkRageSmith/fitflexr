@@ -2,6 +2,34 @@
   "$comment": "Decisions about single named items in the coverage queue, read by tools/coverage.mjs. A skip leaves `--queue` for good and says why. A note stays in the queue and hands its text to whoever writes the card, as `reviewNote`. Matching is exact and case-insensitive on the queue name, or on the sanskrit name for asanas, never fuzzy. Started 2026-09-12, when 19 of the top 25 queue items were names earlier passes had already decided against and were re-reading every twelve hours. Every reason is written here in our own words: the free-exercise-db reference is vendored as names only, on purpose (see the licensing note at the top of coverage.mjs), and nothing in this file copies its text.",
   "entries": [
     {
+      "name": "Pullups",
+      "action": "skip",
+      "reason": "The already-shipped 'Pull-Up' under free-exercise-db's unhyphenated spelling. isCovered() missed it because 'pullups' and 'pull-up' tokenize to different word sets (one word vs. two), not because the movement differs -- same grip, same bar, same muscles.",
+      "decided": "2026-10-06",
+      "by": "2026-10-06 evening Bellows pass"
+    },
+    {
+      "name": "Pushups",
+      "action": "skip",
+      "reason": "The already-shipped 'Push-Up' under free-exercise-db's unhyphenated spelling, same tokenization gap as the 'Pullups' skip above.",
+      "decided": "2026-10-06",
+      "by": "2026-10-06 evening Bellows pass"
+    },
+    {
+      "name": "Pushups (Close and Wide Hand Positions)",
+      "action": "skip",
+      "reason": "Names no single movement -- it is free-exercise-db's reference to a comparison of two hand placements already shipped as their own cards ('Diamond Push-Up' for close, 'Wide Push-Up' for wide). A card would have to either duplicate both or arbitrarily pick one.",
+      "decided": "2026-10-06",
+      "by": "2026-10-06 evening Bellows pass"
+    },
+    {
+      "name": "Prone Manual Hamstring",
+      "action": "skip",
+      "reason": "A clinician- or partner-applied manual-resistance hamstring curl (confirmed against PT rehab sources: resistance is applied by hand at the ankle, not by a load). free-exercise-db lists its equipment as null and coverage.mjs remaps that to bodyweight, but there is no solo bodyweight version of 'manual resistance' -- it needs a second person by definition, which this solo-use app does not fit.",
+      "decided": "2026-10-06",
+      "by": "2026-10-06 evening Bellows pass"
+    },
+    {
       "name": "One-Arm Open Palm Kettlebell Clean",
       "action": "skip",
       "reason": "A second free-exercise-db entry for the same coaching drill as the already-skipped 'Open Palm Kettlebell Clean' (2026-10-04), just carrying a redundant 'One-Arm' prefix -- the shipped 'Kettlebell Clean' is already a single-bell, one-arm lift by definition, so neither 'One-Arm' nor the open-palm grip cue changes the movement, load, or muscles worked. Exact-name matching means the earlier skip did not suppress this queue entry; recorded under its own exact name so it does not re-queue.",
