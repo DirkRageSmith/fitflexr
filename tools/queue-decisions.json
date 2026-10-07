@@ -2,6 +2,55 @@
   "$comment": "Decisions about single named items in the coverage queue, read by tools/coverage.mjs. A skip leaves `--queue` for good and says why. A note stays in the queue and hands its text to whoever writes the card, as `reviewNote`. Matching is exact and case-insensitive on the queue name, or on the sanskrit name for asanas, never fuzzy. Started 2026-09-12, when 19 of the top 25 queue items were names earlier passes had already decided against and were re-reading every twelve hours. Every reason is written here in our own words: the free-exercise-db reference is vendored as names only, on purpose (see the licensing note at the top of coverage.mjs), and nothing in this file copies its text.",
   "entries": [
     {
+      "name": "Pullups",
+      "action": "skip",
+      "reason": "The already-shipped 'Pull-Up' under free-exercise-db's unhyphenated spelling. isCovered() missed it because 'pullups' and 'pull-up' tokenize to different word sets (one word vs. two), not because the movement differs -- same grip, same bar, same muscles.",
+      "decided": "2026-10-06",
+      "by": "2026-10-06 evening Bellows pass"
+    },
+    {
+      "name": "Pushups",
+      "action": "skip",
+      "reason": "The already-shipped 'Push-Up' under free-exercise-db's unhyphenated spelling, same tokenization gap as the 'Pullups' skip above.",
+      "decided": "2026-10-06",
+      "by": "2026-10-06 evening Bellows pass"
+    },
+    {
+      "name": "Pushups (Close and Wide Hand Positions)",
+      "action": "skip",
+      "reason": "Names no single movement -- it is free-exercise-db's reference to a comparison of two hand placements already shipped as their own cards ('Diamond Push-Up' for close, 'Wide Push-Up' for wide). A card would have to either duplicate both or arbitrarily pick one.",
+      "decided": "2026-10-06",
+      "by": "2026-10-06 evening Bellows pass"
+    },
+    {
+      "name": "Prone Manual Hamstring",
+      "action": "skip",
+      "reason": "A clinician- or partner-applied manual-resistance hamstring curl (confirmed against PT rehab sources: resistance is applied by hand at the ankle, not by a load). free-exercise-db lists its equipment as null and coverage.mjs remaps that to bodyweight, but there is no solo bodyweight version of 'manual resistance' -- it needs a second person by definition, which this solo-use app does not fit.",
+      "decided": "2026-10-06",
+      "by": "2026-10-06 evening Bellows pass"
+    },
+    {
+      "name": "One-Arm Open Palm Kettlebell Clean",
+      "action": "skip",
+      "reason": "A second free-exercise-db entry for the same coaching drill as the already-skipped 'Open Palm Kettlebell Clean' (2026-10-04), just carrying a redundant 'One-Arm' prefix -- the shipped 'Kettlebell Clean' is already a single-bell, one-arm lift by definition, so neither 'One-Arm' nor the open-palm grip cue changes the movement, load, or muscles worked. Exact-name matching means the earlier skip did not suppress this queue entry; recorded under its own exact name so it does not re-queue.",
+      "decided": "2026-10-04",
+      "by": "2026-10-04 evening Bellows pass"
+    },
+    {
+      "name": "One-Arm Side Laterals",
+      "action": "skip",
+      "reason": "Same movement and same conclusion as the already-skipped 'Side Lateral Raise' (written 2026-10-04 as 'One-Arm Dumbbell Lateral Raise'): the shipped bilateral 'Dumbbell Lateral Raise' already covers it, since nothing about grip, path or stabilizer demand changes when a lateral raise is done one arm at a time. A different free-exercise-db name for the same already-decided case; recorded under its own exact name so it does not re-queue.",
+      "decided": "2026-10-04",
+      "by": "2026-10-04 evening Bellows pass"
+    },
+    {
+      "name": "Overhead Slam",
+      "action": "skip",
+      "reason": "Checked by hand before writing: this is the already-shipped 'Medicine Ball Slam' (id medicine-ball-slam-conditioning) under a shorter name. That card's own description is 'reach it overhead, then forcefully slam it straight down into the floor' -- the identical movement free-exercise-db lists as 'Overhead Slam'. isCovered() would likely read 'overhead' (a DISCRIMINATING word absent from the shipped name) as divergence, which is why it reached the queue uncaught rather than why it is actually a duplicate.",
+      "decided": "2026-10-04",
+      "by": "2026-10-04 evening Bellows pass"
+    },
+    {
       "name": "Astavakrasana",
       "action": "skip",
       "reason": "Eight-angle pose is an advanced arm balance with the whole body held off bent arms. Described even slightly wrong, the hand or leg placement is a real fall or joint-load risk.",
@@ -364,6 +413,384 @@
       "reason": "No stable, recognizable movement attaches to this name -- it reads like a cue fragment from a longer routine rather than a named exercise, and guessing a full setup around it risks inventing a stretch that isn't the one meant.",
       "decided": "2026-09-21",
       "by": "2026-09-21 midday Bellows pass"
+    },
+    {
+      "name": "EZ-Bar Skullcrusher",
+      "action": "skip",
+      "reason": "Duplicate of the already-shipped ez-bar-skull-crusher: same movement, name differs only by a space and capitalization. Writing a second card would ship two entries for one exercise; the fix is an alias on the shipped card, which is a review-session edit to an existing entry, not a new card.",
+      "decided": "2026-09-22",
+      "by": "2026-09-22 morning Bellows pass"
+    },
+    {
+      "name": "Finger Curls",
+      "action": "skip",
+      "reason": "Its primary target is forearms/grip, and this dataset's MUSCLE_GROUPS enum in exercises.js has no Forearms group -- the nearest existing group is Biceps, which would be a taxonomy call (add a new group, or fold grip work under Biceps) rather than a card-writing one. Leaving it for a review session to decide rather than picking silently.",
+      "decided": "2026-09-22",
+      "by": "2026-09-22 morning Bellows pass"
+    },
+    {
+      "name": "Front Leg Raises",
+      "action": "skip",
+      "reason": "Tagged stretching/hamstrings/bodyweight with no instructions in the reference. The name doesn't say whether it's a standing active raise (using a wall or chair for balance) or a supine/lying raise -- the same body-position ambiguity the Dumbbell Lying Pronation/Supination skips flagged, and picking wrong changes what's actually being stretched.",
+      "decided": "2026-09-22",
+      "by": "2026-09-22 morning Bellows pass"
+    },
+    {
+      "name": "Front Two-Dumbbell Raise",
+      "action": "skip",
+      "reason": "Duplicate of the already-shipped dumbbell-front-raise, whose own description explicitly covers doing it with 'one or both' dumbbells at once. A second card for the two-dumbbell version would duplicate that.",
+      "decided": "2026-09-22",
+      "by": "2026-09-22 morning Bellows pass"
+    },
+    {
+      "name": "Gorilla Chin/Crunch",
+      "action": "skip",
+      "reason": "Not a name with a stable, recognizable technique I could recall confidently, and the reference gives no instructions to check against. Guessing an ab exercise from an unfamiliar name is exactly the recall-error class F10 warns about.",
+      "decided": "2026-09-22",
+      "by": "2026-09-22 evening Bellows pass"
+    },
+    {
+      "name": "Groin and Back Stretch",
+      "action": "skip",
+      "reason": "Too close to the shipped Seated Groin Stretch (fb-seated-groin-stretch) -- a wide-leg seated straddle hinged forward, which stretches both the adductors and the lower back the same way this name implies. Not confident there's a real distinguishing setup (e.g. soles-together butterfly instead of a wide straddle) behind the name rather than a second title for the same stretch.",
+      "decided": "2026-09-22",
+      "by": "2026-09-22 evening Bellows pass"
+    },
+    {
+      "name": "Hang Snatch",
+      "action": "skip",
+      "reason": "An expert-level Olympic barbell lift with a technical catch under the bar. Same class of risk the Double Kettlebell Snatch and Clean from Blocks skips already flag: a wrong catch-timing or bar-path detail teaches an injury, not just a worse rep.",
+      "decided": "2026-09-22",
+      "by": "2026-09-22 evening Bellows pass"
+    },
+    {
+      "name": "Hang Snatch - Below Knees",
+      "action": "skip",
+      "reason": "Same technical-catch Olympic lift as Hang Snatch, starting from a lower hang position -- see that entry.",
+      "decided": "2026-09-22",
+      "by": "2026-09-22 evening Bellows pass"
+    },
+    {
+      "name": "Hanging Bar Good Morning",
+      "action": "skip",
+      "reason": "Not confident what 'hanging' modifies here -- a good morning is normally loaded with the bar racked on the back in a standing hinge, and this name suggests a different, unfamiliar setup the reference gives no detail on. Guessing the rig risks describing a hip hinge that isn't actually how this variation is performed.",
+      "decided": "2026-09-22",
+      "by": "2026-09-22 evening Bellows pass"
+    },
+    {
+      "name": "Hanging Pike",
+      "action": "skip",
+      "reason": "Too close to the already-shipped Hanging Leg Raise (straight legs to horizontal) and Toes-to-Bar (straight legs all the way to the bar) -- both pull-up-bar, straight-leg, hip-flexion moves at Advanced difficulty. A pike differs mainly by a posterior pelvic tilt cue at the top, which reads as a form refinement on the same movement rather than a distinct exercise, and this record's own 'expert' tag (one step past the shipped Advanced card) supports that reading.",
+      "decided": "2026-09-22",
+      "by": "2026-09-22 evening Bellows pass"
+    },
+    {
+      "name": "Heaving Snatch Balance",
+      "action": "skip",
+      "reason": "An Olympic lifting drill built around dropping under the bar and catching it in an overhead squat -- the same technical-catch class of movement the Hang Snatch and Double Kettlebell Snatch skips flag. Not confident of the exact drop timing and receiving position from the name alone.",
+      "decided": "2026-09-22",
+      "by": "2026-09-22 evening Bellows pass"
+    },
+    {
+      "name": "Hyperextensions With No Hyperextension Bench",
+      "action": "skip",
+      "reason": "Duplicate of the already-shipped Bodyweight Back Extension (bodyweight-back-extension) -- lying face-down and lifting the chest with the lower back is exactly the floor variant this name describes, and that card already carries the alias 'Floor Back Extension'.",
+      "decided": "2026-09-23",
+      "by": "2026-09-23 morning Bellows pass"
+    },
+    {
+      "name": "Incline Dumbbell Flyes",
+      "action": "skip",
+      "reason": "Duplicate of the already-shipped Incline Dumbbell Fly (dumbbell-incline-fly), differing only by pluralization. The fix is an alias on the existing card, which is a review-session edit, not a new one.",
+      "decided": "2026-09-23",
+      "by": "2026-09-23 morning Bellows pass"
+    },
+    {
+      "name": "Incline Inner Biceps Curl",
+      "action": "skip",
+      "reason": "Not confident of the exact detail that separates it from a plain Incline Dumbbell Curl -- memory of this variant conflicts between 'arms hang out to the sides for a longer stretch' and 'curl in toward the center of the body,' and the reference gives no instructions to check against. Guessing which is wrong is the recall-error class F10 warns about.",
+      "decided": "2026-09-23",
+      "by": "2026-09-23 morning Bellows pass"
+    },
+    {
+      "name": "Incline Dumbbell Bench With Palms Facing In",
+      "action": "skip",
+      "reason": "Written as Neutral-Grip Incline Dumbbell Press, then dropped after pending.mjs BLOCKed it as a duplicate of the shipped Incline Dumbbell Bench Press (via its own alias 'Incline Dumbbell Press'). It is a real, distinct grip variant, not a duplicate -- the containment check has no discriminating word for 'neutral'/'grip', so any incline+dumbbell+press name collapses onto the plain press. See bellows/FINDINGS.md for the checker gap. Left out rather than shipped past a BLOCK.",
+      "decided": "2026-09-23",
+      "by": "2026-09-23 morning Bellows pass"
+    },
+    {
+      "name": "Incline Dumbbell Flyes - With A Twist",
+      "action": "skip",
+      "reason": "Written as Incline Dumbbell Fly with a Twist, then dropped after pending.mjs BLOCKed it as a duplicate of the shipped Incline Dumbbell Fly (via its own alias). Same containment-check gap as the neutral-grip press skip above: 'twist' is not a discriminating word, so the shorter existing name is fully contained and the check calls it covered. See bellows/FINDINGS.md.",
+      "decided": "2026-09-23",
+      "by": "2026-09-23 morning Bellows pass"
+    },
+    {
+      "name": "Isometric Neck Exercise - Front And Back",
+      "action": "skip",
+      "reason": "isCovered() returns false (no lexical overlap with the existing name), but this is the same movement already shipped as Neck Isometric Holds (fb-neck-isometric): press the head into a palm on the forehead and again on the back of the head, holding without moving. Writing it under a new name would be a real duplicate the checker cannot see, not a gap.",
+      "decided": "2026-09-23",
+      "by": "2026-09-23 evening Bellows pass"
+    },
+    {
+      "name": "Isometric Neck Exercise - Sides",
+      "action": "skip",
+      "reason": "Same movement as fb-neck-isometric (Neck Isometric Holds), which already covers pressing the head into a palm on each side -- its own description says 'and on each side.' Same undetected-duplicate shape as the front-and-back entry above.",
+      "decided": "2026-09-23",
+      "by": "2026-09-23 evening Bellows pass"
+    },
+    {
+      "name": "Isometric Wipers",
+      "action": "skip",
+      "reason": "Not confident of the exact movement. The reference lists this as chest-targeted, which does not match any known 'windshield wiper' exercise (normally a hanging or floor ab/oblique movement); the isometric-hold variant's body position, arm placement and which direction is held are not something I can reconstruct correctly from the name alone. Recall-error class F10 warns about.",
+      "decided": "2026-09-23",
+      "by": "2026-09-23 evening Bellows pass"
+    },
+    {
+      "name": "Kettlebell Pass Between The Legs",
+      "action": "skip",
+      "reason": "isCovered() returns false (no lexical overlap with the existing name), but this is the same movement already shipped as Kettlebell Figure Eight: its own description is 'pass the kettlebell between your legs from one hand to the other, weaving it around each leg in a figure-eight pattern.' Writing it under this name would be a real duplicate the checker cannot see, not a gap -- same F14-class vocabulary gap as the neck entries above.",
+      "decided": "2026-09-24",
+      "by": "2026-09-24 morning Bellows pass"
+    },
+    {
+      "name": "Leverage Chest Press",
+      "action": "skip",
+      "reason": "ExRx describes this as the plain, wide-overhand-grip lever chest press where both handles move together -- the shipped 'Machine Chest Press' (id machine-chest-press) is that same generic synchronized chest press machine, just named by equipment category rather than the ExRx 'Lever' family name. isCovered() returns false because 'Leverage'/'Lever' and 'Machine' share no words, but the two names point at the same real machine. Not the same as the already-shipped 'Hammer Strength Chest Press', which is explicitly the independent-arm (isolateral) variant.",
+      "decided": "2026-09-25",
+      "by": "2026-09-25 morning Bellows pass"
+    },
+    {
+      "name": "Leverage Incline Chest Press",
+      "action": "skip",
+      "reason": "Same gap as 'Leverage Chest Press' one entry up: ExRx's plain 'Lever Incline Chest Press' (wide overhand grip, both handles move together) is the same machine as the shipped 'Incline Machine Chest Press' (id incline-machine-chest-press), just under the equipment-generic name instead of the ExRx 'Lever' name. No independent-arm incline press is shipped, so if this checker gap is ever fixed, an isolateral incline variant would still be a real, writable gap -- this specific plain version is not.",
+      "decided": "2026-09-25",
+      "by": "2026-09-25 morning Bellows pass"
+    },
+    {
+      "name": "Leverage Shoulder Press",
+      "action": "skip",
+      "reason": "Same 'Lever'-vs-'Machine' naming gap, third instance today. ExRx's plain Lever Shoulder Press is 'press lever upward until arms are extended overhead' -- a seated, both-handles-together press, mechanically identical to the already-shipped 'Machine Shoulder Press' (id machine-shoulder-press: 'sit ... grip the handles at shoulder height. Press up until your arms are nearly straight'). isCovered() returns false because 'Leverage'/'Lever' and 'Machine' share no words. ExRx does list a separate isolateral ('Lever Isolateral Shoulder Press, plate loaded') variant, which is not shipped and would be a real gap if named explicitly.",
+      "decided": "2026-09-25",
+      "by": "2026-09-25 evening Bellows pass"
+    },
+    {
+      "name": "Leverage Iso Row",
+      "action": "skip",
+      "reason": "'Iso' here means isolateral (independent-arm) -- a chest-supported, plate-loaded row where each handle moves on its own, pulled to the chest. That is exactly the already-shipped 'Hammer Strength Row' (id hammer-strength-row: 'chest on the pad ... row them back ... each arm works on its own, so a weaker side can't hide'). Same equipment-name-vs-brand-name gap as the chest presses above, just for a row.",
+      "decided": "2026-09-25",
+      "by": "2026-09-25 evening Bellows pass"
+    },
+    {
+      "name": "Lower Back Curl",
+      "action": "skip",
+      "reason": "Two independent sources (Aspira Fitness and Ellim.app, checked by web search since the vendored reference carries no instructions) agree it is: lie face-down, arms extended overhead, lift arms/chest/legs off the floor together, hold, lower. That is the already-shipped 'Superman' (id superman: 'Lie face-down with your arms stretched out in front. Squeeze your lower back and glutes to lift your arms, chest, and legs off the floor at the same time'). Same movement under a different name; isCovered() misses it because the two names share no words.",
+      "decided": "2026-09-26",
+      "by": "2026-09-26 evening Bellows pass"
+    },
+    {
+      "name": "Lunge Sprint",
+      "action": "skip",
+      "reason": "free-exercise-db tags this equipment=machine, target=quadriceps, which sounded suspicious for a name like 'Lunge Sprint' -- checked by web search rather than trusted blind. The only match for that machine/quads combination (a Smith-machine bar-on-back alternating jump lunge) came from a site that mirrors the dataset's own field names, not an independent source, plus one weak Pinterest listing title. Two unrelated, much more common exercises share confusingly similar names: 'Sprinter Lunge' (bodyweight, sprinter's-arm-swing drill, unanimous across StrengthLog/PureGym/Trainwell) and 'Smith Sprint Lunge' (a rear-foot-elevated split squat, no jump). Not confident enough to write an accurate how-to; a wrong description here teaches the wrong movement.",
+      "decided": "2026-09-27",
+      "by": "2026-09-27 morning Bellows pass"
+    },
+    {
+      "name": "Lying Glute",
+      "action": "skip",
+      "reason": "Checked by web search (ExRx, LoadMuscle, Kovo Fitness and others agree, since the vendored reference carries no instructions): lie on your back, knees bent, cross one ankle over the opposite knee into a figure-4, then pull the supporting thigh toward your chest. That is the already-shipped 'Supine Figure-4 Glute Stretch' (id fb-figure-four-glute: 'cross one ankle over the opposite thigh just above the knee, then reach through the gap and pull the supporting thigh toward your chest'). Same movement under a different name; isCovered() misses it because the two names share no words -- same shape as the 'Lower Back Curl'/'Superman' skip above.",
+      "decided": "2026-09-29",
+      "by": "2026-09-29 evening Bellows pass"
+    },
+    {
+      "name": "Lying One-Arm Lateral Raise",
+      "action": "skip",
+      "reason": "Checked by web search since the vendored reference carries no instructions: every independent source found (Jefit, fitloop.app, atletiq, liftmanual) that uses this exact name describes the posterior-deltoid movement -- chest down on a bench, one dumbbell raised out to the side with the shoulder blade squeezed back -- not a side-delt raise. That is the already-shipped 'Dumbbell Lying One-Arm Rear Lateral Raise' (id dumbbell-lying-one-arm-rear-lateral-raise: 'Lie chest-down on an incline bench holding a dumbbell in one hand ... raise the dumbbell out to your side ... squeezing that shoulder blade back'). Same movement; free-exercise-db's name drops the word 'Rear' and isCovered() misses it because the two names then share no discriminating word -- same shape as the 'Lying Glute' skip above.",
+      "decided": "2026-10-01",
+      "by": "2026-10-01 morning Bellows pass"
+    },
+    {
+      "name": "Iron Crosses (stretch)",
+      "action": "skip",
+      "reason": "Checked by web search since the vendored reference carries no instructions (and equipment=null, remapped to bodyweight): sportsfitnesshut, strive-workout, grabgains, gymbrah and liftmanual all describe the same lying spinal-twist movement -- on your back, arms out in a T, cross one leg over the other and let both knees drop toward the floor on that side. That is the already-shipped 'Lying Crossover Stretch' (id lying-crossover-stretch: 'Lie on your back with knees bent, feet flat, and arms out to the sides in a T. Cross one knee over the other, then let both knees fall together toward the floor'). Same movement under the gymnast-shape nickname; isCovered() misses it because 'Crosses' stems to a form that doesn't match 'Crossover' and the two names share no other word.",
+      "decided": "2026-10-01",
+      "by": "2026-10-01 evening Bellows pass"
+    },
+    {
+      "name": "Looking At Ceiling",
+      "action": "skip",
+      "reason": "Checked by web search since the vendored reference carries no instructions: atletiq and fitwill agree it is kneel, hold both heels, lift the hips forward and arch back to look at the ceiling. That is the already-shipped yoga 'Camel Pose' / Ustrasana (id yoga-camel: 'Kneel with your knees hip-width and your hands on your lower back, fingers pointing down. Press your hips forward and lift your chest toward the ceiling, reaching for your heels'). Same posture under its plain-English name instead of its yoga one; isCovered() misses it because 'Looking At Ceiling' and 'Camel Pose'/'Ustrasana' share no word at all.",
+      "decided": "2026-10-01",
+      "by": "2026-10-01 evening Bellows pass"
+    },
+    {
+      "name": "Lying Prone Quadriceps",
+      "action": "skip",
+      "reason": "Checked by web search since the vendored reference carries no instructions: ExRx, nismat.org, stretching.wonderhowto.com and inspireusafoundation agree it is lie face down, bend one knee, reach back and pull the ankle toward your backside while both hip bones stay on the floor. That is the already-shipped 'Prone Quad Stretch' (id static-prone-quad: 'Lie face down, bend one knee and reach back for the ankle ... Draw the heel toward your backside while keeping both hip bones on the floor'), almost word for word. isCovered() misses it because 'Quadriceps' doesn't stem to match 'Quad' and the two names then share no word.",
+      "decided": "2026-10-01",
+      "by": "2026-10-01 evening Bellows pass"
+    },
+    {
+      "name": "Lying Rear Delt Raise",
+      "action": "skip",
+      "reason": "Checked by web search since the vendored reference carries no instructions: Fittr and FitnessVolt both describe lying chest-down on an incline bench, a dumbbell in each hand, raising both out to the sides until level with the torso. That is the already-shipped 'Dumbbell Lying Rear Lateral Raise' (id dumbbell-lying-rear-lateral-raise: 'Lie chest-down on an incline bench holding a dumbbell in each hand ... Raise both dumbbells out to your sides until your arms are level with your torso'). Same bilateral movement as the already-skipped one-arm version (2026-10-01 morning); free-exercise-db's name drops 'Lateral' and isCovered() misses it because the two names share no discriminating word.",
+      "decided": "2026-10-01",
+      "by": "2026-10-01 evening Bellows pass"
+    },
+    {
+      "name": "Lying Triceps Press",
+      "action": "skip",
+      "reason": "Checked by web search since the vendored reference carries no instructions: muscleandstrength and bodybuilding-wizard both describe lying on a flat bench holding an EZ-bar on its INNER angle (close grip), lowering it beyond the forehead and pressing back up -- the classic skull-crusher. That is the already-shipped 'Lying Close-Grip EZ-Bar Triceps Press To Chin', same equipment, same inner-grip, same bar path. free-exercise-db's generic name drops 'close-grip' and 'to chin' and isCovered() misses it because those are the only discriminating words.",
+      "decided": "2026-10-02",
+      "by": "2026-10-02 morning Bellows pass"
+    },
+    {
+      "name": "Machine Bench Press",
+      "action": "skip",
+      "reason": "A direct name match this time, not a web-search one: the shipped 'Machine Chest Press' (id machine-chest-press) is 'Sit in the chest press machine with the handles at chest height and your back flat against the pad. Press the handles forward until your arms are nearly straight' -- the identical seated flat press this queue item's own sourcing (jefit, sweat.com) describes. isCovered() misses it because 'bench' and 'chest' share no word, the same shape as the F14 skips already on this list.",
+      "decided": "2026-10-02",
+      "by": "2026-10-02 morning Bellows pass"
+    },
+    {
+      "name": "Middle Back Stretch",
+      "action": "skip",
+      "reason": "Checked by web search since the vendored reference carries no instructions: the only independent description found (ellim.app) is seated, knee crossed or hand on the opposite thigh, rotating the torso -- the already-shipped 'Seated Spinal Twist' (id yoga-seated-spinal-twist, aliases Ardha Matsyendrasana / Half Lord of the Fishes): 'Sit with your legs out, bend the right knee and cross it over the left thigh ... turn a little further as you breathe out.' isCovered() misses it because the two names share no word at all.",
+      "decided": "2026-10-02",
+      "by": "2026-10-02 morning Bellows pass"
+    },
+    {
+      "name": "Moving Claw Series",
+      "action": "skip",
+      "reason": "No independent how-to found. The only two results (myworkouts.io, atletiq) restate the vendored free-exercise-db metadata (bodyweight, glutes/hamstrings, plyometric, intermediate) with no description of the actual movement -- the same 'name alone, no instructions' shape F10 already warns against. Dropping rather than guessing at what a 'claw' drill does with the hamstrings.",
+      "decided": "2026-10-02",
+      "by": "2026-10-02 morning Bellows pass"
+    },
+    {
+      "name": "Oblique Crunches",
+      "action": "skip",
+      "reason": "Two independent sources (hevyapp, thegymgroup) describe lying on the back with knees bent and feet flat, elbow brought to the opposite knee in an alternating twist -- the identical movement already shipped as 'Cross-Body Crunch' (id cross-body-crunch): 'Lie on your back with knees bent, feet flat ... that elbow travels toward the opposite knee as that knee draws in to meet it ... alternate sides.' Not the same as the already-shipped 'Side Crunch' (alias 'Oblique Crunch', singular), which drops both knees to one side instead of alternating.",
+      "decided": "2026-10-02",
+      "by": "2026-10-02 evening Bellows pass"
+    },
+    {
+      "name": "Olympic Squat",
+      "action": "skip",
+      "reason": "Independent sources (fitbod, liftmanual) describe it as 'a variation of the standard Back Squat' with a more upright torso and a slightly wider, angled-out stance -- a bar-position and torso-angle emphasis on the same movement already shipped as 'Barbell Back Squat' (id barbell-back-squat), which specifies no particular bar height or torso angle itself. Unlike this pass's Narrow Stance Squat (a clearly narrower stance with a named, sourced difference in muscle emphasis), the distinguishing detail here was too subtle to confidently describe as a separate card rather than restating the same squat.",
+      "decided": "2026-10-02",
+      "by": "2026-10-02 evening Bellows pass"
+    },
+    {
+      "name": "Narrow Stance Hack Squats",
+      "action": "skip",
+      "reason": "A real, sourced variant (muscleandstrength, jefit, gymwolf all describe the narrow foot placement and its shift toward the outer quads), written as 'Narrow Stance Hack Squat Machine' and then BLOCKed by pending.mjs as a duplicate of the already-shipped 'Hack Squat Machine' -- neither 'narrow' nor 'stance' is in coverage.mjs's DISCRIMINATING list, so the shorter shipped name (once 'machine' is counted) reads as fully contained. Same F14 shape as the Incline Dumbbell neutral-grip/twist skips from 2026-09-23: dropped rather than shipped past the gate. Real and writable if DISCRIMINATING ever learns 'narrow'/'stance'.",
+      "decided": "2026-10-02",
+      "by": "2026-10-02 evening Bellows pass"
+    },
+    {
+      "name": "One-Arm Kettlebell Clean",
+      "action": "skip",
+      "reason": "The already-shipped 'Kettlebell Clean' (id kettlebell-clean-conditioning) is already a single-bell, one-arm lift -- unilateral: true, 'Hike the kettlebell back ... pull it up to the rack position on your shoulder' -- which is what a kettlebell clean means by default; the two-bell version is the already-shipped, separately-named 'Double Kettlebell Clean'. 'One-Arm' here just restates the shipped card. isCovered() reads it as uncovered because 'arm' is a DISCRIMINATING word the shipped name doesn't carry -- the F14 shape running in the other direction, a false 'new' reading on a true duplicate.",
+      "decided": "2026-10-03",
+      "by": "2026-10-03 morning Bellows pass"
+    },
+    {
+      "name": "One-Arm Kettlebell Snatch",
+      "action": "skip",
+      "reason": "Same shape as this pass's One-Arm Kettlebell Clean: the already-shipped 'Kettlebell Snatch' (id kettlebell-snatch-conditioning) is already unilateral: true and describes swinging and punching a single bell overhead in one motion -- a kettlebell snatch is a one-bell lift by definition, and no 'Double Kettlebell Snatch' is shipped to make 'One-Arm' a meaningful disambiguation. 'One-Arm' and 'Snatch' restate the shipped card rather than adding anything.",
+      "decided": "2026-10-03",
+      "by": "2026-10-03 morning Bellows pass"
+    },
+    {
+      "name": "One-Arm Kettlebell Military Press To The Side",
+      "action": "skip",
+      "reason": "Sourced (jefit, fitwill, lyfta): a standing strict press from the rack position, pressed in a slight arc to clear the face and lock out over the shoulder, torso held still throughout -- the same setup, path and finish as the already-shipped 'Single-Arm Kettlebell Press' (id single-arm-kettlebell-press): 'Hold a kettlebell at one shoulder ... press it overhead ... while keeping your body from leaning.' The arc 'to the side' to clear the face is ordinary technique for any one-arm kettlebell press, not a distinct movement -- 'military' and 'side' are DISCRIMINATING words with no match on the shipped name, not evidence of a real variant.",
+      "decided": "2026-10-03",
+      "by": "2026-10-03 morning Bellows pass"
+    },
+    {
+      "name": "One Half Locust",
+      "action": "skip",
+      "reason": "A real, sourced variant (yogabasics, yogapedia, tummee all describe Ardha Shalabhasana as lifting one straight leg at a time instead of both), written as 'Half Locust Pose' and then BLOCKed by pending.mjs as a duplicate of the already-shipped 'Locust Pose' -- 'half' is not in coverage.mjs's DISCRIMINATING list, so the shorter shipped name reads as fully contained once it is ignored. Same F14 shape as the Narrow Stance Hack Squat skip earlier this stack: dropped rather than shipped past the gate. Real and writable if DISCRIMINATING ever learns 'half'.",
+      "decided": "2026-10-03",
+      "by": "2026-10-03 morning Bellows pass"
+    },
+    {
+      "name": "One-Arm Kettlebell Clean and Jerk",
+      "action": "skip",
+      "reason": "A real, sourced, technically distinct lift (barbend, strongfirst, kettlebellkings: the jerk's re-dip catch under the bell vs the press's single continuous lockout), written as 'Kettlebell Clean and Jerk' and then BLOCKed by pending.mjs as a duplicate of the already-shipped 'Kettlebell Clean' -- 'jerk' is not in coverage.mjs's DISCRIMINATING list, so 'kettlebell' + 'clean' alone read as fully containing the shipped two-word name. The standalone 'Kettlebell Jerk' (no clean) shipped this same pass without tripping the check. Dropped rather than shipped past the gate; real and writable if DISCRIMINATING ever learns 'jerk'.",
+      "decided": "2026-10-03",
+      "by": "2026-10-03 morning Bellows pass"
+    },
+    {
+      "name": "Open Palm Kettlebell Clean",
+      "action": "skip",
+      "reason": "Written, then checked by hand rather than trusted on a clean isCovered() read: it is a coaching drill for the already-shipped 'Kettlebell Clean' (id kettlebell-clean-conditioning), not a different exercise -- the open-palm cue teaches the same hip-drive clean without changing the movement's purpose, load, or muscles worked. isCovered() read it as uncovered because 'open' and 'palm' are not DISCRIMINATING words, which is the F14 shape running in the duplicate direction. Dropped rather than shipped past the gate.",
+      "decided": "2026-10-04",
+      "by": "2026-10-04 morning Bellows pass"
+    },
+    {
+      "name": "One-Arm Long Bar Row",
+      "action": "skip",
+      "reason": "Written, then found by hand to be the already-shipped 'One-Arm Landmine Row' (id barbell-landmine-one-arm-row) under a name almost identical to its own alias 'Bent Over One-Arm Long Bar Row' -- same setup (wedge one end of a barbell in a corner, straddle it, row the free end one-handed), same equipment, same pattern. isCovered() did not flag it because 'landmine' and 'long'/'bar' share no word, so the automated check never compared the new title against the shipped alias meaningfully despite them being four of five words identical. Dropped rather than shipped past the gate; the shipped card's alias list already covers this title closely enough that coverage.mjs should not re-queue it, but if it does, do not ship it again.",
+      "decided": "2026-10-04",
+      "by": "2026-10-04 morning Bellows pass"
+    },
+    {
+      "name": "Side Lateral Raise",
+      "action": "skip",
+      "reason": "Written as 'One-Arm Dumbbell Lateral Raise' (equipment resolved to dumbbell) and BLOCKed by pending.mjs as a duplicate of the already-shipped 'Dumbbell Lateral Raise'. Checked by hand: the shipped card is two-handed but the biomechanics of raising one dumbbell out to the side are identical whether or not the other arm moves at the same time -- unlike the kettlebell one-arm variants this stack has shipped (swing, overhead squat), nothing about grip, path, or stabilizer demand changes by doing one side at a time. Not a distinct exercise; dropped rather than shipped past the gate.",
+      "decided": "2026-10-04",
+      "by": "2026-10-04 morning Bellows pass"
+    },
+    {
+      "name": "Rear Leg Raises",
+      "action": "skip",
+      "reason": "Researched before writing (the vendored reference carries no instructions): free-exercise-db describes it as hands-and-knees, extending one leg straight back with both knee and hip extending to hip height. That is the already-shipped 'Quadruped Hip Extension' (id quadruped-hip-extension) movement verbatim -- isCovered() missed it because the two names share zero words, not because the movements differ. Dropped rather than shipped past the gate.",
+      "decided": "2026-10-07",
+      "by": "2026-10-07 morning Bellows pass"
+    },
+    {
+      "name": "Return Push from Stance",
+      "action": "skip",
+      "reason": "The vendored reference carries only a name and equipment tag, no instructions (medicine ball, plyometrics, shoulders, beginner). A targeted search found no independent source describing this exact named drill precisely enough to be confident of the technique -- the nearest hits ('Medicine Ball Chest Push from Stance', 'Medicine Ball Chest Push From 3 Point Stance') may or may not be the same movement under a shortened name. Per the standing rule, a missing card is recoverable and a wrong one is not -- skipped rather than guessed.",
+      "decided": "2026-10-07",
+      "by": "2026-10-07 morning Bellows pass"
+    },
+    {
+      "name": "Reverse Band Bench Press",
+      "action": "skip",
+      "reason": "Confirmed via powerliftingtechnique.com and elitefts: reverse band work requires heavy bands choked around the top of a power rack (or a monolift) to pull the bar upward, giving more assistance at the bottom of the lift and less at the top -- the opposite effect of the shipped 'Resistance Band Squat', which loops a band under the feet for MORE resistance at the top. This app's 15-item equipment list has no entry for a rack or band-anchor rig, and tagging it barbell+resistance-band would misrepresent the setup as 'add a normal band', which it is not. Skipped for an equipment-taxonomy mismatch, not a duplicate.",
+      "decided": "2026-10-07",
+      "by": "2026-10-07 morning Bellows pass"
+    },
+    {
+      "name": "Reverse Band Box Squat",
+      "action": "skip",
+      "reason": "Same equipment-taxonomy mismatch as 'Reverse Band Bench Press' in this file: requires bands anchored to a power rack or monolift overhead, which this app's equipment list does not model and no honest existing tag combination substitutes for.",
+      "decided": "2026-10-07",
+      "by": "2026-10-07 morning Bellows pass"
+    },
+    {
+      "name": "Reverse Band Deadlift",
+      "action": "skip",
+      "reason": "Same equipment-taxonomy mismatch as 'Reverse Band Bench Press' in this file: requires bands anchored to a power rack or monolift overhead, which this app's equipment list does not model and no honest existing tag combination substitutes for.",
+      "decided": "2026-10-07",
+      "by": "2026-10-07 morning Bellows pass"
+    },
+    {
+      "name": "Reverse Band Power Squat",
+      "action": "skip",
+      "reason": "Same equipment-taxonomy mismatch as 'Reverse Band Bench Press' in this file: requires bands anchored to a power rack or monolift overhead, which this app's equipment list does not model and no honest existing tag combination substitutes for.",
+      "decided": "2026-10-07",
+      "by": "2026-10-07 morning Bellows pass"
+    },
+    {
+      "name": "Reverse Band Sumo Deadlift",
+      "action": "skip",
+      "reason": "Same equipment-taxonomy mismatch as 'Reverse Band Bench Press' in this file: requires bands anchored to a power rack or monolift overhead, which this app's equipment list does not model and no honest existing tag combination substitutes for.",
+      "decided": "2026-10-07",
+      "by": "2026-10-07 morning Bellows pass"
     }
   ]
 }

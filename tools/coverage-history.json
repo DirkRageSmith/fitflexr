@@ -185,6 +185,253 @@
           "absent": 6
         }
       }
+    },
+    {
+      "date": "2026-09-22",
+      "libraryTotal": 701,
+      "libraryMoves": 595,
+      "covered": 410,
+      "absent": 484,
+      "ready": 285,
+      "skipped": 55,
+      "refs": {
+        "free-exercise-db": {
+          "covered": 398,
+          "absent": 478
+        },
+        "asanas": {
+          "covered": 12,
+          "absent": 6
+        }
+      }
+    },
+    {
+      "date": "2026-09-23",
+      "libraryTotal": 712,
+      "libraryMoves": 605,
+      "covered": 422,
+      "absent": 472,
+      "ready": 266,
+      "skipped": 62,
+      "refs": {
+        "free-exercise-db": {
+          "covered": 410,
+          "absent": 466
+        },
+        "asanas": {
+          "covered": 12,
+          "absent": 6
+        }
+      }
+    },
+    {
+      "date": "2026-09-24",
+      "libraryTotal": 723,
+      "libraryMoves": 616,
+      "covered": 435,
+      "absent": 459,
+      "ready": 252,
+      "skipped": 63,
+      "refs": {
+        "free-exercise-db": {
+          "covered": 423,
+          "absent": 453
+        },
+        "asanas": {
+          "covered": 12,
+          "absent": 6
+        }
+      }
+    },
+    {
+      "date": "2026-09-25",
+      "libraryTotal": 727,
+      "libraryMoves": 620,
+      "covered": 440,
+      "absent": 454,
+      "ready": 244,
+      "skipped": 66,
+      "refs": {
+        "free-exercise-db": {
+          "covered": 428,
+          "absent": 448
+        },
+        "asanas": {
+          "covered": 12,
+          "absent": 6
+        }
+      }
+    },
+    {
+      "date": "2026-09-26",
+      "libraryTotal": 728,
+      "libraryMoves": 621,
+      "covered": 441,
+      "absent": 453,
+      "ready": 242,
+      "skipped": 67,
+      "refs": {
+        "free-exercise-db": {
+          "covered": 429,
+          "absent": 447
+        },
+        "asanas": {
+          "covered": 12,
+          "absent": 6
+        }
+      }
+    },
+    {
+      "date": "2026-09-27",
+      "libraryTotal": 729,
+      "libraryMoves": 622,
+      "covered": 442,
+      "absent": 452,
+      "ready": 240,
+      "skipped": 68,
+      "refs": {
+        "free-exercise-db": {
+          "covered": 430,
+          "absent": 446
+        },
+        "asanas": {
+          "covered": 12,
+          "absent": 6
+        }
+      }
+    },
+    {
+      "date": "2026-09-28",
+      "libraryTotal": 733,
+      "libraryMoves": 626,
+      "covered": 446,
+      "absent": 448,
+      "ready": 236,
+      "skipped": 68,
+      "refs": {
+        "free-exercise-db": {
+          "covered": 434,
+          "absent": 442
+        },
+        "asanas": {
+          "covered": 12,
+          "absent": 6
+        }
+      }
+    },
+    {
+      "date": "2026-09-29",
+      "libraryTotal": 736,
+      "libraryMoves": 628,
+      "covered": 449,
+      "absent": 445,
+      "ready": 232,
+      "skipped": 69,
+      "refs": {
+        "free-exercise-db": {
+          "covered": 437,
+          "absent": 439
+        },
+        "asanas": {
+          "covered": 12,
+          "absent": 6
+        }
+      }
+    },
+    {
+      "date": "2026-10-01",
+      "libraryTotal": 743,
+      "libraryMoves": 629,
+      "covered": 456,
+      "absent": 438,
+      "ready": 220,
+      "skipped": 74,
+      "refs": {
+        "free-exercise-db": {
+          "covered": 444,
+          "absent": 432
+        },
+        "asanas": {
+          "covered": 12,
+          "absent": 6
+        }
+      }
+    },
+    {
+      "date": "2026-10-02",
+      "libraryTotal": 756,
+      "libraryMoves": 640,
+      "covered": 471,
+      "absent": 423,
+      "ready": 200,
+      "skipped": 79,
+      "refs": {
+        "free-exercise-db": {
+          "covered": 459,
+          "absent": 417
+        },
+        "asanas": {
+          "covered": 12,
+          "absent": 6
+        }
+      }
+    },
+    {
+      "date": "2026-10-03",
+      "libraryTotal": 761,
+      "libraryMoves": 644,
+      "covered": 477,
+      "absent": 417,
+      "ready": 190,
+      "skipped": 83,
+      "refs": {
+        "free-exercise-db": {
+          "covered": 465,
+          "absent": 411
+        },
+        "asanas": {
+          "covered": 12,
+          "absent": 6
+        }
+      }
+    },
+    {
+      "date": "2026-10-04",
+      "libraryTotal": 775,
+      "libraryMoves": 658,
+      "covered": 493,
+      "absent": 401,
+      "ready": 169,
+      "skipped": 88,
+      "refs": {
+        "free-exercise-db": {
+          "covered": 481,
+          "absent": 395
+        },
+        "asanas": {
+          "covered": 12,
+          "absent": 6
+        }
+      }
+    },
+    {
+      "date": "2026-10-06",
+      "libraryTotal": 781,
+      "libraryMoves": 664,
+      "covered": 500,
+      "absent": 394,
+      "ready": 158,
+      "skipped": 92,
+      "refs": {
+        "free-exercise-db": {
+          "covered": 488,
+          "absent": 388
+        },
+        "asanas": {
+          "covered": 12,
+          "absent": 6
+        }
+      }
     }
   ]
 }
