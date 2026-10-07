@@ -9,8 +9,22 @@ product brainstorming and bulk content. If you are an AI reading this: this file
 contract. Follow the schema in §5 exactly; don't invent fields or relax the safety
 rules in §9.
 
-**Status as of 2026-09-21:** live PWA at <https://dirkragesmith.github.io/fitflexr/>,
-sw cache **v51**. **692 exercises — 588 training moves + 104 stretches.**
+**Status as of 2026-10-07:** live PWA at <https://dirkragesmith.github.io/fitflexr/>,
+sw cache **v75**. **783 exercises — 666 training moves + 117 stretches.** It has its first
+real user outside the build: Matt gave the link to his mom.
+
+- **2026-10-07 — 23 stacked batches reviewed at once after two weeks away: 91 cards shipped,
+  1 dropped, about 30 corrected.** This review checked every card against free-exercise-db's
+  own instructions (fetched for the review, not vendored — F10 stands) rather than recall,
+  and that found more wrong set-ups than any earlier review: Front Raise and Pullover written
+  standing (it is lying on a bench), Kettlebell Halo with Overhead Extension written as a
+  press (it is a triceps extension), Kneeling Cable Triceps Extension on a low pulley (high
+  pulley plus a bench), Medicine Ball Scoop Throw thrown forward (it goes backward over your
+  head), and a dozen more. **The review's own edits then tripped three gear BLOCKs** (the
+  word "machine" in prose), caught only because the review branch was run through
+  `reviewRecords` by hand — `pending.mjs` reads `bellows/*` branches only, so a review
+  branch is invisible to it. Standing Cable Kickback was the shipped Cable Glute Kickback;
+  Leg-Up Hamstring Stretch is the shipped Reclined Hamstring Stretch (both now aliased).
 
 - **2026-09-21 — four batches at once, after a week of the machine asleep: 24 cards shipped,
   4 corrected, and 2 already-shipped cards fixed.** The corrections were a clean deadlift that
