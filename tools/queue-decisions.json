@@ -742,6 +742,55 @@
       "reason": "Written as 'One-Arm Dumbbell Lateral Raise' (equipment resolved to dumbbell) and BLOCKed by pending.mjs as a duplicate of the already-shipped 'Dumbbell Lateral Raise'. Checked by hand: the shipped card is two-handed but the biomechanics of raising one dumbbell out to the side are identical whether or not the other arm moves at the same time -- unlike the kettlebell one-arm variants this stack has shipped (swing, overhead squat), nothing about grip, path, or stabilizer demand changes by doing one side at a time. Not a distinct exercise; dropped rather than shipped past the gate.",
       "decided": "2026-10-04",
       "by": "2026-10-04 morning Bellows pass"
+    },
+    {
+      "name": "Rear Leg Raises",
+      "action": "skip",
+      "reason": "Researched before writing (the vendored reference carries no instructions): free-exercise-db describes it as hands-and-knees, extending one leg straight back with both knee and hip extending to hip height. That is the already-shipped 'Quadruped Hip Extension' (id quadruped-hip-extension) movement verbatim -- isCovered() missed it because the two names share zero words, not because the movements differ. Dropped rather than shipped past the gate.",
+      "decided": "2026-10-07",
+      "by": "2026-10-07 morning Bellows pass"
+    },
+    {
+      "name": "Return Push from Stance",
+      "action": "skip",
+      "reason": "The vendored reference carries only a name and equipment tag, no instructions (medicine ball, plyometrics, shoulders, beginner). A targeted search found no independent source describing this exact named drill precisely enough to be confident of the technique -- the nearest hits ('Medicine Ball Chest Push from Stance', 'Medicine Ball Chest Push From 3 Point Stance') may or may not be the same movement under a shortened name. Per the standing rule, a missing card is recoverable and a wrong one is not -- skipped rather than guessed.",
+      "decided": "2026-10-07",
+      "by": "2026-10-07 morning Bellows pass"
+    },
+    {
+      "name": "Reverse Band Bench Press",
+      "action": "skip",
+      "reason": "Confirmed via powerliftingtechnique.com and elitefts: reverse band work requires heavy bands choked around the top of a power rack (or a monolift) to pull the bar upward, giving more assistance at the bottom of the lift and less at the top -- the opposite effect of the shipped 'Resistance Band Squat', which loops a band under the feet for MORE resistance at the top. This app's 15-item equipment list has no entry for a rack or band-anchor rig, and tagging it barbell+resistance-band would misrepresent the setup as 'add a normal band', which it is not. Skipped for an equipment-taxonomy mismatch, not a duplicate.",
+      "decided": "2026-10-07",
+      "by": "2026-10-07 morning Bellows pass"
+    },
+    {
+      "name": "Reverse Band Box Squat",
+      "action": "skip",
+      "reason": "Same equipment-taxonomy mismatch as 'Reverse Band Bench Press' in this file: requires bands anchored to a power rack or monolift overhead, which this app's equipment list does not model and no honest existing tag combination substitutes for.",
+      "decided": "2026-10-07",
+      "by": "2026-10-07 morning Bellows pass"
+    },
+    {
+      "name": "Reverse Band Deadlift",
+      "action": "skip",
+      "reason": "Same equipment-taxonomy mismatch as 'Reverse Band Bench Press' in this file: requires bands anchored to a power rack or monolift overhead, which this app's equipment list does not model and no honest existing tag combination substitutes for.",
+      "decided": "2026-10-07",
+      "by": "2026-10-07 morning Bellows pass"
+    },
+    {
+      "name": "Reverse Band Power Squat",
+      "action": "skip",
+      "reason": "Same equipment-taxonomy mismatch as 'Reverse Band Bench Press' in this file: requires bands anchored to a power rack or monolift overhead, which this app's equipment list does not model and no honest existing tag combination substitutes for.",
+      "decided": "2026-10-07",
+      "by": "2026-10-07 morning Bellows pass"
+    },
+    {
+      "name": "Reverse Band Sumo Deadlift",
+      "action": "skip",
+      "reason": "Same equipment-taxonomy mismatch as 'Reverse Band Bench Press' in this file: requires bands anchored to a power rack or monolift overhead, which this app's equipment list does not model and no honest existing tag combination substitutes for.",
+      "decided": "2026-10-07",
+      "by": "2026-10-07 morning Bellows pass"
     }
   ]
 }

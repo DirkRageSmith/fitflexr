@@ -21611,6 +21611,86 @@ const BATCH_2026_10_06_EVENING = [
 ];
 EXERCISES.push.apply(EXERCISES, BATCH_2026_10_06_EVENING);
 
+/* coverage.mjs --queue 10, 2026-10-07 morning. Four of the ten queue items dropped,
+ * each confirmed by reading the movement rather than trusting a clean isCovered()
+ * read: "Rear Leg Raises" is the already-shipped Quadruped Hip Extension under a
+ * free-exercise-db name sharing zero words with it (hands-and-knees, one leg
+ * extended straight back to hip height -- the same cue, the same movement); "Return
+ * Push from Stance" has no instructions in the vendored reference and no reliable
+ * independent source describing its exact technique, so it is skipped rather than
+ * guessed; the five Reverse Band lifts (bench press, box squat, deadlift, power
+ * squat, sumo deadlift) all require bands choked around the top of a power rack or
+ * monolift to pull the bar upward -- equipment this app's 15-item list has no entry
+ * for and no honest barbell+resistance-band combination can substitute, since the
+ * app's existing Resistance Band Squat loops the band under the feet for the
+ * opposite effect (more load at the top, not less). All six recorded in
+ * tools/queue-decisions.json. Rack Delivery was checked against Catalyst Athletics'
+ * technique write-up before writing, since it is a named drill rather than a plain
+ * lift. */
+const BATCH_2026_10_07_MORNING = [
+  {
+    "id": "barbell-rack-delivery",
+    "name": "Rack Delivery",
+    "muscleGroup": "Shoulders",
+    "secondaryMuscles": ["Back"],
+    "equipment": ["barbell"],
+    "difficulty": "Intermediate",
+    "cue": "From a scarecrow position, squeeze your shoulders back and whip the bar into the front rack without leaning forward to meet it.",
+    "description": "Hold a barbell with a clean grip and lift it to a scarecrow position — elbows up near shoulder height and out to the sides, bar hanging against your chest. Squeeze your shoulder blades back and spin your elbows around and under the bar to secure it in the front rack position, standing tall the whole time. Bring the bar back to your shoulders actively — leaning your chest forward to meet it is the common shortcut, and it is exactly the habit this drill is built to break before you add the rest of the clean.",
+    "avoidIf": ["shoulder", "wrist"],
+    "icon": "🏋️",
+    "mechanic": "Isolation",
+    "pattern": "Vertical Pull",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["strength"],
+    "homeFriendly": false,
+    "aliases": ["Clean Rack Delivery", "Barbell Rack Delivery"],
+    "category": "strength"
+  },
+  {
+    "id": "recumbent-bike",
+    "name": "Recumbent Bike",
+    "muscleGroup": "Quads",
+    "secondaryMuscles": ["Hamstrings", "Calves", "Glutes"],
+    "equipment": ["machine"],
+    "difficulty": "Beginner",
+    "cue": "Pedal from a reclined, back-supported seat — legs only, no handles to push or pull.",
+    "description": "Sit back in the bike's reclined seat, feet on the pedals out in front of you rather than below you, and pedal at a steady pace against the resistance. The backrest takes your core and lower back out of the exercise entirely, so all the work lands on your legs — a lower-impact, easier-on-the-joints option than an upright or fan bike, good for steady-state cardio or working around a sore back.",
+    "avoidIf": [],
+    "icon": "🚲",
+    "mechanic": "Compound",
+    "pattern": "Conditioning",
+    "force": "Push",
+    "unilateral": false,
+    "focus": ["endurance"],
+    "homeFriendly": false,
+    "aliases": ["Recumbent Cycling"],
+    "category": "conditioning"
+  },
+  {
+    "id": "barbell-reverse-curl",
+    "name": "Reverse Barbell Curl",
+    "muscleGroup": "Biceps",
+    "secondaryMuscles": [],
+    "equipment": ["barbell"],
+    "difficulty": "Beginner",
+    "cue": "Grip the barbell palms-down and curl without rolling your wrists over.",
+    "description": "Stand holding a straight barbell with an overhand (palms-down) grip, arms straight. Curl it up keeping that grip the whole way, then lower slowly. The straight bar locks your hands at a fixed, shoulder-width position with no angle to roll into — expect to use noticeably lighter weight than your regular curl, since the work shifts onto your forearms and brachialis instead of the biceps.",
+    "avoidIf": ["wrist"],
+    "icon": "🔄",
+    "mechanic": "Isolation",
+    "pattern": "Vertical Pull",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["strength"],
+    "homeFriendly": false,
+    "aliases": ["Barbell Reverse Curl", "Reverse Grip Barbell Curl"],
+    "category": "strength"
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_10_07_MORNING);
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { MUSCLE_GROUPS, EQUIPMENT, CONDITIONS, SPORTS, STRETCH_TYPES, EXERCISES };
 }
