@@ -21674,6 +21674,172 @@ const BATCH_2026_10_07_MORNING = [
 ];
 EXERCISES.push.apply(EXERCISES, BATCH_2026_10_07_MORNING);
 
+/* coverage.mjs --queue 10, 2026-10-07 evening. Three of the ten queue items dropped as
+ * real duplicates under free-exercise-db names that don't surface on a word-overlap
+ * check against the shipped title: "Reverse Flyes" is the already-shipped Dumbbell
+ * Rear-Delt Fly (bent-over, raise dumbbells to the sides) under a shorter name sharing
+ * zero words with it; "Reverse Grip Bent-Over Rows" is the already-shipped Yates Row
+ * (underhand grip, upright bent-over barbell row) likewise under a non-overlapping
+ * name; "Reverse Machine Flyes" is the already-shipped Reverse Pec Deck under a third
+ * name for the same machine rear-delt fly. All three recorded in
+ * tools/queue-decisions.json. The other seven were each checked against an independent
+ * source before writing: Reverse Flyes With External Rotation adds a 90-degree wrist
+ * rotation at the top of the fly, a real variant distinct from the plain rear-delt fly
+ * already shipped; Reverse Grip Triceps Pushdown is a supinated-grip pushdown, distinct
+ * from the shipped pronated rope/straight-bar versions the same way Reverse Curl is
+ * distinct from a regular curl; Reverse Hyperextension raises the hips/legs with the
+ * torso fixed, the opposite motion from the shipped Back Extension cards, which raise
+ * the torso with the legs fixed; Reverse Triceps Bench Press is an underhand-grip bench
+ * press, distinct from the shipped pronated Close-Grip version; Rocket Jump is a squat
+ * jump with a specific arm-swing-back-then-overhead technique, named as its own exercise
+ * across several independent sources rather than being a recall of the shipped Jump
+ * Squat; Rope Straight-Arm Pulldown is a rope-attachment variant of the shipped
+ * bar-attachment Straight-Arm Cable Pulldown, the same equipment distinction this
+ * library already ships separately for triceps pushdowns (Rope vs Straight-Bar). */
+const BATCH_2026_10_07_EVENING = [
+  {
+    "id": "cable-reverse-curl",
+    "name": "Reverse Cable Curl",
+    "muscleGroup": "Biceps",
+    "secondaryMuscles": [],
+    "equipment": ["cable"],
+    "difficulty": "Beginner",
+    "cue": "Curl a low-pulley bar up with an overhand grip, keeping your wrists from rolling over.",
+    "description": "Stand facing a low cable pulley with a straight bar attached, gripping it palms-down, arms straight. Curl it up keeping that overhand grip the whole way, then lower slowly under the cable's constant tension. The fixed grip shifts the work onto your forearms and brachialis instead of the biceps, so expect to use lighter weight than your regular cable curl.",
+    "avoidIf": ["wrist"],
+    "icon": "🔄",
+    "mechanic": "Isolation",
+    "pattern": "Vertical Pull",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["strength"],
+    "homeFriendly": false,
+    "aliases": ["Reverse Grip Cable Curl"],
+    "category": "strength"
+  },
+  {
+    "id": "dumbbell-reverse-flyes-external-rotation",
+    "name": "Reverse Flyes With External Rotation",
+    "muscleGroup": "Shoulders",
+    "secondaryMuscles": ["Back"],
+    "equipment": ["dumbbell", "bench"],
+    "difficulty": "Intermediate",
+    "cue": "Raise the dumbbells out to the sides and rotate your palms to face each other at the top.",
+    "description": "Lie chest-down on an incline bench set to about 30 degrees, a dumbbell in each hand hanging straight down, palms facing the floor. Raise the dumbbells out and up in an arc, and as they rise, rotate your wrists so your palms end up facing each other at shoulder height, then reverse the rotation on the way back down. The added rotation brings the rear delts and external rotators in together, so keep the weight light.",
+    "avoidIf": ["shoulder"],
+    "icon": "🪽",
+    "mechanic": "Isolation",
+    "pattern": "Horizontal Pull",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Dumbbell Reverse Flyes With External Rotation"],
+    "category": "strength"
+  },
+  {
+    "id": "cable-reverse-grip-triceps-pushdown",
+    "name": "Reverse Grip Triceps Pushdown",
+    "muscleGroup": "Triceps",
+    "secondaryMuscles": [],
+    "equipment": ["cable"],
+    "difficulty": "Beginner",
+    "cue": "Grip the bar underhand, palms up, and push it down with your elbows pinned to your sides.",
+    "description": "Stand facing a high cable with a straight bar attached, gripping it underhand with palms facing up, elbows tucked at your sides. Push the bar down by straightening your arms, then let it rise back under control without your elbows drifting forward. The underhand grip changes the angle of pull compared to the regular pronated-grip pushdown, so expect lighter weight.",
+    "avoidIf": ["wrist"],
+    "icon": "🔗",
+    "mechanic": "Isolation",
+    "pattern": "Vertical Push",
+    "force": "Push",
+    "unilateral": false,
+    "focus": ["hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Reverse Grip Tricep Pushdown"],
+    "category": "strength"
+  },
+  {
+    "id": "machine-reverse-hyperextension",
+    "name": "Reverse Hyperextension",
+    "muscleGroup": "Hamstrings",
+    "secondaryMuscles": ["Glutes", "Back"],
+    "equipment": ["machine"],
+    "difficulty": "Intermediate",
+    "cue": "Lie face-down with your torso fixed on the pad and raise your legs behind you.",
+    "description": "Lie face-down on the machine with your hips at the edge of the pad and your torso staying still, gripping the handles in front of you, legs hanging down holding a strap or lever. Raise your legs up behind you until they're in line with your torso, squeezing your glutes and hamstrings, then lower under control. It's the mirror image of a regular back extension — there, your legs stay fixed and your torso lifts; here, your torso stays fixed and your legs do the lifting.",
+    "avoidIf": ["lower-back"],
+    "icon": "🔁",
+    "mechanic": "Isolation",
+    "pattern": "Hinge",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Reverse Hyper"],
+    "category": "strength"
+  },
+  {
+    "id": "barbell-reverse-triceps-bench-press",
+    "name": "Reverse Triceps Bench Press",
+    "muscleGroup": "Triceps",
+    "secondaryMuscles": ["Chest", "Shoulders"],
+    "equipment": ["barbell", "bench"],
+    "difficulty": "Advanced",
+    "cue": "Grip the bar underhand, shoulder-width, and lower it to your upper chest with elbows tucked.",
+    "description": "Lie on a flat bench and take an underhand grip on the bar, shoulder-width apart. Lower it under control to your upper chest with your elbows tucked close to your body, then press back up, stopping just short of locking out. Have a spotter help you unrack — the underhand grip makes that part awkward — and keep the weight modest while you get used to the angle.",
+    "avoidIf": ["shoulder", "wrist"],
+    "icon": "🏋️",
+    "mechanic": "Compound",
+    "pattern": "Horizontal Push",
+    "force": "Push",
+    "unilateral": false,
+    "focus": ["strength"],
+    "homeFriendly": false,
+    "aliases": ["Reverse Grip Bench Press"],
+    "category": "strength"
+  },
+  {
+    "id": "bodyweight-rocket-jump",
+    "name": "Rocket Jump",
+    "muscleGroup": "Full Body/Cardio",
+    "secondaryMuscles": ["Quads", "Glutes", "Calves"],
+    "equipment": ["bodyweight"],
+    "difficulty": "Intermediate",
+    "cue": "Swing your arms back into a half-squat, then swing them forward overhead as you jump.",
+    "description": "Stand with feet shoulder-width apart, then sink into a half-squat while swinging both arms back behind you for momentum. Explode upward, swinging your arms forward and overhead as you jump, reaching as tall as you can at the peak. Land softly on the balls of your feet, bending your knees back down into the next half-squat — the arm swing is what separates this from a plain squat jump, so use it to drive the height rather than skipping straight to the legs.",
+    "avoidIf": ["knee", "high-impact"],
+    "icon": "🚀",
+    "mechanic": "Compound",
+    "pattern": "Conditioning",
+    "force": "Explosive",
+    "unilateral": false,
+    "focus": ["power"],
+    "homeFriendly": true,
+    "aliases": [],
+    "category": "conditioning"
+  },
+  {
+    "id": "cable-rope-straight-arm-pulldown",
+    "name": "Rope Straight-Arm Pulldown",
+    "muscleGroup": "Back",
+    "secondaryMuscles": ["Shoulders"],
+    "equipment": ["cable"],
+    "difficulty": "Beginner",
+    "cue": "Keep your arms straight and pull the rope ends down and apart to your thighs.",
+    "description": "Stand facing a high cable with a rope attachment, arms straight out in front, hands gripping the two ends. Keeping your arms straight, pull the rope down in an arc to your thighs, spreading the ends apart as they pass your hips, then return slowly. The rope lets your hands separate at the bottom for an extra squeeze that a fixed straight bar doesn't allow.",
+    "avoidIf": ["shoulder"],
+    "icon": "🪢",
+    "mechanic": "Isolation",
+    "pattern": "Vertical Pull",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Rope Cable Pullover"],
+    "category": "strength"
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_10_07_EVENING);
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { MUSCLE_GROUPS, EQUIPMENT, CONDITIONS, SPORTS, STRETCH_TYPES, EXERCISES };
 }

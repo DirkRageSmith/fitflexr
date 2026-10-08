@@ -791,6 +791,27 @@
       "reason": "Same equipment-taxonomy mismatch as 'Reverse Band Bench Press' in this file: requires bands anchored to a power rack or monolift overhead, which this app's equipment list does not model and no honest existing tag combination substitutes for.",
       "decided": "2026-10-07",
       "by": "2026-10-07 morning Bellows pass"
+    },
+    {
+      "name": "Reverse Flyes",
+      "action": "skip",
+      "reason": "Already shipped as Dumbbell Rear-Delt Fly (id dumbbell-rear-delt-fly-isolation or similar) -- same bent-over dumbbell rear-delt fly, just a different free-exercise-db name with no word overlap against the shipped title.",
+      "decided": "2026-10-07",
+      "by": "2026-10-07 evening Bellows pass"
+    },
+    {
+      "name": "Reverse Grip Bent-Over Rows",
+      "action": "skip",
+      "reason": "Already shipped as Yates Row (alias Underhand Barbell Row) -- same underhand-grip, upright-torso bent-over barbell row, under a free-exercise-db name with no word overlap against the shipped title or its alias.",
+      "decided": "2026-10-07",
+      "by": "2026-10-07 evening Bellows pass"
+    },
+    {
+      "name": "Reverse Machine Flyes",
+      "action": "skip",
+      "reason": "Already shipped as Reverse Pec Deck (alias Rear Delt Machine Fly) -- same machine rear-delt fly, under a third name with no word overlap against the shipped title or its alias.",
+      "decided": "2026-10-07",
+      "by": "2026-10-07 evening Bellows pass"
     }
   ]
 }
