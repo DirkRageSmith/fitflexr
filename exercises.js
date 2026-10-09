@@ -6597,7 +6597,8 @@ const EXERCISES = [
     ],
     "homeFriendly": false,
     "aliases": [
-      "Reverse Grip Bench Press"
+      "Reverse Grip Bench Press",
+      "Reverse Triceps Bench Press"
     ],
     "category": "strength"
   },
@@ -21778,26 +21779,6 @@ const BATCH_2026_10_07_EVENING = [
     "category": "strength"
   },
   {
-    "id": "barbell-reverse-triceps-bench-press",
-    "name": "Reverse Triceps Bench Press",
-    "muscleGroup": "Triceps",
-    "secondaryMuscles": ["Chest", "Shoulders"],
-    "equipment": ["barbell", "bench"],
-    "difficulty": "Advanced",
-    "cue": "Grip the bar underhand, shoulder-width, and lower it to your upper chest with elbows tucked.",
-    "description": "Lie on a flat bench and take an underhand grip on the bar, shoulder-width apart. Lower it under control to your upper chest with your elbows tucked close to your body, then press back up, stopping just short of locking out. Have a spotter help you unrack — the underhand grip makes that part awkward — and keep the weight modest while you get used to the angle.",
-    "avoidIf": ["shoulder", "wrist"],
-    "icon": "🏋️",
-    "mechanic": "Compound",
-    "pattern": "Horizontal Push",
-    "force": "Push",
-    "unilateral": false,
-    "focus": ["strength"],
-    "homeFriendly": false,
-    "aliases": ["Reverse Grip Bench Press"],
-    "category": "strength"
-  },
-  {
     "id": "bodyweight-rocket-jump",
     "name": "Rocket Jump",
     "muscleGroup": "Full Body/Cardio",
@@ -21974,7 +21955,7 @@ const BATCH_2026_10_08_EVENING = [
     "equipment": ["barbell", "bench"],
     "difficulty": "Intermediate",
     "cue": "Seated on a low bench with the bar on your back, hinge forward and stand it back up.",
-    "description": "Sit on a bench set lower than your knees, feet planted a little wider than hip-width, with a barbell resting across your upper back. Keeping your legs still, hinge forward at the hips with a flat back until your torso nears parallel to the floor, then drive back upright by squeezing your glutes and lower back. With the legs locked out of the movement, the whole hinge loads onto your spinal erectors -- start light and stop well short of rounding.",
+    "description": "Take a light barbell from a rack onto your upper back, below your neck, and sit on a box or low bench in the rack, feet planted a little wider than hip-width. Keeping your legs still, hinge forward at the hips with a flat back as far as you can without rounding, then drive back upright by squeezing your glutes and lower back. With your legs out of it, the lower back takes the whole load, so start very light and set the rack's safety pins just below the bar's lowest point.",
     "avoidIf": ["lower-back"],
     "icon": "🌅",
     "mechanic": "Compound",
@@ -22013,8 +21994,8 @@ const BATCH_2026_10_08_EVENING = [
     "secondaryMuscles": ["Chest"],
     "equipment": ["bodyweight"],
     "difficulty": "Beginner",
-    "cue": "Hands flat on the floor behind you, set wide, and lean your hips forward.",
-    "description": "Sit on the floor with your legs out in front of you and place your hands flat on the floor behind your hips, fingers pointing away from your body and set wider than shoulder-width -- the wider hand placement is what shifts this from a biceps stretch into the shoulders. Keeping your palms pressed down, lean your hips forward away from your hands until you feel the stretch across the front of your shoulders and chest. Hold still rather than bouncing.",
+    "cue": "Sit tall, arms straight out to your sides, and ease them back until the front of your shoulders stretches.",
+    "description": "Sit upright on the floor with your knees bent and stretch your arms straight out to your sides at shoulder height, palms facing the floor. Keeping your elbows straight and your chest lifted, slowly move both arms back behind you as far as is comfortable, until you feel the stretch across the front of your shoulders and chest. Hold it there and breathe, without arching your lower back to get the arms further.",
     "avoidIf": ["wrist", "shoulder"],
     "icon": "🧘",
     "pattern": "Stretch",
@@ -22031,15 +22012,15 @@ const BATCH_2026_10_08_EVENING = [
     "secondaryMuscles": ["Shoulders"],
     "equipment": ["bodyweight"],
     "difficulty": "Beginner",
-    "cue": "Seated, interlace your fingers and reach both arms straight overhead.",
-    "description": "Sit cross-legged or kneel tall on the floor and interlace your fingers, turning your palms to face the ceiling as you reach both arms straight overhead. Lengthen up through your spine and hold, breathing into your side ribs rather than shrugging your shoulders toward your ears. You'll feel it down your lats and the sides of your upper back.",
+    "cue": "Soles together, one hand behind your head — lift that elbow and lean to the other side.",
+    "description": "Sit up straight on the floor with the soles of your feet together a little in front of your hips. Put one hand on the floor beside you and the other behind your head, then lift that elbow toward the ceiling as you lean your torso to the opposite side. Hold, feeling it down the side of your body under the raised arm, then switch sides.",
     "avoidIf": ["shoulder"],
     "icon": "🧘",
     "pattern": "Stretch",
     "force": "Static",
     "focus": ["mobility"],
     "category": "cooldown",
-    "hold": "2 × 30s",
+    "hold": "2 × 30s each side",
     "aliases": []
   }
 ];
