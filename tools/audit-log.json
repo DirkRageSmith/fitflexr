@@ -1,0 +1,84 @@
+{
+  "audited": [
+    {
+      "id": "barbell-flat-bench-press",
+      "verdict": "ok",
+      "sources": [
+        "https://stronglifts.com/bench-press/",
+        "https://www.joionline.net/library/proper-bench-press-technique/"
+      ]
+    },
+    {
+      "id": "barbell-paused-bench-press",
+      "verdict": "ok",
+      "sources": [
+        "https://www.muscleandstrength.com/exercises/paused-barbell-bench-press",
+        "https://steelsupplements.com/blogs/steel-blog/how-to-do-the-paused-bench-press-form-benefits"
+      ]
+    },
+    {
+      "id": "barbell-close-grip-bench-press",
+      "verdict": "ok",
+      "sources": [
+        "https://www.thegymgroup.com/exercises/chest-exercises/close-grip-bench-press/",
+        "https://legionathletics.com/close-grip-bench-press/"
+      ]
+    },
+    {
+      "id": "barbell-incline-bench-press",
+      "verdict": "ok",
+      "sources": [
+        "https://www.nasm.org/resource-center/exercise-library/incline-barbell-bench-press",
+        "https://learn.athleanx.com/articles/incline-bench-press-mistakes"
+      ]
+    },
+    {
+      "id": "barbell-decline-bench-press",
+      "verdict": "ok",
+      "sources": [
+        "https://www.masterclass.com/articles/decline-bench-press-guide",
+        "https://liftmanual.com/barbell-decline-bench-press/"
+      ]
+    },
+    {
+      "id": "dumbbell-flat-bench-press",
+      "verdict": "ok",
+      "sources": [
+        "https://workoutlabs.com/exercise-guide/dumbbell-bench-press/",
+        "https://www.puregym.com/exercises/chest/bench-press/dumbbell-bench-press/"
+      ]
+    },
+    {
+      "id": "dumbbell-incline-bench-press",
+      "verdict": "ok",
+      "sources": [
+        "https://squatwolf.com/blogs/fitness/incline-dumbbell-press",
+        "https://gravitus.com/guides/exercises/incline-dumbbell-press/"
+      ]
+    },
+    {
+      "id": "dumbbell-decline-bench-press",
+      "verdict": "ok",
+      "sources": [
+        "https://fitnessvolt.com/decline-dumbbell-bench-press-chest/",
+        "https://bodybuilding-wizard.com/decline-dumbbell-bench-press/"
+      ]
+    },
+    {
+      "id": "dumbbell-neutral-grip-bench-press",
+      "verdict": "ok",
+      "sources": [
+        "https://fitnessvolt.com/24642/hammer-grip-dumbbell-bench-press/",
+        "https://steelsupplements.com/blogs/steel-blog/how-to-do-hammer-presses-form-benefits"
+      ]
+    },
+    {
+      "id": "dumbbell-squeeze-press",
+      "verdict": "ok",
+      "sources": [
+        "https://dumbbellsdirect.com/blogs/dumbbell-exercises-specific-movements/dumbbell-squeeze-press",
+        "https://revyfit.com/exercises/dumbbell-squeeze-press"
+      ]
+    }
+  ]
+}
