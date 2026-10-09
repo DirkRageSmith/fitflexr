@@ -9,9 +9,14 @@ product brainstorming and bulk content. If you are an AI reading this: this file
 contract. Follow the schema in §5 exactly; don't invent fields or relax the safety
 rules in §9.
 
-**Status as of 2026-10-07:** live PWA at <https://dirkragesmith.github.io/fitflexr/>,
-sw cache **v75**. **783 exercises — 666 training moves + 117 stretches.** It has its first
-real user outside the build: Matt gave the link to his mom.
+**Status as of 2026-10-08:** live PWA at <https://dirkragesmith.github.io/fitflexr/>,
+sw cache **v79**. **799 exercises.** It has its first real user outside the build: Matt
+gave the link to his mom. **The library is at its size cap (800) by decision** — from here
+Bellows audits shipped cards against real instructions instead of adding new ones.
+
+- **2026-10-08 — the last three batches before the cap: 16 shipped, 1 dropped, 3 corrected.**
+  Reverse Triceps Bench Press was the shipped Reverse-Grip Barbell Press (its own alias named
+  it); two seated stretches described the wrong stretch.
 
 - **2026-10-07 — 23 stacked batches reviewed at once after two weeks away: 91 cards shipped,
   1 dropped, about 30 corrected.** This review checked every card against free-exercise-db's
