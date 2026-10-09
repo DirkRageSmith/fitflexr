@@ -21955,7 +21955,7 @@ const BATCH_2026_10_08_EVENING = [
     "equipment": ["barbell", "bench"],
     "difficulty": "Intermediate",
     "cue": "Seated on a low bench with the bar on your back, hinge forward and stand it back up.",
-    "description": "Take a light barbell from a rack onto your upper back, below your neck, and sit on a box or low bench in the rack, feet planted a little wider than hip-width. Keeping your legs still, hinge forward at the hips with a flat back as far as you can without rounding, then drive back upright by squeezing your glutes and lower back. With your legs out of it, the lower back takes the whole load, so start very light and set the rack's safety pins just below the bar's lowest point.",
+    "description": "Take a light barbell from a rack onto your upper back, below your neck, and sit on a low bench set inside the rack, feet planted a little wider than hip-width. Keeping your legs still, hinge forward at the hips with a flat back as far as you can without rounding, then drive back upright by squeezing your glutes and lower back. With your legs out of it, the lower back takes the whole load, so start very light and set the rack's safety pins just below the bar's lowest point.",
     "avoidIf": ["lower-back"],
     "icon": "🌅",
     "mechanic": "Compound",
