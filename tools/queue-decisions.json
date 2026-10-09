@@ -2,6 +2,34 @@
   "$comment": "Decisions about single named items in the coverage queue, read by tools/coverage.mjs. A skip leaves `--queue` for good and says why. A note stays in the queue and hands its text to whoever writes the card, as `reviewNote`. Matching is exact and case-insensitive on the queue name, or on the sanskrit name for asanas, never fuzzy. Started 2026-09-12, when 19 of the top 25 queue items were names earlier passes had already decided against and were re-reading every twelve hours. Every reason is written here in our own words: the free-exercise-db reference is vendored as names only, on purpose (see the licensing note at the top of coverage.mjs), and nothing in this file copies its text.",
   "entries": [
     {
+      "name": "Seated One-arm Cable Pulley Rows",
+      "action": "skip",
+      "reason": "Already shipped as Single-Arm Cable Row (alias 'One Arm Cable Row'), whose own description opens 'Sit or stand facing a low cable holding a single handle... pull it to your hip' -- the shipped card already names the seated variant explicitly. 'Pulley' is just free-exercise-db's word for the same low cable. No word overlap against the shipped title or its alias, same shape as the F14/F15 duplicates.",
+      "decided": "2026-10-08",
+      "by": "2026-10-08 evening Bellows pass"
+    },
+    {
+      "name": "Seated Flat Bench Leg Pull-In",
+      "action": "skip",
+      "reason": "Already shipped as Leg Pull-In (alias 'Seated Knee Tuck'): sit with legs extended, hands beside the hips for support, pull both knees to the chest while leaning the torso back, extend out again. Confirmed against workoutlabs/jefit/atletiq/fitnessprogramer descriptions of this exact free-exercise-db name -- same bench-edge setup, same knee-pull, same lean-back. Zero word overlap against the shipped title, all five words present in its alias.",
+      "decided": "2026-10-08",
+      "by": "2026-10-08 evening Bellows pass"
+    },
+    {
+      "name": "Seated Leg Tucks",
+      "action": "skip",
+      "reason": "The same movement as the already-shipped Leg Pull-In (alias 'Seated Knee Tuck') under a third name -- muscleandstrength's own page for this exact free-exercise-db entry titles it 'Seated Knee Tucks,' identical to the shipped card's alias. Sit on a bench/chair edge, knees toward chest, extend back out. No word overlap against the shipped primary name to catch it mechanically.",
+      "decided": "2026-10-08",
+      "by": "2026-10-08 evening Bellows pass"
+    },
+    {
+      "name": "Seated Glute",
+      "action": "skip",
+      "reason": "The chair/ankle-cross version of this (the most common one, per jefit/exrx/liftmanual/trainrboost/loadmuscle) is already shipped as Seated Piriformis Stretch: 'Sit on a chair or bench, cross one ankle over the opposite knee... hinge forward from the hips until you feel it deep in the backside.' 'Glute' and 'piriformis' are the same deep-hip stretch under two common muscle names, zero word overlap against the shipped title. (The floor version -- one leg extended, other foot to the inner thigh, lean forward -- is a real alternative setup but close enough to the same end stretch that writing it as a second card felt like relabeling rather than a genuine new movement.)",
+      "decided": "2026-10-08",
+      "by": "2026-10-08 evening Bellows pass"
+    },
+    {
       "name": "Runner's Stretch",
       "action": "skip",
       "reason": "Single-source identification only, and the source contradicts the vendored muscle tag: the one description found (zing.coach) is a plank-to-lunge dynamic hip-flexor stretch (back knee lowered to the floor), but free-exercise-db tags this entry's primary muscle as hamstrings, not hip flexors/quads. That mismatch, plus the pose it describes already existing here as the already-shipped 'Kneeling Hip Flexor Stretch', means writing it risks either a duplicate or a wrong muscle tag. Skipped rather than guessed.",

@@ -21965,6 +21965,86 @@ const BATCH_2026_10_08_MORNING = [
 ];
 EXERCISES.push.apply(EXERCISES, BATCH_2026_10_08_MORNING);
 
+const BATCH_2026_10_08_EVENING = [
+  {
+    "id": "barbell-seated-good-morning",
+    "name": "Seated Good Mornings",
+    "muscleGroup": "Back",
+    "secondaryMuscles": ["Glutes", "Hamstrings"],
+    "equipment": ["barbell", "bench"],
+    "difficulty": "Intermediate",
+    "cue": "Seated on a low bench with the bar on your back, hinge forward and stand it back up.",
+    "description": "Sit on a bench set lower than your knees, feet planted a little wider than hip-width, with a barbell resting across your upper back. Keeping your legs still, hinge forward at the hips with a flat back until your torso nears parallel to the floor, then drive back upright by squeezing your glutes and lower back. With the legs locked out of the movement, the whole hinge loads onto your spinal erectors -- start light and stop well short of rounding.",
+    "avoidIf": ["lower-back"],
+    "icon": "🌅",
+    "mechanic": "Compound",
+    "pattern": "Hinge",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["strength"],
+    "homeFriendly": false,
+    "aliases": ["Seated Barbell Good Morning", "Barbell Seated Good Morning"],
+    "category": "strength"
+  },
+  {
+    "id": "barbell-seated-close-grip-concentration-curl",
+    "name": "Seated Close-Grip Concentration Barbell Curl",
+    "muscleGroup": "Biceps",
+    "secondaryMuscles": [],
+    "equipment": ["barbell"],
+    "difficulty": "Beginner",
+    "cue": "Elbows braced on your inner thighs, curl a close-grip barbell up together.",
+    "description": "Sit down and take a close, underhand grip on a barbell, hands about six inches apart, then lean forward and rest the backs of both upper arms against your inner thighs with the bar hanging down. Curl it up toward your chest, squeeze hard at the top, then lower slowly under control. Bracing both elbows removes all momentum, so use far less weight than you'd curl standing.",
+    "avoidIf": [],
+    "icon": "💪",
+    "mechanic": "Isolation",
+    "pattern": "Vertical Pull",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["hypertrophy"],
+    "homeFriendly": true,
+    "aliases": ["Seated Close-Grip Concentration Curl", "Barbell Seated Close-Grip Concentration Curl"],
+    "category": "strength"
+  },
+  {
+    "id": "bodyweight-seated-front-deltoid-stretch",
+    "name": "Seated Front Deltoid Stretch",
+    "muscleGroup": "Shoulders",
+    "secondaryMuscles": ["Chest"],
+    "equipment": ["bodyweight"],
+    "difficulty": "Beginner",
+    "cue": "Hands flat on the floor behind you, set wide, and lean your hips forward.",
+    "description": "Sit on the floor with your legs out in front of you and place your hands flat on the floor behind your hips, fingers pointing away from your body and set wider than shoulder-width -- the wider hand placement is what shifts this from a biceps stretch into the shoulders. Keeping your palms pressed down, lean your hips forward away from your hands until you feel the stretch across the front of your shoulders and chest. Hold still rather than bouncing.",
+    "avoidIf": ["wrist", "shoulder"],
+    "icon": "🧘",
+    "pattern": "Stretch",
+    "force": "Static",
+    "focus": ["mobility"],
+    "category": "cooldown",
+    "hold": "2 × 30s",
+    "aliases": ["Seated Front Deltoid"]
+  },
+  {
+    "id": "bodyweight-seated-overhead-stretch",
+    "name": "Seated Overhead Stretch",
+    "muscleGroup": "Back",
+    "secondaryMuscles": ["Shoulders"],
+    "equipment": ["bodyweight"],
+    "difficulty": "Beginner",
+    "cue": "Seated, interlace your fingers and reach both arms straight overhead.",
+    "description": "Sit cross-legged or kneel tall on the floor and interlace your fingers, turning your palms to face the ceiling as you reach both arms straight overhead. Lengthen up through your spine and hold, breathing into your side ribs rather than shrugging your shoulders toward your ears. You'll feel it down your lats and the sides of your upper back.",
+    "avoidIf": ["shoulder"],
+    "icon": "🧘",
+    "pattern": "Stretch",
+    "force": "Static",
+    "focus": ["mobility"],
+    "category": "cooldown",
+    "hold": "2 × 30s",
+    "aliases": []
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_10_08_EVENING);
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { MUSCLE_GROUPS, EQUIPMENT, CONDITIONS, SPORTS, STRETCH_TYPES, EXERCISES };
 }
