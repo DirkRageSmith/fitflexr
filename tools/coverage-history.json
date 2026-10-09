@@ -432,6 +432,44 @@
           "absent": 6
         }
       }
+    },
+    {
+      "date": "2026-10-07",
+      "libraryTotal": 790,
+      "libraryMoves": 673,
+      "covered": 512,
+      "absent": 382,
+      "ready": 137,
+      "skipped": 101,
+      "refs": {
+        "free-exercise-db": {
+          "covered": 500,
+          "absent": 376
+        },
+        "asanas": {
+          "covered": 12,
+          "absent": 6
+        }
+      }
+    },
+    {
+      "date": "2026-10-08",
+      "libraryTotal": 800,
+      "libraryMoves": 680,
+      "covered": 522,
+      "absent": 372,
+      "ready": 119,
+      "skipped": 109,
+      "refs": {
+        "free-exercise-db": {
+          "covered": 510,
+          "absent": 366
+        },
+        "asanas": {
+          "covered": 12,
+          "absent": 6
+        }
+      }
     }
   ]
 }

@@ -6597,7 +6597,8 @@ const EXERCISES = [
     ],
     "homeFriendly": false,
     "aliases": [
-      "Reverse Grip Bench Press"
+      "Reverse Grip Bench Press",
+      "Reverse Triceps Bench Press"
     ],
     "category": "strength"
   },
@@ -21673,6 +21674,357 @@ const BATCH_2026_10_07_MORNING = [
   }
 ];
 EXERCISES.push.apply(EXERCISES, BATCH_2026_10_07_MORNING);
+
+/* coverage.mjs --queue 10, 2026-10-07 evening. Three of the ten queue items dropped as
+ * real duplicates under free-exercise-db names that don't surface on a word-overlap
+ * check against the shipped title: "Reverse Flyes" is the already-shipped Dumbbell
+ * Rear-Delt Fly (bent-over, raise dumbbells to the sides) under a shorter name sharing
+ * zero words with it; "Reverse Grip Bent-Over Rows" is the already-shipped Yates Row
+ * (underhand grip, upright bent-over barbell row) likewise under a non-overlapping
+ * name; "Reverse Machine Flyes" is the already-shipped Reverse Pec Deck under a third
+ * name for the same machine rear-delt fly. All three recorded in
+ * tools/queue-decisions.json. The other seven were each checked against an independent
+ * source before writing: Reverse Flyes With External Rotation adds a 90-degree wrist
+ * rotation at the top of the fly, a real variant distinct from the plain rear-delt fly
+ * already shipped; Reverse Grip Triceps Pushdown is a supinated-grip pushdown, distinct
+ * from the shipped pronated rope/straight-bar versions the same way Reverse Curl is
+ * distinct from a regular curl; Reverse Hyperextension raises the hips/legs with the
+ * torso fixed, the opposite motion from the shipped Back Extension cards, which raise
+ * the torso with the legs fixed; Reverse Triceps Bench Press is an underhand-grip bench
+ * press, distinct from the shipped pronated Close-Grip version; Rocket Jump is a squat
+ * jump with a specific arm-swing-back-then-overhead technique, named as its own exercise
+ * across several independent sources rather than being a recall of the shipped Jump
+ * Squat; Rope Straight-Arm Pulldown is a rope-attachment variant of the shipped
+ * bar-attachment Straight-Arm Cable Pulldown, the same equipment distinction this
+ * library already ships separately for triceps pushdowns (Rope vs Straight-Bar). */
+const BATCH_2026_10_07_EVENING = [
+  {
+    "id": "cable-reverse-curl",
+    "name": "Reverse Cable Curl",
+    "muscleGroup": "Biceps",
+    "secondaryMuscles": [],
+    "equipment": ["cable"],
+    "difficulty": "Beginner",
+    "cue": "Curl a low-pulley bar up with an overhand grip, keeping your wrists from rolling over.",
+    "description": "Stand facing a low cable pulley with a straight bar attached, gripping it palms-down, arms straight. Curl it up keeping that overhand grip the whole way, then lower slowly under the cable's constant tension. The fixed grip shifts the work onto your forearms and brachialis instead of the biceps, so expect to use lighter weight than your regular cable curl.",
+    "avoidIf": ["wrist"],
+    "icon": "🔄",
+    "mechanic": "Isolation",
+    "pattern": "Vertical Pull",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["strength"],
+    "homeFriendly": false,
+    "aliases": ["Reverse Grip Cable Curl"],
+    "category": "strength"
+  },
+  {
+    "id": "dumbbell-reverse-flyes-external-rotation",
+    "name": "Reverse Flyes With External Rotation",
+    "muscleGroup": "Shoulders",
+    "secondaryMuscles": ["Back"],
+    "equipment": ["dumbbell", "bench"],
+    "difficulty": "Intermediate",
+    "cue": "Raise the dumbbells out to the sides and rotate your palms to face each other at the top.",
+    "description": "Lie chest-down on an incline bench set to about 30 degrees, a dumbbell in each hand hanging straight down, palms facing the floor. Raise the dumbbells out and up in an arc, and as they rise, rotate your wrists so your palms end up facing each other at shoulder height, then reverse the rotation on the way back down. The added rotation brings the rear delts and external rotators in together, so keep the weight light.",
+    "avoidIf": ["shoulder"],
+    "icon": "🪽",
+    "mechanic": "Isolation",
+    "pattern": "Horizontal Pull",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Dumbbell Reverse Flyes With External Rotation"],
+    "category": "strength"
+  },
+  {
+    "id": "cable-reverse-grip-triceps-pushdown",
+    "name": "Reverse Grip Triceps Pushdown",
+    "muscleGroup": "Triceps",
+    "secondaryMuscles": [],
+    "equipment": ["cable"],
+    "difficulty": "Beginner",
+    "cue": "Grip the bar underhand, palms up, and push it down with your elbows pinned to your sides.",
+    "description": "Stand facing a high cable with a straight bar attached, gripping it underhand with palms facing up, elbows tucked at your sides. Push the bar down by straightening your arms, then let it rise back under control without your elbows drifting forward. The underhand grip changes the angle of pull compared to the regular pronated-grip pushdown, so expect lighter weight.",
+    "avoidIf": ["wrist"],
+    "icon": "🔗",
+    "mechanic": "Isolation",
+    "pattern": "Vertical Push",
+    "force": "Push",
+    "unilateral": false,
+    "focus": ["hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Reverse Grip Tricep Pushdown"],
+    "category": "strength"
+  },
+  {
+    "id": "machine-reverse-hyperextension",
+    "name": "Reverse Hyperextension",
+    "muscleGroup": "Hamstrings",
+    "secondaryMuscles": ["Glutes", "Back"],
+    "equipment": ["machine"],
+    "difficulty": "Intermediate",
+    "cue": "Lie face-down with your torso fixed on the pad and raise your legs behind you.",
+    "description": "Lie face-down on the machine with your hips at the edge of the pad and your torso staying still, gripping the handles in front of you, legs hanging down holding a strap or lever. Raise your legs up behind you until they're in line with your torso, squeezing your glutes and hamstrings, then lower under control. It's the mirror image of a regular back extension — there, your legs stay fixed and your torso lifts; here, your torso stays fixed and your legs do the lifting.",
+    "avoidIf": ["lower-back"],
+    "icon": "🔁",
+    "mechanic": "Isolation",
+    "pattern": "Hinge",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Reverse Hyper"],
+    "category": "strength"
+  },
+  {
+    "id": "bodyweight-rocket-jump",
+    "name": "Rocket Jump",
+    "muscleGroup": "Full Body/Cardio",
+    "secondaryMuscles": ["Quads", "Glutes", "Calves"],
+    "equipment": ["bodyweight"],
+    "difficulty": "Intermediate",
+    "cue": "Swing your arms back into a half-squat, then swing them forward overhead as you jump.",
+    "description": "Stand with feet shoulder-width apart, then sink into a half-squat while swinging both arms back behind you for momentum. Explode upward, swinging your arms forward and overhead as you jump, reaching as tall as you can at the peak. Land softly on the balls of your feet, bending your knees back down into the next half-squat — the arm swing is what separates this from a plain squat jump, so use it to drive the height rather than skipping straight to the legs.",
+    "avoidIf": ["knee", "high-impact"],
+    "icon": "🚀",
+    "mechanic": "Compound",
+    "pattern": "Conditioning",
+    "force": "Explosive",
+    "unilateral": false,
+    "focus": ["power"],
+    "homeFriendly": true,
+    "aliases": [],
+    "category": "conditioning"
+  },
+  {
+    "id": "cable-rope-straight-arm-pulldown",
+    "name": "Rope Straight-Arm Pulldown",
+    "muscleGroup": "Back",
+    "secondaryMuscles": ["Shoulders"],
+    "equipment": ["cable"],
+    "difficulty": "Beginner",
+    "cue": "Keep your arms straight and pull the rope ends down and apart to your thighs.",
+    "description": "Stand facing a high cable with a rope attachment, arms straight out in front, hands gripping the two ends. Keeping your arms straight, pull the rope down in an arc to your thighs, spreading the ends apart as they pass your hips, then return slowly. The rope lets your hands separate at the bottom for an extra squeeze that a fixed straight bar doesn't allow.",
+    "avoidIf": ["shoulder"],
+    "icon": "🪢",
+    "mechanic": "Isolation",
+    "pattern": "Vertical Pull",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["hypertrophy"],
+    "homeFriendly": false,
+    "aliases": ["Rope Cable Pullover"],
+    "category": "strength"
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_10_07_EVENING);
+
+const BATCH_2026_10_08_MORNING = [
+  {
+    "id": "bodyweight-scissors-jump",
+    "name": "Scissors Jump",
+    "muscleGroup": "Full Body/Cardio",
+    "secondaryMuscles": ["Quads", "Glutes", "Hamstrings", "Calves"],
+    "equipment": ["bodyweight"],
+    "difficulty": "Intermediate",
+    "cue": "Jump from a split lunge and switch legs in the air before landing.",
+    "description": "Start in a staggered lunge, one foot forward and one back, both knees bent. Jump straight up, swinging your arms for momentum, and switch which leg is forward while you're airborne, landing softly in the opposite lunge. Keep your torso upright throughout -- leaning forward to chase height is what turns a clean landing into a stumble.",
+    "avoidIf": ["knee", "high-impact", "balance"],
+    "icon": "✂️",
+    "mechanic": "Compound",
+    "pattern": "Conditioning",
+    "force": "Explosive",
+    "unilateral": true,
+    "focus": ["power"],
+    "homeFriendly": true,
+    "aliases": ["Scissor Jumps", "Switch Lunge Jump"],
+    "category": "conditioning"
+  },
+  {
+    "id": "barbell-seated-twist",
+    "name": "Seated Barbell Twist",
+    "muscleGroup": "Core/Abs",
+    "secondaryMuscles": ["Back"],
+    "equipment": ["barbell", "bench"],
+    "difficulty": "Beginner",
+    "cue": "Sit with the bar across your shoulders and rotate your torso side to side, hips still.",
+    "description": "Sit on a flat bench with your feet planted and a barbell resting across the back of your shoulders, not your neck, hands gripping it just outside shoulder width. Keeping your hips and legs still, rotate your torso to one side, pause, then rotate through center to the other side. Move slowly and keep the weight light -- this is a mobility-and-control exercise for the obliques, not a loaded lift, and twisting a heavy bar fast is a classic way to hurt your lower back.",
+    "avoidIf": ["lower-back", "pregnancy"],
+    "icon": "🔄",
+    "mechanic": "Isolation",
+    "pattern": "Rotation",
+    "force": "Static",
+    "unilateral": false,
+    "focus": ["endurance"],
+    "homeFriendly": false,
+    "aliases": [],
+    "category": "strength"
+  },
+  {
+    "id": "dumbbell-seated-bent-over-one-arm-triceps-extension",
+    "name": "Seated Bent-Over One-Arm Dumbbell Triceps Extension",
+    "muscleGroup": "Triceps",
+    "secondaryMuscles": [],
+    "equipment": ["dumbbell", "bench"],
+    "difficulty": "Beginner",
+    "cue": "Bend forward seated, upper arm pinned to your side, and straighten your elbow behind you.",
+    "description": "Sit at the end of a bench holding a dumbbell in one hand, palm facing in, and hinge forward from the hips until your back is almost parallel to the floor, head up. Pin your upper arm against your torso with the elbow bent 90 degrees, then straighten your arm back until it's fully extended, squeezing the triceps, before lowering under control and switching arms. The bench keeps your legs still, so all the work is in the elbow, not the swing.",
+    "avoidIf": ["lower-back"],
+    "icon": "↩️",
+    "mechanic": "Isolation",
+    "pattern": "Vertical Push",
+    "force": "Push",
+    "unilateral": true,
+    "focus": ["hypertrophy"],
+    "homeFriendly": true,
+    "aliases": ["Seated One-Arm Triceps Kickback"],
+    "category": "strength"
+  },
+  {
+    "id": "dumbbell-seated-bent-over-two-arm-triceps-extension",
+    "name": "Seated Bent-Over Two-Arm Dumbbell Triceps Extension",
+    "muscleGroup": "Triceps",
+    "secondaryMuscles": [],
+    "equipment": ["dumbbell", "bench"],
+    "difficulty": "Beginner",
+    "cue": "Bend forward seated with a dumbbell in each hand and straighten both elbows behind you together.",
+    "description": "Sit at the end of a bench holding a dumbbell in each hand, palms facing in, and hinge forward from the hips until your back is almost parallel to the floor, head up. Pin both upper arms against your torso with elbows bent 90 degrees, then straighten both arms back together until fully extended, squeezing the triceps, before lowering under control. Keep your elbows fixed and don't let your torso rock to help the lift.",
+    "avoidIf": ["lower-back"],
+    "icon": "↩️",
+    "mechanic": "Isolation",
+    "pattern": "Vertical Push",
+    "force": "Push",
+    "unilateral": false,
+    "focus": ["hypertrophy"],
+    "homeFriendly": true,
+    "aliases": ["Seated Two-Arm Triceps Kickback"],
+    "category": "strength"
+  },
+  {
+    "id": "bodyweight-seated-biceps-stretch",
+    "name": "Seated Biceps Stretch",
+    "muscleGroup": "Biceps",
+    "secondaryMuscles": ["Chest", "Shoulders"],
+    "equipment": ["bodyweight"],
+    "difficulty": "Beginner",
+    "cue": "Sit with hands planted behind you, fingers pointing away, and slide your body forward.",
+    "description": "Sit on the floor with your knees bent and feet flat, and place your hands flat on the floor behind you with fingers pointing away from your body. Keeping your palms down, slowly slide your hips forward away from your hands until you feel a stretch along the front of your upper arms. Hold still rather than bouncing, and keep your spine tall instead of sinking into your shoulders.",
+    "avoidIf": ["wrist", "shoulder"],
+    "icon": "💪",
+    "mechanic": "Isolation",
+    "pattern": "Stretch",
+    "force": "Static",
+    "unilateral": false,
+    "focus": ["mobility"],
+    "homeFriendly": true,
+    "aliases": ["Seated Biceps"],
+    "category": "cooldown",
+    "hold": "2 × 30s"
+  },
+  {
+    "id": "cable-seated-shoulder-press",
+    "name": "Seated Cable Shoulder Press",
+    "muscleGroup": "Shoulders",
+    "secondaryMuscles": ["Triceps"],
+    "equipment": ["cable", "bench"],
+    "difficulty": "Intermediate",
+    "cue": "Sit between two high-set cables and press both handles straight overhead.",
+    "description": "Sit on an upright bench positioned between two cable stacks set to shoulder height, back against the pad, gripping a handle in each hand at shoulder level with palms forward. Press both handles straight overhead until your arms lock out, then lower back to shoulder height under control. Keep your back against the pad throughout -- if your chest comes off it to help the press, the cables are set too heavy.",
+    "avoidIf": ["shoulder", "neck"],
+    "icon": "🏋️",
+    "mechanic": "Compound",
+    "pattern": "Vertical Push",
+    "force": "Push",
+    "unilateral": false,
+    "focus": ["strength", "hypertrophy"],
+    "homeFriendly": false,
+    "aliases": [],
+    "category": "strength"
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_10_08_MORNING);
+
+const BATCH_2026_10_08_EVENING = [
+  {
+    "id": "barbell-seated-good-morning",
+    "name": "Seated Good Mornings",
+    "muscleGroup": "Back",
+    "secondaryMuscles": ["Glutes", "Hamstrings"],
+    "equipment": ["barbell", "bench"],
+    "difficulty": "Intermediate",
+    "cue": "Seated on a low bench with the bar on your back, hinge forward and stand it back up.",
+    "description": "Take a light barbell from a rack onto your upper back, below your neck, and sit on a low bench set inside the rack, feet planted a little wider than hip-width. Keeping your legs still, hinge forward at the hips with a flat back as far as you can without rounding, then drive back upright by squeezing your glutes and lower back. With your legs out of it, the lower back takes the whole load, so start very light and set the rack's safety pins just below the bar's lowest point.",
+    "avoidIf": ["lower-back"],
+    "icon": "🌅",
+    "mechanic": "Compound",
+    "pattern": "Hinge",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["strength"],
+    "homeFriendly": false,
+    "aliases": ["Seated Barbell Good Morning", "Barbell Seated Good Morning"],
+    "category": "strength"
+  },
+  {
+    "id": "barbell-seated-close-grip-concentration-curl",
+    "name": "Seated Close-Grip Concentration Barbell Curl",
+    "muscleGroup": "Biceps",
+    "secondaryMuscles": [],
+    "equipment": ["barbell"],
+    "difficulty": "Beginner",
+    "cue": "Elbows braced on your inner thighs, curl a close-grip barbell up together.",
+    "description": "Sit down and take a close, underhand grip on a barbell, hands about six inches apart, then lean forward and rest the backs of both upper arms against your inner thighs with the bar hanging down. Curl it up toward your chest, squeeze hard at the top, then lower slowly under control. Bracing both elbows removes all momentum, so use far less weight than you'd curl standing.",
+    "avoidIf": [],
+    "icon": "💪",
+    "mechanic": "Isolation",
+    "pattern": "Vertical Pull",
+    "force": "Pull",
+    "unilateral": false,
+    "focus": ["hypertrophy"],
+    "homeFriendly": true,
+    "aliases": ["Seated Close-Grip Concentration Curl", "Barbell Seated Close-Grip Concentration Curl"],
+    "category": "strength"
+  },
+  {
+    "id": "bodyweight-seated-front-deltoid-stretch",
+    "name": "Seated Front Deltoid Stretch",
+    "muscleGroup": "Shoulders",
+    "secondaryMuscles": ["Chest"],
+    "equipment": ["bodyweight"],
+    "difficulty": "Beginner",
+    "cue": "Sit tall, arms straight out to your sides, and ease them back until the front of your shoulders stretches.",
+    "description": "Sit upright on the floor with your knees bent and stretch your arms straight out to your sides at shoulder height, palms facing the floor. Keeping your elbows straight and your chest lifted, slowly move both arms back behind you as far as is comfortable, until you feel the stretch across the front of your shoulders and chest. Hold it there and breathe, without arching your lower back to get the arms further.",
+    "avoidIf": ["wrist", "shoulder"],
+    "icon": "🧘",
+    "pattern": "Stretch",
+    "force": "Static",
+    "focus": ["mobility"],
+    "category": "cooldown",
+    "hold": "2 × 30s",
+    "aliases": ["Seated Front Deltoid"]
+  },
+  {
+    "id": "bodyweight-seated-overhead-stretch",
+    "name": "Seated Overhead Stretch",
+    "muscleGroup": "Back",
+    "secondaryMuscles": ["Shoulders"],
+    "equipment": ["bodyweight"],
+    "difficulty": "Beginner",
+    "cue": "Soles together, one hand behind your head — lift that elbow and lean to the other side.",
+    "description": "Sit up straight on the floor with the soles of your feet together a little in front of your hips. Put one hand on the floor beside you and the other behind your head, then lift that elbow toward the ceiling as you lean your torso to the opposite side. Hold, feeling it down the side of your body under the raised arm, then switch sides.",
+    "avoidIf": ["shoulder"],
+    "icon": "🧘",
+    "pattern": "Stretch",
+    "force": "Static",
+    "focus": ["mobility"],
+    "category": "cooldown",
+    "hold": "2 × 30s each side",
+    "aliases": []
+  }
+];
+EXERCISES.push.apply(EXERCISES, BATCH_2026_10_08_EVENING);
 
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { MUSCLE_GROUPS, EQUIPMENT, CONDITIONS, SPORTS, STRETCH_TYPES, EXERCISES };
