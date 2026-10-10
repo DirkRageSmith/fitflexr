@@ -159,6 +159,86 @@
         "https://www.calisthenics.build/en/exercises/pseudo-planche-push-up",
         "https://liftmanual.com/pseudo-planche-push-up/"
       ]
+    },
+    {
+      "id": "tempo-push-up",
+      "verdict": "ok",
+      "sources": [
+        "https://www.muscleandstrength.com/exercises/eccentric-only-push-up",
+        "https://www.zing.coach/exercises/slow-eccentric-push-ups"
+      ]
+    },
+    {
+      "id": "deficit-push-up",
+      "verdict": "ok",
+      "sources": [
+        "https://generationiron.com/deficit-push-up-exercise-guide/",
+        "https://www.motra.com/exercises/deficitPushUp"
+      ]
+    },
+    {
+      "id": "wall-push-up",
+      "verdict": "ok",
+      "sources": [
+        "https://www.masterclass.com/articles/wall-push-ups",
+        "https://www.strengthlog.com/push-up-against-wall/"
+      ]
+    },
+    {
+      "id": "chest-dip",
+      "verdict": "ok",
+      "sources": [
+        "https://www.puregym.com/exercises/chest/dips/",
+        "https://liftmanual.com/chest-dip/"
+      ]
+    },
+    {
+      "id": "band-chest-press",
+      "verdict": "ok",
+      "sources": [
+        "https://www.motra.com/exercises/resistanceBandChestPress",
+        "https://www.exerciselibrary.com/exercise/standing-band-chest-press/"
+      ]
+    },
+    {
+      "id": "band-chest-fly",
+      "verdict": "ok",
+      "sources": [
+        "https://musclewiki.com/exercise/band-chest-fly",
+        "https://liftmanual.com/band-chest-fly/"
+      ]
+    },
+    {
+      "id": "band-high-to-low-crossover",
+      "verdict": "ok",
+      "sources": [
+        "https://bodybuilding-wizard.com/cable-crossover/",
+        "https://smartreps.app/en/exercises/high-to-low-cable-crossover"
+      ]
+    },
+    {
+      "id": "band-low-to-high-crossover",
+      "verdict": "ok",
+      "sources": [
+        "https://www.chrisadamspersonaltraining.com/low-to-high-cable-crossover",
+        "https://liftmanual.com/cable-upper-chest-crossovers/"
+      ]
+    },
+    {
+      "id": "band-incline-chest-press",
+      "verdict": "ok",
+      "sources": [
+        "https://liftmanual.com/band-standing-incline-chest-press/",
+        "https://austerfit.com/blogs/blog/training-the-upper-chest-with-the-dynamic-band-incline-press"
+      ]
+    },
+    {
+      "id": "cable-chest-fly",
+      "verdict": "ok",
+      "sources": [
+        "https://www.setforset.com/blogs/news/cable-flys",
+        "https://fitnessvolt.com/standing-cable-chest-fly-guide/"
+      ]
     }
   ]
 }
