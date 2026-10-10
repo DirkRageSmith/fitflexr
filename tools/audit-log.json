@@ -79,6 +79,86 @@
         "https://dumbbellsdirect.com/blogs/dumbbell-exercises-specific-movements/dumbbell-squeeze-press",
         "https://revyfit.com/exercises/dumbbell-squeeze-press"
       ]
+    },
+    {
+      "id": "dumbbell-flat-fly",
+      "verdict": "ok",
+      "sources": [
+        "https://www.ritfitsports.com/blogs/article/how-to-do-dumbbell-fly",
+        "https://bodybuilding-wizard.com/flat-bench-dumbbell-flyes/"
+      ]
+    },
+    {
+      "id": "dumbbell-incline-fly",
+      "verdict": "ok",
+      "sources": [
+        "https://bodybuilding-wizard.com/incline-dumbbell-fly/",
+        "https://musclewiki.com/exercise/dumbbell-incline-chest-fly"
+      ]
+    },
+    {
+      "id": "push-up",
+      "verdict": "ok",
+      "sources": [
+        "https://www.builtlean.com/how-to-proper-push-up-form/",
+        "https://blog.nasm.org/nasm-guide-to-push-ups/form-and-technique"
+      ]
+    },
+    {
+      "id": "incline-push-up",
+      "verdict": "ok",
+      "sources": [
+        "https://www.madbarz.com/blog/134-incline-vs-decline-push-ups-whats-the-differe",
+        "https://bodypass.net/exercises/incline-decline-pushups-difference/"
+      ]
+    },
+    {
+      "id": "decline-push-up",
+      "verdict": "ok",
+      "sources": [
+        "https://learn.athleanx.com/articles/how-to-do-decline-pushups",
+        "https://julielohre.com/decline-push-up/"
+      ]
+    },
+    {
+      "id": "knee-push-up",
+      "verdict": "ok",
+      "sources": [
+        "https://www.nasm.org/resource-center/exercise-library/modified-push-up",
+        "https://www.masterclass.com/articles/knee-push-ups-guide"
+      ]
+    },
+    {
+      "id": "wide-push-up",
+      "verdict": "ok",
+      "sources": [
+        "https://www.puregym.com/exercises/chest/press-up/wide-grip-push-ups/",
+        "https://www.muscleandstrength.com/exercises/wide-grip-push-ups.html"
+      ]
+    },
+    {
+      "id": "diamond-push-up",
+      "verdict": "ok",
+      "sources": [
+        "https://powerliftingtechnique.com/diamond-push-up/",
+        "https://www.coachweb.com/bodyweight-exercises/7297/how-to-do-a-diamond-push-up"
+      ]
+    },
+    {
+      "id": "archer-push-up",
+      "verdict": "ok",
+      "sources": [
+        "https://www.masterclass.com/articles/archer-push-up-guide",
+        "https://gymless.org/archer-push-ups/"
+      ]
+    },
+    {
+      "id": "pseudo-planche-push-up",
+      "verdict": "ok",
+      "sources": [
+        "https://www.calisthenics.build/en/exercises/pseudo-planche-push-up",
+        "https://liftmanual.com/pseudo-planche-push-up/"
+      ]
     }
   ]
 }
