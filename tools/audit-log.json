@@ -319,6 +319,86 @@
         "https://hortonbarbell.com/trx-chest-fly-how-to-muscles-worked-benefits/",
         "https://liftmanual.com/suspension-fly/"
       ]
+    },
+    {
+      "id": "kettlebell-floor-press",
+      "verdict": "ok",
+      "sources": [
+        "https://www.strengthlog.com/kettlebell-floor-press/",
+        "https://www.muscleandstrength.com/exercises/kettlebell-floor-press"
+      ]
+    },
+    {
+      "id": "single-arm-kettlebell-bench-press",
+      "verdict": "ok",
+      "sources": [
+        "https://www.muscleandstrength.com/exercises/one-arm-kettlebell-bench-press",
+        "https://www.motra.com/exercises/kettlebellOneArmBenchPress"
+      ]
+    },
+    {
+      "id": "dumbbell-floor-press",
+      "verdict": "ok",
+      "sources": [
+        "https://www.muscleandstrength.com/exercises/dumbbell-floor-press.html",
+        "https://www.zing.coach/exercises/dumbbell-floor-press"
+      ]
+    },
+    {
+      "id": "dumbbell-pullover",
+      "verdict": "ok",
+      "sources": [
+        "https://www.hevyapp.com/exercises/dumbbell-pullover/",
+        "https://www.setforset.com/blogs/news/dumbbell-pullover"
+      ]
+    },
+    {
+      "id": "single-arm-dumbbell-bench-press",
+      "verdict": "ok",
+      "sources": [
+        "https://www.muscleandstrength.com/exercises/one-arm-dumbbell-bench-press.html",
+        "https://www.puregym.com/exercises/chest/bench-press/single-arm-chest-press/"
+      ]
+    },
+    {
+      "id": "alternating-dumbbell-bench-press",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/alternating-dumbbell-bench-press",
+        "https://hortonbarbell.com/alternating-db-bench-press/"
+      ]
+    },
+    {
+      "id": "pull-up",
+      "verdict": "ok",
+      "sources": [
+        "https://smartreps.app/en/exercises/pull-ups",
+        "https://www.gymnasetips.com/how-to-do-a-proper-pull-up/"
+      ]
+    },
+    {
+      "id": "chin-up",
+      "verdict": "ok",
+      "sources": [
+        "https://www.masterclass.com/articles/chin-up-guide",
+        "https://barbend.com/chin-up/"
+      ]
+    },
+    {
+      "id": "neutral-grip-pull-up",
+      "verdict": "ok",
+      "sources": [
+        "https://bullbarfit.com/blogs/q-as/how-to-perform-neutral-grip-pull-ups-and-what-are-their-benefits",
+        "https://www.50pullups.com/neutral-grip-pull-ups"
+      ]
+    },
+    {
+      "id": "wide-grip-pull-up",
+      "verdict": "ok",
+      "sources": [
+        "https://www.masterclass.com/articles/wide-grip-pull-ups-guide",
+        "https://www.muscleandstrength.com/exercises/wide-grip-pull-up.html"
+      ]
     }
   ]
 }
