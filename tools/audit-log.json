@@ -239,6 +239,86 @@
         "https://www.setforset.com/blogs/news/cable-flys",
         "https://fitnessvolt.com/standing-cable-chest-fly-guide/"
       ]
+    },
+    {
+      "id": "high-cable-crossover",
+      "verdict": "ok",
+      "sources": [
+        "https://squatwolf.com/blogs/fitness/how-to-do-cable-crossover-benefits-variations-and-mistakes",
+        "https://www.fitmetrics.ch/en/exercise/653eba1ef1295-standing-high-cable-crossover"
+      ]
+    },
+    {
+      "id": "low-cable-crossover",
+      "verdict": "ok",
+      "sources": [
+        "https://www.gymstreak.com/exercises/low-cable-crossover",
+        "https://www.motra.com/exercises/cableCrossoverLow"
+      ]
+    },
+    {
+      "id": "cable-chest-press",
+      "verdict": "ok",
+      "sources": [
+        "https://weighttraining.guide/exercises/standing-cable-chest-press/",
+        "https://www.motra.com/exercises/cableStandingChestPress"
+      ]
+    },
+    {
+      "id": "incline-cable-chest-press",
+      "verdict": "ok",
+      "sources": [
+        "https://www.muscleandstrength.com/exercises/incline-cable-chest-press",
+        "https://exrx.net/WeightExercises/PectoralClavicular/CBStandingInclineChestPress"
+      ]
+    },
+    {
+      "id": "machine-chest-press",
+      "verdict": "ok",
+      "sources": [
+        "https://www.nasm.org/resource-center/exercise-library/chest-press-machine",
+        "https://www.garagegymreviews.com/how-to-use-a-chest-press-machine"
+      ]
+    },
+    {
+      "id": "pec-deck-fly",
+      "verdict": "ok",
+      "sources": [
+        "https://liftmanual.com/lever-pec-deck-fly/",
+        "https://fitsociety.io/exercises/chest/pec-deck-machine-fly"
+      ]
+    },
+    {
+      "id": "incline-machine-chest-press",
+      "verdict": "ok",
+      "sources": [
+        "https://gravitus.com/guides/exercises/incline-chest-press/",
+        "https://bodybuilding-wizard.com/machine-incline-press-exercise/"
+      ]
+    },
+    {
+      "id": "hammer-strength-chest-press",
+      "verdict": "ok",
+      "sources": [
+        "https://hortonbarbell.com/hammer-strength-chest-press-how-to-muscles-worked/",
+        "https://bodybuilding-wizard.com/hammer-strength-bench-press-chest-exercise/"
+      ]
+    },
+    {
+      "id": "trx-chest-press",
+      "verdict": "ok",
+      "sources": [
+        "https://www.trxtraining.com/blogs/news/trx-chest-press",
+        "https://liftmanual.com/suspension-chest-press/"
+      ]
+    },
+    {
+      "id": "trx-chest-fly",
+      "verdict": "ok",
+      "sources": [
+        "https://hortonbarbell.com/trx-chest-fly-how-to-muscles-worked-benefits/",
+        "https://liftmanual.com/suspension-fly/"
+      ]
     }
   ]
 }
