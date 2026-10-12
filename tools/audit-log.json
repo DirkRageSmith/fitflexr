@@ -399,6 +399,86 @@
         "https://www.masterclass.com/articles/wide-grip-pull-ups-guide",
         "https://www.muscleandstrength.com/exercises/wide-grip-pull-up.html"
       ]
+    },
+    {
+      "id": "commando-pull-up",
+      "verdict": "ok",
+      "sources": [
+        "https://www.masterclass.com/articles/commando-pull-ups-guide",
+        "https://bodybuilding-wizard.com/commando-pull-ups-tarzan-pull-ups/"
+      ]
+    },
+    {
+      "id": "archer-pull-up",
+      "verdict": "ok",
+      "sources": [
+        "https://www.muscleandstrength.com/exercises/archer-pull-up",
+        "https://fitnessvolt.com/archer-pull-up-guide/"
+      ]
+    },
+    {
+      "id": "scapular-pull-up",
+      "verdict": "ok",
+      "sources": [
+        "https://www.trainwell.net/exercises/scapular-pull-up",
+        "https://www.hevyapp.com/exercises/scapular-pull-ups/"
+      ]
+    },
+    {
+      "id": "negative-pull-up",
+      "verdict": "ok",
+      "sources": [
+        "https://www.inspireusafoundation.org/negative-eccentric-pull-ups/",
+        "https://bullbarfit.com/blogs/updates/negative-pull-ups-for-beginners-the-eccentric-skill-that-gets-you-to-your-first-strict-rep"
+      ]
+    },
+    {
+      "id": "inverted-row",
+      "verdict": "ok",
+      "sources": [
+        "https://www.hevyapp.com/exercises/how-to-inverted-row/",
+        "https://www.nerdfitness.com/blog/inverted-row-are-you-missing-out-on-this-great-exercise/"
+      ]
+    },
+    {
+      "id": "feet-elevated-inverted-row",
+      "verdict": "ok",
+      "sources": [
+        "https://exrx.net/WeightExercises/BackGeneral/BWSupineRowFeetElevated",
+        "https://www.muscleandstrength.com/exercises/smith-machine-bodyweight-row.html"
+      ]
+    },
+    {
+      "id": "towel-row",
+      "verdict": "ok",
+      "sources": [
+        "https://fitwill.app/exercise/3165/bodyweight-standing-row-with-towel/",
+        "https://fitwill.app/exercise/3506/bodyweight-row-in-doorway/"
+      ]
+    },
+    {
+      "id": "superman",
+      "verdict": "ok",
+      "sources": [
+        "https://www.healthline.com/health/fitness/superman-exercise",
+        "https://cathe.com/superman-exercise-a-no-equipment-lower-back-and-glutes-strengthener/"
+      ]
+    },
+    {
+      "id": "prone-y-t-w-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://app.fit-pa.com/exercises/prone-y-t-w-raise",
+        "https://1pixelworkout.com/exercises/prone-ytw-raises"
+      ]
+    },
+    {
+      "id": "bodyweight-back-extension",
+      "verdict": "ok",
+      "sources": [
+        "https://www.strengthlog.com/floor-back-extension/",
+        "https://www.ritfitsports.com/blogs/article/how-to-do-back-extensions-at-home"
+      ]
     }
   ]
 }
