@@ -479,6 +479,86 @@
         "https://www.strengthlog.com/floor-back-extension/",
         "https://www.ritfitsports.com/blogs/article/how-to-do-back-extensions-at-home"
       ]
+    },
+    {
+      "id": "reverse-snow-angel",
+      "verdict": "ok",
+      "sources": [
+        "https://flabfix.com/how-to-do-reverse-snow-angels-properly/",
+        "https://www.zing.coach/exercises/reverse-snow-angel"
+      ]
+    },
+    {
+      "id": "reverse-plank",
+      "verdict": "ok",
+      "sources": [
+        "https://www.masterclass.com/articles/reverse-plank-exercise-guide",
+        "https://www.hevyapp.com/exercises/how-to-reverse-plank/"
+      ]
+    },
+    {
+      "id": "bird-dog-row-hold",
+      "verdict": "ok",
+      "sources": [
+        "https://www.craftsbury.com/blog/move-of-the-month-bird-dog-row",
+        "https://experiencelife.lifetime.life/article/how-to-do-the-bird-dog-row/"
+      ]
+    },
+    {
+      "id": "single-arm-dumbbell-row",
+      "verdict": "ok",
+      "sources": [
+        "https://www.puregym.com/exercises/back/rows/single-arm-dumbbell-row/",
+        "https://nfpt.com/proper-form-for-a-one-arm-dumbbell-row/"
+      ]
+    },
+    {
+      "id": "chest-supported-incline-dumbbell-row",
+      "verdict": "ok",
+      "sources": [
+        "https://www.strengthlog.com/chest-supported-dumbbell-row/",
+        "https://www.motra.com/exercises/dumbbellInclineBenchRow"
+      ]
+    },
+    {
+      "id": "bent-over-dumbbell-row",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/dumbbell-bent-over-row",
+        "https://en.wikipedia.org/wiki/Bent-over_row"
+      ]
+    },
+    {
+      "id": "gorilla-dumbbell-row",
+      "verdict": "ok",
+      "sources": [
+        "https://www.strengthlog.com/gorilla-row/",
+        "https://experiencelife.lifetime.life/article/break-it-down-the-gorilla-row/"
+      ]
+    },
+    {
+      "id": "dead-stop-dumbbell-row",
+      "verdict": "ok",
+      "sources": [
+        "https://tonygentilcore.com/2011/04/exercises-you-should-be-doing-deadstop-db-row/",
+        "https://www.gettfit.com/exercise-database/back/dead-stop-one-arm-dumbbell-row/"
+      ]
+    },
+    {
+      "id": "dumbbell-high-pull",
+      "verdict": "ok",
+      "sources": [
+        "https://www.motra.com/exercises/dumbbellHighPull",
+        "https://repfitness.com/blogs/training/dumbbell-high-pull"
+      ]
+    },
+    {
+      "id": "dumbbell-shrug",
+      "verdict": "ok",
+      "sources": [
+        "https://www.strengthlog.com/dumbbell-shrug/",
+        "https://fitbod.me/exercises/dumbbell-shrug"
+      ]
     }
   ]
 }
