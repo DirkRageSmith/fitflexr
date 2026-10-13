@@ -559,6 +559,91 @@
         "https://www.strengthlog.com/dumbbell-shrug/",
         "https://fitbod.me/exercises/dumbbell-shrug"
       ]
+    },
+    {
+      "id": "kroc-row",
+      "verdict": "ok",
+      "sources": [
+        "https://www.setforset.com/blogs/news/kroc-rows",
+        "https://www.allthingsgym.com/kroc-rows-matt-kroczaleski/"
+      ]
+    },
+    {
+      "id": "incline-prone-dumbbell-row",
+      "verdict": "fix",
+      "sources": [
+        "https://fitbod.me/exercises/incline-dumbbell-row",
+        "https://www.puregym.com/exercises/back/rows/incline-row/"
+      ],
+      "problem": "The description sends the dumbbells 'toward your hips,' but every sourced version of this row pulls them up toward the lower ribs/chest with the elbows driving back, not down toward the hips. On a chest-supported incline row there is no hip to pull toward — the torso is pinned flat to the bench the whole rep.",
+      "proposed": {
+        "cue": "Chest on the incline, row the dumbbells up toward your ribs.",
+        "description": "Lie chest-down on an incline bench with a dumbbell in each hand hanging down. Row them up toward your lower ribs by driving your elbows back, squeezing your shoulder blades, then lower slowly. The supported position isolates the mid-back cleanly."
+      }
+    },
+    {
+      "id": "barbell-bent-over-row",
+      "verdict": "ok",
+      "sources": [
+        "https://www.puregym.com/exercises/back/rows/barbell-bent-over-row/",
+        "https://www.muscleandstrength.com/exercises/bent-over-barbell-row.html"
+      ]
+    },
+    {
+      "id": "pendlay-row",
+      "verdict": "ok",
+      "sources": [
+        "https://breakingmuscle.com/pendlay-row/",
+        "https://www.garagegymreviews.com/pendlay-row"
+      ]
+    },
+    {
+      "id": "t-bar-row",
+      "verdict": "ok",
+      "sources": [
+        "https://www.puregym.com/exercises/back/rows/landmine-row/",
+        "https://www.gymshark.com/blog/article/how-to-t-bar-row"
+      ]
+    },
+    {
+      "id": "yates-row",
+      "verdict": "ok",
+      "sources": [
+        "https://fitnessvolt.com/yates-row/",
+        "https://bodybuilding-wizard.com/yates-row-back-exercise-explained/"
+      ]
+    },
+    {
+      "id": "barbell-shrug",
+      "verdict": "ok",
+      "sources": [
+        "https://www.muscleandstrength.com/exercises/barbell-shrug.html",
+        "https://bodybuilding-wizard.com/barbell-shrug/"
+      ]
+    },
+    {
+      "id": "rack-pull",
+      "verdict": "ok",
+      "sources": [
+        "https://barbend.com/rack-pulls/",
+        "https://legionathletics.com/rack-pulls/"
+      ]
+    },
+    {
+      "id": "conventional-deadlift",
+      "verdict": "ok",
+      "sources": [
+        "https://stronglifts.com/deadlift/",
+        "https://www.powerliftingtowin.com/powerlifting-technique-how-to-deadlift/"
+      ]
+    },
+    {
+      "id": "single-arm-kettlebell-row",
+      "verdict": "ok",
+      "sources": [
+        "https://www.trainwell.net/exercises/single-kettlebell-bench-one-arm-row",
+        "https://www.strongermobileapp.com/exercises/single-arm-kettlebell-row"
+      ]
     }
   ]
 }
