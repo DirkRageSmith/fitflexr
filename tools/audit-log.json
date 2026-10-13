@@ -644,6 +644,91 @@
         "https://www.trainwell.net/exercises/single-kettlebell-bench-one-arm-row",
         "https://www.strongermobileapp.com/exercises/single-arm-kettlebell-row"
       ]
+    },
+    {
+      "id": "kettlebell-gorilla-row",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/gorilla-rows",
+        "https://fitnessvolt.com/gorilla-row/"
+      ]
+    },
+    {
+      "id": "cable-lat-pulldown",
+      "verdict": "ok",
+      "sources": [
+        "https://powerliftingtechnique.com/lat-pulldowns/",
+        "https://www.builtlean.com/lat-pulldown/"
+      ]
+    },
+    {
+      "id": "close-grip-cable-lat-pulldown",
+      "verdict": "ok",
+      "sources": [
+        "https://nfpt.com/close-grip-lat-pulldown-v-bar/",
+        "https://www.muscleandstrength.com/exercises/v-bar-pull-down"
+      ]
+    },
+    {
+      "id": "wide-grip-cable-lat-pulldown",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/wide-grip-lat-pulldown",
+        "https://www.puregym.com/exercises/back/lat-exercises/wide-grip-lat-pulldown/"
+      ]
+    },
+    {
+      "id": "straight-arm-cable-pulldown",
+      "verdict": "ok",
+      "sources": [
+        "https://www.setforset.com/blogs/news/straight-arm-pulldown",
+        "https://athlemove.com/exercises/cable-straight-arm-pulldown"
+      ]
+    },
+    {
+      "id": "seated-cable-row",
+      "verdict": "ok",
+      "sources": [
+        "https://repfitness.com/blogs/training/how-to-do-a-seated-cable-low-row",
+        "https://your-pt.com/exercises/seated-row/"
+      ]
+    },
+    {
+      "id": "single-arm-cable-row",
+      "verdict": "ok",
+      "sources": [
+        "https://www.strongermobileapp.com/exercises/single-arm-cable-row",
+        "https://www.muscleandstrength.com/exercises/one-arm-cable-row.html"
+      ]
+    },
+    {
+      "id": "cable-face-pull",
+      "verdict": "ok",
+      "sources": [
+        "https://www.muscleandstrength.com/exercises/cable-face-pull",
+        "https://julielohre.com/face-pulls/"
+      ]
+    },
+    {
+      "id": "cable-pullover",
+      "verdict": "fix",
+      "sources": [
+        "https://powerliftingtechnique.com/cable-pullovers/",
+        "https://gravitus.com/guides/exercises/cable-lat-pullover/"
+      ],
+      "problem": "The description has you stand upright facing the cable the whole rep. Every sourced version of a cable pullover hinges forward at the hips about 30-45 degrees with the arms reaching overhead in line with the cable — that forward hinge is what gives the exercise its long lat stretch and is the one thing that tells it apart from a straight-arm pulldown (which is done standing tall). As written, this card describes the same body position as straight-arm-cable-pulldown, just with the arms starting slightly bent instead of straight.",
+      "proposed": {
+        "cue": "Hinge forward at the hips, then sweep the bar down to your thighs with straight-ish arms.",
+        "description": "Hinge forward at the hips about 30 to 45 degrees with soft knees and a braced core, then reach the bar straight overhead in line with the cable. Keeping your arms nearly straight, sweep it down in an arc to your thighs using your lats, then return under control to the stretch. The forward hinge is what gives this move its long stretch — stand upright and you are just doing a straight-arm pulldown."
+      }
+    },
+    {
+      "id": "lat-pulldown-machine",
+      "verdict": "ok",
+      "sources": [
+        "https://www.hevyapp.com/exercises/how-to-lat-pulldown-machine/",
+        "https://row.gymshark.com/blog/article/master-the-lat-pulldown"
+      ]
     }
   ]
 }
