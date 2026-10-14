@@ -729,6 +729,91 @@
         "https://www.hevyapp.com/exercises/how-to-lat-pulldown-machine/",
         "https://row.gymshark.com/blog/article/master-the-lat-pulldown"
       ]
+    },
+    {
+      "id": "seated-row-machine",
+      "verdict": "fix",
+      "sources": [
+        "https://gravitus.com/guides/exercises/seated-row/",
+        "https://gravitus.com/guides/exercises/machine-seated-row/"
+      ],
+      "problem": "The description has the lifter's chest against a pad, with the pad credited for keeping the lower back safe. The plain seated row machine (distinct from this same batch's chest-supported-row-machine) has a foot platform, not a chest pad — feet planted, knees soft, torso held upright by the lifter's own core and lower back, not by a pad. As written, this card describes the exact feature that is supposed to separate it from chest-supported-row-machine, so the two converge on the same setup.",
+      "proposed": {
+        "cue": "Feet braced on the platform, pull the handles to your torso without rocking.",
+        "description": "Sit at the row machine with your feet planted on the footplate, knees slightly bent, and grip the handles with your torso upright and arms extended. Pull them toward your torso by driving your elbows back and squeezing your shoulder blades together, then return slowly over 2-3 seconds. There is no chest pad on this machine — your own core and lower back hold the torso still, which is what tells it apart from the chest-supported row."
+      }
+    },
+    {
+      "id": "chest-supported-row-machine",
+      "verdict": "ok",
+      "sources": [
+        "https://gravitus.com/guides/exercises/chest-supported-row/",
+        "https://trackyourlift.com/exercises/chest-supported-row-machine/"
+      ]
+    },
+    {
+      "id": "hammer-strength-row",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/hammerstrength-iso-row",
+        "https://greenphysique.com/in-the-gym-equipment-instruction/hammer-strength-machine-row"
+      ]
+    },
+    {
+      "id": "assisted-pull-up-machine",
+      "verdict": "ok",
+      "sources": [
+        "https://www.puregym.com/exercises/back/pull-up/assisted-pull-ups/",
+        "https://www.strongermobileapp.com/exercises/assisted-pull-up"
+      ]
+    },
+    {
+      "id": "back-extension-machine",
+      "verdict": "ok",
+      "sources": [
+        "https://www.masterclass.com/articles/back-extension-exercise-guide",
+        "https://workoutlabs.com/exercise-guide/back-extensions/"
+      ]
+    },
+    {
+      "id": "resistance-band-lat-pulldown",
+      "verdict": "ok",
+      "sources": [
+        "https://www.trainwell.net/exercises/band-lat-pulldown",
+        "https://www.hevyapp.com/exercises/lat-pulldown-band/"
+      ]
+    },
+    {
+      "id": "resistance-band-row",
+      "verdict": "ok",
+      "sources": [
+        "https://www.litmethod.com/blogs/lit-blog/resistance-band-rows",
+        "https://gethealthyu.com/resistance-band-row/"
+      ]
+    },
+    {
+      "id": "band-pull-apart",
+      "verdict": "ok",
+      "sources": [
+        "https://www.trainwell.net/exercises/band-pull-apart",
+        "https://www.muscleandstrength.com/exercises/band-pull-apart"
+      ]
+    },
+    {
+      "id": "band-straight-arm-pulldown",
+      "verdict": "ok",
+      "sources": [
+        "https://www.setforset.com/blogs/news/straight-arm-pulldown",
+        "https://liftmanual.com/band-straight-arm-pulldown/"
+      ]
+    },
+    {
+      "id": "band-face-pull",
+      "verdict": "ok",
+      "sources": [
+        "https://www.strengthlog.com/banded-face-pull/",
+        "https://www.trainwell.net/exercises/band-face-pull"
+      ]
     }
   ]
 }
