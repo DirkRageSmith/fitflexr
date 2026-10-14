@@ -814,6 +814,86 @@
         "https://www.strengthlog.com/banded-face-pull/",
         "https://www.trainwell.net/exercises/band-face-pull"
       ]
+    },
+    {
+      "id": "band-single-arm-row",
+      "verdict": "ok",
+      "sources": [
+        "https://fitwill.app/exercise/4575/band-standing-single-arm-row/",
+        "https://www.setforset.com/blogs/news/resistance-band-rows"
+      ]
+    },
+    {
+      "id": "trx-row",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/trx-row",
+        "https://hortonbarbell.com/trx-row-how-to-muscles-worked-benefits/"
+      ]
+    },
+    {
+      "id": "trx-single-arm-row",
+      "verdict": "ok",
+      "sources": [
+        "https://www.acefitness.org/resources/everyone/exercise-library/92/trx-reg-single-arm-row/",
+        "https://www.trxtraining.com/blogs/news/trx-weekly-exercise-trx-single-arm-row"
+      ]
+    },
+    {
+      "id": "pike-push-up",
+      "verdict": "ok",
+      "sources": [
+        "https://antranik.org/pike-pushups/",
+        "https://steelsupplements.com/blogs/steel-blog/how-to-do-pike-push-ups-form-benefits"
+      ]
+    },
+    {
+      "id": "feet-elevated-pike-push-up",
+      "verdict": "ok",
+      "sources": [
+        "https://library.theprehabguys.com/vimeo-video/pike-push-up-legs-elevated/",
+        "https://ensomovement.com/blog/training/exercise-database/foot-elevated-pike-push-up/"
+      ]
+    },
+    {
+      "id": "wall-handstand-hold",
+      "verdict": "ok",
+      "sources": [
+        "https://torokhtiy.com/blogs/guides/how-to-do-a-wall-handstand",
+        "https://ensomovement.com/blog/training/exercise-database/chest-to-wall-handstand-posture/"
+      ]
+    },
+    {
+      "id": "wall-walk",
+      "verdict": "ok",
+      "sources": [
+        "https://hortonbarbell.com/wall-walks-how-to-muscles-worked-benefits/",
+        "https://dieringe.com/exercises/wall-walks"
+      ]
+    },
+    {
+      "id": "dumbbell-lateral-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://learn.athleanx.com/articles/shoulders-for-men/how-to-do-lateral-raises",
+        "https://repfitness.com/blogs/training/how-to-do-dumbbell-lateral-raises"
+      ]
+    },
+    {
+      "id": "dumbbell-front-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://julielohre.com/db-front-raise-exercise/",
+        "https://fitbod.me/exercises/dumbbell-front-raise"
+      ]
+    },
+    {
+      "id": "dumbbell-rear-delt-fly",
+      "verdict": "ok",
+      "sources": [
+        "https://dumbbellsdirect.com/blogs/dumbbell-exercises-specific-movements/dumbbell-rear-delt-fly",
+        "https://anabolicaliens.com/blogs/the-signal/the-dumbbell-rear-delt-fly-101-how-to-train-your-rear-deltoids"
+      ]
     }
   ]
 }
