@@ -894,6 +894,93 @@
         "https://dumbbellsdirect.com/blogs/dumbbell-exercises-specific-movements/dumbbell-rear-delt-fly",
         "https://anabolicaliens.com/blogs/the-signal/the-dumbbell-rear-delt-fly-101-how-to-train-your-rear-deltoids"
       ]
+    },
+    {
+      "id": "dumbbell-scaption",
+      "verdict": "ok",
+      "sources": [
+        "https://theprehabguys.com/vimeo-video/scaption-raise-dumbbell/",
+        "https://enarahealth.com/blog/movement-of-the-month-scaption-the-ultimate-shoulder-exercise/"
+      ]
+    },
+    {
+      "id": "dumbbell-cuban-press",
+      "verdict": "ok",
+      "sources": [
+        "https://www.strengthlog.com/cuban-press/",
+        "https://liftmanual.com/dumbbell-cuban-press/"
+      ]
+    },
+    {
+      "id": "dumbbell-six-way-raise",
+      "verdict": "fix",
+      "sources": [
+        "https://archive.t-nation.com/training/tip-the-6-way-delt-raise/",
+        "https://pelank.com/exercises/dumbbell-6-way-raise/"
+      ],
+      "problem": "The cue and description raise the dumbbells to the front first, then sweep out to the sides, then overhead. Both sourced guides run the opposite order: lateral (side) raise first, then bring the dumbbells in to the front, then press overhead, then reverse. Swapping the first two phases changes which head of the deltoid takes the first, heaviest part of the lift -- the whole point of a '6-way' raise is hitting all three heads in a fixed, trained sequence.",
+      "proposed": {
+        "cue": "Raise out to the sides, sweep to the front, then press overhead -- and reverse.",
+        "description": "Raise the dumbbells out to the sides to shoulder height, sweep them in to the front at the same height, then press overhead, and reverse the path back down -- that's one rep. It hits the side, front, and rear shoulders in a single flowing set. Use very light weights."
+      }
+    },
+    {
+      "id": "dumbbell-around-the-world",
+      "verdict": "ok",
+      "sources": [
+        "https://planfit.ai/en/exercise/dumbbell-around-the-world",
+        "https://fitbod.me/exercises/around-the-worlds"
+      ]
+    },
+    {
+      "id": "dumbbell-lean-away-lateral-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://www.catalystathletics.com/exercise/859/Leanaway-Lateral-Raise/",
+        "https://steelsupplements.com/blogs/steel-blog/how-to-do-leaning-lateral-raises-forms-and-benefits"
+      ]
+    },
+    {
+      "id": "dumbbell-incline-y-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://adapt-hub.com/exercises/dumbbell-incline-y-raise",
+        "https://getfitcraft.com/exercises/y-raise"
+      ]
+    },
+    {
+      "id": "dumbbell-l-raise",
+      "verdict": "unsure",
+      "sources": [
+        "https://exercises.virtuagym.com/exercise/dumbbells-l-raise-alternating/",
+        "https://www.madscientistofmuscle.com/1-exercises/shoulder-exercises/bodyweight-l-raises.htm",
+        "https://www.mountainpeakfitness.com/blog/seated-shoulder-external"
+      ],
+      "note": "'L-raise' names at least three different movements online and sources disagree with each other, not just with the card. Virtuagym's 'Dumbbells L-raise (alternating)' is a plain lateral raise with no rotation at all. The rotator-cuff sources describe a static L position -- upper arm held at shoulder height, elbow bent 90 degrees, the whole time -- where only the forearm rotates from pointing down to pointing up; the arm never travels from the side up to shoulder height as part of the rep. The shipped card describes a third thing: raise the straight arm from the side up to shoulder height, then bend the elbow and rotate the forearm up. That compound two-phase version is not clearly attested by any single source found, so this is not a confident fix -- writing a 'proposed' correction would mean picking one of two unrelated real exercises to replace it with, and either guess could be wrong. Flagging rather than fixing."
+    },
+    {
+      "id": "dumbbell-powell-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://library.theprehabguys.com/vimeo-video/powell-raise-dumbbell/",
+        "https://www.rehabhero.ca/exercise/powell-raise"
+      ]
+    },
+    {
+      "id": "seated-dumbbell-rear-delt-fly",
+      "verdict": "ok",
+      "sources": [
+        "https://sweat.com/exercises/seated-bent-over-rear-delt-raise",
+        "https://www.muscleandstrength.com/exercises/alternate-seated-bent-over-dumbbell-reverse-fly.html"
+      ]
+    },
+    {
+      "id": "dumbbell-seated-shoulder-press",
+      "verdict": "ok",
+      "sources": [
+        "https://www.strengthlog.com/seated-dumbbell-shoulder-press/",
+        "https://learn.athleanx.com/articles/shoulders-for-men/seated-dumbbell-press"
+      ]
     }
   ]
 }
