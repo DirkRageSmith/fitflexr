@@ -1061,6 +1061,86 @@
         "https://squatwolf.com/blogs/fitness/barbell-upright-row",
         "https://liftmanual.com/barbell-upright-row/"
       ]
+    },
+    {
+      "id": "kettlebell-overhead-press",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/kettlebell-overhead-press",
+        "https://www.kettlebellkings.com/blogs/default-blog/kettlebell-foundations-overhead-press"
+      ]
+    },
+    {
+      "id": "kettlebell-push-press",
+      "verdict": "ok",
+      "sources": [
+        "https://kettlebell.monster/learn/encyclopedia/push-press-single-arm",
+        "https://liftmanual.com/kettlebell-one-arm-push-press/"
+      ]
+    },
+    {
+      "id": "single-arm-kettlebell-press",
+      "verdict": "ok",
+      "sources": [
+        "https://www.onnit.com/blogs/the-edge/single-arm-kettlebell-press-how-to-do-it-get-ripped",
+        "https://kettlebell.monster/learn/encyclopedia/strict-shoulder-press-single-arm"
+      ]
+    },
+    {
+      "id": "kettlebell-bottoms-up-press",
+      "verdict": "ok",
+      "sources": [
+        "https://barbend.com/bottoms-up-kettlebell-press/",
+        "https://www.muscleandstrength.com/exercises/standing-one-arm-bottoms-up-kettlebell-press"
+      ]
+    },
+    {
+      "id": "kettlebell-halo",
+      "verdict": "ok",
+      "sources": [
+        "https://www.kettlebellkings.com/blogs/default-blog/kettlebell-halo-exercise",
+        "https://kettlebellsworkouts.com/kettlebell-halo/"
+      ]
+    },
+    {
+      "id": "kettlebell-high-pull",
+      "verdict": "ok",
+      "sources": [
+        "https://strongandfit.com/blogs/news/kettlebell-high-pull",
+        "https://www.motra.com/exercises/kettlebellHighPull"
+      ]
+    },
+    {
+      "id": "kettlebell-z-press",
+      "verdict": "ok",
+      "sources": [
+        "https://barbend.com/z-press/",
+        "https://www.athleticaging.blog/p/the-z-press-building-strong-shoulders"
+      ]
+    },
+    {
+      "id": "cable-lateral-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/cable-lateral-raise",
+        "https://gravitus.com/guides/exercises/lateral-raise-cable/"
+      ]
+    },
+    {
+      "id": "cable-front-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://www.strengthlog.com/cable-front-raise/",
+        "https://www.strongermobileapp.com/exercises/cable-front-raise"
+      ]
+    },
+    {
+      "id": "cable-rear-delt-fly",
+      "verdict": "ok",
+      "sources": [
+        "https://fitnessvolt.com/cable-rear-delt-fly/",
+        "https://www.gymstreak.com/exercises/cable-rear-delt-flyes"
+      ]
     }
   ]
 }
