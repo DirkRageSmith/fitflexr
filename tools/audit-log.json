@@ -981,6 +981,86 @@
         "https://www.strengthlog.com/seated-dumbbell-shoulder-press/",
         "https://learn.athleanx.com/articles/shoulders-for-men/seated-dumbbell-press"
       ]
+    },
+    {
+      "id": "dumbbell-standing-shoulder-press",
+      "verdict": "ok",
+      "sources": [
+        "https://www.muscleandstrength.com/exercises/standing-dumbbell-press.html",
+        "https://liftmanual.com/dumbbell-standing-overhead-press/"
+      ]
+    },
+    {
+      "id": "dumbbell-arnold-press",
+      "verdict": "ok",
+      "sources": [
+        "https://barbend.com/arnold-press/",
+        "https://learn.athleanx.com/articles/shoulders-for-men/how-to-do-the-arnold-press"
+      ]
+    },
+    {
+      "id": "dumbbell-push-press",
+      "verdict": "ok",
+      "sources": [
+        "https://www.garagegymreviews.com/push-press-exercise",
+        "https://dumbbellsdirect.com/blogs/barbell-exercisesspecific-movements/barbell-push-press"
+      ]
+    },
+    {
+      "id": "single-arm-dumbbell-overhead-press",
+      "verdict": "ok",
+      "sources": [
+        "https://www.muscleandstrength.com/exercises/standing-dumbbell-press.html",
+        "https://hortonbarbell.com/kneeling-single-arm-dumbbell-press/"
+      ]
+    },
+    {
+      "id": "half-kneeling-dumbbell-press",
+      "verdict": "ok",
+      "sources": [
+        "https://hortonbarbell.com/kneeling-single-arm-dumbbell-press/",
+        "https://www.jtsstrength.com/3-reasons-why-the-half-kneeling-position-will-improve-your-training/"
+      ]
+    },
+    {
+      "id": "barbell-overhead-press",
+      "verdict": "ok",
+      "sources": [
+        "https://stronglifts.com/overhead-press/",
+        "https://www.sensai.fit/blog/how-to-overhead-press"
+      ]
+    },
+    {
+      "id": "barbell-push-press",
+      "verdict": "ok",
+      "sources": [
+        "https://www.garagegymreviews.com/push-press-exercise",
+        "https://workoutlabs.com/exercise-guide/push-press/"
+      ]
+    },
+    {
+      "id": "barbell-z-press",
+      "verdict": "ok",
+      "sources": [
+        "https://www.strengthlog.com/z-press/",
+        "https://hortonbarbell.com/z-press/"
+      ]
+    },
+    {
+      "id": "barbell-landmine-press",
+      "verdict": "ok",
+      "sources": [
+        "https://learn.athleanx.com/articles/shoulders-for-men/how-to-do-the-landmine-press",
+        "https://hortonbarbell.com/landmine-press/"
+      ]
+    },
+    {
+      "id": "barbell-upright-row",
+      "verdict": "ok",
+      "sources": [
+        "https://squatwolf.com/blogs/fitness/barbell-upright-row",
+        "https://liftmanual.com/barbell-upright-row/"
+      ]
     }
   ]
 }
