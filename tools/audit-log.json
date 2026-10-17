@@ -1221,6 +1221,91 @@
         "https://www.gymreapers.com/blogs/news/upright-row-with-bands",
         "https://fitliferegime.com/resistance-band-upright-row-muscle-worked-benefits/"
       ]
+    },
+    {
+      "id": "trx-y-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://musclewiki.com/exercise/trx-y-raise",
+        "https://workoutlabs.com/exercise-guide/trx-suspension-straps-deltoid-y-flyes/"
+      ]
+    },
+    {
+      "id": "trx-rear-delt-fly",
+      "verdict": "fix",
+      "sources": [
+        "https://hortonbarbell.com/trx-rear-delt-fly-how-to-benefits-muscles-worked/",
+        "https://fitbod.me/exercises/trx-t-deltoid-fly"
+      ],
+      "problem": "The cue and description both say to keep the arms straight throughout the T-fly ('lean back with straight arms...keeping them straight, pull your hands out'). Both sourced guides specifically call for a slight bend in the elbows, and warn that locking the arms straight is a form error -- the opposite error they warn against is bending the elbows too much, which turns the fly into a row. The shipped TRX Y-raise card (same batch) correctly keeps straight arms, because that is a genuinely different movement; the T-fly is not.",
+      "proposed": {
+        "cue": "Lean back and pull your arms out to the sides in a T, elbows softly bent.",
+        "description": "Hold the TRX handles and lean back with arms extended, a slight bend in the elbows. Keeping that same soft bend, pull your hands out to the sides into a T, squeezing your shoulder blades, then return slowly. A bodyweight reverse fly for the rear shoulders -- adjust the lean for difficulty."
+      }
+    },
+    {
+      "id": "medicine-ball-overhead-press",
+      "verdict": "ok",
+      "sources": [
+        "https://www.trainwell.net/exercises/med-ball-overhead-press",
+        "https://evofitness.at/en/blog/learn/medicine-ball-squat-to-overhead-press/"
+      ]
+    },
+    {
+      "id": "medicine-ball-push-press",
+      "verdict": "ok",
+      "sources": [
+        "https://shockfitapp.com/blogs/exercises/med-ball-push-press",
+        "https://www.theragear.com/exercise/push_squats_and_medicine_ball_press.php"
+      ]
+    },
+    {
+      "id": "underhand-towel-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://www.eatthis.com/towel-exercises-build-arm-strength-after-55/",
+        "https://gripzilla.co/blogs/news/biceps-workouts-without-weights"
+      ]
+    },
+    {
+      "id": "self-resisted-biceps-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://ebicep.com/workouts/no-equipment-bicep-workout/",
+        "https://www.calisthenics-corner.com/articles/bicep-exercises-no-equipment/"
+      ]
+    },
+    {
+      "id": "dumbbell-biceps-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/blog/how-to-do-bicep-curls/",
+        "https://gravitus.com/guides/exercises/dumbbell-curl/"
+      ]
+    },
+    {
+      "id": "dumbbell-hammer-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://www.strengthlog.com/hammer-curl/",
+        "https://learn.athleanx.com/articles/how-to-do-hammer-curls"
+      ]
+    },
+    {
+      "id": "dumbbell-concentration-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://powerliftingtechnique.com/concentration-curls/",
+        "https://hortonbarbell.com/db-concentration-curls/"
+      ]
+    },
+    {
+      "id": "incline-dumbbell-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://www.strengthlog.com/incline-dumbbell-curl/",
+        "https://gravitus.com/guides/exercises/incline-dumbbell-curl/"
+      ]
     }
   ]
 }
