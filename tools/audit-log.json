@@ -1141,6 +1141,86 @@
         "https://fitnessvolt.com/cable-rear-delt-fly/",
         "https://www.gymstreak.com/exercises/cable-rear-delt-flyes"
       ]
+    },
+    {
+      "id": "cable-upright-row",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/cable-upright-row",
+        "https://hortonbarbell.com/cable-upright-row/"
+      ]
+    },
+    {
+      "id": "cable-y-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://liftmanual.com/cable-y-raise/",
+        "https://www.ellim.app/exercises/cable-y-raise"
+      ]
+    },
+    {
+      "id": "machine-shoulder-press",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/machine-shoulder-press",
+        "https://www.strengthlog.com/machine-shoulder-press/"
+      ]
+    },
+    {
+      "id": "machine-lateral-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://fitnessvolt.com/machine-lateral-raise-exercise-guide/",
+        "https://www.strengthlog.com/machine-lateral-raise/"
+      ]
+    },
+    {
+      "id": "reverse-pec-deck",
+      "verdict": "ok",
+      "sources": [
+        "https://fitnessvolt.com/reverse-pec-deck-fly/",
+        "https://bodybuilding-wizard.com/reverse-pec-deck-fly/"
+      ]
+    },
+    {
+      "id": "band-overhead-press",
+      "verdict": "ok",
+      "sources": [
+        "https://workoutlabs.com/exercise-guide/resistance-band-standing-shoulder-press-overhead-press/",
+        "https://liftmanual.com/band-shoulder-press/"
+      ]
+    },
+    {
+      "id": "band-lateral-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://www.gymreapers.com/blogs/news/how-to-do-lateral-raises-with-bands",
+        "https://liftmanual.com/band-lateral-raise/"
+      ]
+    },
+    {
+      "id": "band-front-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://hortonbarbell.com/band-front-raise/",
+        "https://liftmanual.com/band-front-raise/"
+      ]
+    },
+    {
+      "id": "band-rear-delt-fly",
+      "verdict": "ok",
+      "sources": [
+        "https://legacymuscle.com/resistance-band-rear-delt-fly/",
+        "https://liftmanual.com/resistance-band-rear-fly/"
+      ]
+    },
+    {
+      "id": "band-upright-row",
+      "verdict": "ok",
+      "sources": [
+        "https://www.gymreapers.com/blogs/news/upright-row-with-bands",
+        "https://fitliferegime.com/resistance-band-upright-row-muscle-worked-benefits/"
+      ]
     }
   ]
 }
