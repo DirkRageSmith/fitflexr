@@ -1386,6 +1386,86 @@
         "https://adapt-hub.com/exercises/dumbbell-prone-incline-curl",
         "https://www.drfitology.com/exercises/biceps/lying-incline-bench-dumbbell-curl"
       ]
+    },
+    {
+      "id": "ez-bar-biceps-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://fitnessvolt.com/ez-bar-curl-biceps/",
+        "https://learn.athleanx.com/articles/how-to-do-ez-bar-curls"
+      ]
+    },
+    {
+      "id": "ez-bar-preacher-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://www.liftosaur.com/exercises/ez-bar-preacher-curl",
+        "https://www.strongermobileapp.com/exercises/ez-bar-preacher-curl"
+      ]
+    },
+    {
+      "id": "ez-bar-reverse-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/ez-bar-reverse-grip-curl",
+        "https://workoutlabs.com/exercise-guide/reverse-grip-ez-curl-bar-curls/"
+      ]
+    },
+    {
+      "id": "ez-bar-drag-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://russhowepti.com/exercises/ez-bar-drag-curl/",
+        "http://www.compoundlifts.co.uk/exercise/ez-bar-drag-curl/"
+      ]
+    },
+    {
+      "id": "barbell-biceps-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://workoutlabs.com/exercise-guide/barbell-curls/",
+        "https://learn.athleanx.com/articles/how-to-do-barbell-curls"
+      ]
+    },
+    {
+      "id": "wide-grip-barbell-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://macrosinc.net/exercises/arms/wide-grip-barbell-curl/",
+        "https://www.inspireusafoundation.org/wide-grip-barbell-curl/"
+      ]
+    },
+    {
+      "id": "close-grip-barbell-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://www.tuffwraps.com/blogs/news/close-grip-vs-wide-grip-bicep-curls-choosing-the-right-grip-for-maximum-results",
+        "https://www.borntough.com/blogs/news/how-to-train-outer-bicep-best-exercises-for-bicep-long-head"
+      ]
+    },
+    {
+      "id": "barbell-twenty-one-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://www.setforset.com/blogs/news/biceps-21s",
+        "https://www.garagegymreviews.com/21s-workout"
+      ]
+    },
+    {
+      "id": "cable-biceps-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://workoutlabs.com/exercise-guide/cable-curl/",
+        "https://exrx.net/WeightExercises/Biceps/CBCurl"
+      ]
+    },
+    {
+      "id": "rope-hammer-cable-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://fitnessvolt.com/cable-hammer-curl/",
+        "https://gravitus.com/guides/exercises/cable-rope-hammer-curl/"
+      ]
     }
   ]
 }
