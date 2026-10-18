@@ -1306,6 +1306,86 @@
         "https://www.strengthlog.com/incline-dumbbell-curl/",
         "https://gravitus.com/guides/exercises/incline-dumbbell-curl/"
       ]
+    },
+    {
+      "id": "spider-dumbbell-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://www.setforset.com/blogs/news/spider-curl",
+        "https://fitbod.me/exercises/spider-curls"
+      ]
+    },
+    {
+      "id": "zottman-dumbbell-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://www.garagegymreviews.com/zottman-curl",
+        "https://fitbod.me/exercises/zottman-curl"
+      ]
+    },
+    {
+      "id": "cross-body-hammer-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/cross-body-hammer-curls",
+        "https://dumbbellsdirect.com/blogs/dumbbell-exercises-specific-movements/cross-body-hammer-curl"
+      ]
+    },
+    {
+      "id": "dumbbell-drag-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://getfitcraft.com/exercises/drag-curl",
+        "https://superhumanfitness.com/exercises/drag-curls/"
+      ]
+    },
+    {
+      "id": "reverse-dumbbell-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://repfitness.com/blogs/training/reverse-dumbbell-curls",
+        "https://fitnessvolt.com/dumbbell-reverse-wrist-curl/"
+      ]
+    },
+    {
+      "id": "dumbbell-waiter-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://flabfix.com/how-to-do-waiter-curls-properly/",
+        "https://www.burnthefatinnercircle.com/public/Waiter-Curls-For-Bicep-Peak.cfm"
+      ]
+    },
+    {
+      "id": "dumbbell-twenty-one-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://www.setforset.com/blogs/news/biceps-21s",
+        "https://hortonbarbell.com/21s/"
+      ]
+    },
+    {
+      "id": "seated-alternating-dumbbell-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://hortonbarbell.com/seated-alternating-dumbbell-curls/",
+        "https://www.muscleandstrength.com/exercises/alternate-seated-dumbbell-curl.html"
+      ]
+    },
+    {
+      "id": "incline-hammer-dumbbell-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://liftmanual.com/dumbbell-incline-hammer-curl/",
+        "https://www.strongermobileapp.com/exercises/dumbbell-incline-hammer-curl"
+      ]
+    },
+    {
+      "id": "prone-dumbbell-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://adapt-hub.com/exercises/dumbbell-prone-incline-curl",
+        "https://www.drfitology.com/exercises/biceps/lying-incline-bench-dumbbell-curl"
+      ]
     }
   ]
 }
