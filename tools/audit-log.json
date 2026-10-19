@@ -1466,6 +1466,86 @@
         "https://fitnessvolt.com/cable-hammer-curl/",
         "https://gravitus.com/guides/exercises/cable-rope-hammer-curl/"
       ]
+    },
+    {
+      "id": "high-cable-double-biceps-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/cable-double-bicep-curl",
+        "https://gym-mikolo.com/blogs/home-gym/mastering-the-high-cable-curl-build-stronger-fuller-biceps"
+      ]
+    },
+    {
+      "id": "single-arm-cable-biceps-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://www.muscleandstrength.com/exercises/one-arm-cable-curl.html",
+        "https://exrx.net/WeightExercises/Biceps/CBOneArmCurl"
+      ]
+    },
+    {
+      "id": "cable-preacher-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/cable-preacher-curl",
+        "https://liftmanual.com/cable-preacher-curl/"
+      ]
+    },
+    {
+      "id": "machine-preacher-biceps-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/machine-preacher-curl",
+        "https://www.strongermobileapp.com/exercises/preacher-curl-machine"
+      ]
+    },
+    {
+      "id": "machine-biceps-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://gravitus.com/guides/exercises/bicep-curl-machine/",
+        "https://www.zing.coach/exercises/machine-bicep-curls"
+      ]
+    },
+    {
+      "id": "resistance-band-biceps-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://gethealthyu.com/resistance-band-bicep-curl/",
+        "https://www.pt2austin.com/movement-library/standing-bicep-curl-resistance-band"
+      ]
+    },
+    {
+      "id": "resistance-band-hammer-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://liftmanual.com/resistance-band-hammer-curl/",
+        "https://www.exerciselibrary.com/exercise/resistance-band-hammer-curl/"
+      ]
+    },
+    {
+      "id": "kettlebell-biceps-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://liftmanual.com/kettlebell-biceps-curl/",
+        "https://www.pocket-fit.app/exercises/kettlebell-curl"
+      ]
+    },
+    {
+      "id": "trx-biceps-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://www.fitfatherproject.com/trx-bicep-curl/",
+        "https://fitnessrefined.co/exercises/trx-bicep-curl/"
+      ]
+    },
+    {
+      "id": "bench-dip-triceps",
+      "verdict": "ok",
+      "sources": [
+        "https://learn.athleanx.com/articles/how-to-do-bench-dips",
+        "https://getfitcraft.com/exercises/bench-dips"
+      ]
     }
   ]
 }
