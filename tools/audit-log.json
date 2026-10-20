@@ -1546,6 +1546,91 @@
         "https://learn.athleanx.com/articles/how-to-do-bench-dips",
         "https://getfitcraft.com/exercises/bench-dips"
       ]
+    },
+    {
+      "id": "feet-elevated-bench-dip",
+      "verdict": "ok",
+      "sources": [
+        "https://russhowepti.com/exercises/feet-elevated-bench-dips/",
+        "https://www.muscleandstrength.com/exercises/tricep-bench-dip.html"
+      ]
+    },
+    {
+      "id": "bodyweight-triceps-extension",
+      "verdict": "ok",
+      "sources": [
+        "https://www.strengthlog.com/triceps-bodyweight-extension/",
+        "https://fitnessvolt.com/bodyweight-skull-crushers/"
+      ]
+    },
+    {
+      "id": "bench-supported-skull-crusher",
+      "verdict": "fix",
+      "sources": [
+        "https://fitnessvolt.com/bodyweight-skull-crushers/",
+        "https://www.rehabhero.ca/exercise/bodyweight-skull-crushers"
+      ],
+      "problem": "Shipped as a bodyweight move -- equipment is ['bench'] only (no dumbbell/barbell), and its own alias is 'Bodyweight Skull Crusher' -- but the cue and description say 'holding a weight over your chest' and 'lower the weight toward your forehead,' which describes the WEIGHTED skull crusher (the separate dumbbell-skull-crusher card just below it in EXERCISES order). Every sourced bodyweight skull crusher instead has the lifter grip a waist-high bar or bench edge, walk the feet back into a straight plank, and lower the forehead toward the hands using only bodyweight -- the same shape as this batch's own bodyweight-triceps-extension card.",
+      "proposed": {
+        "cue": "Grip a waist-high bar or bench, walk your feet back into a plank, and lower your head toward your hands.",
+        "description": "Grip a stable waist-height bar or bench edge with an overhand grip and walk your feet back until your body forms a straight plank. Keeping your upper arms still, bend your elbows to lower your forehead toward your hands, then press back up to straighten your arms. No weight is used -- your own bodyweight supplies the resistance."
+      }
+    },
+    {
+      "id": "two-hand-overhead-dumbbell-extension",
+      "verdict": "ok",
+      "sources": [
+        "https://gravitus.com/guides/exercises/overhead-dumbbell-tricep-extension/",
+        "https://macrosinc.net/exercises/arms/overhead-dumbbell-triceps-extension/"
+      ]
+    },
+    {
+      "id": "single-arm-overhead-dumbbell-extension",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/single-arm-dumbbell-tricep-extension",
+        "https://macrosinc.net/exercises/arms/single-arm-overhead-dumbbell-triceps-extension/"
+      ]
+    },
+    {
+      "id": "dumbbell-skull-crusher",
+      "verdict": "ok",
+      "sources": [
+        "https://www.muscleandstrength.com/exercises/lying-tricep-extension.html",
+        "https://gravitus.com/guides/exercises/skull-crusher/"
+      ]
+    },
+    {
+      "id": "dumbbell-triceps-kickback",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/dumbbell-kickbacks",
+        "https://liftmanual.com/dumbbell-kickback/"
+      ]
+    },
+    {
+      "id": "dumbbell-tate-press",
+      "verdict": "ok",
+      "sources": [
+        "https://www.strengthlog.com/tate-press/",
+        "https://liftmanual.com/dumbbell-tate-press/"
+      ]
+    },
+    {
+      "id": "dumbbell-jm-press",
+      "verdict": "ok",
+      "sources": [
+        "https://www.roypumphrey.com/dumbbell-jm-press/",
+        "https://www.garagegymreviews.com/jm-press"
+      ]
+    },
+    {
+      "id": "dumbbell-neutral-grip-triceps-press",
+      "verdict": "ok",
+      "sources": [
+        "https://barbend.com/neutral-grip-dumbbell-bench-press/",
+        "https://www.madscientistofmuscle.com/1-exercises/tricep-exercises/close-grip-db-bench-press.htm"
+      ]
     }
   ]
 }
