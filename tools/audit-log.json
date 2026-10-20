@@ -1631,6 +1631,86 @@
         "https://barbend.com/neutral-grip-dumbbell-bench-press/",
         "https://www.madscientistofmuscle.com/1-exercises/tricep-exercises/close-grip-db-bench-press.htm"
       ]
+    },
+    {
+      "id": "dumbbell-floor-triceps-extension",
+      "verdict": "ok",
+      "sources": [
+        "https://workoutlabs.com/exercise-guide/lying-dumbbell-tricep-extensions/",
+        "https://www.setforset.com/blogs/news/dumbbell-tricep-extensions"
+      ]
+    },
+    {
+      "id": "seated-overhead-dumbbell-extension",
+      "verdict": "ok",
+      "sources": [
+        "https://gravitus.com/guides/exercises/overhead-dumbbell-tricep-extension/",
+        "https://weighttraining.guide/exercises/seated-two-arm-overhead-dumbbell-triceps-extension/"
+      ]
+    },
+    {
+      "id": "incline-dumbbell-skull-crusher",
+      "verdict": "ok",
+      "sources": [
+        "https://www.dmoose.com/blogs/triceps/inclined-skullcrusher",
+        "https://www.bodybuildingmealplan.com/incline-dumbbell-skull-crusher/"
+      ]
+    },
+    {
+      "id": "cross-body-dumbbell-triceps-extension",
+      "verdict": "ok",
+      "sources": [
+        "https://russhowepti.com/exercises/cross-body-triceps-extension/",
+        "https://weighttraining.guide/exercises/lying-one-arm-cross-body-dumbbell-triceps-extension/"
+      ]
+    },
+    {
+      "id": "ez-bar-skull-crusher",
+      "verdict": "ok",
+      "sources": [
+        "https://bodybuilding-wizard.com/ez-bar-skull-crushers-exercise-guide/",
+        "https://justgains.com/e/ez-barbell-lying-triceps-extension"
+      ]
+    },
+    {
+      "id": "ez-bar-overhead-triceps-extension",
+      "verdict": "ok",
+      "sources": [
+        "https://www.muscleandstrength.com/exercises/standing-overhead-ez-bar-tricep-extension",
+        "https://fitbod.me/exercises/ez-bar-overhead-tricep-extension"
+      ]
+    },
+    {
+      "id": "ez-bar-jm-press",
+      "verdict": "ok",
+      "sources": [
+        "https://www.garagegymreviews.com/jm-press",
+        "https://setgrip.app/exercises/ez-bar-jm-press/"
+      ]
+    },
+    {
+      "id": "barbell-skull-crusher",
+      "verdict": "ok",
+      "sources": [
+        "https://powerliftingtechnique.com/skull-crushers/",
+        "https://www.hevyapp.com/exercises/skullcrusher-barbell/"
+      ]
+    },
+    {
+      "id": "reverse-grip-barbell-press",
+      "verdict": "ok",
+      "sources": [
+        "https://fitnessvolt.com/barbell-reverse-close-grip-bench-press-guide/",
+        "https://fitbod.me/exercises/reverse-grip-bench-press"
+      ]
+    },
+    {
+      "id": "rope-triceps-pushdown",
+      "verdict": "ok",
+      "sources": [
+        "https://www.ritfitsports.com/blogs/article/triceps-rope-pushdown",
+        "https://workoutlabs.com/exercise-guide/triceps-pushdowns/"
+      ]
     }
   ]
 }
