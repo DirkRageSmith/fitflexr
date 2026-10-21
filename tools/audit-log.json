@@ -1711,6 +1711,86 @@
         "https://www.ritfitsports.com/blogs/article/triceps-rope-pushdown",
         "https://workoutlabs.com/exercise-guide/triceps-pushdowns/"
       ]
+    },
+    {
+      "id": "straight-bar-triceps-pushdown",
+      "verdict": "ok",
+      "sources": [
+        "https://gymgeek.com/exercises/arms/what-the-tricep-pushdown-is-and-how-to-do-it-correctly/",
+        "http://www.compoundlifts.co.uk/exercise/cable-pushdowns-straight-bar/"
+      ]
+    },
+    {
+      "id": "overhead-cable-triceps-extension",
+      "verdict": "ok",
+      "sources": [
+        "https://www.strengthlog.com/overhead-cable-triceps-extension/",
+        "https://legionathletics.com/cable-overhead-triceps-extension/"
+      ]
+    },
+    {
+      "id": "single-arm-cable-triceps-pushdown",
+      "verdict": "ok",
+      "sources": [
+        "https://gymgeek.com/exercises/arms/what-the-tricep-pushdown-is-and-how-to-do-it-correctly/",
+        "https://www.motra.com/exercises/resistanceBandSingleArmTricepPushdown"
+      ]
+    },
+    {
+      "id": "cross-body-cable-triceps-extension",
+      "verdict": "ok",
+      "sources": [
+        "https://theworkoutmag.com/training/crossbody-cable-triceps-extension-guide",
+        "https://fortabo.com/en/exercises/single-arm-cable-cross-body-triceps-extension/"
+      ]
+    },
+    {
+      "id": "machine-triceps-extension",
+      "verdict": "ok",
+      "sources": [
+        "https://www.dmoose.com/blogs/triceps/machine-tricep-extension",
+        "https://www.muscleandstrength.com/exercises/machine-tricep-extension"
+      ]
+    },
+    {
+      "id": "assisted-dip-machine-triceps",
+      "verdict": "ok",
+      "sources": [
+        "https://gymkee.com/exercises/compare/assisted-dip-machine-vs-dip-machine/",
+        "https://www.athleticinsight.com/exercise/triceps/dips/machine"
+      ]
+    },
+    {
+      "id": "triceps-dip-machine",
+      "verdict": "ok",
+      "sources": [
+        "https://griptapp.com/exercises/dip-seated-machine",
+        "https://bodybuilding-wizard.com/seated-machine-dips/"
+      ]
+    },
+    {
+      "id": "resistance-band-triceps-pushdown",
+      "verdict": "ok",
+      "sources": [
+        "https://hortonbarbell.com/band-tricep-pushdown/",
+        "https://liftmanual.com/resistance-band-triceps-pushdown/"
+      ]
+    },
+    {
+      "id": "resistance-band-overhead-triceps-extension",
+      "verdict": "ok",
+      "sources": [
+        "https://liftmanual.com/band-overhead-triceps-extension/",
+        "https://musclewiki.com/exercise/band-overhead-tricep-extension"
+      ]
+    },
+    {
+      "id": "resistance-band-triceps-kickback",
+      "verdict": "ok",
+      "sources": [
+        "https://gymgeek.com/exercises/arms/tricep-kickbacks/",
+        "https://maniacmuscle.com/band-triceps-kickback/"
+      ]
     }
   ]
 }
