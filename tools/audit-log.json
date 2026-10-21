@@ -1791,6 +1791,86 @@
         "https://gymgeek.com/exercises/arms/tricep-kickbacks/",
         "https://maniacmuscle.com/band-triceps-kickback/"
       ]
+    },
+    {
+      "id": "kettlebell-overhead-triceps-extension",
+      "verdict": "ok",
+      "sources": [
+        "https://musclewiki.com/exercise/kettlebell-overhead-tricep-extension",
+        "https://liftmanual.com/kettlebell-overhead-triceps-extension/"
+      ]
+    },
+    {
+      "id": "trx-triceps-extension",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/trx-tricep-extension",
+        "https://www.hevyapp.com/exercises/trx-tricep-extension/"
+      ]
+    },
+    {
+      "id": "bodyweight-squat",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/air-squats",
+        "https://www.12minuteathlete.com/how-to-do-a-proper-air-squat/"
+      ]
+    },
+    {
+      "id": "pause-bodyweight-squat",
+      "verdict": "ok",
+      "sources": [
+        "https://www.strengthlog.com/pause-squat/",
+        "https://www.setforset.com/blogs/news/pause-squats"
+      ]
+    },
+    {
+      "id": "tempo-bodyweight-squat",
+      "verdict": "ok",
+      "sources": [
+        "https://fitnessvolt.com/tempo-squat-guide/",
+        "https://www.liftingtempo.com/tempo/squat"
+      ]
+    },
+    {
+      "id": "pulse-squat",
+      "verdict": "ok",
+      "sources": [
+        "https://www.masterclass.com/articles/squat-pulses-guide",
+        "https://steelsupplements.com/blogs/steel-blog/how-to-do-squat-pulses-form-muscles-worked"
+      ]
+    },
+    {
+      "id": "bodyweight-split-squat",
+      "verdict": "ok",
+      "sources": [
+        "https://www.muscleandstrength.com/exercises/split-squat",
+        "https://www.nike.com/a/how-and-why-to-do-a-split-squat"
+      ]
+    },
+    {
+      "id": "walking-lunge",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/walking-lunge",
+        "https://www.setforset.com/blogs/news/walking-lunges"
+      ]
+    },
+    {
+      "id": "forward-lunge",
+      "verdict": "ok",
+      "sources": [
+        "https://www.builtlean.com/dumbbell-forward-lunges-form/",
+        "https://www.masterclass.com/articles/forward-lunge-guide"
+      ]
+    },
+    {
+      "id": "reverse-lunge",
+      "verdict": "ok",
+      "sources": [
+        "https://www.masterclass.com/articles/reverse-lunge-guide",
+        "https://bodybuilding-wizard.com/reverse-lunge-exercise-guide/"
+      ]
     }
   ]
 }
