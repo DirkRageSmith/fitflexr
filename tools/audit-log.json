@@ -1951,6 +1951,86 @@
         "https://www.shred.app/thinking/how-to-do-step-ups",
         "https://www.exerciselibrary.com/exercise/box-step-up/"
       ]
+    },
+    {
+      "id": "dumbbell-goblet-squat",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/dumbbell-goblet-squat",
+        "https://sportscienceinsider.com/goblet-squat/"
+      ]
+    },
+    {
+      "id": "dumbbell-squat",
+      "verdict": "ok",
+      "sources": [
+        "https://www.strengthlog.com/dumbbell-squat/",
+        "https://www.muscleandstrength.com/exercises/dumbbell-squat.html"
+      ]
+    },
+    {
+      "id": "dumbbell-front-squat",
+      "verdict": "ok",
+      "sources": [
+        "https://www.builtlean.com/dumbbell-front-squat-exercise/",
+        "https://www.nasm.org/resource-center/exercise-library/dumbbell-front-squat"
+      ]
+    },
+    {
+      "id": "heel-elevated-goblet-squat",
+      "verdict": "ok",
+      "sources": [
+        "https://barbend.com/heels-elevated-goblet-squat/",
+        "https://www.garagegymreviews.com/heel-elevated-goblet-squat"
+      ]
+    },
+    {
+      "id": "dumbbell-bulgarian-split-squat",
+      "verdict": "ok",
+      "sources": [
+        "https://www.acefitness.org/resources/everyone/exercise-library/366/bulgarian-split-squat/",
+        "https://repfitness.com/blogs/training/bulgarian-split-squats-how-to"
+      ]
+    },
+    {
+      "id": "dumbbell-split-squat",
+      "verdict": "ok",
+      "sources": [
+        "https://repfitness.com/blogs/training/how-to-do-split-squats",
+        "https://legionathletics.com/split-squat/"
+      ]
+    },
+    {
+      "id": "dumbbell-walking-lunge",
+      "verdict": "ok",
+      "sources": [
+        "https://www.strengthlog.com/dumbbell-walking-lunge/",
+        "https://fitbod.me/exercises/dumbbell-walking-lunge"
+      ]
+    },
+    {
+      "id": "dumbbell-reverse-lunge",
+      "verdict": "ok",
+      "sources": [
+        "https://legionathletics.com/reverse-lunge/",
+        "https://www.masterclass.com/articles/dumbbell-reverse-lunge"
+      ]
+    },
+    {
+      "id": "dumbbell-forward-lunge",
+      "verdict": "ok",
+      "sources": [
+        "https://www.trainwell.net/exercises/dumbbell-forward-lunge",
+        "https://www.topendsports.com/fitness/technique/lunges-forward-dumbbell.htm"
+      ]
+    },
+    {
+      "id": "dumbbell-step-up",
+      "verdict": "ok",
+      "sources": [
+        "https://fitnessvolt.com/24618/dumbbell-step-up/",
+        "https://legionathletics.com/dumbbell-step-up/"
+      ]
     }
   ]
 }
