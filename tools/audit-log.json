@@ -1,1876 +1,1956 @@
 {
-  "audited": [
-    {
-      "id": "barbell-flat-bench-press",
-      "verdict": "ok",
-      "sources": [
-        "https://stronglifts.com/bench-press/",
-        "https://www.joionline.net/library/proper-bench-press-technique/"
-      ]
-    },
-    {
-      "id": "barbell-paused-bench-press",
-      "verdict": "ok",
-      "sources": [
-        "https://www.muscleandstrength.com/exercises/paused-barbell-bench-press",
-        "https://steelsupplements.com/blogs/steel-blog/how-to-do-the-paused-bench-press-form-benefits"
-      ]
-    },
-    {
-      "id": "barbell-close-grip-bench-press",
-      "verdict": "ok",
-      "sources": [
-        "https://www.thegymgroup.com/exercises/chest-exercises/close-grip-bench-press/",
-        "https://legionathletics.com/close-grip-bench-press/"
-      ]
-    },
-    {
-      "id": "barbell-incline-bench-press",
-      "verdict": "ok",
-      "sources": [
-        "https://www.nasm.org/resource-center/exercise-library/incline-barbell-bench-press",
-        "https://learn.athleanx.com/articles/incline-bench-press-mistakes"
-      ]
-    },
-    {
-      "id": "barbell-decline-bench-press",
-      "verdict": "ok",
-      "sources": [
-        "https://www.masterclass.com/articles/decline-bench-press-guide",
-        "https://liftmanual.com/barbell-decline-bench-press/"
-      ]
-    },
-    {
-      "id": "dumbbell-flat-bench-press",
-      "verdict": "ok",
-      "sources": [
-        "https://workoutlabs.com/exercise-guide/dumbbell-bench-press/",
-        "https://www.puregym.com/exercises/chest/bench-press/dumbbell-bench-press/"
-      ]
-    },
-    {
-      "id": "dumbbell-incline-bench-press",
-      "verdict": "ok",
-      "sources": [
-        "https://squatwolf.com/blogs/fitness/incline-dumbbell-press",
-        "https://gravitus.com/guides/exercises/incline-dumbbell-press/"
-      ]
-    },
-    {
-      "id": "dumbbell-decline-bench-press",
-      "verdict": "ok",
-      "sources": [
-        "https://fitnessvolt.com/decline-dumbbell-bench-press-chest/",
-        "https://bodybuilding-wizard.com/decline-dumbbell-bench-press/"
-      ]
-    },
-    {
-      "id": "dumbbell-neutral-grip-bench-press",
-      "verdict": "ok",
-      "sources": [
-        "https://fitnessvolt.com/24642/hammer-grip-dumbbell-bench-press/",
-        "https://steelsupplements.com/blogs/steel-blog/how-to-do-hammer-presses-form-benefits"
-      ]
-    },
-    {
-      "id": "dumbbell-squeeze-press",
-      "verdict": "ok",
-      "sources": [
-        "https://dumbbellsdirect.com/blogs/dumbbell-exercises-specific-movements/dumbbell-squeeze-press",
-        "https://revyfit.com/exercises/dumbbell-squeeze-press"
-      ]
-    },
-    {
-      "id": "dumbbell-flat-fly",
-      "verdict": "ok",
-      "sources": [
-        "https://www.ritfitsports.com/blogs/article/how-to-do-dumbbell-fly",
-        "https://bodybuilding-wizard.com/flat-bench-dumbbell-flyes/"
-      ]
-    },
-    {
-      "id": "dumbbell-incline-fly",
-      "verdict": "ok",
-      "sources": [
-        "https://bodybuilding-wizard.com/incline-dumbbell-fly/",
-        "https://musclewiki.com/exercise/dumbbell-incline-chest-fly"
-      ]
-    },
-    {
-      "id": "push-up",
-      "verdict": "ok",
-      "sources": [
-        "https://www.builtlean.com/how-to-proper-push-up-form/",
-        "https://blog.nasm.org/nasm-guide-to-push-ups/form-and-technique"
-      ]
-    },
-    {
-      "id": "incline-push-up",
-      "verdict": "ok",
-      "sources": [
-        "https://www.madbarz.com/blog/134-incline-vs-decline-push-ups-whats-the-differe",
-        "https://bodypass.net/exercises/incline-decline-pushups-difference/"
-      ]
-    },
-    {
-      "id": "decline-push-up",
-      "verdict": "ok",
-      "sources": [
-        "https://learn.athleanx.com/articles/how-to-do-decline-pushups",
-        "https://julielohre.com/decline-push-up/"
-      ]
-    },
-    {
-      "id": "knee-push-up",
-      "verdict": "ok",
-      "sources": [
-        "https://www.nasm.org/resource-center/exercise-library/modified-push-up",
-        "https://www.masterclass.com/articles/knee-push-ups-guide"
-      ]
-    },
-    {
-      "id": "wide-push-up",
-      "verdict": "ok",
-      "sources": [
-        "https://www.puregym.com/exercises/chest/press-up/wide-grip-push-ups/",
-        "https://www.muscleandstrength.com/exercises/wide-grip-push-ups.html"
-      ]
-    },
-    {
-      "id": "diamond-push-up",
-      "verdict": "ok",
-      "sources": [
-        "https://powerliftingtechnique.com/diamond-push-up/",
-        "https://www.coachweb.com/bodyweight-exercises/7297/how-to-do-a-diamond-push-up"
-      ]
-    },
-    {
-      "id": "archer-push-up",
-      "verdict": "ok",
-      "sources": [
-        "https://www.masterclass.com/articles/archer-push-up-guide",
-        "https://gymless.org/archer-push-ups/"
-      ]
-    },
-    {
-      "id": "pseudo-planche-push-up",
-      "verdict": "ok",
-      "sources": [
-        "https://www.calisthenics.build/en/exercises/pseudo-planche-push-up",
-        "https://liftmanual.com/pseudo-planche-push-up/"
-      ]
-    },
-    {
-      "id": "tempo-push-up",
-      "verdict": "ok",
-      "sources": [
-        "https://www.muscleandstrength.com/exercises/eccentric-only-push-up",
-        "https://www.zing.coach/exercises/slow-eccentric-push-ups"
-      ]
-    },
-    {
-      "id": "deficit-push-up",
-      "verdict": "ok",
-      "sources": [
-        "https://generationiron.com/deficit-push-up-exercise-guide/",
-        "https://www.motra.com/exercises/deficitPushUp"
-      ]
-    },
-    {
-      "id": "wall-push-up",
-      "verdict": "ok",
-      "sources": [
-        "https://www.masterclass.com/articles/wall-push-ups",
-        "https://www.strengthlog.com/push-up-against-wall/"
-      ]
-    },
-    {
-      "id": "chest-dip",
-      "verdict": "ok",
-      "sources": [
-        "https://www.puregym.com/exercises/chest/dips/",
-        "https://liftmanual.com/chest-dip/"
-      ]
-    },
-    {
-      "id": "band-chest-press",
-      "verdict": "ok",
-      "sources": [
-        "https://www.motra.com/exercises/resistanceBandChestPress",
-        "https://www.exerciselibrary.com/exercise/standing-band-chest-press/"
-      ]
-    },
-    {
-      "id": "band-chest-fly",
-      "verdict": "ok",
-      "sources": [
-        "https://musclewiki.com/exercise/band-chest-fly",
-        "https://liftmanual.com/band-chest-fly/"
-      ]
-    },
-    {
-      "id": "band-high-to-low-crossover",
-      "verdict": "ok",
-      "sources": [
-        "https://bodybuilding-wizard.com/cable-crossover/",
-        "https://smartreps.app/en/exercises/high-to-low-cable-crossover"
-      ]
-    },
-    {
-      "id": "band-low-to-high-crossover",
-      "verdict": "ok",
-      "sources": [
-        "https://www.chrisadamspersonaltraining.com/low-to-high-cable-crossover",
-        "https://liftmanual.com/cable-upper-chest-crossovers/"
-      ]
-    },
-    {
-      "id": "band-incline-chest-press",
-      "verdict": "ok",
-      "sources": [
-        "https://liftmanual.com/band-standing-incline-chest-press/",
-        "https://austerfit.com/blogs/blog/training-the-upper-chest-with-the-dynamic-band-incline-press"
-      ]
-    },
-    {
-      "id": "cable-chest-fly",
-      "verdict": "ok",
-      "sources": [
-        "https://www.setforset.com/blogs/news/cable-flys",
-        "https://fitnessvolt.com/standing-cable-chest-fly-guide/"
-      ]
-    },
-    {
-      "id": "high-cable-crossover",
-      "verdict": "ok",
-      "sources": [
-        "https://squatwolf.com/blogs/fitness/how-to-do-cable-crossover-benefits-variations-and-mistakes",
-        "https://www.fitmetrics.ch/en/exercise/653eba1ef1295-standing-high-cable-crossover"
-      ]
-    },
-    {
-      "id": "low-cable-crossover",
-      "verdict": "ok",
-      "sources": [
-        "https://www.gymstreak.com/exercises/low-cable-crossover",
-        "https://www.motra.com/exercises/cableCrossoverLow"
-      ]
-    },
-    {
-      "id": "cable-chest-press",
-      "verdict": "ok",
-      "sources": [
-        "https://weighttraining.guide/exercises/standing-cable-chest-press/",
-        "https://www.motra.com/exercises/cableStandingChestPress"
-      ]
-    },
-    {
-      "id": "incline-cable-chest-press",
-      "verdict": "ok",
-      "sources": [
-        "https://www.muscleandstrength.com/exercises/incline-cable-chest-press",
-        "https://exrx.net/WeightExercises/PectoralClavicular/CBStandingInclineChestPress"
-      ]
-    },
-    {
-      "id": "machine-chest-press",
-      "verdict": "ok",
-      "sources": [
-        "https://www.nasm.org/resource-center/exercise-library/chest-press-machine",
-        "https://www.garagegymreviews.com/how-to-use-a-chest-press-machine"
-      ]
-    },
-    {
-      "id": "pec-deck-fly",
-      "verdict": "ok",
-      "sources": [
-        "https://liftmanual.com/lever-pec-deck-fly/",
-        "https://fitsociety.io/exercises/chest/pec-deck-machine-fly"
-      ]
-    },
-    {
-      "id": "incline-machine-chest-press",
-      "verdict": "ok",
-      "sources": [
-        "https://gravitus.com/guides/exercises/incline-chest-press/",
-        "https://bodybuilding-wizard.com/machine-incline-press-exercise/"
-      ]
-    },
-    {
-      "id": "hammer-strength-chest-press",
-      "verdict": "ok",
-      "sources": [
-        "https://hortonbarbell.com/hammer-strength-chest-press-how-to-muscles-worked/",
-        "https://bodybuilding-wizard.com/hammer-strength-bench-press-chest-exercise/"
-      ]
-    },
-    {
-      "id": "trx-chest-press",
-      "verdict": "ok",
-      "sources": [
-        "https://www.trxtraining.com/blogs/news/trx-chest-press",
-        "https://liftmanual.com/suspension-chest-press/"
-      ]
-    },
-    {
-      "id": "trx-chest-fly",
-      "verdict": "ok",
-      "sources": [
-        "https://hortonbarbell.com/trx-chest-fly-how-to-muscles-worked-benefits/",
-        "https://liftmanual.com/suspension-fly/"
-      ]
-    },
-    {
-      "id": "kettlebell-floor-press",
-      "verdict": "ok",
-      "sources": [
-        "https://www.strengthlog.com/kettlebell-floor-press/",
-        "https://www.muscleandstrength.com/exercises/kettlebell-floor-press"
-      ]
-    },
-    {
-      "id": "single-arm-kettlebell-bench-press",
-      "verdict": "ok",
-      "sources": [
-        "https://www.muscleandstrength.com/exercises/one-arm-kettlebell-bench-press",
-        "https://www.motra.com/exercises/kettlebellOneArmBenchPress"
-      ]
-    },
-    {
-      "id": "dumbbell-floor-press",
-      "verdict": "ok",
-      "sources": [
-        "https://www.muscleandstrength.com/exercises/dumbbell-floor-press.html",
-        "https://www.zing.coach/exercises/dumbbell-floor-press"
-      ]
-    },
-    {
-      "id": "dumbbell-pullover",
-      "verdict": "ok",
-      "sources": [
-        "https://www.hevyapp.com/exercises/dumbbell-pullover/",
-        "https://www.setforset.com/blogs/news/dumbbell-pullover"
-      ]
-    },
-    {
-      "id": "single-arm-dumbbell-bench-press",
-      "verdict": "ok",
-      "sources": [
-        "https://www.muscleandstrength.com/exercises/one-arm-dumbbell-bench-press.html",
-        "https://www.puregym.com/exercises/chest/bench-press/single-arm-chest-press/"
-      ]
-    },
-    {
-      "id": "alternating-dumbbell-bench-press",
-      "verdict": "ok",
-      "sources": [
-        "https://fitbod.me/exercises/alternating-dumbbell-bench-press",
-        "https://hortonbarbell.com/alternating-db-bench-press/"
-      ]
-    },
-    {
-      "id": "pull-up",
-      "verdict": "ok",
-      "sources": [
-        "https://smartreps.app/en/exercises/pull-ups",
-        "https://www.gymnasetips.com/how-to-do-a-proper-pull-up/"
-      ]
-    },
-    {
-      "id": "chin-up",
-      "verdict": "ok",
-      "sources": [
-        "https://www.masterclass.com/articles/chin-up-guide",
-        "https://barbend.com/chin-up/"
-      ]
-    },
-    {
-      "id": "neutral-grip-pull-up",
-      "verdict": "ok",
-      "sources": [
-        "https://bullbarfit.com/blogs/q-as/how-to-perform-neutral-grip-pull-ups-and-what-are-their-benefits",
-        "https://www.50pullups.com/neutral-grip-pull-ups"
-      ]
-    },
-    {
-      "id": "wide-grip-pull-up",
-      "verdict": "ok",
-      "sources": [
-        "https://www.masterclass.com/articles/wide-grip-pull-ups-guide",
-        "https://www.muscleandstrength.com/exercises/wide-grip-pull-up.html"
-      ]
-    },
-    {
-      "id": "commando-pull-up",
-      "verdict": "ok",
-      "sources": [
-        "https://www.masterclass.com/articles/commando-pull-ups-guide",
-        "https://bodybuilding-wizard.com/commando-pull-ups-tarzan-pull-ups/"
-      ]
-    },
-    {
-      "id": "archer-pull-up",
-      "verdict": "ok",
-      "sources": [
-        "https://www.muscleandstrength.com/exercises/archer-pull-up",
-        "https://fitnessvolt.com/archer-pull-up-guide/"
-      ]
-    },
-    {
-      "id": "scapular-pull-up",
-      "verdict": "ok",
-      "sources": [
-        "https://www.trainwell.net/exercises/scapular-pull-up",
-        "https://www.hevyapp.com/exercises/scapular-pull-ups/"
-      ]
-    },
-    {
-      "id": "negative-pull-up",
-      "verdict": "ok",
-      "sources": [
-        "https://www.inspireusafoundation.org/negative-eccentric-pull-ups/",
-        "https://bullbarfit.com/blogs/updates/negative-pull-ups-for-beginners-the-eccentric-skill-that-gets-you-to-your-first-strict-rep"
-      ]
-    },
-    {
-      "id": "inverted-row",
-      "verdict": "ok",
-      "sources": [
-        "https://www.hevyapp.com/exercises/how-to-inverted-row/",
-        "https://www.nerdfitness.com/blog/inverted-row-are-you-missing-out-on-this-great-exercise/"
-      ]
-    },
-    {
-      "id": "feet-elevated-inverted-row",
-      "verdict": "ok",
-      "sources": [
-        "https://exrx.net/WeightExercises/BackGeneral/BWSupineRowFeetElevated",
-        "https://www.muscleandstrength.com/exercises/smith-machine-bodyweight-row.html"
-      ]
-    },
-    {
-      "id": "towel-row",
-      "verdict": "ok",
-      "sources": [
-        "https://fitwill.app/exercise/3165/bodyweight-standing-row-with-towel/",
-        "https://fitwill.app/exercise/3506/bodyweight-row-in-doorway/"
-      ]
-    },
-    {
-      "id": "superman",
-      "verdict": "ok",
-      "sources": [
-        "https://www.healthline.com/health/fitness/superman-exercise",
-        "https://cathe.com/superman-exercise-a-no-equipment-lower-back-and-glutes-strengthener/"
-      ]
-    },
-    {
-      "id": "prone-y-t-w-raise",
-      "verdict": "ok",
-      "sources": [
-        "https://app.fit-pa.com/exercises/prone-y-t-w-raise",
-        "https://1pixelworkout.com/exercises/prone-ytw-raises"
-      ]
-    },
-    {
-      "id": "bodyweight-back-extension",
-      "verdict": "ok",
-      "sources": [
-        "https://www.strengthlog.com/floor-back-extension/",
-        "https://www.ritfitsports.com/blogs/article/how-to-do-back-extensions-at-home"
-      ]
-    },
-    {
-      "id": "reverse-snow-angel",
-      "verdict": "ok",
-      "sources": [
-        "https://flabfix.com/how-to-do-reverse-snow-angels-properly/",
-        "https://www.zing.coach/exercises/reverse-snow-angel"
-      ]
-    },
-    {
-      "id": "reverse-plank",
-      "verdict": "ok",
-      "sources": [
-        "https://www.masterclass.com/articles/reverse-plank-exercise-guide",
-        "https://www.hevyapp.com/exercises/how-to-reverse-plank/"
-      ]
-    },
-    {
-      "id": "bird-dog-row-hold",
-      "verdict": "ok",
-      "sources": [
-        "https://www.craftsbury.com/blog/move-of-the-month-bird-dog-row",
-        "https://experiencelife.lifetime.life/article/how-to-do-the-bird-dog-row/"
-      ]
-    },
-    {
-      "id": "single-arm-dumbbell-row",
-      "verdict": "ok",
-      "sources": [
-        "https://www.puregym.com/exercises/back/rows/single-arm-dumbbell-row/",
-        "https://nfpt.com/proper-form-for-a-one-arm-dumbbell-row/"
-      ]
-    },
-    {
-      "id": "chest-supported-incline-dumbbell-row",
-      "verdict": "ok",
-      "sources": [
-        "https://www.strengthlog.com/chest-supported-dumbbell-row/",
-        "https://www.motra.com/exercises/dumbbellInclineBenchRow"
-      ]
-    },
-    {
-      "id": "bent-over-dumbbell-row",
-      "verdict": "ok",
-      "sources": [
-        "https://fitbod.me/exercises/dumbbell-bent-over-row",
-        "https://en.wikipedia.org/wiki/Bent-over_row"
-      ]
-    },
-    {
-      "id": "gorilla-dumbbell-row",
-      "verdict": "ok",
-      "sources": [
-        "https://www.strengthlog.com/gorilla-row/",
-        "https://experiencelife.lifetime.life/article/break-it-down-the-gorilla-row/"
-      ]
-    },
-    {
-      "id": "dead-stop-dumbbell-row",
-      "verdict": "ok",
-      "sources": [
-        "https://tonygentilcore.com/2011/04/exercises-you-should-be-doing-deadstop-db-row/",
-        "https://www.gettfit.com/exercise-database/back/dead-stop-one-arm-dumbbell-row/"
-      ]
-    },
-    {
-      "id": "dumbbell-high-pull",
-      "verdict": "ok",
-      "sources": [
-        "https://www.motra.com/exercises/dumbbellHighPull",
-        "https://repfitness.com/blogs/training/dumbbell-high-pull"
-      ]
-    },
-    {
-      "id": "dumbbell-shrug",
-      "verdict": "ok",
-      "sources": [
-        "https://www.strengthlog.com/dumbbell-shrug/",
-        "https://fitbod.me/exercises/dumbbell-shrug"
-      ]
-    },
-    {
-      "id": "kroc-row",
-      "verdict": "ok",
-      "sources": [
-        "https://www.setforset.com/blogs/news/kroc-rows",
-        "https://www.allthingsgym.com/kroc-rows-matt-kroczaleski/"
-      ]
-    },
-    {
-      "id": "incline-prone-dumbbell-row",
-      "verdict": "fix",
-      "sources": [
-        "https://fitbod.me/exercises/incline-dumbbell-row",
-        "https://www.puregym.com/exercises/back/rows/incline-row/"
-      ],
-      "problem": "The description sends the dumbbells 'toward your hips,' but every sourced version of this row pulls them up toward the lower ribs/chest with the elbows driving back, not down toward the hips. On a chest-supported incline row there is no hip to pull toward — the torso is pinned flat to the bench the whole rep.",
-      "proposed": {
-        "cue": "Chest on the incline, row the dumbbells up toward your ribs.",
-        "description": "Lie chest-down on an incline bench with a dumbbell in each hand hanging down. Row them up toward your lower ribs by driving your elbows back, squeezing your shoulder blades, then lower slowly. The supported position isolates the mid-back cleanly."
-      }
-    },
-    {
-      "id": "barbell-bent-over-row",
-      "verdict": "ok",
-      "sources": [
-        "https://www.puregym.com/exercises/back/rows/barbell-bent-over-row/",
-        "https://www.muscleandstrength.com/exercises/bent-over-barbell-row.html"
-      ]
-    },
-    {
-      "id": "pendlay-row",
-      "verdict": "ok",
-      "sources": [
-        "https://breakingmuscle.com/pendlay-row/",
-        "https://www.garagegymreviews.com/pendlay-row"
-      ]
-    },
-    {
-      "id": "t-bar-row",
-      "verdict": "ok",
-      "sources": [
-        "https://www.puregym.com/exercises/back/rows/landmine-row/",
-        "https://www.gymshark.com/blog/article/how-to-t-bar-row"
-      ]
-    },
-    {
-      "id": "yates-row",
-      "verdict": "ok",
-      "sources": [
-        "https://fitnessvolt.com/yates-row/",
-        "https://bodybuilding-wizard.com/yates-row-back-exercise-explained/"
-      ]
-    },
-    {
-      "id": "barbell-shrug",
-      "verdict": "ok",
-      "sources": [
-        "https://www.muscleandstrength.com/exercises/barbell-shrug.html",
-        "https://bodybuilding-wizard.com/barbell-shrug/"
-      ]
-    },
-    {
-      "id": "rack-pull",
-      "verdict": "ok",
-      "sources": [
-        "https://barbend.com/rack-pulls/",
-        "https://legionathletics.com/rack-pulls/"
-      ]
-    },
-    {
-      "id": "conventional-deadlift",
-      "verdict": "ok",
-      "sources": [
-        "https://stronglifts.com/deadlift/",
-        "https://www.powerliftingtowin.com/powerlifting-technique-how-to-deadlift/"
-      ]
-    },
-    {
-      "id": "single-arm-kettlebell-row",
-      "verdict": "ok",
-      "sources": [
-        "https://www.trainwell.net/exercises/single-kettlebell-bench-one-arm-row",
-        "https://www.strongermobileapp.com/exercises/single-arm-kettlebell-row"
-      ]
-    },
-    {
-      "id": "kettlebell-gorilla-row",
-      "verdict": "ok",
-      "sources": [
-        "https://fitbod.me/exercises/gorilla-rows",
-        "https://fitnessvolt.com/gorilla-row/"
-      ]
-    },
-    {
-      "id": "cable-lat-pulldown",
-      "verdict": "ok",
-      "sources": [
-        "https://powerliftingtechnique.com/lat-pulldowns/",
-        "https://www.builtlean.com/lat-pulldown/"
-      ]
-    },
-    {
-      "id": "close-grip-cable-lat-pulldown",
-      "verdict": "ok",
-      "sources": [
-        "https://nfpt.com/close-grip-lat-pulldown-v-bar/",
-        "https://www.muscleandstrength.com/exercises/v-bar-pull-down"
-      ]
-    },
-    {
-      "id": "wide-grip-cable-lat-pulldown",
-      "verdict": "ok",
-      "sources": [
-        "https://fitbod.me/exercises/wide-grip-lat-pulldown",
-        "https://www.puregym.com/exercises/back/lat-exercises/wide-grip-lat-pulldown/"
-      ]
-    },
-    {
-      "id": "straight-arm-cable-pulldown",
-      "verdict": "ok",
-      "sources": [
-        "https://www.setforset.com/blogs/news/straight-arm-pulldown",
-        "https://athlemove.com/exercises/cable-straight-arm-pulldown"
-      ]
-    },
-    {
-      "id": "seated-cable-row",
-      "verdict": "ok",
-      "sources": [
-        "https://repfitness.com/blogs/training/how-to-do-a-seated-cable-low-row",
-        "https://your-pt.com/exercises/seated-row/"
-      ]
-    },
-    {
-      "id": "single-arm-cable-row",
-      "verdict": "ok",
-      "sources": [
-        "https://www.strongermobileapp.com/exercises/single-arm-cable-row",
-        "https://www.muscleandstrength.com/exercises/one-arm-cable-row.html"
-      ]
-    },
-    {
-      "id": "cable-face-pull",
-      "verdict": "ok",
-      "sources": [
-        "https://www.muscleandstrength.com/exercises/cable-face-pull",
-        "https://julielohre.com/face-pulls/"
-      ]
-    },
-    {
-      "id": "cable-pullover",
-      "verdict": "fix",
-      "sources": [
-        "https://powerliftingtechnique.com/cable-pullovers/",
-        "https://gravitus.com/guides/exercises/cable-lat-pullover/"
-      ],
-      "problem": "The description has you stand upright facing the cable the whole rep. Every sourced version of a cable pullover hinges forward at the hips about 30-45 degrees with the arms reaching overhead in line with the cable — that forward hinge is what gives the exercise its long lat stretch and is the one thing that tells it apart from a straight-arm pulldown (which is done standing tall). As written, this card describes the same body position as straight-arm-cable-pulldown, just with the arms starting slightly bent instead of straight.",
-      "proposed": {
-        "cue": "Hinge forward at the hips, then sweep the bar down to your thighs with straight-ish arms.",
-        "description": "Hinge forward at the hips about 30 to 45 degrees with soft knees and a braced core, then reach the bar straight overhead in line with the cable. Keeping your arms nearly straight, sweep it down in an arc to your thighs using your lats, then return under control to the stretch. The forward hinge is what gives this move its long stretch — stand upright and you are just doing a straight-arm pulldown."
-      }
-    },
-    {
-      "id": "lat-pulldown-machine",
-      "verdict": "ok",
-      "sources": [
-        "https://www.hevyapp.com/exercises/how-to-lat-pulldown-machine/",
-        "https://row.gymshark.com/blog/article/master-the-lat-pulldown"
-      ]
-    },
-    {
-      "id": "seated-row-machine",
-      "verdict": "fix",
-      "sources": [
-        "https://gravitus.com/guides/exercises/seated-row/",
-        "https://gravitus.com/guides/exercises/machine-seated-row/"
-      ],
-      "problem": "The description has the lifter's chest against a pad, with the pad credited for keeping the lower back safe. The plain seated row machine (distinct from this same batch's chest-supported-row-machine) has a foot platform, not a chest pad — feet planted, knees soft, torso held upright by the lifter's own core and lower back, not by a pad. As written, this card describes the exact feature that is supposed to separate it from chest-supported-row-machine, so the two converge on the same setup.",
-      "proposed": {
-        "cue": "Feet braced on the platform, pull the handles to your torso without rocking.",
-        "description": "Sit at the row machine with your feet planted on the footplate, knees slightly bent, and grip the handles with your torso upright and arms extended. Pull them toward your torso by driving your elbows back and squeezing your shoulder blades together, then return slowly over 2-3 seconds. There is no chest pad on this machine — your own core and lower back hold the torso still, which is what tells it apart from the chest-supported row."
-      }
-    },
-    {
-      "id": "chest-supported-row-machine",
-      "verdict": "ok",
-      "sources": [
-        "https://gravitus.com/guides/exercises/chest-supported-row/",
-        "https://trackyourlift.com/exercises/chest-supported-row-machine/"
-      ]
-    },
-    {
-      "id": "hammer-strength-row",
-      "verdict": "ok",
-      "sources": [
-        "https://fitbod.me/exercises/hammerstrength-iso-row",
-        "https://greenphysique.com/in-the-gym-equipment-instruction/hammer-strength-machine-row"
-      ]
-    },
-    {
-      "id": "assisted-pull-up-machine",
-      "verdict": "ok",
-      "sources": [
-        "https://www.puregym.com/exercises/back/pull-up/assisted-pull-ups/",
-        "https://www.strongermobileapp.com/exercises/assisted-pull-up"
-      ]
-    },
-    {
-      "id": "back-extension-machine",
-      "verdict": "ok",
-      "sources": [
-        "https://www.masterclass.com/articles/back-extension-exercise-guide",
-        "https://workoutlabs.com/exercise-guide/back-extensions/"
-      ]
-    },
-    {
-      "id": "resistance-band-lat-pulldown",
-      "verdict": "ok",
-      "sources": [
-        "https://www.trainwell.net/exercises/band-lat-pulldown",
-        "https://www.hevyapp.com/exercises/lat-pulldown-band/"
-      ]
-    },
-    {
-      "id": "resistance-band-row",
-      "verdict": "ok",
-      "sources": [
-        "https://www.litmethod.com/blogs/lit-blog/resistance-band-rows",
-        "https://gethealthyu.com/resistance-band-row/"
-      ]
-    },
-    {
-      "id": "band-pull-apart",
-      "verdict": "ok",
-      "sources": [
-        "https://www.trainwell.net/exercises/band-pull-apart",
-        "https://www.muscleandstrength.com/exercises/band-pull-apart"
-      ]
-    },
-    {
-      "id": "band-straight-arm-pulldown",
-      "verdict": "ok",
-      "sources": [
-        "https://www.setforset.com/blogs/news/straight-arm-pulldown",
-        "https://liftmanual.com/band-straight-arm-pulldown/"
-      ]
-    },
-    {
-      "id": "band-face-pull",
-      "verdict": "ok",
-      "sources": [
-        "https://www.strengthlog.com/banded-face-pull/",
-        "https://www.trainwell.net/exercises/band-face-pull"
-      ]
-    },
-    {
-      "id": "band-single-arm-row",
-      "verdict": "ok",
-      "sources": [
-        "https://fitwill.app/exercise/4575/band-standing-single-arm-row/",
-        "https://www.setforset.com/blogs/news/resistance-band-rows"
-      ]
-    },
-    {
-      "id": "trx-row",
-      "verdict": "ok",
-      "sources": [
-        "https://fitbod.me/exercises/trx-row",
-        "https://hortonbarbell.com/trx-row-how-to-muscles-worked-benefits/"
-      ]
-    },
-    {
-      "id": "trx-single-arm-row",
-      "verdict": "ok",
-      "sources": [
-        "https://www.acefitness.org/resources/everyone/exercise-library/92/trx-reg-single-arm-row/",
-        "https://www.trxtraining.com/blogs/news/trx-weekly-exercise-trx-single-arm-row"
-      ]
-    },
-    {
-      "id": "pike-push-up",
-      "verdict": "ok",
-      "sources": [
-        "https://antranik.org/pike-pushups/",
-        "https://steelsupplements.com/blogs/steel-blog/how-to-do-pike-push-ups-form-benefits"
-      ]
-    },
-    {
-      "id": "feet-elevated-pike-push-up",
-      "verdict": "ok",
-      "sources": [
-        "https://library.theprehabguys.com/vimeo-video/pike-push-up-legs-elevated/",
-        "https://ensomovement.com/blog/training/exercise-database/foot-elevated-pike-push-up/"
-      ]
-    },
-    {
-      "id": "wall-handstand-hold",
-      "verdict": "ok",
-      "sources": [
-        "https://torokhtiy.com/blogs/guides/how-to-do-a-wall-handstand",
-        "https://ensomovement.com/blog/training/exercise-database/chest-to-wall-handstand-posture/"
-      ]
-    },
-    {
-      "id": "wall-walk",
-      "verdict": "ok",
-      "sources": [
-        "https://hortonbarbell.com/wall-walks-how-to-muscles-worked-benefits/",
-        "https://dieringe.com/exercises/wall-walks"
-      ]
-    },
-    {
-      "id": "dumbbell-lateral-raise",
-      "verdict": "ok",
-      "sources": [
-        "https://learn.athleanx.com/articles/shoulders-for-men/how-to-do-lateral-raises",
-        "https://repfitness.com/blogs/training/how-to-do-dumbbell-lateral-raises"
-      ]
-    },
-    {
-      "id": "dumbbell-front-raise",
-      "verdict": "ok",
-      "sources": [
-        "https://julielohre.com/db-front-raise-exercise/",
-        "https://fitbod.me/exercises/dumbbell-front-raise"
-      ]
-    },
-    {
-      "id": "dumbbell-rear-delt-fly",
-      "verdict": "ok",
-      "sources": [
-        "https://dumbbellsdirect.com/blogs/dumbbell-exercises-specific-movements/dumbbell-rear-delt-fly",
-        "https://anabolicaliens.com/blogs/the-signal/the-dumbbell-rear-delt-fly-101-how-to-train-your-rear-deltoids"
-      ]
-    },
-    {
-      "id": "dumbbell-scaption",
-      "verdict": "ok",
-      "sources": [
-        "https://theprehabguys.com/vimeo-video/scaption-raise-dumbbell/",
-        "https://enarahealth.com/blog/movement-of-the-month-scaption-the-ultimate-shoulder-exercise/"
-      ]
-    },
-    {
-      "id": "dumbbell-cuban-press",
-      "verdict": "ok",
-      "sources": [
-        "https://www.strengthlog.com/cuban-press/",
-        "https://liftmanual.com/dumbbell-cuban-press/"
-      ]
-    },
-    {
-      "id": "dumbbell-six-way-raise",
-      "verdict": "fix",
-      "sources": [
-        "https://archive.t-nation.com/training/tip-the-6-way-delt-raise/",
-        "https://pelank.com/exercises/dumbbell-6-way-raise/"
-      ],
-      "problem": "The cue and description raise the dumbbells to the front first, then sweep out to the sides, then overhead. Both sourced guides run the opposite order: lateral (side) raise first, then bring the dumbbells in to the front, then press overhead, then reverse. Swapping the first two phases changes which head of the deltoid takes the first, heaviest part of the lift -- the whole point of a '6-way' raise is hitting all three heads in a fixed, trained sequence.",
-      "proposed": {
-        "cue": "Raise out to the sides, sweep to the front, then press overhead -- and reverse.",
-        "description": "Raise the dumbbells out to the sides to shoulder height, sweep them in to the front at the same height, then press overhead, and reverse the path back down -- that's one rep. It hits the side, front, and rear shoulders in a single flowing set. Use very light weights."
-      }
-    },
-    {
-      "id": "dumbbell-around-the-world",
-      "verdict": "ok",
-      "sources": [
-        "https://planfit.ai/en/exercise/dumbbell-around-the-world",
-        "https://fitbod.me/exercises/around-the-worlds"
-      ]
-    },
-    {
-      "id": "dumbbell-lean-away-lateral-raise",
-      "verdict": "ok",
-      "sources": [
-        "https://www.catalystathletics.com/exercise/859/Leanaway-Lateral-Raise/",
-        "https://steelsupplements.com/blogs/steel-blog/how-to-do-leaning-lateral-raises-forms-and-benefits"
-      ]
-    },
-    {
-      "id": "dumbbell-incline-y-raise",
-      "verdict": "ok",
-      "sources": [
-        "https://adapt-hub.com/exercises/dumbbell-incline-y-raise",
-        "https://getfitcraft.com/exercises/y-raise"
-      ]
-    },
-    {
-      "id": "dumbbell-l-raise",
-      "verdict": "unsure",
-      "sources": [
-        "https://exercises.virtuagym.com/exercise/dumbbells-l-raise-alternating/",
-        "https://www.madscientistofmuscle.com/1-exercises/shoulder-exercises/bodyweight-l-raises.htm",
-        "https://www.mountainpeakfitness.com/blog/seated-shoulder-external"
-      ],
-      "note": "'L-raise' names at least three different movements online and sources disagree with each other, not just with the card. Virtuagym's 'Dumbbells L-raise (alternating)' is a plain lateral raise with no rotation at all. The rotator-cuff sources describe a static L position -- upper arm held at shoulder height, elbow bent 90 degrees, the whole time -- where only the forearm rotates from pointing down to pointing up; the arm never travels from the side up to shoulder height as part of the rep. The shipped card describes a third thing: raise the straight arm from the side up to shoulder height, then bend the elbow and rotate the forearm up. That compound two-phase version is not clearly attested by any single source found, so this is not a confident fix -- writing a 'proposed' correction would mean picking one of two unrelated real exercises to replace it with, and either guess could be wrong. Flagging rather than fixing."
-    },
-    {
-      "id": "dumbbell-powell-raise",
-      "verdict": "ok",
-      "sources": [
-        "https://library.theprehabguys.com/vimeo-video/powell-raise-dumbbell/",
-        "https://www.rehabhero.ca/exercise/powell-raise"
-      ]
-    },
-    {
-      "id": "seated-dumbbell-rear-delt-fly",
-      "verdict": "ok",
-      "sources": [
-        "https://sweat.com/exercises/seated-bent-over-rear-delt-raise",
-        "https://www.muscleandstrength.com/exercises/alternate-seated-bent-over-dumbbell-reverse-fly.html"
-      ]
-    },
-    {
-      "id": "dumbbell-seated-shoulder-press",
-      "verdict": "ok",
-      "sources": [
-        "https://www.strengthlog.com/seated-dumbbell-shoulder-press/",
-        "https://learn.athleanx.com/articles/shoulders-for-men/seated-dumbbell-press"
-      ]
-    },
-    {
-      "id": "dumbbell-standing-shoulder-press",
-      "verdict": "ok",
-      "sources": [
-        "https://www.muscleandstrength.com/exercises/standing-dumbbell-press.html",
-        "https://liftmanual.com/dumbbell-standing-overhead-press/"
-      ]
-    },
-    {
-      "id": "dumbbell-arnold-press",
-      "verdict": "ok",
-      "sources": [
-        "https://barbend.com/arnold-press/",
-        "https://learn.athleanx.com/articles/shoulders-for-men/how-to-do-the-arnold-press"
-      ]
-    },
-    {
-      "id": "dumbbell-push-press",
-      "verdict": "ok",
-      "sources": [
-        "https://www.garagegymreviews.com/push-press-exercise",
-        "https://dumbbellsdirect.com/blogs/barbell-exercisesspecific-movements/barbell-push-press"
-      ]
-    },
-    {
-      "id": "single-arm-dumbbell-overhead-press",
-      "verdict": "ok",
-      "sources": [
-        "https://www.muscleandstrength.com/exercises/standing-dumbbell-press.html",
-        "https://hortonbarbell.com/kneeling-single-arm-dumbbell-press/"
-      ]
-    },
-    {
-      "id": "half-kneeling-dumbbell-press",
-      "verdict": "ok",
-      "sources": [
-        "https://hortonbarbell.com/kneeling-single-arm-dumbbell-press/",
-        "https://www.jtsstrength.com/3-reasons-why-the-half-kneeling-position-will-improve-your-training/"
-      ]
-    },
-    {
-      "id": "barbell-overhead-press",
-      "verdict": "ok",
-      "sources": [
-        "https://stronglifts.com/overhead-press/",
-        "https://www.sensai.fit/blog/how-to-overhead-press"
-      ]
-    },
-    {
-      "id": "barbell-push-press",
-      "verdict": "ok",
-      "sources": [
-        "https://www.garagegymreviews.com/push-press-exercise",
-        "https://workoutlabs.com/exercise-guide/push-press/"
-      ]
-    },
-    {
-      "id": "barbell-z-press",
-      "verdict": "ok",
-      "sources": [
-        "https://www.strengthlog.com/z-press/",
-        "https://hortonbarbell.com/z-press/"
-      ]
-    },
-    {
-      "id": "barbell-landmine-press",
-      "verdict": "ok",
-      "sources": [
-        "https://learn.athleanx.com/articles/shoulders-for-men/how-to-do-the-landmine-press",
-        "https://hortonbarbell.com/landmine-press/"
-      ]
-    },
-    {
-      "id": "barbell-upright-row",
-      "verdict": "ok",
-      "sources": [
-        "https://squatwolf.com/blogs/fitness/barbell-upright-row",
-        "https://liftmanual.com/barbell-upright-row/"
-      ]
-    },
-    {
-      "id": "kettlebell-overhead-press",
-      "verdict": "ok",
-      "sources": [
-        "https://fitbod.me/exercises/kettlebell-overhead-press",
-        "https://www.kettlebellkings.com/blogs/default-blog/kettlebell-foundations-overhead-press"
-      ]
-    },
-    {
-      "id": "kettlebell-push-press",
-      "verdict": "ok",
-      "sources": [
-        "https://kettlebell.monster/learn/encyclopedia/push-press-single-arm",
-        "https://liftmanual.com/kettlebell-one-arm-push-press/"
-      ]
-    },
-    {
-      "id": "single-arm-kettlebell-press",
-      "verdict": "ok",
-      "sources": [
-        "https://www.onnit.com/blogs/the-edge/single-arm-kettlebell-press-how-to-do-it-get-ripped",
-        "https://kettlebell.monster/learn/encyclopedia/strict-shoulder-press-single-arm"
-      ]
-    },
-    {
-      "id": "kettlebell-bottoms-up-press",
-      "verdict": "ok",
-      "sources": [
-        "https://barbend.com/bottoms-up-kettlebell-press/",
-        "https://www.muscleandstrength.com/exercises/standing-one-arm-bottoms-up-kettlebell-press"
-      ]
-    },
-    {
-      "id": "kettlebell-halo",
-      "verdict": "ok",
-      "sources": [
-        "https://www.kettlebellkings.com/blogs/default-blog/kettlebell-halo-exercise",
-        "https://kettlebellsworkouts.com/kettlebell-halo/"
-      ]
-    },
-    {
-      "id": "kettlebell-high-pull",
-      "verdict": "ok",
-      "sources": [
-        "https://strongandfit.com/blogs/news/kettlebell-high-pull",
-        "https://www.motra.com/exercises/kettlebellHighPull"
-      ]
-    },
-    {
-      "id": "kettlebell-z-press",
-      "verdict": "ok",
-      "sources": [
-        "https://barbend.com/z-press/",
-        "https://www.athleticaging.blog/p/the-z-press-building-strong-shoulders"
-      ]
-    },
-    {
-      "id": "cable-lateral-raise",
-      "verdict": "ok",
-      "sources": [
-        "https://fitbod.me/exercises/cable-lateral-raise",
-        "https://gravitus.com/guides/exercises/lateral-raise-cable/"
-      ]
-    },
-    {
-      "id": "cable-front-raise",
-      "verdict": "ok",
-      "sources": [
-        "https://www.strengthlog.com/cable-front-raise/",
-        "https://www.strongermobileapp.com/exercises/cable-front-raise"
-      ]
-    },
-    {
-      "id": "cable-rear-delt-fly",
-      "verdict": "ok",
-      "sources": [
-        "https://fitnessvolt.com/cable-rear-delt-fly/",
-        "https://www.gymstreak.com/exercises/cable-rear-delt-flyes"
-      ]
-    },
-    {
-      "id": "cable-upright-row",
-      "verdict": "ok",
-      "sources": [
-        "https://fitbod.me/exercises/cable-upright-row",
-        "https://hortonbarbell.com/cable-upright-row/"
-      ]
-    },
-    {
-      "id": "cable-y-raise",
-      "verdict": "ok",
-      "sources": [
-        "https://liftmanual.com/cable-y-raise/",
-        "https://www.ellim.app/exercises/cable-y-raise"
-      ]
-    },
-    {
-      "id": "machine-shoulder-press",
-      "verdict": "ok",
-      "sources": [
-        "https://fitbod.me/exercises/machine-shoulder-press",
-        "https://www.strengthlog.com/machine-shoulder-press/"
-      ]
-    },
-    {
-      "id": "machine-lateral-raise",
-      "verdict": "ok",
-      "sources": [
-        "https://fitnessvolt.com/machine-lateral-raise-exercise-guide/",
-        "https://www.strengthlog.com/machine-lateral-raise/"
-      ]
-    },
-    {
-      "id": "reverse-pec-deck",
-      "verdict": "ok",
-      "sources": [
-        "https://fitnessvolt.com/reverse-pec-deck-fly/",
-        "https://bodybuilding-wizard.com/reverse-pec-deck-fly/"
-      ]
-    },
-    {
-      "id": "band-overhead-press",
-      "verdict": "ok",
-      "sources": [
-        "https://workoutlabs.com/exercise-guide/resistance-band-standing-shoulder-press-overhead-press/",
-        "https://liftmanual.com/band-shoulder-press/"
-      ]
-    },
-    {
-      "id": "band-lateral-raise",
-      "verdict": "ok",
-      "sources": [
-        "https://www.gymreapers.com/blogs/news/how-to-do-lateral-raises-with-bands",
-        "https://liftmanual.com/band-lateral-raise/"
-      ]
-    },
-    {
-      "id": "band-front-raise",
-      "verdict": "ok",
-      "sources": [
-        "https://hortonbarbell.com/band-front-raise/",
-        "https://liftmanual.com/band-front-raise/"
-      ]
-    },
-    {
-      "id": "band-rear-delt-fly",
-      "verdict": "ok",
-      "sources": [
-        "https://legacymuscle.com/resistance-band-rear-delt-fly/",
-        "https://liftmanual.com/resistance-band-rear-fly/"
-      ]
-    },
-    {
-      "id": "band-upright-row",
-      "verdict": "ok",
-      "sources": [
-        "https://www.gymreapers.com/blogs/news/upright-row-with-bands",
-        "https://fitliferegime.com/resistance-band-upright-row-muscle-worked-benefits/"
-      ]
-    },
-    {
-      "id": "trx-y-raise",
-      "verdict": "ok",
-      "sources": [
-        "https://musclewiki.com/exercise/trx-y-raise",
-        "https://workoutlabs.com/exercise-guide/trx-suspension-straps-deltoid-y-flyes/"
-      ]
-    },
-    {
-      "id": "trx-rear-delt-fly",
-      "verdict": "fix",
-      "sources": [
-        "https://hortonbarbell.com/trx-rear-delt-fly-how-to-benefits-muscles-worked/",
-        "https://fitbod.me/exercises/trx-t-deltoid-fly"
-      ],
-      "problem": "The cue and description both say to keep the arms straight throughout the T-fly ('lean back with straight arms...keeping them straight, pull your hands out'). Both sourced guides specifically call for a slight bend in the elbows, and warn that locking the arms straight is a form error -- the opposite error they warn against is bending the elbows too much, which turns the fly into a row. The shipped TRX Y-raise card (same batch) correctly keeps straight arms, because that is a genuinely different movement; the T-fly is not.",
-      "proposed": {
-        "cue": "Lean back and pull your arms out to the sides in a T, elbows softly bent.",
-        "description": "Hold the TRX handles and lean back with arms extended, a slight bend in the elbows. Keeping that same soft bend, pull your hands out to the sides into a T, squeezing your shoulder blades, then return slowly. A bodyweight reverse fly for the rear shoulders -- adjust the lean for difficulty."
-      }
-    },
-    {
-      "id": "medicine-ball-overhead-press",
-      "verdict": "ok",
-      "sources": [
-        "https://www.trainwell.net/exercises/med-ball-overhead-press",
-        "https://evofitness.at/en/blog/learn/medicine-ball-squat-to-overhead-press/"
-      ]
-    },
-    {
-      "id": "medicine-ball-push-press",
-      "verdict": "ok",
-      "sources": [
-        "https://shockfitapp.com/blogs/exercises/med-ball-push-press",
-        "https://www.theragear.com/exercise/push_squats_and_medicine_ball_press.php"
-      ]
-    },
-    {
-      "id": "underhand-towel-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://www.eatthis.com/towel-exercises-build-arm-strength-after-55/",
-        "https://gripzilla.co/blogs/news/biceps-workouts-without-weights"
-      ]
-    },
-    {
-      "id": "self-resisted-biceps-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://ebicep.com/workouts/no-equipment-bicep-workout/",
-        "https://www.calisthenics-corner.com/articles/bicep-exercises-no-equipment/"
-      ]
-    },
-    {
-      "id": "dumbbell-biceps-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://fitbod.me/blog/how-to-do-bicep-curls/",
-        "https://gravitus.com/guides/exercises/dumbbell-curl/"
-      ]
-    },
-    {
-      "id": "dumbbell-hammer-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://www.strengthlog.com/hammer-curl/",
-        "https://learn.athleanx.com/articles/how-to-do-hammer-curls"
-      ]
-    },
-    {
-      "id": "dumbbell-concentration-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://powerliftingtechnique.com/concentration-curls/",
-        "https://hortonbarbell.com/db-concentration-curls/"
-      ]
-    },
-    {
-      "id": "incline-dumbbell-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://www.strengthlog.com/incline-dumbbell-curl/",
-        "https://gravitus.com/guides/exercises/incline-dumbbell-curl/"
-      ]
-    },
-    {
-      "id": "spider-dumbbell-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://www.setforset.com/blogs/news/spider-curl",
-        "https://fitbod.me/exercises/spider-curls"
-      ]
-    },
-    {
-      "id": "zottman-dumbbell-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://www.garagegymreviews.com/zottman-curl",
-        "https://fitbod.me/exercises/zottman-curl"
-      ]
-    },
-    {
-      "id": "cross-body-hammer-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://fitbod.me/exercises/cross-body-hammer-curls",
-        "https://dumbbellsdirect.com/blogs/dumbbell-exercises-specific-movements/cross-body-hammer-curl"
-      ]
-    },
-    {
-      "id": "dumbbell-drag-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://getfitcraft.com/exercises/drag-curl",
-        "https://superhumanfitness.com/exercises/drag-curls/"
-      ]
-    },
-    {
-      "id": "reverse-dumbbell-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://repfitness.com/blogs/training/reverse-dumbbell-curls",
-        "https://fitnessvolt.com/dumbbell-reverse-wrist-curl/"
-      ]
-    },
-    {
-      "id": "dumbbell-waiter-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://flabfix.com/how-to-do-waiter-curls-properly/",
-        "https://www.burnthefatinnercircle.com/public/Waiter-Curls-For-Bicep-Peak.cfm"
-      ]
-    },
-    {
-      "id": "dumbbell-twenty-one-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://www.setforset.com/blogs/news/biceps-21s",
-        "https://hortonbarbell.com/21s/"
-      ]
-    },
-    {
-      "id": "seated-alternating-dumbbell-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://hortonbarbell.com/seated-alternating-dumbbell-curls/",
-        "https://www.muscleandstrength.com/exercises/alternate-seated-dumbbell-curl.html"
-      ]
-    },
-    {
-      "id": "incline-hammer-dumbbell-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://liftmanual.com/dumbbell-incline-hammer-curl/",
-        "https://www.strongermobileapp.com/exercises/dumbbell-incline-hammer-curl"
-      ]
-    },
-    {
-      "id": "prone-dumbbell-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://adapt-hub.com/exercises/dumbbell-prone-incline-curl",
-        "https://www.drfitology.com/exercises/biceps/lying-incline-bench-dumbbell-curl"
-      ]
-    },
-    {
-      "id": "ez-bar-biceps-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://fitnessvolt.com/ez-bar-curl-biceps/",
-        "https://learn.athleanx.com/articles/how-to-do-ez-bar-curls"
-      ]
-    },
-    {
-      "id": "ez-bar-preacher-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://www.liftosaur.com/exercises/ez-bar-preacher-curl",
-        "https://www.strongermobileapp.com/exercises/ez-bar-preacher-curl"
-      ]
-    },
-    {
-      "id": "ez-bar-reverse-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://fitbod.me/exercises/ez-bar-reverse-grip-curl",
-        "https://workoutlabs.com/exercise-guide/reverse-grip-ez-curl-bar-curls/"
-      ]
-    },
-    {
-      "id": "ez-bar-drag-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://russhowepti.com/exercises/ez-bar-drag-curl/",
-        "http://www.compoundlifts.co.uk/exercise/ez-bar-drag-curl/"
-      ]
-    },
-    {
-      "id": "barbell-biceps-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://workoutlabs.com/exercise-guide/barbell-curls/",
-        "https://learn.athleanx.com/articles/how-to-do-barbell-curls"
-      ]
-    },
-    {
-      "id": "wide-grip-barbell-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://macrosinc.net/exercises/arms/wide-grip-barbell-curl/",
-        "https://www.inspireusafoundation.org/wide-grip-barbell-curl/"
-      ]
-    },
-    {
-      "id": "close-grip-barbell-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://www.tuffwraps.com/blogs/news/close-grip-vs-wide-grip-bicep-curls-choosing-the-right-grip-for-maximum-results",
-        "https://www.borntough.com/blogs/news/how-to-train-outer-bicep-best-exercises-for-bicep-long-head"
-      ]
-    },
-    {
-      "id": "barbell-twenty-one-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://www.setforset.com/blogs/news/biceps-21s",
-        "https://www.garagegymreviews.com/21s-workout"
-      ]
-    },
-    {
-      "id": "cable-biceps-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://workoutlabs.com/exercise-guide/cable-curl/",
-        "https://exrx.net/WeightExercises/Biceps/CBCurl"
-      ]
-    },
-    {
-      "id": "rope-hammer-cable-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://fitnessvolt.com/cable-hammer-curl/",
-        "https://gravitus.com/guides/exercises/cable-rope-hammer-curl/"
-      ]
-    },
-    {
-      "id": "high-cable-double-biceps-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://fitbod.me/exercises/cable-double-bicep-curl",
-        "https://gym-mikolo.com/blogs/home-gym/mastering-the-high-cable-curl-build-stronger-fuller-biceps"
-      ]
-    },
-    {
-      "id": "single-arm-cable-biceps-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://www.muscleandstrength.com/exercises/one-arm-cable-curl.html",
-        "https://exrx.net/WeightExercises/Biceps/CBOneArmCurl"
-      ]
-    },
-    {
-      "id": "cable-preacher-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://fitbod.me/exercises/cable-preacher-curl",
-        "https://liftmanual.com/cable-preacher-curl/"
-      ]
-    },
-    {
-      "id": "machine-preacher-biceps-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://fitbod.me/exercises/machine-preacher-curl",
-        "https://www.strongermobileapp.com/exercises/preacher-curl-machine"
-      ]
-    },
-    {
-      "id": "machine-biceps-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://gravitus.com/guides/exercises/bicep-curl-machine/",
-        "https://www.zing.coach/exercises/machine-bicep-curls"
-      ]
-    },
-    {
-      "id": "resistance-band-biceps-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://gethealthyu.com/resistance-band-bicep-curl/",
-        "https://www.pt2austin.com/movement-library/standing-bicep-curl-resistance-band"
-      ]
-    },
-    {
-      "id": "resistance-band-hammer-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://liftmanual.com/resistance-band-hammer-curl/",
-        "https://www.exerciselibrary.com/exercise/resistance-band-hammer-curl/"
-      ]
-    },
-    {
-      "id": "kettlebell-biceps-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://liftmanual.com/kettlebell-biceps-curl/",
-        "https://www.pocket-fit.app/exercises/kettlebell-curl"
-      ]
-    },
-    {
-      "id": "trx-biceps-curl",
-      "verdict": "ok",
-      "sources": [
-        "https://www.fitfatherproject.com/trx-bicep-curl/",
-        "https://fitnessrefined.co/exercises/trx-bicep-curl/"
-      ]
-    },
-    {
-      "id": "bench-dip-triceps",
-      "verdict": "ok",
-      "sources": [
-        "https://learn.athleanx.com/articles/how-to-do-bench-dips",
-        "https://getfitcraft.com/exercises/bench-dips"
-      ]
-    },
-    {
-      "id": "feet-elevated-bench-dip",
-      "verdict": "ok",
-      "sources": [
-        "https://russhowepti.com/exercises/feet-elevated-bench-dips/",
-        "https://www.muscleandstrength.com/exercises/tricep-bench-dip.html"
-      ]
-    },
-    {
-      "id": "bodyweight-triceps-extension",
-      "verdict": "ok",
-      "sources": [
-        "https://www.strengthlog.com/triceps-bodyweight-extension/",
-        "https://fitnessvolt.com/bodyweight-skull-crushers/"
-      ]
-    },
-    {
-      "id": "bench-supported-skull-crusher",
-      "verdict": "fix",
-      "sources": [
-        "https://fitnessvolt.com/bodyweight-skull-crushers/",
-        "https://www.rehabhero.ca/exercise/bodyweight-skull-crushers"
-      ],
-      "problem": "Shipped as a bodyweight move -- equipment is ['bench'] only (no dumbbell/barbell), and its own alias is 'Bodyweight Skull Crusher' -- but the cue and description say 'holding a weight over your chest' and 'lower the weight toward your forehead,' which describes the WEIGHTED skull crusher (the separate dumbbell-skull-crusher card just below it in EXERCISES order). Every sourced bodyweight skull crusher instead has the lifter grip a waist-high bar or bench edge, walk the feet back into a straight plank, and lower the forehead toward the hands using only bodyweight -- the same shape as this batch's own bodyweight-triceps-extension card.",
-      "proposed": {
-        "cue": "Grip a waist-high bar or bench, walk your feet back into a plank, and lower your head toward your hands.",
-        "description": "Grip a stable waist-height bar or bench edge with an overhand grip and walk your feet back until your body forms a straight plank. Keeping your upper arms still, bend your elbows to lower your forehead toward your hands, then press back up to straighten your arms. No weight is used -- your own bodyweight supplies the resistance."
-      }
-    },
-    {
-      "id": "two-hand-overhead-dumbbell-extension",
-      "verdict": "ok",
-      "sources": [
-        "https://gravitus.com/guides/exercises/overhead-dumbbell-tricep-extension/",
-        "https://macrosinc.net/exercises/arms/overhead-dumbbell-triceps-extension/"
-      ]
-    },
-    {
-      "id": "single-arm-overhead-dumbbell-extension",
-      "verdict": "ok",
-      "sources": [
-        "https://fitbod.me/exercises/single-arm-dumbbell-tricep-extension",
-        "https://macrosinc.net/exercises/arms/single-arm-overhead-dumbbell-triceps-extension/"
-      ]
-    },
-    {
-      "id": "dumbbell-skull-crusher",
-      "verdict": "ok",
-      "sources": [
-        "https://www.muscleandstrength.com/exercises/lying-tricep-extension.html",
-        "https://gravitus.com/guides/exercises/skull-crusher/"
-      ]
-    },
-    {
-      "id": "dumbbell-triceps-kickback",
-      "verdict": "ok",
-      "sources": [
-        "https://fitbod.me/exercises/dumbbell-kickbacks",
-        "https://liftmanual.com/dumbbell-kickback/"
-      ]
-    },
-    {
-      "id": "dumbbell-tate-press",
-      "verdict": "ok",
-      "sources": [
-        "https://www.strengthlog.com/tate-press/",
-        "https://liftmanual.com/dumbbell-tate-press/"
-      ]
-    },
-    {
-      "id": "dumbbell-jm-press",
-      "verdict": "ok",
-      "sources": [
-        "https://www.roypumphrey.com/dumbbell-jm-press/",
-        "https://www.garagegymreviews.com/jm-press"
-      ]
-    },
-    {
-      "id": "dumbbell-neutral-grip-triceps-press",
-      "verdict": "ok",
-      "sources": [
-        "https://barbend.com/neutral-grip-dumbbell-bench-press/",
-        "https://www.madscientistofmuscle.com/1-exercises/tricep-exercises/close-grip-db-bench-press.htm"
-      ]
-    },
-    {
-      "id": "dumbbell-floor-triceps-extension",
-      "verdict": "ok",
-      "sources": [
-        "https://workoutlabs.com/exercise-guide/lying-dumbbell-tricep-extensions/",
-        "https://www.setforset.com/blogs/news/dumbbell-tricep-extensions"
-      ]
-    },
-    {
-      "id": "seated-overhead-dumbbell-extension",
-      "verdict": "ok",
-      "sources": [
-        "https://gravitus.com/guides/exercises/overhead-dumbbell-tricep-extension/",
-        "https://weighttraining.guide/exercises/seated-two-arm-overhead-dumbbell-triceps-extension/"
-      ]
-    },
-    {
-      "id": "incline-dumbbell-skull-crusher",
-      "verdict": "ok",
-      "sources": [
-        "https://www.dmoose.com/blogs/triceps/inclined-skullcrusher",
-        "https://www.bodybuildingmealplan.com/incline-dumbbell-skull-crusher/"
-      ]
-    },
-    {
-      "id": "cross-body-dumbbell-triceps-extension",
-      "verdict": "ok",
-      "sources": [
-        "https://russhowepti.com/exercises/cross-body-triceps-extension/",
-        "https://weighttraining.guide/exercises/lying-one-arm-cross-body-dumbbell-triceps-extension/"
-      ]
-    },
-    {
-      "id": "ez-bar-skull-crusher",
-      "verdict": "ok",
-      "sources": [
-        "https://bodybuilding-wizard.com/ez-bar-skull-crushers-exercise-guide/",
-        "https://justgains.com/e/ez-barbell-lying-triceps-extension"
-      ]
-    },
-    {
-      "id": "ez-bar-overhead-triceps-extension",
-      "verdict": "ok",
-      "sources": [
-        "https://www.muscleandstrength.com/exercises/standing-overhead-ez-bar-tricep-extension",
-        "https://fitbod.me/exercises/ez-bar-overhead-tricep-extension"
-      ]
-    },
-    {
-      "id": "ez-bar-jm-press",
-      "verdict": "ok",
-      "sources": [
-        "https://www.garagegymreviews.com/jm-press",
-        "https://setgrip.app/exercises/ez-bar-jm-press/"
-      ]
-    },
-    {
-      "id": "barbell-skull-crusher",
-      "verdict": "ok",
-      "sources": [
-        "https://powerliftingtechnique.com/skull-crushers/",
-        "https://www.hevyapp.com/exercises/skullcrusher-barbell/"
-      ]
-    },
-    {
-      "id": "reverse-grip-barbell-press",
-      "verdict": "ok",
-      "sources": [
-        "https://fitnessvolt.com/barbell-reverse-close-grip-bench-press-guide/",
-        "https://fitbod.me/exercises/reverse-grip-bench-press"
-      ]
-    },
-    {
-      "id": "rope-triceps-pushdown",
-      "verdict": "ok",
-      "sources": [
-        "https://www.ritfitsports.com/blogs/article/triceps-rope-pushdown",
-        "https://workoutlabs.com/exercise-guide/triceps-pushdowns/"
-      ]
-    },
-    {
-      "id": "straight-bar-triceps-pushdown",
-      "verdict": "ok",
-      "sources": [
-        "https://gymgeek.com/exercises/arms/what-the-tricep-pushdown-is-and-how-to-do-it-correctly/",
-        "http://www.compoundlifts.co.uk/exercise/cable-pushdowns-straight-bar/"
-      ]
-    },
-    {
-      "id": "overhead-cable-triceps-extension",
-      "verdict": "ok",
-      "sources": [
-        "https://www.strengthlog.com/overhead-cable-triceps-extension/",
-        "https://legionathletics.com/cable-overhead-triceps-extension/"
-      ]
-    },
-    {
-      "id": "single-arm-cable-triceps-pushdown",
-      "verdict": "ok",
-      "sources": [
-        "https://gymgeek.com/exercises/arms/what-the-tricep-pushdown-is-and-how-to-do-it-correctly/",
-        "https://www.motra.com/exercises/resistanceBandSingleArmTricepPushdown"
-      ]
-    },
-    {
-      "id": "cross-body-cable-triceps-extension",
-      "verdict": "ok",
-      "sources": [
-        "https://theworkoutmag.com/training/crossbody-cable-triceps-extension-guide",
-        "https://fortabo.com/en/exercises/single-arm-cable-cross-body-triceps-extension/"
-      ]
-    },
-    {
-      "id": "machine-triceps-extension",
-      "verdict": "ok",
-      "sources": [
-        "https://www.dmoose.com/blogs/triceps/machine-tricep-extension",
-        "https://www.muscleandstrength.com/exercises/machine-tricep-extension"
-      ]
-    },
-    {
-      "id": "assisted-dip-machine-triceps",
-      "verdict": "ok",
-      "sources": [
-        "https://gymkee.com/exercises/compare/assisted-dip-machine-vs-dip-machine/",
-        "https://www.athleticinsight.com/exercise/triceps/dips/machine"
-      ]
-    },
-    {
-      "id": "triceps-dip-machine",
-      "verdict": "ok",
-      "sources": [
-        "https://griptapp.com/exercises/dip-seated-machine",
-        "https://bodybuilding-wizard.com/seated-machine-dips/"
-      ]
-    },
-    {
-      "id": "resistance-band-triceps-pushdown",
-      "verdict": "ok",
-      "sources": [
-        "https://hortonbarbell.com/band-tricep-pushdown/",
-        "https://liftmanual.com/resistance-band-triceps-pushdown/"
-      ]
-    },
-    {
-      "id": "resistance-band-overhead-triceps-extension",
-      "verdict": "ok",
-      "sources": [
-        "https://liftmanual.com/band-overhead-triceps-extension/",
-        "https://musclewiki.com/exercise/band-overhead-tricep-extension"
-      ]
-    },
-    {
-      "id": "resistance-band-triceps-kickback",
-      "verdict": "ok",
-      "sources": [
-        "https://gymgeek.com/exercises/arms/tricep-kickbacks/",
-        "https://maniacmuscle.com/band-triceps-kickback/"
-      ]
-    },
-    {
-      "id": "kettlebell-overhead-triceps-extension",
-      "verdict": "ok",
-      "sources": [
-        "https://musclewiki.com/exercise/kettlebell-overhead-tricep-extension",
-        "https://liftmanual.com/kettlebell-overhead-triceps-extension/"
-      ]
-    },
-    {
-      "id": "trx-triceps-extension",
-      "verdict": "ok",
-      "sources": [
-        "https://fitbod.me/exercises/trx-tricep-extension",
-        "https://www.hevyapp.com/exercises/trx-tricep-extension/"
-      ]
-    },
-    {
-      "id": "bodyweight-squat",
-      "verdict": "ok",
-      "sources": [
-        "https://fitbod.me/exercises/air-squats",
-        "https://www.12minuteathlete.com/how-to-do-a-proper-air-squat/"
-      ]
-    },
-    {
-      "id": "pause-bodyweight-squat",
-      "verdict": "ok",
-      "sources": [
-        "https://www.strengthlog.com/pause-squat/",
-        "https://www.setforset.com/blogs/news/pause-squats"
-      ]
-    },
-    {
-      "id": "tempo-bodyweight-squat",
-      "verdict": "ok",
-      "sources": [
-        "https://fitnessvolt.com/tempo-squat-guide/",
-        "https://www.liftingtempo.com/tempo/squat"
-      ]
-    },
-    {
-      "id": "pulse-squat",
-      "verdict": "ok",
-      "sources": [
-        "https://www.masterclass.com/articles/squat-pulses-guide",
-        "https://steelsupplements.com/blogs/steel-blog/how-to-do-squat-pulses-form-muscles-worked"
-      ]
-    },
-    {
-      "id": "bodyweight-split-squat",
-      "verdict": "ok",
-      "sources": [
-        "https://www.muscleandstrength.com/exercises/split-squat",
-        "https://www.nike.com/a/how-and-why-to-do-a-split-squat"
-      ]
-    },
-    {
-      "id": "walking-lunge",
-      "verdict": "ok",
-      "sources": [
-        "https://fitbod.me/exercises/walking-lunge",
-        "https://www.setforset.com/blogs/news/walking-lunges"
-      ]
-    },
-    {
-      "id": "forward-lunge",
-      "verdict": "ok",
-      "sources": [
-        "https://www.builtlean.com/dumbbell-forward-lunges-form/",
-        "https://www.masterclass.com/articles/forward-lunge-guide"
-      ]
-    },
-    {
-      "id": "reverse-lunge",
-      "verdict": "ok",
-      "sources": [
-        "https://www.masterclass.com/articles/reverse-lunge-guide",
-        "https://bodybuilding-wizard.com/reverse-lunge-exercise-guide/"
-      ]
-    }
-  ]
+ "audited": [
+  {
+   "id": "barbell-flat-bench-press",
+   "verdict": "ok",
+   "sources": [
+    "https://stronglifts.com/bench-press/",
+    "https://www.joionline.net/library/proper-bench-press-technique/"
+   ]
+  },
+  {
+   "id": "barbell-paused-bench-press",
+   "verdict": "ok",
+   "sources": [
+    "https://www.muscleandstrength.com/exercises/paused-barbell-bench-press",
+    "https://steelsupplements.com/blogs/steel-blog/how-to-do-the-paused-bench-press-form-benefits"
+   ]
+  },
+  {
+   "id": "barbell-close-grip-bench-press",
+   "verdict": "ok",
+   "sources": [
+    "https://www.thegymgroup.com/exercises/chest-exercises/close-grip-bench-press/",
+    "https://legionathletics.com/close-grip-bench-press/"
+   ]
+  },
+  {
+   "id": "barbell-incline-bench-press",
+   "verdict": "ok",
+   "sources": [
+    "https://www.nasm.org/resource-center/exercise-library/incline-barbell-bench-press",
+    "https://learn.athleanx.com/articles/incline-bench-press-mistakes"
+   ]
+  },
+  {
+   "id": "barbell-decline-bench-press",
+   "verdict": "ok",
+   "sources": [
+    "https://www.masterclass.com/articles/decline-bench-press-guide",
+    "https://liftmanual.com/barbell-decline-bench-press/"
+   ]
+  },
+  {
+   "id": "dumbbell-flat-bench-press",
+   "verdict": "ok",
+   "sources": [
+    "https://workoutlabs.com/exercise-guide/dumbbell-bench-press/",
+    "https://www.puregym.com/exercises/chest/bench-press/dumbbell-bench-press/"
+   ]
+  },
+  {
+   "id": "dumbbell-incline-bench-press",
+   "verdict": "ok",
+   "sources": [
+    "https://squatwolf.com/blogs/fitness/incline-dumbbell-press",
+    "https://gravitus.com/guides/exercises/incline-dumbbell-press/"
+   ]
+  },
+  {
+   "id": "dumbbell-decline-bench-press",
+   "verdict": "ok",
+   "sources": [
+    "https://fitnessvolt.com/decline-dumbbell-bench-press-chest/",
+    "https://bodybuilding-wizard.com/decline-dumbbell-bench-press/"
+   ]
+  },
+  {
+   "id": "dumbbell-neutral-grip-bench-press",
+   "verdict": "ok",
+   "sources": [
+    "https://fitnessvolt.com/24642/hammer-grip-dumbbell-bench-press/",
+    "https://steelsupplements.com/blogs/steel-blog/how-to-do-hammer-presses-form-benefits"
+   ]
+  },
+  {
+   "id": "dumbbell-squeeze-press",
+   "verdict": "ok",
+   "sources": [
+    "https://dumbbellsdirect.com/blogs/dumbbell-exercises-specific-movements/dumbbell-squeeze-press",
+    "https://revyfit.com/exercises/dumbbell-squeeze-press"
+   ]
+  },
+  {
+   "id": "dumbbell-flat-fly",
+   "verdict": "ok",
+   "sources": [
+    "https://www.ritfitsports.com/blogs/article/how-to-do-dumbbell-fly",
+    "https://bodybuilding-wizard.com/flat-bench-dumbbell-flyes/"
+   ]
+  },
+  {
+   "id": "dumbbell-incline-fly",
+   "verdict": "ok",
+   "sources": [
+    "https://bodybuilding-wizard.com/incline-dumbbell-fly/",
+    "https://musclewiki.com/exercise/dumbbell-incline-chest-fly"
+   ]
+  },
+  {
+   "id": "push-up",
+   "verdict": "ok",
+   "sources": [
+    "https://www.builtlean.com/how-to-proper-push-up-form/",
+    "https://blog.nasm.org/nasm-guide-to-push-ups/form-and-technique"
+   ]
+  },
+  {
+   "id": "incline-push-up",
+   "verdict": "ok",
+   "sources": [
+    "https://www.madbarz.com/blog/134-incline-vs-decline-push-ups-whats-the-differe",
+    "https://bodypass.net/exercises/incline-decline-pushups-difference/"
+   ]
+  },
+  {
+   "id": "decline-push-up",
+   "verdict": "ok",
+   "sources": [
+    "https://learn.athleanx.com/articles/how-to-do-decline-pushups",
+    "https://julielohre.com/decline-push-up/"
+   ]
+  },
+  {
+   "id": "knee-push-up",
+   "verdict": "ok",
+   "sources": [
+    "https://www.nasm.org/resource-center/exercise-library/modified-push-up",
+    "https://www.masterclass.com/articles/knee-push-ups-guide"
+   ]
+  },
+  {
+   "id": "wide-push-up",
+   "verdict": "ok",
+   "sources": [
+    "https://www.puregym.com/exercises/chest/press-up/wide-grip-push-ups/",
+    "https://www.muscleandstrength.com/exercises/wide-grip-push-ups.html"
+   ]
+  },
+  {
+   "id": "diamond-push-up",
+   "verdict": "ok",
+   "sources": [
+    "https://powerliftingtechnique.com/diamond-push-up/",
+    "https://www.coachweb.com/bodyweight-exercises/7297/how-to-do-a-diamond-push-up"
+   ]
+  },
+  {
+   "id": "archer-push-up",
+   "verdict": "ok",
+   "sources": [
+    "https://www.masterclass.com/articles/archer-push-up-guide",
+    "https://gymless.org/archer-push-ups/"
+   ]
+  },
+  {
+   "id": "pseudo-planche-push-up",
+   "verdict": "ok",
+   "sources": [
+    "https://www.calisthenics.build/en/exercises/pseudo-planche-push-up",
+    "https://liftmanual.com/pseudo-planche-push-up/"
+   ]
+  },
+  {
+   "id": "tempo-push-up",
+   "verdict": "ok",
+   "sources": [
+    "https://www.muscleandstrength.com/exercises/eccentric-only-push-up",
+    "https://www.zing.coach/exercises/slow-eccentric-push-ups"
+   ]
+  },
+  {
+   "id": "deficit-push-up",
+   "verdict": "ok",
+   "sources": [
+    "https://generationiron.com/deficit-push-up-exercise-guide/",
+    "https://www.motra.com/exercises/deficitPushUp"
+   ]
+  },
+  {
+   "id": "wall-push-up",
+   "verdict": "ok",
+   "sources": [
+    "https://www.masterclass.com/articles/wall-push-ups",
+    "https://www.strengthlog.com/push-up-against-wall/"
+   ]
+  },
+  {
+   "id": "chest-dip",
+   "verdict": "ok",
+   "sources": [
+    "https://www.puregym.com/exercises/chest/dips/",
+    "https://liftmanual.com/chest-dip/"
+   ]
+  },
+  {
+   "id": "band-chest-press",
+   "verdict": "ok",
+   "sources": [
+    "https://www.motra.com/exercises/resistanceBandChestPress",
+    "https://www.exerciselibrary.com/exercise/standing-band-chest-press/"
+   ]
+  },
+  {
+   "id": "band-chest-fly",
+   "verdict": "ok",
+   "sources": [
+    "https://musclewiki.com/exercise/band-chest-fly",
+    "https://liftmanual.com/band-chest-fly/"
+   ]
+  },
+  {
+   "id": "band-high-to-low-crossover",
+   "verdict": "ok",
+   "sources": [
+    "https://bodybuilding-wizard.com/cable-crossover/",
+    "https://smartreps.app/en/exercises/high-to-low-cable-crossover"
+   ]
+  },
+  {
+   "id": "band-low-to-high-crossover",
+   "verdict": "ok",
+   "sources": [
+    "https://www.chrisadamspersonaltraining.com/low-to-high-cable-crossover",
+    "https://liftmanual.com/cable-upper-chest-crossovers/"
+   ]
+  },
+  {
+   "id": "band-incline-chest-press",
+   "verdict": "ok",
+   "sources": [
+    "https://liftmanual.com/band-standing-incline-chest-press/",
+    "https://austerfit.com/blogs/blog/training-the-upper-chest-with-the-dynamic-band-incline-press"
+   ]
+  },
+  {
+   "id": "cable-chest-fly",
+   "verdict": "ok",
+   "sources": [
+    "https://www.setforset.com/blogs/news/cable-flys",
+    "https://fitnessvolt.com/standing-cable-chest-fly-guide/"
+   ]
+  },
+  {
+   "id": "high-cable-crossover",
+   "verdict": "ok",
+   "sources": [
+    "https://squatwolf.com/blogs/fitness/how-to-do-cable-crossover-benefits-variations-and-mistakes",
+    "https://www.fitmetrics.ch/en/exercise/653eba1ef1295-standing-high-cable-crossover"
+   ]
+  },
+  {
+   "id": "low-cable-crossover",
+   "verdict": "ok",
+   "sources": [
+    "https://www.gymstreak.com/exercises/low-cable-crossover",
+    "https://www.motra.com/exercises/cableCrossoverLow"
+   ]
+  },
+  {
+   "id": "cable-chest-press",
+   "verdict": "ok",
+   "sources": [
+    "https://weighttraining.guide/exercises/standing-cable-chest-press/",
+    "https://www.motra.com/exercises/cableStandingChestPress"
+   ]
+  },
+  {
+   "id": "incline-cable-chest-press",
+   "verdict": "ok",
+   "sources": [
+    "https://www.muscleandstrength.com/exercises/incline-cable-chest-press",
+    "https://exrx.net/WeightExercises/PectoralClavicular/CBStandingInclineChestPress"
+   ]
+  },
+  {
+   "id": "machine-chest-press",
+   "verdict": "ok",
+   "sources": [
+    "https://www.nasm.org/resource-center/exercise-library/chest-press-machine",
+    "https://www.garagegymreviews.com/how-to-use-a-chest-press-machine"
+   ]
+  },
+  {
+   "id": "pec-deck-fly",
+   "verdict": "ok",
+   "sources": [
+    "https://liftmanual.com/lever-pec-deck-fly/",
+    "https://fitsociety.io/exercises/chest/pec-deck-machine-fly"
+   ]
+  },
+  {
+   "id": "incline-machine-chest-press",
+   "verdict": "ok",
+   "sources": [
+    "https://gravitus.com/guides/exercises/incline-chest-press/",
+    "https://bodybuilding-wizard.com/machine-incline-press-exercise/"
+   ]
+  },
+  {
+   "id": "hammer-strength-chest-press",
+   "verdict": "ok",
+   "sources": [
+    "https://hortonbarbell.com/hammer-strength-chest-press-how-to-muscles-worked/",
+    "https://bodybuilding-wizard.com/hammer-strength-bench-press-chest-exercise/"
+   ]
+  },
+  {
+   "id": "trx-chest-press",
+   "verdict": "ok",
+   "sources": [
+    "https://www.trxtraining.com/blogs/news/trx-chest-press",
+    "https://liftmanual.com/suspension-chest-press/"
+   ]
+  },
+  {
+   "id": "trx-chest-fly",
+   "verdict": "ok",
+   "sources": [
+    "https://hortonbarbell.com/trx-chest-fly-how-to-muscles-worked-benefits/",
+    "https://liftmanual.com/suspension-fly/"
+   ]
+  },
+  {
+   "id": "kettlebell-floor-press",
+   "verdict": "ok",
+   "sources": [
+    "https://www.strengthlog.com/kettlebell-floor-press/",
+    "https://www.muscleandstrength.com/exercises/kettlebell-floor-press"
+   ]
+  },
+  {
+   "id": "single-arm-kettlebell-bench-press",
+   "verdict": "ok",
+   "sources": [
+    "https://www.muscleandstrength.com/exercises/one-arm-kettlebell-bench-press",
+    "https://www.motra.com/exercises/kettlebellOneArmBenchPress"
+   ]
+  },
+  {
+   "id": "dumbbell-floor-press",
+   "verdict": "ok",
+   "sources": [
+    "https://www.muscleandstrength.com/exercises/dumbbell-floor-press.html",
+    "https://www.zing.coach/exercises/dumbbell-floor-press"
+   ]
+  },
+  {
+   "id": "dumbbell-pullover",
+   "verdict": "ok",
+   "sources": [
+    "https://www.hevyapp.com/exercises/dumbbell-pullover/",
+    "https://www.setforset.com/blogs/news/dumbbell-pullover"
+   ]
+  },
+  {
+   "id": "single-arm-dumbbell-bench-press",
+   "verdict": "ok",
+   "sources": [
+    "https://www.muscleandstrength.com/exercises/one-arm-dumbbell-bench-press.html",
+    "https://www.puregym.com/exercises/chest/bench-press/single-arm-chest-press/"
+   ]
+  },
+  {
+   "id": "alternating-dumbbell-bench-press",
+   "verdict": "ok",
+   "sources": [
+    "https://fitbod.me/exercises/alternating-dumbbell-bench-press",
+    "https://hortonbarbell.com/alternating-db-bench-press/"
+   ]
+  },
+  {
+   "id": "pull-up",
+   "verdict": "ok",
+   "sources": [
+    "https://smartreps.app/en/exercises/pull-ups",
+    "https://www.gymnasetips.com/how-to-do-a-proper-pull-up/"
+   ]
+  },
+  {
+   "id": "chin-up",
+   "verdict": "ok",
+   "sources": [
+    "https://www.masterclass.com/articles/chin-up-guide",
+    "https://barbend.com/chin-up/"
+   ]
+  },
+  {
+   "id": "neutral-grip-pull-up",
+   "verdict": "ok",
+   "sources": [
+    "https://bullbarfit.com/blogs/q-as/how-to-perform-neutral-grip-pull-ups-and-what-are-their-benefits",
+    "https://www.50pullups.com/neutral-grip-pull-ups"
+   ]
+  },
+  {
+   "id": "wide-grip-pull-up",
+   "verdict": "ok",
+   "sources": [
+    "https://www.masterclass.com/articles/wide-grip-pull-ups-guide",
+    "https://www.muscleandstrength.com/exercises/wide-grip-pull-up.html"
+   ]
+  },
+  {
+   "id": "commando-pull-up",
+   "verdict": "ok",
+   "sources": [
+    "https://www.masterclass.com/articles/commando-pull-ups-guide",
+    "https://bodybuilding-wizard.com/commando-pull-ups-tarzan-pull-ups/"
+   ]
+  },
+  {
+   "id": "archer-pull-up",
+   "verdict": "ok",
+   "sources": [
+    "https://www.muscleandstrength.com/exercises/archer-pull-up",
+    "https://fitnessvolt.com/archer-pull-up-guide/"
+   ]
+  },
+  {
+   "id": "scapular-pull-up",
+   "verdict": "ok",
+   "sources": [
+    "https://www.trainwell.net/exercises/scapular-pull-up",
+    "https://www.hevyapp.com/exercises/scapular-pull-ups/"
+   ]
+  },
+  {
+   "id": "negative-pull-up",
+   "verdict": "ok",
+   "sources": [
+    "https://www.inspireusafoundation.org/negative-eccentric-pull-ups/",
+    "https://bullbarfit.com/blogs/updates/negative-pull-ups-for-beginners-the-eccentric-skill-that-gets-you-to-your-first-strict-rep"
+   ]
+  },
+  {
+   "id": "inverted-row",
+   "verdict": "ok",
+   "sources": [
+    "https://www.hevyapp.com/exercises/how-to-inverted-row/",
+    "https://www.nerdfitness.com/blog/inverted-row-are-you-missing-out-on-this-great-exercise/"
+   ]
+  },
+  {
+   "id": "feet-elevated-inverted-row",
+   "verdict": "ok",
+   "sources": [
+    "https://exrx.net/WeightExercises/BackGeneral/BWSupineRowFeetElevated",
+    "https://www.muscleandstrength.com/exercises/smith-machine-bodyweight-row.html"
+   ]
+  },
+  {
+   "id": "towel-row",
+   "verdict": "ok",
+   "sources": [
+    "https://fitwill.app/exercise/3165/bodyweight-standing-row-with-towel/",
+    "https://fitwill.app/exercise/3506/bodyweight-row-in-doorway/"
+   ]
+  },
+  {
+   "id": "superman",
+   "verdict": "ok",
+   "sources": [
+    "https://www.healthline.com/health/fitness/superman-exercise",
+    "https://cathe.com/superman-exercise-a-no-equipment-lower-back-and-glutes-strengthener/"
+   ]
+  },
+  {
+   "id": "prone-y-t-w-raise",
+   "verdict": "ok",
+   "sources": [
+    "https://app.fit-pa.com/exercises/prone-y-t-w-raise",
+    "https://1pixelworkout.com/exercises/prone-ytw-raises"
+   ]
+  },
+  {
+   "id": "bodyweight-back-extension",
+   "verdict": "ok",
+   "sources": [
+    "https://www.strengthlog.com/floor-back-extension/",
+    "https://www.ritfitsports.com/blogs/article/how-to-do-back-extensions-at-home"
+   ]
+  },
+  {
+   "id": "reverse-snow-angel",
+   "verdict": "ok",
+   "sources": [
+    "https://flabfix.com/how-to-do-reverse-snow-angels-properly/",
+    "https://www.zing.coach/exercises/reverse-snow-angel"
+   ]
+  },
+  {
+   "id": "reverse-plank",
+   "verdict": "ok",
+   "sources": [
+    "https://www.masterclass.com/articles/reverse-plank-exercise-guide",
+    "https://www.hevyapp.com/exercises/how-to-reverse-plank/"
+   ]
+  },
+  {
+   "id": "bird-dog-row-hold",
+   "verdict": "ok",
+   "sources": [
+    "https://www.craftsbury.com/blog/move-of-the-month-bird-dog-row",
+    "https://experiencelife.lifetime.life/article/how-to-do-the-bird-dog-row/"
+   ]
+  },
+  {
+   "id": "single-arm-dumbbell-row",
+   "verdict": "ok",
+   "sources": [
+    "https://www.puregym.com/exercises/back/rows/single-arm-dumbbell-row/",
+    "https://nfpt.com/proper-form-for-a-one-arm-dumbbell-row/"
+   ]
+  },
+  {
+   "id": "chest-supported-incline-dumbbell-row",
+   "verdict": "ok",
+   "sources": [
+    "https://www.strengthlog.com/chest-supported-dumbbell-row/",
+    "https://www.motra.com/exercises/dumbbellInclineBenchRow"
+   ]
+  },
+  {
+   "id": "bent-over-dumbbell-row",
+   "verdict": "ok",
+   "sources": [
+    "https://fitbod.me/exercises/dumbbell-bent-over-row",
+    "https://en.wikipedia.org/wiki/Bent-over_row"
+   ]
+  },
+  {
+   "id": "gorilla-dumbbell-row",
+   "verdict": "ok",
+   "sources": [
+    "https://www.strengthlog.com/gorilla-row/",
+    "https://experiencelife.lifetime.life/article/break-it-down-the-gorilla-row/"
+   ]
+  },
+  {
+   "id": "dead-stop-dumbbell-row",
+   "verdict": "ok",
+   "sources": [
+    "https://tonygentilcore.com/2011/04/exercises-you-should-be-doing-deadstop-db-row/",
+    "https://www.gettfit.com/exercise-database/back/dead-stop-one-arm-dumbbell-row/"
+   ]
+  },
+  {
+   "id": "dumbbell-high-pull",
+   "verdict": "ok",
+   "sources": [
+    "https://www.motra.com/exercises/dumbbellHighPull",
+    "https://repfitness.com/blogs/training/dumbbell-high-pull"
+   ]
+  },
+  {
+   "id": "dumbbell-shrug",
+   "verdict": "ok",
+   "sources": [
+    "https://www.strengthlog.com/dumbbell-shrug/",
+    "https://fitbod.me/exercises/dumbbell-shrug"
+   ]
+  },
+  {
+   "id": "kroc-row",
+   "verdict": "ok",
+   "sources": [
+    "https://www.setforset.com/blogs/news/kroc-rows",
+    "https://www.allthingsgym.com/kroc-rows-matt-kroczaleski/"
+   ]
+  },
+  {
+   "id": "incline-prone-dumbbell-row",
+   "verdict": "fix",
+   "sources": [
+    "https://fitbod.me/exercises/incline-dumbbell-row",
+    "https://www.puregym.com/exercises/back/rows/incline-row/"
+   ],
+   "problem": "The description sends the dumbbells 'toward your hips,' but every sourced version of this row pulls them up toward the lower ribs/chest with the elbows driving back, not down toward the hips. On a chest-supported incline row there is no hip to pull toward — the torso is pinned flat to the bench the whole rep.",
+   "proposed": {
+    "cue": "Chest on the incline, row the dumbbells up toward your ribs.",
+    "description": "Lie chest-down on an incline bench with a dumbbell in each hand hanging down. Row them up toward your lower ribs by driving your elbows back, squeezing your shoulder blades, then lower slowly. The supported position isolates the mid-back cleanly."
+   }
+  },
+  {
+   "id": "barbell-bent-over-row",
+   "verdict": "ok",
+   "sources": [
+    "https://www.puregym.com/exercises/back/rows/barbell-bent-over-row/",
+    "https://www.muscleandstrength.com/exercises/bent-over-barbell-row.html"
+   ]
+  },
+  {
+   "id": "pendlay-row",
+   "verdict": "ok",
+   "sources": [
+    "https://breakingmuscle.com/pendlay-row/",
+    "https://www.garagegymreviews.com/pendlay-row"
+   ]
+  },
+  {
+   "id": "t-bar-row",
+   "verdict": "ok",
+   "sources": [
+    "https://www.puregym.com/exercises/back/rows/landmine-row/",
+    "https://www.gymshark.com/blog/article/how-to-t-bar-row"
+   ]
+  },
+  {
+   "id": "yates-row",
+   "verdict": "ok",
+   "sources": [
+    "https://fitnessvolt.com/yates-row/",
+    "https://bodybuilding-wizard.com/yates-row-back-exercise-explained/"
+   ]
+  },
+  {
+   "id": "barbell-shrug",
+   "verdict": "ok",
+   "sources": [
+    "https://www.muscleandstrength.com/exercises/barbell-shrug.html",
+    "https://bodybuilding-wizard.com/barbell-shrug/"
+   ]
+  },
+  {
+   "id": "rack-pull",
+   "verdict": "ok",
+   "sources": [
+    "https://barbend.com/rack-pulls/",
+    "https://legionathletics.com/rack-pulls/"
+   ]
+  },
+  {
+   "id": "conventional-deadlift",
+   "verdict": "ok",
+   "sources": [
+    "https://stronglifts.com/deadlift/",
+    "https://www.powerliftingtowin.com/powerlifting-technique-how-to-deadlift/"
+   ]
+  },
+  {
+   "id": "single-arm-kettlebell-row",
+   "verdict": "ok",
+   "sources": [
+    "https://www.trainwell.net/exercises/single-kettlebell-bench-one-arm-row",
+    "https://www.strongermobileapp.com/exercises/single-arm-kettlebell-row"
+   ]
+  },
+  {
+   "id": "kettlebell-gorilla-row",
+   "verdict": "ok",
+   "sources": [
+    "https://fitbod.me/exercises/gorilla-rows",
+    "https://fitnessvolt.com/gorilla-row/"
+   ]
+  },
+  {
+   "id": "cable-lat-pulldown",
+   "verdict": "ok",
+   "sources": [
+    "https://powerliftingtechnique.com/lat-pulldowns/",
+    "https://www.builtlean.com/lat-pulldown/"
+   ]
+  },
+  {
+   "id": "close-grip-cable-lat-pulldown",
+   "verdict": "ok",
+   "sources": [
+    "https://nfpt.com/close-grip-lat-pulldown-v-bar/",
+    "https://www.muscleandstrength.com/exercises/v-bar-pull-down"
+   ]
+  },
+  {
+   "id": "wide-grip-cable-lat-pulldown",
+   "verdict": "ok",
+   "sources": [
+    "https://fitbod.me/exercises/wide-grip-lat-pulldown",
+    "https://www.puregym.com/exercises/back/lat-exercises/wide-grip-lat-pulldown/"
+   ]
+  },
+  {
+   "id": "straight-arm-cable-pulldown",
+   "verdict": "ok",
+   "sources": [
+    "https://www.setforset.com/blogs/news/straight-arm-pulldown",
+    "https://athlemove.com/exercises/cable-straight-arm-pulldown"
+   ]
+  },
+  {
+   "id": "seated-cable-row",
+   "verdict": "ok",
+   "sources": [
+    "https://repfitness.com/blogs/training/how-to-do-a-seated-cable-low-row",
+    "https://your-pt.com/exercises/seated-row/"
+   ]
+  },
+  {
+   "id": "single-arm-cable-row",
+   "verdict": "ok",
+   "sources": [
+    "https://www.strongermobileapp.com/exercises/single-arm-cable-row",
+    "https://www.muscleandstrength.com/exercises/one-arm-cable-row.html"
+   ]
+  },
+  {
+   "id": "cable-face-pull",
+   "verdict": "ok",
+   "sources": [
+    "https://www.muscleandstrength.com/exercises/cable-face-pull",
+    "https://julielohre.com/face-pulls/"
+   ]
+  },
+  {
+   "id": "cable-pullover",
+   "verdict": "fix",
+   "sources": [
+    "https://powerliftingtechnique.com/cable-pullovers/",
+    "https://gravitus.com/guides/exercises/cable-lat-pullover/"
+   ],
+   "problem": "The description has you stand upright facing the cable the whole rep. Every sourced version of a cable pullover hinges forward at the hips about 30-45 degrees with the arms reaching overhead in line with the cable — that forward hinge is what gives the exercise its long lat stretch and is the one thing that tells it apart from a straight-arm pulldown (which is done standing tall). As written, this card describes the same body position as straight-arm-cable-pulldown, just with the arms starting slightly bent instead of straight.",
+   "proposed": {
+    "cue": "Hinge forward at the hips, then sweep the bar down to your thighs with straight-ish arms.",
+    "description": "Hinge forward at the hips about 30 to 45 degrees with soft knees and a braced core, then reach the bar straight overhead in line with the cable. Keeping your arms nearly straight, sweep it down in an arc to your thighs using your lats, then return under control to the stretch. The forward hinge is what gives this move its long stretch — stand upright and you are just doing a straight-arm pulldown."
+   }
+  },
+  {
+   "id": "lat-pulldown-machine",
+   "verdict": "ok",
+   "sources": [
+    "https://www.hevyapp.com/exercises/how-to-lat-pulldown-machine/",
+    "https://row.gymshark.com/blog/article/master-the-lat-pulldown"
+   ]
+  },
+  {
+   "id": "seated-row-machine",
+   "verdict": "fix",
+   "sources": [
+    "https://gravitus.com/guides/exercises/seated-row/",
+    "https://gravitus.com/guides/exercises/machine-seated-row/"
+   ],
+   "problem": "The description has the lifter's chest against a pad, with the pad credited for keeping the lower back safe. The plain seated row machine (distinct from this same batch's chest-supported-row-machine) has a foot platform, not a chest pad — feet planted, knees soft, torso held upright by the lifter's own core and lower back, not by a pad. As written, this card describes the exact feature that is supposed to separate it from chest-supported-row-machine, so the two converge on the same setup.",
+   "proposed": {
+    "cue": "Feet braced on the platform, pull the handles to your torso without rocking.",
+    "description": "Sit at the row machine with your feet planted on the footplate, knees slightly bent, and grip the handles with your torso upright and arms extended. Pull them toward your torso by driving your elbows back and squeezing your shoulder blades together, then return slowly over 2-3 seconds. There is no chest pad on this machine — your own core and lower back hold the torso still, which is what tells it apart from the chest-supported row."
+   }
+  },
+  {
+   "id": "chest-supported-row-machine",
+   "verdict": "ok",
+   "sources": [
+    "https://gravitus.com/guides/exercises/chest-supported-row/",
+    "https://trackyourlift.com/exercises/chest-supported-row-machine/"
+   ]
+  },
+  {
+   "id": "hammer-strength-row",
+   "verdict": "ok",
+   "sources": [
+    "https://fitbod.me/exercises/hammerstrength-iso-row",
+    "https://greenphysique.com/in-the-gym-equipment-instruction/hammer-strength-machine-row"
+   ]
+  },
+  {
+   "id": "assisted-pull-up-machine",
+   "verdict": "ok",
+   "sources": [
+    "https://www.puregym.com/exercises/back/pull-up/assisted-pull-ups/",
+    "https://www.strongermobileapp.com/exercises/assisted-pull-up"
+   ]
+  },
+  {
+   "id": "back-extension-machine",
+   "verdict": "ok",
+   "sources": [
+    "https://www.masterclass.com/articles/back-extension-exercise-guide",
+    "https://workoutlabs.com/exercise-guide/back-extensions/"
+   ]
+  },
+  {
+   "id": "resistance-band-lat-pulldown",
+   "verdict": "ok",
+   "sources": [
+    "https://www.trainwell.net/exercises/band-lat-pulldown",
+    "https://www.hevyapp.com/exercises/lat-pulldown-band/"
+   ]
+  },
+  {
+   "id": "resistance-band-row",
+   "verdict": "ok",
+   "sources": [
+    "https://www.litmethod.com/blogs/lit-blog/resistance-band-rows",
+    "https://gethealthyu.com/resistance-band-row/"
+   ]
+  },
+  {
+   "id": "band-pull-apart",
+   "verdict": "ok",
+   "sources": [
+    "https://www.trainwell.net/exercises/band-pull-apart",
+    "https://www.muscleandstrength.com/exercises/band-pull-apart"
+   ]
+  },
+  {
+   "id": "band-straight-arm-pulldown",
+   "verdict": "ok",
+   "sources": [
+    "https://www.setforset.com/blogs/news/straight-arm-pulldown",
+    "https://liftmanual.com/band-straight-arm-pulldown/"
+   ]
+  },
+  {
+   "id": "band-face-pull",
+   "verdict": "ok",
+   "sources": [
+    "https://www.strengthlog.com/banded-face-pull/",
+    "https://www.trainwell.net/exercises/band-face-pull"
+   ]
+  },
+  {
+   "id": "band-single-arm-row",
+   "verdict": "ok",
+   "sources": [
+    "https://fitwill.app/exercise/4575/band-standing-single-arm-row/",
+    "https://www.setforset.com/blogs/news/resistance-band-rows"
+   ]
+  },
+  {
+   "id": "trx-row",
+   "verdict": "ok",
+   "sources": [
+    "https://fitbod.me/exercises/trx-row",
+    "https://hortonbarbell.com/trx-row-how-to-muscles-worked-benefits/"
+   ]
+  },
+  {
+   "id": "trx-single-arm-row",
+   "verdict": "ok",
+   "sources": [
+    "https://www.acefitness.org/resources/everyone/exercise-library/92/trx-reg-single-arm-row/",
+    "https://www.trxtraining.com/blogs/news/trx-weekly-exercise-trx-single-arm-row"
+   ]
+  },
+  {
+   "id": "pike-push-up",
+   "verdict": "ok",
+   "sources": [
+    "https://antranik.org/pike-pushups/",
+    "https://steelsupplements.com/blogs/steel-blog/how-to-do-pike-push-ups-form-benefits"
+   ]
+  },
+  {
+   "id": "feet-elevated-pike-push-up",
+   "verdict": "ok",
+   "sources": [
+    "https://library.theprehabguys.com/vimeo-video/pike-push-up-legs-elevated/",
+    "https://ensomovement.com/blog/training/exercise-database/foot-elevated-pike-push-up/"
+   ]
+  },
+  {
+   "id": "wall-handstand-hold",
+   "verdict": "ok",
+   "sources": [
+    "https://torokhtiy.com/blogs/guides/how-to-do-a-wall-handstand",
+    "https://ensomovement.com/blog/training/exercise-database/chest-to-wall-handstand-posture/"
+   ]
+  },
+  {
+   "id": "wall-walk",
+   "verdict": "ok",
+   "sources": [
+    "https://hortonbarbell.com/wall-walks-how-to-muscles-worked-benefits/",
+    "https://dieringe.com/exercises/wall-walks"
+   ]
+  },
+  {
+   "id": "dumbbell-lateral-raise",
+   "verdict": "ok",
+   "sources": [
+    "https://learn.athleanx.com/articles/shoulders-for-men/how-to-do-lateral-raises",
+    "https://repfitness.com/blogs/training/how-to-do-dumbbell-lateral-raises"
+   ]
+  },
+  {
+   "id": "dumbbell-front-raise",
+   "verdict": "ok",
+   "sources": [
+    "https://julielohre.com/db-front-raise-exercise/",
+    "https://fitbod.me/exercises/dumbbell-front-raise"
+   ]
+  },
+  {
+   "id": "dumbbell-rear-delt-fly",
+   "verdict": "ok",
+   "sources": [
+    "https://dumbbellsdirect.com/blogs/dumbbell-exercises-specific-movements/dumbbell-rear-delt-fly",
+    "https://anabolicaliens.com/blogs/the-signal/the-dumbbell-rear-delt-fly-101-how-to-train-your-rear-deltoids"
+   ]
+  },
+  {
+   "id": "dumbbell-scaption",
+   "verdict": "ok",
+   "sources": [
+    "https://theprehabguys.com/vimeo-video/scaption-raise-dumbbell/",
+    "https://enarahealth.com/blog/movement-of-the-month-scaption-the-ultimate-shoulder-exercise/"
+   ]
+  },
+  {
+   "id": "dumbbell-cuban-press",
+   "verdict": "ok",
+   "sources": [
+    "https://www.strengthlog.com/cuban-press/",
+    "https://liftmanual.com/dumbbell-cuban-press/"
+   ]
+  },
+  {
+   "id": "dumbbell-six-way-raise",
+   "verdict": "fix",
+   "sources": [
+    "https://archive.t-nation.com/training/tip-the-6-way-delt-raise/",
+    "https://pelank.com/exercises/dumbbell-6-way-raise/"
+   ],
+   "problem": "The cue and description raise the dumbbells to the front first, then sweep out to the sides, then overhead. Both sourced guides run the opposite order: lateral (side) raise first, then bring the dumbbells in to the front, then press overhead, then reverse. Swapping the first two phases changes which head of the deltoid takes the first, heaviest part of the lift -- the whole point of a '6-way' raise is hitting all three heads in a fixed, trained sequence.",
+   "proposed": {
+    "cue": "Raise out to the sides, sweep to the front, then press overhead -- and reverse.",
+    "description": "Raise the dumbbells out to the sides to shoulder height, sweep them in to the front at the same height, then press overhead, and reverse the path back down -- that's one rep. It hits the side, front, and rear shoulders in a single flowing set. Use very light weights."
+   }
+  },
+  {
+   "id": "dumbbell-around-the-world",
+   "verdict": "ok",
+   "sources": [
+    "https://planfit.ai/en/exercise/dumbbell-around-the-world",
+    "https://fitbod.me/exercises/around-the-worlds"
+   ]
+  },
+  {
+   "id": "dumbbell-lean-away-lateral-raise",
+   "verdict": "ok",
+   "sources": [
+    "https://www.catalystathletics.com/exercise/859/Leanaway-Lateral-Raise/",
+    "https://steelsupplements.com/blogs/steel-blog/how-to-do-leaning-lateral-raises-forms-and-benefits"
+   ]
+  },
+  {
+   "id": "dumbbell-incline-y-raise",
+   "verdict": "ok",
+   "sources": [
+    "https://adapt-hub.com/exercises/dumbbell-incline-y-raise",
+    "https://getfitcraft.com/exercises/y-raise"
+   ]
+  },
+  {
+   "id": "dumbbell-l-raise",
+   "verdict": "unsure",
+   "sources": [
+    "https://exercises.virtuagym.com/exercise/dumbbells-l-raise-alternating/",
+    "https://www.madscientistofmuscle.com/1-exercises/shoulder-exercises/bodyweight-l-raises.htm",
+    "https://www.mountainpeakfitness.com/blog/seated-shoulder-external"
+   ],
+   "note": "'L-raise' names at least three different movements online and sources disagree with each other, not just with the card. Virtuagym's 'Dumbbells L-raise (alternating)' is a plain lateral raise with no rotation at all. The rotator-cuff sources describe a static L position -- upper arm held at shoulder height, elbow bent 90 degrees, the whole time -- where only the forearm rotates from pointing down to pointing up; the arm never travels from the side up to shoulder height as part of the rep. The shipped card describes a third thing: raise the straight arm from the side up to shoulder height, then bend the elbow and rotate the forearm up. That compound two-phase version is not clearly attested by any single source found, so this is not a confident fix -- writing a 'proposed' correction would mean picking one of two unrelated real exercises to replace it with, and either guess could be wrong. Flagging rather than fixing."
+  },
+  {
+   "id": "dumbbell-powell-raise",
+   "verdict": "ok",
+   "sources": [
+    "https://library.theprehabguys.com/vimeo-video/powell-raise-dumbbell/",
+    "https://www.rehabhero.ca/exercise/powell-raise"
+   ]
+  },
+  {
+   "id": "seated-dumbbell-rear-delt-fly",
+   "verdict": "ok",
+   "sources": [
+    "https://sweat.com/exercises/seated-bent-over-rear-delt-raise",
+    "https://www.muscleandstrength.com/exercises/alternate-seated-bent-over-dumbbell-reverse-fly.html"
+   ]
+  },
+  {
+   "id": "dumbbell-seated-shoulder-press",
+   "verdict": "ok",
+   "sources": [
+    "https://www.strengthlog.com/seated-dumbbell-shoulder-press/",
+    "https://learn.athleanx.com/articles/shoulders-for-men/seated-dumbbell-press"
+   ]
+  },
+  {
+   "id": "dumbbell-standing-shoulder-press",
+   "verdict": "ok",
+   "sources": [
+    "https://www.muscleandstrength.com/exercises/standing-dumbbell-press.html",
+    "https://liftmanual.com/dumbbell-standing-overhead-press/"
+   ]
+  },
+  {
+   "id": "dumbbell-arnold-press",
+   "verdict": "ok",
+   "sources": [
+    "https://barbend.com/arnold-press/",
+    "https://learn.athleanx.com/articles/shoulders-for-men/how-to-do-the-arnold-press"
+   ]
+  },
+  {
+   "id": "dumbbell-push-press",
+   "verdict": "ok",
+   "sources": [
+    "https://www.garagegymreviews.com/push-press-exercise",
+    "https://dumbbellsdirect.com/blogs/barbell-exercisesspecific-movements/barbell-push-press"
+   ]
+  },
+  {
+   "id": "single-arm-dumbbell-overhead-press",
+   "verdict": "ok",
+   "sources": [
+    "https://www.muscleandstrength.com/exercises/standing-dumbbell-press.html",
+    "https://hortonbarbell.com/kneeling-single-arm-dumbbell-press/"
+   ]
+  },
+  {
+   "id": "half-kneeling-dumbbell-press",
+   "verdict": "ok",
+   "sources": [
+    "https://hortonbarbell.com/kneeling-single-arm-dumbbell-press/",
+    "https://www.jtsstrength.com/3-reasons-why-the-half-kneeling-position-will-improve-your-training/"
+   ]
+  },
+  {
+   "id": "barbell-overhead-press",
+   "verdict": "ok",
+   "sources": [
+    "https://stronglifts.com/overhead-press/",
+    "https://www.sensai.fit/blog/how-to-overhead-press"
+   ]
+  },
+  {
+   "id": "barbell-push-press",
+   "verdict": "ok",
+   "sources": [
+    "https://www.garagegymreviews.com/push-press-exercise",
+    "https://workoutlabs.com/exercise-guide/push-press/"
+   ]
+  },
+  {
+   "id": "barbell-z-press",
+   "verdict": "ok",
+   "sources": [
+    "https://www.strengthlog.com/z-press/",
+    "https://hortonbarbell.com/z-press/"
+   ]
+  },
+  {
+   "id": "barbell-landmine-press",
+   "verdict": "ok",
+   "sources": [
+    "https://learn.athleanx.com/articles/shoulders-for-men/how-to-do-the-landmine-press",
+    "https://hortonbarbell.com/landmine-press/"
+   ]
+  },
+  {
+   "id": "barbell-upright-row",
+   "verdict": "ok",
+   "sources": [
+    "https://squatwolf.com/blogs/fitness/barbell-upright-row",
+    "https://liftmanual.com/barbell-upright-row/"
+   ]
+  },
+  {
+   "id": "kettlebell-overhead-press",
+   "verdict": "ok",
+   "sources": [
+    "https://fitbod.me/exercises/kettlebell-overhead-press",
+    "https://www.kettlebellkings.com/blogs/default-blog/kettlebell-foundations-overhead-press"
+   ]
+  },
+  {
+   "id": "kettlebell-push-press",
+   "verdict": "ok",
+   "sources": [
+    "https://kettlebell.monster/learn/encyclopedia/push-press-single-arm",
+    "https://liftmanual.com/kettlebell-one-arm-push-press/"
+   ]
+  },
+  {
+   "id": "single-arm-kettlebell-press",
+   "verdict": "ok",
+   "sources": [
+    "https://www.onnit.com/blogs/the-edge/single-arm-kettlebell-press-how-to-do-it-get-ripped",
+    "https://kettlebell.monster/learn/encyclopedia/strict-shoulder-press-single-arm"
+   ]
+  },
+  {
+   "id": "kettlebell-bottoms-up-press",
+   "verdict": "ok",
+   "sources": [
+    "https://barbend.com/bottoms-up-kettlebell-press/",
+    "https://www.muscleandstrength.com/exercises/standing-one-arm-bottoms-up-kettlebell-press"
+   ]
+  },
+  {
+   "id": "kettlebell-halo",
+   "verdict": "ok",
+   "sources": [
+    "https://www.kettlebellkings.com/blogs/default-blog/kettlebell-halo-exercise",
+    "https://kettlebellsworkouts.com/kettlebell-halo/"
+   ]
+  },
+  {
+   "id": "kettlebell-high-pull",
+   "verdict": "ok",
+   "sources": [
+    "https://strongandfit.com/blogs/news/kettlebell-high-pull",
+    "https://www.motra.com/exercises/kettlebellHighPull"
+   ]
+  },
+  {
+   "id": "kettlebell-z-press",
+   "verdict": "ok",
+   "sources": [
+    "https://barbend.com/z-press/",
+    "https://www.athleticaging.blog/p/the-z-press-building-strong-shoulders"
+   ]
+  },
+  {
+   "id": "cable-lateral-raise",
+   "verdict": "ok",
+   "sources": [
+    "https://fitbod.me/exercises/cable-lateral-raise",
+    "https://gravitus.com/guides/exercises/lateral-raise-cable/"
+   ]
+  },
+  {
+   "id": "cable-front-raise",
+   "verdict": "ok",
+   "sources": [
+    "https://www.strengthlog.com/cable-front-raise/",
+    "https://www.strongermobileapp.com/exercises/cable-front-raise"
+   ]
+  },
+  {
+   "id": "cable-rear-delt-fly",
+   "verdict": "ok",
+   "sources": [
+    "https://fitnessvolt.com/cable-rear-delt-fly/",
+    "https://www.gymstreak.com/exercises/cable-rear-delt-flyes"
+   ]
+  },
+  {
+   "id": "cable-upright-row",
+   "verdict": "ok",
+   "sources": [
+    "https://fitbod.me/exercises/cable-upright-row",
+    "https://hortonbarbell.com/cable-upright-row/"
+   ]
+  },
+  {
+   "id": "cable-y-raise",
+   "verdict": "ok",
+   "sources": [
+    "https://liftmanual.com/cable-y-raise/",
+    "https://www.ellim.app/exercises/cable-y-raise"
+   ]
+  },
+  {
+   "id": "machine-shoulder-press",
+   "verdict": "ok",
+   "sources": [
+    "https://fitbod.me/exercises/machine-shoulder-press",
+    "https://www.strengthlog.com/machine-shoulder-press/"
+   ]
+  },
+  {
+   "id": "machine-lateral-raise",
+   "verdict": "ok",
+   "sources": [
+    "https://fitnessvolt.com/machine-lateral-raise-exercise-guide/",
+    "https://www.strengthlog.com/machine-lateral-raise/"
+   ]
+  },
+  {
+   "id": "reverse-pec-deck",
+   "verdict": "ok",
+   "sources": [
+    "https://fitnessvolt.com/reverse-pec-deck-fly/",
+    "https://bodybuilding-wizard.com/reverse-pec-deck-fly/"
+   ]
+  },
+  {
+   "id": "band-overhead-press",
+   "verdict": "ok",
+   "sources": [
+    "https://workoutlabs.com/exercise-guide/resistance-band-standing-shoulder-press-overhead-press/",
+    "https://liftmanual.com/band-shoulder-press/"
+   ]
+  },
+  {
+   "id": "band-lateral-raise",
+   "verdict": "ok",
+   "sources": [
+    "https://www.gymreapers.com/blogs/news/how-to-do-lateral-raises-with-bands",
+    "https://liftmanual.com/band-lateral-raise/"
+   ]
+  },
+  {
+   "id": "band-front-raise",
+   "verdict": "ok",
+   "sources": [
+    "https://hortonbarbell.com/band-front-raise/",
+    "https://liftmanual.com/band-front-raise/"
+   ]
+  },
+  {
+   "id": "band-rear-delt-fly",
+   "verdict": "ok",
+   "sources": [
+    "https://legacymuscle.com/resistance-band-rear-delt-fly/",
+    "https://liftmanual.com/resistance-band-rear-fly/"
+   ]
+  },
+  {
+   "id": "band-upright-row",
+   "verdict": "ok",
+   "sources": [
+    "https://www.gymreapers.com/blogs/news/upright-row-with-bands",
+    "https://fitliferegime.com/resistance-band-upright-row-muscle-worked-benefits/"
+   ]
+  },
+  {
+   "id": "trx-y-raise",
+   "verdict": "ok",
+   "sources": [
+    "https://musclewiki.com/exercise/trx-y-raise",
+    "https://workoutlabs.com/exercise-guide/trx-suspension-straps-deltoid-y-flyes/"
+   ]
+  },
+  {
+   "id": "trx-rear-delt-fly",
+   "verdict": "fix",
+   "sources": [
+    "https://hortonbarbell.com/trx-rear-delt-fly-how-to-benefits-muscles-worked/",
+    "https://fitbod.me/exercises/trx-t-deltoid-fly"
+   ],
+   "problem": "The cue and description both say to keep the arms straight throughout the T-fly ('lean back with straight arms...keeping them straight, pull your hands out'). Both sourced guides specifically call for a slight bend in the elbows, and warn that locking the arms straight is a form error -- the opposite error they warn against is bending the elbows too much, which turns the fly into a row. The shipped TRX Y-raise card (same batch) correctly keeps straight arms, because that is a genuinely different movement; the T-fly is not.",
+   "proposed": {
+    "cue": "Lean back and pull your arms out to the sides in a T, elbows softly bent.",
+    "description": "Hold the TRX handles and lean back with arms extended, a slight bend in the elbows. Keeping that same soft bend, pull your hands out to the sides into a T, squeezing your shoulder blades, then return slowly. A bodyweight reverse fly for the rear shoulders -- adjust the lean for difficulty."
+   }
+  },
+  {
+   "id": "medicine-ball-overhead-press",
+   "verdict": "ok",
+   "sources": [
+    "https://www.trainwell.net/exercises/med-ball-overhead-press",
+    "https://evofitness.at/en/blog/learn/medicine-ball-squat-to-overhead-press/"
+   ]
+  },
+  {
+   "id": "medicine-ball-push-press",
+   "verdict": "ok",
+   "sources": [
+    "https://shockfitapp.com/blogs/exercises/med-ball-push-press",
+    "https://www.theragear.com/exercise/push_squats_and_medicine_ball_press.php"
+   ]
+  },
+  {
+   "id": "underhand-towel-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://www.eatthis.com/towel-exercises-build-arm-strength-after-55/",
+    "https://gripzilla.co/blogs/news/biceps-workouts-without-weights"
+   ]
+  },
+  {
+   "id": "self-resisted-biceps-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://ebicep.com/workouts/no-equipment-bicep-workout/",
+    "https://www.calisthenics-corner.com/articles/bicep-exercises-no-equipment/"
+   ]
+  },
+  {
+   "id": "dumbbell-biceps-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://fitbod.me/blog/how-to-do-bicep-curls/",
+    "https://gravitus.com/guides/exercises/dumbbell-curl/"
+   ]
+  },
+  {
+   "id": "dumbbell-hammer-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://www.strengthlog.com/hammer-curl/",
+    "https://learn.athleanx.com/articles/how-to-do-hammer-curls"
+   ]
+  },
+  {
+   "id": "dumbbell-concentration-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://powerliftingtechnique.com/concentration-curls/",
+    "https://hortonbarbell.com/db-concentration-curls/"
+   ]
+  },
+  {
+   "id": "incline-dumbbell-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://www.strengthlog.com/incline-dumbbell-curl/",
+    "https://gravitus.com/guides/exercises/incline-dumbbell-curl/"
+   ]
+  },
+  {
+   "id": "spider-dumbbell-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://www.setforset.com/blogs/news/spider-curl",
+    "https://fitbod.me/exercises/spider-curls"
+   ]
+  },
+  {
+   "id": "zottman-dumbbell-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://www.garagegymreviews.com/zottman-curl",
+    "https://fitbod.me/exercises/zottman-curl"
+   ]
+  },
+  {
+   "id": "cross-body-hammer-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://fitbod.me/exercises/cross-body-hammer-curls",
+    "https://dumbbellsdirect.com/blogs/dumbbell-exercises-specific-movements/cross-body-hammer-curl"
+   ]
+  },
+  {
+   "id": "dumbbell-drag-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://getfitcraft.com/exercises/drag-curl",
+    "https://superhumanfitness.com/exercises/drag-curls/"
+   ]
+  },
+  {
+   "id": "reverse-dumbbell-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://repfitness.com/blogs/training/reverse-dumbbell-curls",
+    "https://fitnessvolt.com/dumbbell-reverse-wrist-curl/"
+   ]
+  },
+  {
+   "id": "dumbbell-waiter-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://flabfix.com/how-to-do-waiter-curls-properly/",
+    "https://www.burnthefatinnercircle.com/public/Waiter-Curls-For-Bicep-Peak.cfm"
+   ]
+  },
+  {
+   "id": "dumbbell-twenty-one-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://www.setforset.com/blogs/news/biceps-21s",
+    "https://hortonbarbell.com/21s/"
+   ]
+  },
+  {
+   "id": "seated-alternating-dumbbell-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://hortonbarbell.com/seated-alternating-dumbbell-curls/",
+    "https://www.muscleandstrength.com/exercises/alternate-seated-dumbbell-curl.html"
+   ]
+  },
+  {
+   "id": "incline-hammer-dumbbell-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://liftmanual.com/dumbbell-incline-hammer-curl/",
+    "https://www.strongermobileapp.com/exercises/dumbbell-incline-hammer-curl"
+   ]
+  },
+  {
+   "id": "prone-dumbbell-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://adapt-hub.com/exercises/dumbbell-prone-incline-curl",
+    "https://www.drfitology.com/exercises/biceps/lying-incline-bench-dumbbell-curl"
+   ]
+  },
+  {
+   "id": "ez-bar-biceps-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://fitnessvolt.com/ez-bar-curl-biceps/",
+    "https://learn.athleanx.com/articles/how-to-do-ez-bar-curls"
+   ]
+  },
+  {
+   "id": "ez-bar-preacher-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://www.liftosaur.com/exercises/ez-bar-preacher-curl",
+    "https://www.strongermobileapp.com/exercises/ez-bar-preacher-curl"
+   ]
+  },
+  {
+   "id": "ez-bar-reverse-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://fitbod.me/exercises/ez-bar-reverse-grip-curl",
+    "https://workoutlabs.com/exercise-guide/reverse-grip-ez-curl-bar-curls/"
+   ]
+  },
+  {
+   "id": "ez-bar-drag-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://russhowepti.com/exercises/ez-bar-drag-curl/",
+    "http://www.compoundlifts.co.uk/exercise/ez-bar-drag-curl/"
+   ]
+  },
+  {
+   "id": "barbell-biceps-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://workoutlabs.com/exercise-guide/barbell-curls/",
+    "https://learn.athleanx.com/articles/how-to-do-barbell-curls"
+   ]
+  },
+  {
+   "id": "wide-grip-barbell-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://macrosinc.net/exercises/arms/wide-grip-barbell-curl/",
+    "https://www.inspireusafoundation.org/wide-grip-barbell-curl/"
+   ]
+  },
+  {
+   "id": "close-grip-barbell-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://www.tuffwraps.com/blogs/news/close-grip-vs-wide-grip-bicep-curls-choosing-the-right-grip-for-maximum-results",
+    "https://www.borntough.com/blogs/news/how-to-train-outer-bicep-best-exercises-for-bicep-long-head"
+   ]
+  },
+  {
+   "id": "barbell-twenty-one-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://www.setforset.com/blogs/news/biceps-21s",
+    "https://www.garagegymreviews.com/21s-workout"
+   ]
+  },
+  {
+   "id": "cable-biceps-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://workoutlabs.com/exercise-guide/cable-curl/",
+    "https://exrx.net/WeightExercises/Biceps/CBCurl"
+   ]
+  },
+  {
+   "id": "rope-hammer-cable-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://fitnessvolt.com/cable-hammer-curl/",
+    "https://gravitus.com/guides/exercises/cable-rope-hammer-curl/"
+   ]
+  },
+  {
+   "id": "high-cable-double-biceps-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://fitbod.me/exercises/cable-double-bicep-curl",
+    "https://gym-mikolo.com/blogs/home-gym/mastering-the-high-cable-curl-build-stronger-fuller-biceps"
+   ]
+  },
+  {
+   "id": "single-arm-cable-biceps-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://www.muscleandstrength.com/exercises/one-arm-cable-curl.html",
+    "https://exrx.net/WeightExercises/Biceps/CBOneArmCurl"
+   ]
+  },
+  {
+   "id": "cable-preacher-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://fitbod.me/exercises/cable-preacher-curl",
+    "https://liftmanual.com/cable-preacher-curl/"
+   ]
+  },
+  {
+   "id": "machine-preacher-biceps-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://fitbod.me/exercises/machine-preacher-curl",
+    "https://www.strongermobileapp.com/exercises/preacher-curl-machine"
+   ]
+  },
+  {
+   "id": "machine-biceps-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://gravitus.com/guides/exercises/bicep-curl-machine/",
+    "https://www.zing.coach/exercises/machine-bicep-curls"
+   ]
+  },
+  {
+   "id": "resistance-band-biceps-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://gethealthyu.com/resistance-band-bicep-curl/",
+    "https://www.pt2austin.com/movement-library/standing-bicep-curl-resistance-band"
+   ]
+  },
+  {
+   "id": "resistance-band-hammer-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://liftmanual.com/resistance-band-hammer-curl/",
+    "https://www.exerciselibrary.com/exercise/resistance-band-hammer-curl/"
+   ]
+  },
+  {
+   "id": "kettlebell-biceps-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://liftmanual.com/kettlebell-biceps-curl/",
+    "https://www.pocket-fit.app/exercises/kettlebell-curl"
+   ]
+  },
+  {
+   "id": "trx-biceps-curl",
+   "verdict": "ok",
+   "sources": [
+    "https://www.fitfatherproject.com/trx-bicep-curl/",
+    "https://fitnessrefined.co/exercises/trx-bicep-curl/"
+   ]
+  },
+  {
+   "id": "bench-dip-triceps",
+   "verdict": "ok",
+   "sources": [
+    "https://learn.athleanx.com/articles/how-to-do-bench-dips",
+    "https://getfitcraft.com/exercises/bench-dips"
+   ]
+  },
+  {
+   "id": "feet-elevated-bench-dip",
+   "verdict": "ok",
+   "sources": [
+    "https://russhowepti.com/exercises/feet-elevated-bench-dips/",
+    "https://www.muscleandstrength.com/exercises/tricep-bench-dip.html"
+   ]
+  },
+  {
+   "id": "bodyweight-triceps-extension",
+   "verdict": "ok",
+   "sources": [
+    "https://www.strengthlog.com/triceps-bodyweight-extension/",
+    "https://fitnessvolt.com/bodyweight-skull-crushers/"
+   ]
+  },
+  {
+   "id": "bench-supported-skull-crusher",
+   "verdict": "fix",
+   "sources": [
+    "https://fitnessvolt.com/bodyweight-skull-crushers/",
+    "https://www.rehabhero.ca/exercise/bodyweight-skull-crushers"
+   ],
+   "problem": "Shipped as a bodyweight move -- equipment is ['bench'] only (no dumbbell/barbell), and its own alias is 'Bodyweight Skull Crusher' -- but the cue and description say 'holding a weight over your chest' and 'lower the weight toward your forehead,' which describes the WEIGHTED skull crusher (the separate dumbbell-skull-crusher card just below it in EXERCISES order). Every sourced bodyweight skull crusher instead has the lifter grip a waist-high bar or bench edge, walk the feet back into a straight plank, and lower the forehead toward the hands using only bodyweight -- the same shape as this batch's own bodyweight-triceps-extension card.",
+   "proposed": {
+    "cue": "Grip a waist-high bar or bench, walk your feet back into a plank, and lower your head toward your hands.",
+    "description": "Grip a stable waist-height bar or bench edge with an overhand grip and walk your feet back until your body forms a straight plank. Keeping your upper arms still, bend your elbows to lower your forehead toward your hands, then press back up to straighten your arms. No weight is used -- your own bodyweight supplies the resistance."
+   }
+  },
+  {
+   "id": "two-hand-overhead-dumbbell-extension",
+   "verdict": "ok",
+   "sources": [
+    "https://gravitus.com/guides/exercises/overhead-dumbbell-tricep-extension/",
+    "https://macrosinc.net/exercises/arms/overhead-dumbbell-triceps-extension/"
+   ]
+  },
+  {
+   "id": "single-arm-overhead-dumbbell-extension",
+   "verdict": "ok",
+   "sources": [
+    "https://fitbod.me/exercises/single-arm-dumbbell-tricep-extension",
+    "https://macrosinc.net/exercises/arms/single-arm-overhead-dumbbell-triceps-extension/"
+   ]
+  },
+  {
+   "id": "dumbbell-skull-crusher",
+   "verdict": "ok",
+   "sources": [
+    "https://www.muscleandstrength.com/exercises/lying-tricep-extension.html",
+    "https://gravitus.com/guides/exercises/skull-crusher/"
+   ]
+  },
+  {
+   "id": "dumbbell-triceps-kickback",
+   "verdict": "ok",
+   "sources": [
+    "https://fitbod.me/exercises/dumbbell-kickbacks",
+    "https://liftmanual.com/dumbbell-kickback/"
+   ]
+  },
+  {
+   "id": "dumbbell-tate-press",
+   "verdict": "ok",
+   "sources": [
+    "https://www.strengthlog.com/tate-press/",
+    "https://liftmanual.com/dumbbell-tate-press/"
+   ]
+  },
+  {
+   "id": "dumbbell-jm-press",
+   "verdict": "ok",
+   "sources": [
+    "https://www.roypumphrey.com/dumbbell-jm-press/",
+    "https://www.garagegymreviews.com/jm-press"
+   ]
+  },
+  {
+   "id": "dumbbell-neutral-grip-triceps-press",
+   "verdict": "ok",
+   "sources": [
+    "https://barbend.com/neutral-grip-dumbbell-bench-press/",
+    "https://www.madscientistofmuscle.com/1-exercises/tricep-exercises/close-grip-db-bench-press.htm"
+   ]
+  },
+  {
+   "id": "dumbbell-floor-triceps-extension",
+   "verdict": "ok",
+   "sources": [
+    "https://workoutlabs.com/exercise-guide/lying-dumbbell-tricep-extensions/",
+    "https://www.setforset.com/blogs/news/dumbbell-tricep-extensions"
+   ]
+  },
+  {
+   "id": "seated-overhead-dumbbell-extension",
+   "verdict": "ok",
+   "sources": [
+    "https://gravitus.com/guides/exercises/overhead-dumbbell-tricep-extension/",
+    "https://weighttraining.guide/exercises/seated-two-arm-overhead-dumbbell-triceps-extension/"
+   ]
+  },
+  {
+   "id": "incline-dumbbell-skull-crusher",
+   "verdict": "ok",
+   "sources": [
+    "https://www.dmoose.com/blogs/triceps/inclined-skullcrusher",
+    "https://www.bodybuildingmealplan.com/incline-dumbbell-skull-crusher/"
+   ]
+  },
+  {
+   "id": "cross-body-dumbbell-triceps-extension",
+   "verdict": "ok",
+   "sources": [
+    "https://russhowepti.com/exercises/cross-body-triceps-extension/",
+    "https://weighttraining.guide/exercises/lying-one-arm-cross-body-dumbbell-triceps-extension/"
+   ]
+  },
+  {
+   "id": "ez-bar-skull-crusher",
+   "verdict": "ok",
+   "sources": [
+    "https://bodybuilding-wizard.com/ez-bar-skull-crushers-exercise-guide/",
+    "https://justgains.com/e/ez-barbell-lying-triceps-extension"
+   ]
+  },
+  {
+   "id": "ez-bar-overhead-triceps-extension",
+   "verdict": "ok",
+   "sources": [
+    "https://www.muscleandstrength.com/exercises/standing-overhead-ez-bar-tricep-extension",
+    "https://fitbod.me/exercises/ez-bar-overhead-tricep-extension"
+   ]
+  },
+  {
+   "id": "ez-bar-jm-press",
+   "verdict": "ok",
+   "sources": [
+    "https://www.garagegymreviews.com/jm-press",
+    "https://setgrip.app/exercises/ez-bar-jm-press/"
+   ]
+  },
+  {
+   "id": "barbell-skull-crusher",
+   "verdict": "ok",
+   "sources": [
+    "https://powerliftingtechnique.com/skull-crushers/",
+    "https://www.hevyapp.com/exercises/skullcrusher-barbell/"
+   ]
+  },
+  {
+   "id": "reverse-grip-barbell-press",
+   "verdict": "ok",
+   "sources": [
+    "https://fitnessvolt.com/barbell-reverse-close-grip-bench-press-guide/",
+    "https://fitbod.me/exercises/reverse-grip-bench-press"
+   ]
+  },
+  {
+   "id": "rope-triceps-pushdown",
+   "verdict": "ok",
+   "sources": [
+    "https://www.ritfitsports.com/blogs/article/triceps-rope-pushdown",
+    "https://workoutlabs.com/exercise-guide/triceps-pushdowns/"
+   ]
+  },
+  {
+   "id": "straight-bar-triceps-pushdown",
+   "verdict": "ok",
+   "sources": [
+    "https://gymgeek.com/exercises/arms/what-the-tricep-pushdown-is-and-how-to-do-it-correctly/",
+    "http://www.compoundlifts.co.uk/exercise/cable-pushdowns-straight-bar/"
+   ]
+  },
+  {
+   "id": "overhead-cable-triceps-extension",
+   "verdict": "ok",
+   "sources": [
+    "https://www.strengthlog.com/overhead-cable-triceps-extension/",
+    "https://legionathletics.com/cable-overhead-triceps-extension/"
+   ]
+  },
+  {
+   "id": "single-arm-cable-triceps-pushdown",
+   "verdict": "ok",
+   "sources": [
+    "https://gymgeek.com/exercises/arms/what-the-tricep-pushdown-is-and-how-to-do-it-correctly/",
+    "https://www.motra.com/exercises/resistanceBandSingleArmTricepPushdown"
+   ]
+  },
+  {
+   "id": "cross-body-cable-triceps-extension",
+   "verdict": "ok",
+   "sources": [
+    "https://theworkoutmag.com/training/crossbody-cable-triceps-extension-guide",
+    "https://fortabo.com/en/exercises/single-arm-cable-cross-body-triceps-extension/"
+   ]
+  },
+  {
+   "id": "machine-triceps-extension",
+   "verdict": "ok",
+   "sources": [
+    "https://www.dmoose.com/blogs/triceps/machine-tricep-extension",
+    "https://www.muscleandstrength.com/exercises/machine-tricep-extension"
+   ]
+  },
+  {
+   "id": "assisted-dip-machine-triceps",
+   "verdict": "ok",
+   "sources": [
+    "https://gymkee.com/exercises/compare/assisted-dip-machine-vs-dip-machine/",
+    "https://www.athleticinsight.com/exercise/triceps/dips/machine"
+   ]
+  },
+  {
+   "id": "triceps-dip-machine",
+   "verdict": "ok",
+   "sources": [
+    "https://griptapp.com/exercises/dip-seated-machine",
+    "https://bodybuilding-wizard.com/seated-machine-dips/"
+   ]
+  },
+  {
+   "id": "resistance-band-triceps-pushdown",
+   "verdict": "ok",
+   "sources": [
+    "https://hortonbarbell.com/band-tricep-pushdown/",
+    "https://liftmanual.com/resistance-band-triceps-pushdown/"
+   ]
+  },
+  {
+   "id": "resistance-band-overhead-triceps-extension",
+   "verdict": "ok",
+   "sources": [
+    "https://liftmanual.com/band-overhead-triceps-extension/",
+    "https://musclewiki.com/exercise/band-overhead-tricep-extension"
+   ]
+  },
+  {
+   "id": "resistance-band-triceps-kickback",
+   "verdict": "ok",
+   "sources": [
+    "https://gymgeek.com/exercises/arms/tricep-kickbacks/",
+    "https://maniacmuscle.com/band-triceps-kickback/"
+   ]
+  },
+  {
+   "id": "kettlebell-overhead-triceps-extension",
+   "verdict": "ok",
+   "sources": [
+    "https://musclewiki.com/exercise/kettlebell-overhead-tricep-extension",
+    "https://liftmanual.com/kettlebell-overhead-triceps-extension/"
+   ]
+  },
+  {
+   "id": "trx-triceps-extension",
+   "verdict": "ok",
+   "sources": [
+    "https://fitbod.me/exercises/trx-tricep-extension",
+    "https://www.hevyapp.com/exercises/trx-tricep-extension/"
+   ]
+  },
+  {
+   "id": "bodyweight-squat",
+   "verdict": "ok",
+   "sources": [
+    "https://fitbod.me/exercises/air-squats",
+    "https://www.12minuteathlete.com/how-to-do-a-proper-air-squat/"
+   ]
+  },
+  {
+   "id": "pause-bodyweight-squat",
+   "verdict": "ok",
+   "sources": [
+    "https://www.strengthlog.com/pause-squat/",
+    "https://www.setforset.com/blogs/news/pause-squats"
+   ]
+  },
+  {
+   "id": "tempo-bodyweight-squat",
+   "verdict": "ok",
+   "sources": [
+    "https://fitnessvolt.com/tempo-squat-guide/",
+    "https://www.liftingtempo.com/tempo/squat"
+   ]
+  },
+  {
+   "id": "pulse-squat",
+   "verdict": "ok",
+   "sources": [
+    "https://www.masterclass.com/articles/squat-pulses-guide",
+    "https://steelsupplements.com/blogs/steel-blog/how-to-do-squat-pulses-form-muscles-worked"
+   ]
+  },
+  {
+   "id": "bodyweight-split-squat",
+   "verdict": "ok",
+   "sources": [
+    "https://www.muscleandstrength.com/exercises/split-squat",
+    "https://www.nike.com/a/how-and-why-to-do-a-split-squat"
+   ]
+  },
+  {
+   "id": "walking-lunge",
+   "verdict": "ok",
+   "sources": [
+    "https://fitbod.me/exercises/walking-lunge",
+    "https://www.setforset.com/blogs/news/walking-lunges"
+   ]
+  },
+  {
+   "id": "forward-lunge",
+   "verdict": "ok",
+   "sources": [
+    "https://www.builtlean.com/dumbbell-forward-lunges-form/",
+    "https://www.masterclass.com/articles/forward-lunge-guide"
+   ]
+  },
+  {
+   "id": "reverse-lunge",
+   "verdict": "ok",
+   "sources": [
+    "https://www.masterclass.com/articles/reverse-lunge-guide",
+    "https://bodybuilding-wizard.com/reverse-lunge-exercise-guide/"
+   ]
+  },
+  {
+   "id": "curtsy-lunge",
+   "verdict": "ok",
+   "sources": [
+    "https://fitbod.me/exercises/curtsy-lunge",
+    "https://www.setforset.com/blogs/news/curtsy-lunge"
+   ]
+  },
+  {
+   "id": "cossack-squat",
+   "verdict": "ok",
+   "sources": [
+    "https://www.dmoose.com/blogs/training/how-cossack-squat-right-way-benefits-muscles-worked",
+    "https://www.setforset.com/blogs/news/cossack-squat"
+   ]
+  },
+  {
+   "id": "sissy-squat",
+   "verdict": "ok",
+   "sources": [
+    "https://www.setforset.com/blogs/news/sissy-squats",
+    "https://www.muscleandstrength.com/exercises/sissy-squat.html"
+   ]
+  },
+  {
+   "id": "wall-sit",
+   "verdict": "ok",
+   "sources": [
+    "https://www.garagegymreviews.com/wall-sit-exercise",
+    "https://www.hevyapp.com/exercises/how-to-wall-sit/"
+   ]
+  },
+  {
+   "id": "wall-sit-march",
+   "verdict": "ok",
+   "sources": [
+    "https://fitwill.app/exercise/0624/march-sit-wall/",
+    "https://www.puregym.com/exercises/legs/quad-exercises/wall-sits/single-wall-sit/"
+   ]
+  },
+  {
+   "id": "pistol-squat",
+   "verdict": "ok",
+   "sources": [
+    "https://www.girlsgonestrong.com/blog/strength-training/exercises/how-to-do-a-pistol-squat/",
+    "https://learn.athleanx.com/articles/legs-for-men/how-to-do-pistol-squats"
+   ]
+  },
+  {
+   "id": "shrimp-squat",
+   "verdict": "ok",
+   "sources": [
+    "https://www.masterclass.com/articles/shrimp-squat-exercise-guide",
+    "https://vahvafitness.com/shrimp-squat-progressions/"
+   ]
+  },
+  {
+   "id": "skater-squat",
+   "verdict": "ok",
+   "sources": [
+    "https://www.girlsgonestrong.com/blog/articles/exercise-spotlight-skater-squat/",
+    "https://hortonbarbell.com/skater-squats/"
+   ]
+  },
+  {
+   "id": "box-jump",
+   "verdict": "ok",
+   "sources": [
+    "https://www.puregym.com/exercises/plyometrics/jumps/box-jumps/",
+    "https://repfitness.com/blogs/training/how-to-improve-box-jumps-and-overcome-the-fear"
+   ]
+  },
+  {
+   "id": "box-step-up",
+   "verdict": "ok",
+   "sources": [
+    "https://www.shred.app/thinking/how-to-do-step-ups",
+    "https://www.exerciselibrary.com/exercise/box-step-up/"
+   ]
+  }
+ ]
 }
