@@ -2111,6 +2111,87 @@
         "https://legionathletics.com/front-squat/",
         "https://squatuniversity.com/2016/04/07/how-to-perfect-the-front-squat/"
       ]
+    },
+    {
+      "id": "barbell-box-squat",
+      "verdict": "ok",
+      "sources": [
+        "https://barbend.com/box-squat/",
+        "https://www.strongermobileapp.com/exercises/barbell-box-squat"
+      ]
+    },
+    {
+      "id": "barbell-pause-squat",
+      "verdict": "ok",
+      "sources": [
+        "https://www.strengthlog.com/pause-squat/",
+        "https://powerliftingtechnique.com/pause-squat/"
+      ]
+    },
+    {
+      "id": "zercher-squat",
+      "verdict": "ok",
+      "sources": [
+        "https://www.strengthlog.com/zercher-squat/",
+        "https://powerliftingtechnique.com/zercher-squat/"
+      ]
+    },
+    {
+      "id": "barbell-overhead-squat",
+      "verdict": "ok",
+      "sources": [
+        "https://www.strengthlog.com/overhead-squat/",
+        "https://liftmanual.com/barbell-overhead-squat/"
+      ]
+    },
+    {
+      "id": "barbell-split-squat",
+      "verdict": "ok",
+      "sources": [
+        "https://barbend.com/barbell-split-squat-muscles-worked/",
+        "https://musclewiki.com/exercise/barbell-split-squat"
+      ]
+    },
+    {
+      "id": "leg-press-machine",
+      "verdict": "ok",
+      "sources": [
+        "https://powertec.com/blogs/power-up-blog/technique-mastery-how-to-perform-a-leg-press-properly",
+        "https://www.ritfitsports.com/blogs/article/how-to-do-leg-press"
+      ]
+    },
+    {
+      "id": "hack-squat-machine",
+      "verdict": "ok",
+      "sources": [
+        "https://performaxx.com.au/blogs/hack-squat-machine-exercises/",
+        "https://sportsmonkie.com/hack-squat-form/"
+      ]
+    },
+    {
+      "id": "leg-extension-machine",
+      "verdict": "ok",
+      "sources": [
+        "https://gravitus.com/guides/exercises/leg-extension/",
+        "https://www.ritfitsports.com/blogs/article/proper-leg-extension-form"
+      ]
+    },
+    {
+      "id": "pendulum-belt-squat",
+      "verdict": "unsure",
+      "sources": [
+        "https://bellsofsteel.us/blogs/content/belt-squat-vs-pendulum-squat-vs-leg-press",
+        "https://gmwdfitness.com/products/pendulum-squat-machine-ps01-1"
+      ],
+      "note": "Every sourced guide treats 'belt squat' and 'pendulum squat' as two distinct machines, not two names for one thing. A belt squat loads the hips through a belt with hands free and no shoulder contact; a pendulum squat has the lifter push shoulders into pads and guide the load through an arc, same shoulder-loading family as this library's own hack-squat-machine. The shipped card is named 'Pendulum Belt Squat' (aliased 'Belt Squat') but its cue and description describe only the hip-belt version -- hands-free, no shoulder pads, no arc motion named anywhere. One source does show a niche 'belt-and-pendulum squat attachment' that mounts to a rig and genuinely combines both, but that is an uncommon accessory, not what most gyms mean by either name alone. Not a confident fix: it could mean renaming to plain 'Belt Squat' to match the existing text, or rewriting the text to describe the shoulder-pad pendulum arc instead, or being the rare hybrid attachment as named -- three different real answers, and nothing in the shipped card signals which was intended. Flagging rather than guessing."
+    },
+    {
+      "id": "smith-machine-squat",
+      "verdict": "ok",
+      "sources": [
+        "https://julielohre.com/smith-machine-squats/",
+        "https://www.setforset.com/blogs/news/smith-machine-squats"
+      ]
     }
   ]
 }
