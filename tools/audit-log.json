@@ -2031,6 +2031,86 @@
         "https://fitnessvolt.com/24618/dumbbell-step-up/",
         "https://legionathletics.com/dumbbell-step-up/"
       ]
+    },
+    {
+      "id": "dumbbell-curtsy-lunge",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/dumbbell-curtsy-lunge",
+        "https://squatwolf.com/blogs/fitness/curtsy-lunge"
+      ]
+    },
+    {
+      "id": "dumbbell-cossack-squat",
+      "verdict": "ok",
+      "sources": [
+        "https://www.trainwell.net/exercises/dumbbell-cossack-squat",
+        "https://www.dmoose.com/blogs/training/how-cossack-squat-right-way-benefits-muscles-worked"
+      ]
+    },
+    {
+      "id": "kettlebell-goblet-squat",
+      "verdict": "ok",
+      "sources": [
+        "https://www.strengthlog.com/goblet-squat/",
+        "https://ca.ironbullstrength.com/blogs/training/how-to-perform-a-kettlebell-goblet-squat-a-comprehensive-guide"
+      ]
+    },
+    {
+      "id": "kettlebell-front-squat",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/kettlebell-front-squat",
+        "https://theprehabguys.com/vimeo-video/bilateral-kettlebell-front-rack-squats/"
+      ]
+    },
+    {
+      "id": "kettlebell-lunge",
+      "verdict": "ok",
+      "sources": [
+        "https://planfit.ai/en/exercise/kettlebell-lunge",
+        "https://laymansfitness.com/hub/how-to-do-a-kettlebell-lunge"
+      ]
+    },
+    {
+      "id": "kettlebell-step-up",
+      "verdict": "ok",
+      "sources": [
+        "https://www.trainwell.net/exercises/kettlebell-step-up",
+        "https://www.kettlebellweight.com/kettlebell-step-ups/"
+      ]
+    },
+    {
+      "id": "double-kettlebell-front-squat",
+      "verdict": "ok",
+      "sources": [
+        "https://www.girlsgonestrong.com/videos/kettlebell-exercises/double-kettlebell-front-squat/",
+        "https://www.drfitology.com/exercises/quads/double-kettlebell-front-squat"
+      ]
+    },
+    {
+      "id": "kettlebell-reverse-lunge",
+      "verdict": "ok",
+      "sources": [
+        "https://www.liftosaur.com/exercises/kettlebell-reverse-lunge",
+        "https://www.muscleandstrength.com/exercises/kettlebell-reverse-lunge"
+      ]
+    },
+    {
+      "id": "barbell-back-squat",
+      "verdict": "ok",
+      "sources": [
+        "https://www.gymshark.com/blog/article/how-to-barbell-back-squat",
+        "https://legionathletics.com/back-squat/"
+      ]
+    },
+    {
+      "id": "barbell-front-squat",
+      "verdict": "ok",
+      "sources": [
+        "https://legionathletics.com/front-squat/",
+        "https://squatuniversity.com/2016/04/07/how-to-perfect-the-front-squat/"
+      ]
     }
   ]
 }
