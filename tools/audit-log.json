@@ -2277,6 +2277,88 @@
         "https://www.catalystathletics.com/exercise/732/Hamstring-Bridge/",
         "https://holisticphysiofitness.com.au/exercise/hamstring-bridge-on-a-box-isometric-hold/"
       ]
+    },
+    {
+      "id": "single-leg-glute-bridge-hamstring-march",
+      "verdict": "ok",
+      "sources": [
+        "https://www.jefit.com/exercises/1352/glute-bridge-march",
+        "https://liftmanual.com/glute-bridge-march/"
+      ]
+    },
+    {
+      "id": "bodyweight-good-morning",
+      "verdict": "ok",
+      "sources": [
+        "https://hortonbarbell.com/bodyweight-good-mornings/",
+        "https://elegientrenar.com/en/exercises/bodyweight-good-morning/"
+      ]
+    },
+    {
+      "id": "dumbbell-romanian-deadlift",
+      "verdict": "ok",
+      "sources": [
+        "https://www.strengthlog.com/dumbbell-romanian-deadlift/",
+        "https://powerliftingtechnique.com/dumbbell-romanian-deadlift/"
+      ]
+    },
+    {
+      "id": "single-leg-dumbbell-rdl",
+      "verdict": "ok",
+      "sources": [
+        "https://whitecoattrainer.com/blog/dumbbell-romanian-deadlift-single-leg",
+        "https://www.hevyapp.com/exercises/how-to-single-leg-romanian-deadlift-dumbbell/"
+      ]
+    },
+    {
+      "id": "dumbbell-stiff-leg-deadlift",
+      "verdict": "ok",
+      "sources": [
+        "https://www.muscleandstrength.com/exercises/dumbbell-stiff-leg-deadlift.html",
+        "https://liftmanual.com/dumbbell-stiff-leg-deadlift/"
+      ]
+    },
+    {
+      "id": "dumbbell-b-stance-rdl",
+      "verdict": "ok",
+      "sources": [
+        "https://backmusclesolutions.com/blogs/the-ql-blawg/b-stance-rdl",
+        "https://www.onnit.com/blogs/the-edge/how-to-do-b-stance-romanian-deadlifts-rdls-like-a-pro"
+      ]
+    },
+    {
+      "id": "dumbbell-good-morning",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/dumbbell-good-morning",
+        "https://www.kovofitness.com/exercises/dumbbell-good-morning"
+      ]
+    },
+    {
+      "id": "seated-dumbbell-leg-curl",
+      "verdict": "unsure",
+      "sources": [
+        "https://thefitnessphantom.com/dumbbell-leg-curl",
+        "https://www.dmoose.com/blogs/hamstrings/dumbbell-leg-curl",
+        "https://gymgeek.com/exercises/leg/how-to-safely-and-correctly-do-leg-curls-in-the-gym/"
+      ],
+      "note": "Every dumbbell-leg-curl guide found (thefitnessphantom, dmoose, gymgeek, and others checked) describes the dumbbell-between-the-feet version as PRONE only -- lie face down on a bench, knees at the edge, curl the dumbbell up toward the glutes. None describes a seated version done the way this card does: sit on the edge of a bench, legs extended, dumbbell squeezed between the feet, bend the knees to curl it back under the bench. A machine \"seated leg curl\" exists (ankle pad, no dumbbell) and a \"seated dumbbell curl\" exists (biceps, dumbbells in the hands) -- this card may be conflating one of those names with the prone dumbbell-between-feet mechanic rather than describing a real, independently-documented exercise. Not a confident fix: I have no sourced correct version of a SEATED dumbbell-between-feet leg curl to propose in its place, and cannot rule out that it is a genuine, just rarely-documented, home variant. Flagging rather than guessing."
+    },
+    {
+      "id": "prone-dumbbell-leg-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://www.acefitness.org/resources/everyone/exercise-library/131/prone-lying-hamstrings-curl/",
+        "https://thefitnessphantom.com/dumbbell-leg-curl"
+      ]
+    },
+    {
+      "id": "dumbbell-sumo-rdl",
+      "verdict": "ok",
+      "sources": [
+        "https://thatfitfriend.com/sumo-romanian-deadlift/",
+        "https://www.inspireusafoundation.org/dumbbell-sumo-deadlift/"
+      ]
     }
   ]
 }
