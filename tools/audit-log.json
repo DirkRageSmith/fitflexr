@@ -2192,6 +2192,91 @@
         "https://julielohre.com/smith-machine-squats/",
         "https://www.setforset.com/blogs/news/smith-machine-squats"
       ]
+    },
+    {
+      "id": "band-squat",
+      "verdict": "ok",
+      "sources": [
+        "https://www.garagegymreviews.com/squat-with-resistance-bands",
+        "https://squatwolf.com/blogs/fitness/squats-with-resistance-bands"
+      ]
+    },
+    {
+      "id": "banded-lunge",
+      "verdict": "ok",
+      "sources": [
+        "https://nfpt.com/instructions-resistance-band-lunge/",
+        "https://www.setforset.com/blogs/news/resistance-band-lunges"
+      ]
+    },
+    {
+      "id": "trx-squat",
+      "verdict": "ok",
+      "sources": [
+        "https://www.trxtraining.com/blogs/news/trx-squat",
+        "https://www.motra.com/exercises/trxSquat"
+      ]
+    },
+    {
+      "id": "trx-assisted-pistol-squat",
+      "verdict": "ok",
+      "sources": [
+        "https://theprehabguys.com/how-to-do-your-first-pistol-squat/",
+        "https://bodybuilding-wizard.com/suspension-trainer-assisted-pistol-squat/"
+      ]
+    },
+    {
+      "id": "nordic-hamstring-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://www.physitrack.com/exercise-library/how-to-perform-the-nordic-hamstring-curl-exercise",
+        "https://www.garagegymreviews.com/nordic-curl"
+      ]
+    },
+    {
+      "id": "slider-leg-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://www.rehabhero.ca/exercise/hamstring-slider",
+        "https://flexfitnessapp.com/blog/sliding-leg-curls/"
+      ]
+    },
+    {
+      "id": "glute-bridge-leg-curl-walkout",
+      "verdict": "ok",
+      "sources": [
+        "https://sweat.com/exercises/glute-bridge-walkout",
+        "https://www.drfitology.com/exercises/glutes/glute-bridge-walkout"
+      ]
+    },
+    {
+      "id": "single-leg-hip-hinge-reach",
+      "verdict": "ok",
+      "sources": [
+        "https://hortonbarbell.com/bodyweight-single-leg-rdl/",
+        "https://liftmanual.com/bodyweight-single-leg-rdl/"
+      ]
+    },
+    {
+      "id": "razor-curl",
+      "verdict": "fix",
+      "sources": [
+        "https://www.muscleandstrength.com/exercises/razor-curl",
+        "https://journals.lww.com/nsca-jscr/fulltext/2009/03000/the_razor_curl__a_functional_approach_to_hamstring.9.aspx"
+      ],
+      "problem": "The card describes only a hip hinge down and a vague 'curl back up,' with no knee movement named anywhere. Both sourced guides (Muscle & Strength's step list and the exercise's originating peer-reviewed paper, McCall et al., JSCR 2009) agree the razor curl starts in a deep crouch with hips AND knees both bent, then extends hip and knee together to reach a straight, parallel-to-floor line, and returns by flexing hip and knee together using the hamstrings. The simultaneous knee action is the 'curl' the name refers to, and the shipped text omits it, describing something closer to a hip-hinge-only reverse hyper instead.",
+      "proposed": {
+        "cue": "Crouch with hips and knees bent, ankles anchored, then push your body straight out using your hips and hamstrings.",
+        "description": "Kneel with your ankles anchored and sit back onto your heels so your hips and knees are both deeply bent. Extend your hips and knees together to push your body out into a straight line, then pull yourself back to the start by bending your hips and knees together, using your hamstrings. Starting from this bent crouch makes it a touch more doable than a full Nordic curl, which starts upright."
+      }
+    },
+    {
+      "id": "hamstring-bridge-hold",
+      "verdict": "ok",
+      "sources": [
+        "https://www.catalystathletics.com/exercise/732/Hamstring-Bridge/",
+        "https://holisticphysiofitness.com.au/exercise/hamstring-bridge-on-a-box-isometric-hold/"
+      ]
     }
   ]
 }
