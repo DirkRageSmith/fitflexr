@@ -2445,6 +2445,86 @@
         "cue": "Anchor your feet, extend your knees to lower down, then bend your knees to pull yourself back up.",
         "description": "Set up in the glute-ham bench with your ankles anchored and thighs on the pad. Lower your torso forward by extending your knees until your body is nearly straight, then pull yourself back up by bending your knees and squeezing your hamstrings, finishing with a glute squeeze. It's the knee bend that drives you up, not a hip hinge alone -- this one is advanced, so ease in."
       }
+    },
+    {
+      "id": "forty-five-degree-back-extension",
+      "verdict": "ok",
+      "sources": [
+        "https://fitnessvolt.com/45-degree-hyperextension/",
+        "https://backgains.com/exercises/back-extension-form-muscles-variations/"
+      ]
+    },
+    {
+      "id": "cable-pull-through",
+      "verdict": "ok",
+      "sources": [
+        "https://barbend.com/cable-pull-through/",
+        "https://liftmanual.com/cable-pull-through/"
+      ]
+    },
+    {
+      "id": "cable-romanian-deadlift",
+      "verdict": "ok",
+      "sources": [
+        "https://liftmanual.com/cable-romanian-deadlift/",
+        "https://fitnessapie.com/cable-romanian-deadlift/"
+      ]
+    },
+    {
+      "id": "cable-leg-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://www.muscleandstrength.com/exercises/standing-cable-hamstring-curl.html",
+        "https://liftmanual.com/cable-standing-leg-curl/"
+      ]
+    },
+    {
+      "id": "kettlebell-romanian-deadlift",
+      "verdict": "ok",
+      "sources": [
+        "https://sweat.com/exercises/romanian-kettlebell-deadlift",
+        "https://rawkettlebell.com/knowledge/kb-movements/romanian-deadlift-kb/"
+      ]
+    },
+    {
+      "id": "single-leg-kettlebell-rdl",
+      "verdict": "ok",
+      "sources": [
+        "https://www.coachweb.com/leg-exercises/8130/how-to-do-the-single-leg-romanian-deadlift",
+        "https://www.onnit.com/blogs/the-edge/how-to-do-the-single-leg-romanian-deadlift-like-a-pro"
+      ]
+    },
+    {
+      "id": "band-romanian-deadlift",
+      "verdict": "ok",
+      "sources": [
+        "https://musclewiki.com/exercise/band-romanian-deadlift",
+        "https://www.zing.coach/exercises/band-romanian-deadlifts"
+      ]
+    },
+    {
+      "id": "band-leg-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://www.puregym.com/exercises/legs/hamstring-exercises/hamstring-curls/banded-hamstring-curl/",
+        "https://liftmanual.com/resistance-band-leg-curl/"
+      ]
+    },
+    {
+      "id": "band-pull-through",
+      "verdict": "ok",
+      "sources": [
+        "https://fitnessvolt.com/band-pull-through/",
+        "https://liftmanual.com/band-pull-through/"
+      ]
+    },
+    {
+      "id": "trx-hamstring-curl",
+      "verdict": "ok",
+      "sources": [
+        "https://www.trainwell.net/exercises/trx-hamstring-curl",
+        "https://www.kovofitness.com/exercises/trx-hamstring-curl"
+      ]
     }
   ]
 }
