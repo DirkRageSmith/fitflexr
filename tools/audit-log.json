@@ -2359,6 +2359,92 @@
         "https://thatfitfriend.com/sumo-romanian-deadlift/",
         "https://www.inspireusafoundation.org/dumbbell-sumo-deadlift/"
       ]
+    },
+    {
+      "id": "staggered-stance-dumbbell-rdl",
+      "verdict": "ok",
+      "sources": [
+        "https://backmusclesolutions.com/blogs/the-ql-blawg/b-stance-rdl",
+        "https://www.kathrynalexander.com/how-to-do-b-stance-rdls/"
+      ],
+      "note": "Confirms FINDINGS.md F22: both sources describe the back foot straight behind the front foot, toes near the front heel, ~80-90% load on the front leg -- the same mechanic as the shipped dumbbell-b-stance-rdl card. The card's own cue/description is accurate (verdict ok), but this and dumbbell-b-stance-rdl appear to be the same real exercise shipped twice under two names. See FINDINGS.md F23."
+    },
+    {
+      "id": "dumbbell-hip-hinge",
+      "verdict": "ok",
+      "sources": [
+        "https://powerliftingtechnique.com/hip-hinge-cues/",
+        "https://www.advancedhumanperformance.com/blog/master-your-hip-hinge-rdl-mechanics"
+      ]
+    },
+    {
+      "id": "barbell-romanian-deadlift",
+      "verdict": "ok",
+      "sources": [
+        "https://exrx.net/WeightExercises/OlympicLifts/RomanianDeadlift",
+        "https://barbell-logic.com/how-to-do-romanian-deadlifts/"
+      ]
+    },
+    {
+      "id": "barbell-stiff-leg-deadlift",
+      "verdict": "ok",
+      "sources": [
+        "https://powerliftingtechnique.com/romanian-deadlift-vs-stiff-leg-deadlift/",
+        "https://thatfitfriend.com/stiff-leg-deadlift-vs-romanian-deadlift/"
+      ]
+    },
+    {
+      "id": "barbell-good-morning",
+      "verdict": "ok",
+      "sources": [
+        "https://www.puregym.com/exercises/legs/hamstring-exercises/good-mornings/barbell-good-mornings/",
+        "https://experiencelife.lifetime.life/article/break-it-down-the-barbell-good-morning/"
+      ]
+    },
+    {
+      "id": "snatch-grip-romanian-deadlift",
+      "verdict": "ok",
+      "sources": [
+        "https://www.muscleandstrength.com/exercises/snatch-grip-romanian-deadlift",
+        "https://www.catalystathletics.com/exercise/577/Snatch-Grip-Romanian-Deadlift-RDL/"
+      ]
+    },
+    {
+      "id": "deficit-romanian-deadlift",
+      "verdict": "ok",
+      "sources": [
+        "https://liftmanual.com/barbell-romanian-deadlift-from-deficit/",
+        "https://www.drfitology.com/exercises/hamstrings/romanian-deadlift-from-deficit"
+      ]
+    },
+    {
+      "id": "lying-leg-curl-machine",
+      "verdict": "ok",
+      "sources": [
+        "https://exrx.net/WeightExercises/Hamstrings/LVLyingLegCurl",
+        "https://gravitus.com/guides/exercises/lying-leg-curl/"
+      ]
+    },
+    {
+      "id": "seated-leg-curl-machine",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/seated-leg-curl",
+        "https://www.strengthlog.com/seated-leg-curl/"
+      ]
+    },
+    {
+      "id": "glute-ham-raise",
+      "verdict": "fix",
+      "sources": [
+        "https://www.skelcore.com/guides/what-ghr-glute-ham-raise-how-does-differ",
+        "https://www.setforset.com/blogs/news/glute-ham-raise"
+      ],
+      "problem": "Both sources describe the GHR as driven by active knee extension on the way down and knee flexion on the way up -- the knee bend is what distinguishes a true glute-ham raise from a plain back extension / reverse hyper. The shipped description omits the knee action entirely, describing only a torso lower-and-raise, which reads as a pure hip hinge.",
+      "proposed": {
+        "cue": "Anchor your feet, extend your knees to lower down, then bend your knees to pull yourself back up.",
+        "description": "Set up in the glute-ham bench with your ankles anchored and thighs on the pad. Lower your torso forward by extending your knees until your body is nearly straight, then pull yourself back up by bending your knees and squeezing your hamstrings, finishing with a glute squeeze. It's the knee bend that drives you up, not a hip hinge alone -- this one is advanced, so ease in."
+      }
     }
   ]
 }
