@@ -2525,6 +2525,86 @@
         "https://www.trainwell.net/exercises/trx-hamstring-curl",
         "https://www.kovofitness.com/exercises/trx-hamstring-curl"
       ]
+    },
+    {
+      "id": "glute-bridge",
+      "verdict": "ok",
+      "sources": [
+        "https://www.acefitness.org/resources/everyone/exercise-library/66/glute-bridge/",
+        "https://www.hevyapp.com/exercises/how-to-glute-bridge/"
+      ]
+    },
+    {
+      "id": "single-leg-glute-bridge",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/single-leg-glute-bridge",
+        "https://www.puregym.com/exercises/glutes/glute-bridge/single-leg-glute-bridges/"
+      ]
+    },
+    {
+      "id": "glute-bridge-march",
+      "verdict": "ok",
+      "sources": [
+        "https://redefiningstrength.com/glute-bridge-march/",
+        "https://www.muscleandstrength.com/exercises/marching-glute-bridge"
+      ]
+    },
+    {
+      "id": "bodyweight-hip-thrust",
+      "verdict": "ok",
+      "sources": [
+        "https://www.hevyapp.com/exercises/how-to-hip-thrust/",
+        "https://shopvitality.com/blogs/vitality-fitness/how-to-do-hip-thrusts"
+      ]
+    },
+    {
+      "id": "single-leg-hip-thrust",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/single-leg-hip-thrust",
+        "https://www.puregym.com/exercises/glutes/hip-thrusts/single-leg-hip-thrust/"
+      ]
+    },
+    {
+      "id": "frog-pump",
+      "verdict": "ok",
+      "sources": [
+        "https://bretcontreras.com/frog-pumps-a-highly-effective-bodyweight-glute-activation-drill/",
+        "https://julielohre.com/frog-pump-exercise/"
+      ]
+    },
+    {
+      "id": "frog-bridge",
+      "verdict": "ok",
+      "sources": [
+        "https://spotebi.com/exercise-guide/frog-bridge/",
+        "https://www.hydroxycut.com/blogs/articles/frog-bridge"
+      ]
+    },
+    {
+      "id": "donkey-kick",
+      "verdict": "ok",
+      "sources": [
+        "https://www.strengthlog.com/donkey-kicks/",
+        "https://www.yourhousefitness.com/blog/exercise-tutorial-donkey-kick"
+      ]
+    },
+    {
+      "id": "quadruped-hip-extension",
+      "verdict": "ok",
+      "sources": [
+        "https://pro.ideafit.com/exercise-library/hip-extension-quadruped-straight-leg",
+        "https://theprehabguys.com/vimeo-video/quadruped-bent-vs-straight-knee-hip-extension/"
+      ]
+    },
+    {
+      "id": "fire-hydrant",
+      "verdict": "ok",
+      "sources": [
+        "https://www.hevyapp.com/exercises/how-to-fire-hydrants/",
+        "https://spotebi.com/exercise-guide/fire-hydrant/"
+      ]
     }
   ]
 }
