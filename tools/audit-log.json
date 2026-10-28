@@ -2605,6 +2605,86 @@
         "https://www.hevyapp.com/exercises/how-to-fire-hydrants/",
         "https://spotebi.com/exercise-guide/fire-hydrant/"
       ]
+    },
+    {
+      "id": "clamshell",
+      "verdict": "ok",
+      "sources": [
+        "https://www.goodrx.com/well-being/movement-exercise/clamshell-exercise",
+        "https://www.nasm.org/resource-center/blog/training/the-banded-clamshell-a-simple-move-for-stronger-glutes"
+      ]
+    },
+    {
+      "id": "side-lying-hip-abduction",
+      "verdict": "ok",
+      "sources": [
+        "https://www.acefitness.org/resources/everyone/exercise-library/38/side-lying-hip-abduction/",
+        "https://spotebi.com/exercise-guide/side-lying-hip-abduction/"
+      ]
+    },
+    {
+      "id": "standing-hip-abduction",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/standing-hip-abduction",
+        "https://www.oncolink.org/support/exercise-cancer/strength-exercises/standing-hip-abduction-gluteus-medius"
+      ]
+    },
+    {
+      "id": "curtsy-hold-glute-squeeze",
+      "verdict": "ok",
+      "sources": [
+        "https://grindergym.com/exercise/isometric-lunge-hold/",
+        "https://www.puregym.com/exercises/legs/quad-exercises/lunges/curtsy-lunges/"
+      ]
+    },
+    {
+      "id": "bench-reverse-hyper",
+      "verdict": "ok",
+      "sources": [
+        "https://www.garagegymreviews.com/reverse-hyperextension",
+        "https://loadmuscle.com/exercises/dumbbell-reverse-hyperextension-on-bench"
+      ]
+    },
+    {
+      "id": "prone-plank-hip-extension",
+      "verdict": "ok",
+      "sources": [
+        "https://greatist.com/health/plank-leg-raises",
+        "https://postureguymike.com/exercises/plank-with-hip-extension"
+      ]
+    },
+    {
+      "id": "dumbbell-hip-thrust",
+      "verdict": "ok",
+      "sources": [
+        "https://www.trainwell.net/exercises/dumbbell-hip-thrust",
+        "https://strongcurves.com/exercises/dumbbell-hip-thrust"
+      ]
+    },
+    {
+      "id": "dumbbell-glute-bridge",
+      "verdict": "ok",
+      "sources": [
+        "https://www.puregym.com/exercises/glutes/glute-bridge/dumbbell-glute-bridges/",
+        "https://musclewiki.com/exercise/dumbbell-glute-bridge"
+      ]
+    },
+    {
+      "id": "dumbbell-frog-pump",
+      "verdict": "ok",
+      "sources": [
+        "https://bretcontreras.com/frog-pumps-and-frog-thrusts/",
+        "https://www.motra.com/exercises/dumbbellFrogPump"
+      ]
+    },
+    {
+      "id": "dumbbell-single-leg-hip-thrust",
+      "verdict": "ok",
+      "sources": [
+        "https://www.muscleandstrength.com/exercises/single-leg-hip-thrust-with-dumbbell",
+        "https://smartworkout.app/en/exercise-library/gluteus/dumbbell-single-leg-hip-thrust"
+      ]
     }
   ]
 }
