@@ -2685,6 +2685,91 @@
         "https://www.muscleandstrength.com/exercises/single-leg-hip-thrust-with-dumbbell",
         "https://smartworkout.app/en/exercise-library/gluteus/dumbbell-single-leg-hip-thrust"
       ]
+    },
+    {
+      "id": "dumbbell-b-stance-hip-thrust",
+      "verdict": "fix",
+      "sources": [
+        "https://bretcontreras.com/single-leg-hip-thrusts/",
+        "https://www.onnit.com/blogs/the-edge/how-to-do-b-stance-hip-thrusts-like-an-expert"
+      ],
+      "problem": "The cue and description say the staggered back leg takes 90% of the load off the front leg. Two independent sources, including the exercise's originator, both state the real split is roughly 70% front leg / 30% back leg, not 90/10 — and both describe the B-stance explicitly as a regression toward true single-leg work, a framing the card omits.",
+      "proposed": {
+        "cue": "Stagger your feet, load about 70% on the front, and thrust up.",
+        "description": "Set up a hip thrust with a dumbbell on your hips, but stagger your feet so one is slightly ahead and takes most of the weight while the other stays flat on the floor, lightly assisting for balance. Drive through the front heel to lift your hips. It's a stepping stone toward single-leg work, loading one glute at a time while staying more stable than a true single-leg thrust."
+      }
+    },
+    {
+      "id": "dumbbell-sumo-squat-glute-focus",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/dumbbell-sumo-squat",
+        "https://www.puregym.com/exercises/legs/quad-exercises/squats/sumo-squat/"
+      ]
+    },
+    {
+      "id": "dumbbell-single-leg-glute-bridge",
+      "verdict": "ok",
+      "sources": [
+        "https://liftmanual.com/dumbbell-single-leg-glute-bridge/",
+        "https://www.acefitness.org/resources/everyone/exercise-library/145/glute-bridge-single-leg-progression/"
+      ]
+    },
+    {
+      "id": "kettlebell-hip-thrust",
+      "verdict": "ok",
+      "sources": [
+        "https://www.trainwell.net/exercises/kettlebell-hip-thrust",
+        "https://musclewiki.com/exercise/kettlebell-hip-thrust"
+      ]
+    },
+    {
+      "id": "kettlebell-glute-bridge",
+      "verdict": "ok",
+      "sources": [
+        "https://musclewiki.com/exercise/kettlebell-glute-bridge",
+        "https://www.workoutreference.com/exercises/legs/kettlebell-glute-bridge-muscles-worked-proper-form-benefits-and-common-mistakes/"
+      ]
+    },
+    {
+      "id": "kettlebell-sumo-squat-glute-focus",
+      "verdict": "ok",
+      "sources": [
+        "https://www.setforset.com/blogs/news/kettlebell-sumo-squats",
+        "https://fitbod.me/exercises/kettlebell-sumo-squat"
+      ]
+    },
+    {
+      "id": "kettlebell-frog-pump",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/frog-pump",
+        "https://liftmanual.com/weighted-frog-pump/"
+      ]
+    },
+    {
+      "id": "barbell-hip-thrust",
+      "verdict": "ok",
+      "sources": [
+        "https://www.muscleandstrength.com/exercises/barbell-hip-thrust",
+        "https://www.strengthlog.com/hip-thrust/"
+      ]
+    },
+    {
+      "id": "barbell-glute-bridge",
+      "verdict": "ok",
+      "sources": [
+        "https://www.dmoose.com/blogs/training/glute-bridge-vs-hip-thrust",
+        "https://steelsupplements.com/blogs/steel-blog/glute-bridge-vs-hip-thrust-whats-the-difference"
+      ]
+    },
+    {
+      "id": "barbell-frog-pump",
+      "verdict": "ok",
+      "sources": [
+        "https://fitnessvolt.com/frog-pumps-guide/",
+        "https://liftmanual.com/weighted-frog-pump/"
+      ]
     }
   ]
 }
