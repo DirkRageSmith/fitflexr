@@ -2770,6 +2770,101 @@
         "https://fitnessvolt.com/frog-pumps-guide/",
         "https://liftmanual.com/weighted-frog-pump/"
       ]
+    },
+    {
+      "id": "barbell-single-leg-hip-thrust",
+      "verdict": "fix",
+      "sources": [
+        "https://www.healthline.com/health/fitness/single-leg-hip-thrust",
+        "https://www.trainwell.net/exercises/single-leg-barbell-hip-thrust"
+      ],
+      "problem": "The description says to plant one foot and extend the other leg. Both sources agree the non-working leg is bent at the knee and lifted off the floor instead (Healthline: 'bending your knee until both your hip and knee form a 90-degree angle'), not extended straight — a straight extended leg would only worsen the balance and leverage problem the card itself calls advanced.",
+      "proposed": {
+        "cue": "Bar on your hips, thrust up on one leg.",
+        "description": "Set up a barbell hip thrust but plant one foot and bend the other knee, lifting that foot off the floor. Drive through the planted heel to lift your hips level, squeezing that glute, then lower slowly. Balancing the bar on one leg is advanced — keep your hips square and start light."
+      }
+    },
+    {
+      "id": "b-stance-barbell-hip-thrust",
+      "verdict": "fix",
+      "sources": [
+        "https://www.onnit.com/blogs/the-edge/how-to-do-b-stance-hip-thrusts-like-an-expert",
+        "https://www.kovofitness.com/exercises/cable-kneeling-glute-kickback"
+      ],
+      "problem": "The cue and description say only 'most weight on the front' with no number. The sourced standard (the same ~70/30 front/back split just confirmed for the sibling dumbbell-b-stance-hip-thrust card, re-verified directly on onnit.com: 'the kickstand leg should only apply about 30% of the force') should be stated here too for consistency with that sibling fix and with the real exercise. Not a factual error, a precision gap.",
+      "proposed": {
+        "cue": "Stagger your feet, about 70% of your weight on the front, thrust the bar up.",
+        "description": "Set up a barbell hip thrust with a staggered stance — one foot forward carrying roughly 70% of the load, the other foot's heel lightly grounded behind you for support. Drive through the front heel to lift your hips, squeezing that glute. It overloads one glute while the back foot keeps you steady, without going fully single-leg."
+      }
+    },
+    {
+      "id": "hip-thrust-machine",
+      "verdict": "ok",
+      "sources": [
+        "https://www.strengthlog.com/hip-thrust-machine/",
+        "https://gravitus.com/guides/exercises/machine-hip-thrust/"
+      ]
+    },
+    {
+      "id": "glute-kickback-machine",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/glute-kickback-machine",
+        "https://greatist.com/fitness/glute-kickbacks"
+      ]
+    },
+    {
+      "id": "hip-abduction-machine",
+      "verdict": "ok",
+      "sources": [
+        "https://www.puregym.com/exercises/legs/inner-outer-thigh/seated-hip-abduction/",
+        "https://www.hingehealth.com/resources/articles/seated-hip-abduction/"
+      ]
+    },
+    {
+      "id": "smith-machine-hip-thrust",
+      "verdict": "ok",
+      "sources": [
+        "https://repfitness.com/blogs/guides/smith-machine-hip-thrust",
+        "https://backmusclesolutions.com/blogs/the-ql-blawg/smith-machine-hip-thrust"
+      ]
+    },
+    {
+      "id": "cable-glute-kickback",
+      "verdict": "ok",
+      "sources": [
+        "https://www.trainwell.net/exercises/cable-kickback",
+        "https://www.lemon8-app.com/experience/cable-glute-kickback-ankle-strap-proper-form?region=us"
+      ]
+    },
+    {
+      "id": "standing-cable-hip-abduction",
+      "verdict": "ok",
+      "sources": [
+        "https://macrosinc.net/exercises/glutes/standing-cable-hip-abduction/",
+        "https://www.puregym.com/exercises/legs/inner-outer-thigh/cable-hip-abduction/"
+      ]
+    },
+    {
+      "id": "cable-hip-thrust",
+      "verdict": "ok",
+      "sources": [
+        "https://www.gxmmat.us/blogs/daily-news/why-the-cable-hip-thrust-is-the-best-glute-builder-youre-ignoring",
+        "https://strengthwarehouseusa.com/blogs/resources/how-to-use-the-hip-thrust-machine"
+      ]
+    },
+    {
+      "id": "kneeling-cable-kickback",
+      "verdict": "fix",
+      "sources": [
+        "https://www.kovofitness.com/exercises/cable-kneeling-glute-kickback",
+        "https://www.setforset.com/blogs/news/glute-kickbacks"
+      ],
+      "problem": "The description says to get on all fours 'facing away' from the machine. Both sources say the opposite — facing the machine (Kovo, re-verified by direct fetch: 'Get on all fours facing the machine with hands under shoulders and knees under hips') — which also matches the mechanics: the cable has to be in front of the person for the leg to kick back against it, the same facing-the-machine logic the standing cable-glute-kickback card already gets right.",
+      "proposed": {
+        "cue": "On all fours facing the machine, kick one leg back against the cable.",
+        "description": "Attach an ankle strap to a low cable and get on all fours facing the machine, hands under your shoulders. Kick that leg straight back and up by squeezing your glute, then return under control. Keep your back flat and hips square — the cable adds constant tension."
+      }
     }
   ]
 }
