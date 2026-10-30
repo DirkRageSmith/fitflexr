@@ -2865,6 +2865,86 @@
         "cue": "On all fours facing the machine, kick one leg back against the cable.",
         "description": "Attach an ankle strap to a low cable and get on all fours facing the machine, hands under your shoulders. Kick that leg straight back and up by squeezing your glute, then return under control. Keep your back flat and hips square — the cable adds constant tension."
       }
+    },
+    {
+      "id": "banded-hip-thrust",
+      "verdict": "ok",
+      "sources": [
+        "https://www.setforset.com/blogs/news/banded-hip-thrusts",
+        "https://www.strengthlog.com/glute-bridge-with-band/"
+      ]
+    },
+    {
+      "id": "banded-glute-bridge",
+      "verdict": "ok",
+      "sources": [
+        "https://www.strengthlog.com/glute-bridge-with-band/",
+        "https://www.rehabhero.ca/exercise/banded-glute-bridges"
+      ]
+    },
+    {
+      "id": "banded-lateral-walk",
+      "verdict": "ok",
+      "sources": [
+        "https://aerobis.com/blogs/fitness/lateral-band-walks-hips-glutes-knees",
+        "https://www.simplyfitness.com/pages/lateral-mini-band-walk"
+      ]
+    },
+    {
+      "id": "monster-walk",
+      "verdict": "ok",
+      "sources": [
+        "https://fitnessvolt.com/monster-walks/",
+        "https://www.fittux.com/blogs/journal/what-are-monster-walks"
+      ]
+    },
+    {
+      "id": "banded-clamshell",
+      "verdict": "ok",
+      "sources": [
+        "https://liftmanual.com/resistance-band-clam/",
+        "https://www.rehabhero.ca/exercise/banded-clamshells"
+      ]
+    },
+    {
+      "id": "banded-standing-kickback",
+      "verdict": "ok",
+      "sources": [
+        "https://redefiningstrength.com/mini-band-standing-kickbacks/",
+        "https://www.elephantjay.com/blogs/tutorial/standing-banded-glute-kickbacks-key-points"
+      ]
+    },
+    {
+      "id": "banded-hip-abduction",
+      "verdict": "ok",
+      "sources": [
+        "https://www.fitnessai.com/exercise/band-hip-abduction",
+        "https://www.strengthlog.com/standing-hip-abduction-against-band/"
+      ]
+    },
+    {
+      "id": "trx-hip-thrust",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/trx-hip-thrust",
+        "https://suspensionexercise.com.au/trx-hip-thrust"
+      ]
+    },
+    {
+      "id": "box-shoulder-elevated-hip-thrust",
+      "verdict": "ok",
+      "sources": [
+        "https://www.liveleantv.com/how-to-do-a-shoulders-elevated-hip-thrust/",
+        "https://lipsticklifters.com/exercises/bum-exercises/elevated-hip-thrust/"
+      ]
+    },
+    {
+      "id": "standing-calf-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://www.strengthlog.com/standing-calf-raise/",
+        "https://www.setforset.com/blogs/news/standing-calf-raise"
+      ]
     }
   ]
 }
