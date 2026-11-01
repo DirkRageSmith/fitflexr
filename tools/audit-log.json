@@ -2945,6 +2945,91 @@
         "https://www.strengthlog.com/standing-calf-raise/",
         "https://www.setforset.com/blogs/news/standing-calf-raise"
       ]
+    },
+    {
+      "id": "single-leg-calf-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://www.puregym.com/exercises/legs/calf-exercises/single-leg-calf-raises/",
+        "https://exrx.net/WeightExercises/Gastrocnemius/BWSingleLegCalfRaise"
+      ]
+    },
+    {
+      "id": "seated-calf-raise-bodyweight",
+      "verdict": "ok",
+      "sources": [
+        "https://theworkoutmag.com/training-guide/seated-calf-raise-form-guide",
+        "https://en.wikipedia.org/wiki/Calf_raises"
+      ]
+    },
+    {
+      "id": "donkey-calf-raise",
+      "verdict": "fix",
+      "sources": [
+        "https://liftmanual.com/weighted-donkey-calf-raise/",
+        "https://www.muscleandstrength.com/exercises/donkey-calf-raise.html"
+      ],
+      "problem": "Card describes the setup as balls of the feet flat on the floor, with no elevation. Every sourced version has the balls of the feet on the edge of a raised step or block, heels hanging off, so the heel can drop below neutral on the way down. On flat ground the ankle's range of motion is identical to a standard standing calf raise -- the forward hip-hinge alone doesn't add plantarflexion range -- so the card's own stated benefit ('bigger stretch and range') doesn't match its own described setup. Spot-checked by direct re-fetch of liftmanual.com, which confirms: 'Stand with the balls of your feet on a calf raise block (or step)... Lower under control, allowing your heels to drop below the block level for a deep stretch.'",
+      "proposed": {
+        "cue": "Hinge forward at the hips with your feet on a raised step, then let your heels drop low before driving them back up high.",
+        "description": "Stand with the balls of your feet on the edge of a step or sturdy block, heels hanging off the back. Bend forward at the hips and rest your hands or forearms on a bench or wall so your back is nearly flat. Let your heels sink below the edge for a deep stretch, then push through the balls of your feet to raise them as high as possible, and lower slowly."
+      }
+    },
+    {
+      "id": "wall-lean-calf-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://exercises.virtuagym.com/exercise/calf-raise-leaning/",
+        "https://justgains.com/e/calf-raise-with-wall-support"
+      ]
+    },
+    {
+      "id": "calf-raise-pulse",
+      "verdict": "ok",
+      "sources": [
+        "https://www.foundationpodiatry.com.au/double-leg-calf-raise-pulses/",
+        "https://fitwill.app/exercise/3534/bodyweight-standing-pulse-calf-raise/"
+      ]
+    },
+    {
+      "id": "tempo-calf-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://www.gomotionapp.com/team/fgcspst/page/news/77925/proper-calf-raises",
+        "https://www.futurefit.co.uk/blog/hypertrophy-training-for-the-calves/"
+      ]
+    },
+    {
+      "id": "toe-walk",
+      "verdict": "ok",
+      "sources": [
+        "https://liftmanual.com/toe-walk/",
+        "https://www.kovofitness.com/exercises/tip-toe-walking"
+      ]
+    },
+    {
+      "id": "deficit-calf-raise-box",
+      "verdict": "ok",
+      "sources": [
+        "https://cerebralphysique.com/exercise/deficit-calf-raise",
+        "https://www.hingehealth.com/resources/articles/calf-raises/"
+      ]
+    },
+    {
+      "id": "single-leg-deficit-calf-raise-box",
+      "verdict": "ok",
+      "sources": [
+        "https://www.simple-calisthenics.com/exercises/deficitCalfRaiseProgressions",
+        "https://www.rhpmobilehealth.com/footankle-pain/v/sunday-morning-flow-wwkfj-xa7zd"
+      ]
+    },
+    {
+      "id": "dumbbell-calf-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/standing-dumbbell-calf-raise",
+        "https://www.liftosaur.com/exercises/dumbbell-standing-calf-raise"
+      ]
     }
   ]
 }
