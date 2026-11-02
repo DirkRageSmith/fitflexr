@@ -3110,6 +3110,86 @@
         "https://www.trainwell.net/exercises/kettlebell-calf-raise",
         "https://musclewiki.com/exercise/kettlebell-goblet-calf-raise"
       ]
+    },
+    {
+      "id": "kettlebell-seated-calf-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://musclewiki.com/exercise/kettlebell-seated-calf-raise",
+        "https://www.puregym.com/exercises/legs/calf-exercises/seated-calf-raises/"
+      ]
+    },
+    {
+      "id": "band-calf-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://liftmanual.com/resistance-band-calf-raise/",
+        "https://www.gymreapers.com/blogs/news/best-calf-exercises-with-resistance-bands"
+      ]
+    },
+    {
+      "id": "band-seated-calf-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://www.gymreapers.com/blogs/news/best-calf-exercises-with-resistance-bands",
+        "https://www.fitbeastclub.com/blogs/home-gym-blog/seated-calf-raises-with-resistance-bands-a-complete-guide"
+      ]
+    },
+    {
+      "id": "banded-single-leg-calf-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://planworkouts.com/exercise/band-single-leg-calf-raise/",
+        "https://www.gymreapers.com/blogs/news/best-calf-exercises-with-resistance-bands"
+      ]
+    },
+    {
+      "id": "eccentric-heel-drop",
+      "verdict": "ok",
+      "sources": [
+        "https://sportcoaching.com.au/alfredsons-eccentric-heel-drop-protocol/",
+        "https://www.michiganfootdoctors.com/eccentric-heel-drops/"
+      ]
+    },
+    {
+      "id": "forearm-plank",
+      "verdict": "ok",
+      "sources": [
+        "https://musclewiki.com/exercise/forearm-plank",
+        "https://www.puregym.com/exercises/abs/planks/"
+      ]
+    },
+    {
+      "id": "high-plank",
+      "verdict": "ok",
+      "sources": [
+        "https://www.healthline.com/health/14-plank-variations-your-core-will-thank-you-for-later",
+        "https://www.physitrack.com/exercise-library/how-to-perform-the-high-plank-exercise"
+      ]
+    },
+    {
+      "id": "side-plank",
+      "verdict": "ok",
+      "sources": [
+        "https://liftmanual.com/side-plank/",
+        "https://www.healthline.com/health/side-plank"
+      ]
+    },
+    {
+      "id": "side-plank-hip-dip",
+      "verdict": "ok",
+      "sources": [
+        "https://www.motra.com/exercises/bodyWeightSidePlankHipDips",
+        "https://www.trainwell.net/exercises/side-plank-dip"
+      ]
+    },
+    {
+      "id": "plank-shoulder-tap",
+      "verdict": "ok",
+      "sources": [
+        "https://www.trainwell.net/exercises/plank-shoulder-tap",
+        "https://liftmanual.com/shoulder-tap/"
+      ]
     }
   ]
 }
