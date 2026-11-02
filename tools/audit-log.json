@@ -3030,6 +3030,86 @@
         "https://fitbod.me/exercises/standing-dumbbell-calf-raise",
         "https://www.liftosaur.com/exercises/dumbbell-standing-calf-raise"
       ]
+    },
+    {
+      "id": "single-leg-dumbbell-calf-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://liftmanual.com/dumbbell-single-leg-calf-raise/",
+        "https://www.trainwell.net/exercises/single-leg-dumbbell-calf-raise"
+      ]
+    },
+    {
+      "id": "seated-dumbbell-calf-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://workoutlabs.com/exercise-guide/seated-dumbbell-chair-calf-raise/",
+        "https://gym-mikolo.com/blogs/home-gym/mastering-the-seated-dumbbell-calf-raise-for-bigger-stronger-calves"
+      ]
+    },
+    {
+      "id": "barbell-standing-calf-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/standing-barbell-calf-raise",
+        "https://steelsupplements.com/blogs/steel-blog/how-to-do-standing-barbell-calf-raises-form-benefits"
+      ]
+    },
+    {
+      "id": "barbell-seated-calf-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://www.strengthlog.com/barbell-seated-calf-raise/",
+        "https://liftmanual.com/barbell-seated-calf-raise/"
+      ]
+    },
+    {
+      "id": "standing-calf-raise-machine",
+      "verdict": "ok",
+      "sources": [
+        "https://gravitus.com/guides/exercises/standing-calf-raise/",
+        "https://www.liftosaur.com/exercises/leverage-machine-standing-calf-raise"
+      ]
+    },
+    {
+      "id": "seated-calf-raise-machine",
+      "verdict": "ok",
+      "sources": [
+        "https://gravitus.com/guides/exercises/seated-calf-raise/",
+        "https://theworkoutmag.com/training-guide/seated-calf-raise-form-guide"
+      ]
+    },
+    {
+      "id": "leg-press-calf-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://www.strengthlog.com/calf-raise-in-leg-press/",
+        "https://www.ritfitsports.com/blogs/article/leg-press-calf-raise-setup-form-and-growth-plan"
+      ]
+    },
+    {
+      "id": "smith-machine-calf-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://www.muscleandstrength.com/exercises/smith-machine-calf-raise.html",
+        "https://www.strongermobileapp.com/exercises/smith-machine-calf-raise"
+      ]
+    },
+    {
+      "id": "hack-squat-machine-calf-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://liftmanual.com/hack-calf-raise/",
+        "https://www.ritfitsports.com/blogs/article/how-to-do-donkey-calf-raises-on-leg-press-hack-squat-machine"
+      ]
+    },
+    {
+      "id": "kettlebell-calf-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://www.trainwell.net/exercises/kettlebell-calf-raise",
+        "https://musclewiki.com/exercise/kettlebell-goblet-calf-raise"
+      ]
     }
   ]
 }
