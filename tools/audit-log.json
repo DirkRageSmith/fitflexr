@@ -3280,6 +3280,91 @@
         "https://fitbod.me/exercises/bicycle-crunch",
         "https://spotebi.com/exercise-guide/bicycle-crunches/"
       ]
+    },
+    {
+      "id": "sit-up",
+      "verdict": "ok",
+      "sources": [
+        "https://liftmanual.com/sit-up/",
+        "https://www.strengthlog.com/sit-up/"
+      ]
+    },
+    {
+      "id": "v-up",
+      "verdict": "ok",
+      "sources": [
+        "https://www.webmd.com/fitness-exercise/how-to-do-v-ups",
+        "https://hortonbarbell.com/v-ups-how-to-benefits-muscles-worked/"
+      ]
+    },
+    {
+      "id": "tuck-up",
+      "verdict": "ok",
+      "sources": [
+        "https://smartworkout.app/en/exercise-library/abs/tuck-up",
+        "https://www.physitrack.com/exercise-library/how-to-perform-the-tuck-up-exercise"
+      ]
+    },
+    {
+      "id": "toe-touch-crunch",
+      "verdict": "ok",
+      "sources": [
+        "https://www.trainwell.net/exercises/toe-touch-crunch",
+        "https://gym-fix.co.uk/exercise/toe-touch-crunch/"
+      ]
+    },
+    {
+      "id": "side-crunch",
+      "verdict": "ok",
+      "sources": [
+        "https://liftmanual.com/side-crunch/",
+        "https://www.muscleandstrength.com/exercises/side-crunch.html"
+      ]
+    },
+    {
+      "id": "standing-oblique-crunch",
+      "verdict": "ok",
+      "sources": [
+        "https://www.gymstreak.com/exercises/standing-oblique-crunches",
+        "https://www.zing.coach/exercises/standing-elbow-to-knee-crunches"
+      ]
+    },
+    {
+      "id": "lying-leg-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://www.strengthlog.com/lying-leg-raise/",
+        "https://workoutlabs.com/exercise-guide/lying-leg-raises/"
+      ]
+    },
+    {
+      "id": "flutter-kick",
+      "verdict": "ok",
+      "sources": [
+        "https://spotebi.com/exercise-guide/flutter-kicks/",
+        "https://squatwolf.com/blogs/fitness/how-to-do-flutter-kicks-correctly"
+      ]
+    },
+    {
+      "id": "scissor-kick",
+      "verdict": "ok",
+      "sources": [
+        "https://www.setforset.com/blogs/news/scissor-kicks",
+        "https://fitbod.me/exercises/scissor-crossover-kick"
+      ]
+    },
+    {
+      "id": "lying-knee-tuck",
+      "verdict": "fix",
+      "sources": [
+        "https://www.kovofitness.com/exercises/lying-knee-tuck",
+        "https://www.exerciselibrary.com/exercise/lying-knee-tuck/"
+      ],
+      "problem": "The description opens with \"Sit leaning back slightly or lie down with your legs extended,\" offering a seated lean-back start as an alternative. Both independent sources define Lying Knee Tuck as performed fully supine only -- no source documents a seated variant, and a seated lean-back start is a materially different, more spine-loading exercise (closer to a V-sit knee tuck). Direct re-fetch of kovofitness.com confirms: \"Lie on your back with your legs extended and hands at your sides or under your hips for support.\" Worth getting right given this card is tagged avoidIf lower-back.",
+      "proposed": {
+        "cue": "Pull your knees in to your chest, then extend your legs back out without touching the floor.",
+        "description": "Lie on your back with your legs extended and your lower back pressed into the floor. Pull your knees in toward your chest by squeezing your abs, then extend your legs back out straight without letting your heels touch the floor. Keep tension on your abs the whole time and don't let your lower back arch up off the floor."
+      }
     }
   ]
 }
