@@ -3190,6 +3190,96 @@
         "https://www.trainwell.net/exercises/plank-shoulder-tap",
         "https://liftmanual.com/shoulder-tap/"
       ]
+    },
+    {
+      "id": "body-saw-plank",
+      "verdict": "ok",
+      "sources": [
+        "https://liftmanual.com/body-saw-plank/",
+        "https://www.coachweb.com/core-exercises/6344/upgrade-your-plank-with-the-body-saw"
+      ]
+    },
+    {
+      "id": "bear-plank-hold",
+      "verdict": "ok",
+      "sources": [
+        "https://liftmanual.com/bear-plank/",
+        "https://www.onepeloton.com/blog/bear-plank"
+      ]
+    },
+    {
+      "id": "plank-knee-to-elbow",
+      "verdict": "fix",
+      "sources": [
+        "https://liftmanual.com/spider-plank/",
+        "https://www.hevyapp.com/exercises/spiderman-plank/"
+      ],
+      "problem": "Description says the knee drives straight forward toward the elbow. Both sources (confirmed by direct re-fetch of liftmanual.com) describe the knee travelling up and OUT TO THE SIDE, tracking outside the same-side elbow rather than straight underneath the body — that outward hip drive is what works the obliques and is what separates this from a plain mountain climber.",
+      "proposed": {
+        "cue": "From a plank, drive one knee up and out toward the same-side elbow, then return and switch.",
+        "description": "Hold a high plank with hands under your shoulders. Drive one knee up and out to the side, tracking outside your same-side elbow rather than straight underneath you, then return it and switch legs. Keep your hips low and level rather than piking up as the knee comes in. Works the abs and obliques through that outward hip drive."
+      }
+    },
+    {
+      "id": "dead-bug",
+      "verdict": "ok",
+      "sources": [
+        "https://www.nasm.org/resource-center/exercise-library/dead-bug",
+        "https://fitbod.me/exercises/dead-bug"
+      ]
+    },
+    {
+      "id": "bird-dog",
+      "verdict": "ok",
+      "sources": [
+        "https://www.healthline.com/health/bird-dog-exercise",
+        "https://spotebi.com/exercise-guide/bird-dogs/"
+      ]
+    },
+    {
+      "id": "bird-dog-hold",
+      "verdict": "ok",
+      "sources": [
+        "https://rb100.fitness/exercise/bird-dog-hold/",
+        "https://www.garagegymreviews.com/bird-dog-exercise"
+      ]
+    },
+    {
+      "id": "side-plank-knee-drive",
+      "verdict": "fix",
+      "sources": [
+        "https://elite-performance-institute.com/exercise-library/core-exercises/side-plank-with-knee-drive/",
+        "https://theprehabguys.com/vimeo-video/side-plank-crunch-2/"
+      ],
+      "problem": "Description only moves the knee (\"drive your top knee toward your chest\") and never brings the top elbow down to meet it. Both sources (confirmed by direct re-fetch of theprehabguys.com: \"bring the top knee up to your chest and your top elbow down to meet it and perform a crunch\") describe a two-sided fold — knee up AND elbow down together — which is the actual crunch the card's own alias (\"Side Plank Crunch\") names.",
+      "proposed": {
+        "cue": "In a side plank, crunch your top knee and top elbow together, then extend back out.",
+        "description": "Hold a side plank on your forearm with your hips lifted in a straight line. Drive your top knee up toward your chest while bringing your top elbow down to meet it, folding through your side, then extend both back out straight. Keep your hips lifted the whole time so the crunch comes from your waist, not a hip drop."
+      }
+    },
+    {
+      "id": "crunch",
+      "verdict": "ok",
+      "sources": [
+        "https://www.healthline.com/health/exercise-fitness/how-to-do-crunches",
+        "https://www.garagegymreviews.com/crunches-exercise"
+      ]
+    },
+    {
+      "id": "reverse-crunch",
+      "verdict": "ok",
+      "sources": [
+        "https://liftmanual.com/reverse-crunch/",
+        "https://www.trainwell.net/exercises/reverse-crunch"
+      ]
+    },
+    {
+      "id": "bicycle-crunch",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/bicycle-crunch",
+        "https://spotebi.com/exercise-guide/bicycle-crunches/"
+      ]
     }
   ]
 }
