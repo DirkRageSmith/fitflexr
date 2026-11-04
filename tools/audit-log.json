@@ -3365,6 +3365,86 @@
         "cue": "Pull your knees in to your chest, then extend your legs back out without touching the floor.",
         "description": "Lie on your back with your legs extended and your lower back pressed into the floor. Pull your knees in toward your chest by squeezing your abs, then extend your legs back out straight without letting your heels touch the floor. Keep tension on your abs the whole time and don't let your lower back arch up off the floor."
       }
+    },
+    {
+      "id": "hollow-body-hold",
+      "verdict": "ok",
+      "sources": [
+        "https://www.hingehealth.com/resources/articles/hollow-body-hold/",
+        "https://gmb.io/hollow-body/"
+      ]
+    },
+    {
+      "id": "hollow-body-rock",
+      "verdict": "ok",
+      "sources": [
+        "https://dieringe.com/exercises/hollow-body-rocks",
+        "https://www.garagegymreviews.com/hollow-rock-exercise"
+      ]
+    },
+    {
+      "id": "boat-hold",
+      "verdict": "ok",
+      "sources": [
+        "https://dieringe.com/exercises/boat-pose-v-up-hold",
+        "https://www.webmd.com/fitness-exercise/yoga-how-to-the-boat-pose"
+      ]
+    },
+    {
+      "id": "windshield-wiper",
+      "verdict": "ok",
+      "sources": [
+        "https://workoutlabs.com/exercise-guide/windshield-wipers/",
+        "https://www.today.com/health/windshield-wipers-exercise-tone-your-core-ab-workout-t224394"
+      ]
+    },
+    {
+      "id": "crab-reach",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/crab-reach",
+        "https://simplifaster.com/articles/gym-class-core-crab-movement/"
+      ]
+    },
+    {
+      "id": "hanging-knee-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/hanging-knee-raise",
+        "https://www.strengthlog.com/hanging-knee-raise/"
+      ]
+    },
+    {
+      "id": "hanging-leg-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/hanging-leg-raise",
+        "https://learn.athleanx.com/articles/abs-for-men/hanging-leg-raise-how-to"
+      ]
+    },
+    {
+      "id": "toes-to-bar",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/toes-to-bar",
+        "https://barbend.com/toes-to-bar/"
+      ]
+    },
+    {
+      "id": "hanging-oblique-knee-raise",
+      "verdict": "ok",
+      "sources": [
+        "https://fitbod.me/exercises/hanging-oblique-knee-raise",
+        "https://liftmanual.com/hanging-oblique-knee-raise/"
+      ]
+    },
+    {
+      "id": "weighted-crunch-dumbbell",
+      "verdict": "ok",
+      "sources": [
+        "https://www.burnthefatinnercircle.com/public/Weighted-crunches.cfm",
+        "https://dumbbellsdirect.com/blogs/dumbbell-exercises-specific-movements/dumbbell-crunch"
+      ]
     }
   ]
 }
