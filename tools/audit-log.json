@@ -3445,6 +3445,86 @@
         "https://www.burnthefatinnercircle.com/public/Weighted-crunches.cfm",
         "https://dumbbellsdirect.com/blogs/dumbbell-exercises-specific-movements/dumbbell-crunch"
       ]
+    },
+    {
+      "id": "weighted-sit-up-dumbbell",
+      "verdict": "ok",
+      "sources": [
+        "https://liftmanual.com/dumbbell-sit-up/",
+        "https://hortonbarbell.com/weighted-sit-ups/"
+      ]
+    },
+    {
+      "id": "dumbbell-side-bend",
+      "verdict": "ok",
+      "sources": [
+        "https://barbend.com/dumbbell-side-bend/",
+        "https://www.trainwell.net/exercises/dumbbell-side-bend"
+      ]
+    },
+    {
+      "id": "dumbbell-russian-twist",
+      "verdict": "ok",
+      "sources": [
+        "https://liftmanual.com/dumbbell-russian-twist/",
+        "https://www.trainwell.net/exercises/dumbbell-russian-twist"
+      ]
+    },
+    {
+      "id": "dumbbell-woodchopper",
+      "verdict": "ok",
+      "sources": [
+        "https://www.jefit.com/exercises/743/dumbbell-wood-chop",
+        "https://dumbbellsdirect.com/blogs/dumbbell-exercises-specific-movements/dumbbell-wood-chop"
+      ]
+    },
+    {
+      "id": "dumbbell-suitcase-carry",
+      "verdict": "ok",
+      "sources": [
+        "https://griptapp.com/exercises/suitcase-carry-dumbbell",
+        "https://www.musclefitprogram.com/exercises/suitcase-carry"
+      ]
+    },
+    {
+      "id": "kettlebell-windmill",
+      "verdict": "ok",
+      "sources": [
+        "https://www.onnit.com/blogs/the-edge/how-to-do-the-kettlebell-windmill-exercise-like-a-pro",
+        "https://www.strengthlog.com/kettlebell-windmill/"
+      ]
+    },
+    {
+      "id": "kettlebell-side-bend",
+      "verdict": "ok",
+      "sources": [
+        "https://www.trainwell.net/exercises/single-kettlebell-side-bend",
+        "https://justgains.com/e/kettlebell-side-bend"
+      ]
+    },
+    {
+      "id": "kettlebell-russian-twist",
+      "verdict": "ok",
+      "sources": [
+        "https://www.trainwell.net/exercises/single-kettlebell-russian-twist",
+        "https://www.kettlebellkings.com/blogs/default-blog/kettlebell-russian-twist-how-to-muscles-benefits-mistakes"
+      ]
+    },
+    {
+      "id": "kettlebell-suitcase-carry",
+      "verdict": "ok",
+      "sources": [
+        "https://www.jefit.com/exercises/1380/kettlebell-suitcase-carry",
+        "https://www.musclefitprogram.com/exercises/suitcase-carry"
+      ]
+    },
+    {
+      "id": "medicine-ball-russian-twist",
+      "verdict": "ok",
+      "sources": [
+        "https://gethealthyu.com/medicine-ball-russian-twist/",
+        "https://www.kovofitness.com/exercises/russian-twist-medicine-ball"
+      ]
     }
   ]
 }
