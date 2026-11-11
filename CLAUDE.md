@@ -87,9 +87,15 @@ the muscle-group filter, and `buildDeck()` appended them all.
    the muscle pill. This is the half that actually answers the report: a hamstring stretch
    and a hamstring exercise used to look identical.
 
-**Stretches are still NOT scoped by muscle group, deliberately.** A cool-down is a
-whole-body thing. A hamstring stretch after a chest day is fine *once you have asked for a
-cool-down and the card says so* — what was wrong was that nobody asked and nothing said.
+~~Stretches are still NOT scoped by muscle group, deliberately.~~ **Reversed in v80
+(2026-11-11).** Reported again as *"exercises bleeding into the swipe list"*: with Chest
+picked and any stretch type on, the deck dealt the chest moves and then 100+ stretches for
+every other body part. Opt-in plus labels was not enough — 120 stretches unscoped is
+still a flood. A stretch now shows if its `muscleGroup` OR any `secondaryMuscles` entry is
+in today's picks (`inTodaysGroups(ex, true)`); training moves still match on
+`muscleGroup` only. Nothing picked still means everything. Thin groups stay thin on
+purpose — Triceps has 0 primary stretches and 2 by secondary, Biceps 3; that is a content
+gap to fill, not a reason to deal hamstring stretches.
 
 Sport scoping (`SPORTS`) still exists and now nests under the stretch types, hidden until
 at least one type is on, since it is meaningless before that.

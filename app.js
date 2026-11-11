@@ -319,9 +319,9 @@
     return tags.some((s) => want.includes(s));
   }
 
-  // Today's muscle picks scope the TRAINING moves. A warm-up or cool-down prepares
-  // the whole session rather than one muscle, so picking "Chest" shouldn't leave you
-  // with no stretches — they're scoped by discipline instead.
+  // Today's muscle picks scope everything in the deck. Training moves match on their
+  // main muscle; stretches also match on "Also works", so a Chest day still gets the
+  // stretches that open the chest. Stretches are additionally scoped by discipline.
   function inScope(ex) {
     if (!ownsGear(ex) || !passesConditions(ex)) return false;
     if (isStretch(ex)) {
@@ -334,17 +334,25 @@
        * leaking into the other categories, which is how it was reported, and it
        * was the right read of what was on screen.
        *
-       * They are still NOT scoped by muscle group, deliberately: a cool-down is
-       * a whole-body thing, and a hamstring stretch after a chest session is
-       * fine once you have asked for a cool-down and the card says so. What was
-       * wrong was that nobody asked and nothing said. */
+       * As of v80 they are ALSO scoped by today's muscles. v34 left them
+       * unscoped on purpose ("a cool-down is a whole-body thing"), and it was
+       * reported again as bleeding: Chest + any stretch type dealt the chest
+       * moves and then 100+ cards for hamstrings, glutes, calves and quads.
+       * A stretch now shows if its main muscle OR one of its "Also works"
+       * muscles is picked — the card prints that line, so the reason it is
+       * here is on screen. Nothing picked still means everything. */
       const want = state.filters.stretchTypes;
       if (!want.length) return false;
       if (!want.includes(stretchTypeOf(ex))) return false;
-      return passesSports(ex);
+      return passesSports(ex) && inTodaysGroups(ex, true);
     }
+    return inTodaysGroups(ex, false);
+  }
+
+  function inTodaysGroups(ex, countSecondary) {
     const groups = state.filters.groups;
-    return groups.length === 0 || groups.includes(ex.muscleGroup);
+    if (groups.length === 0 || groups.includes(ex.muscleGroup)) return true;
+    return countSecondary && (ex.secondaryMuscles || []).some((m) => groups.includes(m));
   }
 
   function eligiblePool() {
@@ -1105,7 +1113,7 @@
     const hint = $("#stretchtype-hint");
     if (hint) {
       hint.textContent = on
-        ? "Added to the end of the deck in their own labelled block, with their own 10 slots — they never eat into your exercises."
+        ? "Added to the end of the deck in their own labelled block, for today's muscles only, with their own 10 slots — they never eat into your exercises."
         : "Pick what you want and it's added to the end of the deck in its own labelled block. Pick nothing and you get exercises only.";
     }
   }
